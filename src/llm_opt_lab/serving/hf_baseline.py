@@ -93,7 +93,7 @@ def main(argv: list[str] | None = None) -> int:
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
         model = AutoModelForCausalLM.from_pretrained(
-            str(path), torch_dtype=torch.float16,
+            str(path), dtype=torch.float16,
             local_files_only=True, trust_remote_code=False
         ).to("cuda").eval()
         torch.manual_seed(a.seed)

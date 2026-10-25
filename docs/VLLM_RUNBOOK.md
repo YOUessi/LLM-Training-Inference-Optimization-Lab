@@ -98,3 +98,7 @@ The timing intentionally excludes tokenization and captures prefill + decode
 together. **TTFT and TPOT remain null.** It is not a server,
 has no dynamic batching/scheduler, and should never be compared to vLLM
 as if the concurrency semantics were identical.
+
+### Offline baseline Pillow compatibility
+
+The global Tang Python has Pillow 9.0.1, incompatible with Transformers 4.57.6's `PIL.Image.Resampling`. Use the lab-created venv which reuses Torch 2.10 read-only and install `Pillow==11.3.0` **inside the venv only**. Run the offline baseline through `$HOME/conda_env/llm-opt-serving/bin/python`; do not install Pillow globally.
