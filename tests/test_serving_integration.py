@@ -65,5 +65,31 @@ class ServingTransportTests(unittest.TestCase):
         self.assertIsNotNone(result["tpot_ms"])
 
 
+    def test_sequential_sweep_runs_against_local_mock(self):
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from llm_opt_lab.serving.sweep import main as sweep_main
+
+        with TemporaryDirectory() as temp:
+            folder = Path(temp) / "sweep"
+            result = sweep_main([
+                "--base-url", "http://127.0.0.1:" + str(self.server.server_port),
+                "--model", "mock-only",
+                "--requests", "4", "--warmup-requests", "1",
+                "--concurrency", "1,2",
+                "--max-tokens", "8",
+                "--output-dir", str(folder),
+            ])
+            self.assertEqual(result, 0)
+            summary = json.loads((folder / "summary.json").read_text())
+            self.assertEqual(summary["status"], "measured")
+            self.assertEqual(len(summary["cases"]), 2)
+            for case in summary["cases"]:
+                self.assertEqual(case["summary"]["succeeded"], 4)
+                self.assertEqual(case["summary"]["failed"], 0)
+                self.assertGreater(case["summary"]["p95_ttft_ms"], 0)
+                self.assertGreater(case["summary"]["output_tokens_per_second"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
