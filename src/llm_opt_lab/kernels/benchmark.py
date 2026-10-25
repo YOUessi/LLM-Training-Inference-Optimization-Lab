@@ -17,6 +17,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--warmup-ms", type=int, default=150)
     parser.add_argument("--rep-ms", type=int, default=350)
+    parser.add_argument("--torch-compile", action="store_true", help="also benchmark correctness-checked torch.compile/Inductor baseline")
     parser.add_argument("--output", type=Path, default=Path("results/kernel_benchmark.json"))
     args = parser.parse_args(argv)
     if args.rows <= 0 or not (1 <= args.cols <= 16384):
@@ -45,23 +46,23 @@ def main(argv: list[str] | None = None) -> int:
             torch.cuda.manual_seed_all(args.seed)
         dtype = getattr(torch, args.dtype)
         x = torch.randn((args.rows, args.cols), device="cuda", dtype=dtype)
+        def torch_rmsnorm(t):
+            return t * torch.rsqrt(t.float().square().mean(dim=-1, keepdim=True) + args.eps)
+
+        def torch_softmax(t):
+            return torch.softmax(t.float(), dim=-1)
+
         cases = {
-            "rmsnorm": (
-                lambda: x * torch.rsqrt(x.float().square().mean(dim=-1, keepdim=True) + args.eps),
-                lambda: triton_ops.rmsnorm(x, args.eps),
-            ),
-            "softmax": (
-                lambda: torch.softmax(x.float(), dim=-1),
-                lambda: triton_ops.softmax(x),
-            ),
+            "rmsnorm": (torch_rmsnorm, lambda t: triton_ops.rmsnorm(t, args.eps)),
+            "softmax": (torch_softmax, triton_ops.softmax),
         }
         # Fairness: baseline outputs are cast to input dtype just like the Triton output.
         results = {}
         atol = 3e-3 if dtype == torch.float16 else 2e-5
         rtol = 3e-3 if dtype == torch.float16 else 2e-5
         for name, (baseline, candidate) in cases.items():
-            expected = baseline().to(dtype)
-            observed = candidate()
+            expected = baseline(x).to(dtype)
+            observed = candidate(x)
             max_abs_error = (expected.float() - observed.float()).abs().max().item()
             torch.testing.assert_close(observed, expected, atol=atol, rtol=rtol)
             torch.cuda.synchronize()
@@ -73,8 +74,8 @@ def main(argv: list[str] | None = None) -> int:
                 )
                 return {"median_ms": float(p50), "p95_ms": float(p95)}
 
-            base_t = bench(lambda: baseline().to(dtype))
-            tri_t = bench(candidate)
+            base_t = bench(lambda: baseline(x).to(dtype))
+            tri_t = bench(lambda: candidate(x))
             results[name] = {
                 "correctness": "pass",
                 "atol": atol,
@@ -84,6 +85,16 @@ def main(argv: list[str] | None = None) -> int:
                 "triton": tri_t,
                 "median_speedup": base_t["median_ms"] / tri_t["median_ms"],
             }
+            if args.torch_compile:
+                # Compile/warmup time is excluded from steady-state GPU timing.
+                compiled = torch.compile(baseline, backend="inductor", fullgraph=True)
+                compiled_output = compiled(x).to(dtype)
+                torch.testing.assert_close(compiled_output, expected, atol=atol, rtol=rtol)
+                compiled_t = bench(lambda: compiled(x).to(dtype))
+                results[name]["compiled_torch"] = compiled_t
+                results[name]["median_speedup_vs_compiled"] = (
+                    compiled_t["median_ms"] / tri_t["median_ms"]
+                )
         payload = {
             "status": "measured",
             "kind": "gpu_kernel_benchmark",
@@ -91,6 +102,7 @@ def main(argv: list[str] | None = None) -> int:
             "seed": args.seed,
             "timing": {"warmup_ms": args.warmup_ms, "rep_ms": args.rep_ms},
             "triton_version": triton.__version__,
+            "compiled_baseline_requested": bool(args.torch_compile),
             "environment": environment(),
             "cases": results,
         }

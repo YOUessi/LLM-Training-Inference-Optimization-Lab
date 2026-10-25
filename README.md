@@ -40,6 +40,8 @@ PYTHONPATH=src python -m llm_opt_lab.kernels.benchmark --rows 256 --cols 4096 --
 ```
 
 The program exits nonzero if no CUDA device is available, tests precision vs PyTorch, and only writes results after completing the requested measurements. Timing is in milliseconds.
+For a stronger fused baseline, add `--torch-compile`: steady-state Torch Inductor (`torch.compile`) and custom Triton performance will be reported **separately**. Compilation time is excluded; comparisons use the same tensor and output dtype.
+
 
 ## Serving experiments (OpenAI-compatible vLLM endpoint)
 
