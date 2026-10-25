@@ -47,10 +47,10 @@ def main(argv: list[str] | None = None) -> int:
         dtype = getattr(torch, args.dtype)
         x = torch.randn((args.rows, args.cols), device="cuda", dtype=dtype)
         def torch_rmsnorm(t):
-            return t * torch.rsqrt(t.float().square().mean(dim=-1, keepdim=True) + args.eps)
+            return (t * torch.rsqrt(t.float().square().mean(dim=-1, keepdim=True) + args.eps)).to(t.dtype)
 
         def torch_softmax(t):
-            return torch.softmax(t.float(), dim=-1)
+            return torch.softmax(t.float(), dim=-1).to(t.dtype)
 
         cases = {
             "rmsnorm": (torch_rmsnorm, lambda t: triton_ops.rmsnorm(t, args.eps)),

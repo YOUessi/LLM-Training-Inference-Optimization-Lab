@@ -10,3 +10,5 @@
 8. CUDA instrumentation must use real Nsight tools and supported GPU; do not use dummy profiling screenshots.
 9. Track regressions and variability (shape sweeps, repeat runs, confidence intervals where possible).
 10. If a required tool or GPU is missing, record `blocked` with reason and do not fabricate benchmark output.
+
+11. When comparing against torch.compile, ensure the final dtype cast is inside the compiled function (otherwise an extra eager kernel artificially inflates the baseline).
