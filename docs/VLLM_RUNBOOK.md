@@ -4,8 +4,8 @@ This project does not modify system Python or previously configured model enviro
 
 ## Environment and model
 
-- Dedicated venv: `$HOME/conda_env/llm-opt-serving` (separate from CodeRL-Lab, Isaac Lab, other Tang projects).
-- Tested installation target: `vllm==0.31.0`; **successful installation and runtime validation must be recorded before claiming the milestone**.
+- Dedicated venv: `$HOME/conda_env/llm-opt-serving`. It is created with `python3 -m venv --system-site-packages`: pip writes only to this venv, while it **reads the existing system/user PyTorch 2.10.0+cu128**. This is not a fully independent Torch installation. No old project files, weights or global packages are changed.
+- Compatible installation target: `vllm==0.19.1`; **successful installation and runtime validation must be recorded before claiming the milestone**.
 - Existing offline model: Qwen2.5-1.5B-Instruct Hugging Face cache on Tang. No need to download model weights.
 - Service only listens on `127.0.0.1:8026`; no API keys or public access required.
 - `CUDA_VISIBLE_DEVICES=0`, `--gpu-memory-utilization 0.50`, `--max-model-len 2048`; never start if GPU is busy with other jobs.
@@ -57,3 +57,9 @@ and GPU allocations are released. Never stop preexisting Tang processes.
 This lab's client is an OpenAI-compatible SSE harness; a successful mocked
 HTTP integration test is **not** evidence of vLLM server throughput. Tokens/sec
 and P95 TTFT need an actually loaded model and requests on Tang.
+
+## Compatibility decision
+
+On Tang the existing Torch is `2.10.0+cu128`, Triton `3.6.0`, NVIDIA driver `580.178.04`. Public PyPI metadata says `vllm==0.19.1` requires `torch==2.10.0`, while `vllm==0.31.0` requires `torch==2.13.0` and pulls newer CUDA 13 packages. An unfinished 0.31 download was aborted and its *newly created* environment replaced.
+
+The pinned 0.19.1 environment still requires end-to-end import/server validation; the version choice alone does **not** prove functionality.

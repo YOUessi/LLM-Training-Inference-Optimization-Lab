@@ -34,5 +34,5 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 ## 2026-10-26 additional work
 - [x] Grouped RMSNorm config sweep: in-sample candidates and held-out shapes measured; no broad win, no default dispatch change.
 - [x] Local-only serving runbook and warmup-enabled SSE request benchmark prepared.
-- [ ] vLLM runtime: isolated Tang environment installation in progress; do not claim live service until actual requests pass.
+- [ ] vLLM runtime: dedicated Tang env targets v0.19.1 with preinstalled Torch 2.10.0 read-only; installation/server validation in progress; do not claim live service until actual requests pass.
 - [x] Torch profiler diagnostic completed for 256×4096 FP32; source commit and sanitized operator table recorded. **Nsight remains pending**, no occupancy/DRAM claims.
