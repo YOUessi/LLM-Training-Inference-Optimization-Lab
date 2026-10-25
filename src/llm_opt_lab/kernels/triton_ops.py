@@ -69,3 +69,56 @@ def softmax(x: torch.Tensor) -> torch.Tensor:
         num_warps=4 if block <= 4096 else 8,
     )
     return out
+
+
+
+@triton.jit
+def _rmsnorm_grouped_kernel(
+    X, Y,
+    stride_x0: tl.constexpr, stride_y0: tl.constexpr,
+    M: tl.constexpr, N: tl.constexpr, EPS: tl.constexpr,
+    BLOCK: tl.constexpr, ROWS_PER_PROGRAM: tl.constexpr,
+):
+    """Independent rows in the same program; zero padded columns/rows are masked."""
+    rows = tl.program_id(0) * ROWS_PER_PROGRAM + tl.arange(0, ROWS_PER_PROGRAM)
+    cols = tl.arange(0, BLOCK)
+    valid = (rows[:, None] < M) & (cols[None, :] < N)
+    x = tl.load(
+        X + rows[:, None] * stride_x0 + cols[None, :],
+        mask=valid, other=0,
+    ).to(tl.float32)
+    denominator = tl.sum(tl.where(cols[None, :] < N, x * x, 0.0), axis=1)
+    inv_rms = tl.rsqrt(denominator / N + EPS)
+    out = x * inv_rms[:, None]
+    tl.store(
+        Y + rows[:, None] * stride_y0 + cols[None, :],
+        out, mask=valid,
+    )
+
+
+def rmsnorm_grouped(
+    x: torch.Tensor,
+    eps: float = 1e-6,
+    *,
+    rows_per_program: int = 2,
+    num_warps: int = 4,
+) -> torch.Tensor:
+    """Parameter-explicit grouped RMSNorm for experimentation, not dispatch policy."""
+    _check(x)
+    if not 0 < eps < float("inf"):
+        raise ValueError("eps must be positive and finite")
+    if rows_per_program not in (1, 2, 4, 8, 16):
+        raise ValueError("rows_per_program must be one of 1,2,4,8,16")
+    if num_warps not in (1, 2, 4, 8, 16):
+        raise ValueError("num_warps must be one of 1,2,4,8,16")
+    block = triton.next_power_of_2(x.shape[1])
+    if block * rows_per_program > 32768:
+        raise ValueError("too many elements in one program")
+    out = torch.empty_like(x)
+    _rmsnorm_grouped_kernel[
+        (triton.cdiv(x.shape[0], rows_per_program),)
+    ](
+        x, out, x.stride(0), out.stride(0), x.shape[0], x.shape[1],
+        eps, block, rows_per_program, num_warps=num_warps,
+    )
+    return out
