@@ -9,7 +9,8 @@
 ## M1 — GPU kernel performance
 - [x] CUDA/Triton available on Tang 4090 Laptop; environment and exact versions recorded.
 - [x] RMSNorm and Softmax passed PyTorch reference FP16/FP32 on five shapes; also compared against properly fused torch.compile on three shapes (RMSNorm has confirmed regressions). See RESULTS_2026-10-26.md.
-- [ ] Track max absolute error, perf latency and pinned shapes; do not claim speedup without warmup and GPU synchronization.
+- [x] Config sweep (16 variants × 3 shapes) and independent validation (5 shapes, CUDA graph timing); mixed/negative results documented.
+- [ ] Nsight profiling required to determine DRAM/occupancy bottlenecks before dispatch change.
 
 ## M2 — Serving on vLLM
 - [ ] A real vLLM service is launched on NVIDIA GPU.

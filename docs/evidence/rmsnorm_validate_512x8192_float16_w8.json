@@ -1,0 +1,82 @@
+{
+  "status": "measured",
+  "kind": "rmsnorm_configuration_sweep",
+  "experimental_not_deployed": true,
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:39:27.485270+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "db191d5b2d33ef64bb5077544ce7291d8d89dc89",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "triton_version": "3.6.0",
+  "tensor": {
+    "rows": 512,
+    "cols": 8192,
+    "dtype": "float16",
+    "eps": 0.000001
+  },
+  "parameters": {
+    "seed": 3571,
+    "trials": 5,
+    "rep_ms": 50,
+    "num_warps": [
+      8
+    ],
+    "rows_per_program": [
+      1
+    ],
+    "timing_method": "triton.testing.do_bench_cudagraph"
+  },
+  "baselines": {
+    "compiled_torch_ms_by_trial": [
+      0.006833050269206971,
+      0.006887630076418882,
+      0.007348286582930849,
+      0.0070930909026752816,
+      0.006855971192660397
+    ],
+    "legacy_triton_ms_by_trial": [
+      0.007156029652179522,
+      0.0072049511782897495,
+      0.0071705540403181976,
+      0.007231750124976748,
+      0.00721793220156715
+    ],
+    "compiled_torch_median_ms": 0.006887630076418882,
+    "legacy_triton_median_ms": 0.0072049511782897495
+  },
+  "candidates": [
+    {
+      "rows_per_program": 1,
+      "num_warps": 8,
+      "max_absolute_error": 0.001953125,
+      "latency_ms": [
+        0.00734361537102817,
+        0.007201681622608083,
+        0.007189588292556651,
+        0.007231824710292874,
+        0.007183750142079083
+      ],
+      "correctness": "pass",
+      "median_ms": 0.007201681622608083,
+      "p95_across_trials_ms": 0.00734361537102817
+    }
+  ],
+  "failures": [],
+  "best_in_sample": {
+    "rows_per_program": 1,
+    "num_warps": 8,
+    "median_ms": 0.007201681622608083,
+    "speedup_vs_compiled": 0.9563919147434531,
+    "speedup_vs_legacy": 1.0004539989203913
+  }
+}

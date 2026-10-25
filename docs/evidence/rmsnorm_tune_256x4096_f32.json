@@ -1,0 +1,295 @@
+{
+  "status": "measured",
+  "kind": "rmsnorm_configuration_sweep",
+  "experimental_not_deployed": true,
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:37:30.342672+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "db191d5b2d33ef64bb5077544ce7291d8d89dc89",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "triton_version": "3.6.0",
+  "tensor": {
+    "rows": 256,
+    "cols": 4096,
+    "dtype": "float32",
+    "eps": 0.000001
+  },
+  "parameters": {
+    "seed": 2026,
+    "trials": 4,
+    "rep_ms": 35,
+    "num_warps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "rows_per_program": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "timing_method": "triton.testing.do_bench_cudagraph"
+  },
+  "baselines": {
+    "compiled_torch_ms_by_trial": [
+      0.004165026724414655,
+      0.003559372093104109,
+      0.0035839999867850773,
+      0.003574508839851796
+    ],
+    "legacy_triton_ms_by_trial": [
+      0.003909474980514661,
+      0.003814961747193632,
+      0.003769069767150716,
+      0.0038420853850184315
+    ],
+    "compiled_torch_median_ms": 0.0035792544133184364,
+    "legacy_triton_median_ms": 0.0038285235661060318
+  },
+  "candidates": [
+    {
+      "rows_per_program": 1,
+      "num_warps": 8,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.004297349050905577,
+        0.003790121688092495,
+        0.0037502463829344164,
+        0.003708665039639911
+      ],
+      "correctness": "pass",
+      "median_ms": 0.0037701840355134557,
+      "p95_across_trials_ms": 0.004297349050905577
+    },
+    {
+      "rows_per_program": 1,
+      "num_warps": 2,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.0037863226445673712,
+        0.0038308203398291748,
+        0.003819613471219605,
+        0.0038687469829622456
+      ],
+      "correctness": "pass",
+      "median_ms": 0.00382521690552439,
+      "p95_across_trials_ms": 0.0038687469829622456
+    },
+    {
+      "rows_per_program": 1,
+      "num_warps": 4,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.0038660784095364067,
+        0.003888081173001207,
+        0.0038366835474747335,
+        0.0037937388159454445
+      ],
+      "correctness": "pass",
+      "median_ms": 0.00385138097850557,
+      "p95_across_trials_ms": 0.003888081173001207
+    },
+    {
+      "rows_per_program": 2,
+      "num_warps": 2,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.003953498410647729,
+        0.003877198574079182,
+        0.003947789446588908,
+        0.003924705180240748
+      ],
+      "correctness": "pass",
+      "median_ms": 0.003936247313414828,
+      "p95_across_trials_ms": 0.003953498410647729
+    },
+    {
+      "rows_per_program": 2,
+      "num_warps": 8,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.004034218341303422,
+        0.0040745704464197,
+        0.004092449927960134,
+        0.0040704323880741775
+      ],
+      "correctness": "pass",
+      "median_ms": 0.004072501417246939,
+      "p95_across_trials_ms": 0.004092449927960134
+    },
+    {
+      "rows_per_program": 2,
+      "num_warps": 4,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.004168576805304127,
+        0.004139561100452955,
+        0.004179030766786244,
+        0.004157615588766825
+      ],
+      "correctness": "pass",
+      "median_ms": 0.004163096197035476,
+      "p95_across_trials_ms": 0.004179030766786244
+    },
+    {
+      "rows_per_program": 1,
+      "num_warps": 1,
+      "max_absolute_error": 9.5367431640625e-7,
+      "latency_ms": [
+        0.004781364162642181,
+        0.004126890592231465,
+        0.004177996270187444,
+        0.004155934520539069
+      ],
+      "correctness": "pass",
+      "median_ms": 0.004166965395363257,
+      "p95_across_trials_ms": 0.004781364162642181
+    },
+    {
+      "rows_per_program": 4,
+      "num_warps": 8,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.0044162338747031505,
+        0.004375494385489019,
+        0.004371926037233267,
+        0.004369565355519392
+      ],
+      "correctness": "pass",
+      "median_ms": 0.004373710211361143,
+      "p95_across_trials_ms": 0.0044162338747031505
+    },
+    {
+      "rows_per_program": 4,
+      "num_warps": 4,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.004370576352737963,
+        0.004381681326192475,
+        0.004364491905108162,
+        0.00440244964981309
+      ],
+      "correctness": "pass",
+      "median_ms": 0.0043761288394652195,
+      "p95_across_trials_ms": 0.00440244964981309
+    },
+    {
+      "rows_per_program": 4,
+      "num_warps": 2,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.004770070909302386,
+        0.00478343452215909,
+        0.004768664146954323,
+        0.00478332742477237
+      ],
+      "correctness": "pass",
+      "median_ms": 0.0047766991670373776,
+      "p95_across_trials_ms": 0.00478343452215909
+    },
+    {
+      "rows_per_program": 8,
+      "num_warps": 8,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.005008989046714572,
+        0.005009260889309556,
+        0.005010010010033996,
+        0.005016146471285022
+      ],
+      "correctness": "pass",
+      "median_ms": 0.005009635449671776,
+      "p95_across_trials_ms": 0.005016146471285022
+    },
+    {
+      "rows_per_program": 2,
+      "num_warps": 1,
+      "max_absolute_error": 9.5367431640625e-7,
+      "latency_ms": [
+        0.005086401009832356,
+        0.005089376677019486,
+        0.005085329855642011,
+        0.005095926550251805
+      ],
+      "correctness": "pass",
+      "median_ms": 0.005087888843425922,
+      "p95_across_trials_ms": 0.005095926550251805
+    },
+    {
+      "rows_per_program": 8,
+      "num_warps": 4,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.005556661317135579,
+        0.005557115037167276,
+        0.005558113063442931,
+        0.005563353618973607
+      ],
+      "correctness": "pass",
+      "median_ms": 0.005557614050305104,
+      "p95_across_trials_ms": 0.005563353618973607
+    },
+    {
+      "rows_per_program": 4,
+      "num_warps": 1,
+      "max_absolute_error": 9.5367431640625e-7,
+      "latency_ms": [
+        0.009705781784495809,
+        0.00972689112615778,
+        0.00969371716604916,
+        0.009707392348408844
+      ],
+      "correctness": "pass",
+      "median_ms": 0.009706587066452325,
+      "p95_across_trials_ms": 0.00972689112615778
+    },
+    {
+      "rows_per_program": 8,
+      "num_warps": 2,
+      "max_absolute_error": 4.76837158203125e-7,
+      "latency_ms": [
+        0.03871924680822036,
+        0.03873011315157669,
+        0.038561016863042655,
+        0.03871627176280344
+      ],
+      "correctness": "pass",
+      "median_ms": 0.038717759285511896,
+      "p95_across_trials_ms": 0.03873011315157669
+    },
+    {
+      "rows_per_program": 8,
+      "num_warps": 1,
+      "max_absolute_error": 9.5367431640625e-7,
+      "latency_ms": [
+        0.07731876158982182,
+        0.07731865536082874,
+        0.07732509790464889,
+        0.0773813355136925
+      ],
+      "correctness": "pass",
+      "median_ms": 0.07732192974723535,
+      "p95_across_trials_ms": 0.0773813355136925
+    }
+  ],
+  "failures": [],
+  "best_in_sample": {
+    "rows_per_program": 1,
+    "num_warps": 8,
+    "median_ms": 0.0037701840355134557,
+    "speedup_vs_compiled": 0.9493580100078545,
+    "speedup_vs_legacy": 1.0154739211781292
+  }
+}

@@ -91,3 +91,7 @@ Scripts fail if Nsight tools or CUDA runtime are unavailable; trace artifacts st
 - Logs and results with tokens, credentials or private inputs must not be committed.
 
 See [GPU measurements and corrected fused-baseline comparisons](docs/RESULTS_2026-10-26.md), [docs/ISSUES_SOLUTIONS.md](docs/ISSUES_SOLUTIONS.md) and [docs/ROADMAP.md](docs/ROADMAP.md).
+
+### RMSNorm configuration search
+
+See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS.md): grouped-row scheduling did not produce general improvement; do not use it as a default kernel policy.

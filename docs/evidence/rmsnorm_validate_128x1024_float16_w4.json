@@ -1,0 +1,82 @@
+{
+  "status": "measured",
+  "kind": "rmsnorm_configuration_sweep",
+  "experimental_not_deployed": true,
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:39:16.174794+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "db191d5b2d33ef64bb5077544ce7291d8d89dc89",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "triton_version": "3.6.0",
+  "tensor": {
+    "rows": 128,
+    "cols": 1024,
+    "dtype": "float16",
+    "eps": 0.000001
+  },
+  "parameters": {
+    "seed": 3571,
+    "trials": 5,
+    "rep_ms": 50,
+    "num_warps": [
+      4
+    ],
+    "rows_per_program": [
+      1
+    ],
+    "timing_method": "triton.testing.do_bench_cudagraph"
+  },
+  "baselines": {
+    "compiled_torch_ms_by_trial": [
+      0.0013309181023694202,
+      0.0012858825113740498,
+      0.0012858702476837135,
+      0.0012856357649535318,
+      0.0011342167854309082
+    ],
+    "legacy_triton_ms_by_trial": [
+      0.0013057484836159591,
+      0.0013054106754289614,
+      0.0012616397843319056,
+      0.0012618458853739791,
+      0.0011181353314648579
+    ],
+    "compiled_torch_median_ms": 0.0012858702476837135,
+    "legacy_triton_median_ms": 0.0012618458853739791
+  },
+  "candidates": [
+    {
+      "rows_per_program": 1,
+      "num_warps": 4,
+      "max_absolute_error": 0.00048828125,
+      "latency_ms": [
+        0.0013165948482660146,
+        0.0013090304658310739,
+        0.001264070127221391,
+        0.0012641335937386027,
+        0.001119276346097107
+      ],
+      "correctness": "pass",
+      "median_ms": 0.0012641335937386027,
+      "p95_across_trials_ms": 0.0013165948482660146
+    }
+  ],
+  "failures": [],
+  "best_in_sample": {
+    "rows_per_program": 1,
+    "num_warps": 4,
+    "median_ms": 0.0012641335937386027,
+    "speedup_vs_compiled": 1.0171949025425595,
+    "speedup_vs_legacy": 0.9981902954118498
+  }
+}
