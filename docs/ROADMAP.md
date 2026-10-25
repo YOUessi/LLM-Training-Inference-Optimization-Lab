@@ -30,3 +30,9 @@
 
 ## Go/no-go
 A milestone is PASS only with real logs, reproducible command, source commit and artifact. Missing GPU/driver/toolchain = BLOCKED, not PASS.
+
+## 2026-10-26 additional work
+- [x] Grouped RMSNorm config sweep: in-sample candidates and held-out shapes measured; no broad win, no default dispatch change.
+- [x] Local-only serving runbook and warmup-enabled SSE request benchmark prepared.
+- [ ] vLLM runtime: isolated Tang environment installation in progress; do not claim live service until actual requests pass.
+- [ ] Torch profiler diagnostic run as a temporary substitute for missing Nsight; cannot infer occupancy or DRAM bandwidth.

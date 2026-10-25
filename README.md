@@ -95,3 +95,8 @@ See [GPU measurements and corrected fused-baseline comparisons](docs/RESULTS_202
 ### RMSNorm configuration search
 
 See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS.md): grouped-row scheduling did not produce general improvement; do not use it as a default kernel policy.
+
+### Deployment and profiling
+
+- [Loopback-only vLLM server and workload procedure](docs/VLLM_RUNBOOK.md).
+- [Experimental Torch profiler](src/llm_opt_lab/kernels/profile_rmsnorm.py) while Nsight hardware counters are unavailable.

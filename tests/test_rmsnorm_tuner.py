@@ -20,3 +20,15 @@ class TunerArgsTests(unittest.TestCase):
             with self.subTest(opts=opts):
                 with self.assertRaises(SystemExit):
                     parse_args(opts)
+
+
+class ProfilerArgsTests(unittest.TestCase):
+    def test_profiling_without_cuda_parse(self):
+        from llm_opt_lab.kernels.profile_rmsnorm import parse_args
+        a = parse_args(["--rows", "256", "--cols", "4096", "--steps", "5"])
+        self.assertEqual(a.steps, 5)
+
+    def test_profiling_rejects_invalid_shape(self):
+        from llm_opt_lab.kernels.profile_rmsnorm import parse_args
+        with self.assertRaises(SystemExit):
+            parse_args(["--cols", "0"])

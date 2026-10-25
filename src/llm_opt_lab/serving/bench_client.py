@@ -140,6 +140,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--model", required=True, help="Exactly the loaded model ID from vLLM")
     p.add_argument("--prompt", default="What is a transformer architecture?")
     p.add_argument("--requests", type=int, default=24)
+    p.add_argument("--warmup-requests", type=int, default=2,
+                   help="Sequential warmup requests excluded from metrics")
     p.add_argument("--concurrency", type=int, default=4)
     p.add_argument("--max-tokens", type=int, default=128)
     p.add_argument("--timeout", type=float, default=90.0)
@@ -148,6 +150,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     args = p.parse_args(argv)
     if any(x <= 0 for x in (args.requests,args.concurrency,args.max_tokens,args.timeout)):
         p.error("requests/concurrency/max-tokens/timeout must be positive")
+    if args.warmup_requests < 0:
+        p.error("warmup-requests must be nonnegative")
     return args
 
 
@@ -157,6 +161,15 @@ def main(argv: list[str] | None = None) -> int:
         endpoint = _endpoint(args.base_url)
     except ValueError as exc:
         print(f"BLOCKED: {exc}", file=sys.stderr)
+        return 2
+    warmup = [
+        _request(-(i + 1), endpoint=endpoint, model=args.model,
+                 prompt=args.prompt, max_tokens=args.max_tokens,
+                 timeout=args.timeout, seed=args.seed)
+        for i in range(args.warmup_requests)
+    ]
+    if any(r["status"] != "ok" for r in warmup):
+        print("BLOCKED: serving endpoint failed warmup requests", file=sys.stderr)
         return 2
     begin = time.perf_counter()
     with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
@@ -171,6 +184,8 @@ def main(argv: list[str] | None = None) -> int:
         "kind": "serving_sse_benchmark",
         "config": {"base_url": args.base_url, "model": args.model,
                    "prompt_chars": len(args.prompt), "requests": args.requests,
+                   "warmup_requests": args.warmup_requests,
+                   "warmup_not_included_in_metrics": True,
                    "concurrency": args.concurrency, "max_tokens": args.max_tokens,
                    "timeout_seconds": args.timeout, "seed": args.seed},
         "environment": environment(),
