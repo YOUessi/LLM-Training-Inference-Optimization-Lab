@@ -63,3 +63,18 @@ and P95 TTFT need an actually loaded model and requests on Tang.
 On Tang the existing Torch is `2.10.0+cu128`, Triton `3.6.0`, NVIDIA driver `580.178.04`. Public PyPI metadata says `vllm==0.19.1` requires `torch==2.10.0`, while `vllm==0.31.0` requires `torch==2.13.0` and pulls newer CUDA 13 packages. An unfinished 0.31 download was aborted and its *newly created* environment replaced.
 
 The pinned 0.19.1 environment still requires end-to-end import/server validation; the version choice alone does **not** prove functionality.
+
+## Network downloads and verified wheels
+
+If pip's default 15-second read timeout interrupts the large vLLM wheel download:
+
+```bash
+bash scripts/download_vllm_wheel.sh
+# After SHA256_OK, install from the verified local wheel:
+"$HOME/conda_env/llm-opt-serving/bin/python" -m pip install \
+  --timeout 180 --retries 6 \
+  "results/vendor/vllm-0.19.1-cp38-abi3-manylinux_2_31_x86_64.whl" \
+  --extra-index-url https://download.pytorch.org/whl/cu128
+```
+
+The pinned wheel SHA-256 is `71a87f46cafab4489c69a5c5c83b870d0235e5694d8222303d460576293dc719`, read from PyPI's 0.19.1 release metadata. The existing system Torch 2.10.0+cu128 is read-only to the venv; this is not a claim that all environment dependencies are independently isolated. If network installation fails, report BLOCKED, not a successful serving experiment.

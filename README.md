@@ -102,3 +102,5 @@ See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS
 - [Experimental Torch profiler](src/llm_opt_lab/kernels/profile_rmsnorm.py) while Nsight hardware counters are unavailable.
 
 - [Sequential vLLM concurrency sweeps](src/llm_opt_lab/serving/sweep.py) avoid overlapping loads; warmup and provider token usage are tracked.
+
+- [Pinned resumable vLLM wheel download](scripts/download_vllm_wheel.sh) (SHA-256 verified, Tang only).
