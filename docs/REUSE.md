@@ -16,4 +16,4 @@
 
 All initial lab source files are independently authored. No existing repository file has been copied into this scaffold. If code is later copied, record: original URL, full SHA, exact paths, license, changes, tests, and measured outcomes **before** merging.
 
-Two GitHub repositories remain unchanged. A GitHub repo for this lab requires creation if the connected tooling lacks repository-creation permission; until then, this is a local Git repository.
+Two GitHub repositories remain unchanged. The new public repository was created at https://github.com/YOUessi/LLM-Training-Inference-Optimization-Lab; Mac is the development workspace and GitHub is the authoritative source repository. Tang is used only for actual GPU experiments.

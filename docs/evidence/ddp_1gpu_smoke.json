@@ -1,0 +1,40 @@
+{
+  "status": "measured",
+  "kind": "synthetic_ddp_training",
+  "not_an_llm_training_result": true,
+  "config": {
+    "world_size": 1,
+    "device": "cuda",
+    "backend": "nccl",
+    "completed_steps": 10,
+    "steps_measured": 10,
+    "batch_size_per_rank": 16,
+    "features": 128,
+    "hidden": 256,
+    "lr": 0.001,
+    "seed": 2026,
+    "resumed": false
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:20:47.624205+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "9a84d5a596be3c354f1c2dc44bfc7c5b325aca3d",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "results": {
+    "last_loss": 0.24955222010612488,
+    "median_local_step_ms": 1.2190684997221979,
+    "p95_local_step_ms": 151.25933300032557,
+    "slowest_rank_total_step_time_s": 0.16243521800015515,
+    "throughput_samples_per_s": 985.008066414804
+  }
+}

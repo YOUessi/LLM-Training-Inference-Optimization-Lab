@@ -7,8 +7,8 @@
 - [x] Mac Python 3.12: 24/24 CPU unit tests green; Python compileall and bash -n green (2026-10-26).
 
 ## M1 — GPU kernel performance
-- [ ] CUDA/Triton available and GPU environment recorded.
-- [ ] RMSNorm and Softmax pass torch reference for FP16/FP32 at multiple widths.
+- [x] CUDA/Triton available on Tang 4090 Laptop; environment and exact versions recorded.
+- [x] RMSNorm and Softmax passed PyTorch reference FP16/FP32 on five shapes; see RESULTS_2026-10-26.md.
 - [ ] Track max absolute error, perf latency and pinned shapes; do not claim speedup without warmup and GPU synchronization.
 
 ## M2 — Serving on vLLM
@@ -22,8 +22,8 @@
 - [ ] Link identified bottleneck to source line/kernel and quantify any fix.
 
 ## M4 — Distributed training
-- [ ] Single process CPU smoke.
-- [ ] Two-GPU DDP benchmark and checkpoint/restart verification.
+- [x] Single-process CPU smoke (3 steps) on Tang.
+- [ ] Two-GPU DDP benchmark blocked: Tang currently exposes one 4090 Laptop GPU; single-GPU DDP + checkpoint creation passed, restart check pending.
 - [ ] A separate, properly sharded FSDP baseline (not inferred from DDP).
 - [ ] Quantify token/s or samples/s; synthetic MLP benchmark is infrastructure smoke, not a trained LLM.
 
