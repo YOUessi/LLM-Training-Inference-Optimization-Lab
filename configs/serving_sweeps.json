@@ -1,0 +1,12 @@
+{
+  "description": "Candidate vLLM serving sweep, not measured performance",
+  "requests": 24,
+  "max_tokens": 128,
+  "concurrency": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "notes": "Hold model/tokenizer/request distribution constant and record prefix-cache hits and usage coverage."
+}

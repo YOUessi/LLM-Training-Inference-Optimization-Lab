@@ -1,0 +1,31 @@
+{
+  "description": "Candidate workloads, not measured performance",
+  "seed": 42,
+  "cases": [
+    {
+      "rows": 128,
+      "cols": 768,
+      "dtype": "float16"
+    },
+    {
+      "rows": 128,
+      "cols": 1024,
+      "dtype": "float16"
+    },
+    {
+      "rows": 128,
+      "cols": 4096,
+      "dtype": "float16"
+    },
+    {
+      "rows": 256,
+      "cols": 4096,
+      "dtype": "float32"
+    },
+    {
+      "rows": 32,
+      "cols": 8192,
+      "dtype": "float16"
+    }
+  ]
+}
