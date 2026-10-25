@@ -104,3 +104,5 @@ See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS
 - [Sequential vLLM concurrency sweeps](src/llm_opt_lab/serving/sweep.py) avoid overlapping loads; warmup and provider token usage are tracked.
 
 - [Pinned resumable vLLM wheel download](scripts/download_vllm_wheel.sh) (SHA-256 verified, Tang only).
+
+- [Offline Qwen2.5 generation benchmark (not vLLM)](src/llm_opt_lab/serving/hf_baseline.py): fallback when network wheel downloads fail, logs real GPU wall time and peak allocated memory.

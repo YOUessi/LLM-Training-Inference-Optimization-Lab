@@ -78,3 +78,23 @@ bash scripts/download_vllm_wheel.sh
 ```
 
 The pinned wheel SHA-256 is `71a87f46cafab4489c69a5c5c83b870d0235e5694d8222303d460576293dc719`, read from PyPI's 0.19.1 release metadata. The existing system Torch 2.10.0+cu128 is read-only to the venv; this is not a claim that all environment dependencies are independently isolated. If network installation fails, report BLOCKED, not a successful serving experiment.
+
+## Offline PyTorch fallback (NOT vLLM)
+
+When PyPI wheel downloads are blocked by TLS timeouts or severe throttling, do **not**
+report a successful vLLM deployment. Tang already has cached
+`Qwen2.5-1.5B-Instruct`, PyTorch and Transformers, allowing a separate
+**real-model generation baseline**:
+
+```bash
+PYTHONPATH=src python3 -m llm_opt_lab.serving.hf_baseline \
+  --batch-sizes 1,2,4 --repeats 3 --max-new-tokens 32 \
+  --output results/hf_offline_baseline.json
+```
+
+The baseline reports full generation wall time, true emitted token counts
+(until EOS), output-token throughput, request throughput and peak GPU memory.
+The timing intentionally excludes tokenization and captures prefill + decode
+together. **TTFT and TPOT remain null.** It is not a server,
+has no dynamic batching/scheduler, and should never be compared to vLLM
+as if the concurrency semantics were identical.
