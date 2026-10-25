@@ -28,6 +28,20 @@ PYTHONPATH=src python3 -m llm_opt_lab.serving.bench_client \
 # Repeat using the identical request distribution at concurrency 2 and 4.
 ```
 
+Or use the reproducible sequential concurrency sweep (includes two per-case warmup requests):
+
+```bash
+PYTHONPATH=src python3 -m llm_opt_lab.serving.sweep \
+  --base-url http://127.0.0.1:8026 \
+  --model qwen2.5-1.5b-instruct-local \
+  --requests 24 --warmup-requests 2 --concurrency 1,2,4 \
+  --max-tokens 128 --output-dir results/vllm_sweep_20261026
+```
+
+The sweep writes one raw JSON per concurrency setting and a derived summary,
+aborting if a prior workload fails. Records keep the model and configuration;
+they never store response text or API authentication headers.
+
 Environment and metrics are committed only after actual successful service requests.
 `completion_tokens` must come from provider usage; missing usage => TPOT and tokens/sec are null.
 Track model revision, PyTorch/CUDA/vLLM versions and hardware for every run.
