@@ -61,6 +61,20 @@ class EvidenceIntegrityTests(unittest.TestCase):
                 self.assertTrue(all(r["correctness"] == "pass" for r in d["candidates"]))
                 self.assertEqual(len(d["candidates"]), 16 if path in tune else 1)
 
+    def test_offline_inference_evidence_is_not_mislabeled_as_vllm(self):
+        report = read_strict(EVIDENCE / "hf_offline_qwen2_5_1_5b.json")
+        self.assertEqual(report["status"], "measured")
+        self.assertEqual(report["kind"],
+                         "offline_pytorch_transformers_generation_not_vllm")
+        self.assertEqual([r["batch_size"] for r in report["results"]], [1, 2, 4])
+        self.assertTrue(report["environment"]["cuda_available"])
+        for row in report["results"]:
+            self.assertGreater(row["p50_latency_ms"], 0)
+            self.assertGreater(row["total_output_tokens_per_second"], 0)
+            self.assertGreater(row["max_peak_allocated_gib"], 0)
+            self.assertIsNone(row["ttft_ms"])
+            self.assertIsNone(row["tpot_ms"])
+
     def test_profiler_does_not_claim_nsight_hardware_counters(self):
         p = read_strict(EVIDENCE / "rmsnorm_profiler_256x4096_f32.json")
         self.assertTrue(p["not_nsight_hardware_counters"])

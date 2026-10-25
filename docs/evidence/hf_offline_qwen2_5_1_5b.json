@@ -1,0 +1,118 @@
+{
+  "status": "measured",
+  "kind": "offline_pytorch_transformers_generation_not_vllm",
+  "model": {
+    "id": "Qwen2.5-1.5B-Instruct",
+    "hf_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "weights": "local_files_only"
+  },
+  "experiment": {
+    "batch_sizes": [
+      1,
+      2,
+      4
+    ],
+    "max_new_tokens": 32,
+    "repeats": 3,
+    "warmup": 1,
+    "seed": 42,
+    "prompt_sha256": "a316bdb3ec64214152daa09c3efe0507f8767207a3d0f7544a6ea2fb96514fdc",
+    "timing_excludes_tokenization": true,
+    "timing_includes_prefill_and_decode": true
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-25T22:13:52.903543+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "41ba7eff9bf8e5d2b5594f0ebbe6ae7f02dfd9b6",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "results": [
+    {
+      "batch_size": 1,
+      "input_tokens_per_request_padded": 57,
+      "latency_ms_per_trial": [
+        280.7207159994505,
+        280.3298740000173,
+        283.5275509996791
+      ],
+      "actual_output_tokens_per_trial": [
+        32,
+        32,
+        32
+      ],
+      "gpu_peak_allocated_bytes_per_trial": [
+        3103348224,
+        3103349248,
+        3103349248
+      ],
+      "p50_latency_ms": 280.7207159994505,
+      "p95_latency_ms": 283.2468674996562,
+      "total_output_tokens_per_second": 113.66621433800164,
+      "requests_per_second": 3.552069198062551,
+      "max_peak_allocated_gib": 2.890219211578369,
+      "ttft_ms": null,
+      "tpot_ms": null
+    },
+    {
+      "batch_size": 2,
+      "input_tokens_per_request_padded": 57,
+      "latency_ms_per_trial": [
+        296.978350000245,
+        295.7349479993354,
+        295.9288629999719
+      ],
+      "actual_output_tokens_per_trial": [
+        64,
+        64,
+        64
+      ],
+      "gpu_peak_allocated_bytes_per_trial": [
+        3109087744,
+        3109088256,
+        3109088256
+      ],
+      "p50_latency_ms": 295.9288629999719,
+      "p95_latency_ms": 296.87340130021767,
+      "total_output_tokens_per_second": 216.05997152333708,
+      "requests_per_second": 6.751874110104284,
+      "max_peak_allocated_gib": 2.895564079284668,
+      "ttft_ms": null,
+      "tpot_ms": null
+    },
+    {
+      "batch_size": 4,
+      "input_tokens_per_request_padded": 57,
+      "latency_ms_per_trial": [
+        304.30634200001805,
+        303.9308549996349,
+        304.18286599979183
+      ],
+      "actual_output_tokens_per_trial": [
+        128,
+        128,
+        128
+      ],
+      "gpu_peak_allocated_bytes_per_trial": [
+        3119834624,
+        3119836160,
+        3119836160
+      ],
+      "p50_latency_ms": 304.18286599979183,
+      "p95_latency_ms": 304.2939943999954,
+      "total_output_tokens_per_second": 420.8587859605556,
+      "requests_per_second": 13.151837061267363,
+      "max_peak_allocated_gib": 2.905573844909668,
+      "ttft_ms": null,
+      "tpot_ms": null
+    }
+  ]
+}

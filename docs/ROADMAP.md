@@ -38,4 +38,4 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Torch profiler diagnostic completed for 256×4096 FP32; source commit and sanitized operator table recorded. **Nsight remains pending**, no occupancy/DRAM claims.
 
 - [ ] vLLM service: **BLOCKED by wheel download**, not a completed inference benchmark.
-- [ ] Separate offline Hugging Face GPU baseline: script ready; only mark complete after real Tang run.
+- [x] Separate offline Hugging Face GPU baseline: real Qwen2.5-1.5B inference measured at batch sizes 1,2,4; see RESULTS_2026-10-26.md. **Still not vLLM.**
