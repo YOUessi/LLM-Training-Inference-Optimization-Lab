@@ -1,0 +1,227 @@
+{
+  "status": "measured",
+  "kind": "torch_profiler_kernel_diagnostic",
+  "not_nsight_hardware_counters": true,
+  "configuration": {
+    "rows": 256,
+    "cols": 4096,
+    "dtype": "float32",
+    "steps": 20,
+    "warmup": 5,
+    "num_warps": 8
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:50:55.963005+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "0d3b3193bc65ef5de910f271859fca52787a1763",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "profile": {
+    "torch_inductor": {
+      "top_by_self_device_time": [
+        {
+          "operator": "triton_red_fused_add_mean_mul_pow_rsqrt_0",
+          "call_count": 20,
+          "self_device_time_us": 90.46599999999944,
+          "total_device_time_us": 90.46599999999944,
+          "self_cpu_time_us": 150.0790000000029
+        },
+        {
+          "operator": "triton_red_fused_add_mean_mul_pow_rsqrt_0",
+          "call_count": 20,
+          "self_device_time_us": 90.46599999999944,
+          "total_device_time_us": 90.46599999999944,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "## Call CompiledFxGraph fjg3s7arbcrptzmxeaymasjg4mvjpo7hcmhhcow2nahtwygdbfb3 ##",
+          "call_count": 20,
+          "self_device_time_us": 90.46599999999944,
+          "total_device_time_us": 90.46599999999944,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "TorchDynamo Cache Lookup",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 93.16499999999905
+        },
+        {
+          "operator": "Torch-Compiled Region: 0/0",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 90.46599999999944,
+          "self_cpu_time_us": 449.1680000000042
+        },
+        {
+          "operator": "Pregraph bytecode",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 34.347000000000435
+        },
+        {
+          "operator": "AOTDispatcher Runtime Wrapper Prologue",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 3058.522999999997
+        },
+        {
+          "operator": "## Call CompiledFxGraph fjg3s7arbcrptzmxeaymasjg4mvjpo7hcmhhcow2nahtwygdbfb3 ##",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 90.46599999999944,
+          "self_cpu_time_us": 851.7799999999975
+        },
+        {
+          "operator": "Activity Buffer Request",
+          "call_count": 1,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 1378.3500000000001
+        },
+        {
+          "operator": "cuLaunchKernel",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 86.69199999999842
+        },
+        {
+          "operator": "[memory]",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "cudaDeviceSynchronize",
+          "call_count": 2,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 5.414999999999964
+        }
+      ],
+      "operator_count": 12
+    },
+    "triton_original": {
+      "top_by_self_device_time": [
+        {
+          "operator": "_rmsnorm_kernel",
+          "call_count": 20,
+          "self_device_time_us": 92.54500000000053,
+          "total_device_time_us": 92.54500000000053,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "aten::empty_like",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 859.6850000000003
+        },
+        {
+          "operator": "aten::empty_strided",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 71.23199999999986
+        },
+        {
+          "operator": "Activity Buffer Request",
+          "call_count": 1,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 1435.2920000000001
+        },
+        {
+          "operator": "cuLaunchKernelEx",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 70.28900000000158
+        },
+        {
+          "operator": "[memory]",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "cudaDeviceSynchronize",
+          "call_count": 2,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 7.443000000000211
+        }
+      ],
+      "operator_count": 7
+    },
+    "triton_row1_warps": {
+      "top_by_self_device_time": [
+        {
+          "operator": "_rmsnorm_grouped_kernel",
+          "call_count": 20,
+          "self_device_time_us": 92.64200000000096,
+          "total_device_time_us": 92.64200000000096,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "aten::empty_like",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 20.68200000000111
+        },
+        {
+          "operator": "aten::empty_strided",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 49.349999999999355
+        },
+        {
+          "operator": "Activity Buffer Request",
+          "call_count": 1,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 1099.218
+        },
+        {
+          "operator": "cuLaunchKernelEx",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 48.21399999999949
+        },
+        {
+          "operator": "[memory]",
+          "call_count": 20,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 0
+        },
+        {
+          "operator": "cudaDeviceSynchronize",
+          "call_count": 2,
+          "self_device_time_us": 0,
+          "total_device_time_us": 0,
+          "self_cpu_time_us": 4.397000000000162
+        }
+      ],
+      "operator_count": 7
+    }
+  }
+}

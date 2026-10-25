@@ -50,3 +50,19 @@ The 1.08× FP16 midwidth result is small and hardware/timing-sensitive. It is in
 - The small absolute microsecond times are CUDA-graph device timings, not Python launch latency or full model tokens/sec.
 - Without Nsight Compute occupancy/DRAM counters, the mechanism of loss vs Inductor is not fully established.
 - A higher-value next milestone is actual vLLM service request latency and throughput, then operator profiling.
+
+## GPU operator trace (torch.profiler; NOT Nsight)
+
+Real Tang execution at **256×4096 FP32, 20 profiled invocations**, Python CUDA profiler:
+
+| Approach | Observed primary device kernel | Self device time across 20 invocations* |
+|---|---|---:|
+| torch_inductor | `triton_red_fused_add_mean_mul_pow_rsqrt_0` | 90.5 µs |
+| triton_original | `_rmsnorm_kernel` | 92.5 µs |
+| triton_row1_warps | `_rmsnorm_grouped_kernel` | 92.6 µs |
+
+*Primary kernel event only: Torch profiler also emits nested compiled-region aggregates; **do not add them** or treat this as a clean independent latency benchmark.
+
+Compiled Torch emits a single fused Triton reduction kernel rather than the separate eager ops. Original and grouped custom implementations also emit one kernel. **No hardware occupancy, memory bandwidth, cache hit or register-spill counters are available**, because Nsight Compute/Systems are missing on Tang.
+
+Raw sanitized summary: [`rmsnorm_profiler_256x4096_f32.json`](evidence/rmsnorm_profiler_256x4096_f32.json). Source commit `0d3b319`.

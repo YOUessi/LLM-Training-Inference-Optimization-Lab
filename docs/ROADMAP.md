@@ -35,4 +35,4 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Grouped RMSNorm config sweep: in-sample candidates and held-out shapes measured; no broad win, no default dispatch change.
 - [x] Local-only serving runbook and warmup-enabled SSE request benchmark prepared.
 - [ ] vLLM runtime: isolated Tang environment installation in progress; do not claim live service until actual requests pass.
-- [ ] Torch profiler diagnostic run as a temporary substitute for missing Nsight; cannot infer occupancy or DRAM bandwidth.
+- [x] Torch profiler diagnostic completed for 256×4096 FP32; source commit and sanitized operator table recorded. **Nsight remains pending**, no occupancy/DRAM claims.
