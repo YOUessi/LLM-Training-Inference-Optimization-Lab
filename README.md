@@ -90,4 +90,4 @@ Scripts fail if Nsight tools or CUDA runtime are unavailable; trace artifacts st
 - Avoid modifying the two upstream projects; link or explicitly vendor pinned pieces only after a review.
 - Logs and results with tokens, credentials or private inputs must not be committed.
 
-See [docs/ISSUES_SOLUTIONS.md](docs/ISSUES_SOLUTIONS.md) and [docs/ROADMAP.md](docs/ROADMAP.md).
+See [GPU measurements and corrected fused-baseline comparisons](docs/RESULTS_2026-10-26.md), [docs/ISSUES_SOLUTIONS.md](docs/ISSUES_SOLUTIONS.md) and [docs/ROADMAP.md](docs/ROADMAP.md).

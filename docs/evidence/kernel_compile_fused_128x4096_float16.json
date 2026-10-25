@@ -1,0 +1,74 @@
+{
+  "status": "measured",
+  "kind": "gpu_kernel_benchmark",
+  "tensor": {
+    "rows": 128,
+    "cols": 4096,
+    "dtype": "float16",
+    "eps": 0.000001
+  },
+  "seed": 42,
+  "timing": {
+    "warmup_ms": 75,
+    "rep_ms": 150
+  },
+  "triton_version": "3.6.0",
+  "compiled_baseline_requested": true,
+  "environment": {
+    "timestamp_utc": "2026-10-25T21:29:01.496110+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "36766e8bae3e427710000a8bd2115a8681a9f6fb",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "cases": {
+    "rmsnorm": {
+      "correctness": "pass",
+      "atol": 0.003,
+      "rtol": 0.003,
+      "max_absolute_error": 0.0009765625,
+      "torch": {
+        "median_ms": 0.03891199827194214,
+        "p95_ms": 0.0404479995369911
+      },
+      "triton": {
+        "median_ms": 0.008191999979317188,
+        "p95_ms": 0.009216000325977802
+      },
+      "median_speedup": 4.749999801048033,
+      "compiled_torch": {
+        "median_ms": 0.004095999989658594,
+        "p95_ms": 0.005119999870657921
+      },
+      "median_speedup_vs_compiled": 0.5
+    },
+    "softmax": {
+      "correctness": "pass",
+      "atol": 0.003,
+      "rtol": 0.003,
+      "max_absolute_error": 9.5367431640625e-7,
+      "torch": {
+        "median_ms": 0.01532800029963255,
+        "p95_ms": 0.01615040004253387
+      },
+      "triton": {
+        "median_ms": 0.004784000106155872,
+        "p95_ms": 0.005119999870657921
+      },
+      "median_speedup": 3.204013369462315,
+      "compiled_torch": {
+        "median_ms": 0.006144000217318535,
+        "p95_ms": 0.0071680000983178616
+      },
+      "median_speedup_vs_compiled": 1.2842809533830624
+    }
+  }
+}
