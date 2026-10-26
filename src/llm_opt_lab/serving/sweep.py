@@ -19,6 +19,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--model", required=True)
     parser.add_argument("--concurrency", default="1,2,4",
                         help="Comma-separated concurrency levels, sequentially executed")
+    parser.add_argument("--engine-label", choices=("vllm", "transformers_serialized", "other"), default="other")
     parser.add_argument("--requests", type=int, default=24)
     parser.add_argument("--warmup-requests", type=int, default=2)
     parser.add_argument("--max-tokens", type=int, default=128)
@@ -69,7 +70,8 @@ def main(argv: list[str] | None = None) -> int:
     success = len(cases) == len(a.concurrency) and all(c["returncode"] == 0 for c in cases)
     write_json_atomic(a.output_dir / "summary.json", {
         "status": "measured" if success else "partial_or_blocked",
-        "kind": "vllm_concurrency_sweep",
+        "kind": "openai_compatible_sse_concurrency_sweep",
+        "engine_label": a.engine_label,
         "environment": environment(),
         "model": a.model,
         "workload": {
