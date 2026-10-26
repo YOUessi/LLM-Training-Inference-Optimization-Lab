@@ -112,3 +112,7 @@ See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS
 ## Stage 2: exact restart and real SSE throughput (2026-10-26)
 
 [Full Stage 2 technical report](docs/STAGE2_REPORT_2026-10-26.md). Real CPU/GPU DDP Checkpoint V2 exact-resume validation passed and a loopback-only **Transformers** streaming service produced TTFT, client-estimated TPOT and output token throughput under 1/2/4 request concurrency. These are **not vLLM benchmarks**. Raw machine-generated evidence is under `docs/evidence/stage2_*` with a source-commit manifest.
+
+### Training infrastructure extension
+
+Real [single-GPU FSDP1 smoke](src/llm_opt_lab/training/fsdp_smoke.py) exercised 20 forward/backward/optimizer steps. World-size=1 selects NO_SHARD, not genuine distributed sharding. See [Stage 2 evidence](docs/STAGE2_REPORT_2026-10-26.md#4-real-pytorch-fsdp1-single-gpu-execution-no_shard).

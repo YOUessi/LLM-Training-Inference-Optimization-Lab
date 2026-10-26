@@ -26,6 +26,7 @@
 - [x] Single-process CPU smoke (3 steps) on Tang.
 - [x] Single-rank exact DDP restart PASS on CPU and one CUDA GPU (model, optimizer and per-rank RNG states), [Stage 2 report](STAGE2_REPORT_2026-10-26.md).
 - [ ] Two-GPU DDP scaling and restart still blocked: Tang exposes only one NVIDIA 4090 Laptop GPU.
+- [x] Real FSDP1 single-GPU smoke: 20 steps, effective NO_SHARD, [Stage2 report](STAGE2_REPORT_2026-10-26.md). Not distributed sharding.
 - [ ] A separate, properly sharded FSDP baseline (not inferred from DDP).
 - [ ] Quantify token/s or samples/s; synthetic MLP benchmark is infrastructure smoke, not a trained LLM.
 

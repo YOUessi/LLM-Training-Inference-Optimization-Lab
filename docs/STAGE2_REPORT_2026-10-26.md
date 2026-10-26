@@ -60,3 +60,21 @@ GitHub on Tang intermittently timed out on HTTPS; no source files were overwritt
 2. Run vLLM with the identical request set after a compatible isolated installation succeeds; report TTFT/TPOT/token throughput/memory, not extrapolations.
 3. Evaluate FSDP / two-rank DDP only where sufficient real GPU resources exist; preserve exact RNG and optimizer state across restart.
 4. Collect real Nsight occupancy/memory data when tools are available before changing Triton dispatch policy.
+
+## 4. Real PyTorch FSDP1 single-GPU execution (NO_SHARD)
+
+Source commit: `d41a4c2`. On Tang's RTX 4090 Laptop, FSDP1 executed 20 forward/backward/AdamW steps on a synthetic 128→256→128 MLP with batch size 16 and FP32 parameters.
+
+**Critical limitation:** PyTorch printed `FSDP is switching to use NO_SHARD` for world_size=1. This proves correct use of FSDP wrapping/training interfaces, **not actual parameter sharding, CPU offload, multi-GPU communication or FSDP scaling.**
+
+| Metric | FSDP1 (NO_SHARD, 1 GPU) | DDP (1 GPU, same tensor dimensions) |
+|---|---:|---:|
+| Median step (ms) | 2.092 | 0.559 |
+| Samples/s across 20 steps | 2148.4 | 2866.8 |
+| Last loss | 0.22457 | 0.22457 |
+
+FSDP-reported peak **Torch tensor allocated** GPU memory was **0.0181 GiB**, not the total GPU process memory seen by nvidia-smi. This small synthetic benchmark is not a representative LLM workload. Metrics include startup effects in each recorded run; single trial per method is not sufficient to claim one framework has general speed superiority.
+
+Raw evidence: [FSDP](evidence/stage2_fsdp_single_gpu.json), [same-shape DDP](evidence/stage2_ddp_single_gpu_reference.json).
+
+**Next gate:** genuine `FULL_SHARD` behavior and optimizer/checkpoint across at least two separate CUDA ranks. Tang currently has just one visible CUDA GPU, so that gate remains BLOCKED.
