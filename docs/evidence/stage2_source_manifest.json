@@ -1,0 +1,29 @@
+{
+  "schema": "stage2-experiment-provenance-v1",
+  "date": "2026-10-26",
+  "machine": "Tang, NVIDIA GeForce RTX 4090 Laptop GPU",
+  "experiment_git_head_at_execution": "1105581cb846317cbb739609772926d377765e13",
+  "source_provenance": {
+    "ddp_train_implementation_commit": "1105581cb846317cbb739609772926d377765e13",
+    "ddp_validation_script_commit": "eeca9cae82b6cefb14f6f072d62a55b1f2f4e9f0",
+    "ddp_validation_script_blob": "2fd1f941364f49df1dea36b15db377c429be1821",
+    "transformers_stream_server_commit": "780308d0788d8cd6fbe6d441d54f1e15ac68cc71",
+    "transformers_stream_server_blob": "8b805bf4d1a239a6167a312ff304d6ddd1f7322b",
+    "concurrency_sweep_label_fix_commit": "6382bc04ce0cbf0a70e3507a3d898e584f92f1d0",
+    "concurrency_sweep_blob": "a587ac006dd58285c95ddc6f0ec0a78497c42782"
+  },
+  "execution_mode": "Tang working Git repo remained clean at older HEAD; newer GitHub-authored source was copied to ignored results/source_snapshot folders and verified by git hash-object before execution",
+  "warnings": [
+    "Environment.git_commit records Tang's older worktree HEAD, not the effective source snapshot revision for SSE server and sweep.",
+    "Streaming engine is Transformers with serialized generation and no dynamic batching; no vLLM results.",
+    "DDP exact recovery is a world_size=1 synthetic MLP test only."
+  ],
+  "produced_files": [
+    "docs/evidence/stage2_stream_summary.json",
+    "docs/evidence/stage2_stream_c1.json",
+    "docs/evidence/stage2_stream_c2.json",
+    "docs/evidence/stage2_stream_c4.json",
+    "docs/evidence/stage2_ddp_cpu_resume.json",
+    "docs/evidence/stage2_ddp_cuda_resume.json"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "kind": "ddp_exact_resume_validation",
+  "not_an_llm_training_result": true,
+  "environment": {
+    "timestamp_utc": "2026-10-26T03:04:19.810856+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "1105581cb846317cbb739609772926d377765e13",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "configuration": {
+    "device": "cuda",
+    "world_size": 1,
+    "steps": 8,
+    "split": 3,
+    "batch_size": 16,
+    "features": 32,
+    "hidden": 64,
+    "seed": 2026
+  },
+  "subprocesses": [
+    {
+      "name": "full",
+      "returncode": 0
+    },
+    {
+      "name": "part",
+      "returncode": 0
+    },
+    {
+      "name": "resumed",
+      "returncode": 0
+    }
+  ],
+  "equality": {
+    "model": true,
+    "optimizer": true,
+    "per_rank_rng_states": true,
+    "model_sha256": true
+  },
+  "model_sha256_full": "170b68a38e93f445aa929303dc111a72a620f0c6776db4c009b807b9ce7732da",
+  "model_sha256_resumed": "170b68a38e93f445aa929303dc111a72a620f0c6776db4c009b807b9ce7732da",
+  "checkpoint_version": 2
+}

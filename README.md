@@ -108,3 +108,7 @@ See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS
 - [Offline Qwen2.5 generation benchmark (not vLLM)](src/llm_opt_lab/serving/hf_baseline.py): fallback when network wheel downloads fail, logs real GPU wall time and peak allocated memory.
 
 - [Measured 1.5B offline Qwen inference results](docs/RESULTS_2026-10-26.md#offline-real-model-inference-baseline-not-vllm). This is deliberately distinguished from vLLM Serving.
+
+## Stage 2: exact restart and real SSE throughput (2026-10-26)
+
+[Full Stage 2 technical report](docs/STAGE2_REPORT_2026-10-26.md). Real CPU/GPU DDP Checkpoint V2 exact-resume validation passed and a loopback-only **Transformers** streaming service produced TTFT, client-estimated TPOT and output token throughput under 1/2/4 request concurrency. These are **not vLLM benchmarks**. Raw machine-generated evidence is under `docs/evidence/stage2_*` with a source-commit manifest.

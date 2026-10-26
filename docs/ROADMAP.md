@@ -24,7 +24,8 @@
 
 ## M4 — Distributed training
 - [x] Single-process CPU smoke (3 steps) on Tang.
-- [ ] Two-GPU DDP benchmark blocked: Tang currently exposes one 4090 Laptop GPU; single-GPU DDP + checkpoint creation passed, restart check pending.
+- [x] Single-rank exact DDP restart PASS on CPU and one CUDA GPU (model, optimizer and per-rank RNG states), [Stage 2 report](STAGE2_REPORT_2026-10-26.md).
+- [ ] Two-GPU DDP scaling and restart still blocked: Tang exposes only one NVIDIA 4090 Laptop GPU.
 - [ ] A separate, properly sharded FSDP baseline (not inferred from DDP).
 - [ ] Quantify token/s or samples/s; synthetic MLP benchmark is infrastructure smoke, not a trained LLM.
 
@@ -39,3 +40,9 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 - [ ] vLLM service: **BLOCKED by wheel download**, not a completed inference benchmark.
 - [x] Separate offline Hugging Face GPU baseline: real Qwen2.5-1.5B inference measured at batch sizes 1,2,4; see RESULTS_2026-10-26.md. **Still not vLLM.**
+
+## Stage 2 — 2026-10-26 verified
+- [x] Real Transformers SSE server with corrected explicit `transformers_serialized` engine labeling, 24 streamed requests, valid token usage and reproducible summaries.
+- [x] DDP Checkpoint V2 deterministic CPU + CUDA 3+5 vs 8-step recovery with exact optimizer/model/RNG state equality.
+- [ ] vLLM live service remains blocked by binary wheel/network availability; do not conflate with Transformers SSE.
+- [ ] Mac local validation for Stage 2 pending because the remote Mac agent did not answer.

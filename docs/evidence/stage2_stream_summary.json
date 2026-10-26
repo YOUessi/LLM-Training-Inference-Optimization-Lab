@@ -1,0 +1,104 @@
+{
+  "status": "measured",
+  "kind": "openai_compatible_sse_concurrency_sweep",
+  "engine_label": "transformers_serialized",
+  "environment": {
+    "timestamp_utc": "2026-10-26T03:07:11.385666+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "1105581cb846317cbb739609772926d377765e13",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "model": "qwen2.5-1.5b-instruct-transformers-local",
+  "workload": {
+    "concurrency": [
+      1,
+      2,
+      4
+    ],
+    "requests_per_case": 8,
+    "warmup_per_case": 1,
+    "max_output_tokens": 32,
+    "seed": 42,
+    "request_prompts": "fixed template plus per-index task ID"
+  },
+  "cases": [
+    {
+      "concurrency": 1,
+      "returncode": 0,
+      "raw_file": "results/live_sse_6382bc0/bench/concurrency_1.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 1.6110927350018756,
+        "requests_per_second": 4.9655738780242755,
+        "p50_latency_ms": 201.74786149982538,
+        "p95_latency_ms": 209.6772309494554,
+        "p50_ttft_ms": 30.523277999236598,
+        "p95_ttft_ms": 39.400740351447894,
+        "p50_tpot_ms": 8.43823302511737,
+        "p95_tpot_ms": 8.697796870001184,
+        "output_tokens_per_second": 104.27705143850979,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 2,
+      "returncode": 0,
+      "raw_file": "results/live_sse_6382bc0/bench/concurrency_2.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 1.547488140000496,
+        "requests_per_second": 5.169668053157057,
+        "p50_latency_ms": 386.4648715007206,
+        "p95_latency_ms": 393.2420497005296,
+        "p50_ttft_ms": 215.39448499970604,
+        "p95_ttft_ms": 224.04822800071997,
+        "p50_tpot_ms": 8.429854175028595,
+        "p95_tpot_ms": 8.71890082257778,
+        "output_tokens_per_second": 108.5630291162982,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 4,
+      "returncode": 0,
+      "raw_file": "results/live_sse_6382bc0/bench/concurrency_4.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 1.5346766180009581,
+        "requests_per_second": 5.212824582172011,
+        "p50_latency_ms": 759.9432320021151,
+        "p95_latency_ms": 770.1909738992981,
+        "p50_ttft_ms": 592.1279480007797,
+        "p95_ttft_ms": 601.5055110487083,
+        "p50_tpot_ms": 8.431213375024527,
+        "p95_tpot_ms": 8.525379555039763,
+        "output_tokens_per_second": 109.46931622561223,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    }
+  ]
+}
