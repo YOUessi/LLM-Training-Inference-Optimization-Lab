@@ -43,6 +43,9 @@ class Stage7NaturalWorkloadTests(unittest.TestCase):
         self.assertEqual(GENERATION["short"]["max_new_tokens"],32)
         self.assertEqual(GENERATION["long"]["max_new_tokens"],128)
         self.assertGreaterEqual(GENERATION["long"]["min_mean_generated_tokens"],85)
+        # Offline Qwen calibration: corrected long directive fits the original gates.
+        self.assertLess(len(GENERATION["long"]["response_instruction"]),140)
+        self.assertIn("25 detailed numbered",GENERATION["long"]["response_instruction"])
 
     def test_bucket_fails_closed_for_invalid_provider_tokens(self):
         cases=[]

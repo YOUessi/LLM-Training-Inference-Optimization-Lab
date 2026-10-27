@@ -45,11 +45,8 @@ GENERATION: dict[str, dict[str, Any]] = {
         "max_new_tokens": 128,
         "min_mean_generated_tokens": 85,
         "response_instruction": (
-            "Produce a detailed numbered analysis of at least 20 separate "
-            "observations grounded in the passage. Explain what the text "
-            "describes, who or what it discusses, setting, evidence, uncertainty "
-            "and implications. Continue with multiple observations instead of "
-            "ending after one short sentence; use the available output budget."
+            "List at least 25 detailed numbered observations grounded in the excerpt. "
+            "Continue until the output limit."
         ),
     },
 }

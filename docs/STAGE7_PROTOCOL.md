@@ -88,3 +88,30 @@ launcher owns and cleans up only the vLLM process it creates.
 The raw model text is not stored in results: passages are pinned in the repo.
 The complete raw results, failure modes and SHA256 should then be archived
 in GitHub only **after** all gates pass.
+
+## Amendment A — rejected long-mode input-token gate, 2026-10-28
+
+Original experiment source commit e214c39777632a74fd6497bafeb7291d51aa9233:
+short-response cases for seed 42, concurrency 1/2/4/8 succeeded; the first
+long-response case at concurrency 1 had **short-bucket actual input tokens
+207–269**, exceeding the preregistered ceiling 240. All 24 long requests
+succeeded and generated mean 128 tokens, but the case correctly recorded
+status invalid_or_blocked and aborted the suite.
+
+**Cause:** the long response instruction itself added about 44 prompt
+tokens, and prompt instructions also cost Prefill work.
+
+**Remediation:** without widening or moving the preregistered input gates,
+shorten the long response instruction to:
+"List at least 25 detailed numbered observations grounded in the excerpt.
+Continue until the output limit." Its output budget stays 128 tokens and
+realized mean generation still must be at least 85.
+
+Tang's real local Qwen tokenizer was run on both seed assignments before
+rerun. Expected input lengths under the new instruction were:
+short 169–233, medium 410–530, long 824–1059, very_long 1211–1638,
+ALL within the original gates. Full GPU experiment must be repeated under
+a new code commit and new results directory. Old invalid data is retained.
+
+This note was appended after discovering the protocol failure; the earlier
+results are not relabeled as valid.
