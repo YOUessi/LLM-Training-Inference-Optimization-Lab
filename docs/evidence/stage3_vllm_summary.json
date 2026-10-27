@@ -1,0 +1,104 @@
+{
+  "status": "measured",
+  "kind": "openai_compatible_sse_concurrency_sweep",
+  "engine_label": "vllm",
+  "environment": {
+    "timestamp_utc": "2026-10-27T19:08:53.218836+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "ff37cd5626e662b8a28530c4b499e7b643ffe364",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "model": "qwen2.5-1.5b-instruct-local",
+  "workload": {
+    "concurrency": [
+      1,
+      2,
+      4
+    ],
+    "requests_per_case": 8,
+    "warmup_per_case": 1,
+    "max_output_tokens": 32,
+    "seed": 42,
+    "request_prompts": "fixed template plus per-index task ID"
+  },
+  "cases": [
+    {
+      "concurrency": 1,
+      "returncode": 0,
+      "raw_file": "/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/vllm_real_20261028/bench/concurrency_1.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 1.1844379409740213,
+        "requests_per_second": 6.754258474210315,
+        "p50_latency_ms": 147.76435801468324,
+        "p95_latency_ms": 149.1066157919704,
+        "p50_ttft_ms": 14.805144019192085,
+        "p95_ttft_ms": 14.96974110341398,
+        "p50_tpot_ms": 6.641147700429428,
+        "p95_tpot_ms": 6.7232389550918015,
+        "output_tokens_per_second": 141.8394279584166,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 2,
+      "returncode": 0,
+      "raw_file": "/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/vllm_real_20261028/bench/concurrency_2.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 0.610194342007162,
+        "requests_per_second": 13.110577154296363,
+        "p50_latency_ms": 152.6204990077531,
+        "p95_latency_ms": 153.4147955448134,
+        "p50_ttft_ms": 19.464324999717064,
+        "p95_ttft_ms": 20.011533988872543,
+        "p50_tpot_ms": 6.669100625003921,
+        "p95_tpot_ms": 6.723824191867607,
+        "output_tokens_per_second": 275.3221202402236,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 4,
+      "returncode": 0,
+      "raw_file": "/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/vllm_real_20261028/bench/concurrency_4.json",
+      "status": "measured",
+      "summary": {
+        "sent": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "wall_time_s": 0.31712476001121104,
+        "requests_per_second": 25.226664735094108,
+        "p50_latency_ms": 158.22524498798884,
+        "p95_latency_ms": 163.20928079949226,
+        "p50_ttft_ms": 19.17537699046079,
+        "p95_ttft_ms": 24.27761120197829,
+        "p50_tpot_ms": 6.919193299836479,
+        "p95_tpot_ms": 6.99664127707365,
+        "output_tokens_per_second": 529.7599594369763,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    }
+  ]
+}

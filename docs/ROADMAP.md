@@ -13,10 +13,10 @@
 - [ ] Nsight profiling required to determine DRAM/occupancy bottlenecks before dispatch change.
 
 ## M2 — Serving on vLLM
-- [ ] A real vLLM service is launched on NVIDIA GPU.
-- [ ] Benchmark P50/P95 TTFT and P95 latency under fixed request lengths/concurrency.
-- [ ] TPOT and token/s reported **only** when completion token usage is available.
-- [ ] Keep server arguments, model hash and workload constant across variants.
+- [x] Real vLLM 0.19.1 service launched with Qwen2.5-1.5B on Tang RTX4090 Laptop; actual SSE evidence in Stage3.
+- [x] Real SSE sweeps: 1/2/4/8 concurrence, two orders, 32-token cap; long output genuinely 128 tokens; Stage3 report.
+- [x] All real serving requests had provider completion usage (100%); TPOT identified as client estimate.
+- [x] Model snapshot, CUDA/PyTorch/vLLM versions, host/port/flags and workload seeds pinned; raw JSON persisted.
 
 ## M3 — Profiling
 - [ ] Capture Nsight Systems trace and Nsight Compute report.
@@ -39,7 +39,7 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] vLLM runtime: dedicated Tang env targets v0.19.1 with preinstalled Torch 2.10.0 read-only; installation/server validation in progress; do not claim live service until actual requests pass.
 - [x] Torch profiler diagnostic completed for 256×4096 FP32; source commit and sanitized operator table recorded. **Nsight remains pending**, no occupancy/DRAM claims.
 
-- [ ] vLLM service: **BLOCKED by wheel download**, not a completed inference benchmark.
+- [x] vLLM wheel downloaded from verified mirror (official SHA256), installed and live served/benchmarked on 2026-10-28.
 - [x] Separate offline Hugging Face GPU baseline: real Qwen2.5-1.5B inference measured at batch sizes 1,2,4; see RESULTS_2026-10-26.md. **Still not vLLM.**
 
 ## Stage 2 — 2026-10-26 verified
@@ -47,3 +47,10 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] DDP Checkpoint V2 deterministic CPU + CUDA 3+5 vs 8-step recovery with exact optimizer/model/RNG state equality.
 - [ ] vLLM live service remains blocked by binary wheel/network availability; do not conflate with Transformers SSE.
 - [ ] Mac local validation for Stage 2 pending because the remote Mac agent did not answer.
+
+## Stage 3 — 2026-10-28
+- [x] vLLM 0.19.1 successful isolated install, runtime/model startup and real loopback request serving.
+- [x] 192 short-answer requests over two orders at concurrency 1/2/4/8; all successful.
+- [x] Corrected long decode actually generated 128 tokens, 36/36 requests; false earlier 21-token trial retained as negative evidence.
+- [x] Raw JSON, configuration, numerical comparisons and output-length gate tests recorded in [Stage 3 report](STAGE3_REPORT_2026-10-28.md).
+- [ ] Nsight Compute GPU hardware counter profiling, not yet accepted.

@@ -1,0 +1,135 @@
+{
+  "status": "measured",
+  "kind": "openai_compatible_sse_concurrency_sweep",
+  "engine_label": "vllm",
+  "environment": {
+    "timestamp_utc": "2026-10-27T19:18:27.026038+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "2749782737d3873e103314814a4f62cf1cd19248",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "model": "qwen2.5-1.5b-instruct-local",
+  "workload": {
+    "concurrency": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "requests_per_case": 24,
+    "warmup_per_case": 2,
+    "max_output_tokens": 32,
+    "minimum_actual_mean_completion_tokens": 0,
+    "response_instruction_sha256": "46d83aa9a8e71e4339fd7717be3a7e4edb2fc4ec9a49dddf1b7d78ff2d0b710f",
+    "response_instruction_chars": 29,
+    "seed": 42,
+    "request_prompts": "fixed template plus per-index task ID"
+  },
+  "cases": [
+    {
+      "concurrency": 1,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_corrected_20261028/short_forward/concurrency_1.json",
+      "status": "measured",
+      "summary": {
+        "sent": 24,
+        "succeeded": 24,
+        "failed": 0,
+        "wall_time_s": 3.554253629001323,
+        "requests_per_second": 6.7524725315518745,
+        "p50_latency_ms": 147.94674699078314,
+        "p95_latency_ms": 149.46040930080926,
+        "p50_ttft_ms": 14.726606998010539,
+        "p95_ttft_ms": 15.193254454061389,
+        "p50_tpot_ms": 6.662614450760884,
+        "p95_tpot_ms": 6.724295804233407,
+        "output_tokens_per_second": 141.80192316258936,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      },
+      "actual_mean_completion_tokens": 21
+    },
+    {
+      "concurrency": 2,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_corrected_20261028/short_forward/concurrency_2.json",
+      "status": "measured",
+      "summary": {
+        "sent": 24,
+        "succeeded": 24,
+        "failed": 0,
+        "wall_time_s": 1.779857866000384,
+        "requests_per_second": 13.484222790178022,
+        "p50_latency_ms": 148.09501699346583,
+        "p95_latency_ms": 149.07864930137293,
+        "p50_ttft_ms": 14.127198490314186,
+        "p95_ttft_ms": 14.761612737493124,
+        "p50_tpot_ms": 6.701370175142074,
+        "p95_tpot_ms": 6.72142065675871,
+        "output_tokens_per_second": 283.1686785937385,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      },
+      "actual_mean_completion_tokens": 21
+    },
+    {
+      "concurrency": 4,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_corrected_20261028/short_forward/concurrency_4.json",
+      "status": "measured",
+      "summary": {
+        "sent": 24,
+        "succeeded": 24,
+        "failed": 0,
+        "wall_time_s": 0.9506619980093092,
+        "requests_per_second": 25.2455657744352,
+        "p50_latency_ms": 157.30024300864898,
+        "p95_latency_ms": 163.80287139763823,
+        "p50_ttft_ms": 19.763592004892416,
+        "p95_ttft_ms": 25.473730043449905,
+        "p50_tpot_ms": 6.8783804250415415,
+        "p95_tpot_ms": 6.940335442486685,
+        "output_tokens_per_second": 530.1568812631392,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      },
+      "actual_mean_completion_tokens": 21
+    },
+    {
+      "concurrency": 8,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_corrected_20261028/short_forward/concurrency_8.json",
+      "status": "measured",
+      "summary": {
+        "sent": 24,
+        "succeeded": 24,
+        "failed": 0,
+        "wall_time_s": 0.5012231290165801,
+        "requests_per_second": 47.88286615402,
+        "p50_latency_ms": 165.09026249696035,
+        "p95_latency_ms": 169.5084991893964,
+        "p50_ttft_ms": 25.95456001290586,
+        "p95_ttft_ms": 30.1512447593268,
+        "p50_tpot_ms": 6.947375125309918,
+        "p95_tpot_ms": 7.013196291954955,
+        "output_tokens_per_second": 1005.5401892344199,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      },
+      "actual_mean_completion_tokens": 21
+    }
+  ]
+}

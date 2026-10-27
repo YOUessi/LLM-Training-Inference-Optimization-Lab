@@ -125,3 +125,7 @@ stronger multi-order workload experiments are in
 [\`scripts/run_vllm_benchmark.sh\`](scripts/run_vllm_benchmark.sh).
 The vLLM serving results must not be confused with the earlier serialized
 Transformers baseline. See [server runbook](docs/VLLM_RUNBOOK.md).
+
+### Stage 3: real vLLM measurements validated
+
+[Stage 3: real SSE TTFT/TPOT, 1/2/4/8 concurrent clients and corrected 128-token long decode](docs/STAGE3_REPORT_2026-10-28.md). Source experiment raw JSON and negative results are archived under docs/evidence/stage3_vllm_repeated/ and docs/evidence/stage3_vllm_invalid_long/. No Nsight or multi-GPU/FSDP sharding results are claimed.

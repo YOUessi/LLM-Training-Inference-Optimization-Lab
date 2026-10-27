@@ -1,0 +1,104 @@
+{
+  "status": "measured",
+  "kind": "openai_compatible_sse_concurrency_sweep",
+  "engine_label": "vllm",
+  "environment": {
+    "timestamp_utc": "2026-10-27T19:13:28.633587+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "6f5dcdefe18295cc9c7f9f5d45fbaf2e5a6e80bb",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "model": "qwen2.5-1.5b-instruct-local",
+  "workload": {
+    "concurrency": [
+      1,
+      4,
+      8
+    ],
+    "requests_per_case": 12,
+    "warmup_per_case": 2,
+    "max_output_tokens": 128,
+    "seed": 42,
+    "request_prompts": "fixed template plus per-index task ID"
+  },
+  "cases": [
+    {
+      "concurrency": 1,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_repeated_20261028/long_decode/concurrency_1.json",
+      "status": "measured",
+      "summary": {
+        "sent": 12,
+        "succeeded": 12,
+        "failed": 0,
+        "wall_time_s": 1.7786191769992001,
+        "requests_per_second": 6.746806823620229,
+        "p50_latency_ms": 148.02155749930535,
+        "p95_latency_ms": 149.35856368683744,
+        "p50_ttft_ms": 14.12404100119602,
+        "p95_ttft_ms": 14.954950285027735,
+        "p50_tpot_ms": 6.691333049820969,
+        "p95_tpot_ms": 6.754931464820402,
+        "output_tokens_per_second": 141.6829432960248,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 4,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_repeated_20261028/long_decode/concurrency_4.json",
+      "status": "measured",
+      "summary": {
+        "sent": 12,
+        "succeeded": 12,
+        "failed": 0,
+        "wall_time_s": 0.47587556001963094,
+        "requests_per_second": 25.216676392258876,
+        "p50_latency_ms": 156.55904948653188,
+        "p95_latency_ms": 161.0687939741183,
+        "p50_ttft_ms": 19.67442050226964,
+        "p95_ttft_ms": 23.17936591716716,
+        "p50_tpot_ms": 6.849991124909138,
+        "p95_tpot_ms": 6.902131797687616,
+        "output_tokens_per_second": 529.5502042374364,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    },
+    {
+      "concurrency": 8,
+      "returncode": 0,
+      "raw_file": "results/vllm_stage3_repeated_20261028/long_decode/concurrency_8.json",
+      "status": "measured",
+      "summary": {
+        "sent": 12,
+        "succeeded": 12,
+        "failed": 0,
+        "wall_time_s": 0.33702400099718943,
+        "requests_per_second": 35.605772777292714,
+        "p50_latency_ms": 168.8179150223732,
+        "p95_latency_ms": 171.72932564571965,
+        "p50_ttft_ms": 27.83564901619684,
+        "p95_ttft_ms": 30.257799064565916,
+        "p50_tpot_ms": 7.0415774498542305,
+        "p95_tpot_ms": 7.078434164868668,
+        "output_tokens_per_second": 747.721228323147,
+        "usage_coverage": 1,
+        "ttft_coverage": 1,
+        "error_types": {}
+      }
+    }
+  ]
+}
