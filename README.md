@@ -138,3 +138,7 @@ Transformers baseline. See [server runbook](docs/VLLM_RUNBOOK.md).
 ### Stage 4: Prefix caching experimental design
 
 See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/off runner](scripts/run_prefix_cache_ablation.sh). Shared/distinct long prefixes, explicit cache enabled/disabled, two seeds and concurrency 1/8. Real prompt_tokens are used to enforce valid workloads. Protocol is not a result.
+
+### Stage 4: measured Prefix Cache causal-control benchmark
+
+[Stage 4 detailed results](docs/STAGE4_PREFIX_CACHE_REPORT_2026-10-28.md) cover 384 actual SSE requests on Qwen2.5-1.5B in vLLM 0.19.1, both cache states, shared vs distinct-prefix negative controls, two seeds and both 1/8 concurrency. Results report actual provider prompt tokens and vLLM Prometheus token-hit counters; an invalid first experiment is retained as negative process evidence. This is a controlled application-level cache ablation, not a new KV-cache implementation.

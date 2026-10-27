@@ -1,0 +1,1129 @@
+{
+  "status": "pass",
+  "kind": "vllm_prefix_cache_on_off_factored_ablation",
+  "source_git_commit": "d3f34614f133f9d9b5f071944abb472510fc99f9",
+  "model": "Qwen2.5-1.5B-Instruct",
+  "engine": "vllm-0.19.1",
+  "not_a_production_benchmark": true,
+  "n_independent_seeds": 2,
+  "measured_real_requests": 384,
+  "arms": [
+    {
+      "cache_state": "off",
+      "seed": 42,
+      "mode": "shared",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 72.88867014285643,
+      "p50_ttft_ms": 71.15960800729226,
+      "output_tokens_per_second": 101.02213187006677,
+      "p95_latency_ms": 200.03314204222988,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/shared-c1-seed42.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 42,
+      "mode": "shared",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 424.1859151472454,
+      "p50_ttft_ms": 310.0210334814619,
+      "output_tokens_per_second": 260.4308251932561,
+      "p95_latency_ms": 678.127477192902,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/shared-c8-seed42.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 42,
+      "mode": "distinct",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1208.75,
+      "p95_ttft_ms": 73.67195670231013,
+      "p50_ttft_ms": 71.46499901136849,
+      "output_tokens_per_second": 100.62733272054078,
+      "p95_latency_ms": 200.85869809990982,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/distinct-c1-seed42.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 42,
+      "mode": "distinct",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1208.0,
+      "p95_ttft_ms": 422.7800613385625,
+      "p50_ttft_ms": 220.21395798947196,
+      "output_tokens_per_second": 307.08786680841223,
+      "p95_latency_ms": 885.4853882177849,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/distinct-c8-seed42.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 137,
+      "mode": "shared",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 74.27490229310934,
+      "p50_ttft_ms": 71.46120449760929,
+      "output_tokens_per_second": 100.16828390627589,
+      "p95_latency_ms": 202.182065458328,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/shared-c1-seed137.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 137,
+      "mode": "shared",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 465.71432919154165,
+      "p50_ttft_ms": 272.9464769799961,
+      "output_tokens_per_second": 259.46107807608183,
+      "p95_latency_ms": 677.3732351037324,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/shared-c8-seed137.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 137,
+      "mode": "distinct",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 74.99565025791526,
+      "p50_ttft_ms": 72.34025299840141,
+      "output_tokens_per_second": 100.00273613772649,
+      "p95_latency_ms": 202.6071702101035,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/distinct-c1-seed137.json"
+    },
+    {
+      "cache_state": "off",
+      "seed": 137,
+      "mode": "distinct",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1207.75,
+      "p95_ttft_ms": 469.2489506865967,
+      "p50_ttft_ms": 312.8705470007844,
+      "output_tokens_per_second": 260.0345804737365,
+      "p95_latency_ms": 677.0262139500119,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "off/distinct-c8-seed137.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 42,
+      "mode": "shared",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 18.56240264896769,
+      "p50_ttft_ms": 17.643351005972363,
+      "output_tokens_per_second": 137.90471988424284,
+      "p95_latency_ms": 146.44352829636773,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 31432.0,
+          "vllm:prefix_cache_hits_total": 29600.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 29600.0,
+        "hit_fraction": 0.9417154492237211,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/shared-c1-seed42.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 42,
+      "mode": "shared",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 42.438607683288865,
+      "p50_ttft_ms": 37.87915798602626,
+      "output_tokens_per_second": 887.9029154365743,
+      "p95_latency_ms": 180.53102270205272,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 62856.0,
+          "vllm:prefix_cache_hits_total": 30272.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 94288.0,
+          "vllm:prefix_cache_hits_total": 61472.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/shared-c8-seed42.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 42,
+      "mode": "distinct",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1208.75,
+      "p95_ttft_ms": 73.92753931053448,
+      "p50_ttft_ms": 72.14942549762782,
+      "output_tokens_per_second": 100.04073867309202,
+      "p95_latency_ms": 201.93250654119765,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 31432.0,
+          "vllm:prefix_cache_hits_total": 29600.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 62856.0,
+          "vllm:prefix_cache_hits_total": 30272.0
+        },
+        "delta_queried_tokens": 31424.0,
+        "delta_hit_tokens": 672.0,
+        "hit_fraction": 0.021384928716904276,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/distinct-c1-seed42.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 42,
+      "mode": "distinct",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1208.0,
+      "p95_ttft_ms": 469.37487150280487,
+      "p50_ttft_ms": 249.20958900474943,
+      "output_tokens_per_second": 322.32194806683503,
+      "p95_latency_ms": 913.4117834095377,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 94288.0,
+          "vllm:prefix_cache_hits_total": 61472.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 125694.0,
+          "vllm:prefix_cache_hits_total": 61888.0
+        },
+        "delta_queried_tokens": 31406.0,
+        "delta_hit_tokens": 416.0,
+        "hit_fraction": 0.013245876584092212,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/distinct-c8-seed42.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 137,
+      "mode": "shared",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 17.28114114521304,
+      "p50_ttft_ms": 16.471465001814067,
+      "output_tokens_per_second": 138.6057593131404,
+      "p95_latency_ms": 145.34151734260377,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 219958.0,
+          "vllm:prefix_cache_hits_total": 94288.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 251390.0,
+          "vllm:prefix_cache_hits_total": 125488.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/shared-c1-seed137.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 137,
+      "mode": "shared",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 40.73316886642715,
+      "p50_ttft_ms": 38.08705249684863,
+      "output_tokens_per_second": 891.4333732303738,
+      "p95_latency_ms": 180.846306438616,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 157094.0,
+          "vllm:prefix_cache_hits_total": 62304.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 188526.0,
+          "vllm:prefix_cache_hits_total": 93504.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/shared-c8-seed137.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 137,
+      "mode": "distinct",
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "p95_ttft_ms": 74.7369527030969,
+      "p50_ttft_ms": 72.93223099259194,
+      "output_tokens_per_second": 99.84525202764065,
+      "p95_latency_ms": 201.54154053889215,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 188526.0,
+          "vllm:prefix_cache_hits_total": 93504.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 219958.0,
+          "vllm:prefix_cache_hits_total": 94288.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 784.0,
+        "hit_fraction": 0.024942733519979637,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/distinct-c1-seed137.json"
+    },
+    {
+      "cache_state": "on",
+      "seed": 137,
+      "mode": "distinct",
+      "concurrency": 8,
+      "mean_prompt_tokens": 1207.75,
+      "p95_ttft_ms": 460.73518430057436,
+      "p50_ttft_ms": 290.9065009880578,
+      "output_tokens_per_second": 261.32424469244154,
+      "p95_latency_ms": 672.6979424449382,
+      "successes": 24,
+      "metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 125694.0,
+          "vllm:prefix_cache_hits_total": 61888.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 157094.0,
+          "vllm:prefix_cache_hits_total": 62304.0
+        },
+        "delta_queried_tokens": 31400.0,
+        "delta_hit_tokens": 416.0,
+        "hit_fraction": 0.013248407643312102,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "source_file": "on/distinct-c8-seed137.json"
+    }
+  ],
+  "matched_on_off_pairs": [
+    {
+      "mode": "distinct",
+      "seed": 42,
+      "concurrency": 1,
+      "mean_prompt_tokens": 1208.75,
+      "off_p95_ttft_ms": 73.67195670231013,
+      "on_p95_ttft_ms": 73.92753931053448,
+      "ttft_off_over_on": 0.9965427956806356,
+      "off_output_tokens_per_second": 100.62733272054078,
+      "on_output_tokens_per_second": 100.04073867309202,
+      "throughput_on_over_off": 0.9941706290767159,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 31432.0,
+          "vllm:prefix_cache_hits_total": 29600.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 62856.0,
+          "vllm:prefix_cache_hits_total": 30272.0
+        },
+        "delta_queried_tokens": 31424.0,
+        "delta_hit_tokens": 672.0,
+        "hit_fraction": 0.021384928716904276,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "distinct",
+      "seed": 42,
+      "concurrency": 8,
+      "mean_prompt_tokens": 1208.0,
+      "off_p95_ttft_ms": 422.7800613385625,
+      "on_p95_ttft_ms": 469.37487150280487,
+      "ttft_off_over_on": 0.9007300710090018,
+      "off_output_tokens_per_second": 307.08786680841223,
+      "on_output_tokens_per_second": 322.32194806683503,
+      "throughput_on_over_off": 1.0496082161003357,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 94288.0,
+          "vllm:prefix_cache_hits_total": 61472.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 125694.0,
+          "vllm:prefix_cache_hits_total": 61888.0
+        },
+        "delta_queried_tokens": 31406.0,
+        "delta_hit_tokens": 416.0,
+        "hit_fraction": 0.013245876584092212,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "shared",
+      "seed": 42,
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "off_p95_ttft_ms": 72.88867014285643,
+      "on_p95_ttft_ms": 18.56240264896769,
+      "ttft_off_over_on": 3.9266829580873237,
+      "off_output_tokens_per_second": 101.02213187006677,
+      "on_output_tokens_per_second": 137.90471988424284,
+      "throughput_on_over_off": 1.3650941366156668,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 31432.0,
+          "vllm:prefix_cache_hits_total": 29600.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 29600.0,
+        "hit_fraction": 0.9417154492237211,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "shared",
+      "seed": 42,
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "off_p95_ttft_ms": 424.1859151472454,
+      "on_p95_ttft_ms": 42.438607683288865,
+      "ttft_off_over_on": 9.995283500176608,
+      "off_output_tokens_per_second": 260.4308251932561,
+      "on_output_tokens_per_second": 887.9029154365743,
+      "throughput_on_over_off": 3.4093618325622335,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 62856.0,
+          "vllm:prefix_cache_hits_total": 30272.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 94288.0,
+          "vllm:prefix_cache_hits_total": 61472.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "distinct",
+      "seed": 137,
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "off_p95_ttft_ms": 74.99565025791526,
+      "on_p95_ttft_ms": 74.7369527030969,
+      "ttft_off_over_on": 1.0034614410336753,
+      "off_output_tokens_per_second": 100.00273613772649,
+      "on_output_tokens_per_second": 99.84525202764065,
+      "throughput_on_over_off": 0.9984252019877842,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 188526.0,
+          "vllm:prefix_cache_hits_total": 93504.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 219958.0,
+          "vllm:prefix_cache_hits_total": 94288.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 784.0,
+        "hit_fraction": 0.024942733519979637,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "distinct",
+      "seed": 137,
+      "concurrency": 8,
+      "mean_prompt_tokens": 1207.75,
+      "off_p95_ttft_ms": 469.2489506865967,
+      "on_p95_ttft_ms": 460.73518430057436,
+      "ttft_off_over_on": 1.018478654715608,
+      "off_output_tokens_per_second": 260.0345804737365,
+      "on_output_tokens_per_second": 261.32424469244154,
+      "throughput_on_over_off": 1.0049595873608637,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "distinct",
+        "before": {
+          "vllm:prefix_cache_queries_total": 125694.0,
+          "vllm:prefix_cache_hits_total": 61888.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 157094.0,
+          "vllm:prefix_cache_hits_total": 62304.0
+        },
+        "delta_queried_tokens": 31400.0,
+        "delta_hit_tokens": 416.0,
+        "hit_fraction": 0.013248407643312102,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "shared",
+      "seed": 137,
+      "concurrency": 1,
+      "mean_prompt_tokens": 1209.0,
+      "off_p95_ttft_ms": 74.27490229310934,
+      "on_p95_ttft_ms": 17.28114114521304,
+      "ttft_off_over_on": 4.298032269337945,
+      "off_output_tokens_per_second": 100.16828390627589,
+      "on_output_tokens_per_second": 138.6057593131404,
+      "throughput_on_over_off": 1.3837289999180695,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 219958.0,
+          "vllm:prefix_cache_hits_total": 94288.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 251390.0,
+          "vllm:prefix_cache_hits_total": 125488.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    },
+    {
+      "mode": "shared",
+      "seed": 137,
+      "concurrency": 8,
+      "mean_prompt_tokens": 1209.0,
+      "off_p95_ttft_ms": 465.71432919154165,
+      "on_p95_ttft_ms": 40.73316886642715,
+      "ttft_off_over_on": 11.433294834455905,
+      "off_output_tokens_per_second": 259.46107807608183,
+      "on_output_tokens_per_second": 891.4333732303738,
+      "throughput_on_over_off": 3.435711359254349,
+      "off_metric": {
+        "status": "pass",
+        "cache_state": "off",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 0.0,
+          "vllm:prefix_cache_hits_total": 0.0
+        },
+        "delta_queried_tokens": 0.0,
+        "delta_hit_tokens": 0.0,
+        "hit_fraction": null,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      },
+      "on_metric": {
+        "status": "pass",
+        "cache_state": "on",
+        "prefix_mode": "shared",
+        "before": {
+          "vllm:prefix_cache_queries_total": 157094.0,
+          "vllm:prefix_cache_hits_total": 62304.0
+        },
+        "after": {
+          "vllm:prefix_cache_queries_total": 188526.0,
+          "vllm:prefix_cache_hits_total": 93504.0
+        },
+        "delta_queried_tokens": 31432.0,
+        "delta_hit_tokens": 31200.0,
+        "hit_fraction": 0.9926189870195978,
+        "acceptance": {
+          "off": "queried/hit counters must both remain zero",
+          "on_shared": "hit fraction >= 0.70",
+          "on_distinct": "hit fraction <= 0.10"
+        }
+      }
+    }
+  ],
+  "descriptive_aggregate": [
+    {
+      "mode": "shared",
+      "concurrency": 1,
+      "seed_count": 2,
+      "mean_ttft_off_over_on": 4.112357613712634,
+      "min_ttft_off_over_on": 3.9266829580873237,
+      "max_ttft_off_over_on": 4.298032269337945,
+      "mean_throughput_on_over_off": 1.374411568266868,
+      "min_throughput_on_over_off": 1.3650941366156668,
+      "max_throughput_on_over_off": 1.3837289999180695,
+      "mean_prefix_cache_hit_fraction_on": 0.9671672181216595
+    },
+    {
+      "mode": "shared",
+      "concurrency": 8,
+      "seed_count": 2,
+      "mean_ttft_off_over_on": 10.714289167316256,
+      "min_ttft_off_over_on": 9.995283500176608,
+      "max_ttft_off_over_on": 11.433294834455905,
+      "mean_throughput_on_over_off": 3.422536595908291,
+      "min_throughput_on_over_off": 3.4093618325622335,
+      "max_throughput_on_over_off": 3.435711359254349,
+      "mean_prefix_cache_hit_fraction_on": 0.9926189870195978
+    },
+    {
+      "mode": "distinct",
+      "concurrency": 1,
+      "seed_count": 2,
+      "mean_ttft_off_over_on": 1.0000021183571555,
+      "min_ttft_off_over_on": 0.9965427956806356,
+      "max_ttft_off_over_on": 1.0034614410336753,
+      "mean_throughput_on_over_off": 0.99629791553225,
+      "min_throughput_on_over_off": 0.9941706290767159,
+      "max_throughput_on_over_off": 0.9984252019877842,
+      "mean_prefix_cache_hit_fraction_on": 0.023163831118441957
+    },
+    {
+      "mode": "distinct",
+      "concurrency": 8,
+      "seed_count": 2,
+      "mean_ttft_off_over_on": 0.9596043628623049,
+      "min_ttft_off_over_on": 0.9007300710090018,
+      "max_ttft_off_over_on": 1.018478654715608,
+      "mean_throughput_on_over_off": 1.0272839017305997,
+      "min_throughput_on_over_off": 1.0049595873608637,
+      "max_throughput_on_over_off": 1.0496082161003357,
+      "mean_prefix_cache_hit_fraction_on": 0.013247142113702157
+    }
+  ],
+  "file_integrity_manifest": [
+    {
+      "path": "off/shared-c1-seed42.json",
+      "sha256": "97073e4c52e029c98ed769ed30cc40735d938b17f98211befbddd687dd130445",
+      "cache_metric_path": "off/shared-c1-seed42-metrics.json"
+    },
+    {
+      "path": "off/shared-c8-seed42.json",
+      "sha256": "8865d1a24407c18e9e95d2e26ce0d008fb0dec8b39e6c513891bd31d274cd4e9",
+      "cache_metric_path": "off/shared-c8-seed42-metrics.json"
+    },
+    {
+      "path": "off/distinct-c1-seed42.json",
+      "sha256": "278b85d0ad43c7dab1256731f2db723e0965f267847bca9359800e274d1abe46",
+      "cache_metric_path": "off/distinct-c1-seed42-metrics.json"
+    },
+    {
+      "path": "off/distinct-c8-seed42.json",
+      "sha256": "3a88bbcebbe854be1eb1abef5b21b65b4f731e9d7901a51b3d9e565fab338340",
+      "cache_metric_path": "off/distinct-c8-seed42-metrics.json"
+    },
+    {
+      "path": "off/shared-c1-seed137.json",
+      "sha256": "426a799f3f94d5e126315525c0ad55bdd5511652359c8753b051a7e76a80313d",
+      "cache_metric_path": "off/shared-c1-seed137-metrics.json"
+    },
+    {
+      "path": "off/shared-c8-seed137.json",
+      "sha256": "82bc37526392d8584ebb423809853b7a18d573ba297fa980258501a0aa0be4bd",
+      "cache_metric_path": "off/shared-c8-seed137-metrics.json"
+    },
+    {
+      "path": "off/distinct-c1-seed137.json",
+      "sha256": "48266e7331c15ac5de3b5b731ab7b42da54041ce005b4f34cf76a5534b2fa785",
+      "cache_metric_path": "off/distinct-c1-seed137-metrics.json"
+    },
+    {
+      "path": "off/distinct-c8-seed137.json",
+      "sha256": "3765c4ca917f83ce5e0dada8b5c2f25e4b17d2cf8ae794224777f159ba2006a2",
+      "cache_metric_path": "off/distinct-c8-seed137-metrics.json"
+    },
+    {
+      "path": "on/shared-c1-seed42.json",
+      "sha256": "8f5d472e47495e0c075730c548e6422fe3a3fee5523c4e12a16b500b022a104f",
+      "cache_metric_path": "on/shared-c1-seed42-metrics.json"
+    },
+    {
+      "path": "on/shared-c8-seed42.json",
+      "sha256": "7f527d1bf80e59466bf303a33efb2e57d55752ac9ea474a227aaa1e03a0fe7d6",
+      "cache_metric_path": "on/shared-c8-seed42-metrics.json"
+    },
+    {
+      "path": "on/distinct-c1-seed42.json",
+      "sha256": "df2c636dd82b372fc9fe9a92a31dab9e299373c533d9952bb0144e7c276f673a",
+      "cache_metric_path": "on/distinct-c1-seed42-metrics.json"
+    },
+    {
+      "path": "on/distinct-c8-seed42.json",
+      "sha256": "6850bc05208401f55299edd3bd3dd2b1fe527b28a34f54e5e3b09256fe5dfb03",
+      "cache_metric_path": "on/distinct-c8-seed42-metrics.json"
+    },
+    {
+      "path": "on/shared-c1-seed137.json",
+      "sha256": "f39714ff97aac6875582b38d4e8102a34430debe2fad22dccfde17a78a5e261e",
+      "cache_metric_path": "on/shared-c1-seed137-metrics.json"
+    },
+    {
+      "path": "on/shared-c8-seed137.json",
+      "sha256": "30133b6ea2668007f83c8d2cdfb1b34da6ab58f5408caf7f8af38deb94a48451",
+      "cache_metric_path": "on/shared-c8-seed137-metrics.json"
+    },
+    {
+      "path": "on/distinct-c1-seed137.json",
+      "sha256": "4ec53ab214b38ad4ea2d0420c7b7ed59519bcf6eaabefea89ce95cc28293e838",
+      "cache_metric_path": "on/distinct-c1-seed137-metrics.json"
+    },
+    {
+      "path": "on/distinct-c8-seed137.json",
+      "sha256": "d4971d699028139b167880e8c2eab3e67aae4200757903d716b3e89a3cad1577",
+      "cache_metric_path": "on/distinct-c8-seed137-metrics.json"
+    }
+  ],
+  "limitations": [
+    "Single RTX4090 Laptop GPU and fixed synthetic repetitive context",
+    "Two seeds and two orderings: ranges are descriptive, not confidence intervals",
+    "TTFT is client first nonempty SSE content fragment, not raw GPU prefill kernel time",
+    "Paired comparisons are only within matching prompt mode, seed and concurrency",
+    "Prefix cache metrics count cached tokens; cache OFF may report zero queries"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "cache_state": "off",
+  "prefix_mode": "shared",
+  "before": {
+    "vllm:prefix_cache_queries_total": 0.0,
+    "vllm:prefix_cache_hits_total": 0.0
+  },
+  "after": {
+    "vllm:prefix_cache_queries_total": 0.0,
+    "vllm:prefix_cache_hits_total": 0.0
+  },
+  "delta_queried_tokens": 0.0,
+  "delta_hit_tokens": 0.0,
+  "hit_fraction": null,
+  "acceptance": {
+    "off": "queried/hit counters must both remain zero",
+    "on_shared": "hit fraction >= 0.70",
+    "on_distinct": "hit fraction <= 0.10"
+  }
+}

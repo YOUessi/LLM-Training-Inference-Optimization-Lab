@@ -1,0 +1,65 @@
+{
+  "schema": "stage4-prefix-cache-provenance-v1",
+  "date": "2026-10-28",
+  "experiment_source_commit": "d3f34614f133f9d9b5f071944abb472510fc99f9",
+  "analysis_source_commit": "ac4ea0fb1bb4d0d5df3834c4bdfadfb163e2d6ee",
+  "engine": "vllm-0.19.1",
+  "torch": "2.10.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "server_flags": {
+    "gpu_memory_utilization": 0.5,
+    "max_model_len": 2048,
+    "max_num_seqs": 8,
+    "host": "127.0.0.1"
+  },
+  "raw_metric_snapshots_kept_only_on_Tang": true,
+  "raw_server_logs_kept_only_on_Tang": true,
+  "server_logs": {
+    "off": {
+      "actual_flag_confirmed": "off",
+      "log_sha256": "9290c13672ae650495c79f528c08cd40f15a8a81b54dcba2bc72ff994d54f361",
+      "relative_tang_path": "results/prefix_cache_ablation_corrected_20261028/off/server.log"
+    },
+    "on": {
+      "actual_flag_confirmed": "on",
+      "log_sha256": "bb4ea5ba0452dad693180d36219096e24fd3dd75a4570e8f1da3fa1d71de8801",
+      "relative_tang_path": "results/prefix_cache_ablation_corrected_20261028/on/server.log"
+    }
+  },
+  "corrected_case_file_sha256": {
+    "off/shared-c1-seed42.json": "97073e4c52e029c98ed769ed30cc40735d938b17f98211befbddd687dd130445",
+    "off/shared-c1-seed42-metrics.json": "bde5b76f8eabf84b0362247064decff68cccbe48dd652abc40f8ff7aa52d367f",
+    "off/shared-c8-seed42.json": "8865d1a24407c18e9e95d2e26ce0d008fb0dec8b39e6c513891bd31d274cd4e9",
+    "off/shared-c8-seed42-metrics.json": "bde5b76f8eabf84b0362247064decff68cccbe48dd652abc40f8ff7aa52d367f",
+    "off/distinct-c1-seed42.json": "278b85d0ad43c7dab1256731f2db723e0965f267847bca9359800e274d1abe46",
+    "off/distinct-c1-seed42-metrics.json": "8045380b917d960a6eeb55e7510f0ae2d4fe006464e5fbe4b1881407f543b256",
+    "off/distinct-c8-seed42.json": "3a88bbcebbe854be1eb1abef5b21b65b4f731e9d7901a51b3d9e565fab338340",
+    "off/distinct-c8-seed42-metrics.json": "8045380b917d960a6eeb55e7510f0ae2d4fe006464e5fbe4b1881407f543b256",
+    "off/shared-c1-seed137.json": "426a799f3f94d5e126315525c0ad55bdd5511652359c8753b051a7e76a80313d",
+    "off/shared-c1-seed137-metrics.json": "bde5b76f8eabf84b0362247064decff68cccbe48dd652abc40f8ff7aa52d367f",
+    "off/shared-c8-seed137.json": "82bc37526392d8584ebb423809853b7a18d573ba297fa980258501a0aa0be4bd",
+    "off/shared-c8-seed137-metrics.json": "bde5b76f8eabf84b0362247064decff68cccbe48dd652abc40f8ff7aa52d367f",
+    "off/distinct-c1-seed137.json": "48266e7331c15ac5de3b5b731ab7b42da54041ce005b4f34cf76a5534b2fa785",
+    "off/distinct-c1-seed137-metrics.json": "8045380b917d960a6eeb55e7510f0ae2d4fe006464e5fbe4b1881407f543b256",
+    "off/distinct-c8-seed137.json": "3765c4ca917f83ce5e0dada8b5c2f25e4b17d2cf8ae794224777f159ba2006a2",
+    "off/distinct-c8-seed137-metrics.json": "8045380b917d960a6eeb55e7510f0ae2d4fe006464e5fbe4b1881407f543b256",
+    "on/shared-c1-seed42.json": "8f5d472e47495e0c075730c548e6422fe3a3fee5523c4e12a16b500b022a104f",
+    "on/shared-c1-seed42-metrics.json": "c5c861435095fdb7be9a10bd3cabeddc2bdd97608a6a341525aaf9f24a23460d",
+    "on/shared-c8-seed42.json": "7f527d1bf80e59466bf303a33efb2e57d55752ac9ea474a227aaa1e03a0fe7d6",
+    "on/shared-c8-seed42-metrics.json": "83eec77e458f4985d89f3d61e18a745f345ca1eddcfa8c7b1c09f5ff10926963",
+    "on/distinct-c1-seed42.json": "df2c636dd82b372fc9fe9a92a31dab9e299373c533d9952bb0144e7c276f673a",
+    "on/distinct-c1-seed42-metrics.json": "77c54a32546c876cd4f90a5f3aa95016123b85e8ac9a0e5afc73db2be1283108",
+    "on/distinct-c8-seed42.json": "6850bc05208401f55299edd3bd3dd2b1fe527b28a34f54e5e3b09256fe5dfb03",
+    "on/distinct-c8-seed42-metrics.json": "75b9e9e9b6a6815eb73a40de7d0ed76de8db69db6f3017629d0ac069ed591dbf",
+    "on/shared-c1-seed137.json": "f39714ff97aac6875582b38d4e8102a34430debe2fad22dccfde17a78a5e261e",
+    "on/shared-c1-seed137-metrics.json": "c8ef33782d9ebc5136e0f2470c47d4bd8a7d645614104904644985d37d819f7c",
+    "on/shared-c8-seed137.json": "30133b6ea2668007f83c8d2cdfb1b34da6ab58f5408caf7f8af38deb94a48451",
+    "on/shared-c8-seed137-metrics.json": "4b187feb15063655b03cfe6459416055e54f8780197e1027b68f16aba18fe41a",
+    "on/distinct-c1-seed137.json": "4ec53ab214b38ad4ea2d0420c7b7ed59519bcf6eaabefea89ce95cc28293e838",
+    "on/distinct-c1-seed137-metrics.json": "cb2a7418528811a956bc36fd1b64fa53e79d267e1e94f8a3c44b121ed138852c",
+    "on/distinct-c8-seed137.json": "d4971d699028139b167880e8c2eab3e67aae4200757903d716b3e89a3cad1577",
+    "on/distinct-c8-seed137-metrics.json": "8870673724b5d8ec9002d0ecb3601b3bf64dfd1603982e5c2a3706f40108a38e"
+  }
+}

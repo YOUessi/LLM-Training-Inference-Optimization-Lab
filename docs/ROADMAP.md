@@ -62,7 +62,7 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Real provider prompt_tokens captured from SSE; length/coverage gate.
 - [x] vLLM prefix caching explicit enable and disable launch flags.
 - [x] Frozen shared/distinct long-prefix experiment and Mac unit tests.
-- [ ] Actual real cache ON/OFF × shared/distinct × concurrency 1/8 × two seeds on Tang, server cache metrics and completed report.
+- [x] Corrected real cache ON/OFF × shared/distinct × concurrency 1/8 × two seeds on Tang (384/384 requests), 16/16 prefix-hit gates PASS. [Stage 4 report](STAGE4_PREFIX_CACHE_REPORT_2026-10-28.md).
 
 - [x] First 384-request test identified and reproduced cross-case cache contamination in distinct-prefix control (order reversal exposed it); initial experiment **NOT scientifically accepted**.
 - [x] Distinct request ID now includes concurrency, with Prometheus cache hit/query token gates and unit tests. Revised 384-request experiment pending.
