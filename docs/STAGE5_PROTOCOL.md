@@ -68,3 +68,7 @@ an Actions run summary + JSON artifact, selecting the next verifiable
 task. It CANNOT run Tang's GPU, change code autonomously, or post into
 this existing ChatGPT conversation. Do not describe it as a continuously
 working cloud-agent. ChatGPT Automations cannot schedule subhourly tasks.
+
+The plan audit also runs on a new main-branch commit so it can validate
+new Stage5 evidence immediately instead of waiting for the next scheduled
+slot. The periodic cadence remains GitHub best-effort 30 minutes.
