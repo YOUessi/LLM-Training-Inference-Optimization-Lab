@@ -1,0 +1,71 @@
+{
+  "schema": "stage7-natural-nonrepeating-raw-evidence-v1",
+  "experiment_date": "2026-10-28",
+  "experiment_git_sha": "00993045f8564539428ce65c5a9170f5c840ab1d",
+  "analysis_git_sha": "38d32600b7f6e74f08b290bd11a198f7bf6e5f34",
+  "initial_invalid_experiment_git_sha": "e214c39777632a74fd6497bafeb7291d51aa9233",
+  "corpus_jsonl_sha256": "2912a4d8cc17789a1b6b339cac927a27ec41f24f7de140d84466ecd441e095ca",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "engine": "vllm-0.19.1",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "server_flags": {
+    "host": "127.0.0.1",
+    "port": 8026,
+    "enable_prefix_caching": false,
+    "max_model_len": 2048,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.5
+  },
+  "actual_prefix_cache_disabled_in_server_log": true,
+  "server_log_sha256": "06c89fa3e33f86e15d75ba5e751f396a1815a1f925c77f63d149189227462f7f",
+  "server_log_private_tang_path": "results/stage7_natural_corrected_20261028/server.log",
+  "sources": {
+    "books": 5,
+    "frozen_distinct_passages": 30
+  },
+  "matrix": {
+    "seeds": [
+      42,
+      137
+    ],
+    "concurrencies": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "response_modes": [
+      "short",
+      "long"
+    ],
+    "per_case_requests": 24,
+    "warmups_per_case": 1,
+    "measured_requests": 384
+  },
+  "raw_artifact_hashes": {
+    "stage7_corrected/short_c1_seed42.json": "3c6050549d0c6c4a3c5e45f668cbbe42cddfb221abf5dc61775fbf2b3527fad1",
+    "stage7_corrected/short_c2_seed42.json": "11fe0ead1f72004d11e37b9b8e5561fb3e126201c76d52682d8b0306275e8671",
+    "stage7_corrected/short_c4_seed42.json": "fe9a7b8bb8d2059b7a0b01b084a0a3ad084747a65837361b85af18aeee3aa837",
+    "stage7_corrected/short_c8_seed42.json": "21cb13adfd05b8925bfa72f4bcf805eebb0856feb790e77461a9a1075be077a8",
+    "stage7_corrected/long_c1_seed42.json": "1cbe4789bf65667db721e0e2b67c8e555445f75deb2ebe8e77fe6d9107afa907",
+    "stage7_corrected/long_c2_seed42.json": "1bfa192a9288bb146e6d3d4100afc7c718af830159bc5847f910d935093cc5d5",
+    "stage7_corrected/long_c4_seed42.json": "58d432fcb6301a2aa1d5b1de281b44cbac060763abaf4afcfcdad0963806538f",
+    "stage7_corrected/long_c8_seed42.json": "a83827a0da0d794958263e5391df40ba994e303b4d12684471d49995989d5e5d",
+    "stage7_corrected/short_c1_seed137.json": "02490e7768a2ed29e3b1c03dd78185f47d58026ff2bfdf3ec3cdf39b230610fa",
+    "stage7_corrected/short_c2_seed137.json": "733cd63648f77fa513c5e9dda2bbbc838759bfd7fd9910fffbd1e5b9ad7fb3fa",
+    "stage7_corrected/short_c4_seed137.json": "e166a5535130af6ca40ec100662d30ddfebd227200ef5e06cbcb98f3e06ed1bf",
+    "stage7_corrected/short_c8_seed137.json": "186600dbe4f290b1b5b7709a7f52a5b7e01173fe1bc7ff1d899f64abb65bb659",
+    "stage7_corrected/long_c1_seed137.json": "cca7aceb750cfe13ea27384629f90854ca202300f1a10d151208db531df00dfa",
+    "stage7_corrected/long_c2_seed137.json": "e365ed260288a8d3864f8469514fca6c3a183878959a11d5fd175eefc5c7b86d",
+    "stage7_corrected/long_c4_seed137.json": "5db7b051b08c7fb4049f417984cd60d84be05348fd352754abd6fee76f8323cf",
+    "stage7_corrected/long_c8_seed137.json": "4ba1484a3d2010f0a3b686545b4a5aaec873496d2a14e2365baf68b972c6348c",
+    "stage7_invalid_first_run/short_c1_seed42.json": "7c4439529cbfd5675b2ddc0a41da6e0c97902993a93ed1912929c2bcaafc1c2e",
+    "stage7_invalid_first_run/short_c2_seed42.json": "0e34380ec8be22f900fe9280a1a4dbc34e949dd18de6cce93001bff93540ce85",
+    "stage7_invalid_first_run/short_c4_seed42.json": "a1b6f510db985df68ececac0d91c77a4c1694f409dd2d06b139fe1018788fec5",
+    "stage7_invalid_first_run/short_c8_seed42.json": "f400b75b29c79803dc52e4ed1fdd3689ea8646a84f79b2a9d036c77fe440a964",
+    "stage7_invalid_first_run/long_c1_seed42.json": "4a9e58fe740559db2a45edb07a7c205eddf61f9ca8a51951d4dbfb02937fea98",
+    "stage7_analysis.json": "817307862c5daf1bf22ce114cd9f16cae63a739bdad93a3a9a181ca5a63deaaf"
+  },
+  "server_log_not_committed_to_github": true
+}

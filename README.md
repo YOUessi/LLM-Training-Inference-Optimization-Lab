@@ -170,3 +170,9 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage7 frozen multi-genre natural prose workload
 
 [Public-domain-in-USA 30-excerpt corpus](data/README.md), [preregistered GPU experiment](docs/STAGE7_PROTOCOL.md), [vLLM mixed prefill/decode runner](scripts/run_stage7_natural.sh). Four actual input lengths and two generated length instructions are validated by real provider usage, not max-token caps. **Stage7 performance conclusions are pending the real Tang GPU run.**
+
+### Stage7 — natural prose distribution-shift benchmark (real GPU)
+
+[Full Stage7 report](docs/STAGE7_REPORT_2026-10-28.md) and [raw 384-request case evidence](docs/evidence/stage7_natural). Thirty attributed nonoverlapping excerpts from five classical prose genres replaced repeated synthetic paragraphs. Compared two decoding budgets (actual ~31 vs 128 output tokens), four real input lengths, 1/2/4/8 concurrency, two seeds. A protocol-invalid first run was retained and corrected **without widening the original input-token bounds**.
+
+Stage8 still requires more modern, mixed-linguistic domains, true natural output stopping and replayable arrival distributions.

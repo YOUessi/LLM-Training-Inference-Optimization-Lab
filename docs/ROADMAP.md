@@ -90,5 +90,13 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Freeze 30 attributable full-sentence passages from 5 classic public-domain-in-US works, exact original source SHA256 and excerpt SHA256.
 - [x] Tang actual Qwen tokenizer calibrated 4 length buckets and preregistered prompt_tokens gates.
 - [x] Tested Stage7 SSE workload: 24 unique docs/case × four context lengths × short/long decode × concurrency 1/2/4/8 × two seeds.
-- [ ] Real Tang Stage7 384 SSE requests accepted with actual provider input/output token counts; publish failure and success evidence.
-- [ ] Stage7 SLO frontier compared with Stage5 (corpus/decode distribution shift explicitly noted), raw results/manifest and report pinned.
+- [x] Real Tang Stage7 384/384 SSE requests accepted across 5 genres, 4 input buckets, two decode budgets, concurrency 1/2/4/8 and two seeds; original protocol-failed 120-request attempt retained. [Report](STAGE7_REPORT_2026-10-28.md).
+- [x] Stage7 exploratory TTFT-vs-throughput frontier computed from two real seeds, all 16 raw case files + SHA256 manifest published, with explicit Stage5 distribution shift caveat.
+
+## Stage 8 — Heterogeneous practical traffic and model output stopping
+
+- [ ] Freeze genuinely diverse current-domain and multilingual text with explicit redistribution or permissive licenses; do not relabel old-book prose as enterprise production traffic.
+- [ ] Build a workload with actual naturally early-stopping and long-running outputs, verified output token distributions rather than just different max_new_tokens values.
+- [ ] Introduce arrivals/time-varying load (arrival rate vs concurrency) while retaining deterministic replay manifests and independent test windows.
+- [ ] Characterize P95 TTFT SLO violations, request queueing and GPU KV cache occupancy with raw vLLM metrics; compare model configurations without causal overclaims.
+- [ ] Publish Stage8 held-out validation and any measured model-serving improvements with failure/negative evidence.

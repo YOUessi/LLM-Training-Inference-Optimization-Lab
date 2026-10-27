@@ -1,0 +1,31 @@
+{
+  "schema": "stage7-original-invalid-protocol-v1",
+  "status": "invalid_long_input_gate",
+  "old_source_commit": "e214c39777632a74fd6497bafeb7291d51aa9233",
+  "corrected_source_commit": "00993045f8564539428ce65c5a9170f5c840ab1d",
+  "cause": "verbose long-answer instruction counted as extra prompt prefill; initial short bucket 207-269, above frozen upper bound 240",
+  "invalid_case": "long_c1_seed42.json",
+  "invalid_case_actual_short_bucket": {
+    "status": "invalid",
+    "sent": 6,
+    "real_prompt_token_bounds": [
+      110,
+      240
+    ],
+    "mean_actual_prompt_tokens": 235.0,
+    "min_actual_prompt_tokens": 207,
+    "max_actual_prompt_tokens": 269,
+    "p50_ttft_ms": 21.501775991055183,
+    "p95_ttft_ms": 26.706935008405708
+  },
+  "actual_long_generated_tokens_mean": 128.0,
+  "first_attempt_real_requests": 120,
+  "accepted_into_corrected_384_request_matrix": false,
+  "raw_results": [
+    "short_c1_seed42.json",
+    "short_c2_seed42.json",
+    "short_c4_seed42.json",
+    "short_c8_seed42.json",
+    "long_c1_seed42.json"
+  ]
+}

@@ -38,12 +38,16 @@ def audit(root: Path) -> dict:
         "Stage 5 Mixed Context":(root/"docs/STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md").exists(),
         "Stage 6 SLO frontier":(root/"docs/STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md").exists(),
         "Stage 6 KV capacity matrix":(root/"docs/STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md").exists(),
+        "Stage 7 diverse natural prose":(root/"docs/STAGE7_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
         "Mixed context probe":(root/"src/llm_opt_lab/serving/mixed_context_bench.py").exists(),
         "Stage5 eviction launcher":(root/"scripts/run_stage5_eviction.sh").exists(),
         "Stage5 mixed launcher":(root/"scripts/run_stage5_mixed.sh").exists(),
+        "Stage7 attributed frozen corpus":(root/"data/stage7_public_domain_manifest.json").exists(),
+        "Stage7 natural SSE runner":(root/"scripts/run_stage7_natural.sh").exists(),
+        "Stage7 two-seed analyzer":(root/"src/llm_opt_lab/serving/stage7_analysis.py").exists(),
     }
     actions=[]
     if not all(implementation.values()):
@@ -62,8 +66,12 @@ def audit(root: Path) -> dict:
         if not reports["Stage 6 KV capacity matrix"]:
             actions.append("Design and run Tang-GPU, multi-capacity 128/256/512 KV cache-pressure suite; requires authorized online Tang execution.")
         else:
-            actions.append("Stage6 multi-capacity 128/256/512 KV retention has real evidence: next freeze a heterogeneous nonrepetitive corpus and output-length mixtures.")
-        actions.append("Repeat Stage6 P95 TTFT SLO frontier on frozen diverse text with varied request arrival and output lengths; do not infer production SLO from two seeds.")
+            if not reports["Stage 7 diverse natural prose"]:
+                actions.append("Stage6 multi-capacity 128/256/512 KV retention has real evidence: next freeze a heterogeneous nonrepetitive corpus and output-length mixtures.")
+                actions.append("Repeat Stage6 P95 TTFT SLO frontier on frozen diverse text with varied request arrival and output lengths; do not infer production SLO from two seeds.")
+            else:
+                actions.append("Stage7 384 real natural-prose requests and initial INVALID run are archived: next freeze a rights-cleared modern multilingual multi-domain workload for Stage8.")
+                actions.append("Stage8: measure real naturally early-stopping outputs and controlled arrival-rate/queueing SLO curves, with multi-seed held-out validation.")
     actions.append("Keep Nsight Compute hardware counters and multi-GPU FSDP BLOCKED until authorized permissions/hardware exist.")
     try:
         x=subprocess.run(["git","rev-parse","HEAD"],cwd=root,capture_output=True,text=True,timeout=4,check=False)
@@ -80,7 +88,11 @@ def audit(root: Path) -> dict:
         "next_executable_actions":actions,
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
-        "status":"stage5_evidence_published" if stage5_complete else "stage5_evidence_pending",
+        "status":(
+            "stage7_evidence_published" if reports["Stage 7 diverse natural prose"]
+            else "stage5_evidence_published" if stage5_complete
+            else "stage5_evidence_pending"
+        ),
     }
 
 

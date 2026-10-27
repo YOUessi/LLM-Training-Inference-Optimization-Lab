@@ -115,3 +115,7 @@ a new code commit and new results directory. Old invalid data is retained.
 
 This note was appended after discovering the protocol failure; the earlier
 results are not relabeled as valid.
+
+## Post-run outcome (append-only, not a retrospective change to gates)
+
+The fully corrected experiment from commit 00993045f8564539428ce65c5a9170f5c840ab1d completed all 384/384 requests with the original per-bucket token bounds. All 16 result files, two-seed matched analysis, source hashes and the original invalid run are archived in docs/evidence/stage7_natural. See docs/STAGE7_REPORT_2026-10-28.md. This new paragraph does not revise the original preregistered criteria.
