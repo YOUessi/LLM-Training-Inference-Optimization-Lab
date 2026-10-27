@@ -116,3 +116,12 @@ See [experimental tuning and independent validation](docs/RMSNORM_TUNING_RESULTS
 ### Training infrastructure extension
 
 Real [single-GPU FSDP1 smoke](src/llm_opt_lab/training/fsdp_smoke.py) exercised 20 forward/backward/optimizer steps. World-size=1 selects NO_SHARD, not genuine distributed sharding. See [Stage 2 evidence](docs/STAGE2_REPORT_2026-10-26.md#4-real-pytorch-fsdp1-single-gpu-execution-no_shard).
+
+### Real vLLM deployment (October 28, 2026)
+
+vLLM **0.19.1 is installed and actually ran** on Tang with locally cached
+Qwen2.5-1.5B-Instruct. First real SSE measurements are complete;
+stronger multi-order workload experiments are in
+[\`scripts/run_vllm_benchmark.sh\`](scripts/run_vllm_benchmark.sh).
+The vLLM serving results must not be confused with the earlier serialized
+Transformers baseline. See [server runbook](docs/VLLM_RUNBOOK.md).

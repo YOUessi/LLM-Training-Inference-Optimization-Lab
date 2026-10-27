@@ -102,3 +102,33 @@ as if the concurrency semantics were identical.
 ### Offline baseline Pillow compatibility
 
 The global Tang Python has Pillow 9.0.1, incompatible with Transformers 4.57.6's `PIL.Image.Resampling`. Use the lab-created venv which reuses Torch 2.10 read-only and install `Pillow==11.3.0` **inside the venv only**. Run the offline baseline through `$HOME/conda_env/llm-opt-serving/bin/python`; do not install Pillow globally.
+
+## Confirmed real deployment — 2026-10-28
+
+The previously blocked \`vllm==0.19.1\` Linux wheel is now downloaded and installed on Tang in the dedicated \`llm-opt-serving\` virtualenv (which still reads the existing Torch 2.10.0+cu128). PyPI official wheel SHA-256 was verified:
+
+\`71a87f46cafab4489c69a5c5c83b870d0235e5694d8222303d460576293dc719\`
+
+The initial 8-request × 1/2/4-concurrency vLLM stream sweep succeeded on
+Qwen2.5-1.5B-Instruct. For stronger workload/sequence validation, run:
+
+\`\`\`bash
+bash scripts/run_vllm_benchmark.sh
+\`\`\`
+
+This bounds GPU startup, refuses occupied devices and occupied ports, executes
+three sequential workload sweeps with warmup, writes results under ignored
+\`results/\`, and terminates only the server process it owns.
+It refuses overwriting an existing result directory. 200+ pre-existing
+GPU jobs are not terminated or modified.
+
+Critical provenance: serving endpoint binds to \`127.0.0.1:8026\`, NVIDIA RTX
+4090 Laptop, model snapshot
+\`989aa7980e4cf806f80c7fef2b1adb7bc71aa306\`,
+\`--gpu-memory-utilization 0.50\`, \`--max-model-len 2048\`,
+\`--max-num-seqs 8\`, FP16, vLLM 0.19.1. Different workload shapes and run
+orders are reported separately to prevent conflating speedups.
+
+An unrelated \`mediapipe\` system-site package expects older Protobuf than
+the protobuf installed inside the lab venv. **No global dependency was
+changed to silence this conflict.** Only verify vLLM's own import/runtime path.
