@@ -166,3 +166,7 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage6 measured retention-vs-capacity
 
 [Four independent real vLLM KV capacity points](docs/STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md): 128 and 256 Block instances lose the anchor after four unrelated long contexts; 512 retains it after four but loses it after twelve. Each condition used a fresh model server and real prefix hit counters; no claimed exact general eviction threshold.
+
+### Stage7 frozen multi-genre natural prose workload
+
+[Public-domain-in-USA 30-excerpt corpus](data/README.md), [preregistered GPU experiment](docs/STAGE7_PROTOCOL.md), [vLLM mixed prefill/decode runner](scripts/run_stage7_natural.sh). Four actual input lengths and two generated length instructions are validated by real provider usage, not max-token caps. **Stage7 performance conclusions are pending the real Tang GPU run.**

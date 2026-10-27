@@ -85,3 +85,10 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 - [x] Stage6 KV capacity matrix protocol frozen: 128/256/512 Block budgets, 4/12 fillers, fresh server per condition, retain/evict/partial classification.
 - [x] Stage6 independent real-GPU capacity matrix: 128/256/512 blocks, 4/12 distinct long prefixes, 4/4 measured classification valid. [Report](STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md).
+
+## Stage 7 — Multi-genre nonrepeating prose, varied generation lengths
+- [x] Freeze 30 attributable full-sentence passages from 5 classic public-domain-in-US works, exact original source SHA256 and excerpt SHA256.
+- [x] Tang actual Qwen tokenizer calibrated 4 length buckets and preregistered prompt_tokens gates.
+- [x] Tested Stage7 SSE workload: 24 unique docs/case × four context lengths × short/long decode × concurrency 1/2/4/8 × two seeds.
+- [ ] Real Tang Stage7 384 SSE requests accepted with actual provider input/output token counts; publish failure and success evidence.
+- [ ] Stage7 SLO frontier compared with Stage5 (corpus/decode distribution shift explicitly noted), raw results/manifest and report pinned.
