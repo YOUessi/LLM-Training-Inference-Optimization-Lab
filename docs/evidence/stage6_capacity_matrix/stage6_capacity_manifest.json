@@ -1,0 +1,36 @@
+{
+  "schema": "stage6-capacity-matrix-provenance-v1",
+  "date": "2026-10-28",
+  "experiment_source_commit": "92f4e72a433ffb14262e0d9d9e449f37feec445d",
+  "engine": "vllm-0.19.1",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "raw_server_logs_stay_on_tang": true,
+  "source_files": [
+    {
+      "path": "blocks128-fillers4/result.json",
+      "sha256": "3316b483f75db66d9cb2bef8d70c76257cea3a4733ba204a8a80c899cf922bde",
+      "server_log_sha256": "393ceb0f55a2434c88c18b9fbcbcf3a1e3238cdd94d147e1ac35474df0cbeac8",
+      "effective_runtime_flags_verified": true
+    },
+    {
+      "path": "blocks256-fillers4/result.json",
+      "sha256": "ad4618641da73f9520e20da46de7e75b01fbb1ec080278ac051bd813e7c93f0d",
+      "server_log_sha256": "417894e16f023dc281cca5924e7c0d3c2eee7d638c505e7708b3f8ae6cddfba7",
+      "effective_runtime_flags_verified": true
+    },
+    {
+      "path": "blocks512-fillers4/result.json",
+      "sha256": "96cb02e92b154a9e360f84de2cb269b9607931814cdb91591781704be65c551a",
+      "server_log_sha256": "027230a5ba3a50374f67aa8021b7c31b45ef5164ada23f64bacbd675e1ccde99",
+      "effective_runtime_flags_verified": true
+    },
+    {
+      "path": "blocks512-fillers12/result.json",
+      "sha256": "642631891d6003ca764daff02e782e4e52bcfe8bf64e6c77c01953ad2207d608",
+      "server_log_sha256": "fadf0136033b6b41e2f5cc1c4fc4651e530858c8565a3ef44ada376ce9ff4e19",
+      "effective_runtime_flags_verified": true
+    }
+  ]
+}

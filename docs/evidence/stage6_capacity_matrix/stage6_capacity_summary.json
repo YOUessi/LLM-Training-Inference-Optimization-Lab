@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "kind": "stage6_four_point_kv_retention_capacity_experiment",
+  "source_git_commit": "92f4e72a433ffb14262e0d9d9e449f37feec445d",
+  "cases": [
+    {
+      "blocks": 128,
+      "fillers": 4,
+      "result": "evicted",
+      "hit_fraction": 0.013212221304706853,
+      "anchor_event_counts": 8,
+      "post_pressure_ttft_ms": 68.2847989955917,
+      "warm_ttft_ms": 17.665560997556895
+    },
+    {
+      "blocks": 256,
+      "fillers": 4,
+      "result": "evicted",
+      "hit_fraction": 0.013212221304706853,
+      "anchor_event_counts": 8,
+      "post_pressure_ttft_ms": 67.14292601100169,
+      "warm_ttft_ms": 17.170012986753136
+    },
+    {
+      "blocks": 512,
+      "fillers": 4,
+      "result": "retained",
+      "hit_fraction": 0.990916597853014,
+      "anchor_event_counts": 8,
+      "post_pressure_ttft_ms": 15.820315980818123,
+      "warm_ttft_ms": 16.84820800437592
+    },
+    {
+      "blocks": 512,
+      "fillers": 12,
+      "result": "evicted",
+      "hit_fraction": 0.013212221304706853,
+      "anchor_event_counts": 16,
+      "post_pressure_ttft_ms": 66.91325700376183,
+      "warm_ttft_ms": 17.768441000953317
+    }
+  ],
+  "all_four_valid": true,
+  "warning": "Hardware block budget and workload size are limited; derived retention classification is from vLLM prefix hit counters, not introspection of internal replacement algorithm."
+}

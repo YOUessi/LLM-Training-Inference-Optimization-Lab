@@ -162,3 +162,7 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage6 independent capacity-retention tests
 
 [Four-point KV retention matrix protocol](docs/STAGE6_CAPACITY_MATRIX_PROTOCOL.md), [reproducible per-case clean-server runner](scripts/run_stage6_capacity_matrix.sh), and [classifier](src/llm_opt_lab/serving/kv_capacity_curve.py). A valid retained cache counts as a measured outcome, not a false failure. Run only on an idle GPU.
+
+### Stage6 measured retention-vs-capacity
+
+[Four independent real vLLM KV capacity points](docs/STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md): 128 and 256 Block instances lose the anchor after four unrelated long contexts; 512 retains it after four but loses it after twelve. Each condition used a fresh model server and real prefix hit counters; no claimed exact general eviction threshold.

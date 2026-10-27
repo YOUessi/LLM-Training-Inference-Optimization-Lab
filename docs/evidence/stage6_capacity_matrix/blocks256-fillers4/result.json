@@ -1,0 +1,120 @@
+{
+  "status": "measured",
+  "kind": "stage6_kv_retention_curve_single_case",
+  "engine": "vllm",
+  "not_a_model_quality_benchmark": true,
+  "environment": {
+    "timestamp_utc": "2026-10-27T21:00:07.335182+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "92f4e72a433ffb14262e0d9d9e449f37feec445d",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "config": {
+    "blocks": 256,
+    "fillers": 4,
+    "seed": 830,
+    "prefix_repetitions": 35,
+    "max_new_tokens": 16,
+    "model": "qwen2.5-1.5b-instruct-local"
+  },
+  "classification": {
+    "stage_valid": true,
+    "post_pressure_classification": "evicted",
+    "initial_miss_valid": true,
+    "immediate_hit_valid": true,
+    "replay_hit_valid": true,
+    "post_pressure_hit_fraction": 0.013212221304706853
+  },
+  "events": [
+    {
+      "stage": "cold",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 126.29602398374118,
+      "query_delta": 1211.0,
+      "hit_delta": 0.0,
+      "hit_fraction": 0.0
+    },
+    {
+      "stage": "warm",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 17.170012986753136,
+      "query_delta": 1211.0,
+      "hit_delta": 1200.0,
+      "hit_fraction": 0.990916597853014
+    },
+    {
+      "stage": "filler_000",
+      "index": 100,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.35370997921564,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_001",
+      "index": 101,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.60786400223151,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_002",
+      "index": 102,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.2659999798052,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_003",
+      "index": 103,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 64.66369499685243,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "after_pressure",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 67.14292601100169,
+      "query_delta": 1211.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013212221304706853
+    },
+    {
+      "stage": "after_rewarm",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 16.253541980404407,
+      "query_delta": 1211.0,
+      "hit_delta": 1200.0,
+      "hit_fraction": 0.990916597853014
+    }
+  ],
+  "limitation": "Eviction classified from prefix-hit loss; not a direct block table or replacement-policy inspection."
+}

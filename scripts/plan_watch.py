@@ -37,6 +37,7 @@ def audit(root: Path) -> dict:
         "Stage 5 KV capacity":(root/"docs/STAGE5_KV_CAPACITY_REPORT_2026-10-28.md").exists(),
         "Stage 5 Mixed Context":(root/"docs/STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md").exists(),
         "Stage 6 SLO frontier":(root/"docs/STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md").exists(),
+        "Stage 6 KV capacity matrix":(root/"docs/STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -58,8 +59,11 @@ def audit(root: Path) -> dict:
     if stage5_complete and not reports["Stage 6 SLO frontier"]:
         actions.append("Compute and publish Stage6 P95 TTFT SLO frontier from validated Stage5 real SSE evidence.")
     if stage5_complete and reports["Stage 6 SLO frontier"]:
-        actions.append("Design and run a future Tang-GPU, multi-capacity 128/256/512 KV cache-pressure suite, with explicit block and hit-counter gates; requires authorized online Tang execution.")
-        actions.append("Freeze diverse nonrepetitive context and output-length mixtures before repeating Stage6 SLO profiles.")
+        if not reports["Stage 6 KV capacity matrix"]:
+            actions.append("Design and run Tang-GPU, multi-capacity 128/256/512 KV cache-pressure suite; requires authorized online Tang execution.")
+        else:
+            actions.append("Stage6 multi-capacity 128/256/512 KV retention has real evidence: next freeze a heterogeneous nonrepetitive corpus and output-length mixtures.")
+        actions.append("Repeat Stage6 P95 TTFT SLO frontier on frozen diverse text with varied request arrival and output lengths; do not infer production SLO from two seeds.")
     actions.append("Keep Nsight Compute hardware counters and multi-GPU FSDP BLOCKED until authorized permissions/hardware exist.")
     try:
         x=subprocess.run(["git","rev-parse","HEAD"],cwd=root,capture_output=True,text=True,timeout=4,check=False)

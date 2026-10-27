@@ -84,4 +84,4 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] Evaluate reproducible engineering optimization with memory/performance logs, not just a repackaged demo.
 
 - [x] Stage6 KV capacity matrix protocol frozen: 128/256/512 Block budgets, 4/12 fillers, fresh server per condition, retain/evict/partial classification.
-- [ ] Stage6 real GPU capacity matrix measured across all four conditions and original counter evidence retained.
+- [x] Stage6 independent real-GPU capacity matrix: 128/256/512 blocks, 4/12 distinct long prefixes, 4/4 measured classification valid. [Report](STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md).

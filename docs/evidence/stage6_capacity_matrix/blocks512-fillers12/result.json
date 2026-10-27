@@ -1,0 +1,200 @@
+{
+  "status": "measured",
+  "kind": "stage6_kv_retention_curve_single_case",
+  "engine": "vllm",
+  "not_a_model_quality_benchmark": true,
+  "environment": {
+    "timestamp_utc": "2026-10-27T21:00:44.214942+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "92f4e72a433ffb14262e0d9d9e449f37feec445d",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "config": {
+    "blocks": 512,
+    "fillers": 12,
+    "seed": 830,
+    "prefix_repetitions": 35,
+    "max_new_tokens": 16,
+    "model": "qwen2.5-1.5b-instruct-local"
+  },
+  "classification": {
+    "stage_valid": true,
+    "post_pressure_classification": "evicted",
+    "initial_miss_valid": true,
+    "immediate_hit_valid": true,
+    "replay_hit_valid": true,
+    "post_pressure_hit_fraction": 0.013212221304706853
+  },
+  "events": [
+    {
+      "stage": "cold",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 84.51226900797337,
+      "query_delta": 1211.0,
+      "hit_delta": 0.0,
+      "hit_fraction": 0.0
+    },
+    {
+      "stage": "warm",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 17.768441000953317,
+      "query_delta": 1211.0,
+      "hit_delta": 1200.0,
+      "hit_fraction": 0.990916597853014
+    },
+    {
+      "stage": "filler_000",
+      "index": 100,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.91261500236578,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_001",
+      "index": 101,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 64.54416399355978,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_002",
+      "index": 102,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.22628799616359,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_003",
+      "index": 103,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 68.30688499030657,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_004",
+      "index": 104,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.13782298518345,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_005",
+      "index": 105,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.7276390013285,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_006",
+      "index": 106,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.40443801390938,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_007",
+      "index": 107,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.72442199103534,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_008",
+      "index": 108,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.34402599208988,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_009",
+      "index": 109,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.72102798963897,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_010",
+      "index": 110,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.9754589907825,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "filler_011",
+      "index": 111,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.85211400710978,
+      "query_delta": 1210.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013223140495867768
+    },
+    {
+      "stage": "after_pressure",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 66.91325700376183,
+      "query_delta": 1211.0,
+      "hit_delta": 16.0,
+      "hit_fraction": 0.013212221304706853
+    },
+    {
+      "stage": "after_rewarm",
+      "index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 15.94820900936611,
+      "query_delta": 1211.0,
+      "hit_delta": 1200.0,
+      "hit_fraction": 0.990916597853014
+    }
+  ],
+  "limitation": "Eviction classified from prefix-hit loss; not a direct block table or replacement-policy inspection."
+}
