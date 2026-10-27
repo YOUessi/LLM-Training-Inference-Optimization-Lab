@@ -158,3 +158,7 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage6 initial result: latency SLO/throughput frontier
 
 [Conservative two-seed empirical P95 TTFT SLO selection](docs/STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md) from 192 real Stage5 SSE requests. At experimental 150ms P95 TTFT target concurrency 2 (min 207 output tok/s) qualifies; at 250ms concurrency 4 (min 320.8 tok/s); see report for scope limits. This is derived analysis, **not a fresh GPU run**.
+
+### Stage6 independent capacity-retention tests
+
+[Four-point KV retention matrix protocol](docs/STAGE6_CAPACITY_MATRIX_PROTOCOL.md), [reproducible per-case clean-server runner](scripts/run_stage6_capacity_matrix.sh), and [classifier](src/llm_opt_lab/serving/kv_capacity_curve.py). A valid retained cache counts as a measured outcome, not a false failure. Run only on an idle GPU.

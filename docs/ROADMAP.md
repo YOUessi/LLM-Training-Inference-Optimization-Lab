@@ -82,3 +82,6 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Derived SLO frontier from Stage5 real mixed requests (two-seed worst P95 TTFT, min throughput): concurrency 1/2/4/8 qualify at 100/150/250/500ms SLO, respectively. [Report](STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md).
 - [ ] Repeat SLO frontier with varied output lengths and nonrepetitive context to improve external validity.
 - [ ] Evaluate reproducible engineering optimization with memory/performance logs, not just a repackaged demo.
+
+- [x] Stage6 KV capacity matrix protocol frozen: 128/256/512 Block budgets, 4/12 fillers, fresh server per condition, retain/evict/partial classification.
+- [ ] Stage6 real GPU capacity matrix measured across all four conditions and original counter evidence retained.
