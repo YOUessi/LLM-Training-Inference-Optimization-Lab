@@ -1,0 +1,47 @@
+{
+  "schema": "nvtx-cuda-trace-evidence-v1",
+  "date": "2026-10-28",
+  "source_commit": "1ae20a245e5d745f21cb5b976a6fecc76839a92c",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "tool": "NVIDIA Nsight Systems CLI 2026.5.1.161",
+  "workflow": "NVTX ranges + CUDA kernel trace with CPU sampling disabled",
+  "report_binary_tang_local_path": "results/nsys_targeted_nvtx_20261028/rmsnorm_f32.nsys-rep",
+  "report_binary_sha256": "032a970ce21de80bec9c5b4107b38f23ee12e53919069453aed0aaad190a12a5",
+  "report_binary_committed_to_github": false,
+  "csv_sha256": {
+    "cuda_kernels_cuda_gpu_kern_sum.csv": "b8cb1e5aed09c4510fc69614b3e4c41d4a2666594c2dd5aae534ace73c6a570d",
+    "nvtx_nvtx_gpu_proj_sum.csv": "3bf556a6635222fa696941421c6e1dfd36f6459d2790203cfd0d1870f01d5e97",
+    "nvtx_nvtx_kern_sum.csv": "caac3dabb426ec9b0e43a33cac0458fed774409ace767d935f2fea541e437e2e",
+    "nvtx_nvtx_pushpop_sum.csv": "c234efcc84002bb25697dcd7f780c69dc259747fb7a26221c0f108f57e3f86fc"
+  },
+  "hardware_counters_recorded": false,
+  "nvtx_ranges": {
+    "eager_unfused": {
+      "gpu_ops": 150,
+      "projected_ns": 860498,
+      "range_ns": 880983
+    },
+    "torch_inductor_fused": {
+      "gpu_ops": 30,
+      "projected_ns": 751792,
+      "range_ns": 809325
+    },
+    "custom_triton": {
+      "gpu_ops": 30,
+      "projected_ns": 432297,
+      "range_ns": 459916
+    }
+  },
+  "primary_kernel": {
+    "torch_inductor_fused": {
+      "instances": 30,
+      "mean_us": 4.5633,
+      "median_us": 4.544
+    },
+    "custom_triton": {
+      "instances": 30,
+      "mean_us": 4.5516000000000005,
+      "median_us": 4.544
+    }
+  }
+}

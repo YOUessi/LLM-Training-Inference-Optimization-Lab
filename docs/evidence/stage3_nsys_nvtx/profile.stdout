@@ -1,0 +1,23 @@
+eager_unfused correctness: pass maximum absolute error: 0.0 NVTX range: llm-opt:eager_unfused
+torch_inductor_fused correctness: pass maximum absolute error: 4.76837158203125e-07 NVTX range: llm-opt:torch_inductor_fused
+custom_triton correctness: pass maximum absolute error: 4.76837158203125e-07 NVTX range: llm-opt:custom_triton
+Collecting data...
+Generating '/tmp/nsys-you/nsys-report-4f42.qdstrm'
+
+[1/1] [0%                          ] rmsnorm_f32.nsys-rep
+[1/1] [0%                          ] rmsnorm_f32.nsys-rep
+[1/1] [1%                          ] rmsnorm_f32.nsys-rep
+[1/1] [2%                          ] rmsnorm_f32.nsys-rep
+[1/1] [5%                          ] rmsnorm_f32.nsys-rep
+[1/1] [14%                         ] rmsnorm_f32.nsys-rep
+[1/1] [=15%                        ] rmsnorm_f32.nsys-rep
+[1/1] [==19%                       ] rmsnorm_f32.nsys-rep
+[1/1] [==20%                       ] rmsnorm_f32.nsys-rep
+[1/1] [=======39%                  ] rmsnorm_f32.nsys-rep
+[1/1] [===========52%              ] rmsnorm_f32.nsys-rep
+[1/1] [=======================96%  ] rmsnorm_f32.nsys-rep
+[1/1] [========================98% ] rmsnorm_f32.nsys-rep
+[1/1] [========================100%] rmsnorm_f32.nsys-rep
+[1/1] [========================100%] rmsnorm_f32.nsys-rep
+Generated:
+	/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/nsys_targeted_nvtx_20261028/rmsnorm_f32.nsys-rep

@@ -1,0 +1,49 @@
+{
+  "status": "measured",
+  "kind": "real_cuda_rmsnorm_nvtx_trace_driver",
+  "not_an_uninstrumented_speed_benchmark": true,
+  "environment": {
+    "timestamp_utc": "2026-10-27T19:40:53.599482+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "1ae20a245e5d745f21cb5b976a6fecc76839a92c",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "config": {
+    "rows": 256,
+    "cols": 4096,
+    "dtype": "float32",
+    "warmup": 4,
+    "repeats": 30,
+    "seed": 2026,
+    "eps": 1e-06
+  },
+  "cases": {
+    "eager_unfused": {
+      "correctness": "pass",
+      "max_absolute_error": 0.0,
+      "nvtx_range": "llm-opt:eager_unfused",
+      "iterations": 30
+    },
+    "torch_inductor_fused": {
+      "correctness": "pass",
+      "max_absolute_error": 4.76837158203125e-07,
+      "nvtx_range": "llm-opt:torch_inductor_fused",
+      "iterations": 30
+    },
+    "custom_triton": {
+      "correctness": "pass",
+      "max_absolute_error": 4.76837158203125e-07,
+      "nvtx_range": "llm-opt:custom_triton",
+      "iterations": 30
+    }
+  }
+}

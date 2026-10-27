@@ -1,0 +1,4 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Range
+41.0,880983,1,880983.0,880983.0,880983,880983,0.0,:llm-opt:eager_unfused
+37.6,809325,1,809325.0,809325.0,809325,809325,0.0,:llm-opt:torch_inductor_fused
+21.4,459916,1,459916.0,459916.0,459916,459916,0.0,:llm-opt:custom_triton

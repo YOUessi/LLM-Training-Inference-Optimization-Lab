@@ -55,3 +55,5 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Corrected long decode actually generated 128 tokens, 36/36 requests; false earlier 21-token trial retained as negative evidence.
 - [x] Raw JSON, configuration, numerical comparisons and output-length gate tests recorded in [Stage 3 report](STAGE3_REPORT_2026-10-28.md).
 - [ ] Nsight Compute GPU hardware counter profiling, not yet accepted.
+
+- [x] NVTX-targeted 30-call RMSNorm comparison: 150 eager launches vs 30 Inductor vs 30 Triton; archived [Stage3 NVTX report](STAGE3_NVTX_REPORT_2026-10-28.md).

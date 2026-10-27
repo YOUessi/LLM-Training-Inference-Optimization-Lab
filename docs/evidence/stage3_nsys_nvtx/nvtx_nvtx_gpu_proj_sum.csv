@@ -1,0 +1,4 @@
+Range,Style,Total Proj Time (ns),Total Range Time (ns),Range Instances,Proj Avg (ns),Proj Med (ns),Proj Min (ns),Proj Max (ns),Proj StdDev (ns),Total GPU Ops,Avg GPU Ops,Avg Range Lvl,Avg Num Child
+:llm-opt:eager_unfused,PushPop,860498,880983,1,860498.0,860498.0,860498,860498,0.0,150,150.0,0.0,0.0
+:llm-opt:torch_inductor_fused,PushPop,751792,809325,1,751792.0,751792.0,751792,751792,0.0,30,30.0,0.0,0.0
+:llm-opt:custom_triton,PushPop,432297,459916,1,432297.0,432297.0,432297,432297,0.0,30,30.0,0.0,0.0

@@ -1,0 +1,6 @@
+Generating SQLite file results/nsys_targeted_nvtx_20261028/rmsnorm_f32.sqlite from results/nsys_targeted_nvtx_20261028/rmsnorm_f32.nsys-rep
+Processing [results/nsys_targeted_nvtx_20261028/rmsnorm_f32.sqlite] with [/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/nsight_packages/extracted_nsys_2026_5_1/opt/nvidia/nsight-systems-cli/2026.5.1/target-linux-x64/reports/nvtx_kern_sum.py] to [results/nsys_targeted_nvtx_20261028/nvtx_nvtx_kern_sum.csv]... PROCESSED
+
+Processing [results/nsys_targeted_nvtx_20261028/rmsnorm_f32.sqlite] with [/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/nsight_packages/extracted_nsys_2026_5_1/opt/nvidia/nsight-systems-cli/2026.5.1/target-linux-x64/reports/nvtx_gpu_proj_sum.py] to [results/nsys_targeted_nvtx_20261028/nvtx_nvtx_gpu_proj_sum.csv]... PROCESSED
+
+Processing [results/nsys_targeted_nvtx_20261028/rmsnorm_f32.sqlite] with [/home/you/projects/LLM-Training-Inference-Optimization-Lab/results/nsight_packages/extracted_nsys_2026_5_1/opt/nvidia/nsight-systems-cli/2026.5.1/target-linux-x64/reports/nvtx_pushpop_sum.py] to [results/nsys_targeted_nvtx_20261028/nvtx_nvtx_pushpop_sum.csv]... PROCESSED
