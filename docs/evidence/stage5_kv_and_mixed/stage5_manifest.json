@@ -1,0 +1,54 @@
+{
+  "schema": "stage5-kv-and-mixed-context-evidence-v1",
+  "experiment_source_commit": "e7c96b8f9568885074630f4727e274a31cb862ed",
+  "date": "2026-10-28",
+  "machine": "Tang, RTX4090 Laptop",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "num_blocks_override_eviction": 256,
+  "capacity_cache_enabled_log_verified": true,
+  "mixed_cache_disabled_log_verified": true,
+  "capacity_server_log_sha256": "ef850de9b9bd8d6c7c11c2077ab80c802e031bb38a2ae33426e99f6562802690",
+  "mixed_server_log_sha256": "70e8d70ac762d2b656666e190654b57c76fb3e5a940526f3febb768a3721b0c7",
+  "source_files": [
+    {
+      "relative": "stage5_eviction_20261028/capacity.json",
+      "sha256": "8f4a1d5b6a0ea6e4f357bf881fbe66d75037d773d4dabad790999436ee73ba64"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c1_seed42.json",
+      "sha256": "4800f0c19cf501a9bacd5bb28549a522633dea14c6a3b56efa4fa2dce3526600"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c1_seed137.json",
+      "sha256": "f49c4d0c5130bc233a2111d93ea02452259d0357ca918f02a94da6da9e03e8b7"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c2_seed42.json",
+      "sha256": "5dfbab6d56cbee0ca35867706c7a4660cd7abff23145a072300e6d22a1628a72"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c2_seed137.json",
+      "sha256": "7e4b07732d7f47703f636fc112e13af82b891cefc578c5ec9cb2eeedff9be3ad"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c4_seed42.json",
+      "sha256": "2353ce7d1d7f697c294726d7acee8a476b6678708fd51827c83e4515e9d5ecee"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c4_seed137.json",
+      "sha256": "efa6fe04a810798be5758d4ac98b0509a478591929fc368eb76dc2e4f8a721db"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c8_seed42.json",
+      "sha256": "3e67eed8bd0f83fec69c07707eff485693b9589435d3cf5a4fe0c810fb80188d"
+    },
+    {
+      "relative": "stage5_mixed_20261028/mixed_c8_seed137.json",
+      "sha256": "4492b8530844cd68b28ecfb45c8c3e51ef892e5b040f2d2900678e23b37d9591"
+    }
+  ],
+  "total_mix_successes": 192,
+  "private_server_logs_kept_on_Tang": true
+}

@@ -1,0 +1,247 @@
+{
+  "status": "pass",
+  "kind": "vllm_prefix_cache_capacity_eviction_probe",
+  "engine": "vllm",
+  "source": "actual streaming requests plus Prometheus vLLM prefix tokens",
+  "environment": {
+    "timestamp_utc": "2026-10-27T20:41:44.771641+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "e7c96b8f9568885074630f4727e274a31cb862ed",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "config": {
+    "model": "qwen2.5-1.5b-instruct-local",
+    "base_url": "http://127.0.0.1:8026",
+    "num_gpu_blocks_override": 256,
+    "distinct_fillers": 12,
+    "prefix_repetitions": 35,
+    "max_new_tokens": 16,
+    "seed": 830
+  },
+  "gates": {
+    "initial_cold_request_below_10pct": true,
+    "second_identical_request_above_75pct": true,
+    "replay_after_pressure_below_25pct": true,
+    "replay_after_warming_above_75pct": true
+  },
+  "events": [
+    {
+      "stage": "initial_miss",
+      "request_index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 92.5902189919725,
+      "latency_ms": 222.75117199751548,
+      "cache": {
+        "queried_tokens": 1211.0,
+        "cache_hit_tokens": 0.0,
+        "cache_hit_fraction": 0.0
+      }
+    },
+    {
+      "stage": "immediate_replay",
+      "request_index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 17.537429986987263,
+      "latency_ms": 116.3910540053621,
+      "cache": {
+        "queried_tokens": 1211.0,
+        "cache_hit_tokens": 1200.0,
+        "cache_hit_fraction": 0.990916597853014
+      }
+    },
+    {
+      "stage": "unique_filler_000",
+      "request_index": 100,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.77798501914367,
+      "latency_ms": 165.4497270064894,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_001",
+      "request_index": 101,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.97649698960595,
+      "latency_ms": 164.734418009175,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_002",
+      "request_index": 102,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.25908500771038,
+      "latency_ms": 164.39056399394758,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_003",
+      "request_index": 103,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.22686799871735,
+      "latency_ms": 165.22057098336518,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_004",
+      "request_index": 104,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.18824998824857,
+      "latency_ms": 167.9601389914751,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_005",
+      "request_index": 105,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.98428597883321,
+      "latency_ms": 167.5223909842316,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_006",
+      "request_index": 106,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.08503401023336,
+      "latency_ms": 166.32461702101864,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_007",
+      "request_index": 107,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.84889700752683,
+      "latency_ms": 165.14175300835632,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_008",
+      "request_index": 108,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 66.32292200811207,
+      "latency_ms": 165.4431289935019,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_009",
+      "request_index": 109,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.57055199705064,
+      "latency_ms": 166.4708539901767,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_010",
+      "request_index": 110,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 65.88578899390996,
+      "latency_ms": 165.70389000116847,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "unique_filler_011",
+      "request_index": 111,
+      "prompt_tokens": 1210,
+      "completion_tokens": 16,
+      "ttft_ms": 67.63940100790933,
+      "latency_ms": 168.26644499087706,
+      "cache": {
+        "queried_tokens": 1210.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013223140495867768
+      }
+    },
+    {
+      "stage": "post_pressure_replay",
+      "request_index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 68.64367198431864,
+      "latency_ms": 169.4601239869371,
+      "cache": {
+        "queried_tokens": 1211.0,
+        "cache_hit_tokens": 16.0,
+        "cache_hit_fraction": 0.013212221304706853
+      }
+    },
+    {
+      "stage": "restored_replay",
+      "request_index": 0,
+      "prompt_tokens": 1211,
+      "completion_tokens": 16,
+      "ttft_ms": 16.217600990785286,
+      "latency_ms": 114.35881099896505,
+      "cache": {
+        "queried_tokens": 1211.0,
+        "cache_hit_tokens": 1200.0,
+        "cache_hit_fraction": 0.990916597853014
+      }
+    }
+  ],
+  "caveat": "Cache eviction inference is supported by loss of prefix token hits, not a direct per-block eviction counter. Production representativeness is not claimed."
+}

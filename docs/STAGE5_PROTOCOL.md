@@ -72,3 +72,7 @@ working cloud-agent. ChatGPT Automations cannot schedule subhourly tasks.
 The plan audit also runs on a new main-branch commit so it can validate
 new Stage5 evidence immediately instead of waiting for the next scheduled
 slot. The periodic cadence remains GitHub best-effort 30 minutes.
+
+## Post-run note (appended 2026-10-28; does not revise preregistered criteria)
+
+The capacity retention/eviction probe PASSed 4/4 gates on a real 256-block vLLM instance. Mixed-length serving PASSed 192/192. Both real experiment reports, raw JSON, and SHA256 evidence are archived in GitHub. Further multi-capacity experiments are Stage6, not retroactively claimed here.

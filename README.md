@@ -150,3 +150,7 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Recurring repository status (every 30 minutes, best effort)
 
 [GitHub Actions plan audit](.github/workflows/plan-audit.yml) runs CPU regression/integrity checks and compares committed evidence against the Roadmap, posting next-action guidance in each Action run summary. **GitHub Actions cannot use Tang GPU, cannot edit work automatically, and cannot deliver half-hour messages to this ChatGPT thread**. Live GPU milestones require a separately authorized online Tang executor.
+
+### Stage 5 — real CUDA KV eviction and mixed-context serving results
+
+[Real 256-block KV eviction evidence](docs/STAGE5_KV_CAPACITY_REPORT_2026-10-28.md) and [192-request heterogeneous input prefill/throughput](docs/STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md) on Qwen2.5-1.5B FP16/Tang RTX4090 Laptop GPU. Raw 9 JSON files and SHA-256 manifest under docs/evidence/stage5_kv_and_mixed/. Stage6 naturalistic mixed-load and multiple GPU block budgets remain open.
