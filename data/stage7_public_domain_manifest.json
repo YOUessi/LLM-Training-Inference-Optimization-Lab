@@ -1,0 +1,262 @@
+{
+  "schema": "stage7-public-domain-nonrepeating-corpus-v1",
+  "capture_date": "2026-10-28",
+  "book_count": 5,
+  "document_count": 30,
+  "passage_strategy": "six nonoverlapping approximate 9-10k-character full-sentence excerpts per source",
+  "genres": [
+    "fantasy",
+    "natural science",
+    "science fiction",
+    "social fiction",
+    "travel fiction"
+  ],
+  "source_files_not_committed": true,
+  "rights_note": "Source catalogs mark selected original works public domain in the USA. Check laws in other jurisdictions. The excerpts are attributed, and Project Gutenberg is not affiliated with this research.",
+  "corpus_description": "Thirty frozen, varied passages from five published prose books; not a sample of production search traffic, and not guaranteed to match domain-specific private enterprise documents.",
+  "sources": [
+    {
+      "ebook_id": 1342,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "social fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1342",
+      "text_url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+      "source_sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+      "source_bytes": 772386,
+      "body_chars_after_boilerplate_removed": 718465,
+      "rights_catalog": "Project Gutenberg: public domain in USA"
+    },
+    {
+      "ebook_id": 84,
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "genre": "science fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/84",
+      "text_url": "https://www.gutenberg.org/cache/epub/84/pg84.txt",
+      "source_sha256": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42",
+      "source_bytes": 448885,
+      "body_chars_after_boilerplate_removed": 418285,
+      "rights_catalog": "Project Gutenberg: public domain in USA"
+    },
+    {
+      "ebook_id": 2009,
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "genre": "natural science",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2009",
+      "text_url": "https://www.gutenberg.org/cache/epub/2009/pg2009.txt",
+      "source_sha256": "2b13c8524d813e706ad23336d81a142d48b44f1f96788b41494a0a83e1b82f88",
+      "source_bytes": 1302998,
+      "body_chars_after_boilerplate_removed": 1254816,
+      "rights_catalog": "Project Gutenberg: public domain in USA"
+    },
+    {
+      "ebook_id": 103,
+      "title": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "genre": "travel fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/103",
+      "text_url": "https://www.gutenberg.org/cache/epub/103/pg103.txt",
+      "source_sha256": "6f608ea2da50caf73245ad2996e4ee3c02ef1aa2152f7fcfe209df9aa39e7512",
+      "source_bytes": 403712,
+      "body_chars_after_boilerplate_removed": 367329,
+      "rights_catalog": "Project Gutenberg: public domain in USA"
+    },
+    {
+      "ebook_id": 11,
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "genre": "fantasy",
+      "catalog_url": "https://www.gutenberg.org/ebooks/11",
+      "text_url": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "source_sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+      "source_bytes": 174311,
+      "body_chars_after_boilerplate_removed": 143127,
+      "rights_catalog": "Project Gutenberg: public domain in USA"
+    }
+  ],
+  "source_excerpts": [
+    {
+      "doc_id": "pg1342-section00",
+      "text_sha256": "7b3b04cac62c78ce4a064a57355bff34f75241c9aa6f43ea5db1522e3237a098",
+      "text_chars": 10398,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg1342-section01",
+      "text_sha256": "94bcb6b2f84d056f8044f394df710c7ee6ce5e8f1b0a48e193f0f683e07f287c",
+      "text_chars": 10322,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg1342-section02",
+      "text_sha256": "5a6281489ec44d7baa2bc8d08ee02858d96f6fcff2a13910cfe98f322ddafaed",
+      "text_chars": 10345,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg1342-section03",
+      "text_sha256": "690a4f39aa174151ed9fce4a8d7363eff6f98a635bfb31c1f62d3f0364e4f226",
+      "text_chars": 10380,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg1342-section04",
+      "text_sha256": "22db7051473fe236d8d9cc7500aa3d729aa25132876b505d1978dca622a9a69d",
+      "text_chars": 10204,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg1342-section05",
+      "text_sha256": "cba20efce174c985374830d2f971d94fcaa6365b143d4bb1f369623426f93189",
+      "text_chars": 10253,
+      "source_ebook_id": 1342
+    },
+    {
+      "doc_id": "pg84-section00",
+      "text_sha256": "44d72ef585fb0022c7efe9f02a73a0ca3c679c5e1566a7cf582b7d14553031d2",
+      "text_chars": 10348,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg84-section01",
+      "text_sha256": "16b8a2b3a8e7c1c7b1784b0f800e71fd501f227e1d7222e9710a32c507192b91",
+      "text_chars": 10277,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg84-section02",
+      "text_sha256": "ac7a474775ece47538d01202c920671cb27bc0bc21c2ac645a65cc23188b7d93",
+      "text_chars": 10387,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg84-section03",
+      "text_sha256": "26f530a8b79c8fae0f800859859eee3b3f555b738f80b9e5ea31cae1bd3892f0",
+      "text_chars": 10256,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg84-section04",
+      "text_sha256": "f249adc0ae16224fbe1342b7f32df2342f8bd7d0b59a49fcb380e81d0a0ef9c1",
+      "text_chars": 10375,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg84-section05",
+      "text_sha256": "a1797767b78dc1ddc94f58fc157b95a0e2a4f4b15862a7145fcf9ede35629f2b",
+      "text_chars": 10132,
+      "source_ebook_id": 84
+    },
+    {
+      "doc_id": "pg2009-section00",
+      "text_sha256": "c7e5dc45bbc49d98f1e7260a8a6d8c0c944cfebc1bf6803be5650da7f62b6c42",
+      "text_chars": 10377,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg2009-section01",
+      "text_sha256": "ddb786c41652f878ac1602944992a7b9ea70a7e1c178ff14f565b9f80bbdcd6f",
+      "text_chars": 10330,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg2009-section02",
+      "text_sha256": "f6bf1add21dbf4f9c94f324160574ea9747630fe8954c02eab4bc4ffed663630",
+      "text_chars": 10333,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg2009-section03",
+      "text_sha256": "91aea28f36c08aebb9ef33f07898cd01d0af636f2c27741628824d109f0e21b2",
+      "text_chars": 10335,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg2009-section04",
+      "text_sha256": "5c5f018c6d50663d4ffaa83a14a07f6a65aa3052d5088028d19135f61c7c0d45",
+      "text_chars": 10330,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg2009-section05",
+      "text_sha256": "c3d3fddd2de6cf0c801d43bab4a4f3a0a3f434b77627723029929a456699b663",
+      "text_chars": 10293,
+      "source_ebook_id": 2009
+    },
+    {
+      "doc_id": "pg103-section00",
+      "text_sha256": "7fdaa24a8bba670f043c621c4cded4b667bd8cf23f4a8ee464a601497b19e1b6",
+      "text_chars": 10255,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg103-section01",
+      "text_sha256": "b9b29141f19192a5224c98b150c8cb949ba9a5561ae2309eab4a5d93af272a10",
+      "text_chars": 10367,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg103-section02",
+      "text_sha256": "d2cc73d6c92596d8bc94dbe404afbdaa3bf75571c825a17b193496cf7646777a",
+      "text_chars": 10341,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg103-section03",
+      "text_sha256": "cbede88fc375498d913996ad9141b76fa9d48280f02a2f022cbed2dd57a1a198",
+      "text_chars": 10334,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg103-section04",
+      "text_sha256": "9962dd08ed1afc381da651048ab810f560ddab670c79b738aaf28d9d736ab61f",
+      "text_chars": 10354,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg103-section05",
+      "text_sha256": "0883b2f72a0c553f4d4a4272b1dc5893e33709d62b183a9f6016c56a870841e1",
+      "text_chars": 10356,
+      "source_ebook_id": 103
+    },
+    {
+      "doc_id": "pg11-section00",
+      "text_sha256": "696dcea2a169095c839aece25230223802847b728a3f40bb47dbc1c47a4f69ce",
+      "text_chars": 9875,
+      "source_ebook_id": 11
+    },
+    {
+      "doc_id": "pg11-section01",
+      "text_sha256": "243281fc26bad83daf74826fe33c16a4c640d96859e769ce294ca0bc3453f1cf",
+      "text_chars": 10388,
+      "source_ebook_id": 11
+    },
+    {
+      "doc_id": "pg11-section02",
+      "text_sha256": "de6b13d8f2e2fc532f7a91891e0931be2c8bc12916c1fc0b84d8deeac884019d",
+      "text_chars": 10358,
+      "source_ebook_id": 11
+    },
+    {
+      "doc_id": "pg11-section03",
+      "text_sha256": "47e16b5cf9d7353577746a43870bdf329eba1ae1bc0729cb6c646bd84f442368",
+      "text_chars": 10089,
+      "source_ebook_id": 11
+    },
+    {
+      "doc_id": "pg11-section04",
+      "text_sha256": "32a436ef2c042f5702add5a43390f74236cd7d657019cfcdcd1cb360fd16e5d3",
+      "text_chars": 10265,
+      "source_ebook_id": 11
+    },
+    {
+      "doc_id": "pg11-section05",
+      "text_sha256": "034d63b5b6deb15a7cdfe477b1cdb2b06ca80ec5ba2494d5ecf243072aacfa1a",
+      "text_chars": 10376,
+      "source_ebook_id": 11
+    }
+  ],
+  "corpus_jsonl_sha256": "2912a4d8cc17789a1b6b339cac927a27ec41f24f7de140d84466ecd441e095ca"
+}
