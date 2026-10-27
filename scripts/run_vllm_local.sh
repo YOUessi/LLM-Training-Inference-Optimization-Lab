@@ -25,6 +25,14 @@ PORT="${VLLM_PORT:-8026}"
 GPU_MEMORY_UTILIZATION="${GPU_MEMORY_UTILIZATION:-0.50}"
 echo "Starting loopback-only vLLM, offline model: $(basename "$MODEL_DIR")"
 echo "Port: 127.0.0.1:$PORT, GPU memory target: $GPU_MEMORY_UTILIZATION"
+cache_args=()
+case "${VLLM_PREFIX_CACHING:-default}" in
+  on) cache_args=(--enable-prefix-caching) ;;
+  off) cache_args=(--no-enable-prefix-caching) ;;
+  default) ;;
+  *) echo "BLOCKED: VLLM_PREFIX_CACHING must be on, off, or default" >&2; exit 2 ;;
+esac
+echo "Prefix caching mode: ${VLLM_PREFIX_CACHING:-default}"
 exec "$ENV_ROOT/bin/vllm" serve "$MODEL_DIR" \
   --host 127.0.0.1 \
   --port "$PORT" \
@@ -32,4 +40,5 @@ exec "$ENV_ROOT/bin/vllm" serve "$MODEL_DIR" \
   --gpu-memory-utilization "$GPU_MEMORY_UTILIZATION" \
   --max-model-len 2048 \
   --max-num-seqs 8 \
-  --served-model-name qwen2.5-1.5b-instruct-local
+  --served-model-name qwen2.5-1.5b-instruct-local \
+  "${cache_args[@]}"

@@ -134,3 +134,7 @@ Transformers baseline. See [server runbook](docs/VLLM_RUNBOOK.md).
 
 [Stage 3 Nsight Systems kernel profiling report](docs/STAGE3_NSYS_REPORT_2026-10-28.md) includes verified CUDA kernel launches, stats CSV, exact raw trace SHA256 and permission limits (no hardware-counter/occupancy claim).\n
 - [Targeted NVTX RMSNorm profiling and exact kernel-launch counts](docs/STAGE3_NVTX_REPORT_2026-10-28.md) (30 calls/variant; hardware counter limits disclosed).
+
+### Stage 4: Prefix caching experimental design
+
+See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/off runner](scripts/run_prefix_cache_ablation.sh). Shared/distinct long prefixes, explicit cache enabled/disabled, two seeds and concurrency 1/8. Real prompt_tokens are used to enforce valid workloads. Protocol is not a result.

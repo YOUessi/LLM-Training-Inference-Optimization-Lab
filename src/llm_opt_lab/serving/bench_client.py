@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from llm_opt_lab.provenance import environment, write_json_atomic
-from llm_opt_lab.serving.sse import chunk_text, completion_tokens, iter_sse_json
+from llm_opt_lab.serving.sse import chunk_text, completion_tokens, iter_sse_json, prompt_tokens
 
 
 def quantile(values: list[float], p: float) -> float | None:
@@ -43,6 +43,7 @@ def summarize(records: list[dict[str, Any]], elapsed: float) -> dict[str, Any]:
     latency = [r["latency_ms"] for r in success]
     tpot = [r["tpot_ms"] for r in success if r["tpot_ms"] is not None]
     usage_complete = bool(success) and all(r["completion_tokens"] is not None for r in success)
+    prompt_usage = [r.get("prompt_tokens") for r in success if r.get("prompt_tokens") is not None]
     return {
         "sent": len(records),
         "succeeded": len(success),
@@ -57,6 +58,10 @@ def summarize(records: list[dict[str, Any]], elapsed: float) -> dict[str, Any]:
         "p95_tpot_ms": quantile(tpot, 0.95) if usage_complete else None,
         "output_tokens_per_second": sum(r["completion_tokens"] for r in success) / elapsed if usage_complete and elapsed > 0 else None,
         "usage_coverage": sum(r["completion_tokens"] is not None for r in success) / len(success) if success else 0.,
+        "prompt_usage_coverage": len(prompt_usage) / len(success) if success else 0.,
+        "mean_prompt_tokens": sum(prompt_usage) / len(prompt_usage) if prompt_usage else None,
+        "min_prompt_tokens": min(prompt_usage) if prompt_usage else None,
+        "max_prompt_tokens": max(prompt_usage) if prompt_usage else None,
         "ttft_coverage": len(ttft) / len(success) if success else 0.,
         "error_types": {kind: sum(r.get("error_type") == kind for r in failures) for kind in sorted(set(r.get("error_type", "error") for r in failures))},
     }
@@ -98,6 +103,7 @@ def _request(index: int, *, endpoint: str, model: str, prompt: str,
     start = time.perf_counter()
     first_content: float | None = None
     token_usage: int | None = None
+    input_token_usage: int | None = None
     content_chars = 0
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
@@ -114,6 +120,9 @@ def _request(index: int, *, endpoint: str, model: str, prompt: str,
                 value = completion_tokens(event)
                 if value is not None:
                     token_usage = value
+                prompt_value = prompt_tokens(event)
+                if prompt_value is not None:
+                    input_token_usage = prompt_value
         finished = time.perf_counter()
         if first_content is None:
             raise ValueError("no streamed content tokens (TTFT unavailable)")
@@ -124,6 +133,7 @@ def _request(index: int, *, endpoint: str, model: str, prompt: str,
             "ttft_ms": (first_content - start) * 1000.,
             "tpot_ms": (finished - first_content) * 1000. / generated_after_first if generated_after_first > 0 else None,
             "completion_tokens": token_usage,
+            "prompt_tokens": input_token_usage,
             "completion_chars": content_chars,
         }
     except Exception as exc:
@@ -131,7 +141,7 @@ def _request(index: int, *, endpoint: str, model: str, prompt: str,
         return {
             "index": index, "status": "error", "latency_ms": (finished - start) * 1000.,
             "ttft_ms": None, "tpot_ms": None, "completion_tokens": None,
-            "error_type": type(exc).__name__,
+            "prompt_tokens": None, "error_type": type(exc).__name__,
             # Deliberately omit response bodies, prompts and auth headers.
         }
 

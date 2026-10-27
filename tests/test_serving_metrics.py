@@ -4,7 +4,7 @@ import json
 import unittest
 
 from llm_opt_lab.serving.bench_client import _endpoint, quantile, summarize
-from llm_opt_lab.serving.sse import chunk_text, completion_tokens, iter_sse_json
+from llm_opt_lab.serving.sse import chunk_text, completion_tokens, iter_sse_json, prompt_tokens
 
 
 class SSETests(unittest.TestCase):
@@ -23,6 +23,13 @@ class SSETests(unittest.TestCase):
     def test_multi_data_lines(self):
         lines = ['data: {"choices": [],\n', 'data: "usage": {"completion_tokens": 2}}\n','\n']
         self.assertEqual(completion_tokens(next(iter_sse_json(lines))), 2)
+
+    def test_real_prompt_token_usage(self):
+        d={"usage":{"prompt_tokens":1024,"completion_tokens":21}}
+        self.assertEqual(prompt_tokens(d),1024)
+        self.assertEqual(completion_tokens(d),21)
+        self.assertIsNone(prompt_tokens({"usage":{"prompt_tokens":True}}))
+        self.assertIsNone(prompt_tokens({"usage":None}))
 
     def test_no_chunk_estimation(self):
         self.assertIsNone(completion_tokens({"choices": [{"delta": {"content": "word"}}]}))

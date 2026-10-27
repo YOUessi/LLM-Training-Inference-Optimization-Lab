@@ -56,6 +56,15 @@ def chunk_text(event: dict[str, Any]) -> str:
     return ""
 
 
+def prompt_tokens(event: dict[str, Any]) -> int | None:
+    """Return the server-reported prompt token count, if present."""
+    usage = event.get("usage")
+    if not isinstance(usage, dict):
+        return None
+    n = usage.get("prompt_tokens")
+    return n if isinstance(n, int) and not isinstance(n, bool) and n >= 0 else None
+
+
 def completion_tokens(event: dict[str, Any]) -> int | None:
     usage = event.get("usage")
     if not isinstance(usage, dict):

@@ -57,3 +57,9 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] Nsight Compute GPU hardware counter profiling, not yet accepted.
 
 - [x] NVTX-targeted 30-call RMSNorm comparison: 150 eager launches vs 30 Inductor vs 30 Triton; archived [Stage3 NVTX report](STAGE3_NVTX_REPORT_2026-10-28.md).
+
+## Stage 4 — Prefix caching (2026-10-28)
+- [x] Real provider prompt_tokens captured from SSE; length/coverage gate.
+- [x] vLLM prefix caching explicit enable and disable launch flags.
+- [x] Frozen shared/distinct long-prefix experiment and Mac unit tests.
+- [ ] Actual real cache ON/OFF × shared/distinct × concurrency 1/8 × two seeds on Tang, server cache metrics and completed report.

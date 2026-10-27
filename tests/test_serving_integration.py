@@ -29,7 +29,7 @@ class _Handler(BaseHTTPRequestHandler):
         for event in [
             {"choices": [{"delta": {"content": "hello"}}]},
             {"choices": [{"delta": {"content": " there"}}]},
-            {"choices": [], "usage": {"completion_tokens": 2}},
+            {"choices": [], "usage": {"completion_tokens": 2, "prompt_tokens": 55}},
         ]:
             data = "data: " + json.dumps(event) + "\n\n"
             self.wfile.write(data.encode("utf-8"))
@@ -60,6 +60,7 @@ class ServingTransportTests(unittest.TestCase):
                           prompt="hello", max_tokens=8, timeout=5., seed=42)
         self.assertEqual(result["status"], "ok", result)
         self.assertEqual(result["completion_tokens"], 2)
+        self.assertEqual(result["prompt_tokens"], 55)
         self.assertEqual(result["completion_chars"], len("hello there"))
         self.assertIsNotNone(result["ttft_ms"])
         self.assertIsNotNone(result["tpot_ms"])
