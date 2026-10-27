@@ -142,3 +142,11 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage 4: measured Prefix Cache causal-control benchmark
 
 [Stage 4 detailed results](docs/STAGE4_PREFIX_CACHE_REPORT_2026-10-28.md) cover 384 actual SSE requests on Qwen2.5-1.5B in vLLM 0.19.1, both cache states, shared vs distinct-prefix negative controls, two seeds and both 1/8 concurrency. Results report actual provider prompt tokens and vLLM Prometheus token-hit counters; an invalid first experiment is retained as negative process evidence. This is a controlled application-level cache ablation, not a new KV-cache implementation.
+
+### Stage 5: KV cache capacity & mixed-context prefill
+
+[Stage5 frozen protocol](docs/STAGE5_PROTOCOL.md), [bounded cache eviction probe](src/llm_opt_lab/serving/kv_capacity_probe.py), [mixed-context SSE workload](src/llm_opt_lab/serving/mixed_context_bench.py).
+
+### Recurring repository status (every 30 minutes, best effort)
+
+[GitHub Actions plan audit](.github/workflows/plan-audit.yml) runs CPU regression/integrity checks and compares committed evidence against the Roadmap, posting next-action guidance in each Action run summary. **GitHub Actions cannot use Tang GPU, cannot edit work automatically, and cannot deliver half-hour messages to this ChatGPT thread**. Live GPU milestones require a separately authorized online Tang executor.

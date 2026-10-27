@@ -1,0 +1,51 @@
+name: 30-minute lab plan audit
+
+# GitHub Actions schedule can be delayed or occasionally skipped by platform
+# load; this is best-effort every 30 minutes, not a hard real-time task.
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: llm-opt-plan-audit
+  cancel-in-progress: false
+
+jobs:
+  roadmap-and-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout GitHub source of truth
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 CPU checker
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Execute CPU regression and evidence-validation tests
+        run: |
+          python -m pip install --no-input -e .
+          python -m unittest discover -s tests -v
+
+      - name: Compare authoritative roadmap with published experiment evidence
+        if: always()
+        run: |
+          mkdir -p results
+          python scripts/plan_watch.py \
+            --repo-root . \
+            --out results/plan_watch.json \
+            --summary "$GITHUB_STEP_SUMMARY"
+
+      - name: Archive status snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-plan-audit
+          path: results/plan_watch.json
+          retention-days: 30
+          if-no-files-found: warn

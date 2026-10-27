@@ -66,3 +66,12 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 - [x] First 384-request test identified and reproduced cross-case cache contamination in distinct-prefix control (order reversal exposed it); initial experiment **NOT scientifically accepted**.
 - [x] Distinct request ID now includes concurrency, with Prometheus cache hit/query token gates and unit tests. Revised 384-request experiment pending.
+
+## Stage 5 — KV capacity, mixed-context, recurring plan audit
+
+- [x] Frozen Stage5 experiment protocol and fail-closed bounded KV capacity eviction probe.
+- [x] Mixed-context serving benchmark with actual 4-bucket prompt-token validation.
+- [x] Half-hour GitHub Actions plan audit + CPU validation scheduled (best effort; cannot run Tang or write in ChatGPT).
+- [ ] Actual Tang KV-capacity eviction experiment measured and verified, with real Prometheus prefix hit counters.
+- [ ] Mixed-context length x concurrency 1/2/4/8 with 2 seeds real measured.
+- [ ] Stage5 raw GPU results and comparison report published to GitHub.

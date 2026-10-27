@@ -33,6 +33,20 @@ case "${VLLM_PREFIX_CACHING:-default}" in
   *) echo "BLOCKED: VLLM_PREFIX_CACHING must be on, off, or default" >&2; exit 2 ;;
 esac
 echo "Prefix caching mode: ${VLLM_PREFIX_CACHING:-default}"
+capacity_args=()
+if [[ -n "${VLLM_NUM_GPU_BLOCKS_OVERRIDE:-}" ]]; then
+  if ! [[ "$VLLM_NUM_GPU_BLOCKS_OVERRIDE" =~ ^[0-9]+$ ]]; then
+    echo "BLOCKED: VLLM_NUM_GPU_BLOCKS_OVERRIDE must be a positive integer" >&2
+    exit 2
+  fi
+  if (( VLLM_NUM_GPU_BLOCKS_OVERRIDE < 32 || VLLM_NUM_GPU_BLOCKS_OVERRIDE > 4096 )); then
+    echo "BLOCKED: VLLM_NUM_GPU_BLOCKS_OVERRIDE must be 32..4096" >&2
+    exit 2
+  fi
+  capacity_args=(--num-gpu-blocks-override "$VLLM_NUM_GPU_BLOCKS_OVERRIDE")
+fi
+echo "GPU KV block override: ${VLLM_NUM_GPU_BLOCKS_OVERRIDE:-default}"
+
 exec "$ENV_ROOT/bin/vllm" serve "$MODEL_DIR" \
   --host 127.0.0.1 \
   --port "$PORT" \
@@ -41,4 +55,5 @@ exec "$ENV_ROOT/bin/vllm" serve "$MODEL_DIR" \
   --max-model-len 2048 \
   --max-num-seqs 8 \
   --served-model-name qwen2.5-1.5b-instruct-local \
-  "${cache_args[@]}"
+  "${cache_args[@]}" \
+  "${capacity_args[@]}"
