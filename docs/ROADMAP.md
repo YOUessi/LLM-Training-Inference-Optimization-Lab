@@ -79,5 +79,6 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 ## Stage 6 — Ready next after Stage5 validation
 - [ ] Freeze production-like heterogeneous prompt corpus with no repeated synthetic sentences, separate train/test-style workload IDs.
 - [ ] Characterize KV cache collision/eviction under multiple block capacities (128/256/512) and optional prefix reuse; don't infer capacity from TTL alone.
-- [ ] Build multi-seed latency-vs-throughput Pareto curve with explicit P95 TTFT SLO threshold, varied output lengths and fixed hardware/model.
+- [x] Derived SLO frontier from Stage5 real mixed requests (two-seed worst P95 TTFT, min throughput): concurrency 1/2/4/8 qualify at 100/150/250/500ms SLO, respectively. [Report](STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md).
+- [ ] Repeat SLO frontier with varied output lengths and nonrepetitive context to improve external validity.
 - [ ] Evaluate reproducible engineering optimization with memory/performance logs, not just a repackaged demo.

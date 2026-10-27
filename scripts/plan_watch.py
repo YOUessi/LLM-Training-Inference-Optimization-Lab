@@ -36,6 +36,7 @@ def audit(root: Path) -> dict:
         "Stage 4 Prefix Cache":(root/"docs/STAGE4_PREFIX_CACHE_REPORT_2026-10-28.md").exists(),
         "Stage 5 KV capacity":(root/"docs/STAGE5_KV_CAPACITY_REPORT_2026-10-28.md").exists(),
         "Stage 5 Mixed Context":(root/"docs/STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md").exists(),
+        "Stage 6 SLO frontier":(root/"docs/STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -50,8 +51,15 @@ def audit(root: Path) -> dict:
         actions.append("After GPU preflight on Tang, run actual bounded KV cache eviction test, inspect Prometheus hit counters, then commit raw evidence and report.")
     if not reports["Stage 5 Mixed Context"]:
         actions.append("After GPU preflight on Tang, run heterogeneous-input real SSE workload at 1/2/4/8 concurrency and publish actual prompt tokens, TTFT/TPOT and throughput.")
-    if all(reports.values()):
-        actions.append("Design Stage6 controlled KV eviction/prefix pollution and throughput-versus-SLO experiments; only promote after independent measured validation.")
+    stage5_complete = (
+        reports["Stage 5 KV capacity"] and
+        reports["Stage 5 Mixed Context"]
+    )
+    if stage5_complete and not reports["Stage 6 SLO frontier"]:
+        actions.append("Compute and publish Stage6 P95 TTFT SLO frontier from validated Stage5 real SSE evidence.")
+    if stage5_complete and reports["Stage 6 SLO frontier"]:
+        actions.append("Design and run a future Tang-GPU, multi-capacity 128/256/512 KV cache-pressure suite, with explicit block and hit-counter gates; requires authorized online Tang execution.")
+        actions.append("Freeze diverse nonrepetitive context and output-length mixtures before repeating Stage6 SLO profiles.")
     actions.append("Keep Nsight Compute hardware counters and multi-GPU FSDP BLOCKED until authorized permissions/hardware exist.")
     try:
         x=subprocess.run(["git","rev-parse","HEAD"],cwd=root,capture_output=True,text=True,timeout=4,check=False)
@@ -68,7 +76,7 @@ def audit(root: Path) -> dict:
         "next_executable_actions":actions,
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
-        "status":"stage5_evidence_pending" if not all(reports.values()) else "stage5_evidence_published",
+        "status":"stage5_evidence_published" if stage5_complete else "stage5_evidence_pending",
     }
 
 

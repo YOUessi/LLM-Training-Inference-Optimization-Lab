@@ -1,0 +1,150 @@
+{
+  "status": "derived_from_measured_evidence",
+  "kind": "empirical_two_seed_ttft_slo_frontier",
+  "not_new_gpu_experiment": true,
+  "engine": "vllm",
+  "gpu_source": "Tang RTX4090 Laptop",
+  "source": "Stage5 cached-off mixed-context 4 lengths, 2 seeds, 24 SSE requests each concurrency",
+  "caveats": [
+    "Worst of two seeds is not a statistical confidence bound",
+    "The SLO decision only applies to this pinned synthetic workload",
+    "TTFT includes server request queueing and network latency",
+    "No extrapolation beyond concurrency 1/2/4/8 or to other models"
+  ],
+  "runs": [
+    {
+      "concurrency": 1,
+      "seed": 42,
+      "p95_ttft_ms": 87.73545416624984,
+      "output_tokens_per_second": 122.56270721274812,
+      "input_tokens_mean": 871.5
+    },
+    {
+      "concurrency": 1,
+      "seed": 137,
+      "p95_ttft_ms": 89.2320899059996,
+      "output_tokens_per_second": 122.50032642762613,
+      "input_tokens_mean": 871.75
+    },
+    {
+      "concurrency": 2,
+      "seed": 42,
+      "p95_ttft_ms": 121.61958141950889,
+      "output_tokens_per_second": 209.5011346789427,
+      "input_tokens_mean": 871.75
+    },
+    {
+      "concurrency": 2,
+      "seed": 137,
+      "p95_ttft_ms": 145.80960139282973,
+      "output_tokens_per_second": 206.99983834300195,
+      "input_tokens_mean": 870.5
+    },
+    {
+      "concurrency": 4,
+      "seed": 42,
+      "p95_ttft_ms": 203.53856008441653,
+      "output_tokens_per_second": 321.824462838368,
+      "input_tokens_mean": 871.5
+    },
+    {
+      "concurrency": 4,
+      "seed": 137,
+      "p95_ttft_ms": 232.61473830352762,
+      "output_tokens_per_second": 320.77889981959527,
+      "input_tokens_mean": 870.75
+    },
+    {
+      "concurrency": 8,
+      "seed": 42,
+      "p95_ttft_ms": 397.34698225365713,
+      "output_tokens_per_second": 448.62832546782965,
+      "input_tokens_mean": 870.75
+    },
+    {
+      "concurrency": 8,
+      "seed": 137,
+      "p95_ttft_ms": 461.4467947511001,
+      "output_tokens_per_second": 448.7503924765002,
+      "input_tokens_mean": 870.5
+    }
+  ],
+  "frontier_points": [
+    {
+      "concurrency": 1,
+      "seed_count": 2,
+      "worst_p95_ttft_ms": 89.2320899059996,
+      "best_p95_ttft_ms": 87.73545416624984,
+      "conservative_output_tps": 122.50032642762613,
+      "highest_output_tps": 122.56270721274812
+    },
+    {
+      "concurrency": 2,
+      "seed_count": 2,
+      "worst_p95_ttft_ms": 145.80960139282973,
+      "best_p95_ttft_ms": 121.61958141950889,
+      "conservative_output_tps": 206.99983834300195,
+      "highest_output_tps": 209.5011346789427
+    },
+    {
+      "concurrency": 4,
+      "seed_count": 2,
+      "worst_p95_ttft_ms": 232.61473830352762,
+      "best_p95_ttft_ms": 203.53856008441653,
+      "conservative_output_tps": 320.77889981959527,
+      "highest_output_tps": 321.824462838368
+    },
+    {
+      "concurrency": 8,
+      "seed_count": 2,
+      "worst_p95_ttft_ms": 461.4467947511001,
+      "best_p95_ttft_ms": 397.34698225365713,
+      "conservative_output_tps": 448.62832546782965,
+      "highest_output_tps": 448.7503924765002
+    }
+  ],
+  "slo_decisions": [
+    {
+      "p95_ttft_slo_ms": 100.0,
+      "eligible_concurrencies": [
+        1
+      ],
+      "selected_concurrency": 1,
+      "selected_conservative_output_tps": 122.50032642762613,
+      "actual_worst_p95_ttft_ms": 89.2320899059996
+    },
+    {
+      "p95_ttft_slo_ms": 150.0,
+      "eligible_concurrencies": [
+        1,
+        2
+      ],
+      "selected_concurrency": 2,
+      "selected_conservative_output_tps": 206.99983834300195,
+      "actual_worst_p95_ttft_ms": 145.80960139282973
+    },
+    {
+      "p95_ttft_slo_ms": 250.0,
+      "eligible_concurrencies": [
+        1,
+        2,
+        4
+      ],
+      "selected_concurrency": 4,
+      "selected_conservative_output_tps": 320.77889981959527,
+      "actual_worst_p95_ttft_ms": 232.61473830352762
+    },
+    {
+      "p95_ttft_slo_ms": 500.0,
+      "eligible_concurrencies": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "selected_concurrency": 8,
+      "selected_conservative_output_tps": 448.62832546782965,
+      "actual_worst_p95_ttft_ms": 461.4467947511001
+    }
+  ]
+}

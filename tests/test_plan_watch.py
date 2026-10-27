@@ -24,6 +24,21 @@ class PlanWatchTests(unittest.TestCase):
             self.assertFalse(d["gpu_access_available_in_hosted_ci"])
             self.assertTrue(any("Tang" in x for x in d["next_executable_actions"]))
 
+    def test_next_action_advances_when_evidence_reaches_stage6(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"docs").mkdir()
+            (root/"docs/ROADMAP.md").write_text("- [x] Stage5\n")
+            for report in ("STAGE5_KV_CAPACITY_REPORT_2026-10-28.md",
+                           "STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md",
+                           "STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md"):
+                (root/"docs"/report).write_text("measured evidence")
+            data=audit(root)
+            self.assertEqual(data["status"],"stage5_evidence_published")
+            self.assertTrue(data["published_reports"]["Stage 6 SLO frontier"])
+            self.assertTrue(any("128/256/512" in action
+                                for action in data["next_executable_actions"]))
+
     def test_watch_summary_and_json(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

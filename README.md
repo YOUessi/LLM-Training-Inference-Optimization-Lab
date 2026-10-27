@@ -154,3 +154,7 @@ See [frozen experiment protocol](docs/PREFIX_CACHE_PROTOCOL.md) and [cache on/of
 ### Stage 5 — real CUDA KV eviction and mixed-context serving results
 
 [Real 256-block KV eviction evidence](docs/STAGE5_KV_CAPACITY_REPORT_2026-10-28.md) and [192-request heterogeneous input prefill/throughput](docs/STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md) on Qwen2.5-1.5B FP16/Tang RTX4090 Laptop GPU. Raw 9 JSON files and SHA-256 manifest under docs/evidence/stage5_kv_and_mixed/. Stage6 naturalistic mixed-load and multiple GPU block budgets remain open.
+
+### Stage6 initial result: latency SLO/throughput frontier
+
+[Conservative two-seed empirical P95 TTFT SLO selection](docs/STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md) from 192 real Stage5 SSE requests. At experimental 150ms P95 TTFT target concurrency 2 (min 207 output tok/s) qualifies; at 250ms concurrency 4 (min 320.8 tok/s); see report for scope limits. This is derived analysis, **not a fresh GPU run**.
