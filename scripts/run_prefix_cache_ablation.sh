@@ -67,6 +67,12 @@ for state in off on; do
         --prefix-repetitions 35 --min-prompt-tokens 900 --max-prompt-tokens 1450 \
         --max-new-tokens 32 --seed "$seed" --output "$out/$state/$label.json"
       curl -fsS --max-time 5 http://127.0.0.1:8026/metrics > "$out/$state/$label-after.prom"
+      # Enforce actual server prefix-token metrics, not only inferred TTFT.
+      python3 -m llm_opt_lab.serving.prefix_cache_metrics \
+        --before "$out/$state/$label-before.prom" \
+        --after "$out/$state/$label-after.prom" \
+        --cache-state "$state" --mode "$mode" \
+        --output "$out/$state/$label-metrics.json"
     done
   done
   kill -TERM "$server_pid" || :

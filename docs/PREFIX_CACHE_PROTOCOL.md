@@ -58,3 +58,22 @@ uncontrolled workload. This intentionally synthetic, repetition-heavy
 corpus is not representative of production inputs.
 
 No speedup has been asserted here before real measurement.
+
+## Corrected negative-control protocol (revision 2)
+
+The first full experiment completed 384 valid HTTP requests, but half of
+cache-enabled distinct-prefix cases unexpectedly hit >99% reused tokens.
+Cause: the negative-control marker varied with (seed,index) only, so
+**concurrency 1 and 8 under the same seed replayed identical prompt
+IDs**. On the second execution, the previous case's cached prefix was
+eligible for perfect reuse. This is cross-*case* reuse, not a vLLM bug.
+
+Corrected marker uses (seed + 1009 * concurrency, index) for the distinct
+arm only, so it changes between concurrency conditions as well as within
+them. Shared-prefix cases intentionally keep the same text.
+
+Additionally, the runner now gates actual vLLM Prometheus prefix-token
+metrics between each case: cache OFF -> zero queries/hits; cache ON,
+shared -> hit_fraction >=70%; cache ON, distinct -> hit_fraction <=10%.
+No result is accepted without the metric checks; any failed case is
+preserved under ignored results and must be reported, not reinterpreted.

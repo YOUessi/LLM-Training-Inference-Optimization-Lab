@@ -109,8 +109,15 @@ def main(argv: list[str] | None = None) -> int:
     def send(index: int):
         return _request(
             index, endpoint=endpoint, model=a.model,
-            prompt=make_prompt(index, seed=a.seed,
-                               repetitions=a.prefix_repetitions, mode=a.mode),
+            # DISTINCT requests must not repeat across concurrency cases:
+            # previous arms reused the same (seed,index) combination and
+            # contaminated the later "no-reuse" negative control.
+            prompt=make_prompt(
+                index,
+                seed=a.seed + (a.concurrency * 1009 if a.mode == "distinct" else 0),
+                repetitions=a.prefix_repetitions,
+                mode=a.mode,
+            ),
             max_tokens=a.max_new_tokens, timeout=a.timeout, seed=a.seed,
             response_instruction=RESPONSE_INSTRUCTION,
         )
@@ -146,6 +153,8 @@ def main(argv: list[str] | None = None) -> int:
             "max_prompt_tokens": a.max_prompt_tokens,
             "max_new_tokens": a.max_new_tokens,
             "seed": a.seed,
+            "distinct_prefix_case_seed": a.seed + a.concurrency * 1009,
+            "distinct_prefix_ids_isolated_by_concurrency": True,
             "template_sha256": hashlib.sha256(
                 (TECHNICAL_PARAGRAPH + RESPONSE_INSTRUCTION).encode("utf-8")
             ).hexdigest(),

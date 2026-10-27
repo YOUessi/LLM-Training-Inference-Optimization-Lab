@@ -46,6 +46,13 @@ class PrefixCacheWorkloadTests(unittest.TestCase):
         self.assertFalse(good)
         self.assertFalse(detail["prompt_usage_complete"])
 
+    def test_distinct_negative_control_case_seed_is_unique_per_concurrency(self):
+        seed=42
+        a=make_prompt(0,seed=seed+1*1009,repetitions=35,mode="distinct")
+        b=make_prompt(0,seed=seed+8*1009,repetitions=35,mode="distinct")
+        self.assertNotEqual(a[:10],b[:10])
+        self.assertEqual(a[10:],b[10:])
+
     def test_argument_rejections(self):
         for opt in (
             ["--prefix-repetitions", "70"],
