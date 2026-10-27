@@ -19,7 +19,8 @@
 - [x] Model snapshot, CUDA/PyTorch/vLLM versions, host/port/flags and workload seeds pinned; raw JSON persisted.
 
 ## M3 — Profiling
-- [ ] Capture Nsight Systems trace and Nsight Compute report.
+- [x] Real Nsight Systems CUDA kernel trace and stats CSV captured on Tang; see [Stage3 Nsight](STAGE3_NSYS_REPORT_2026-10-28.md).
+- [ ] Nsight Compute per-SM occupancy/DRAM counters NOT collected; NVIDIA RmProfilingAdminOnly=1, no authorized privileged change.
 - [ ] Link identified bottleneck to source line/kernel and quantify any fix.
 
 ## M4 — Distributed training

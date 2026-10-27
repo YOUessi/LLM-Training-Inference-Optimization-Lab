@@ -1,0 +1,19 @@
+{
+  "schema": "nsight-systems-kernel-trace-v1",
+  "date": "2026-10-28",
+  "machine_gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "driver": "580.178.04",
+  "cuda_capability": "8.9",
+  "source_commit": "2749782737d3873e103314814a4f62cf1cd19248",
+  "nsight_systems_cli_version": "2026.5.1.161-265138896106v0",
+  "nsys_cli_package_sha256": "61829db6392e5c293ada1319df86a97c3356bc810335a1975cb551fcfe3eca08",
+  "raw_nsys_rep_local_path": "results/nsys_trials_20261028/rmsnorm_softmax.nsys-rep",
+  "raw_nsys_rep_sha256": "9daa4ed511b4f57047434c70803b2534bc33a09eeefef772d420b02ce12995b1",
+  "csv_sha256": "d1ef2a9d54d909d21bcfe970e2c3fa545b889b4a05e99c41fb905042772505c9",
+  "cpu_perf_event_paranoid": 4,
+  "nvidia_RmProfilingAdminOnly": 1,
+  "profile_scope": "real CUDA launches traced with nsys --sample=none --trace=cuda,nvtx",
+  "hardware_sm_or_dram_metrics_collected": false,
+  "raw_binary_trace_committed_to_github": false,
+  "binary_uncommitted_reason": "Remote transport only transferred structured text. Capture stays on authorized Tang host, with digest linked in report."
+}

@@ -129,3 +129,7 @@ Transformers baseline. See [server runbook](docs/VLLM_RUNBOOK.md).
 ### Stage 3: real vLLM measurements validated
 
 [Stage 3: real SSE TTFT/TPOT, 1/2/4/8 concurrent clients and corrected 128-token long decode](docs/STAGE3_REPORT_2026-10-28.md). Source experiment raw JSON and negative results are archived under docs/evidence/stage3_vllm_repeated/ and docs/evidence/stage3_vllm_invalid_long/. No Nsight or multi-GPU/FSDP sharding results are claimed.
+
+### Nsight Systems real CUDA traces
+
+[Stage 3 Nsight Systems kernel profiling report](docs/STAGE3_NSYS_REPORT_2026-10-28.md) includes verified CUDA kernel launches, stats CSV, exact raw trace SHA256 and permission limits (no hardware-counter/occupancy claim).\n
