@@ -60,12 +60,20 @@ nvidia-smi --query-gpu=name,memory.used,driver_version --format=csv,noheader > "
 run_sweep() {
   local label="$1" order="$2" requests="$3" max_tokens="$4" seed="$5"
   echo "SWEEP: $label concurrency=$order requests=$requests tokens=$max_tokens seed=$seed"
+  local extra=()
+  if [[ "$label" == "long_decode" ]]; then
+    # Legacy long_decode reached 21 tokens despite cap=128; fail if short.
+    extra=(--response-instruction
+      "Provide a detailed explanation with at least 25 distinct numbered technical considerations. Do not stop after one sentence. Continue until the output budget is exhausted."
+      --min-average-completion-tokens 90)
+  fi
   timeout 240 python3 -m llm_opt_lab.serving.sweep \
     --engine-label vllm --base-url http://127.0.0.1:8026 \
     --model qwen2.5-1.5b-instruct-local \
     --requests "$requests" --warmup-requests 2 \
     --concurrency "$order" --max-tokens "$max_tokens" \
-    --seed "$seed" --output-dir "$out/$label"
+    --seed "$seed" --output-dir "$out/$label" \
+    "${extra[@]}"
 }
 run_sweep short_forward '1,2,4,8' 24 32 42
 run_sweep short_reverse '8,4,2,1' 24 32 137

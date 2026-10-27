@@ -12,3 +12,4 @@
 10. If a required tool or GPU is missing, record `blocked` with reason and do not fabricate benchmark output.
 
 11. When comparing against torch.compile, ensure the final dtype cast is inside the compiled function (otherwise an extra eager kernel artificially inflates the baseline).
+\n12. A completion max_tokens setting is only an upper bound, not a measured output length. Long-decode workloads must specify a response-length instruction and verify actual provider completion_tokens against an explicit average-token gate (e.g. >=90 for max_tokens=128). Preserve the failed short-generation result, do not relabel it long.\n

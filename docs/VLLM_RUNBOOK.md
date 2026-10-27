@@ -132,3 +132,4 @@ orders are reported separately to prevent conflating speedups.
 An unrelated \`mediapipe\` system-site package expects older Protobuf than
 the protobuf installed inside the lab venv. **No global dependency was
 changed to silence this conflict.** Only verify vLLM's own import/runtime path.
+\n### Correcting the long-output protocol\n\nThe original \`long_decode\` run (max_tokens=128) actually generated exactly **21 completion tokens per request**. It is preserved as an invalid long-generation stress test. The corrected runner specifies a long-answer instruction and gates \`mean(actual completion_tokens)>=90\` before marking that sweep measured. Source code changes and raw results must be pinned to the matching commit.\n

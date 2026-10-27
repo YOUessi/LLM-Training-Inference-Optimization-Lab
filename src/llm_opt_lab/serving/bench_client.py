@@ -6,6 +6,7 @@ endpoint. Requests streaming token usage; unknown TPOT remains null.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -74,8 +75,9 @@ def _endpoint(base_url: str) -> str:
 
 
 def _request(index: int, *, endpoint: str, model: str, prompt: str,
-             max_tokens: int, timeout: float, seed: int | None) -> dict[str, Any]:
-    unique_prompt = f"{prompt}\nTask id: {index:04d}. Answer in one short sentence."
+             max_tokens: int, timeout: float, seed: int | None,
+             response_instruction: str = "Answer in one short sentence.") -> dict[str, Any]:
+    unique_prompt = f"{prompt}\nTask id: {index:04d}. {response_instruction}"
     payload: dict[str, Any] = {
         "model": model,
         "messages": [{"role": "user", "content": unique_prompt}],
@@ -139,6 +141,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--base-url", default="http://127.0.0.1:8000")
     p.add_argument("--model", required=True, help="Exactly the loaded model ID from vLLM")
     p.add_argument("--prompt", default="What is a transformer architecture?")
+    p.add_argument("--response-instruction", default="Answer in one short sentence.",
+                   help="Output-length instruction; keeps long-output tests from accidentally being short")
     p.add_argument("--requests", type=int, default=24)
     p.add_argument("--warmup-requests", type=int, default=2,
                    help="Sequential warmup requests excluded from metrics")
@@ -152,6 +156,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         p.error("requests/concurrency/max-tokens/timeout must be positive")
     if args.warmup_requests < 0:
         p.error("warmup-requests must be nonnegative")
+    if not args.response_instruction.strip() or len(args.response_instruction) > 1024:
+        p.error("response-instruction must be nonempty and at most 1024 characters")
     return args
 
 
@@ -165,7 +171,8 @@ def main(argv: list[str] | None = None) -> int:
     warmup = [
         _request(-(i + 1), endpoint=endpoint, model=args.model,
                  prompt=args.prompt, max_tokens=args.max_tokens,
-                 timeout=args.timeout, seed=args.seed)
+                 timeout=args.timeout, seed=args.seed,
+                 response_instruction=args.response_instruction)
         for i in range(args.warmup_requests)
     ]
     if any(r["status"] != "ok" for r in warmup):
@@ -175,7 +182,9 @@ def main(argv: list[str] | None = None) -> int:
     with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
         futures = [pool.submit(_request, i, endpoint=endpoint, model=args.model,
                                prompt=args.prompt, max_tokens=args.max_tokens,
-                               timeout=args.timeout, seed=args.seed) for i in range(args.requests)]
+                               timeout=args.timeout, seed=args.seed,
+                               response_instruction=args.response_instruction)
+                   for i in range(args.requests)]
         records = sorted((f.result() for f in as_completed(futures)), key=lambda r: r["index"])
     elapsed = time.perf_counter() - begin
     metrics = summarize(records, elapsed)
@@ -187,7 +196,11 @@ def main(argv: list[str] | None = None) -> int:
                    "warmup_requests": args.warmup_requests,
                    "warmup_not_included_in_metrics": True,
                    "concurrency": args.concurrency, "max_tokens": args.max_tokens,
-                   "timeout_seconds": args.timeout, "seed": args.seed},
+                   "timeout_seconds": args.timeout, "seed": args.seed,
+                   "response_instruction_chars": len(args.response_instruction),
+                   "response_instruction_sha256": hashlib.sha256(
+                       args.response_instruction.encode("utf-8")
+                   ).hexdigest()},
         "environment": environment(),
         "summary": metrics,
         "requests": records,

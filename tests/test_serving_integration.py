@@ -91,5 +91,27 @@ class ServingTransportTests(unittest.TestCase):
                 self.assertGreater(case["summary"]["output_tokens_per_second"], 0)
 
 
+    def test_long_output_gate_rejects_realized_short_mock(self):
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from llm_opt_lab.serving.sweep import main as sweep_main
+
+        with TemporaryDirectory() as temp:
+            out = Path(temp) / "insufficient"
+            rc = sweep_main([
+                "--base-url", "http://127.0.0.1:" + str(self.server.server_port),
+                "--model", "mock-only", "--requests", "2",
+                "--warmup-requests", "0", "--concurrency", "1",
+                "--max-tokens", "128",
+                "--response-instruction", "Please write a long response.",
+                "--min-average-completion-tokens", "90",
+                "--output-dir", str(out),
+            ])
+            self.assertEqual(rc, 2)
+            data = json.loads((out / "summary.json").read_text())
+            self.assertEqual(data["status"], "partial_or_blocked")
+            self.assertEqual(data["cases"][0]["status"], "insufficient_generation_length")
+            self.assertEqual(data["cases"][0]["actual_mean_completion_tokens"], 2)
+
 if __name__ == "__main__":
     unittest.main()
