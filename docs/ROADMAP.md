@@ -100,3 +100,10 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] Introduce arrivals/time-varying load (arrival rate vs concurrency) while retaining deterministic replay manifests and independent test windows.
 - [ ] Characterize P95 TTFT SLO violations, request queueing and GPU KV cache occupancy with raw vLLM metrics; compare model configurations without causal overclaims.
 - [ ] Publish Stage8 held-out validation and any measured model-serving improvements with failure/negative evidence.
+
+## Stage8 — code/data frozen before live experiments
+- [x] Pinned 24 real Kubernetes CC BY 4.0 excerpts across English, zh-cn, ja; original upstream commit+blob SHA and source attribution; not claimed cross-industry.
+- [x] Frozen 24 Qwen-token-calibrated multilingual prompts at ~170/300/470/680 actual tokens; shared across mode and load comparisons.
+- [x] Deterministic open-loop rate-based scheduler (2/8 req/s), label/summary/detailed output instructions, real token gate, client queue and vLLM KV gauge instrumentation.
+- [ ] 288 actual Stage8 SSE requests across 3 output modes × 2 rates × 2 seeds; fail-closed gates and raw evidence.
+- [ ] Stage8 measured capacity/arrival SLO analysis and source manifest archived, negative/invalid cases preserved.
