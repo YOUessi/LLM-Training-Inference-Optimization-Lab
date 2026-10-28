@@ -1,0 +1,3 @@
+# Stage23 missing Unlimited baseline — pre-run frozen protocol
+
+Complete the Stage22 stdlib dataset 9301/9309 × 8/16 offers/s using no client-side admission restriction (unlimited). Four real GPU cases, 96 offered requests, Qwen3-8B-AWQ, vLLM 0.19.1, prefix caching OFF and no thinking. Preserve same 24 request identities and scheduled arrivals per matched seed/rate cell. All 24 offered requests count towards SLO, including backend failures. Compare Stage22 candidate utility against the paired Unlimited run; require original Stage13 guardrails (U margin +0.02, useful TPS>=80% unlimited, rejected <=20% of offers) before any candidate-win claim. Note Stage22 and Stage23 are separate sequential sessions and can drift.
