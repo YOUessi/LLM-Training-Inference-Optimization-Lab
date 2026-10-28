@@ -2,7 +2,7 @@
 import argparse,json,hashlib,time,statistics,pathlib
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--accum',type=int,default=1);p.add_argument('--steps',type=int,default=6);p.add_argument('--out',type=pathlib.Path,required=True);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--accum',type=int,default=1);p.add_argument('--steps',type=int,default=6);p.add_argument('--out',type=pathlib.Path,required=True);p.add_argument('--checkpoint-dir',type=pathlib.Path);p.add_argument('--checkpoint-every',type=int,default=2);a=p.parse_args()
  assert a.accum in (1,2,4) and a.steps>=3
  import torch
  from torch import nn
@@ -42,6 +42,9 @@ def main():
  heldout_before=evaluate()
  torch.cuda.reset_peak_memory_stats();times=[];losses=[]
  model.train()
+ from llm_opt_lab.training.async_checkpoint import AsyncCheckpointWriter
+ writer=AsyncCheckpointWriter(a.checkpoint_dir) if a.checkpoint_dir else None
+ saved_steps=[]
  for step in range(a.steps):
   opt.zero_grad(set_to_none=True);torch.cuda.synchronize();t0=time.perf_counter()
   for micro in range(a.accum):
@@ -51,9 +54,15 @@ def main():
     loss=out.loss/a.accum
    loss.backward()
   opt.step();torch.cuda.synchronize()
+  if writer and (step+1)%a.checkpoint_every==0:
+   # Bound the pipeline and surface errors rather than dropping checkpoint.
+   writer.flush()
+   writer.submit(step+1,{n:p for n,p in model.named_parameters() if p.requires_grad})
+   saved_steps.append(step+1)
   if step>=2:
    times.append(time.perf_counter()-t0)
    losses.append(float(loss.detach())*a.accum)
+ if writer:writer.close()
  heldout_after=evaluate()
  from safetensors.torch import save_file
  adapter_path=a.out.with_suffix('.safetensors')
@@ -61,6 +70,6 @@ def main():
  a.out.parent.mkdir(parents=True,exist_ok=True)
  save_file(weights,str(adapter_path),metadata={'format':'pt','base_model':'Qwen2.5-1.5B-Instruct','rank':'8','seed':'701'})
  digest=hashlib.sha256(adapter_path.read_bytes()).hexdigest()
- result={'status':'measured' ,'model':'Qwen2.5-1.5B-Instruct FP16-weight source loaded BF16','kind':'real_frozen_transformer_lora_smoke','modules_wrapped':n,'trainable_parameters':sum(x.numel() for x in trainable),'effective_sequences':a.accum,'steps_measured':len(times),'median_step_ms':statistics.median(times)*1000,'steps_per_sec':len(times)/sum(times),'peak_allocated_gpu_gib':torch.cuda.max_memory_allocated()/2**30,'last_train_loss':losses[-1],'heldout_loss_before':heldout_before,'heldout_loss_after':heldout_after,'adapter_file':adapter_path.name,'adapter_sha256':digest, 'caveats':['Tiny demonstration text; no downstream quality proof','LoRA-only trainable low-rank matrices, frozen base','Not Qwen3-8B QLoRA; not representative of production 8B post-training']}
+ result={'status':'measured' ,'model':'Qwen2.5-1.5B-Instruct FP16-weight source loaded BF16','kind':'real_frozen_transformer_lora_smoke','modules_wrapped':n,'trainable_parameters':sum(x.numel() for x in trainable),'effective_sequences':a.accum,'steps_measured':len(times),'median_step_ms':statistics.median(times)*1000,'steps_per_sec':len(times)/sum(times),'peak_allocated_gpu_gib':torch.cuda.max_memory_allocated()/2**30,'last_train_loss':losses[-1],'heldout_loss_before':heldout_before,'heldout_loss_after':heldout_after,'adapter_file':adapter_path.name,'adapter_sha256':digest,'async_checkpoint_steps':saved_steps, 'caveats':['Tiny demonstration text; no downstream quality proof','LoRA-only trainable low-rank matrices, frozen base','Not Qwen3-8B QLoRA; not representative of production 8B post-training']}
  a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

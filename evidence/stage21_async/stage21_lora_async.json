@@ -1,0 +1,28 @@
+{
+  "status": "measured",
+  "model": "Qwen2.5-1.5B-Instruct FP16-weight source loaded BF16",
+  "kind": "real_frozen_transformer_lora_smoke",
+  "modules_wrapped": 56,
+  "trainable_parameters": 1089536,
+  "effective_sequences": 1,
+  "steps_measured": 6,
+  "median_step_ms": 40.88492848677561,
+  "steps_per_sec": 24.571465756638865,
+  "peak_allocated_gpu_gib": 2.9701313972473145,
+  "last_train_loss": 4.7565507888793945,
+  "heldout_loss_before": 5.2019853591918945,
+  "heldout_loss_after": 5.1258015632629395,
+  "adapter_file": "stage21_lora_async.safetensors",
+  "adapter_sha256": "1b225fe432ccebe8355ee6608e0251eef6072fb49e292189d6dbbdbf9a9bb19b",
+  "async_checkpoint_steps": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "caveats": [
+    "Tiny demonstration text; no downstream quality proof",
+    "LoRA-only trainable low-rank matrices, frozen base",
+    "Not Qwen3-8B QLoRA; not representative of production 8B post-training"
+  ]
+}
