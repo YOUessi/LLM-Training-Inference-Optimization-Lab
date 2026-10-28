@@ -1,0 +1,9 @@
+# Stage23 real Unlimited baseline: original Stage13 candidate-win guardrail
+
+This stage added the previously missing **no-client-admission-limit** reference on Stage22's new CPython stdlib document domain, 2 arrival seeds × 2 offered rates (8/16/s), 24 offers each = **96 real Qwen3-8B-AWQ requests**. All 4 source requests/schedules matched frozen Stage22 cases, and all real Unlimited offers completed (no proxy rejections, zero unexplained errors). At high load the actual vLLM monitor recorded server-side queue peaks of 12 waiting requests (seed9301,16/s) and 9 (seed9309,16/s), showing that moving the queue from client to server does not eliminate capacity pressure.
+
+The strict 16 candidate comparisons against these four Unlimited baselines (all Stage22 variants) found **0/16 that simultaneously satisfied** preregistered Stage13 gates: utility U candidate minus Unlimited >=0.02, useful output TPS >=80% Unlimited, and rejection <=20% of all offers. Example: at seed9301 8/s the 8B-calibrated policy increased U by +0.0648 but rejected 5 of 24 offers (20.8%, exceeding the 20% bound). At seed9309 8/s, unlimited achieved 58.3% 250ms compliance and 0 rejections, whereas calibrated achieved 50.0% and 2 rejections.
+
+**Conclusion:** candidate rollout remains BLOCKED. The inability to satisfy the high-rate SLO is at least partly a model-serving capacity/queue-pressure issue rather than simply inaccurate client time estimates. Next test must vary vLLM server `max_num_seqs` at constant model, GPU, memory ceiling, corpus and offered schedule. No speculation that larger concurrency must win without real metrics.
+
+Evidence `evidence/stage23` contains four raw cases, all hashes, source SHA, and the complete machine-readable utility-gate comparison (16 rows). Comparison is between separate sequential engine sessions: no statistical significance is claimed, and the documents are synthetic technical questions based on PSF-licensed stdlib docs.
