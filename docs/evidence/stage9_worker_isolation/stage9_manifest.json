@@ -1,0 +1,45 @@
+{
+  "schema": "stage9-client-vs-server-queue-evidence-v1",
+  "source_commit": "9f497193c38c8d2bb00b6b78fd25d6b07bc66528",
+  "analyzer_source_commit": "cc58db358f4605fc9632707b5a30c5dbffe6de2e",
+  "frozen_requests_sha256": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "date": "2026-10-28",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "engine": "vllm-0.19.1",
+  "server_cache_disabled_verified": true,
+  "server_log_sha256": "7c68398bf9798b608f2f8e77b83ae09e874ba4a295c28894ffd070459b55d454",
+  "server_logs_retained_only_on_Tang": true,
+  "server_max_num_seqs": 8,
+  "client_worker_arms": [
+    8,
+    32
+  ],
+  "target_offered_rates": [
+    2,
+    8
+  ],
+  "seed_list": [
+    42,
+    137
+  ],
+  "offered_requests": 288,
+  "successful_requests": 288,
+  "raw_case_sha256": {
+    "label_w8_rate8_seed42.json": "1a59866d71d6c216c4633bc9404b4272ccbefcf4899bd5b094e1fdbbed40f162",
+    "label_w32_rate8_seed42.json": "5d83fbd77a4efce4d5dc19c31930a16c8cf09bb88ba3e8c7da4a42f722ce330a",
+    "detailed_w8_rate2_seed42.json": "ba51266e24cb058757aa0d485ee7add18423bb95b242b9a3c153ddc786379612",
+    "detailed_w32_rate2_seed42.json": "9358f2108dbe08c3258f6aa112e7a079df566f8281f4e9aacb22b379af5f3ac8",
+    "detailed_w8_rate8_seed42.json": "56d16475a28a2fef8f0d84c0764c799e11bff3c52fb7525192f3c1f5bb21b69c",
+    "detailed_w32_rate8_seed42.json": "84e0f69dbde453fdece063cd0f4b70ed8c29a80a04a16bcde2da026e535da043",
+    "label_w8_rate8_seed137.json": "5f789730e7a32fc53d3784d3999535c408ac9e0f319e7735fac557d04e9dd382",
+    "label_w32_rate8_seed137.json": "fd25ee24c8fac0484eef85110faa8e8ec189b2db2fc5e295733cc22000d0fb23",
+    "detailed_w8_rate2_seed137.json": "4fc5da98455d2a6167a457402d0c81595ab21fcda6925da5a56c4e42bb2738cb",
+    "detailed_w32_rate2_seed137.json": "e8d19e98a5782a755b0c3a0489e0ce5a6ee6031c6238e485e5c810e78f406654",
+    "detailed_w8_rate8_seed137.json": "ac1aa1145d6ac4d67f34a474a2ac71ebfa5207d46abd02e9d5573937968c0dfe",
+    "detailed_w32_rate8_seed137.json": "a509b36d94f71fc8f9186689965755f341c43749877213b384fbdcd45460aebf"
+  },
+  "analysis_sha256": "e5e6afbbf52fde63220e09eb6b8e9e77f9b6a2a3a4a4e9bc45fecef4fbad981d",
+  "limitations": "Gauge samples every 150ms; P95 based on 24 requests/setting and two seeds; queue migration is not server improvement"
+}

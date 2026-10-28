@@ -40,6 +40,7 @@ def audit(root: Path) -> dict:
         "Stage 6 KV capacity matrix":(root/"docs/STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md").exists(),
         "Stage 7 diverse natural prose":(root/"docs/STAGE7_REPORT_2026-10-28.md").exists(),
         "Stage 8 matched-rate serving":(root/"docs/STAGE8_REPORT_2026-10-28.md").exists(),
+        "Stage 9 worker queue isolation":(root/"docs/STAGE9_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -52,6 +53,8 @@ def audit(root: Path) -> dict:
         "Stage8 licensed multilingual corpus":(root/"data/stage8_multilingual_k8s_manifest.json").exists(),
         "Stage8 rate-matched SSE analyzer":(root/"src/llm_opt_lab/serving/stage8_analysis.py").exists(),
         "Stage8 GPU runner":(root/"scripts/run_stage8_arrivals.sh").exists(),
+        "Stage9 actual worker-isolation runner":(root/"scripts/run_stage9_worker_isolation.sh").exists(),
+        "Stage9 strict queue analysis":(root/"src/llm_opt_lab/serving/stage9_worker_analysis.py").exists(),
     }
     actions=[]
     if not all(implementation.values()):
@@ -75,8 +78,12 @@ def audit(root: Path) -> dict:
                 actions.append("Repeat Stage6 P95 TTFT SLO frontier on frozen diverse text with varied request arrival and output lengths; do not infer production SLO from two seeds.")
             else:
                 if reports["Stage 8 matched-rate serving"]:
-                    actions.append("Stage8 real matched-rate 288 SSE requests and unmatched-rate confound are archived: next isolate the 8-worker client queue from vLLM internal queuing.")
-                    actions.append("Stage9: build a bounded admission-control baseline with explicit request rejection and all-offered-request SLO accounting; evaluate against identical fixed-rate, frozen multilingual workloads.")
+                    if reports["Stage 9 worker queue isolation"]:
+                        actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
+                        actions.append("Stage10: design a held-out load trial where rejected traffic is never omitted from reported SLO or useful completed throughput.")
+                    else:
+                        actions.append("Stage8 real matched-rate 288 SSE requests and unmatched-rate confound are archived: next isolate the 8-worker client queue from vLLM internal queuing.")
+                        actions.append("Stage9: build a bounded admission-control baseline with explicit request rejection and all-offered-request SLO accounting; evaluate against identical fixed-rate, frozen multilingual workloads.")
                     actions.append("Obtain held-out diverse non-Kubernetes technical domains before claiming model-serving generalization.")
                 else:
                     actions.append("Stage7 384 real natural-prose requests and initial INVALID run are archived: next freeze a rights-cleared modern multilingual multi-domain workload for Stage8.")
@@ -98,7 +105,8 @@ def audit(root: Path) -> dict:
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
         "status":(
-            "stage8_evidence_published" if reports["Stage 8 matched-rate serving"]
+            "stage9_queue_baseline_published" if reports["Stage 9 worker queue isolation"]
+            else "stage8_evidence_published" if reports["Stage 8 matched-rate serving"]
             else "stage7_evidence_published" if reports["Stage 7 diverse natural prose"]
             else "stage5_evidence_published" if stage5_complete
             else "stage5_evidence_pending"

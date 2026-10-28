@@ -88,6 +88,25 @@ class PlanWatchTests(unittest.TestCase):
             self.assertTrue(any("Stage9" in action for action in d["next_executable_actions"]))
             self.assertTrue(any("client queue" in action for action in d["next_executable_actions"]))
 
+    def test_stage9_queue_work_published_advances_to_honest_admission(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"docs").mkdir()
+            (root/"docs/ROADMAP.md").write_text("- [x] stage9\\n")
+            for name in ("STAGE5_KV_CAPACITY_REPORT_2026-10-28.md",
+                         "STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md",
+                         "STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md",
+                         "STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md",
+                         "STAGE7_REPORT_2026-10-28.md",
+                         "STAGE8_REPORT_2026-10-28.md",
+                         "STAGE9_REPORT_2026-10-28.md"):
+                (root/"docs"/name).write_text("real measured")
+            d=audit(root)
+            self.assertEqual(d["status"],"stage9_queue_baseline_published")
+            self.assertTrue(d["published_reports"]["Stage 9 worker queue isolation"])
+            self.assertTrue(any("Stage10" in item for item in d["next_executable_actions"]))
+            self.assertTrue(any("rejected" in item for item in d["next_executable_actions"]))
+
     def test_watch_summary_and_json(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

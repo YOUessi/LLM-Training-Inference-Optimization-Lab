@@ -192,3 +192,7 @@ same vLLM model/GPU/input/schedule; compare 8 vs 32 client workers
 under label@8 and detailed@2/8 requests/s. Client dispatch queue,
 server Prometheus waiting/running gauges and end-to-end latency are
 separately measured. **Real results pending until actual GPU run.**
+
+### Stage9: real queue migration A/B (first phase finished)
+
+[Stage9 full GPU analysis](docs/STAGE9_REPORT_2026-10-28.md) and [12 raw paired cases](docs/evidence/stage9_worker_isolation): 8 client workers versus 32 at identical arrival schedules, model and inputs; 288/288 real SSE requests. Under detailed output @8 req/s, 32 workers **moved** queue wait from client executor to vLLM (real Prometheus max sampled waiting: 4), but barely reduced scheduled-arrival P95 TTFT. This is not a server optimization. Next gate is transparent admission control with explicit all-offered-request rejection/success/SLO accounting.

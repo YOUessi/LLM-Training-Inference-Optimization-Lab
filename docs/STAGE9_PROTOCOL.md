@@ -80,3 +80,7 @@ rejected and timeout counts. Compare baseline and control under
 **exact same offered** inputs/schedules and keep SLO denominator all
 offered requests. Dropping 50% to make accepted P95 fast is not a valid
 unqualified service improvement.
+
+## Post-run outcome (append-only; original gates unchanged)
+
+All 288 real requests completed successfully with 8 and 32 worker arms, two seeds and three matched workloads. The analysis confirmed client-to-server queue migration rather than a substantial reduction in overall scheduled-arrival tail latency. Actual server waiting gauge reached four under the 32-worker detailed@8 conditions. See STAGE9_REPORT_2026-10-28.md and stage9_worker_isolation raw JSON and checksum manifest. Stage10 explicit admission-control design is **not** claimed as completed here.

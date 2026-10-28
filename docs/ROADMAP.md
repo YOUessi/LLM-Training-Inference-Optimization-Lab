@@ -122,5 +122,12 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 
 ### Stage9 real-experiment gates
-- [ ] Run worker-count A/B: label@8 and detailed@2/8 req/s × 2 seeds × 8/32 workers = 288 real SSE requests; no predefined direction of success.
-- [ ] Publish raw actual GPU traces, server-gauge coverage and source manifest; classify client/server queue tradeoff without conflating them.
+- [x] Stage9 8-vs-32 worker A/B: label@8 and detailed@2/8 req/s × 2 seeds = 288 real SSE requests PASS, 100% provider usage; unchanged source corpus/schedule.
+- [x] Publish 12 raw real GPU cases, sampled server waiting/running gauges, source SHA256 manifest and queue-migration analysis. [Report](STAGE9_REPORT_2026-10-28.md).
+
+## Stage 10 — Honest queue admission and SLO-aware load control
+
+- [ ] Implement explicitly bounded admission queue and deadline expiration that logs offered, accepted, rejected, timed-out and completed requests, without silently dropping tasks.
+- [ ] Run baseline vs admission under the same frozen multilingual input and fixed-window arrival schedules; compare ALL-offered-request P95, success coverage and useful output throughput.
+- [ ] Add SLO and fairness analyses per language/length/output mode and a held-out seed or distinct data source; report negative outcomes.
+- [ ] Only promote a scheduling technique after the all-offered denominator and independent validation show a genuine benefit.
