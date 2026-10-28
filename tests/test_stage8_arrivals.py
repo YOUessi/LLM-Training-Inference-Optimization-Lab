@@ -7,7 +7,8 @@ from pathlib import Path
 
 from llm_opt_lab.serving.stage8_arrivals import (
     MODES, RATES, SEEDS, frozen_requests, group_language,
-    output_length_checks, parse_args, read_kv_cache_utilization, schedule,
+    output_length_checks, parse_args, read_kv_cache_utilization,
+    read_vllm_queue_gauges, schedule,
 )
 
 
@@ -67,6 +68,16 @@ class Stage8ArrivalContracts(unittest.TestCase):
             read_kv_cache_utilization('vllm:kv_cache_usage_perc 1.4\n')
         )
 
+    def test_server_queue_gauges_are_real_or_unavailable(self):
+        metrics=(
+          '# HELP vllm:num_requests_waiting Number waiting\n'
+          'vllm:num_requests_waiting{engine="0"} 2\n'
+          'vllm:num_requests_running{engine="0"} 8\n'
+        )
+        self.assertEqual(read_vllm_queue_gauges(metrics),
+                         {"waiting":2.,"running":8.})
+        self.assertIsNone(read_vllm_queue_gauges("vllm:num_requests_waiting 0\n"))
+
     def test_language_breakdown(self):
         rows=[]
         for lang in ("en","zh-cn","ja"):
@@ -84,6 +95,12 @@ class Stage8ArrivalContracts(unittest.TestCase):
                          "--rate","8","--seed","137",
                          "--output","/tmp/stage8.json"])
         self.assertEqual((good.mode,good.rate,good.seed),("summary",8.,137))
+        self.assertEqual(good.max_client_workers,8)
+        thirtytwo=parse_args(["--model","qwen","--mode","detailed",
+                              "--rate","8","--seed","42",
+                              "--max-client-workers","32",
+                              "--output","/tmp/stage9.json"])
+        self.assertEqual(thirtytwo.max_client_workers,32)
         for args in (["--rate","10"],["--seed","999"],
                      ["--mode","unknown"],["--warmup","3"]):
             with self.subTest(args=args):

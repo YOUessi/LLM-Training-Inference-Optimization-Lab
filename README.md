@@ -184,3 +184,11 @@ Stage8 still requires more modern, mixed-linguistic domains, true natural output
 ### Stage8 — real 3-language matched-arrival GPU serving benchmarks
 
 [Stage8 matched-rate technical report](docs/STAGE8_REPORT_2026-10-28.md), [12 raw fixed-window SSE case files](docs/evidence/stage8_fixed_window) and [initial unmatched Poisson observations](docs/STAGE8_EXPLORATORY_REPORT_2026-10-28.md). Qwen2.5-1.5B/vLLM 0.19.1 on a single Tang RTX4090 Laptop GPU, 288 actual requests per protocol, 3 output regimes, 2 offered rates, 2 seeds. At detailed output and 8 req/s, client executor queue wait dominates scheduled-arrival TTFT. **This is a load-generator bottleneck, not proof of vLLM server internal queueing.** Stage9 policy experiments are pending.
+
+### Stage9 load-generator queue isolation
+
+[Preregistered Stage9 worker-isolation experiment](docs/STAGE9_PROTOCOL.md):
+same vLLM model/GPU/input/schedule; compare 8 vs 32 client workers
+under label@8 and detailed@2/8 requests/s. Client dispatch queue,
+server Prometheus waiting/running gauges and end-to-end latency are
+separately measured. **Real results pending until actual GPU run.**

@@ -114,8 +114,13 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 ## Stage 9 — Serving overload and admission-policy research
 
-- [ ] Fix the load-generator concurrency confound by providing explicit near-unbounded client submission while keeping server max-seqs bounded; measure both client wait and server processing independently.
+- [x] Stage9 load-generator A/B designed and CPU-tested: 8 vs 32 worker threads, server max-num-seqs fixed at 8, real server waiting/running Prometheus gauges and client queue accounting. [Protocol](STAGE9_PROTOCOL.md).
 - [ ] Create a deadline-aware bounded queue/admission policy with explicit dropped/rejected/accepted success rates; never improve TTFT by silently discarding requests.
 - [ ] Compare baseline vs controller under identical frozen multilingual requests and matched arrival schedules on the same GPU/model settings; use independent seeds and negative results.
 - [ ] Report served useful output Tokens/s, acceptance %, error/timeout %, SLO violations over ALL offered requests, not only accepted ones.
 - [ ] Expand to independent technical and nontechnical domains before claiming general policy effectiveness.
+
+
+### Stage9 real-experiment gates
+- [ ] Run worker-count A/B: label@8 and detailed@2/8 req/s × 2 seeds × 8/32 workers = 288 real SSE requests; no predefined direction of success.
+- [ ] Publish raw actual GPU traces, server-gauge coverage and source manifest; classify client/server queue tradeoff without conflating them.

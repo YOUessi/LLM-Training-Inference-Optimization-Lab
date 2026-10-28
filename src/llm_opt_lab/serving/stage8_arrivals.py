@@ -49,6 +49,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--schedule-kind", choices=("poisson", "fixed_window"), default="poisson",
                    help="fixed_window preserves randomized gaps but normalizes exact sample-average offered rate")
     p.add_argument("--warmup", type=int, default=1)
+    p.add_argument("--max-client-workers", type=int, choices=(8,32), default=8,
+                   help="Bounded client submitters; compare 8 vs 32 to isolate load generator queue")
     p.add_argument("--output", type=Path, required=True)
     a = p.parse_args(argv)
     if a.rate not in RATES:
@@ -109,15 +111,47 @@ def read_kv_cache_utilization(text: str) -> float | None:
     return None
 
 
-def sample_kv_metrics(base_url: str, stop: threading.Event, samples: list[dict]) -> None:
+def read_vllm_queue_gauges(text: str) -> dict[str, float] | None:
+    """Read actual server running and waiting request gauges, if available.
+
+    Only accepts finite nonnegative counters/gauges. Missing metrics are
+    unavailable rather than implicitly treated as zero.
+    """
+    names = {
+        "vllm:num_requests_waiting":"waiting",
+        "vllm:num_requests_running":"running",
+    }
+    found: dict[str,float] = {}
+    for line in text.splitlines():
+        if not line or line.startswith("#"):
+            continue
+        metric = line.split("{",1)[0].split(None,1)[0]
+        if metric not in names:
+            continue
+        try:
+            number = float(line.rsplit(None,1)[-1])
+        except ValueError:
+            continue
+        if math.isfinite(number) and number >= 0:
+            found[names[metric]]=number
+    return found if set(found)=={"running","waiting"} else None
+
+
+def sample_kv_metrics(base_url: str, stop: threading.Event,
+                      samples: list[dict], queue_samples: list[dict] | None = None) -> None:
     url = base_url.rstrip("/") + "/metrics"
     while not stop.is_set():
         ts = time.perf_counter()
         try:
             with urllib.request.urlopen(url, timeout=2) as r:
-                val = read_kv_cache_utilization(r.read().decode("utf-8"))
+                body = r.read().decode("utf-8")
+                val = read_kv_cache_utilization(body)
                 if val is not None:
                     samples.append({"offset_monotonic": ts, "kv_usage": val})
+                if queue_samples is not None:
+                    q=read_vllm_queue_gauges(body)
+                    if q is not None:
+                        queue_samples.append({"offset_monotonic": ts, **q})
         except (OSError, UnicodeError, ValueError):
             pass
         stop.wait(.15)
@@ -181,10 +215,11 @@ def main(argv: list[str] | None = None) -> int:
         offsets = schedule(seed, a.rate, len(items), kind=a.schedule_kind)
         records: list[dict] = []
         kv_samples: list[dict] = []
+        queue_samples: list[dict] = []
         stop = threading.Event()
         sampler = threading.Thread(
             target=sample_kv_metrics,
-            args=(a.base_url, stop, kv_samples), daemon=True,
+            args=(a.base_url, stop, kv_samples, queue_samples), daemon=True,
         )
         sampler.start()
         start = time.perf_counter() + .1
@@ -215,7 +250,7 @@ def main(argv: list[str] | None = None) -> int:
             return result
 
         try:
-            with ThreadPoolExecutor(max_workers=MAX_CLIENT_WORKERS) as pool:
+            with ThreadPoolExecutor(max_workers=a.max_client_workers) as pool:
                 futures = []
                 for i, (offset, item) in enumerate(zip(offsets, items)):
                     due = start + offset
@@ -260,7 +295,7 @@ def main(argv: list[str] | None = None) -> int:
             "config": {
                 "model": a.model, "rate_per_second": a.rate,
                 "seed": a.seed, "mode": a.mode, "requests": 24,
-                "max_client_workers": MAX_CLIENT_WORKERS,
+                "max_client_workers": a.max_client_workers,
                 "output_cap_tokens": OUTPUT_CAP,
                 "warmup_requests": a.warmup,
                 "frozen_request_sha256": manifest["request_jsonl_sha256"],
@@ -301,6 +336,23 @@ def main(argv: list[str] | None = None) -> int:
                 "peak_fraction": max(utilization) if utilization else None,
                 "average_fraction": statistics.mean(utilization) if utilization else None,
                 "source": "vllm Prometheus, periodic 150ms sampling (not a kernel counter)",
+            },
+            "server_request_queue_gauges": {
+                "available": bool(queue_samples),
+                "samples": len(queue_samples),
+                "max_server_waiting_requests": (
+                    max(x["waiting"] for x in queue_samples)
+                    if queue_samples else None
+                ),
+                "max_server_running_requests": (
+                    max(x["running"] for x in queue_samples)
+                    if queue_samples else None
+                ),
+                "mean_server_waiting_requests": (
+                    statistics.mean(x["waiting"] for x in queue_samples)
+                    if queue_samples else None
+                ),
+                "source": "vLLM Prometheus 150ms sampling, not an exact continuous queue integral",
             },
             "requests": records,
             "limitations": [
