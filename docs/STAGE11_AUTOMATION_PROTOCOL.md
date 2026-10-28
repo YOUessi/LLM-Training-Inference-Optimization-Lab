@@ -102,3 +102,14 @@ NOT allowed to synthesize new Stage12 algorithms/jobs on its own.
 After GitHub publishes the reviewed research evidence, the local pinned
 revision and archived state must be reconciled before future approvals.
 See STAGE11_REPORT_2026-10-28.md.
+
+## Subsequent reviewed Stage12 extension (2026-10-28)
+
+After the three original Stage11 tasks finished and their source-versioned
+results were archived, a new separate reviewed source revision added three
+more **finite approved tasks**: Stage12 natural-prose seed 4093, seed 5087
+and cross-domain CPU analysis. The original Stage11 trial and its local
+state snapshot were preserved. Any active Stage12 tasks must run only
+after reconciling the Tang pinned full SHA to the reviewed GitHub revision;
+the same 10-minute resource checks, no auto-fetch, stop-on-error and
+single-instance lock continue. See STAGE12_PROTOCOL.md.
