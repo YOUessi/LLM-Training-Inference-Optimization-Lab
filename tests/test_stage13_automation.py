@@ -37,6 +37,27 @@ class Stage13FiniteExecutionTests(unittest.TestCase):
             self.assertNotIn("curl",job["argv"])
             self.assertNotIn("pip",job["argv"])
 
+    def test_cron_bare_python_loader_is_local_only_and_not_module_missing(self):
+        import os
+        import subprocess
+        import sys
+        env=os.environ.copy()
+        env.pop("PYTHONPATH",None)
+        code=(
+            "from scripts.auto_progress_tick import verify_completed_job;"
+            "from pathlib import Path;"
+            "verify_completed_job(Path.cwd(), 'stage13_k8s_seed6101')"
+        )
+        completed=subprocess.run(
+            [sys.executable,"-c",code],cwd=ROOT,
+            env=env,text=True,capture_output=True,timeout=10,check=False
+        )
+        # No real data exists in local Mac results, so FileNotFoundError
+        # is correct. The old cron bug was ModuleNotFoundError.
+        self.assertNotEqual(completed.returncode,0)
+        self.assertIn("FileNotFoundError",completed.stderr)
+        self.assertNotIn("ModuleNotFoundError",completed.stderr)
+
     def test_without_real_gpu_results_job_cannot_pass(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

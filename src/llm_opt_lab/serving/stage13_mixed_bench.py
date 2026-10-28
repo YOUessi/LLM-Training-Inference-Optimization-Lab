@@ -244,6 +244,7 @@ def main(argv=None) -> int:
                 "policy_version":"stage13_age_fair_v1",
             },
             "summary":totals,
+            "elapsed_s":elapsed,
             "actual_mode_summaries":by_mode,
             "gate_final_state":gate.final_state(),
             "kv_cache_monitor":{

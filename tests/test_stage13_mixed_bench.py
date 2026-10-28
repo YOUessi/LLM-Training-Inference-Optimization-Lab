@@ -58,6 +58,51 @@ class Stage13MixedBenchContracts(unittest.TestCase):
                             "--rate","16","--seed","123",
                             "--policy","adaptive","--output","/tmp/x.json"])
 
+    def test_complete_mock_server_case_persists_walltime_for_recomputation(self):
+        # This is a purely local MOCK server. It checks JSON provenance
+        # and does not stand in for real CUDA/real vLLM performance data.
+        import tempfile
+        from unittest.mock import patch
+        from llm_opt_lab.serving.stage13_mixed_bench import main
+        from llm_opt_lab.serving.stage10_admission import accounting
+        source,_=frozen_requests(ROOT/DOMAINS["k8s"][0],ROOT/DOMAINS["k8s"][1])
+        assigned=make_offers(source,6101)
+
+        def simulated_request(index,**kw):
+            mode=("label" if index<0 or index%2==0 else "detailed")
+            return {
+                "index":index,"status":"ok",
+                "prompt_tokens":assigned[index]["target_prompt_tokens"] if index>=0 else 175,
+                "completion_tokens":3 if mode=="label" else 128,
+                "ttft_ms":8.,"latency_ms":38. if mode=="label" else 200.,
+            }
+
+        def fake_monitor(_url,_event,cache,queue):
+            cache.append({"kv_usage":0.})
+            queue.append({"waiting":0.,"running":0.})
+
+        with tempfile.TemporaryDirectory() as tmp:
+            out=Path(tmp)/"fake_trace.json"
+            with patch("llm_opt_lab.serving.stage13_mixed_bench._request",
+                       side_effect=simulated_request), patch(
+                "llm_opt_lab.serving.stage13_mixed_bench.sample_kv_metrics",
+                side_effect=fake_monitor,
+            ):
+                self.assertEqual(main([
+                    "--model","simulated-only","--domain","k8s",
+                    "--seed","6101","--rate","16",
+                    "--policy","adaptive","--output",str(out),
+                ]),0)
+            recorded=json.loads(out.read_text())
+            self.assertEqual(recorded["status"],"measured")
+            self.assertGreater(recorded["elapsed_s"],1.)
+            self.assertEqual(
+                recorded["summary"],
+                accounting(recorded["requests"],recorded["elapsed_s"]),
+            )
+            self.assertEqual(recorded["summary"]["offered"],24)
+            self.assertEqual(recorded["summary"]["rejected"],0)
+
     def test_mode_breakdown_accepts_rejection_as_slo_failure(self):
         rows=[]
         for i in range(24):

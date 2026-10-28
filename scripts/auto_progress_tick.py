@@ -135,6 +135,13 @@ def verify_completed_job(root:Path, jobid:str) -> None:
             d["frozen_domain_request_sha256"]!="fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04"):
             raise ValueError("Stage12 crossdomain analysis not accepted")
     elif jobid.startswith("stage13_") and jobid!="stage13_all_analysis":
+        # Cron runs /usr/bin/python3 scripts/auto_progress_tick.py, where
+        # sys.path[0] points to scripts/ rather than our src/ layout.
+        # Resolve *only* the approved repository src path, never cwd/site
+        # downloads or dynamic remote code.
+        source_path=str((root/"src").resolve())
+        if source_path not in sys.path:
+            sys.path.insert(0,source_path)
         from llm_opt_lab.serving.stage10_admission import accounting
         accepted_pairs={
             ("k8s",6101),("k8s",6109),("prose",7201),("prose",7209),

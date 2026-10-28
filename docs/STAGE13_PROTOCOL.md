@@ -105,3 +105,31 @@ was not modified. Age fairness and online service demand are engineering
 heuristics, not theoretical guarantees. Results do not establish a
 production tail-latency confidence interval. A future study must ablate
 priority versus deadline and use new source data and longer traces.
+
+## Amendment A — first source revision failed evidence-verification contract
+
+The first source revision (Git 76390668c59928d9528f74f6925e4216660a816f)
+launched a real 192-offer Kubernetes/seed6101 job and wrote 8 successful
+real SSE JSON files. However the automation verifier first failed to
+import the project package under bare cron python3 (missing local
+source path); an explicit isolated verifier check then revealed that
+the source JSON omitted the experiment wall-time scalar needed to
+independently recompute throughput from completed output Tokens.
+
+These original measurements are preserved **unaltered** under
+results/stage13_invalid_v1_k8s_seed6101, and the failed task state is
+backed up in results/auto_progress. This is a PROTOCOL/EVIDENCE failure,
+not a claim of model inference failure. The initial 192 offers are
+EXCLUDED from the corrected 768-offer A/B and cannot be silently
+declared valid or folded into the published new experiment.
+
+Fixes frozen in a NEW Git revision before any retry:
+- The guarded validator explicitly loads the approved local repo src/.
+- Every subsequent request case writes the actual measured elapsed_s.
+- CPU tests run an entire mocked 24-request service scenario and
+  recompute its all-offered statistics, including total elapsed seconds.
+- All 768 intended GPU offers restart from clean, never-overwritten
+  output directories, with a newly approved commit pinned on Tang.
+
+No Stage13 algorithm parameter, utility coefficient, deadline or
+test seed changes as a result of these protocol defects.
