@@ -2,7 +2,7 @@
 import json,pathlib,statistics,hashlib
 import sys
 root=pathlib.Path(sys.argv[1] if len(sys.argv)>1 else 'evidence/stage22')
-files=sorted(root.glob('*.json'))
+files=sorted(root.glob('stdlib_seed*.json'))
 if len(files)!=16:raise ValueError(f'incomplete 16-cell study: {len(files)}')
 cells={};rows=[]
 for p in files:
