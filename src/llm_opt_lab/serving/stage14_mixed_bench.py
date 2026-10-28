@@ -272,7 +272,7 @@ def main(argv=None) -> int:
         }
         write_json_atomic(a.output,payload)
         print(
-            "STAGE13",a.domain,a.rate,a.seed,a.policy,
+            "STAGE14",a.domain,a.rate,a.seed,a.policy,
             "status",status,"offered",totals["offered"],
             "completed",totals["completed"],"rejected",totals["rejected"],
             "SLO250",round(totals["slo_all_offered"]["250"]["compliance_fraction"],3),
