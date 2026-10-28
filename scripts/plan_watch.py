@@ -41,6 +41,7 @@ def audit(root: Path) -> dict:
         "Stage 7 diverse natural prose":(root/"docs/STAGE7_REPORT_2026-10-28.md").exists(),
         "Stage 8 matched-rate serving":(root/"docs/STAGE8_REPORT_2026-10-28.md").exists(),
         "Stage 9 worker queue isolation":(root/"docs/STAGE9_REPORT_2026-10-28.md").exists(),
+        "Stage 10 client admission A/B":(root/"docs/STAGE10_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -55,6 +56,8 @@ def audit(root: Path) -> dict:
         "Stage8 GPU runner":(root/"scripts/run_stage8_arrivals.sh").exists(),
         "Stage9 actual worker-isolation runner":(root/"scripts/run_stage9_worker_isolation.sh").exists(),
         "Stage9 strict queue analysis":(root/"src/llm_opt_lab/serving/stage9_worker_analysis.py").exists(),
+        "Stage10 client-side admission":(root/"src/llm_opt_lab/serving/stage10_admission.py").exists(),
+        "Stage10 offered-request strict analysis":(root/"src/llm_opt_lab/serving/stage10_analysis.py").exists(),
     }
     actions=[]
     if not all(implementation.values()):
@@ -79,8 +82,12 @@ def audit(root: Path) -> dict:
             else:
                 if reports["Stage 8 matched-rate serving"]:
                     if reports["Stage 9 worker queue isolation"]:
-                        actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
-                        actions.append("Stage10: design a held-out load trial where rejected traffic is never omitted from reported SLO or useful completed throughput.")
+                        if reports["Stage 10 client admission A/B"]:
+                            actions.append("Stage10 192 offered request A/B recorded: 186 completed, 6 rejected. Next test admission thresholds against independently frozen held-out arrival seeds and a non-Kubernetes corpus.")
+                            actions.append("Stage11: quantify all-offered TTFT SLO, useful output throughput and rejection fairness across language and request sizes; do not optimize accepted-only latency.")
+                        else:
+                            actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
+                            actions.append("Stage10: design a held-out load trial where rejected traffic is never omitted from reported SLO or useful completed throughput.")
                     else:
                         actions.append("Stage8 real matched-rate 288 SSE requests and unmatched-rate confound are archived: next isolate the 8-worker client queue from vLLM internal queuing.")
                         actions.append("Stage9: build a bounded admission-control baseline with explicit request rejection and all-offered-request SLO accounting; evaluate against identical fixed-rate, frozen multilingual workloads.")
@@ -105,7 +112,8 @@ def audit(root: Path) -> dict:
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
         "status":(
-            "stage9_queue_baseline_published" if reports["Stage 9 worker queue isolation"]
+            "stage10_admission_ablation_published" if reports["Stage 10 client admission A/B"]
+            else "stage9_queue_baseline_published" if reports["Stage 9 worker queue isolation"]
             else "stage8_evidence_published" if reports["Stage 8 matched-rate serving"]
             else "stage7_evidence_published" if reports["Stage 7 diverse natural prose"]
             else "stage5_evidence_published" if stage5_complete

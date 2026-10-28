@@ -135,5 +135,12 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 ### Stage10 acceptance gates
 
 - [x] Frozen Stage10 A/B workload under the same server/input/arrival schedules and 32-worker request injector: unlimited vs bounded, label/detailed, 2 seeds.
-- [ ] Run 192 actual Stage10 offered requests on Tang; archive all results including expected explicit rejections.
-- [ ] Strictly validate every offered request in the denominator, real provider usage, queue gauges and no unaccounted requests; publish truthfully negative as well as positive results.
+- [x] Stage10 two-policy matched trial: 192 real offered requests, 186 completed, 6 explicitly rejected; all raw results and actual model usage archived. [Report](STAGE10_REPORT_2026-10-28.md).
+- [x] All-offered SLO denominator verified; bounded detailed mode improved timely first-token fraction but reduced useful throughput and rejected 12.5% of detailed offered traffic. Full negative/positive tradeoff published.
+
+## Stage 11 — Admission policy independent verification
+
+- [ ] Freeze held-out arrival seeds and multiple offered rates including overload and low-load controls. Do not tune deadlines on the held-out schedules.
+- [ ] Compare multiple queue slot/deadline configurations and explicit no-drop baseline using all-offered compliance, useful throughput, reject reasons and per-language fairness.
+- [ ] Collect enough repetitions/requests to estimate uncertainty in tail SLO, and validate on at least one distinct domain before describing any production applicability.
+- [ ] Keep new model/engine/KV cache optimizations separate from client admission-policy changes to avoid causal confounding.

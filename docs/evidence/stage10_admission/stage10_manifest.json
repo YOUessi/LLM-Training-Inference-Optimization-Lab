@@ -1,0 +1,40 @@
+{
+  "schema": "stage10-real-client-admission-evidence-v1",
+  "date": "2026-10-28",
+  "experiment_source_commit": "1f654f7404a7cc7e1cd5a88f28fc0615349a154f",
+  "analysis_source_commit": "7b4618b5f1a1d66fe3168d69763bde77ac0856af",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "frozen_request_sha256": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "cache_disabled_actual_server_log": true,
+  "max_num_seqs": 8,
+  "offered": 192,
+  "completed": 186,
+  "rejected": 6,
+  "errors": 0,
+  "policies": [
+    "unlimited",
+    "bounded"
+  ],
+  "client_worker_count": 32,
+  "bounded_inflight": 8,
+  "bounded_queue_capacity": 4,
+  "deadline_ms": 250,
+  "all_offered_accounting": true,
+  "server_log_sha256": "83aab308cd27fa59afefc4d93a1b26402fe1259fbdf4712d4912a0678ddc617c",
+  "server_log_private_only_on_Tang": true,
+  "raw_files_sha256": {
+    "unlimited_label_seed42.json": "62ba89ac23c7a3a8d96efd1e1faa3c30ba638f8b7d5c26495c160102d77a861d",
+    "unlimited_label_seed137.json": "24391c87a056299a3bd5546d57b5e37bf3aceea209ee72faeae8a3848cf748c7",
+    "bounded_label_seed42.json": "fe9280b26f9c17738df33198d7054a594c7b9d1690a0b28f52d6977a024cf8ca",
+    "bounded_label_seed137.json": "b430454cee251f764d7f7e5dda73ea55f38a2ef32fa8b036f55584def0eab368",
+    "unlimited_detailed_seed42.json": "72409db0cf2bfcb79f7ebe5ea549ea3fba4fcf7d442b20d3ea25a28937763aae",
+    "unlimited_detailed_seed137.json": "e07c6cab334d58c963ebae488eedb63d8c3dc43562a919bdf33bc054704a40d0",
+    "bounded_detailed_seed42.json": "4a10aa2da55f17fc8ae5feb964e3d6bc575cfed64c79fd6c4df86c6305ae8487",
+    "bounded_detailed_seed137.json": "614ad55f3b25ecb35b340c3326834bf1d13738201e660a9b92a76bbf6e956b58"
+  },
+  "analysis_sha256": "386f67f3f337266a142e37ab381f091dec396c1e96042a9544f30763ee4ba291",
+  "caveat": "Rejected offers count as SLO failures; no vLLM server code or model was changed"
+}

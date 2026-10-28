@@ -88,3 +88,14 @@ two arrival seeds with 24 requests per condition. Results are
 exploratory and not a high-confidence service-level guarantee.
 Client admission is a simulated proxy, not a vLLM engine scheduler
 change. Do not claim improvements in a proprietary policy or model.
+
+## Post-run observation (append-only, does not change acceptance thresholds)
+
+The matched real GPU study completed **192/192 offered requests accounted for**:
+186 completed and 6 explicitly rejected, zero unexpected errors. The
+unlimited baseline completed all requests. Bounded detailed policy rejected
+3/24 offered under each seed and improved 250ms first-token all-offered
+compliance to 87.5% versus 75.0% and 66.7%, but reduced useful output
+throughput. Label-mode negative controls rejected zero traffic under either
+policy. See STAGE10_REPORT_2026-10-28.md and Stage10 raw SHA256 manifest.
+Do not present this as a universally beneficial server-side optimization.

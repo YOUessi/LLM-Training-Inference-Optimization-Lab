@@ -1,0 +1,330 @@
+{
+  "status": "pass",
+  "kind": "stage10_matched_real_client_admission_ablation",
+  "source_git_sha": "1f654f7404a7cc7e1cd5a88f28fc0615349a154f",
+  "frozen_request_sha": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "total_offered_requests": 192,
+  "paired_cases": [
+    {
+      "mode": "label",
+      "seed": 42,
+      "unlimited": {
+        "policy": "unlimited",
+        "mode": "label",
+        "seed": 42,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 1.0,
+        "all_offered_slo_500_fraction": 1.0,
+        "useful_output_tokens_per_second": 24.33947735470207,
+        "accepted_only_p95_ttft_ms": 55.287129161297344,
+        "all_offered_p95_ttft_ms": 55.287129161297344,
+        "p95_client_admission_wait_ms": 0.0,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "unlimited_label_seed42.json"
+      },
+      "bounded": {
+        "policy": "bounded",
+        "mode": "label",
+        "seed": 42,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 1.0,
+        "all_offered_slo_500_fraction": 1.0,
+        "useful_output_tokens_per_second": 24.35285847514942,
+        "accepted_only_p95_ttft_ms": 54.85743396566247,
+        "all_offered_p95_ttft_ms": 54.85743396566247,
+        "p95_client_admission_wait_ms": 0.01981521345442161,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "bounded_label_seed42.json"
+      },
+      "delta_all_offered_250ms_slo_fraction": 0.0,
+      "delta_useful_tokens_per_second": 0.013381120447352401,
+      "new_rejected_count": 0
+    },
+    {
+      "mode": "label",
+      "seed": 137,
+      "unlimited": {
+        "policy": "unlimited",
+        "mode": "label",
+        "seed": 137,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 1.0,
+        "all_offered_slo_500_fraction": 1.0,
+        "useful_output_tokens_per_second": 23.93236162952944,
+        "accepted_only_p95_ttft_ms": 55.40960455546155,
+        "all_offered_p95_ttft_ms": 55.40960455546155,
+        "p95_client_admission_wait_ms": 0.0,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "unlimited_label_seed137.json"
+      },
+      "bounded": {
+        "policy": "bounded",
+        "mode": "label",
+        "seed": 137,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 1.0,
+        "all_offered_slo_500_fraction": 1.0,
+        "useful_output_tokens_per_second": 23.944233218709957,
+        "accepted_only_p95_ttft_ms": 60.74396996991708,
+        "all_offered_p95_ttft_ms": 60.74396996991708,
+        "p95_client_admission_wait_ms": 0.018447544425725933,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "bounded_label_seed137.json"
+      },
+      "delta_all_offered_250ms_slo_fraction": 0.0,
+      "delta_useful_tokens_per_second": 0.011871589180518782,
+      "new_rejected_count": 0
+    },
+    {
+      "mode": "detailed",
+      "seed": 42,
+      "unlimited": {
+        "policy": "unlimited",
+        "mode": "detailed",
+        "seed": 42,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 0.75,
+        "all_offered_slo_500_fraction": 0.9583333333333334,
+        "useful_output_tokens_per_second": 747.2348032473355,
+        "accepted_only_p95_ttft_ms": 478.0196579609764,
+        "all_offered_p95_ttft_ms": 478.0196579609764,
+        "p95_client_admission_wait_ms": 0.0,
+        "server_peak_waiting_sampled": 4.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "unlimited_detailed_seed42.json"
+      },
+      "bounded": {
+        "policy": "bounded",
+        "mode": "detailed",
+        "seed": 42,
+        "offered": 24,
+        "completed": 21,
+        "rejected": 3,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 0.875,
+        "all_offered_slo_500_fraction": 0.875,
+        "useful_output_tokens_per_second": 709.3429739174366,
+        "accepted_only_p95_ttft_ms": 187.75527205434628,
+        "all_offered_p95_ttft_ms": null,
+        "p95_client_admission_wait_ms": 249.8802794740186,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {
+          "deadline_expired": 3
+        },
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 7,
+            "rejected": 1
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 7,
+            "rejected": 1
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 7,
+            "rejected": 1
+          }
+        },
+        "source_file": "bounded_detailed_seed42.json"
+      },
+      "delta_all_offered_250ms_slo_fraction": 0.125,
+      "delta_useful_tokens_per_second": -37.891829329899,
+      "new_rejected_count": 3
+    },
+    {
+      "mode": "detailed",
+      "seed": 137,
+      "unlimited": {
+        "policy": "unlimited",
+        "mode": "detailed",
+        "seed": 137,
+        "offered": 24,
+        "completed": 24,
+        "rejected": 0,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 0.6666666666666666,
+        "all_offered_slo_500_fraction": 0.9583333333333334,
+        "useful_output_tokens_per_second": 769.6486472413657,
+        "accepted_only_p95_ttft_ms": 429.87315868522273,
+        "all_offered_p95_ttft_ms": 429.87315868522273,
+        "p95_client_admission_wait_ms": 0.0,
+        "server_peak_waiting_sampled": 4.0,
+        "rejection_reasons": {},
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "unlimited_detailed_seed137.json"
+      },
+      "bounded": {
+        "policy": "bounded",
+        "mode": "detailed",
+        "seed": 137,
+        "offered": 24,
+        "completed": 21,
+        "rejected": 3,
+        "errors": 0,
+        "all_offered_slo_250_fraction": 0.875,
+        "all_offered_slo_500_fraction": 0.875,
+        "useful_output_tokens_per_second": 709.5442339688567,
+        "accepted_only_p95_ttft_ms": 228.90875503071584,
+        "all_offered_p95_ttft_ms": null,
+        "p95_client_admission_wait_ms": 249.8218175896909,
+        "server_peak_waiting_sampled": 0.0,
+        "rejection_reasons": {
+          "deadline_expired": 3
+        },
+        "by_language": {
+          "en": {
+            "offered": 8,
+            "completed": 7,
+            "rejected": 1
+          },
+          "zh-cn": {
+            "offered": 8,
+            "completed": 6,
+            "rejected": 2
+          },
+          "ja": {
+            "offered": 8,
+            "completed": 8,
+            "rejected": 0
+          }
+        },
+        "source_file": "bounded_detailed_seed137.json"
+      },
+      "delta_all_offered_250ms_slo_fraction": 0.20833333333333337,
+      "delta_useful_tokens_per_second": -60.104413272508964,
+      "new_rejected_count": 3
+    }
+  ],
+  "analysis_not_a_new_gpu_run": true,
+  "no_claim_of_universal_improvement": true,
+  "limitations": [
+    "Client-side admission is not a vLLM scheduler code change",
+    "Dropping offered requests may reduce accepted-only P95 while harming all-offered service",
+    "Only 24 requests/condition, two seeds, one model and Kubernetes domain",
+    "Server Prometheus queue gauge sampling misses short transient events",
+    "Executor policy uses semaphores without strict FIFO fairness guarantee"
+  ]
+}
