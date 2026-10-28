@@ -120,7 +120,8 @@ def main(argv=None) -> int:
         warm=_request(-1,endpoint=endpoint,model=a.model,
                       prompt=items[-1]["prompt_text"],max_tokens=OUTPUT_CAP,
                       seed=a.seed,timeout=100.,
-                      response_instruction=instructions["detailed"])
+                      response_instruction=instructions["detailed"],
+                      disable_thinking=a.model.startswith("qwen3-"))
         if warm["status"]!="ok":
             raise RuntimeError("real model warmup failed")
         gate=AblationAdmissionGate(a.policy)
@@ -170,7 +171,8 @@ def main(argv=None) -> int:
                                 prompt=item["prompt_text"],
                                 max_tokens=OUTPUT_CAP,
                                 timeout=120.,seed=a.seed,
-                                response_instruction=instructions[mode])
+                                response_instruction=instructions[mode],
+                                disable_thinking=a.model.startswith("qwen3-"))
                 result.update(common)
                 result["ttft_from_due_ms"]=(
                     max(0.,service_start-due)*1000.+result["ttft_ms"]

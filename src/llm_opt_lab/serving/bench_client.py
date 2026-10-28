@@ -81,7 +81,8 @@ def _endpoint(base_url: str) -> str:
 
 def _request(index: int, *, endpoint: str, model: str, prompt: str,
              max_tokens: int, timeout: float, seed: int | None,
-             response_instruction: str = "Answer in one short sentence.") -> dict[str, Any]:
+             response_instruction: str = "Answer in one short sentence.",
+             disable_thinking: bool = False) -> dict[str, Any]:
     unique_prompt = f"{prompt}\nTask id: {index:04d}. {response_instruction}"
     payload: dict[str, Any] = {
         "model": model,
@@ -91,6 +92,8 @@ def _request(index: int, *, endpoint: str, model: str, prompt: str,
         "stream": True,
         "stream_options": {"include_usage": True},
     }
+    if disable_thinking:
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
     if seed is not None:
         payload["seed"] = seed + index
     headers = {"Content-Type": "application/json", "Accept": "text/event-stream"}
