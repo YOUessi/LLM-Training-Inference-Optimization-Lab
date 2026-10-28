@@ -180,3 +180,7 @@ Stage8 still requires more modern, mixed-linguistic domains, true natural output
 ### Stage8 — multilingual documentation and Poisson arrival serving research
 
 [Stage8 frozen protocol](docs/STAGE8_PROTOCOL.md), [CC BY 4.0 source/license/translation attribution](data/STAGE8_SOURCE_LICENSE.md), [Qwen-token-calibrated frozen 24 requests](data/stage8_frozen_requests_manifest.json) and [real vLLM open-loop runner](scripts/run_stage8_arrivals.sh). Three language cohorts, four calibrated input lengths, three natural completion modes and two seeded arrival rates. Real GPU results remain **PENDING** until all 288 requests are measured and validated.
+
+### Stage8 — real 3-language matched-arrival GPU serving benchmarks
+
+[Stage8 matched-rate technical report](docs/STAGE8_REPORT_2026-10-28.md), [12 raw fixed-window SSE case files](docs/evidence/stage8_fixed_window) and [initial unmatched Poisson observations](docs/STAGE8_EXPLORATORY_REPORT_2026-10-28.md). Qwen2.5-1.5B/vLLM 0.19.1 on a single Tang RTX4090 Laptop GPU, 288 actual requests per protocol, 3 output regimes, 2 offered rates, 2 seeds. At detailed output and 8 req/s, client executor queue wait dominates scheduled-arrival TTFT. **This is a load-generator bottleneck, not proof of vLLM server internal queueing.** Stage9 policy experiments are pending.

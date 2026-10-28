@@ -97,17 +97,25 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 - [ ] Freeze genuinely diverse current-domain and multilingual text with explicit redistribution or permissive licenses; do not relabel old-book prose as enterprise production traffic.
 - [ ] Build a workload with actual naturally early-stopping and long-running outputs, verified output token distributions rather than just different max_new_tokens values.
-- [ ] Introduce arrivals/time-varying load (arrival rate vs concurrency) while retaining deterministic replay manifests and independent test windows.
-- [ ] Characterize P95 TTFT SLO violations, request queueing and GPU KV cache occupancy with raw vLLM metrics; compare model configurations without causal overclaims.
+- [x] Implement and validate open-loop deterministic arrival scheduling with Poisson and matched-fixed-window variants; 288 real SSE requests per variant.
+- [x] Measure client executor queue, arrival-to-first-token vs dispatch-to-first-token, rate-conditioned TTFT SLO violations and real vLLM KV cache gauges under fixed model.
 - [ ] Publish Stage8 held-out validation and any measured model-serving improvements with failure/negative evidence.
 
 ## Stage8 — code/data frozen before live experiments
 - [x] Pinned 24 real Kubernetes CC BY 4.0 excerpts across English, zh-cn, ja; original upstream commit+blob SHA and source attribution; not claimed cross-industry.
 - [x] Frozen 24 Qwen-token-calibrated multilingual prompts at ~170/300/470/680 actual tokens; shared across mode and load comparisons.
 - [x] Deterministic open-loop rate-based scheduler (2/8 req/s), label/summary/detailed output instructions, real token gate, client queue and vLLM KV gauge instrumentation.
-- [ ] 288 actual Stage8 SSE requests across 3 output modes × 2 rates × 2 seeds; fail-closed gates and raw evidence.
-- [ ] Stage8 measured capacity/arrival SLO analysis and source manifest archived, negative/invalid cases preserved.
+- [x] 288 unconditioned Poisson real requests + separate 288 matched fixed-window real requests; all success, actual prompt/completion Tokens and mode gates PASS.
+- [x] Stage8 analysis and source manifest archived: six matched mode/rate cells; unconditioned unequal-rate confound preserved as exploratory, not merged.
 
 - [x] Stage8 unconditioned-Poisson 288 real requests measured, but empirical offered rates 1.48 vs 2.86 and 5.93 vs 11.45 cause unmatched-load confound; preliminary evidence retained.
 - [x] Stage8 revised fixed-window randomized gaps designed; two seeded cases have identical actual average offered rate (not a Poisson process).
-- [ ] Stage8 fixed-window 288-request repeat with truly matched offered rates and source-versioned raw evidence.
+- [x] Stage8 fixed-window full 288-request matched-rate experiment verified with SHA256, 12 raw case records and full recomputed analysis; see Stage8 report.
+
+## Stage 9 — Serving overload and admission-policy research
+
+- [ ] Fix the load-generator concurrency confound by providing explicit near-unbounded client submission while keeping server max-seqs bounded; measure both client wait and server processing independently.
+- [ ] Create a deadline-aware bounded queue/admission policy with explicit dropped/rejected/accepted success rates; never improve TTFT by silently discarding requests.
+- [ ] Compare baseline vs controller under identical frozen multilingual requests and matched arrival schedules on the same GPU/model settings; use independent seeds and negative results.
+- [ ] Report served useful output Tokens/s, acceptance %, error/timeout %, SLO violations over ALL offered requests, not only accepted ones.
+- [ ] Expand to independent technical and nontechnical domains before claiming general policy effectiveness.

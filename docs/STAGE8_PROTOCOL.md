@@ -140,3 +140,7 @@ The fixed-window run must use a new commit and a new ignored output
 directory. It is an intentionally different workload, not a correction
 of the earlier raw timing values. Only compare its two seeds after
 actual rate normalization has been verified in the output JSON.
+
+## Post-run report (append-only, does not change original gates)
+
+The initial Poisson experiment and the separately designed matched-rate fixed-window experiment each completed **288/288 real requests**. The fixed-window version is accepted as a valid matched mean-rate comparison, with all input/output, model-cache-state, source-revision, Prometheus and rate-matching gates passed. Both data sets are archived with raw files, hashes and separate machine-generated analyses. See STAGE8_REPORT_2026-10-28.md for limits. The client thread executor remains a major possible bottleneck under 8 req/s detailed decoding; Stage9 must isolate this before changing vLLM admission.

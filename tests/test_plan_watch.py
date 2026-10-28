@@ -70,6 +70,24 @@ class PlanWatchTests(unittest.TestCase):
             self.assertTrue(d["published_reports"]["Stage 7 diverse natural prose"])
             self.assertTrue(any("Stage8" in action for action in d["next_executable_actions"]))
 
+    def test_stage8_completed_advances_to_stage9_admission(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"docs").mkdir()
+            (root/"docs/ROADMAP.md").write_text("- [x] stage8\\n")
+            for name in ("STAGE5_KV_CAPACITY_REPORT_2026-10-28.md",
+                         "STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md",
+                         "STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md",
+                         "STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md",
+                         "STAGE7_REPORT_2026-10-28.md",
+                         "STAGE8_REPORT_2026-10-28.md"):
+                (root/"docs"/name).write_text("measured source")
+            d=audit(root)
+            self.assertEqual(d["status"],"stage8_evidence_published")
+            self.assertTrue(d["published_reports"]["Stage 8 matched-rate serving"])
+            self.assertTrue(any("Stage9" in action for action in d["next_executable_actions"]))
+            self.assertTrue(any("client queue" in action for action in d["next_executable_actions"]))
+
     def test_watch_summary_and_json(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
