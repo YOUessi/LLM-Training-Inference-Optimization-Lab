@@ -12,6 +12,7 @@ The new mechanism is a CLIENT PROXY, not a modified vLLM engine.
 from __future__ import annotations
 
 import argparse
+import os
 import hashlib
 import json
 import random
@@ -45,7 +46,9 @@ DOMAINS={
 RATES=(8.,16.)
 POLICIES=tuple(ABLATIONS)
 CLIENT_WORKERS=32
-SERVER_MAX_SEQS=8
+SERVER_MAX_SEQS=int(os.environ.get("VLLM_MAX_NUM_SEQS","8"))
+if SERVER_MAX_SEQS not in (8,16):
+    raise ValueError("vLLM server max sequences must be 8 or 16")
 OUTPUT_CAP=128
 OFFERS_PER_CASE=24
 OUTPUT_MODES=("label","detailed")

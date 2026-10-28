@@ -1,0 +1,5 @@
+# Stage24: change vLLM engine max running sequences, not client rejection logic
+
+**Hypothesis:** Qwen3-8B-AWQ latency failures at 16 offered requests/s are caused in part by vLLM server queueing (observed peak waiting >=9 in Stage23), not just inaccurate client heuristics. Test `max_num_seqs=8` versus `16`, both with unchanged 0.82 GPU memory utilization and 2048-token context cap. Unlimited *client* admission, all offered requests counted, 2 independent arrival seeds (9301/9309), 2 offered rates (8/16) = eight GPU cells, 192 real offers. Within each seed/rate, all request identities, text and scheduled offsets must be identical. Alternate engine capacity order between seeds to partially counterbalance session drift.
+
+Primary metric: all-offered 250ms TTFT compliance; also 500/1000ms, useful output tokens/s, any inference errors, server waiting/running gauges, peak KV. Never infer that more concurrency must improve first-token latency. Report per matched seed/rate and no significance claims with only two arrival seeds. Use separate source SHA, raw JSON and hashes. A single 16GiB GPU cannot establish multi-node throughput scaling.

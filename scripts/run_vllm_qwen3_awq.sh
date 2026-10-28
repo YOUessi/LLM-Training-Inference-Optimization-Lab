@@ -17,6 +17,9 @@ export TRANSFORMERS_OFFLINE=1
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 PORT="${VLLM_PORT:-8026}"
 GPU_MEMORY_UTILIZATION="${GPU_MEMORY_UTILIZATION:-0.82}"
+MAX_NUM_SEQS="${VLLM_MAX_NUM_SEQS:-8}"
+case "$MAX_NUM_SEQS" in 8|16) ;; *) echo "BLOCKED: VLLM_MAX_NUM_SEQS must be 8 or 16" >&2;exit 2;;esac
+echo "Configured max-num-seqs: $MAX_NUM_SEQS"
 echo "Starting loopback-only vLLM, offline model: $(basename "$MODEL_DIR")"
 echo "Port: 127.0.0.1:$PORT, GPU memory target: $GPU_MEMORY_UTILIZATION"
 cache_args=()
@@ -47,7 +50,7 @@ exec "$ENV_ROOT/bin/vllm" serve "$MODEL_DIR" \
   --dtype float16 \
   --gpu-memory-utilization "$GPU_MEMORY_UTILIZATION" \
   --max-model-len 2048 \
-  --max-num-seqs 8 \
+  --max-num-seqs "$MAX_NUM_SEQS" \
   --served-model-name qwen3-8b-awq-local \
   "${cache_args[@]}" \
   "${capacity_args[@]}"
