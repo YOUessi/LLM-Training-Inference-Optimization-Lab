@@ -1,0 +1,22 @@
+{
+  "kind": "retrospective-in-sample-audit-not-validated-calibration",
+  "source": "evidence/stage15_multitrack",
+  "completed": 204,
+  "by_mode": {
+    "label": {
+      "n": 107,
+      "observed_median_ms": 417.7447590045631,
+      "predicted_median_ms": 62.092,
+      "median_absolute_error_ms": 299.29056698766726,
+      "median_observed_over_predicted": 4.722971075490669
+    },
+    "detailed": {
+      "n": 97,
+      "observed_median_ms": 2358.0825040116906,
+      "predicted_median_ms": 1114.325,
+      "median_absolute_error_ms": 1322.211442976471,
+      "median_observed_over_predicted": 2.25065837791443
+    }
+  },
+  "limitations": "Measured client request latency includes engine time and overhead, not pure GPU service; repeated request identities and policy-adaptive predictions are non-independent; no model retraining has occurred."
+}
