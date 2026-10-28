@@ -109,3 +109,34 @@ not scored. Later experiments should include independent non-Kubernetes
 domains, natural burst processes from actual anonymized workloads,
 longer outputs and a candidate admission/queuing policy evaluated
 against an untouched held-out request set.
+
+## Amendment A — match realized offered arrival rates (2026-10-28)
+
+The first real run of the *original* unconditioned exponential-spacing
+workload PASSed 288/288 SSE requests, but it revealed a confound:
+with only 24 samples, the realized offered rate differs drastically
+between seeds. For a target of 2 requests/s, the actual first-to-last
+rates were 2.86 and 1.48; for target 8 requests/s they were 11.45
+and 5.93. A detailed-answer experiment showed P95 arrival-to-first-token
+930.3 ms versus 195.8 ms across those unequal arrivals, even though
+P95 TTFT from actual sending remained about 60 ms.
+
+These are genuine valid observations of an unconditioned stochastic
+arrival process, but **they are NOT a matched-load seed comparison**.
+All 12 original raw cases, sample rates, source hashes and server
+provenance are retained as exploratory evidence.
+
+**Revised comparator, separately labelled `fixed_window`:** sample the
+same seeded exponential gaps, then scale their cumulative spacings so
+the final scheduled request occurs exactly (N-1)/target_rate seconds
+after the first. This preserves relative randomness and bursty arrival
+ordering but **is NOT a homogeneous Poisson process after conditioning**.
+The first-to-last *empirical* offered rate is now exactly 2 or 8
+requests/sec for both seeds. The same frozen inputs, model, output
+instructions, 24-request case count, output and input gates, SLO
+thresholds and GPU environment are held constant.
+
+The fixed-window run must use a new commit and a new ignored output
+directory. It is an intentionally different workload, not a correction
+of the earlier raw timing values. Only compare its two seeds after
+actual rate normalization has been verified in the output JSON.

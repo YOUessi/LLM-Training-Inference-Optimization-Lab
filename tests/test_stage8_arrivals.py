@@ -36,6 +36,17 @@ class Stage8ArrivalContracts(unittest.TestCase):
         with self.assertRaises(ValueError):
             schedule(42,0,24)
 
+    def test_fixed_window_controls_realized_mean_rate_and_preserves_bursts(self):
+        for seed in (42,137):
+            for rate in (2.,8.):
+                xs=schedule(seed,rate,24,kind="fixed_window")
+                self.assertAlmostEqual(23/xs[-1],rate)
+                self.assertTrue(all(a<b for a,b in zip(xs,xs[1:])))
+        self.assertNotEqual(schedule(42,8.,24,kind="fixed_window"),
+                            schedule(137,8.,24,kind="fixed_window"))
+        with self.assertRaises(ValueError):
+            schedule(42,8.,24,kind="unknown")
+
     def test_length_modes_are_real_token_gate(self):
         fake=[{"status":"ok","completion_tokens":12} for _ in range(24)]
         self.assertEqual(output_length_checks("label",fake)["status"],"pass")

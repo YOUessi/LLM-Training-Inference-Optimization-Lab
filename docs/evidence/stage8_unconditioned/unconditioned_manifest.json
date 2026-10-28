@@ -1,0 +1,103 @@
+{
+  "schema": "stage8-unconditioned-arrivals-exploratory-evidence-v1",
+  "measured_requests": 288,
+  "source_git_commit": "8a6053a1d4ee8fa3850dd362a9ebb6ab9039b7f8",
+  "analysis_git_commit": "09273883f9afc9d81518cd28b99902773fafefaa",
+  "request_dataset_sha256": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "server_prefix_caching_disabled_verified": true,
+  "server_log_sha256": "fa634745537f7906b52d9a6ea3809e4b8d902f6718ec77a2a0d9d8fc9d450b03",
+  "server_log_not_uploaded": true,
+  "confound": "Unconditioned 24-sample Poisson interarrivals created different realized average rates across seeds. This is valid random traffic but not a matched-rate causal comparison.",
+  "raw_files": {
+    "label_rate2_seed42.json": "30af1f3cf17020ba1ce5e0e7b26dab6f06fdc598ad2395915883c715f7029b42",
+    "label_rate2_seed137.json": "6cf81b517e79e8a9862b1cc781dd335897721fa2008111e55a173c317e958f91",
+    "label_rate8_seed42.json": "08c81d0e5fbb13385bbbe16b62d40ee49cee395c790a8818c657989f928615fb",
+    "label_rate8_seed137.json": "c303bd0b55b5392576a3434d7492d93daa8e78fc369c55474b32c38951f21177",
+    "summary_rate2_seed42.json": "7c5e9b2da1d8ea18b717dafe2ae068cc17e143abfdfc10217858ef66e4c861be",
+    "summary_rate2_seed137.json": "e98e47eda78006d839dcd9407e01abd00e8563ec65a4d92e198d88cfec1c1c15",
+    "summary_rate8_seed42.json": "ebc4218ecb23383fbf23ae264328d662bb15ed1323a6c3b9318aac55e1bce04e",
+    "summary_rate8_seed137.json": "5249883fcae8c12cb9d22ea5d0dd37383ac3e353fb1268e44caaa72585cb4aae",
+    "detailed_rate2_seed42.json": "b9616c56d27cefa59bdb13e766034731809e4bff6f74e33ecf6000d0bf413861",
+    "detailed_rate2_seed137.json": "0c9eb309313fa6d7ab81f57c2620d46d89b9433e213b4f64a0e5020a979b7aa4",
+    "detailed_rate8_seed42.json": "e88ffab4036e5901f240d37e8dc095a7ef108f14d03eefc783dea68d5ec90d41",
+    "detailed_rate8_seed137.json": "f6023438c9ca4924f3aa029ae252d6b3cfacfcf0dc181245cc6294b0dfb6de06"
+  },
+  "analysis_sha256": "cb485269a127fd53416b60299f0f5089e835f429579925e6d5769f39abc06b4c",
+  "realized_rates": [
+    {
+      "mode": "label",
+      "seed": 42,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 2.8623545597575366
+    },
+    {
+      "mode": "label",
+      "seed": 137,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 1.4825716544804983
+    },
+    {
+      "mode": "label",
+      "seed": 42,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 11.449418239030146
+    },
+    {
+      "mode": "label",
+      "seed": 137,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 5.930286617921993
+    },
+    {
+      "mode": "summary",
+      "seed": 42,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 2.8623545597575366
+    },
+    {
+      "mode": "summary",
+      "seed": 137,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 1.4825716544804983
+    },
+    {
+      "mode": "summary",
+      "seed": 42,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 11.449418239030146
+    },
+    {
+      "mode": "summary",
+      "seed": 137,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 5.930286617921993
+    },
+    {
+      "mode": "detailed",
+      "seed": 42,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 2.8623545597575366
+    },
+    {
+      "mode": "detailed",
+      "seed": 137,
+      "target_rate": 2.0,
+      "empirical_offered_rate": 1.4825716544804983
+    },
+    {
+      "mode": "detailed",
+      "seed": 42,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 11.449418239030146
+    },
+    {
+      "mode": "detailed",
+      "seed": 137,
+      "target_rate": 8.0,
+      "empirical_offered_rate": 5.930286617921993
+    }
+  ]
+}

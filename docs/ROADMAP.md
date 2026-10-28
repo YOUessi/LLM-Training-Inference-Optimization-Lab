@@ -107,3 +107,7 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Deterministic open-loop rate-based scheduler (2/8 req/s), label/summary/detailed output instructions, real token gate, client queue and vLLM KV gauge instrumentation.
 - [ ] 288 actual Stage8 SSE requests across 3 output modes × 2 rates × 2 seeds; fail-closed gates and raw evidence.
 - [ ] Stage8 measured capacity/arrival SLO analysis and source manifest archived, negative/invalid cases preserved.
+
+- [x] Stage8 unconditioned-Poisson 288 real requests measured, but empirical offered rates 1.48 vs 2.86 and 5.93 vs 11.45 cause unmatched-load confound; preliminary evidence retained.
+- [x] Stage8 revised fixed-window randomized gaps designed; two seeded cases have identical actual average offered rate (not a Poisson process).
+- [ ] Stage8 fixed-window 288-request repeat with truly matched offered rates and source-versioned raw evidence.

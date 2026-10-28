@@ -20,7 +20,12 @@ SOURCE_SHA = "8a6053a1d4ee8fa3850dd362a9ebb6ab9039b7f8"
 CORPUS_SHA = "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c"
 
 
-def analyze(root: Path) -> dict:
+def analyze(root: Path, *, expected_source_sha: str = SOURCE_SHA,
+            expected_schedule_kind: str = "poisson") -> dict:
+    if expected_schedule_kind not in ("poisson", "fixed_window"):
+        raise ValueError("unknown schedule kind")
+    if len(expected_source_sha) != 40:
+        raise ValueError("expected source SHA must be a full Git commit ID")
     rows = []
     comparisons: dict[int, set[tuple]] = {}
     for seed in SEEDS:
@@ -33,8 +38,14 @@ def analyze(root: Path) -> dict:
                 cfg, s = p["config"], p["summary"]
                 if cfg["seed"]!=seed or cfg["mode"]!=mode or cfg["rate_per_second"]!=rate:
                     raise ValueError("frozen case dimensions mismatch")
-                if cfg["frozen_request_sha256"]!=CORPUS_SHA or p["environment"]["git_commit"]!=SOURCE_SHA:
+                if cfg["frozen_request_sha256"]!=CORPUS_SHA or p["environment"]["git_commit"]!=expected_source_sha:
                     raise ValueError("source revision or frozen request corpus not verified")
+                if cfg.get("schedule_kind", "poisson") != expected_schedule_kind:
+                    raise ValueError("unexpected stochastic schedule design")
+                if expected_schedule_kind == "fixed_window" and abs(
+                    p["offered_arrival_rate_empirical_per_second"] - rate
+                ) > 1e-8:
+                    raise ValueError("actual offered rate not matched to target")
                 if cfg["output_cap_tokens"]!=128 or cfg["requests"]!=24:
                     raise ValueError("generation cap or request count changed")
                 if s["succeeded"]!=24 or s["failed"]!=0:
@@ -129,7 +140,9 @@ def analyze(root: Path) -> dict:
     return {
         "status":"pass",
         "kind":"stage8_real_multilingual_openloop_natural_length_analysis",
-        "source_commit":SOURCE_SHA,
+        "source_commit":expected_source_sha,
+        "schedule_kind":expected_schedule_kind,
+        "is_randomized_fixed_duration_design":expected_schedule_kind == "fixed_window",
         "frozen_requests_sha256":CORPUS_SHA,
         "measured_requests":12*24,
         "case_count":len(rows),
@@ -153,9 +166,12 @@ def main(argv: list[str] | None = None) -> int:
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--raw-dir",type=Path,required=True)
     p.add_argument("--out",type=Path,required=True)
+    p.add_argument("--expected-source-commit",default=SOURCE_SHA)
+    p.add_argument("--expected-schedule-kind",choices=("poisson","fixed_window"),default="poisson")
     a=p.parse_args(argv)
     try:
-        result=analyze(a.raw_dir)
+        result=analyze(a.raw_dir,expected_source_sha=a.expected_source_commit,
+                       expected_schedule_kind=a.expected_schedule_kind)
         write_json_atomic(a.out,result)
         print("STAGE8_ANALYSIS_PASS",result["measured_requests"],"12 case cells")
         for x in result["descriptive_two_seed_cells"]:

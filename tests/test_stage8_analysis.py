@@ -82,6 +82,23 @@ class Stage8AnalysisContracts(unittest.TestCase):
             self.assertEqual(len(r["experimental_slo_admission_decisions"]),12)
             self.assertTrue(r["not_a_new_gpu_experiment"])
 
+    def test_fixed_window_requires_exact_realized_rate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp);fixtures(p)
+            for case in p.glob("*.json"):
+                d=json.loads(case.read_text())
+                d["config"]["schedule_kind"]="fixed_window"
+                d["offered_arrival_rate_empirical_per_second"]=d["config"]["rate_per_second"]
+                case.write_text(json.dumps(d))
+            r=analyze(p,expected_source_sha=SOURCE_SHA,expected_schedule_kind="fixed_window")
+            self.assertTrue(r["is_randomized_fixed_duration_design"])
+            target=p/"detailed_rate8_seed42.json"
+            d=json.loads(target.read_text())
+            d["offered_arrival_rate_empirical_per_second"]=11.45
+            target.write_text(json.dumps(d))
+            with self.assertRaises(ValueError):
+                analyze(p,expected_schedule_kind="fixed_window")
+
     def test_bad_matched_source_trace_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp);fixtures(p)

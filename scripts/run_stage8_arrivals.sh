@@ -71,6 +71,7 @@ for seed in 42 137; do
       timeout 160 python3 -m llm_opt_lab.serving.stage8_arrivals \
         --model qwen2.5-1.5b-instruct-local \
         --mode "$mode" --rate "$rate" --seed "$seed" \
+        --schedule-kind "${STAGE8_SCHEDULE_KIND:-poisson}" \
         --warmup 1 --output "$file"
       curl -fsS --max-time 4 http://127.0.0.1:8026/metrics > "$out/$label-metrics-after.prom"
     done

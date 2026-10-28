@@ -46,6 +46,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--mode", choices=MODES, required=True)
     p.add_argument("--rate", type=float, required=True, help="Poisson target requests per second")
     p.add_argument("--seed", type=int, required=True)
+    p.add_argument("--schedule-kind", choices=("poisson", "fixed_window"), default="poisson",
+                   help="fixed_window preserves randomized gaps but normalizes exact sample-average offered rate")
     p.add_argument("--warmup", type=int, default=1)
     p.add_argument("--output", type=Path, required=True)
     a = p.parse_args(argv)
@@ -71,13 +73,22 @@ def frozen_requests(path: Path, manifest_path: Path) -> tuple[list[dict], dict]:
     return requests, m
 
 
-def schedule(seed: int, rate: float, n: int) -> list[float]:
-    if n <= 0 or rate <= 0 or not math.isfinite(rate):
-        raise ValueError("invalid Poisson request rate")
+def schedule(seed: int, rate: float, n: int, *, kind: str = "poisson") -> list[float]:
+    if n <= 1 or rate <= 0 or not math.isfinite(rate):
+        raise ValueError("invalid stochastic request arrival specification")
+    if kind not in ("poisson", "fixed_window"):
+        raise ValueError("unknown arrival schedule kind")
     rng = random.Random(seed)
     offsets = [0.]
     for _ in range(n-1):
         offsets.append(offsets[-1] + rng.expovariate(rate))
+    if kind == "fixed_window":
+        # Condition the total span while retaining randomized relative gaps.
+        # This is NOT a homogeneous Poisson process after normalization.
+        span = (n - 1) / rate
+        scale = span / offsets[-1]
+        offsets = [x * scale for x in offsets]
+        offsets[-1] = span
     return offsets
 
 
@@ -167,7 +178,7 @@ def main(argv: list[str] | None = None) -> int:
                 print("BLOCKED: real model warmup failed", file=sys.stderr)
                 return 2
 
-        offsets = schedule(seed, a.rate, len(items))
+        offsets = schedule(seed, a.rate, len(items), kind=a.schedule_kind)
         records: list[dict] = []
         kv_samples: list[dict] = []
         stop = threading.Event()
@@ -227,8 +238,13 @@ def main(argv: list[str] | None = None) -> int:
             and abs(x["prompt_tokens"]-x["target_prompt_tokens"]) <= CONTEXT_TOLERANCE
             for x in records
         )
+        normalized_arrival_rate = (len(offsets)-1) / offsets[-1]
+        fixed_rate_valid = (
+            a.schedule_kind != "fixed_window"
+            or abs(normalized_arrival_rate - a.rate) < 1e-8
+        )
         valid = (
-            len(records) == 24 and summary["succeeded"] == 24
+            fixed_rate_valid and len(records) == 24 and summary["succeeded"] == 24
             and summary["failed"] == 0 and summary["usage_coverage"] == 1.
             and summary["prompt_usage_coverage"] == 1.
             and valid_length and lengths["status"] == "pass"
@@ -252,7 +268,13 @@ def main(argv: list[str] | None = None) -> int:
                 "response_instruction_sha256": hashlib.sha256(
                     instruction.encode("utf-8")
                 ).hexdigest(),
-                "schedule": "seeded_expovariate_open_loop",
+                "schedule": (
+                    "seeded_fixed_duration_exponential_spacings"
+                    if a.schedule_kind == "fixed_window"
+                    else "seeded_expovariate_open_loop"
+                ),
+                "schedule_kind": a.schedule_kind,
+                "fixed_duration_not_an_unconditioned_poisson_process": a.schedule_kind == "fixed_window",
                 "request_arrival_schedule_s": offsets,
                 "cache_expected": "explicitly_disabled_in_launcher",
             },
