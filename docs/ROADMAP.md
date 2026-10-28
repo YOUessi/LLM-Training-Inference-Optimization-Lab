@@ -127,7 +127,13 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 
 ## Stage 10 — Honest queue admission and SLO-aware load control
 
-- [ ] Implement explicitly bounded admission queue and deadline expiration that logs offered, accepted, rejected, timed-out and completed requests, without silently dropping tasks.
+- [x] Implement and CPU-test client-side bounded admission (8 in-flight + 4 waiting slots + 250ms deadline) and explicit all-offered acceptance/rejection/error accounting. [Protocol](STAGE10_PROTOCOL.md).
 - [ ] Run baseline vs admission under the same frozen multilingual input and fixed-window arrival schedules; compare ALL-offered-request P95, success coverage and useful output throughput.
 - [ ] Add SLO and fairness analyses per language/length/output mode and a held-out seed or distinct data source; report negative outcomes.
 - [ ] Only promote a scheduling technique after the all-offered denominator and independent validation show a genuine benefit.
+
+### Stage10 acceptance gates
+
+- [x] Frozen Stage10 A/B workload under the same server/input/arrival schedules and 32-worker request injector: unlimited vs bounded, label/detailed, 2 seeds.
+- [ ] Run 192 actual Stage10 offered requests on Tang; archive all results including expected explicit rejections.
+- [ ] Strictly validate every offered request in the denominator, real provider usage, queue gauges and no unaccounted requests; publish truthfully negative as well as positive results.
