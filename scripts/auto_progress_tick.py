@@ -8,7 +8,7 @@ Cron tick:
 - lock against concurrent runs
 - reject git HEAD drift and dirty tracked worktree
 - run CPU tests and a fresh roadmap audit
-- if GPU idle, run the next of two preapproved held-out seeds
+- if GPU idle, run the next finite approved held-out or domain-shift seed
 - then CPU analyze the completed pair
 - preserve all raw errors/results; stop, never auto-retry a failed job
 """
@@ -34,6 +34,12 @@ JOBS = (
      "argv":("bash","scripts/run_stage11_heldout_seed.sh","3031")},
     {"id":"stage11_heldout_analysis","requires_gpu":False,
      "argv":("python3","scripts/stage11_heldout_analyze.py")},
+    {"id":"stage12_seed_4093","requires_gpu":True,
+     "argv":("bash","scripts/run_stage12_heldout_seed.sh","4093")},
+    {"id":"stage12_seed_5087","requires_gpu":True,
+     "argv":("bash","scripts/run_stage12_heldout_seed.sh","5087")},
+    {"id":"stage12_crossdomain_analysis","requires_gpu":False,
+     "argv":("python3","scripts/stage12_crossdomain_analyze.py")},
 )
 SCHEMA = "llm-opt-tang-autoprogress-v1"
 
@@ -89,6 +95,35 @@ def verify_completed_job(root:Path, jobid:str) -> None:
                 complete+=s["offered"]
         if complete!=144:
             raise ValueError("held-out seed not fully measured")
+    elif jobid.startswith("stage12_seed_"):
+        seed=int(jobid.split("_")[-1])
+        if seed not in (4093,5087):
+            raise ValueError("unapproved cross-domain seed")
+        directory=root/"results"/f"stage12_seed_{seed}"
+        complete=0
+        required_sha="fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04"
+        for mode in ("label","detailed"):
+            for policy,deadline in (("unlimited",250),("bounded",150),("bounded",400)):
+                r=json.loads((directory/f"{mode}_{policy}_d{deadline}_seed{seed}.json").read_text())
+                status=r["summary"];cfg=r["config"]
+                if (r["status"]!="measured" or status["offered"]!=24 or
+                    status["completed"]+status["rejected"]!=24 or status["errors"]!=0 or
+                    cfg["seed"]!=seed or cfg["admission_deadline_ms"]!=deadline or
+                    cfg["policy"]!=policy or cfg["mode"]!=mode or
+                    cfg.get("frozen_requests_sha256")!=required_sha or
+                    status["by_language"]["en"]["offered"]!=24 or
+                    not r["server_queue_monitor"]["available"] or
+                    r["accepted_output_length_gate"]["status"]!="pass"):
+                    raise ValueError(f"unaccepted independent-domain case {seed} {mode}/{policy}/{deadline}")
+                complete+=status["offered"]
+        if complete!=144:
+            raise ValueError("incomplete Stage12 independently sourced offers")
+    elif jobid=="stage12_crossdomain_analysis":
+        d=json.loads((root/"results/stage12_crossdomain_analysis.json").read_text())
+        if (d["status"]!="pass" or d["offered"]!=288 or d["recorded_12_cases"]!=12 or
+            set(d["heldout_seeds"])!={4093,5087} or
+            d["frozen_domain_request_sha256"]!="fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04"):
+            raise ValueError("Stage12 crossdomain analysis not accepted")
     elif jobid=="stage11_heldout_analysis":
         d=json.loads((root/"results/stage11_heldout_analysis.json").read_text())
         if (d["status"]!="pass" or d["offered"]!=288 or

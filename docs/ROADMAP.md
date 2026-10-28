@@ -160,3 +160,11 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] Design workload-aware admission/queue priority using real input-length and output-length estimates, compared with static deadline admission while accounting for all offered and rejected requests.
 - [ ] Use distinct train/tuning versus held-out loads, multiple offered rates, and repeated runs with independent seeds to verify throughput, SLO coverage, language fairness and actual rejection cost.
 - [ ] Report negative results and compare against the simplest static baseline; never promote a method solely because accepted-only P95 improves.
+
+## Stage 12 — New domain-shift held-out experiment (2026-10-28)
+
+- [x] Freeze 24 source-attributed non-Kubernetes public-domain prose requests, five genres, four real Qwen-token-calibrated input lengths; exact SHA256 pinned.
+- [x] Preregister 4093/5087 independent arrival seeds and no-admission/150ms/400ms client proxy policy comparison with 288 offered request accounting.
+- [x] Extend 10-minute GitHub CPU preflight and finite Tang user-cron allowlist to Stage12 (two GPU seed jobs + CPU analysis); strict commit approval/GPU lock retained.
+- [ ] Run 288 real model offers, record all completed/rejected/error outcomes, and verify arrival/input/queue/corpus integrity without mixing domains.
+- [ ] Publish independent-domain report and raw SHA256 evidence, comparing Stage11 technical docs and Stage12 natural prose without universal claims.

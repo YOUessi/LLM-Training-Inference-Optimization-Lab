@@ -146,7 +146,7 @@ class PlanWatchTests(unittest.TestCase):
             self.assertEqual(d["status"],"stage11_heldout_evidence_published")
             self.assertTrue(d["published_reports"]["Stage 11 held-out report"])
             self.assertTrue(any("Stage12" in action for action in d["next_executable_actions"]))
-            self.assertTrue(any("queue is exhausted" in action
+            self.assertTrue(any("original three-task" in action
                                 for action in d["next_executable_actions"]))
 
     def test_watch_summary_and_json(self):

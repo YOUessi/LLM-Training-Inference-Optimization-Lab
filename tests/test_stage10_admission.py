@@ -76,7 +76,7 @@ class Stage10AdmissionAccountingTests(unittest.TestCase):
 
     def test_heldout_seeds_and_deadline_are_explicitly_allowed(self):
         from llm_opt_lab.serving.stage10_admission import parse_args
-        for seed in (2027,3031):
+        for seed in (2027,3031,4093,5087):
             a=parse_args(["--model","qwen","--mode","detailed",
                           "--policy","bounded","--seed",str(seed),
                           "--offered-rate","8","--deadline-ms","150",

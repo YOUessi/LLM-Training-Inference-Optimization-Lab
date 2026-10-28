@@ -23,12 +23,13 @@ class Stage11AutomationTests(unittest.TestCase):
         self.assertEqual(data["policy_deadlines_ms"],[150,400])
         self.assertFalse(data["gpu_access_from_github_actions"])
         self.assertEqual([x["id"] for x in data["approved_work_items"]],
-                         [x["id"] for x in JOBS])
+                         [x["id"] for x in JOBS[:3]])
 
     def test_no_unauthorized_gpu_job_or_remote_code_pull(self):
-        self.assertEqual(len(JOBS),3)
+        self.assertEqual(len(JOBS),6)
         for job in JOBS:
-            self.assertTrue(job["id"].startswith(("heldout_seed_","stage11_heldout_analysis")))
+            self.assertTrue(job["id"].startswith(("heldout_seed_","stage11_heldout_analysis",
+                                                   "stage12_seed_","stage12_crossdomain_analysis")))
             self.assertNotIn("git",job["argv"])
             self.assertNotIn("curl",job["argv"])
             self.assertNotIn("pip",job["argv"])

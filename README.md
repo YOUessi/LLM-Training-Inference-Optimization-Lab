@@ -218,3 +218,15 @@ coding agent. It does NOT automatically send messages to ChatGPT.
 ### Stage11: held-out admission policy validation + bounded 10-minute executor
 
 [Stage11 complete real GPU report](docs/STAGE11_REPORT_2026-10-28.md) and [288 original offered requests](docs/evidence/stage11_heldout) used previously unseen arrival seeds 2027/3031, baseline versus 150ms/400ms admission deadlines. Detailed requests: 250ms all-offered timely Token rate 72.9% baseline, 87.5% with 150ms (6/48 rejected), 81.2% with 400ms (4/48 rejected). The 10-minute Tang approved finite automation ran both GPU seeds and its CPU analysis; all three jobs passed. The queue is now exhausted, while scheduled CI and the on-machine status guard remain. This is not autonomous model-code generation or a cross-domain serving improvement.
+
+### Stage12 — independently sourced natural prose domain-shift verification
+
+[Stage12 preregistered experiment](docs/STAGE12_PROTOCOL.md) and
+[source rights and original attribution](data/STAGE12_SOURCE_RIGHTS.md).
+A new frozen Qwen-tokenized 24-request set from five non-Kubernetes
+classic literature/natural-science genres replaces the technical
+document prompts. Two independent seeds (4093/5087) compare unlimited
+baseline and bounded 150/400ms deadlines. The existing 10-minute Tang
+cron has a **finite, reviewed allowlist** of two new GPU runs plus CPU
+analysis, with strict source pin and resource checks. Cross-domain real
+GPU results must not be claimed until the full 288 offered requests pass.

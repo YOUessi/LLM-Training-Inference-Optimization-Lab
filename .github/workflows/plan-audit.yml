@@ -39,6 +39,10 @@ jobs:
           mkdir -p results
           python scripts/stage11_cpu_preflight.py --out results/stage11_preflight.json
 
+      - name: Validate next approved Stage12 non-Kubernetes source
+        run: |
+          python scripts/stage12_cpu_preflight.py --out results/stage12_preflight.json
+
       - name: Compare authoritative roadmap with published experiment evidence
         if: always()
         run: |
@@ -56,5 +60,6 @@ jobs:
           path: |
             results/plan_watch.json
             results/stage11_preflight.json
+            results/stage12_preflight.json
           retention-days: 30
           if-no-files-found: warn

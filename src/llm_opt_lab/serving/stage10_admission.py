@@ -29,7 +29,7 @@ from llm_opt_lab.serving.stage8_arrivals import (
 
 MODES=("label","detailed")
 POLICIES=("unlimited","bounded")
-SEEDS=(42,137,2027,3031)
+SEEDS=(42,137,2027,3031,4093,5087)
 ALLOWED_RATES=(4.,8.,)
 OFFERED_RATE=8.
 OFFERED_COUNT=24
@@ -58,7 +58,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--output",type=Path,required=True)
     a=p.parse_args(argv)
     if a.seed not in SEEDS:
-        p.error("seed must be one of 42,137,2027,3031")
+        p.error("seed must be one of 42,137,2027,3031,4093,5087")
     return a
 
 

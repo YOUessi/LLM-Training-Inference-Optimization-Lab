@@ -43,6 +43,7 @@ def audit(root: Path) -> dict:
         "Stage 9 worker queue isolation":(root/"docs/STAGE9_REPORT_2026-10-28.md").exists(),
         "Stage 10 client admission A/B":(root/"docs/STAGE10_REPORT_2026-10-28.md").exists(),
         "Stage 11 held-out report":(root/"docs/STAGE11_REPORT_2026-10-28.md").exists(),
+        "Stage 12 cross-domain report":(root/"docs/STAGE12_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -62,6 +63,9 @@ def audit(root: Path) -> dict:
         "Stage11 safe 10min Tang executor":(root/"scripts/auto_progress_tick.py").exists(),
         "Stage11 fixed held-out seed runner":(root/"scripts/run_stage11_heldout_seed.sh").exists(),
         "Stage11 independent CPU analysis":(root/"scripts/stage11_heldout_analyze.py").exists(),
+        "Stage12 non-Kubernetes frozen source":(root/"data/stage12_literary_requests_manifest.json").exists(),
+        "Stage12 10min GPU seed runner":(root/"scripts/run_stage12_heldout_seed.sh").exists(),
+        "Stage12 CPU crossdomain analysis":(root/"scripts/stage12_crossdomain_analyze.py").exists(),
     }
     actions=[]
     if not all(implementation.values()):
@@ -91,8 +95,20 @@ def audit(root: Path) -> dict:
                                 actions.append("Stage11 approved held-out seeds 2027/3031 with 150ms/400ms admission deadlines are queued for the guarded 10-minute Tang user-cron executor; check Tang state.json for actual GPU outcomes.")
                                 actions.append("Run exact CPU preflight and report accepted/rejected/timeout and useful throughput across every offered request, without cherry-picking.")
                             else:
-                                actions.append("Stage11 held-out 288-offer GPU results are published: 278 completed, 10 rejected; the approved finite Tang task queue is exhausted and its 10-minute cron is now status-only.")
-                                actions.append("Stage12 next: freeze a rights-cleared held-out non-Kubernetes workload; implement and independently validate a queue-aware policy against 150ms/400ms fixed-deadline baselines, with all-offered SLO, usefulness and fairness.")
+                                actions.append("Stage11 held-out 288 offers published: 278 completed, 10 rejected; its original three-task GPU/analysis queue finished, and Stage12 requires a newly approved immutable source revision.")
+                                if not reports["Stage 12 cross-domain report"]:
+                                    ready=all(implementation[x] for x in (
+                                        "Stage12 non-Kubernetes frozen source",
+                                        "Stage12 10min GPU seed runner",
+                                        "Stage12 CPU crossdomain analysis",
+                                    ))
+                                    if ready:
+                                        actions.append("Stage12 reviewed non-Kubernetes corpus and CPU preflight are ready: the 10-minute Tang executor can run approved seeds 4093/5087 then CPU analysis if GPU idle and the approved SHA matches.")
+                                        actions.append("After all 288 offers pass, publish crossdomain SLO, useful throughput, rejection fairness and original SHA256 evidence.")
+                                    else:
+                                        actions.append("Stage12 source/runner not fully committed yet; do not claim an approved Tang GPU job exists.")
+                                else:
+                                    actions.append("Stage12 independent source-domain 288 offers are published; next design a genuinely new queue-aware admission algorithm and test on separate held-out workloads.")
                                 actions.append("Any next GPU job requires reviewed code and a newly approved pinned SHA; no arbitrary autonomous source modification or unsandboxed execution.")
                         else:
                             actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
@@ -121,7 +137,8 @@ def audit(root: Path) -> dict:
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
         "status":(
-            "stage11_heldout_evidence_published" if reports["Stage 11 held-out report"]
+            "stage12_crossdomain_evidence_published" if reports["Stage 12 cross-domain report"]
+            else "stage11_heldout_evidence_published" if reports["Stage 11 held-out report"]
             else "stage10_admission_ablation_published" if reports["Stage 10 client admission A/B"]
             else "stage9_queue_baseline_published" if reports["Stage 9 worker queue isolation"]
             else "stage8_evidence_published" if reports["Stage 8 matched-rate serving"]
