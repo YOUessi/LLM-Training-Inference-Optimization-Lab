@@ -22,3 +22,7 @@ Current implementation `src/llm_opt_lab/serving/stage14_ablation.py` isolates de
 ## Implementation update
 
 The eight-config queue is now implemented by `AblationAdmissionGate` and wired into `stage14_mixed_bench.py` (separate from frozen Stage13). Two additional reference variants (`fifo_static400_ewma`, `sjf_static400_noewma`) help distinguish online model adaptation from queue ordering. The developmental arrivals use new seeds 8101/8109 (k8s) and 8201/8209 (prose), but **reuse the previously seen document corpora**, so these are not an independent-domain generalization experiment. The benchmark driver is unexecuted on GPU; CPU tests cover configuration, import, queue release, expiry and EWMA. Do not label any Stage14 run as measured until real SSE evidence is archived.
+
+## Approved limited development pilot
+
+A finite, two-policy K8s seed8101 rate16/s pilot is implemented in `scripts/run_stage14_pilot.sh`. The pilot uses existing document identities and is **not** the final independent holdout. It blocks dirty worktrees, occupied GPU/port and existing outputs; it does not run arbitrary new seeds. Freeze this source before running it.
