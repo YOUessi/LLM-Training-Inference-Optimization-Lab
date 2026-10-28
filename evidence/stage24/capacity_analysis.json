@@ -1,0 +1,131 @@
+{
+  "status": "pass",
+  "cases": 8,
+  "offered": 192,
+  "paired_cells": 4,
+  "rows": [
+    {
+      "seed": 9301,
+      "rate": 16.0,
+      "cap": 16,
+      "slo250": 0.20833333333333334,
+      "slo500": 0.3333333333333333,
+      "slo1000": 0.9583333333333334,
+      "useful_tps": 317.9384385022425,
+      "server_max_waiting": 6.0,
+      "server_max_running": 16.0
+    },
+    {
+      "seed": 9301,
+      "rate": 16.0,
+      "cap": 8,
+      "slo250": 0.16666666666666666,
+      "slo500": 0.3333333333333333,
+      "slo1000": 0.5833333333333334,
+      "useful_tps": 269.854885140249,
+      "server_max_waiting": 12.0,
+      "server_max_running": 8.0
+    },
+    {
+      "seed": 9301,
+      "rate": 8.0,
+      "cap": 16,
+      "slo250": 0.4583333333333333,
+      "slo500": 0.9583333333333334,
+      "slo1000": 1.0,
+      "useful_tps": 288.1799379116191,
+      "server_max_waiting": 0.0,
+      "server_max_running": 16.0
+    },
+    {
+      "seed": 9301,
+      "rate": 8.0,
+      "cap": 8,
+      "slo250": 0.375,
+      "slo500": 0.5833333333333334,
+      "slo1000": 0.8333333333333334,
+      "useful_tps": 245.58517981313108,
+      "server_max_waiting": 6.0,
+      "server_max_running": 8.0
+    },
+    {
+      "seed": 9309,
+      "rate": 16.0,
+      "cap": 16,
+      "slo250": 0.08333333333333333,
+      "slo500": 0.3333333333333333,
+      "slo1000": 1.0,
+      "useful_tps": 311.0324170705264,
+      "server_max_waiting": 4.0,
+      "server_max_running": 16.0
+    },
+    {
+      "seed": 9309,
+      "rate": 16.0,
+      "cap": 8,
+      "slo250": 0.08333333333333333,
+      "slo500": 0.25,
+      "slo1000": 0.6666666666666666,
+      "useful_tps": 258.11711487371895,
+      "server_max_waiting": 9.0,
+      "server_max_running": 8.0
+    },
+    {
+      "seed": 9309,
+      "rate": 8.0,
+      "cap": 16,
+      "slo250": 0.5833333333333334,
+      "slo500": 1.0,
+      "slo1000": 1.0,
+      "useful_tps": 254.26295633059573,
+      "server_max_waiting": 0.0,
+      "server_max_running": 11.0
+    },
+    {
+      "seed": 9309,
+      "rate": 8.0,
+      "cap": 8,
+      "slo250": 0.5833333333333334,
+      "slo500": 0.9583333333333334,
+      "slo1000": 1.0,
+      "useful_tps": 250.7320193316297,
+      "server_max_waiting": 3.0,
+      "server_max_running": 8.0
+    }
+  ],
+  "paired_changes_16_minus_8": [
+    {
+      "seed": 9301,
+      "rate": 8.0,
+      "delta_slo250": 0.08333333333333331,
+      "delta_slo500": 0.375,
+      "delta_tps": 42.59475809848803
+    },
+    {
+      "seed": 9301,
+      "rate": 16.0,
+      "delta_slo250": 0.041666666666666685,
+      "delta_slo500": 0.0,
+      "delta_tps": 48.083553361993495
+    },
+    {
+      "seed": 9309,
+      "rate": 8.0,
+      "delta_slo250": 0.0,
+      "delta_slo500": 0.04166666666666663,
+      "delta_tps": 3.530936998966041
+    },
+    {
+      "seed": 9309,
+      "rate": 16.0,
+      "delta_slo250": 0.0,
+      "delta_slo500": 0.08333333333333331,
+      "delta_tps": 52.91530219680743
+    }
+  ],
+  "limitations": [
+    "Two arrival seeds and one local CPython domain are not population-level inference",
+    "Server capacities are executed in sequential engine sessions; load/warmup drift possible",
+    "Only one 16GiB NVIDIA RTX 4090 Laptop; no multi-GPU scalability result"
+  ]
+}
