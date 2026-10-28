@@ -1,0 +1,119 @@
+{
+  "schema": "stage13-real-768-mixed-admission-evidence-v1",
+  "date": "2026-10-29",
+  "experiment_source_git_sha": "4f3d4a5eadcbc41aef902ef1ee3da71b8a4c2683",
+  "algo_description": "client-side workload-aware estimated service time, online EWMA, age-fair shortest-job-first and congestion-conditioned dynamic wait deadline",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "source_domain_hashes": {
+    "k8s": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+    "prose": "fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04"
+  },
+  "new_arrival_seeds": {
+    "k8s": [
+      6101,
+      6109
+    ],
+    "prose": [
+      7201,
+      7209
+    ]
+  },
+  "offered_rates_per_second": [
+    8,
+    16
+  ],
+  "policies": [
+    "unlimited",
+    "fixed150",
+    "fixed400",
+    "adaptive"
+  ],
+  "actual_mixed_requests_per_case": {
+    "label": 12,
+    "detailed": 12
+  },
+  "real_cases": 32,
+  "offered": 768,
+  "completed": 755,
+  "explicit_rejected": 13,
+  "errors": 0,
+  "raw_sha256": {
+    "stage13_k8s_seed6101/rate8_unlimited_seed6101.json": "2b83ea8a7934a020d93ab59d6951e2823ebf8211dae5bd75e1bf30e520205525",
+    "stage13_k8s_seed6101/rate8_fixed150_seed6101.json": "94bbe4c379eec21e6bcb34c5eb9051d71f85ec8ba8c3ffc7909c09330312f1e4",
+    "stage13_k8s_seed6101/rate8_fixed400_seed6101.json": "9460286c707febe56a18bf3f6f3c9176c58dfa0c7f8317e4b2b4525762478983",
+    "stage13_k8s_seed6101/rate8_adaptive_seed6101.json": "2b0455557bf523554002a5c6d2a2624e977e857d7a38b675b33b5112ed2d40ca",
+    "stage13_k8s_seed6101/rate16_unlimited_seed6101.json": "b04862df2272a9e137f91917c87977b30c86e27b356b96f6e013dc202a079fad",
+    "stage13_k8s_seed6101/rate16_fixed150_seed6101.json": "ae00bfb7ff043985a1e98c4ceb5e90c96c3debe65e9b9d306b29b9b348e80853",
+    "stage13_k8s_seed6101/rate16_fixed400_seed6101.json": "95df71e128d7e92194cd25573fcb778401981f7f9be8055d722b898f803c97ab",
+    "stage13_k8s_seed6101/rate16_adaptive_seed6101.json": "b22d7667470d8960c876f1b925ccb674f0c9bceea52f1488204cae6154b4c995",
+    "stage13_k8s_seed6109/rate8_unlimited_seed6109.json": "ddd0cf9706018468e7ef03f6939a8048e98c3021a866320fcfd2679f96b8b6d5",
+    "stage13_k8s_seed6109/rate8_fixed150_seed6109.json": "0707f7910425cfe26c588932d39e95b438f4e168d78ec03ca571e8a47a62bbc5",
+    "stage13_k8s_seed6109/rate8_fixed400_seed6109.json": "b6a9df4df6ffebbc16ca740e1ae3caeccb4a64fe2201016f8aa54e7a184cefa6",
+    "stage13_k8s_seed6109/rate8_adaptive_seed6109.json": "522311c33a25127626d6b2855d2665291281cc822f534cf8fcd591e0183fe238",
+    "stage13_k8s_seed6109/rate16_unlimited_seed6109.json": "7d00bdf5a36b1f5900f06326d3fedeb0c7384e6ca0e94f24cb1442cabf01f248",
+    "stage13_k8s_seed6109/rate16_fixed150_seed6109.json": "54d22864591da2d9b4a53541050a626f131c07a2593621a2e4011730d2065594",
+    "stage13_k8s_seed6109/rate16_fixed400_seed6109.json": "c328d0062fa0859c7a98ba04109dd20d1a5c57e67a4a517f3eac3f9f665cac26",
+    "stage13_k8s_seed6109/rate16_adaptive_seed6109.json": "cb111b120ada0063de3c718387e82ec5c592f01906605f0918f92a95bccbe836",
+    "stage13_prose_seed7201/rate8_unlimited_seed7201.json": "335543955eb09e587e093e1d1802d28455b10cb432879c75486be63fcb043d3b",
+    "stage13_prose_seed7201/rate8_fixed150_seed7201.json": "304c6a1ac018e0752e3066986bc056ca69e14d80eae808363d49ecfc1b709250",
+    "stage13_prose_seed7201/rate8_fixed400_seed7201.json": "b884b82a48c217ca5fbad813c46bb685c8aff3bd167175d2b8f9e11e4572809c",
+    "stage13_prose_seed7201/rate8_adaptive_seed7201.json": "9642b16846905e58dcdff3643e0703a84853abdb61cdd496c79f03fae9d1262b",
+    "stage13_prose_seed7201/rate16_unlimited_seed7201.json": "2c9576c4e4198f5cec95642e2a877a91e32acd14ce2d0249d59a586baabfb318",
+    "stage13_prose_seed7201/rate16_fixed150_seed7201.json": "81fba7bcc32f3d9f812403b2d9846d21aeb20b314685832771912de561b73e82",
+    "stage13_prose_seed7201/rate16_fixed400_seed7201.json": "52197e4aa5abea2ff847320eba46cad3ef7f6178e921afb976a3329c63fe54f2",
+    "stage13_prose_seed7201/rate16_adaptive_seed7201.json": "8695c13e0b78a9a2698bf5237cf92e98d8e3577465bbe4f708f135767f61e197",
+    "stage13_prose_seed7209/rate8_unlimited_seed7209.json": "b3c72ce68514929e130f0da89fb918ce0f714bd24bd43c9cd1c39b313e326df9",
+    "stage13_prose_seed7209/rate8_fixed150_seed7209.json": "b7695a9d309a146f360a447ed976eb0461bc88dcc4f7ce5aba683a66764b13cf",
+    "stage13_prose_seed7209/rate8_fixed400_seed7209.json": "5aae5bfcbd59bb61ae5a29d8f74aef08d0dfe22b6903014d910afff9c860fddb",
+    "stage13_prose_seed7209/rate8_adaptive_seed7209.json": "fdbc724b35d7d3605a6459b0a4aaa1cca38eaee8c642e21d256daab2d23a48ab",
+    "stage13_prose_seed7209/rate16_unlimited_seed7209.json": "aabadc42ee8bb4b6aaee70107e0dbb1a0f0d2a892dfc08590fd4da9114a030c1",
+    "stage13_prose_seed7209/rate16_fixed150_seed7209.json": "347336316037b8ee45f5a2f8ebd8299e152cc7bf34fc35ea1b89c60d99d83360",
+    "stage13_prose_seed7209/rate16_fixed400_seed7209.json": "cc1a68d2061b66762aa405291f583baabbfa0ff0cf26f82f7399ca4255ec7c37",
+    "stage13_prose_seed7209/rate16_adaptive_seed7209.json": "d4c5e2967bf8bcb75bb8c9f0a9e84fcff8a1e42a801060efe64e53ff8df174aa"
+  },
+  "analysis_sha256": "3c0455bfc6a79cfb39bebce74c6ac8e28cac074cef19f2e6623d86374ab5c5e0",
+  "auto_progress_state_sha256": "4297d72685dc98736a0984682a8fc7a49e1f8fdb0e38106bddaf8e77a3c68901",
+  "server_logs_sha256_private_on_Tang": {
+    "k8s_6101": {
+      "sha256": "ed7548c01f987b972575977279a68e74952035742003a3f324c655774e8bcde7",
+      "private_path": "results/stage13_k8s_seed6101/server.log"
+    },
+    "k8s_6109": {
+      "sha256": "01d54332c5fdc0d7a33ebe8a59226b248021d2fcb0cf07171eeb041401805359",
+      "private_path": "results/stage13_k8s_seed6109/server.log"
+    },
+    "prose_7201": {
+      "sha256": "9a495f5e22b3b5b88b1551c2c63733849aa023479007da3dc4b2c7cdc9a92f04",
+      "private_path": "results/stage13_prose_seed7201/server.log"
+    },
+    "prose_7209": {
+      "sha256": "9cdfd5db4e6ec32ba2294f1c99c183f0a176ad5bf89db8e28020669416ab0d5a",
+      "private_path": "results/stage13_prose_seed7209/server.log"
+    }
+  },
+  "first_invalid_attempt": {
+    "source_git_sha": "76390668c59928d9528f74f6925e4216660a816f",
+    "real_but_protocol_invalid_offered": 192,
+    "excluded_from_768": true,
+    "raw_file_sha256": {
+      "stage13_invalid_v1_k8s_seed6101/rate8_unlimited_seed6101.json": "29cf71712139b4307e623844567cfb34f740ecb8bd4f0c59e238000f461cfa16",
+      "stage13_invalid_v1_k8s_seed6101/rate8_fixed150_seed6101.json": "58e05c73c2f3f58a7bba4890f12343b2bf90f89d4a0d5aedc93b2ec89f828d3d",
+      "stage13_invalid_v1_k8s_seed6101/rate8_fixed400_seed6101.json": "65ab489b9e9bf6c14987c659bd1e017c4c6cc232c26de10a5ec3747569e35769",
+      "stage13_invalid_v1_k8s_seed6101/rate8_adaptive_seed6101.json": "faefe37235e950969673d923d9c56bc8bab6e489ed87ccc56f83d171b4ad05bd",
+      "stage13_invalid_v1_k8s_seed6101/rate16_unlimited_seed6101.json": "1f215b9184b640114bef9fb1e8ac9d287cb879b01b0dca39eb833c0425951473",
+      "stage13_invalid_v1_k8s_seed6101/rate16_fixed150_seed6101.json": "8dbe5573c465660fc5e3fb93e293fd6009a7fc8e00ec9c94befbde55a0d212c4",
+      "stage13_invalid_v1_k8s_seed6101/rate16_fixed400_seed6101.json": "d531a51e0844aca0fee3e24363ed41fc610e7a85fbf9e9bf1420ad17504ac891",
+      "stage13_invalid_v1_k8s_seed6101/rate16_adaptive_seed6101.json": "2823dceb92a5208d5135642b8346c61c5648aa6d18b1956ac0175a6c766b9d14"
+    },
+    "failure_reason": "missing elapsed_s and cron import path in original source; original raw data preserved untouched",
+    "first_failed_job_state_sha256": "bcf894fea2da1e8c73cab40b6ed8b73a03c4a3b63df615dd678a7bf2f3519939"
+  },
+  "second_issue": "cron CPU test had assumed no prior real GPU data; fixed after experiment and no runtime algorithm change",
+  "second_issue_original_test_failure_sha256": "6401024aefcad0a5200bf13330c0b1a5a74bfaef0af70d3db9c65fb7735939d6",
+  "manual_completion_provenance": "seed6101 automatic; seed6109, prose7201, prose7209 and all-analysis manually invoked under same immutable Git SHA after cron CPU test isolation flaw; all passed original validators",
+  "not_a_vllm_engine_patch": true,
+  "scientific_caveat": "Only 2 seeds/domain and 24 offered/cell; new adaptive is a client proxy, no generalization claim"
+}
