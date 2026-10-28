@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "adapters_verified": [
+    {
+      "name": "stage20_real_qwen3_8b_qlora",
+      "adapter_tensors": 144,
+      "parameters": 3833856,
+      "sha256": "cb2f776e7a027118ea7723c57ab47fe01224e67dff819bc301f1c963b0ab5e94"
+    },
+    {
+      "name": "stage20_real_qwen3_8b_qlora_accum2",
+      "adapter_tensors": 144,
+      "parameters": 3833856,
+      "sha256": "8bae2ab15c2997221c36a8be5e4a6f59970298a327ff617952401e112f253ed5"
+    }
+  ],
+  "reloaded_adapter_loss": 6.923309326171875,
+  "recorded_posttrain_loss": 6.910673141479492,
+  "absolute_loss_diff": 0.012636184692382812,
+  "notes": "Exact checkpoint hash and parameter shapes plus independent GPU reload; tiny heldout sentence only"
+}
