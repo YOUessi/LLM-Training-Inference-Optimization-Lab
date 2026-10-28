@@ -1,0 +1,63 @@
+{
+  "schema": "stage12-crossdomain-admission-real-gpu-evidence-v1",
+  "date": "2026-10-29",
+  "experiment_git_sha": "385cc86535781f5dec92fbd5d59faa4e5bc47a36",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "tokenizer_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "request_frozen_sha256": "fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04",
+  "source_content_domain": "English literary and natural science prose, five genres, non-Kubernetes",
+  "source_corpus_original": "Stage7 five US public domain catalogued classical texts",
+  "new_arrival_seeds": [
+    4093,
+    5087
+  ],
+  "prior_kubernetes_heldout_seeds": [
+    2027,
+    3031
+  ],
+  "offered_rate": 8,
+  "policies": [
+    "unlimited",
+    "bounded_150ms",
+    "bounded_400ms"
+  ],
+  "max_client_workers": 32,
+  "bounded_inflight": 8,
+  "bounded_queue_slots": 4,
+  "offered": 288,
+  "completed": 278,
+  "explicit_rejected": 10,
+  "unexpected_errors": 0,
+  "raw_file_sha256": {
+    "stage12_seed_4093/label_unlimited_d250_seed4093.json": "84c48702949d0af873d34b7d0d538cc5d6d30aeb964b4bec399042088676d69e",
+    "stage12_seed_4093/label_bounded_d150_seed4093.json": "b7b4a43ae4f7d23c543b6987635de0431135aacef21959efec4869524bd024e8",
+    "stage12_seed_4093/label_bounded_d400_seed4093.json": "730a5be54ec0adc96d41f7cbc6d9ca5f9ee047c72c662fadecbc148c3c7fa7c9",
+    "stage12_seed_4093/detailed_unlimited_d250_seed4093.json": "6ee52b625588cce8125508c724254aa751c431d33d97191ad57fcd97be846cc2",
+    "stage12_seed_4093/detailed_bounded_d150_seed4093.json": "eef20c8c75f39e413869874904fa44791c1affc88d72ed859a8141b241a8ee92",
+    "stage12_seed_4093/detailed_bounded_d400_seed4093.json": "99871d13f876c4c66bdcc0aace7da4e022f8ab247b89f58ab8180cd513add4de",
+    "stage12_seed_5087/label_unlimited_d250_seed5087.json": "a80327f8ea8a5a118dbbb87013fb7438c11d03011300354fd872be3c30e2003e",
+    "stage12_seed_5087/label_bounded_d150_seed5087.json": "c65524341e306cf52663a566fcb2246c8241007726b34d43945dab4cabc019eb",
+    "stage12_seed_5087/label_bounded_d400_seed5087.json": "bc17792daa0871100e7b00f7c6584afca4ce7f82d4e58ceea5b73c9c72ab66db",
+    "stage12_seed_5087/detailed_unlimited_d250_seed5087.json": "86f2ba1640e25ad0bb67eac4bfbd357c32dd3b6955a9f336a7ab03099486d39c",
+    "stage12_seed_5087/detailed_bounded_d150_seed5087.json": "eaab4945983077ddbde356f818fd6a27c25a40d0d4b682cd88e48c5c9caa545f",
+    "stage12_seed_5087/detailed_bounded_d400_seed5087.json": "e9dd096f616b00c0dbf1517f5cdcd44a365852279f99419b3c19417a2bfa4c99"
+  },
+  "raw_file_count": 12,
+  "analysis_sha256": "9b9c5873868938bc6c4ed5fff7bd887e417bcd7cde7024089468dd409cb357b2",
+  "automation_state_sha256": "c0659e6f5c3357dfca7176af1f4acb825ffe43b233ab46a072c95a6db9b2d16b",
+  "actual_server_log_sha256": {
+    "4093": {
+      "sha256": "6e19e389ad3cb28b37fc989e721541039a877e30e5c2b727a60adde63b48a101",
+      "private_path": "results/stage12_seed_4093/server.log"
+    },
+    "5087": {
+      "sha256": "84f047cfa8d6a306802c96c0dcf3a478578bf61c5f97eb2be0a4c7427f9b6abd",
+      "private_path": "results/stage12_seed_5087/server.log"
+    }
+  },
+  "server_logs_remain_private_on_Tang": true,
+  "not_an_adaptive_scheduler_algorithm": true,
+  "scientific_caveat": "Only two seeds, one GPU and a fixed Qwen model; source domain shifted and contains English text only"
+}

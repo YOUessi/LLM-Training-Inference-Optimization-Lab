@@ -1,0 +1,55 @@
+{
+  "schema": "llm-opt-tang-autoprogress-v1",
+  "source_sha": "385cc86535781f5dec92fbd5d59faa4e5bc47a36",
+  "jobs": {
+    "heldout_seed_2027": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:19:23.813026+00:00",
+      "finished_utc": "2026-10-28T11:20:08.425498+00:00",
+      "duration_seconds": 44.61,
+      "log_path": "results/auto_progress/heldout_seed_2027.log",
+      "executed_original_git_sha": "e5356b799e9916fbda91f79ba99703c08f007b62"
+    },
+    "heldout_seed_3031": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:20:30.289680+00:00",
+      "finished_utc": "2026-10-28T11:21:15.624942+00:00",
+      "duration_seconds": 45.34,
+      "log_path": "results/auto_progress/heldout_seed_3031.log",
+      "executed_original_git_sha": "e5356b799e9916fbda91f79ba99703c08f007b62"
+    },
+    "stage11_heldout_analysis": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:21:54.805827+00:00",
+      "finished_utc": "2026-10-28T11:21:54.839579+00:00",
+      "duration_seconds": 0.03,
+      "log_path": "results/auto_progress/stage11_heldout_analysis.log",
+      "executed_original_git_sha": "e5356b799e9916fbda91f79ba99703c08f007b62"
+    },
+    "stage12_seed_4093": {
+      "status": "passed",
+      "started_utc": "2026-10-28T16:11:42.726810+00:00",
+      "finished_utc": "2026-10-28T16:12:27.922156+00:00",
+      "duration_seconds": 45.2,
+      "log_path": "results/auto_progress/stage12_seed_4093.log"
+    },
+    "stage12_seed_5087": {
+      "status": "passed",
+      "started_utc": "2026-10-28T16:12:50.038606+00:00",
+      "finished_utc": "2026-10-28T16:13:34.750933+00:00",
+      "duration_seconds": 44.71,
+      "log_path": "results/auto_progress/stage12_seed_5087.log"
+    },
+    "stage12_crossdomain_analysis": {
+      "status": "passed",
+      "started_utc": "2026-10-28T16:13:54.738749+00:00",
+      "finished_utc": "2026-10-28T16:13:54.768366+00:00",
+      "duration_seconds": 0.03,
+      "log_path": "results/auto_progress/stage12_crossdomain_analysis.log"
+    }
+  },
+  "last_tick_utc": "2026-10-28T16:13:54.710456+00:00",
+  "last_observation": "PASSED stage12_crossdomain_analysis",
+  "completed_jobs_git_sha": "e5356b799e9916fbda91f79ba99703c08f007b62",
+  "previous_approved_experiment_commit": "68642f7c5519602e50dc25559ca23b49c55c1551"
+}

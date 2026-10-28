@@ -43,7 +43,7 @@ def audit(root: Path) -> dict:
         "Stage 9 worker queue isolation":(root/"docs/STAGE9_REPORT_2026-10-28.md").exists(),
         "Stage 10 client admission A/B":(root/"docs/STAGE10_REPORT_2026-10-28.md").exists(),
         "Stage 11 held-out report":(root/"docs/STAGE11_REPORT_2026-10-28.md").exists(),
-        "Stage 12 cross-domain report":(root/"docs/STAGE12_REPORT_2026-10-28.md").exists(),
+        "Stage 12 cross-domain report":(root/"docs/STAGE12_REPORT_2026-10-29.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -95,7 +95,10 @@ def audit(root: Path) -> dict:
                                 actions.append("Stage11 approved held-out seeds 2027/3031 with 150ms/400ms admission deadlines are queued for the guarded 10-minute Tang user-cron executor; check Tang state.json for actual GPU outcomes.")
                                 actions.append("Run exact CPU preflight and report accepted/rejected/timeout and useful throughput across every offered request, without cherry-picking.")
                             else:
-                                actions.append("Stage11 held-out 288 offers published: 278 completed, 10 rejected; its original three-task GPU/analysis queue finished, and Stage12 requires a newly approved immutable source revision.")
+                                if not reports["Stage 12 cross-domain report"]:
+                                    actions.append("Stage11 original three-task held-out experiment published 288 offers: 278 completed, 10 rejected. Stage12 GPU execution requires a reviewed immutable source SHA.")
+                                else:
+                                    actions.append("Stage11 original held-out trial and Stage12 distinct-domain trial both have independently verified original GPU evidence.")
                                 if not reports["Stage 12 cross-domain report"]:
                                     ready=all(implementation[x] for x in (
                                         "Stage12 non-Kubernetes frozen source",
@@ -108,7 +111,9 @@ def audit(root: Path) -> dict:
                                     else:
                                         actions.append("Stage12 source/runner not fully committed yet; do not claim an approved Tang GPU job exists.")
                                 else:
-                                    actions.append("Stage12 independent source-domain 288 offers are published; next design a genuinely new queue-aware admission algorithm and test on separate held-out workloads.")
+                                    actions.append("Stage12 independent-domain 288 real offered requests are published: 278 completed, 10 explicitly rejected; finite automatic 6-job queue has completed and future ticks are status-only.")
+                                    actions.append("Stage13: implement a genuine workload-aware admission decision algorithm with a predeclared all-offered SLO/throughput/rejection utility, then verify on a new held-out corpus and arrival seeds.")
+                                    actions.append("The Stage11 preference for 150ms changed to 400ms under Stage12 English prose. Domain and language distribution both shifted, so do not claim a single causal factor or universal best deadline.")
                                 actions.append("Any next GPU job requires reviewed code and a newly approved pinned SHA; no arbitrary autonomous source modification or unsandboxed execution.")
                         else:
                             actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
@@ -116,7 +121,10 @@ def audit(root: Path) -> dict:
                     else:
                         actions.append("Stage8 real matched-rate 288 SSE requests and unmatched-rate confound are archived: next isolate the 8-worker client queue from vLLM internal queuing.")
                         actions.append("Stage9: build a bounded admission-control baseline with explicit request rejection and all-offered-request SLO accounting; evaluate against identical fixed-rate, frozen multilingual workloads.")
-                    actions.append("Obtain held-out diverse non-Kubernetes technical domains before claiming model-serving generalization.")
+                    if not reports["Stage 12 cross-domain report"]:
+                        actions.append("Obtain held-out diverse non-Kubernetes technical domains before claiming model-serving generalization.")
+                    else:
+                        actions.append("Expand independent workloads beyond classic English prose and Kubernetes docs before production-serving generalization.")
                 else:
                     actions.append("Stage7 384 real natural-prose requests and initial INVALID run are archived: next freeze a rights-cleared modern multilingual multi-domain workload for Stage8.")
                     actions.append("Stage8: measure real naturally early-stopping outputs and controlled arrival-rate/queueing SLO curves, with multi-seed held-out validation.")

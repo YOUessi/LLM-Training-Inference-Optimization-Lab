@@ -230,3 +230,7 @@ baseline and bounded 150/400ms deadlines. The existing 10-minute Tang
 cron has a **finite, reviewed allowlist** of two new GPU runs plus CPU
 analysis, with strict source pin and resource checks. Cross-domain real
 GPU results must not be claimed until the full 288 offered requests pass.
+
+### Stage12 measured cross-domain admission-policy outcome
+
+[Cross-domain Stage12 real GPU report](docs/STAGE12_REPORT_2026-10-29.md) and [12 original GPU request logs with SHA256](docs/evidence/stage12_crossdomain) cover 288 offered natural-prose requests on Qwen2.5/vLLM: 278 completed, 10 explicitly rejected. On detailed 8 req/s, 250ms all-offered timely first Token was 72.9% with no admission, 85.4% with 150ms admission, and 87.5% with 400ms admission. **The static deadline preference reverses relative to Stage11 Kubernetes technical docs**. All three are client-side policies, not an internal vLLM scheduler change. The 10-minute finite executor completed and is status-only until new audited work is approved.

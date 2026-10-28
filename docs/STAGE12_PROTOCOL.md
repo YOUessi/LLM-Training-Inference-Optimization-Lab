@@ -85,3 +85,16 @@ workloads. Therefore an observed difference does not prove production
 generalization, fair multilingual admission, or superior LLM scheduling.
 A true adaptive admission policy requires a separate engineered algorithm
 and held-out comparison that reports rejection cost.
+
+## Verified post-run observation (append-only)
+
+Both Stage12 independent English natural-prose seeds 4093 and 5087, plus
+independent CPU analysis, completed under reviewed source commit
+385cc86535781f5dec92fbd5d59faa4e5bc47a36. 288 offers were fully
+accounted for: 278 real completions, 10 explicit rejections, zero
+unexpected errors. Strict input Token, output-length, source and queue
+metrics checks passed. Stage12 report and original case SHA256 are
+archived in docs/STAGE12_REPORT_2026-10-29.md and
+docs/evidence/stage12_crossdomain. Finite auto-executor job queue
+completed; the 10-minute cron remains status-only until a new,
+independently reviewed research task is approved.
