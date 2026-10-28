@@ -1,0 +1,41 @@
+{
+  "status": "measured",
+  "kind": "synthetic_fsdp1_training_smoke",
+  "not_an_llm_training_result": true,
+  "not_multigpu_scaling_evidence": true,
+  "environment": {
+    "timestamp_utc": "2026-10-28T21:33:41.466550+00:00",
+    "python": "3.10.12",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "git_commit": "677b50945fc34f6d5fce131ea43ae7c090a8b1ec",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "config": {
+    "steps": 12,
+    "world_size": 1,
+    "batch_size_per_rank": 16,
+    "features": 128,
+    "hidden": 256,
+    "seed": 2026,
+    "lr": 0.001,
+    "requested_parallelism": "FSDP1",
+    "effective_sharding_strategy": "ShardingStrategy.NO_SHARD"
+  },
+  "results": {
+    "final_loss": 0.2568555772304535,
+    "first_loss": 0.28579437732696533,
+    "median_step_ms": 1.5757429937366396,
+    "slowest_rank_total_step_s": 0.14398763398639858,
+    "throughput_samples_per_second": 1333.447843292826,
+    "peak_allocated_gpu_gib": 0.018097877502441406,
+    "peak_reserved_gpu_gib": 0.025390625
+  }
+}
