@@ -1,10 +1,10 @@
-name: 30-minute lab plan audit
+name: 10-minute lab plan audit
 
-# GitHub Actions schedule can be delayed or occasionally skipped by platform
-# load; this is best-effort every 30 minutes, not a hard real-time task.
+# GitHub Actions may delay or skip scheduled events: this is best-effort.
+# The workflow performs CPU checks; GPU work is safely gated on Tang separately.
 on:
   schedule:
-    - cron: '7,37 * * * *'
+    - cron: '7,17,27,37,47,57 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -34,6 +34,11 @@ jobs:
           python -m pip install --no-input -e .
           python -m unittest discover -s tests -v
 
+      - name: Execute next approved CPU stage preflight
+        run: |
+          mkdir -p results
+          python scripts/stage11_cpu_preflight.py --out results/stage11_preflight.json
+
       - name: Compare authoritative roadmap with published experiment evidence
         if: always()
         run: |
@@ -48,6 +53,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: project-plan-audit
-          path: results/plan_watch.json
+          path: |
+            results/plan_watch.json
+            results/stage11_preflight.json
           retention-days: 30
           if-no-files-found: warn

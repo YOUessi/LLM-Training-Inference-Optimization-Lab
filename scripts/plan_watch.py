@@ -42,6 +42,7 @@ def audit(root: Path) -> dict:
         "Stage 8 matched-rate serving":(root/"docs/STAGE8_REPORT_2026-10-28.md").exists(),
         "Stage 9 worker queue isolation":(root/"docs/STAGE9_REPORT_2026-10-28.md").exists(),
         "Stage 10 client admission A/B":(root/"docs/STAGE10_REPORT_2026-10-28.md").exists(),
+        "Stage 11 held-out report":(root/"docs/STAGE11_REPORT_2026-10-28.md").exists(),
     }
     implementation={
         "KV capacity probe":(root/"src/llm_opt_lab/serving/kv_capacity_probe.py").exists(),
@@ -58,6 +59,9 @@ def audit(root: Path) -> dict:
         "Stage9 strict queue analysis":(root/"src/llm_opt_lab/serving/stage9_worker_analysis.py").exists(),
         "Stage10 client-side admission":(root/"src/llm_opt_lab/serving/stage10_admission.py").exists(),
         "Stage10 offered-request strict analysis":(root/"src/llm_opt_lab/serving/stage10_analysis.py").exists(),
+        "Stage11 safe 10min Tang executor":(root/"scripts/auto_progress_tick.py").exists(),
+        "Stage11 fixed held-out seed runner":(root/"scripts/run_stage11_heldout_seed.sh").exists(),
+        "Stage11 independent CPU analysis":(root/"scripts/stage11_heldout_analyze.py").exists(),
     }
     actions=[]
     if not all(implementation.values()):
@@ -83,8 +87,11 @@ def audit(root: Path) -> dict:
                 if reports["Stage 8 matched-rate serving"]:
                     if reports["Stage 9 worker queue isolation"]:
                         if reports["Stage 10 client admission A/B"]:
-                            actions.append("Stage10 192 offered request A/B recorded: 186 completed, 6 rejected. Next test admission thresholds against independently frozen held-out arrival seeds and a non-Kubernetes corpus.")
-                            actions.append("Stage11: quantify all-offered TTFT SLO, useful output throughput and rejection fairness across language and request sizes; do not optimize accepted-only latency.")
+                            if not reports["Stage 11 held-out report"]:
+                                actions.append("Stage11 approved held-out seeds 2027/3031 with 150ms/400ms admission deadlines are queued for the guarded 10-minute Tang user-cron executor; check Tang state.json for actual GPU outcomes.")
+                                actions.append("Run exact CPU preflight and report accepted/rejected/timeout and useful throughput across every offered request, without cherry-picking.")
+                            else:
+                                actions.append("Stage11 held-out independent arrival seeds have published real evidence; next expand to a non-Kubernetes domain and longer traces.")
                         else:
                             actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
                             actions.append("Stage10: design a held-out load trial where rejected traffic is never omitted from reported SLO or useful completed throughput.")

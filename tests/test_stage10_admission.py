@@ -74,6 +74,19 @@ class Stage10AdmissionAccountingTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             accounting([record(i,ok=i<23,reason="silent_drop") for i in range(24)],4.)
 
+    def test_heldout_seeds_and_deadline_are_explicitly_allowed(self):
+        from llm_opt_lab.serving.stage10_admission import parse_args
+        for seed in (2027,3031):
+            a=parse_args(["--model","qwen","--mode","detailed",
+                          "--policy","bounded","--seed",str(seed),
+                          "--offered-rate","8","--deadline-ms","150",
+                          "--output","/tmp/stage11.json"])
+            self.assertEqual((a.seed,a.offered_rate,a.deadline_ms),(seed,8.,150.))
+        with self.assertRaises(SystemExit):
+            parse_args(["--model","qwen","--mode","detailed",
+                        "--policy","bounded","--seed","2027",
+                        "--deadline-ms","999","--output","/tmp/t.json"])
+
     def test_cli_requires_controlled_mode_and_seed(self):
         valid=parse_args([
             "--model","qwen","--mode","detailed","--policy","bounded",

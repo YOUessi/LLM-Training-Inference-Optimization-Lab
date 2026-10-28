@@ -204,3 +204,13 @@ separately measured. **Real results pending until actual GPU run.**
 ### Stage10 real transparent admission-policy A/B
 
 [Stage10 real GPU report](docs/STAGE10_REPORT_2026-10-28.md) and [eight raw policy cases](docs/evidence/stage10_admission) cover 192 offered requests (186 completed, 6 explicitly rejected), compared under identical fixed-window arrival schedules and frozen Qwen input. Client bounded admission (8 inflight/4 waiting/250ms deadline) raises **all-offered** timely first-Token compliance for detailed@8 req/s from 66.7–75% to 87.5% but rejects 12.5% of detailed traffic and lowers useful output throughput. It is a workload-specific *tradeoff*, not a vLLM internal scheduler optimization. Independent held-out studies are pending.
+
+### Ten-minute plan checks and bounded Stage11 continuation
+
+[GitHub Actions 10-minute audit](.github/workflows/plan-audit.yml) runs CPU
+tests, the approved Stage11 CPU preflight, and roadmap comparison (best effort).
+[Stage11 automatic execution and safety protocol](docs/STAGE11_AUTOMATION_PROTOCOL.md)
+defines a finite **Tang local user-cron queue** for two held-out GPU seeds and
+the independent CPU analysis, guarded by full immutable Git SHA, idle GPU,
+exclusive lock and failure blocking. This is NOT an open-ended autonomous
+coding agent. It does NOT automatically send messages to ChatGPT.

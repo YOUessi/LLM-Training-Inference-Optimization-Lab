@@ -29,7 +29,8 @@ from llm_opt_lab.serving.stage8_arrivals import (
 
 MODES=("label","detailed")
 POLICIES=("unlimited","bounded")
-SEEDS=(42,137)
+SEEDS=(42,137,2027,3031)
+ALLOWED_RATES=(4.,8.,)
 OFFERED_RATE=8.
 OFFERED_COUNT=24
 SERVER_MAX_SEQS=8
@@ -48,6 +49,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--mode",choices=MODES,required=True)
     p.add_argument("--policy",choices=POLICIES,required=True)
     p.add_argument("--seed",type=int,required=True)
+    p.add_argument("--offered-rate",type=float,choices=ALLOWED_RATES,default=OFFERED_RATE)
+    p.add_argument("--deadline-ms",type=float,choices=(150.,250.,400.),default=ADMISSION_DEADLINE_MS)
     p.add_argument("--requests",type=Path,
                    default=Path("data/stage8_frozen_requests.jsonl"))
     p.add_argument("--manifest",type=Path,
@@ -55,7 +58,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--output",type=Path,required=True)
     a=p.parse_args(argv)
     if a.seed not in SEEDS:
-        p.error("seed must be one of 42,137")
+        p.error("seed must be one of 42,137,2027,3031")
     return a
 
 
@@ -165,7 +168,7 @@ def main(argv: list[str] | None = None) -> int:
                       response_instruction=instruction)
         if warm["status"]!="ok":
             raise RuntimeError("model warmup failed")
-        offsets=schedule(a.seed,OFFERED_RATE,len(items),kind="fixed_window")
+        offsets=schedule(a.seed,a.offered_rate,len(items),kind="fixed_window")
         inflight=threading.BoundedSemaphore(BOUNDED_INFLIGHT)
         waiting=threading.BoundedSemaphore(BOUNDED_WAITING)
         kv_samples:list[dict]=[]
@@ -191,7 +194,7 @@ def main(argv: list[str] | None = None) -> int:
                     reason="queue_full"
                 else:
                     try:
-                        remaining=due+(ADMISSION_DEADLINE_MS/1000.)-time.perf_counter()
+                        remaining=due+(a.deadline_ms/1000.)-time.perf_counter()
                         if remaining<=0 or not inflight.acquire(timeout=remaining):
                             reason="deadline_expired"
                         else:
@@ -274,13 +277,13 @@ def main(argv: list[str] | None = None) -> int:
             "environment":environment(),
             "config":{
                 "policy":a.policy,"mode":a.mode,"seed":a.seed,
-                "model":a.model,"fixed_offered_rate":OFFERED_RATE,
+                "model":a.model,"fixed_offered_rate":a.offered_rate,
                 "frozen_requests_sha256":meta["request_jsonl_sha256"],
                 "max_client_workers":MAX_CLIENT_WORKERS,
                 "server_max_num_seqs":SERVER_MAX_SEQS,
                 "bounded_inflight":BOUNDED_INFLIGHT,
                 "bounded_queue_slots":BOUNDED_WAITING,
-                "admission_deadline_ms":ADMISSION_DEADLINE_MS,
+                "admission_deadline_ms":a.deadline_ms,
                 "output_cap_tokens":OUTPUT_CAP,
                 "schedule":"seeded_fixed_duration_exponential_spacings",
                 "schedule_offsets_s":offsets,

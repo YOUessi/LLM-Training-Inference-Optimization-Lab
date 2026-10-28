@@ -144,3 +144,12 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [ ] Compare multiple queue slot/deadline configurations and explicit no-drop baseline using all-offered compliance, useful throughput, reject reasons and per-language fairness.
 - [ ] Collect enough repetitions/requests to estimate uncertainty in tail SLO, and validate on at least one distinct domain before describing any production applicability.
 - [ ] Keep new model/engine/KV cache optimizations separate from client admission-policy changes to avoid causal confounding.
+
+## Stage 11 — 10-minute approved finite executor and held-out validation (2026-10-28)
+
+- [x] Configure GitHub Actions schedule at 10-minute intervals (UTC 07,17,27,37,47,57); run regression, frozen Stage11 CPU preflight, and plan audit.
+- [x] Implement local Tang user-cron tick with immutable approved Git SHA, single-instance flock, GPU/port preflight, bounded runtime and fail-closed state.
+- [x] Freeze held-out seeds 2027 and 3031 and admission deadline A/B (unlimited, 150 ms, 400 ms) with original 24 frozen multilingual requests and full all-offered accounting.
+- [ ] Complete 288 actual held-out GPU requests (144 each seed); preserve results, failures, rejected requests and original measured queue gauges.
+- [ ] Independently analyze both held-out seeds, archive raw reproducible evidence to GitHub, and assess tradeoff instead of selecting only advantageous outcomes.
+- [ ] Evaluate on non-Kubernetes domain/longer test windows before claiming generalization.
