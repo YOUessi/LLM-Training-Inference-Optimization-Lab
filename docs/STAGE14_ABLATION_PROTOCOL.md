@@ -18,3 +18,7 @@ Six CPU-defined variants: `fifo_static400`, `sjf_static400`, `sjf_aging_static40
 4. Run on a verified idle Tang GPU only after CPU test clean pass and no concurrent GPU use. Preserve exact version, driver parameters, all raw results, failure logs and SHA256 checksums. An unapproved/unmeasured run must not be reported as complete.
 
 Current implementation `src/llm_opt_lab/serving/stage14_ablation.py` isolates deadline/priority decisions, **not yet the full live request queue or vLLM integration**. The CPU tests verify functions, not real performance.
+
+## Implementation update
+
+The eight-config queue is now implemented by `AblationAdmissionGate` and wired into `stage14_mixed_bench.py` (separate from frozen Stage13). Two additional reference variants (`fifo_static400_ewma`, `sjf_static400_noewma`) help distinguish online model adaptation from queue ordering. The developmental arrivals use new seeds 8101/8109 (k8s) and 8201/8209 (prose), but **reuse the previously seen document corpora**, so these are not an independent-domain generalization experiment. The benchmark driver is unexecuted on GPU; CPU tests cover configuration, import, queue release, expiry and EWMA. Do not label any Stage14 run as measured until real SSE evidence is archived.
