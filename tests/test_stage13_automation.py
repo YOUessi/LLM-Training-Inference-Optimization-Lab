@@ -46,14 +46,18 @@ class Stage13FiniteExecutionTests(unittest.TestCase):
         code=(
             "from scripts.auto_progress_tick import verify_completed_job;"
             "from pathlib import Path;"
-            "verify_completed_job(Path.cwd(), 'stage13_k8s_seed6101')"
+            "import tempfile\n"
+            "with tempfile.TemporaryDirectory() as tmp:\n"
+            "    (Path(tmp) / 'src').symlink_to(Path.cwd() / 'src', target_is_directory=True)\n"
+            "    verify_completed_job(Path(tmp), 'stage13_k8s_seed6101')"
         )
         completed=subprocess.run(
             [sys.executable,"-c",code],cwd=ROOT,
             env=env,text=True,capture_output=True,timeout=10,check=False
         )
-        # No real data exists in local Mac results, so FileNotFoundError
-        # is correct. The old cron bug was ModuleNotFoundError.
+        # An isolated empty results root MUST fail on every machine, even
+        # when Tang already has valid GPU results in the project tree.
+        # The regression target is the old cron ModuleNotFoundError.
         self.assertNotEqual(completed.returncode,0)
         self.assertIn("FileNotFoundError",completed.stderr)
         self.assertNotIn("ModuleNotFoundError",completed.stderr)
