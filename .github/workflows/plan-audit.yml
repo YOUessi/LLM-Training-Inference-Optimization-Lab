@@ -43,6 +43,10 @@ jobs:
         run: |
           python scripts/stage12_cpu_preflight.py --out results/stage12_preflight.json
 
+      - name: Stage13 preregistered mixed short/long GPU workload CPU gate
+        run: |
+          python scripts/stage13_cpu_preflight.py --out results/stage13_preflight.json
+
       - name: Compare authoritative roadmap with published experiment evidence
         if: always()
         run: |
@@ -61,5 +65,6 @@ jobs:
             results/plan_watch.json
             results/stage11_preflight.json
             results/stage12_preflight.json
+            results/stage13_preflight.json
           retention-days: 30
           if-no-files-found: warn

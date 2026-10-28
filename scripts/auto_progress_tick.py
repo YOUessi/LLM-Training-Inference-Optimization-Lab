@@ -40,6 +40,16 @@ JOBS = (
      "argv":("bash","scripts/run_stage12_heldout_seed.sh","5087")},
     {"id":"stage12_crossdomain_analysis","requires_gpu":False,
      "argv":("python3","scripts/stage12_crossdomain_analyze.py")},
+    {"id":"stage13_k8s_seed6101","requires_gpu":True,
+     "argv":("bash","scripts/run_stage13_mixed.sh","k8s","6101")},
+    {"id":"stage13_k8s_seed6109","requires_gpu":True,
+     "argv":("bash","scripts/run_stage13_mixed.sh","k8s","6109")},
+    {"id":"stage13_prose_seed7201","requires_gpu":True,
+     "argv":("bash","scripts/run_stage13_mixed.sh","prose","7201")},
+    {"id":"stage13_prose_seed7209","requires_gpu":True,
+     "argv":("bash","scripts/run_stage13_mixed.sh","prose","7209")},
+    {"id":"stage13_all_analysis","requires_gpu":False,
+     "argv":("bash","scripts/run_stage13_analysis.sh")},
 )
 SCHEMA = "llm-opt-tang-autoprogress-v1"
 
@@ -124,6 +134,54 @@ def verify_completed_job(root:Path, jobid:str) -> None:
             set(d["heldout_seeds"])!={4093,5087} or
             d["frozen_domain_request_sha256"]!="fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04"):
             raise ValueError("Stage12 crossdomain analysis not accepted")
+    elif jobid.startswith("stage13_") and jobid!="stage13_all_analysis":
+        from llm_opt_lab.serving.stage10_admission import accounting
+        accepted_pairs={
+            ("k8s",6101),("k8s",6109),("prose",7201),("prose",7209),
+        }
+        field=jobid.split("_")
+        if len(field)!=3 or not field[2].startswith("seed"):
+            raise ValueError("invalid Stage13 job ID")
+        domain,seed=field[1],int(field[2].removeprefix("seed"))
+        if (domain,seed) not in accepted_pairs:
+            raise ValueError("unapproved Stage13 domain/arrival seed")
+        expected_hash={
+            "k8s":"c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+            "prose":"fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04",
+        }[domain]
+        directory=root/"results"/f"stage13_{domain}_seed{seed}"
+        commit=run(["git","rev-parse","HEAD"],cwd=root).stdout.strip()
+        total=0
+        for rate in (8,16):
+            for policy in ("unlimited","fixed150","fixed400","adaptive"):
+                p=directory/f"rate{rate}_{policy}_seed{seed}.json"
+                data=json.loads(p.read_text())
+                cfg=data["config"];summary=data["summary"]
+                records=data["requests"]
+                if (data["status"]!="measured" or
+                    data["environment"]["git_commit"]!=commit or
+                    cfg["frozen_requests_sha256"]!=expected_hash or
+                    (cfg["domain"],cfg["seed"],cfg["rate_per_second"],cfg["policy"])!=(domain,seed,rate,policy) or
+                    len(records)!=24 or summary["offered"]!=24 or summary["errors"]!=0 or
+                    summary["completed"]+summary["rejected"]!=24 or
+                    summary!=accounting(records,data["elapsed_s"]) or
+                    data["actual_mode_summaries"]["label"]["offered"]!=12 or
+                    data["actual_mode_summaries"]["detailed"]["offered"]!=12 or
+                    not data["server_queue_monitor"]["available"] or
+                    not data["kv_cache_monitor"]["available"] or
+                    data["gate_final_state"]["active"]!=0 or
+                    data["gate_final_state"]["waiters"]!=0):
+                    raise ValueError(f"invalid Stage13 real vLLM case: {p}")
+                total+=24
+        if total!=192:
+            raise ValueError("Stage13 seed missing valid offered requests")
+    elif jobid=="stage13_all_analysis":
+        d=json.loads((root/"results/stage13_full_analysis.json").read_text())
+        expected_git=run(["git","rev-parse","HEAD"],cwd=root).stdout.strip()
+        if (d.get("status")!="pass" or d.get("source_commit")!=expected_git or
+            d.get("replayed_offered_requests")!=768 or d.get("real_case_count")!=32 or
+            len(d.get("paired_scenarios",[]))!=8):
+            raise ValueError("Stage13 768 real offered requests incomplete/invalid")
     elif jobid=="stage11_heldout_analysis":
         d=json.loads((root/"results/stage11_heldout_analysis.json").read_text())
         if (d["status"]!="pass" or d["offered"]!=288 or

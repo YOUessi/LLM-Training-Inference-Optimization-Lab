@@ -21,17 +21,17 @@ class Stage12AutomationContracts(unittest.TestCase):
         self.assertEqual(d["genres"],5)
         self.assertEqual(d["approved_new_seeds"],[4093,5087])
         self.assertEqual(d["expected_stage12_offered"],288)
-        self.assertEqual(d["planned_jobs"],[x["id"] for x in JOBS[3:]])
+        self.assertEqual(d["planned_jobs"],[x["id"] for x in JOBS[3:6]])
         self.assertFalse(d["git_hosted_runner_gpu_access"])
 
     def test_gpu_queue_is_finite_and_no_fetch(self):
-        self.assertEqual(len(JOBS),6)
-        for j in JOBS[3:]:
+        self.assertEqual(len(JOBS),11)
+        for j in JOBS[3:6]:
             self.assertNotIn("git",j["argv"])
             self.assertNotIn("curl",j["argv"])
             self.assertNotIn("pip",j["argv"])
-        self.assertEqual(JOBS[-1]["id"],"stage12_crossdomain_analysis")
-        self.assertFalse(JOBS[-1]["requires_gpu"])
+        self.assertEqual(JOBS[5]["id"],"stage12_crossdomain_analysis")
+        self.assertFalse(JOBS[5]["requires_gpu"])
 
     def test_cannot_claim_experiment_without_actual_model_requests(self):
         with tempfile.TemporaryDirectory() as tmp:

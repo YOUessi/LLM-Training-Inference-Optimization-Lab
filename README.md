@@ -234,3 +234,18 @@ GPU results must not be claimed until the full 288 offered requests pass.
 ### Stage12 measured cross-domain admission-policy outcome
 
 [Cross-domain Stage12 real GPU report](docs/STAGE12_REPORT_2026-10-29.md) and [12 original GPU request logs with SHA256](docs/evidence/stage12_crossdomain) cover 288 offered natural-prose requests on Qwen2.5/vLLM: 278 completed, 10 explicitly rejected. On detailed 8 req/s, 250ms all-offered timely first Token was 72.9% with no admission, 85.4% with 150ms admission, and 87.5% with 400ms admission. **The static deadline preference reverses relative to Stage11 Kubernetes technical docs**. All three are client-side policies, not an internal vLLM scheduler change. The 10-minute finite executor completed and is status-only until new audited work is approved.
+
+### Stage13 — NEW adaptive request-aware admission algorithm
+
+[Stage13 frozen experimental protocol](docs/STAGE13_PROTOCOL.md),
+[age-fair demand-aware scheduler](src/llm_opt_lab/serving/stage13_policy.py),
+[real mixed-label/detailed vLLM runner](scripts/run_stage13_mixed.sh) and
+[strict 768-request analyzer](src/llm_opt_lab/serving/stage13_analysis.py).
+The client proxy now estimates input/output work per request, adapts EWMA
+from actual completions, dynamically budgets queue wait by congestion and
+uses short-job-first with age compensation. Compare against unlimited,
+fixed150 and fixed400 on identical 8/16 req/s short+long mixed workloads in
+both Kubernetes and English prose sources. The 10-minute finite Tang guard
+runs four reviewed seed jobs and CPU analysis when idle. GPU outcomes remain
+PENDING until actual original logs pass provenance/utility gates. This is
+NOT a vLLM internal scheduler patch or pre-proven speedup.

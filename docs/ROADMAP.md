@@ -168,3 +168,13 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Extend 10-minute GitHub CPU preflight and finite Tang user-cron allowlist to Stage12 (two GPU seed jobs + CPU analysis); strict commit approval/GPU lock retained.
 - [x] Stage12 two new seeds 4093/5087, 12 real GPU cases: 288 offered, 278 completed, 10 explicitly rejected, zero unexpected errors; immutable non-Kubernetes SHA and request/service metrics verified.
 - [x] Published Stage12 independent-domain raw 12 cases, 15 evidence files, SHA256 manifest and cross-domain comparison: threshold ordering reversed (400ms beat 150ms under literary/natural-science workload). [Stage12 report](STAGE12_REPORT_2026-10-29.md).
+
+## Stage 13 — Workload-aware, age-fair dynamic admission algorithm
+
+- [x] Develop a real client-side adaptive scheduler combining Stage10 measured demand priors, request-specific input Tokens, per-mode EWMA, live active/waiting load, waiting-time aging and dynamic 100–400ms admission deadlines.
+- [x] Freeze 768 real offers: 2 previously used source domains × 2 new seeds/domain × 2 fixed offered rates (8/16 req/s) × 4 policies × 24 mixed 12-label/12-detailed requests.
+- [x] Define a predeclared all-offered optimization utility: SLO250 - 0.50×rejection fraction + 0.20×paired-baseline normalized useful TPS. Fail-closed correctness and policy preflight tests added.
+- [x] Extend the 10-minute GitHub CI CPU check and finite source-pinned Tang executor with four safe Stage13 GPU seed jobs and independent 768-offer CPU analysis; no new arbitrary code execution.
+- [ ] Run all 32 real Stage13 vLLM cells and verify original per-request SSE, output Tokens, model/queue gauges and no unseen model errors; preserve negative results.
+- [ ] Publish 768-offer matched-domain A/B and compare adaptive vs unlimited and fixed150/fixed400 using preregistered utility, rejection/throughput/SLO and per-task fairness.
+- [ ] Ablate priority versus deadline adaptation on new independent input sources before claiming a general-purpose model-serving improvement.

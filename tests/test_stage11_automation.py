@@ -26,10 +26,11 @@ class Stage11AutomationTests(unittest.TestCase):
                          [x["id"] for x in JOBS[:3]])
 
     def test_no_unauthorized_gpu_job_or_remote_code_pull(self):
-        self.assertEqual(len(JOBS),6)
+        self.assertEqual(len(JOBS),11)
         for job in JOBS:
             self.assertTrue(job["id"].startswith(("heldout_seed_","stage11_heldout_analysis",
-                                                   "stage12_seed_","stage12_crossdomain_analysis")))
+                                                   "stage12_seed_","stage12_crossdomain_analysis",
+                                                   "stage13_k8s_","stage13_prose_","stage13_all_analysis")))
             self.assertNotIn("git",job["argv"])
             self.assertNotIn("curl",job["argv"])
             self.assertNotIn("pip",job["argv"])
