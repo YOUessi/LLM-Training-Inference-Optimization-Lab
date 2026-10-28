@@ -1,0 +1,29 @@
+{
+  "schema": "llm-opt-tang-autoprogress-v1",
+  "source_sha": "e5356b799e9916fbda91f79ba99703c08f007b62",
+  "jobs": {
+    "heldout_seed_2027": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:19:23.813026+00:00",
+      "finished_utc": "2026-10-28T11:20:08.425498+00:00",
+      "duration_seconds": 44.61,
+      "log_path": "results/auto_progress/heldout_seed_2027.log"
+    },
+    "heldout_seed_3031": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:20:30.289680+00:00",
+      "finished_utc": "2026-10-28T11:21:15.624942+00:00",
+      "duration_seconds": 45.34,
+      "log_path": "results/auto_progress/heldout_seed_3031.log"
+    },
+    "stage11_heldout_analysis": {
+      "status": "passed",
+      "started_utc": "2026-10-28T11:21:54.805827+00:00",
+      "finished_utc": "2026-10-28T11:21:54.839579+00:00",
+      "duration_seconds": 0.03,
+      "log_path": "results/auto_progress/stage11_heldout_analysis.log"
+    }
+  },
+  "last_tick_utc": "2026-10-28T11:21:54.772612+00:00",
+  "last_observation": "PASSED stage11_heldout_analysis"
+}

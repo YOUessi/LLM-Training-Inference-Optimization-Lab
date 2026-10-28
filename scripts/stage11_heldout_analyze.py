@@ -93,7 +93,7 @@ def analyze(root: Path) -> dict:
         "status":"pass",
         "not_a_new_gpu_measurement":True,
         "source_git_commit":next(iter(commits)),
-        "heldout_seeds":SEEDS,
+        "heldout_seeds":list(SEEDS),
         "offered":len(results)*24,
         "recorded_12_cases":len(results),
         "raw_cases":results,

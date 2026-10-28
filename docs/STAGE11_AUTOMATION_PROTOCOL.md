@@ -87,3 +87,18 @@ intervals or production SLA guarantees. Same Kubernetes-domain corpus;
 not a cross-domain generalization study. Client-side admission proxy,
 not an internal vLLM scheduler optimization. Rejected requests are SLO
 failures and must be reported without hiding the throughput cost.
+
+## Verified post-run status (append-only, 2026-10-28)
+
+The three pinned, finite approved queue jobs actually ran and passed:
+seed 2027 and seed 3031 each tested 144 real offered requests, then
+a source-matched independent CPU validation summarized all 288 offers.
+The local state records each successful job and execution duration.
+Overall 278 model requests completed, 10 requests were explicitly
+rejected, zero unexpected errors. The queue is now exhausted.
+
+Scheduled status checks remain configured, but the executor is explicitly
+NOT allowed to synthesize new Stage12 algorithms/jobs on its own.
+After GitHub publishes the reviewed research evidence, the local pinned
+revision and archived state must be reconciled before future approvals.
+See STAGE11_REPORT_2026-10-28.md.

@@ -1,0 +1,541 @@
+{
+  "schema": "stage11-heldout-admission-comparison-v1",
+  "status": "pass",
+  "not_a_new_gpu_measurement": true,
+  "source_git_commit": "e5356b799e9916fbda91f79ba99703c08f007b62",
+  "heldout_seeds": [
+    2027,
+    3031
+  ],
+  "offered": 288,
+  "recorded_12_cases": 12,
+  "raw_cases": [
+    {
+      "seed": 2027,
+      "mode": "label",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.425110668442905,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "d64dba03f5d34f212ccddfd1cfb293c7254264c4872bff7b43cfa3e5b523d765",
+      "raw_file": "stage11_seed_2027/label_unlimited_d250_seed2027.json"
+    },
+    {
+      "seed": 2027,
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.388335915286778,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "d07e03bddc44aa834fb8e38c82bc1a90aab7478406df837cdbc2d75bfb5a96c6",
+      "raw_file": "stage11_seed_2027/label_bounded_d150_seed2027.json"
+    },
+    {
+      "seed": 2027,
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.420454051038156,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "68501e56f8d6172325fb66e32bf0f24ced0eb90ef66f166e82870adc3c693a69",
+      "raw_file": "stage11_seed_2027/label_bounded_d400_seed2027.json"
+    },
+    {
+      "seed": 2027,
+      "mode": "detailed",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 0.75,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 809.2599383026447,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 3.0,
+      "sample_count": 26,
+      "sha256": "2bfa3dfbf8633b30bccf58adeb94221ca731c189d35efd80b750dc6c1bf1c164",
+      "raw_file": "stage11_seed_2027/detailed_unlimited_d250_seed2027.json"
+    },
+    {
+      "seed": 2027,
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 24,
+      "completed": 21,
+      "rejected": 3,
+      "all_offered_250ms_slo": 0.875,
+      "all_offered_500ms_slo": 0.875,
+      "useful_output_tokens_per_second": 708.9711660463917,
+      "rejection_reasons": {
+        "deadline_expired": 3
+      },
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 7,
+          "rejected": 1
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 6,
+          "rejected": 2
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 26,
+      "sha256": "bef551b6768668cfbea4f89bb7f369afa3cde8515cf134b85c4b79c88b55cf6a",
+      "raw_file": "stage11_seed_2027/detailed_bounded_d150_seed2027.json"
+    },
+    {
+      "seed": 2027,
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 24,
+      "completed": 23,
+      "rejected": 1,
+      "all_offered_250ms_slo": 0.75,
+      "all_offered_500ms_slo": 0.9583333333333334,
+      "useful_output_tokens_per_second": 775.2949861453553,
+      "rejection_reasons": {
+        "deadline_expired": 1
+      },
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 7,
+          "rejected": 1
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 26,
+      "sha256": "772371f67506dc7c8af842efe4076ecf56a3298522d75cb39c95f3303f179c97",
+      "raw_file": "stage11_seed_2027/detailed_bounded_d400_seed2027.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "label",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.135045708003503,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "10b0a540ad4f831d056cef37f70b33dd32ec7be8cdb9384862f8fd542956ceaa",
+      "raw_file": "stage11_seed_3031/label_unlimited_d250_seed3031.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.133120377819203,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "c6607c5240fe3ca9ea984150a1bbfaed46f080f073b61b07c9460a31880c3ef7",
+      "raw_file": "stage11_seed_3031/label_bounded_d150_seed3031.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 1.0,
+      "all_offered_500ms_slo": 1.0,
+      "useful_output_tokens_per_second": 24.151486578945924,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 20,
+      "sha256": "677ca7331edcb77c8da766acae24e92dcce05fb5a1bbe04e6c08f2cdc7a7e5dc",
+      "raw_file": "stage11_seed_3031/label_bounded_d400_seed3031.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "detailed",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 24,
+      "completed": 24,
+      "rejected": 0,
+      "all_offered_250ms_slo": 0.7083333333333334,
+      "all_offered_500ms_slo": 0.875,
+      "useful_output_tokens_per_second": 734.3945469051067,
+      "rejection_reasons": {},
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        }
+      },
+      "server_peak_waiting_gauge": 5.0,
+      "sample_count": 28,
+      "sha256": "27b3092f271e17240f26786a3e4c4b14146e3a0b075a5d29beb5ee3853800985",
+      "raw_file": "stage11_seed_3031/detailed_unlimited_d250_seed3031.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 24,
+      "completed": 21,
+      "rejected": 3,
+      "all_offered_250ms_slo": 0.875,
+      "all_offered_500ms_slo": 0.875,
+      "useful_output_tokens_per_second": 694.6055968852284,
+      "rejection_reasons": {
+        "deadline_expired": 3
+      },
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 7,
+          "rejected": 1
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 6,
+          "rejected": 2
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 26,
+      "sha256": "cf23999ca079a4aab79ed84df52b6840d46c9b423ce34a1034c241fe1ee26b47",
+      "raw_file": "stage11_seed_3031/detailed_bounded_d150_seed3031.json"
+    },
+    {
+      "seed": 3031,
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 24,
+      "completed": 21,
+      "rejected": 3,
+      "all_offered_250ms_slo": 0.875,
+      "all_offered_500ms_slo": 0.875,
+      "useful_output_tokens_per_second": 699.6550780644068,
+      "rejection_reasons": {
+        "deadline_expired": 2,
+        "queue_full": 1
+      },
+      "by_language": {
+        "en": {
+          "offered": 8,
+          "completed": 7,
+          "rejected": 1
+        },
+        "zh-cn": {
+          "offered": 8,
+          "completed": 8,
+          "rejected": 0
+        },
+        "ja": {
+          "offered": 8,
+          "completed": 6,
+          "rejected": 2
+        }
+      },
+      "server_peak_waiting_gauge": 0.0,
+      "sample_count": 26,
+      "sha256": "1ada72832f02a45e05f41cc83eff33dca3700740230b8c24f4e77b643b431e84",
+      "raw_file": "stage11_seed_3031/detailed_bounded_d400_seed3031.json"
+    }
+  ],
+  "two_seed_aggregate": [
+    {
+      "mode": "label",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 48,
+      "completed": 48,
+      "rejected": 0,
+      "compliant_250ms": 48,
+      "compliance_250ms_fraction": 1.0,
+      "min_useful_output_tps": 24.135045708003503,
+      "max_useful_output_tps": 24.425110668442905,
+      "language_rejections": {
+        "en": 0,
+        "zh-cn": 0,
+        "ja": 0
+      }
+    },
+    {
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 48,
+      "completed": 48,
+      "rejected": 0,
+      "compliant_250ms": 48,
+      "compliance_250ms_fraction": 1.0,
+      "min_useful_output_tps": 24.133120377819203,
+      "max_useful_output_tps": 24.388335915286778,
+      "language_rejections": {
+        "en": 0,
+        "zh-cn": 0,
+        "ja": 0
+      }
+    },
+    {
+      "mode": "label",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 48,
+      "completed": 48,
+      "rejected": 0,
+      "compliant_250ms": 48,
+      "compliance_250ms_fraction": 1.0,
+      "min_useful_output_tps": 24.151486578945924,
+      "max_useful_output_tps": 24.420454051038156,
+      "language_rejections": {
+        "en": 0,
+        "zh-cn": 0,
+        "ja": 0
+      }
+    },
+    {
+      "mode": "detailed",
+      "policy": "unlimited",
+      "deadline_ms": 250,
+      "offered": 48,
+      "completed": 48,
+      "rejected": 0,
+      "compliant_250ms": 35,
+      "compliance_250ms_fraction": 0.7291666666666667,
+      "min_useful_output_tps": 734.3945469051067,
+      "max_useful_output_tps": 809.2599383026447,
+      "language_rejections": {
+        "en": 0,
+        "zh-cn": 0,
+        "ja": 0
+      }
+    },
+    {
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 150,
+      "offered": 48,
+      "completed": 42,
+      "rejected": 6,
+      "compliant_250ms": 42,
+      "compliance_250ms_fraction": 0.875,
+      "min_useful_output_tps": 694.6055968852284,
+      "max_useful_output_tps": 708.9711660463917,
+      "language_rejections": {
+        "en": 2,
+        "zh-cn": 2,
+        "ja": 2
+      }
+    },
+    {
+      "mode": "detailed",
+      "policy": "bounded",
+      "deadline_ms": 400,
+      "offered": 48,
+      "completed": 44,
+      "rejected": 4,
+      "compliant_250ms": 39,
+      "compliance_250ms_fraction": 0.8125,
+      "min_useful_output_tps": 699.6550780644068,
+      "max_useful_output_tps": 775.2949861453553,
+      "language_rejections": {
+        "en": 1,
+        "zh-cn": 0,
+        "ja": 3
+      }
+    }
+  ],
+  "limitations": [
+    "Same Kubernetes domain and Qwen2.5 1.5B model as exploration, held-out arrival seeds only",
+    "Two seeds and 24 offered requests per run do not establish tail-latency confidence intervals",
+    "Client-side semaphore admission, not the vLLM engine scheduling algorithm",
+    "A rejected request is never counted as a timely or completed success"
+  ]
+}

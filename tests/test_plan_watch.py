@@ -127,6 +127,28 @@ class PlanWatchTests(unittest.TestCase):
             self.assertTrue(any("Stage11" in action for action in d["next_executable_actions"]))
             self.assertTrue(any("rejected" in action for action in d["next_executable_actions"]))
 
+    def test_stage11_heldout_published_advances_to_independent_domain(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"docs").mkdir()
+            (root/"docs/ROADMAP.md").write_text("- [x] stage11\\n")
+            for name in ("STAGE5_KV_CAPACITY_REPORT_2026-10-28.md",
+                         "STAGE5_MIXED_CONTEXT_REPORT_2026-10-28.md",
+                         "STAGE6_SLO_FRONTIER_REPORT_2026-10-28.md",
+                         "STAGE6_CAPACITY_MATRIX_REPORT_2026-10-28.md",
+                         "STAGE7_REPORT_2026-10-28.md",
+                         "STAGE8_REPORT_2026-10-28.md",
+                         "STAGE9_REPORT_2026-10-28.md",
+                         "STAGE10_REPORT_2026-10-28.md",
+                         "STAGE11_REPORT_2026-10-28.md"):
+                (root/"docs"/name).write_text("published measured evidence")
+            d=audit(root)
+            self.assertEqual(d["status"],"stage11_heldout_evidence_published")
+            self.assertTrue(d["published_reports"]["Stage 11 held-out report"])
+            self.assertTrue(any("Stage12" in action for action in d["next_executable_actions"]))
+            self.assertTrue(any("queue is exhausted" in action
+                                for action in d["next_executable_actions"]))
+
     def test_watch_summary_and_json(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

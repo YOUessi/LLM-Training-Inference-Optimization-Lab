@@ -150,6 +150,13 @@ A milestone is PASS only with real logs, reproducible command, source commit and
 - [x] Configure GitHub Actions schedule at 10-minute intervals (UTC 07,17,27,37,47,57); run regression, frozen Stage11 CPU preflight, and plan audit.
 - [x] Implement local Tang user-cron tick with immutable approved Git SHA, single-instance flock, GPU/port preflight, bounded runtime and fail-closed state.
 - [x] Freeze held-out seeds 2027 and 3031 and admission deadline A/B (unlimited, 150 ms, 400 ms) with original 24 frozen multilingual requests and full all-offered accounting.
-- [ ] Complete 288 actual held-out GPU requests (144 each seed); preserve results, failures, rejected requests and original measured queue gauges.
-- [ ] Independently analyze both held-out seeds, archive raw reproducible evidence to GitHub, and assess tradeoff instead of selecting only advantageous outcomes.
+- [x] Held-out seeds 2027 and 3031 completed all 288 actual offered requests (278 model completions, 10 explicit rejections, zero unexpected errors); original per-request SSE and server queue metrics preserved.
+- [x] Independent all-offered analysis of 12 held-out cases completed; raw JSON, automation state, SHA256 manifest and Stage11 report archived in GitHub.
 - [ ] Evaluate on non-Kubernetes domain/longer test windows before claiming generalization.
+
+## Stage 12 — Beyond static client admission
+
+- [ ] Create an independent rights-cleared workload outside Kubernetes technical docs; freeze before running GPU tests.
+- [ ] Design workload-aware admission/queue priority using real input-length and output-length estimates, compared with static deadline admission while accounting for all offered and rejected requests.
+- [ ] Use distinct train/tuning versus held-out loads, multiple offered rates, and repeated runs with independent seeds to verify throughput, SLO coverage, language fairness and actual rejection cost.
+- [ ] Report negative results and compare against the simplest static baseline; never promote a method solely because accepted-only P95 improves.

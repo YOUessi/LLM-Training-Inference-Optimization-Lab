@@ -91,7 +91,9 @@ def audit(root: Path) -> dict:
                                 actions.append("Stage11 approved held-out seeds 2027/3031 with 150ms/400ms admission deadlines are queued for the guarded 10-minute Tang user-cron executor; check Tang state.json for actual GPU outcomes.")
                                 actions.append("Run exact CPU preflight and report accepted/rejected/timeout and useful throughput across every offered request, without cherry-picking.")
                             else:
-                                actions.append("Stage11 held-out independent arrival seeds have published real evidence; next expand to a non-Kubernetes domain and longer traces.")
+                                actions.append("Stage11 held-out 288-offer GPU results are published: 278 completed, 10 rejected; the approved finite Tang task queue is exhausted and its 10-minute cron is now status-only.")
+                                actions.append("Stage12 next: freeze a rights-cleared held-out non-Kubernetes workload; implement and independently validate a queue-aware policy against 150ms/400ms fixed-deadline baselines, with all-offered SLO, usefulness and fairness.")
+                                actions.append("Any next GPU job requires reviewed code and a newly approved pinned SHA; no arbitrary autonomous source modification or unsandboxed execution.")
                         else:
                             actions.append("Stage9 client-worker-vs-vLLM-queue A/B has real 288-request evidence: next implement a genuine bounded admission policy and compare all-offered-request SLO, accepted/rejected/timeout counts.")
                             actions.append("Stage10: design a held-out load trial where rejected traffic is never omitted from reported SLO or useful completed throughput.")
@@ -119,7 +121,8 @@ def audit(root: Path) -> dict:
         "gpu_access_available_in_hosted_ci":False,
         "can_execute_remote_tang_from_hosted_ci":False,
         "status":(
-            "stage10_admission_ablation_published" if reports["Stage 10 client admission A/B"]
+            "stage11_heldout_evidence_published" if reports["Stage 11 held-out report"]
+            else "stage10_admission_ablation_published" if reports["Stage 10 client admission A/B"]
             else "stage9_queue_baseline_published" if reports["Stage 9 worker queue isolation"]
             else "stage8_evidence_published" if reports["Stage 8 matched-rate serving"]
             else "stage7_evidence_published" if reports["Stage 7 diverse natural prose"]

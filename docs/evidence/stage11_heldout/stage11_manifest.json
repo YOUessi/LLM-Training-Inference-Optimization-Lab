@@ -1,0 +1,59 @@
+{
+  "schema": "stage11-heldout-admission-gpu-evidence-v1",
+  "date": "2026-10-28",
+  "experiment_source_sha": "e5356b799e9916fbda91f79ba99703c08f007b62",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "engine": "vllm-0.19.1",
+  "model": "Qwen2.5-1.5B-Instruct FP16",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "frozen_prompt_sha256": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "source_domain": "Kubernetes technical documents, 3 languages",
+  "new_heldout_seeds": [
+    2027,
+    3031
+  ],
+  "previously_tuned_seeds": [
+    42,
+    137
+  ],
+  "candidate_deadlines_ms": [
+    150,
+    400
+  ],
+  "baseline_deadline_unused_ms": 250,
+  "offered_rate": 8,
+  "source_data_raw_cases_sha256": {
+    "stage11_seed_2027/label_unlimited_d250_seed2027.json": "d64dba03f5d34f212ccddfd1cfb293c7254264c4872bff7b43cfa3e5b523d765",
+    "stage11_seed_2027/label_bounded_d150_seed2027.json": "d07e03bddc44aa834fb8e38c82bc1a90aab7478406df837cdbc2d75bfb5a96c6",
+    "stage11_seed_2027/label_bounded_d400_seed2027.json": "68501e56f8d6172325fb66e32bf0f24ced0eb90ef66f166e82870adc3c693a69",
+    "stage11_seed_2027/detailed_unlimited_d250_seed2027.json": "2bfa3dfbf8633b30bccf58adeb94221ca731c189d35efd80b750dc6c1bf1c164",
+    "stage11_seed_2027/detailed_bounded_d150_seed2027.json": "bef551b6768668cfbea4f89bb7f369afa3cde8515cf134b85c4b79c88b55cf6a",
+    "stage11_seed_2027/detailed_bounded_d400_seed2027.json": "772371f67506dc7c8af842efe4076ecf56a3298522d75cb39c95f3303f179c97",
+    "stage11_seed_3031/label_unlimited_d250_seed3031.json": "10b0a540ad4f831d056cef37f70b33dd32ec7be8cdb9384862f8fd542956ceaa",
+    "stage11_seed_3031/label_bounded_d150_seed3031.json": "c6607c5240fe3ca9ea984150a1bbfaed46f080f073b61b07c9460a31880c3ef7",
+    "stage11_seed_3031/label_bounded_d400_seed3031.json": "677ca7331edcb77c8da766acae24e92dcce05fb5a1bbe04e6c08f2cdc7a7e5dc",
+    "stage11_seed_3031/detailed_unlimited_d250_seed3031.json": "27b3092f271e17240f26786a3e4c4b14146e3a0b075a5d29beb5ee3853800985",
+    "stage11_seed_3031/detailed_bounded_d150_seed3031.json": "cf23999ca079a4aab79ed84df52b6840d46c9b423ce34a1034c241fe1ee26b47",
+    "stage11_seed_3031/detailed_bounded_d400_seed3031.json": "1ada72832f02a45e05f41cc83eff33dca3700740230b8c24f4e77b643b431e84"
+  },
+  "raw_case_count": 12,
+  "offered": 288,
+  "completed": 278,
+  "rejected": 10,
+  "errors": 0,
+  "analysis_sha256": "7af63c4608c704e1b69c0d45564b3c4bafb0f9b573f2450c413baba8294ef81d",
+  "auto_progress_state_sha256": "55a4b0584c00bf91bbbd009d961f23965a89091e48891acfd84cb1202469638b",
+  "actual_server_logs_sha256": {
+    "2027": {
+      "sha256": "77f6b7cac8e5893d9e44a246275ccf103ab9e8b900c187813b8c77ca825e3b7f",
+      "private_path": "results/stage11_seed_2027/server.log"
+    },
+    "3031": {
+      "sha256": "0d4ca92082234e082156e6f08165ca794df5333a8eaab4e97ba7c1bb6afb99d8",
+      "private_path": "results/stage11_seed_3031/server.log"
+    }
+  },
+  "actual_server_logs_private": true,
+  "cpu_analysis_completed_by_10minute_approved_auto_executor": true,
+  "limitations": "New arrival seeds, same source text domain/model; two seeds not a confidence interval"
+}
