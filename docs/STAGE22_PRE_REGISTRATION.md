@@ -1,0 +1,7 @@
+# Stage22 new-domain benchmark protocol (before GPU measurement)
+
+Purpose: prospective Qwen3-8B-AWQ evaluation of Stage18's K8s-calibrated proxy against FIFO400, SJF400 and original Full Adaptive, on 24 previously unused CPython standard-library documents. New arrival seeds: 9301 and 9309; offered rates 8 and 16 requests/s; four policies with counterbalanced execution order. **16 real GPU cells, 384 offered requests**. All arms share source request identities and arrival schedule inside each paired cell, rejection counts as TTFT SLO failure, and run on the same 16GiB Tang GPU with prefix caching OFF and thinking disabled.
+
+Data: locally installed CPython 3.10 module and member docstrings, PSF attribution and deterministic Qwen3-tokenized 24-request manifest. New *workload source domain* relative to K8s and Project Gutenberg prose, but **not an independently sampled population of user requests** and not necessarily unseen by the pretrained model. Document content and label tasks are synthetic. Claims limited to that domain and these small experimental cells.
+
+Pre-registered decision: report full all-offered 250/500/1000ms TTFT, useful throughput, completion/rejection, and per-mode rejection, then compare the calibrated arm to each baseline without retrospectively moving thresholds. If any case is invalid, preserve raw JSON and fail the 16-cell archive validation; do not promote it as a win. GPU run script `scripts/run_stage22_independent_domain.sh`, source manifest hash recorded in repo before measurement.

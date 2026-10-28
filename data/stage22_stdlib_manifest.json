@@ -1,0 +1,52 @@
+{
+  "schema": "stage22-stdlib-domain-v1",
+  "source": "locally installed CPython standard-library module and member docstrings",
+  "attribution": "Python Software Foundation, CPython standard-library documentation",
+  "rights": "Python Software Foundation License; attribution retained",
+  "copyright_notice": "See https://docs.python.org/3/license.html",
+  "data_process": "deterministic inspect.getdoc member sampling and tokenizer-token truncation",
+  "model_tokenizer": "Qwen3-8B local",
+  "request_count": 24,
+  "request_jsonl_sha256": "a619cc32dd5f3134f91b89e8c0e8953e0521fa4a9d44d6c77392d47c9b808718",
+  "generation_instructions": {
+    "label": "Name only the Python standard-library module described in the source passage, without explanation.",
+    "summary": "Explain the module purpose in two clear sentences, using the provided documentation.",
+    "detailed": "Give a detailed explanation of the module purpose, suitable use cases, and one caveat, based on the documentation. Write about 100 words."
+  },
+  "bucket_counts": {
+    "short": 6,
+    "medium": 6,
+    "long": 6,
+    "very_long": 6
+  },
+  "modules": [
+    "pathlib",
+    "json",
+    "csv",
+    "logging",
+    "argparse",
+    "contextlib",
+    "collections",
+    "itertools",
+    "functools",
+    "datetime",
+    "decimal",
+    "fractions",
+    "typing",
+    "shutil",
+    "tempfile",
+    "socket",
+    "ipaddress",
+    "urllib.parse",
+    "http.client",
+    "sqlite3",
+    "unittest",
+    "hashlib",
+    "statistics",
+    "subprocess"
+  ],
+  "limitations": [
+    "New content domain but documents from local standard library; not externally collected user prompts",
+    "Output questions are synthetic and module names appear in source"
+  ]
+}
