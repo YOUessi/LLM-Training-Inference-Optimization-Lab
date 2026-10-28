@@ -1,0 +1,32 @@
+{
+  "schema": "stage8-frozen-qwen-token-calibrated-v1",
+  "original_corpus_sha256": "d59076782e8fe177eae2b2029bef0f7ce479b86f6fc65214fb60e8e3f734b5c4",
+  "tokenizer_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_id": "Qwen2.5-1.5B-Instruct",
+  "language_counts": {
+    "en": 8,
+    "zh-cn": 8,
+    "ja": 8
+  },
+  "bucket_counts": {
+    "short": 6,
+    "medium": 6,
+    "long": 6,
+    "very_long": 6
+  },
+  "generation_instructions": {
+    "label": "Name the main Kubernetes resource category in a short noun phrase. No explanation.",
+    "summary": "Summarize the technical content in one or two informative sentences.",
+    "detailed": "Give at least 20 distinct numbered technical considerations from the excerpt. Continue until the output limit."
+  },
+  "target_prompt_tokens": {
+    "short": 170,
+    "medium": 300,
+    "long": 470,
+    "very_long": 680
+  },
+  "request_count": 24,
+  "request_jsonl_sha256": "c6d7481c858401c65194f3dfc7d794d510eadf750882be9d8b663489210f237c",
+  "not_a_training_dataset": true,
+  "selection": "fixed 2026 seed by source language and four token budgets"
+}
