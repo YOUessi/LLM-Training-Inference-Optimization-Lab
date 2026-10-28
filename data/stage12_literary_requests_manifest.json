@@ -1,0 +1,66 @@
+{
+  "schema": "stage12-independent-domain-natural-prose-v1",
+  "corpus_origin": "Stage7 30 pinned Project Gutenberg excerpts",
+  "original_corpus_sha256": "2912a4d8cc17789a1b6b339cac927a27ec41f24f7de140d84466ecd441e095ca",
+  "rights": "Source books catalogued as public domain in the United States; consult local copyright rules outside US",
+  "source_project_attribution": "Project Gutenberg and original authors; no affiliation",
+  "source_domain": "English literary and natural science prose, not Kubernetes documentation",
+  "request_count": 24,
+  "genre_counts": {
+    "fantasy": 5,
+    "natural science": 5,
+    "science fiction": 5,
+    "social fiction": 5,
+    "travel fiction": 4
+  },
+  "language_counts": {
+    "en": 24
+  },
+  "bucket_counts": {
+    "short": 6,
+    "medium": 6,
+    "long": 6,
+    "very_long": 6
+  },
+  "tokenizer_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "target_prompt_tokens": {
+    "short": 170,
+    "medium": 300,
+    "long": 470,
+    "very_long": 680
+  },
+  "generation_instructions": {
+    "label": "Name the main topic of the excerpt in a short noun phrase. No explanation.",
+    "summary": "Summarize the passage in two informative sentences.",
+    "detailed": "List at least 20 distinct numbered observations from the excerpt. Continue until the output limit."
+  },
+  "request_jsonl_sha256": "fa338ac75be4795326663b9935fcd1cebbb4e2f1d15ffaa69d6b7a604a0afd04",
+  "source_files_not_refetched": true,
+  "selected_ids": [
+    "pg11-section02",
+    "pg2009-section04",
+    "pg84-section05",
+    "pg1342-section05",
+    "pg103-section03",
+    "pg11-section05",
+    "pg2009-section02",
+    "pg84-section00",
+    "pg1342-section04",
+    "pg103-section00",
+    "pg11-section04",
+    "pg2009-section00",
+    "pg84-section03",
+    "pg1342-section02",
+    "pg103-section04",
+    "pg11-section03",
+    "pg2009-section03",
+    "pg84-section01",
+    "pg1342-section00",
+    "pg103-section05",
+    "pg11-section01",
+    "pg2009-section01",
+    "pg84-section04",
+    "pg1342-section01"
+  ],
+  "not_training_data": true
+}
