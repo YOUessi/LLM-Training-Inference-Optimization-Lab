@@ -23,3 +23,5 @@ FP32/BF16/FP16 autocast and accumulation 1/4 were executed for 15 optimizer step
 - Run larger held-out experiments to compare a newly calibrated scheduler rather than retroactively selecting a winner.
 - Benchmark real Qwen3-8B parameter-efficient fine-tuning under matched effective batches, validating loss and OOM behavior.
 - Use a multi-GPU system for genuine FULL_SHARD measurements. Single-GPU FSDP remains NO_SHARD and cannot meet this goal.
+
+A prospective *developmental* Stage18 variant uses K8s-fitted constants in the proxy and compares against the original Stage14 Full Adaptive on Prose seed8209; the model and workload remain a previously used domain. Its design is not sufficient to validate true GPU service-time prediction, but can detect a regression in real rejection/SLO metrics. Results are not assumed until generated and verified.

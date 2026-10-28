@@ -25,6 +25,7 @@ ABLATIONS = {
     "fifo_dynamic": SchedulerAblation("fifo_dynamic", True, False, False, True),
     "sjf_dynamic": SchedulerAblation("sjf_dynamic", True, True, False, True),
     "full_adaptive": SchedulerAblation("full_adaptive", True, True, True, True),
+    "full_8b_calibrated": SchedulerAblation("full_8b_calibrated", True, True, True, True),
 }
 
 def deadline_ms(config: SchedulerAblation, estimated_ms: float, active: int,
@@ -60,7 +61,9 @@ class AblationAdmissionGate:
         self.cv = threading.Condition()
         self.active = 0
         self.waiters = []
-        self.ewma = BASE_SERVICE_MS.copy()
+        # Frozen cross-domain diagnostic constants, not GPU service timings.
+        self.ewma = ({"label":323.245753,"detailed":2287.51214}
+            if variant=="full_8b_calibrated" else BASE_SERVICE_MS.copy())
         self.completed = {"label":0, "detailed":0}
         self.order = 0
 

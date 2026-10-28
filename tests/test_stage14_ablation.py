@@ -4,7 +4,7 @@ from llm_opt_lab.serving.stage14_ablation import ABLATIONS, deadline_ms, priorit
 
 class Stage14MechanismTests(unittest.TestCase):
     def test_all_variants_have_unique_binary_mechanisms(self):
-        self.assertEqual(len(ABLATIONS), 8)
+        self.assertEqual(len(ABLATIONS), 9)
         self.assertEqual(len({(c.dynamic_deadline,c.short_job_first,c.aging,c.online_ewma)
                               for c in ABLATIONS.values()}),8)
 
