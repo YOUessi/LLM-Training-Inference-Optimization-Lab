@@ -1,0 +1,31 @@
+{
+  "status": "retrospective_cross_domain_diagnostic",
+  "training_source": "k8s FIFO only",
+  "evaluation_source": "prose FIFO only",
+  "metrics": {
+    "label": {
+      "train_n": 17,
+      "test_n": 17,
+      "median_fit_ms": 323.2457529520616,
+      "test_mae_baseline_ms": 504.6860980030298,
+      "test_mae_fitted_ms": 264.0646673766348,
+      "test_median_absolute_error_baseline_ms": 479.29427302417906,
+      "test_median_absolute_error_fitted_ms": 213.35952007211745
+    },
+    "detailed": {
+      "train_n": 17,
+      "test_n": 17,
+      "median_fit_ms": 2287.5121399993077,
+      "test_mae_baseline_ms": 1207.945224535041,
+      "test_mae_fitted_ms": 382.13454241015233,
+      "test_median_absolute_error_baseline_ms": 1323.8037719665022,
+      "test_median_absolute_error_fitted_ms": 435.73396099964157
+    }
+  },
+  "limitations": [
+    "Latency is total client request time rather than model service time",
+    "Domains reused in prior development experiments",
+    "Prediction after fit is constant by output mode; not yet an online scheduler model",
+    "No claim of real scheduling utility improvement"
+  ]
+}
