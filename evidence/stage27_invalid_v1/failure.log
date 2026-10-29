@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/you/projects/llmopt_stage27_frozen/src/llm_opt_lab/kernels/stage27_benchmark.py", line 90, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+  File "/home/you/projects/llmopt_stage27_frozen/src/llm_opt_lab/kernels/stage27_benchmark.py", line 71, in main
+    benchmark(f'fused_rms_rows{rows}_{str(dtype).split(".")[-1]}',f'Qwen3 hidden={cols} rows={rows} dtype={dtype}',
+  File "/home/you/projects/llmopt_stage27_frozen/src/llm_opt_lab/kernels/stage27_benchmark.py", line 35, in benchmark
+    median=triton.testing.do_bench(fn,warmup=a.warmup_ms,rep=a.rep_ms,quantiles=[.5])[0]
+TypeError: 'float' object is not subscriptable
