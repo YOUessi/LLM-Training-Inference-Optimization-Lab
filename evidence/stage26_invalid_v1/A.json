@@ -1,0 +1,55 @@
+{
+  "status": "measured",
+  "kind": "stage26_qwen3_8b_nf4_real_dolly_sft",
+  "action": "train",
+  "dataset_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "splits": {
+    "train": "5861d6911c50b6ced25be4670d157c22f995d22ceb3571b8df97c59aa5686c85",
+    "validation": "4f215251d6e504946508eeee3bef2014b13967a524dcb5ae7948722174712fe7",
+    "test": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127"
+  },
+  "config": {
+    "rank": 8,
+    "micro_batch": 1,
+    "accum": 2,
+    "effective_batch": 2,
+    "precision": "bf16",
+    "grad_checkpoint": false,
+    "steps": 96,
+    "seed": 2610
+  },
+  "trainable_parameters": 3833856,
+  "validation_before": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 2.9525444132662364,
+    "assistant_perplexity": 19.154629069192996,
+    "mean_record_loss": 4.0177808199077845
+  },
+  "notes": [
+    "Human-written Databricks Dolly records, answer-only masked CE",
+    "Small training budget; no full alignment benchmark",
+    "Different-rank experiments have different optimizer capacity; compare with same data/steps"
+  ],
+  "validation_after": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 1.8076579649612692,
+    "assistant_perplexity": 6.096153295460349,
+    "mean_record_loss": 1.445759901078418
+  },
+  "training": {
+    "warmup_steps": 3,
+    "measured_steps": 93,
+    "mean_train_loss": 1.5914561107494338,
+    "final_train_loss": 1.7127400040626526,
+    "median_step_ms": 424.9038029811345,
+    "sample_throughput_per_second": 4.627476355300186,
+    "peak_allocated_gib": 12.718489170074463
+  },
+  "adapter_sha256": {
+    "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+    "adapter_config.json": "58593c441c5b4f8bd3092882dbb95b0c13de2e6b4f88f640e13d6e50031c70c0",
+    "adapter_model.safetensors": "0ef020a8adb1862030549e1cd1fe72409478ddf3ec717c11f384a9fdc7962f8f"
+  }
+}
