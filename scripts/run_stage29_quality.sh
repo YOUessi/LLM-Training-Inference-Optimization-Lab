@@ -14,7 +14,7 @@ mkdir -p "$out";echo "$sha" > "$out/source_sha.txt"
 export PYTHONPATH="$PWD/src" HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
 /home/you/venvs/llm-opt-qlora/bin/python -m llm_opt_lab.training.stage29_instruction_quality \
  --adapter evidence/stage26_sft_v2/selected_B_adapter --input data --limit 96 \
- --out "$out/paired_generated_quality.json" > "$out/progress.log" 2>&1 || {tail -40 "$out/progress.log";exit 4;}
+ --out "$out/paired_generated_quality.json" > "$out/progress.log" 2>&1 || { tail -40 "$out/progress.log";exit 4; }
 python3 - "$out/paired_generated_quality.json" <<'PY'
 import sys,json
 x=json.load(open(sys.argv[1]));assert x['status']=='measured' and x['total_cases']==96 and len(x['cases'])==96
