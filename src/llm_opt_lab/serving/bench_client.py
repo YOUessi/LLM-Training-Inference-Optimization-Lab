@@ -82,11 +82,16 @@ def _endpoint(base_url: str) -> str:
 def _request(index: int, *, endpoint: str, model: str, prompt: str,
              max_tokens: int, timeout: float, seed: int | None,
              response_instruction: str = "Answer in one short sentence.",
-             disable_thinking: bool = False) -> dict[str, Any]:
-    unique_prompt = f"{prompt}\nTask id: {index:04d}. {response_instruction}"
+             disable_thinking: bool = False,
+             raw_prompt: bool = False,
+             system_prompt: str | None = None) -> dict[str, Any]:
+    unique_prompt = prompt if raw_prompt else f"{prompt}\nTask id: {index:04d}. {response_instruction}"
+    messages = ([{"role": "system", "content": system_prompt}] if system_prompt else []) + [
+        {"role": "user", "content": unique_prompt}
+    ]
     payload: dict[str, Any] = {
         "model": model,
-        "messages": [{"role": "user", "content": unique_prompt}],
+        "messages": messages,
         "max_tokens": max_tokens,
         "temperature": 0.0,
         "stream": True,
