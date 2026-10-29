@@ -1,0 +1,141 @@
+{
+  "schema": "dolly-instruction-sft-v1",
+  "dataset": "databricks/databricks-dolly-15k",
+  "source_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl",
+  "download_via": "hf-mirror.com verified by official source SHA256",
+  "source_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "license": "CC-BY-SA-3.0",
+  "attribution": "Copyright (2023) Databricks, Inc.; Wikipedia contributors for relevant referenced contexts",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "model_tokenizer": "/home/you/models/Qwen3-8B (local)",
+  "format": "Qwen3 no-thinking chat template; assistant-only loss; complete, not truncated, 384-token max",
+  "seed": 2601029,
+  "max_sequence_tokens": 384,
+  "original_rows": 15011,
+  "category_counts": {
+    "brainstorming": {
+      "qualified_records": 1734,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "classification": {
+      "qualified_records": 2116,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "closed_qa": {
+      "qualified_records": 1072,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "creative_writing": {
+      "qualified_records": 590,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "general_qa": {
+      "qualified_records": 1994,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "information_extraction": {
+      "qualified_records": 725,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "open_qa": {
+      "qualified_records": 3633,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    },
+    "summarization": {
+      "qualified_records": 606,
+      "selected_each": {
+        "train": 64,
+        "validation": 12,
+        "test": 12
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 512,
+      "sha256": "5861d6911c50b6ced25be4670d157c22f995d22ceb3571b8df97c59aa5686c85",
+      "per_category": {
+        "classification": 64,
+        "closed_qa": 64,
+        "creative_writing": 64,
+        "general_qa": 64,
+        "open_qa": 64,
+        "summarization": 64,
+        "brainstorming": 64,
+        "information_extraction": 64
+      },
+      "mean_prompt_tokens": 76.48,
+      "mean_answer_tokens": 66.94
+    },
+    "validation": {
+      "rows": 96,
+      "sha256": "4f215251d6e504946508eeee3bef2014b13967a524dcb5ae7948722174712fe7",
+      "per_category": {
+        "information_extraction": 12,
+        "general_qa": 12,
+        "closed_qa": 12,
+        "open_qa": 12,
+        "summarization": 12,
+        "creative_writing": 12,
+        "brainstorming": 12,
+        "classification": 12
+      },
+      "mean_prompt_tokens": 79.83,
+      "mean_answer_tokens": 73.82
+    },
+    "test": {
+      "rows": 96,
+      "sha256": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127",
+      "per_category": {
+        "information_extraction": 12,
+        "brainstorming": 12,
+        "creative_writing": 12,
+        "closed_qa": 12,
+        "classification": 12,
+        "open_qa": 12,
+        "general_qa": 12,
+        "summarization": 12
+      },
+      "mean_prompt_tokens": 76.39,
+      "mean_answer_tokens": 68.11
+    }
+  },
+  "filtered_reasons": {
+    "token_length": 2338,
+    "duplicate_instruction_context": 203
+  },
+  "holdout_policy": "no training on validation/test; selection by normalized instruction+context identity; fixed before experiment",
+  "caveats": [
+    "Dataset is public but could overlap pretrained Qwen knowledge",
+    "Limited subset and 384-token filter bias sample distribution",
+    "No human preference scoring or safety-alignment ground truth"
+  ]
+}
