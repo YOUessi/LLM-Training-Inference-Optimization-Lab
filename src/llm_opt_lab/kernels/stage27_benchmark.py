@@ -32,8 +32,9 @@ def main(argv=None):
   for key,fn in [('pytorch_eager',fn_eager),('torch_compile',fn_compiled),('custom_triton',fn_triton)]:
    samples=[]
    for rep in range(3):
-    median=triton.testing.do_bench(fn,warmup=a.warmup_ms,rep=a.rep_ms,quantiles=[.5])[0]
-    samples.append(float(median))
+    raw=triton.testing.do_bench(fn,warmup=a.warmup_ms,rep=a.rep_ms,quantiles=[.5])
+    median=float(raw[0] if isinstance(raw,(tuple,list)) else raw)
+    samples.append(median)
    timings[key]={'median_ms':statistics.median(samples),'repeats_ms':samples}
   tri=timings['custom_triton']['median_ms'];compiletime=timings['torch_compile']['median_ms'];eager=timings['pytorch_eager']['median_ms']
   entry={'name':label,'workload':description,'numerical_max_abs_error':error,'atol':atol,'rtol':rtol,
