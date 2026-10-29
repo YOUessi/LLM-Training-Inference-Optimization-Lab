@@ -1,0 +1,26 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.52s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.80s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.89s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.77s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.18s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+SFT_STEP 1 loss 2.0266 time_s 0.2898
+SFT_STEP 9 loss 2.6469 time_s 0.2613
+SFT_STEP 17 loss 2.0123 time_s 0.2512
+SFT_STEP 25 loss 1.9444 time_s 0.1625
+SFT_STEP 33 loss 2.2341 time_s 0.1763
+SFT_STEP 41 loss 0.3073 time_s 0.1779
+SFT_STEP 49 loss 2.3248 time_s 0.1668
+SFT_STEP 57 loss 1.7949 time_s 0.2473
+SFT_STEP 65 loss 0.9646 time_s 0.3266
+SFT_STEP 73 loss 0.7207 time_s 0.2627
+SFT_STEP 81 loss 1.3675 time_s 0.1799
+SFT_STEP 89 loss 1.4064 time_s 0.3216
+SFT_STEP 97 loss 1.8755 time_s 0.1856
+SFT_STEP 105 loss 0.1837 time_s 0.244
+SFT_STEP 113 loss 0.3113 time_s 0.2644
+SFT_STEP 121 loss 2.4871 time_s 0.3277
+SFT_STEP 129 loss 1.799 time_s 0.1593
+SFT_STEP 137 loss 0.5224 time_s 0.1768
+SFT_STEP 145 loss 1.6775 time_s 0.2551
+SFT_STEP 153 loss 0.2313 time_s 0.1793
+SFT_STEP 161 loss 0.6455 time_s 0.2654
+SFT_STEP 169 loss 2.7083 time_s 0.187
+SFT_STEP 177 loss 0.573 time_s 0.1876
+SFT_STEP 185 loss 1.7393 time_s 0.2629
+STAGE26_RESULT train {'count': 96, 'target_tokens': 7087, 'assistant_ce_nats': 1.7915750324733464, 'assistant_perplexity': 5.998893481516224, 'mean_record_loss': 1.434219101133446} None

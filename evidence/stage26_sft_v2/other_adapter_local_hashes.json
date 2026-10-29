@@ -1,0 +1,26 @@
+{
+  "status": "locally_preserved_nonselected_weights_not_in_repository",
+  "by_variant": {
+    "A": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "58593c441c5b4f8bd3092882dbb95b0c13de2e6b4f88f640e13d6e50031c70c0",
+      "adapter_model.safetensors": "048f28d6ef4018d7e4753838f8d4767ebd434a1daa3bf032c8be165c3d11dd00"
+    },
+    "C": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "9b84d66f8ebeda5d1a247d0b42b0b0e9160005968c6549227651707fcef7f1d0",
+      "adapter_model.safetensors": "50e6686e4fffd814b795fdb698c6777e5d5cfe021d6adf2ad041afb0506f7f01"
+    },
+    "D": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "58593c441c5b4f8bd3092882dbb95b0c13de2e6b4f88f640e13d6e50031c70c0",
+      "adapter_model.safetensors": "7e562bf8c498db0ddbec32f75d5473391561424e9e697273d9fd886100d805fe"
+    },
+    "E": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "58593c441c5b4f8bd3092882dbb95b0c13de2e6b4f88f640e13d6e50031c70c0",
+      "adapter_model.safetensors": "f0ae8170f8c60f7e063a9bd598f859a47ff24064b7d8486b9c388b307c0835ee"
+    }
+  },
+  "note": "Source/dataset and config reproduce these adapters; each adapter remains in Tang ignored results under frozen source"
+}

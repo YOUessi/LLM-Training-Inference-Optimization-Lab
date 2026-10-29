@@ -1,0 +1,137 @@
+{
+  "status": "pass",
+  "source_commit": "ecae34f3673ebc86d03f096902be05e406219ad5",
+  "dataset_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "valid_train_candidates": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "auxiliary_not_used_for_selection": "C",
+  "selected": "B",
+  "training": {
+    "A": {
+      "configuration": {
+        "rank": 8,
+        "micro_batch": 1,
+        "accum": 2,
+        "effective_batch": 2,
+        "precision": "bf16",
+        "grad_checkpoint": false,
+        "steps": 96,
+        "seed": 2610
+      },
+      "trainable_parameters": 3833856,
+      "base_val_ce": 2.9525444132662364,
+      "val_ce": 1.8077003462838028,
+      "val_perplexity": 6.096411663974339,
+      "val_ce_improvement": 1.1448440669824336,
+      "effective_tokens_seen_estimate": null,
+      "throughput_samples_per_second": 4.63770857278657,
+      "peak_gpu_allocated_gib": 12.718489170074463,
+      "median_update_ms": 424.45789999328554
+    },
+    "B": {
+      "configuration": {
+        "rank": 16,
+        "micro_batch": 1,
+        "accum": 2,
+        "effective_batch": 2,
+        "precision": "bf16",
+        "grad_checkpoint": false,
+        "steps": 96,
+        "seed": 2610
+      },
+      "trainable_parameters": 7667712,
+      "base_val_ce": 2.9525444132662364,
+      "val_ce": 1.7994272151776105,
+      "val_perplexity": 6.046183310366664,
+      "val_ce_improvement": 1.153117198088626,
+      "effective_tokens_seen_estimate": null,
+      "throughput_samples_per_second": 4.600332329706754,
+      "peak_gpu_allocated_gib": 12.78301477432251,
+      "median_update_ms": 427.2874869639054
+    },
+    "C": {
+      "configuration": {
+        "rank": 8,
+        "micro_batch": 1,
+        "accum": 1,
+        "effective_batch": 1,
+        "precision": "bf16",
+        "grad_checkpoint": false,
+        "steps": 192,
+        "seed": 2610
+      },
+      "trainable_parameters": 3833856,
+      "base_val_ce": 2.9525444132662364,
+      "val_ce": 1.7915750324733464,
+      "val_perplexity": 5.998893481516224,
+      "val_ce_improvement": 1.16096938079289,
+      "effective_tokens_seen_estimate": null,
+      "throughput_samples_per_second": 4.589040638732639,
+      "peak_gpu_allocated_gib": 12.704206943511963,
+      "median_update_ms": 187.56774300709367
+    },
+    "D": {
+      "configuration": {
+        "rank": 8,
+        "micro_batch": 1,
+        "accum": 2,
+        "effective_batch": 2,
+        "precision": "bf16",
+        "grad_checkpoint": true,
+        "steps": 96,
+        "seed": 2610
+      },
+      "trainable_parameters": 3833856,
+      "base_val_ce": 2.9525444132662364,
+      "val_ce": 1.8078542977715515,
+      "val_perplexity": 6.0973502878693555,
+      "val_ce_improvement": 1.144690115494685,
+      "effective_tokens_seen_estimate": null,
+      "throughput_samples_per_second": 3.3893528156812294,
+      "peak_gpu_allocated_gib": 10.02820110321045,
+      "median_update_ms": 584.9793209927157
+    },
+    "E": {
+      "configuration": {
+        "rank": 8,
+        "micro_batch": 1,
+        "accum": 2,
+        "effective_batch": 2,
+        "precision": "fp16",
+        "grad_checkpoint": false,
+        "steps": 96,
+        "seed": 2610
+      },
+      "trainable_parameters": 3833856,
+      "base_val_ce": 2.9539951829861835,
+      "val_ce": 1.8075413589084688,
+      "val_perplexity": 6.0954424885303,
+      "val_ce_improvement": 1.1464538240777147,
+      "effective_tokens_seen_estimate": null,
+      "throughput_samples_per_second": 4.602336652285109,
+      "peak_gpu_allocated_gib": 12.719007968902588,
+      "median_update_ms": 430.09427696233615
+    }
+  },
+  "test": {
+    "heldout_records": 96,
+    "base_ce": 2.8145398792733403,
+    "selected_ce": 1.636892302007071,
+    "base_perplexity": 16.68549667095518,
+    "selected_perplexity": 5.139173670284962,
+    "generated_examples": 12,
+    "reference_overlap_f1": 0.3470755778069983
+  },
+  "limitations": [
+    "Original microbatch2/no-GC was CUDA OOM and is EXCLUDED",
+    "Auxiliary C equal approximate examples but twice optimizer updates; not controlled quality comparison",
+    "No human quality/semantic judge; reference token overlap is weak",
+    "Dataset may overlap pretraining and sample subset is small",
+    "Validation 96/test96 both fixed, only test selected once"
+  ]
+}
