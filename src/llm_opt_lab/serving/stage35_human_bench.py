@@ -4,7 +4,7 @@ Original user text is never copied into returned JSON or committed to GitHub.
 The raw 96 messages live in ignored results only after provenance/PII filters.
 """
 from __future__ import annotations
-import argparse,collections,hashlib,json,random,statistics,sys,threading,time
+import argparse,collections,hashlib,json,random,statistics,sys,threading,time,urllib.request
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from llm_opt_lab.provenance import environment,write_json_atomic
@@ -54,6 +54,22 @@ def prepare(rows,seed,mix):
  if len(out)!=96 or sum(x['prefix_state']=='hot' for x in out)!=MIXES[mix]:raise ValueError('bad hot mix')
  return out
 
+def prefix_cache_counters(base_url='http://127.0.0.1:8026'):
+ """Read actual vLLM Prefix Cache query/hit token counters; not proxy usage."""
+ with urllib.request.urlopen(base_url+'/metrics',timeout=5) as response:
+  body=response.read().decode('utf-8')
+ keys={'vllm:prefix_cache_queries_total':'queries','vllm:prefix_cache_hits_total':'hits'}
+ found={}
+ for line in body.splitlines():
+  if not line or line.startswith('#'):continue
+  field=line.split('{',1)[0].split(' ',1)[0]
+  if field not in keys:continue
+  value=float(line.rsplit(None,1)[-1])
+  if value<0 or not __import__('math').isfinite(value):raise ValueError('invalid cache counter')
+  found[keys[field]]=value
+ if set(found)!={'queries','hits'}:raise ValueError('missing true vLLM cache hit/query counters')
+ return found
+
 def main(argv=None):
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('--mix',choices=tuple(MIXES),required=True)
@@ -84,6 +100,7 @@ def main(argv=None):
   warm=_request(-1,endpoint=endpoint,model=a.model,prompt='What is five plus three?',
      max_tokens=24,timeout=90.,seed=a.seed,disable_thinking=True,raw_prompt=True)
   if warm['status']!='ok':raise ValueError('pre-run unrelated warmup failure')
+  before_prefix=prefix_cache_counters()
   offsets=schedule(a.seed,a.rate,N,kind='fixed_window')
   kv=[];queues=[];stop=threading.Event()
   sampler=threading.Thread(target=sample_kv_metrics,args=('http://127.0.0.1:8026',stop,kv,queues),daemon=True)
@@ -109,6 +126,11 @@ def main(argv=None):
   finally:
    stop.set();sampler.join(timeout=3.)
   elapsed=time.perf_counter()-start
+  after_prefix=prefix_cache_counters()
+  queries=max(0.,after_prefix['queries']-before_prefix['queries'])
+  hits=max(0.,after_prefix['hits']-before_prefix['hits'])
+  if hits>queries+1e-6:raise ValueError('impossible cache counters')
+  real_hit_rate=(hits/queries if queries>0 else None)
   summary=summarise(recorded,elapsed)
   prompt_usage=all(r['status']=='ok' and isinstance(r.get('prompt_tokens'),int) and
       abs(r['prompt_tokens']-r['target_prompt_tokens'])<=80 and isinstance(r.get('completion_tokens'),int)
@@ -132,6 +154,8 @@ def main(argv=None):
       'output_cap':a.max_output,'scheduled_offsets_s':offsets,
       'raw_user_prompts_committed':False,'source_license':'OpenAssistant Apache-2.0'},
     'summary':summary,'by_language':by_lang,
+    'observed_vllm_prefix_cache':{'queries_tokens':queries,'hit_tokens':hits,'hit_fraction':real_hit_rate,
+      'before':before_prefix,'after':after_prefix,'definition':'actual vLLM token counters; null when caching queries unavailable'},
     'completion_cap_fraction':sum(r['completion_tokens']>=a.max_output for r in recorded if r['status']=='ok')/max(1,summary['completed']),
     'prompt_usage_valid':prompt_usage,
     'kv_cache_monitor':{'samples':len(kv),'max_used_fraction':max((r['kv_usage'] for r in kv),default=None)},
