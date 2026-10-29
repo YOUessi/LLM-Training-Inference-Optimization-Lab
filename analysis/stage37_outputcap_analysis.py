@@ -15,6 +15,10 @@ def analyze(longdir:Path,shortdir:Path):
   if key in cases:raise ValueError('duplicate case')
   if not (x['status']=='measured' and s['offered']==s['completed']==96 and s['errors']==s['rejected']==0):raise ValueError('invalid case '+str(p))
   if c['output_cap']!=384 or c['rate_per_second']!=4.:raise ValueError('not preregistered 384 token 4/s')
+  cache_stats=d.get('observed_vllm_prefix_cache')
+  if not isinstance(cache_stats,dict):raise ValueError('missing direct vLLM token hit counters')
+  if c['cache']=='on' and not cache_stats['queries_tokens']>0:raise ValueError('cache-on must have actual token queries')
+  if cache_stats['hit_tokens']>cache_stats['queries_tokens']+1e-6:raise ValueError('impossible measured cache hits')
   if c['mix'] not in ('cold0','hot50') or c['seed'] not in SEEDS:raise ValueError('unknown treatment')
   if x['environment']['git_commit']!=source or not x['prompt_usage_valid']:raise ValueError('source/token gate')
   cases[key]=x
@@ -28,7 +32,10 @@ def analyze(longdir:Path,shortdir:Path):
    paired.append({'seed':seed,'mix':mix,'relative_tps_gain':t['useful_output_tokens_per_second']/s['useful_output_tokens_per_second']-1,
     'delta_slo500':t['slo_all_offered']['500']['compliance_fraction']-s['slo_all_offered']['500']['compliance_fraction'],
     'delta_p95_ttft_ms':t['p95_arrival_ttft_ms']-s['p95_arrival_ttft_ms'],
-    'off_hit_cap':a['completion_cap_fraction'],'on_hit_cap':b['completion_cap_fraction']})
+    'off_hit_cap':a['completion_cap_fraction'],'on_hit_cap':b['completion_cap_fraction'],
+    'cache_on_actual_prefix_hit_fraction':b['observed_vllm_prefix_cache']['hit_fraction'],
+    'cache_on_hit_tokens':b['observed_vllm_prefix_cache']['hit_tokens'],
+    'cache_on_queries_tokens':b['observed_vllm_prefix_cache']['queries_tokens']})
    if mix=='hot50':
     for cache,condition in [('off',a),('on',b)]:
      q=shortdir/f'seed{seed}_hot50_rate4_{cache}.json'
@@ -47,7 +54,7 @@ def analyze(longdir:Path,shortdir:Path):
  for mix in ('cold0','hot50'):
   subset=[r for r in paired if r['mix']==mix]
   aggregate[mix]={}
-  for field in ('relative_tps_gain','delta_slo500','delta_p95_ttft_ms','off_hit_cap','on_hit_cap'):
+  for field in ('relative_tps_gain','delta_slo500','delta_p95_ttft_ms','off_hit_cap','on_hit_cap','cache_on_actual_prefix_hit_fraction'):
    vals=[r[field] for r in subset];draws=sorted(statistics.mean(vals[rng.randrange(3)] for _ in range(3)) for _ in range(4000))
    aggregate[mix][field]={'mean':statistics.mean(vals),'per_seed':vals,'bootstrap_seed_95pct':[draws[100],draws[3899]]}
  return {'status':'pass','kind':'stage37_longer_real_user_responses_384_cap_cache_and_truncation',
