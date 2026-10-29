@@ -61,13 +61,14 @@ def main():
    tokens=tok.apply_chat_template([{'role':'user','content':user}],tokenize=True,
       add_generation_prompt=True,enable_thinking=False)
    x=torch.tensor([tokens],device='cuda')
+   attention=torch.ones_like(x)
    before=time.perf_counter()
    with model.disable_adapter():
-    base_ids=model.generate(x,max_new_tokens=128,do_sample=False,pad_token_id=tok.eos_token_id)
+    base_ids=model.generate(x,attention_mask=attention,max_new_tokens=128,do_sample=False,pad_token_id=tok.eos_token_id)
    base_generated=tok.decode(base_ids[0,len(tokens):],skip_special_tokens=True)
    base_latency=time.perf_counter()-before
    before=time.perf_counter()
-   tuned_ids=model.generate(x,max_new_tokens=128,do_sample=False,pad_token_id=tok.eos_token_id)
+   tuned_ids=model.generate(x,attention_mask=attention,max_new_tokens=128,do_sample=False,pad_token_id=tok.eos_token_id)
    tuned_generated=tok.decode(tuned_ids[0,len(tokens):],skip_special_tokens=True)
    tuned_latency=time.perf_counter()-before
    ref=row['response']

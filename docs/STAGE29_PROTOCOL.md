@@ -6,3 +6,6 @@ Token overlap/ROUGE-L compare to a single reference and **do not establish seman
 
 ### Rerun amendment
 The first frozen script `9f35956` exited before any GPU work with a Bash parser bug (`|| {tail` lacking whitespace). Its exact log and source are archived in `evidence/stage29_invalid_v1`. The corrected rerun uses a new pinned SHA; no old results exist or are merged.
+
+### Attention-mask repeatability amendment
+The v2 source `3e83f20` was stopped during first generation on the HuggingFace warning that `pad_token_id==eos_token_id` does not allow inference of an attention mask. Single-example prompts were unpadded but the complete 96-case measurement is rerun with an **explicit all-ones attention mask**, removing an ambiguity that might affect evaluation. Original interrupted log and source retained in `evidence/stage29_invalid_v2`. The previous run made no output JSON and is not used.
