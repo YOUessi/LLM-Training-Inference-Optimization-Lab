@@ -1,0 +1,140 @@
+{
+  "status": "pass",
+  "kind": "real_transformer_full_optimizer_rng_async_restart_v1",
+  "model": "Qwen2.5-1.5B-Instruct BF16, LoRA Q/V rank8",
+  "exact_final_adapter_and_optimizer": true,
+  "runs": [
+    {
+      "label": "continuous",
+      "steps": 12,
+      "loss_final": 4.616733551025391,
+      "adapter_hash": "f5813c5b240e58e334c2086840c15947205e218ee68b184a1ef6fa8df9d26ddb",
+      "optimizer_hash": "69e0928799c9e83f13b307acc2254a1fdeeecc7869f6ddce6d1fecb558eab76e",
+      "median_step_ms": 56.93442199844867,
+      "avg_step_ms": 58.301102893892676,
+      "checkpoint_synchronous_copy_ms": [],
+      "training_samples_per_second": 17.152334181739036,
+      "peak_allocated_gib": 3.004714012145996,
+      "restarted_from_step": 0
+    },
+    {
+      "label": "sync_checkpoints",
+      "steps": 12,
+      "loss_final": 4.616733551025391,
+      "adapter_hash": "f5813c5b240e58e334c2086840c15947205e218ee68b184a1ef6fa8df9d26ddb",
+      "optimizer_hash": "69e0928799c9e83f13b307acc2254a1fdeeecc7869f6ddce6d1fecb558eab76e",
+      "median_step_ms": 60.056376503780484,
+      "avg_step_ms": 68.71682830387726,
+      "checkpoint_synchronous_copy_ms": [
+        27.646531991194934,
+        24.560999998357147,
+        24.621035030577332,
+        23.432788031641394
+      ],
+      "training_samples_per_second": 14.552476077298467,
+      "peak_allocated_gib": 3.004714012145996,
+      "restarted_from_step": 0
+    },
+    {
+      "label": "async_checkpoints",
+      "steps": 12,
+      "loss_final": 4.616733551025391,
+      "adapter_hash": "f5813c5b240e58e334c2086840c15947205e218ee68b184a1ef6fa8df9d26ddb",
+      "optimizer_hash": "69e0928799c9e83f13b307acc2254a1fdeeecc7869f6ddce6d1fecb558eab76e",
+      "median_step_ms": 62.481837492669,
+      "avg_step_ms": 68.43657538411207,
+      "checkpoint_synchronous_copy_ms": [
+        5.374748958274722,
+        5.22514502517879,
+        5.246912012808025,
+        5.5941950413398445
+      ],
+      "training_samples_per_second": 14.612069560572364,
+      "peak_allocated_gib": 3.004714012145996,
+      "restarted_from_step": 0
+    },
+    {
+      "label": "recovered_async",
+      "steps": 12,
+      "loss_final": 4.616733551025391,
+      "adapter_hash": "f5813c5b240e58e334c2086840c15947205e218ee68b184a1ef6fa8df9d26ddb",
+      "optimizer_hash": "69e0928799c9e83f13b307acc2254a1fdeeecc7869f6ddce6d1fecb558eab76e",
+      "median_step_ms": 59.68813700019382,
+      "avg_step_ms": 61.17978870170191,
+      "checkpoint_synchronous_copy_ms": [
+        5.183437024243176,
+        5.395708023570478
+      ],
+      "training_samples_per_second": 16.34526730511872,
+      "peak_allocated_gib": 3.0091910362243652,
+      "restarted_from_step": 6
+    }
+  ],
+  "checkpoints_verified": [
+    {
+      "case": "sync_checkpoints",
+      "step": 3,
+      "bytes": 13215032,
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582"
+    },
+    {
+      "case": "sync_checkpoints",
+      "step": 6,
+      "bytes": 13215032,
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec"
+    },
+    {
+      "case": "sync_checkpoints",
+      "step": 9,
+      "bytes": 13215032,
+      "sha256": "a844bf14489bcb19a209471de47671978b35384b36b2aadaffefab43ac2b0ffd"
+    },
+    {
+      "case": "sync_checkpoints",
+      "step": 12,
+      "bytes": 13215032,
+      "sha256": "6e86b9b5864ec474c6fffce7b97ac49a76db9b35edbacf1dd4d9882e65839a0d"
+    },
+    {
+      "case": "async_checkpoints",
+      "step": 3,
+      "bytes": 13215032,
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582"
+    },
+    {
+      "case": "async_checkpoints",
+      "step": 6,
+      "bytes": 13215032,
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec"
+    },
+    {
+      "case": "async_checkpoints",
+      "step": 9,
+      "bytes": 13215032,
+      "sha256": "a844bf14489bcb19a209471de47671978b35384b36b2aadaffefab43ac2b0ffd"
+    },
+    {
+      "case": "async_checkpoints",
+      "step": 12,
+      "bytes": 13215032,
+      "sha256": "6e86b9b5864ec474c6fffce7b97ac49a76db9b35edbacf1dd4d9882e65839a0d"
+    },
+    {
+      "case": "recovered_async",
+      "step": 3,
+      "bytes": 13215032,
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582"
+    },
+    {
+      "case": "recovered_async",
+      "step": 6,
+      "bytes": 13215032,
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec"
+    }
+  ],
+  "limitations": [
+    "Small real Transformer adapter workload, not distributed or Qwen3-8B QLoRA",
+    "CPU snapshot is synchronous and included in timing; writer is asynchronous only for disk serialization",
+    "Single hardware / no repeated independent sessions"
+  ]
+}

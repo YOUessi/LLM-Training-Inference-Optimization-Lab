@@ -1,0 +1,5 @@
+STAGE28_EXACT_RESTART_PASS 4 runs 10 checkpoint_files
+continuous 56.93 f5813c5b240e
+sync_checkpoints 60.06 f5813c5b240e
+async_checkpoints 62.48 f5813c5b240e
+recovered_async 59.69 f5813c5b240e

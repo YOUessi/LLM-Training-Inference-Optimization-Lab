@@ -1,0 +1,63 @@
+{
+  "schema": "stage28-10-gpu-checkpoints-v1",
+  "all_checkpoints": [
+    {
+      "path": "async_checkpoints/step_000003.pt",
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "async_checkpoints/step_000006.pt",
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "async_checkpoints/step_000009.pt",
+      "sha256": "a844bf14489bcb19a209471de47671978b35384b36b2aadaffefab43ac2b0ffd",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "async_checkpoints/step_000012.pt",
+      "sha256": "6e86b9b5864ec474c6fffce7b97ac49a76db9b35edbacf1dd4d9882e65839a0d",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "recovered_async/step_000003.pt",
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "recovered_async/step_000006.pt",
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "sync_checkpoints/step_000003.pt",
+      "sha256": "4957cc3807c92792c09cecde0d0ea835073b811d761f50e9d7d818e9e33f7582",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "sync_checkpoints/step_000006.pt",
+      "sha256": "61e1e8196ebfe218921cc0508c37a0a613e0f1ba7181d6a013022b053e0280ec",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "sync_checkpoints/step_000009.pt",
+      "sha256": "a844bf14489bcb19a209471de47671978b35384b36b2aadaffefab43ac2b0ffd",
+      "size_bytes": 13215032
+    },
+    {
+      "path": "sync_checkpoints/step_000012.pt",
+      "sha256": "6e86b9b5864ec474c6fffce7b97ac49a76db9b35edbacf1dd4d9882e65839a0d",
+      "size_bytes": 13215032
+    }
+  ],
+  "published_representatives": [
+    "async_checkpoints/step_000006.pt",
+    "async_checkpoints/step_000012.pt",
+    "recovered_async/step_000006.pt"
+  ],
+  "full_original_archive_on_tang": "/home/you/projects/llmopt_stage28_frozen/results/stage28_real_transformer_fullstate/stage28_checkpoints",
+  "full_archive_not_all_published": true,
+  "reason": "All ten verified checkpoints occupy ~127 MiB; all ten stay immutable locally; sufficient representative sample+hash list published"
+}
