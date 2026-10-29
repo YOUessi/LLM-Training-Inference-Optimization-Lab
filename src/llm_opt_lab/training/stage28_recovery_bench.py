@@ -58,6 +58,8 @@ def restore(checkpoint,model,opt,gen):
 def train_run(label,root,save_mode='none',split=False,seed=28008):
  import torch
  model,opt,data,gen=init_model(seed)
+ import torch
+ torch.cuda.reset_peak_memory_stats()
  writer=AtomicTrainingCheckpoint(root/label,async_write=save_mode=='async') if save_mode!='none' else None
  start_step=0;losses=[];step_ms=[];snap_ms=[]
  for step in range(12):
