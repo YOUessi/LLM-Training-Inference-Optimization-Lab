@@ -11,13 +11,22 @@ def analyze(source:Path,data_root:Path):
  if test['test_metrics']['count']!=96 or test['base_test_metrics']['count']!=96:raise ValueError('incomplete final holdout')
  if test['dataset_sha256']!=manifest['source_sha256']:raise ValueError('dataset source SHA drift')
  subset=['A','B','D','E'];qualified={}
+ nonselected_manifest=source/'other_adapter_local_hashes.json'
+ preserved_hashes=json.loads(nonselected_manifest.read_text())['by_variant'] if nonselected_manifest.exists() else {}
+ skipped_nonselected=[]
  for name,x in experiments.items():
   if x['status']!='measured' or x['action']!='train' or x['dataset_sha256']!=manifest['source_sha256']:raise ValueError('invalid candidate '+name)
   if x['splits']!={k:v['sha256'] for k,v in manifest['splits'].items()}:raise ValueError('split drift '+name)
   if x['validation_after']['count']!=96 or x['validation_before']['count']!=96:raise ValueError('unpaired validation '+name)
   if x['training']['measured_steps']!=x['config']['steps']-3:raise ValueError('incomplete optimization '+name)
   for fname,sha in x['adapter_sha256'].items():
-   if hashlib.sha256((source/f'{name}_adapter'/fname).read_bytes()).hexdigest()!=sha:raise ValueError('adapter SHA mismatch '+name+'/'+fname)
+   blob=(source/'selected_B_adapter'/fname if name==selection['selected'] and (source/'selected_B_adapter').exists()
+         else source/f'{name}_adapter'/fname)
+   if blob.is_file():
+    if hashlib.sha256(blob.read_bytes()).hexdigest()!=sha:raise ValueError('adapter SHA mismatch '+name+'/'+fname)
+   elif name!=selection['selected'] and preserved_hashes.get(name,{}).get(fname)==sha:
+    skipped_nonselected.append(name+'/'+fname)
+   else:raise ValueError('missing or unverified selected adapter '+name+'/'+fname)
   qualified[name]=x['validation_after']['assistant_ce_nats']<x['validation_before']['assistant_ce_nats']
  if not any(qualified[n] for n in subset):raise ValueError('no validation improvement')
  actual=min((n for n in subset if qualified[n]),key=lambda n:experiments[n]['validation_after']['assistant_ce_nats'])
@@ -35,6 +44,7 @@ def analyze(source:Path,data_root:Path):
  return {'status':'pass','source_commit':(source/'source_sha').read_text().strip(),'dataset_sha256':manifest['source_sha256'],
   'valid_train_candidates':list(experiments),'auxiliary_not_used_for_selection':'C',
   'selected':actual,'training':train_metrics,
+  'nonselected_local_only_hash_manifest_paths':skipped_nonselected,
   'test':{'heldout_records':96,'base_ce':test['base_test_metrics']['assistant_ce_nats'],
           'selected_ce':test['test_metrics']['assistant_ce_nats'],
           'base_perplexity':test['base_test_metrics']['assistant_perplexity'],
@@ -43,7 +53,8 @@ def analyze(source:Path,data_root:Path):
           'reference_overlap_f1':test['generated_samples']['mean_reference_token_overlap_f1']},
   'limitations':['Original microbatch2/no-GC was CUDA OOM and is EXCLUDED','Auxiliary C equal approximate examples but twice optimizer updates; not controlled quality comparison',
      'No human quality/semantic judge; reference token overlap is weak','Dataset may overlap pretraining and sample subset is small',
-     'Validation 96/test96 both fixed, only test selected once']}
+     'Validation 96/test96 both fixed, only test selected once',
+     'Unpublished non-selected adapter blobs are not GitHub blob-verified; hashes were checked against Tang local originals in frozen source experiment']}
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--source',type=Path,required=True);ap.add_argument('--data-root',type=Path,default=Path('data'));ap.add_argument('--out',type=Path,required=True);a=ap.parse_args()
