@@ -7,6 +7,7 @@
 - [x] Stage26: verified official Dolly license/source SHA and 512/96/96 frozen split; 5 real 8B QLoRA configurations, one validation-selected rank16 adapter, single-use final 96-example test. First attempt microbatch2 OOM archived; amended C auxiliary excluded from fair ranking.
 - [x] Stage27: fused residual+weighted RMSNorm and causal materialized Softmax across actual Qwen3 model dimensions, compared to eager and torch.compile over 8 real CUDA cases; raw profiler/correctness evidence.
 - [x] Stage28: full adapter+optimizer+data/CPU/CUDA RNG state checkpoint and exact step6 restart on a real pretrained Transformer adapter; four measured paths, hashes, negative speed-tradeoff evidence.
+- [x] Stage29: 96 frozen test base-versus-selected Qwen3-8B greedy answer pairs, category-level lexical-reference evaluation. Clear net ROUGE-L improvement but creative-writing declines. No semantic factual/human preference claim.
 - [ ] Production-like serving traffic/cold-prefix behavior, more arrival seeds, confidence intervals, model end-to-end kernel replacement and deployment SLO.
 - [ ] More real-task SFT data exposure and task-level human or robust semantic evaluation, outside the 96 fixed Dolly test.
 - [ ] True multi-GPU DDP/FSDP FULL_SHARD and distributed checkpoint restart **blocked** on single 16GiB RTX 4090 Laptop.

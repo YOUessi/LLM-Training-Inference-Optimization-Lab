@@ -10,6 +10,7 @@ An independent, reproducible systems engineering lab for **LLM inference serving
 | Stage26 real SFT | CC BY-SA Databricks Dolly deterministic 512/96/96 split; five Qwen3-8B NF4 QLoRA experiments; validation selects rank16 BF16; 96-item test assistant CE 2.815→1.637 | [Stage26 measured report](docs/STAGE26_MEASURED_RESULTS.md) |
 | Stage27 GPU kernels | Eight Qwen3-shaped fused residual+RMSNorm and materialized masked Softmax microbenchmarks, correctness vs eager and torch.compile; conditional 1.14–1.18× vs Inductor on 256×4096 | [Stage27 report](docs/STAGE27_MEASURED_RESULTS.md) |
 | Stage28 train framework | Four real Transformer LoRA training paths, all exact adapter/optimizer/loss equality after resumed async checkpoint, all 10 original snapshots SHA-verified | [Stage28 report](docs/STAGE28_MEASURED_RESULTS.md) |
+| Stage29 frozen generation | 96 paired Qwen3-8B base vs validation-selected rank16 QLoRA outputs; reference ROUGE-L F1 0.240→0.367, with negative creative-writing category | [Stage29 measured quality](docs/STAGE29_MEASURED_RESULTS.md) |
 
 The original Stage13 10-minute cron became unsafe after source changes (`SOURCE_DRIFT`) and was **disabled**, with its prior crontab archived locally. Stage25–28 instead use **finite source-pinned GPU-locked fail-closed scripts** from detached worktrees; they do not silently restart, overlap jobs, or update from mutable GitHub code.
 

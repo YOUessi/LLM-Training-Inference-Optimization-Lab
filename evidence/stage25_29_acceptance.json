@@ -1,0 +1,54 @@
+{
+  "status": "research_artifact_evidence_pass_not_production_approved",
+  "workstreams": {
+    "stage25_8b_serving": {
+      "status": "pass",
+      "verified_offered": 528,
+      "valid_cases": 22,
+      "shared_prefix_cache_relative_tps_gain": 0.9226221197431982,
+      "caveat": "Engineered shared prefix; not production traffic"
+    },
+    "stage26_real_sft": {
+      "status": "pass",
+      "five_training_trials": 5,
+      "licensed_frozen_test": 96,
+      "selected_rank16_test_ce": 1.636892302007071,
+      "untuned_base_test_ce": 2.8145398792733403,
+      "caveat": "Short 192-exposure training, limited reference quality evaluation"
+    },
+    "stage27_qwen3_shapes": {
+      "status": "pass",
+      "correctness_checked_gpu_cases": 8,
+      "fused_bf16_256_vs_inductor_speedup": 1.1748251862110934,
+      "caveat": "Microbenchmarks; not end-to-end model replacement"
+    },
+    "stage28_async_checkpoint": {
+      "status": "pass",
+      "training_modes": 4,
+      "saved_checkpoints_verified": 10,
+      "exact_optimizer_and_adapters": true,
+      "caveat": "No throughput win guaranteed; single-GPU"
+    },
+    "stage29_generative_quality": {
+      "status": "pass",
+      "paired_cases": 96,
+      "quality_proxy_ROUGE_L_change": 0.12743533632325962,
+      "creative_writing_ROUGE_L_change": -0.01442408486619906,
+      "caveat": "Lexical reference overlap, not human semantic quality"
+    }
+  },
+  "open_critical_gates": [
+    "Production traffic generalization, longer multi-seed uncertainty intervals, cold/warm cache hit verification",
+    "SFT task-level semantic/human preference and longer complete-data training",
+    "Kernel end-to-end transformer integration and Nsight Compute hardware counters",
+    "Multi-GPU genuine FSDP FULL_SHARD and distributed checkpoint scaling unavailable on current single GPU"
+  ],
+  "excluded_invalid_experiments": [
+    "stage25_invalid_v1 detailed-output length failed",
+    "stage26_invalid_v1 microbatch2 CUDA OOM",
+    "stage27_invalid_v1 Triton timing API mismatch",
+    "stage29_invalid_v1 shell syntax failure",
+    "stage29_invalid_v2 missing attention_mask interrupted"
+  ],
+  "note": "This verifies evidence contracts, not production SLO or research significance."
+}

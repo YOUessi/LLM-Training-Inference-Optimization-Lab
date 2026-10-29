@@ -54,6 +54,7 @@ def audit(root:Path):
   if q['total_cases']!=96 or q['status']!='measured':raise ValueError('incomplete 96 case generation')
   output['workstreams']['stage29_generative_quality']={'status':'pass','paired_cases':96,
         'quality_proxy_ROUGE_L_change':q['overall']['paired_diff']['rouge_l_f1'],
+        'creative_writing_ROUGE_L_change':q['per_category']['creative_writing']['paired_diff']['rouge_l_f1'],
         'caveat':'Lexical reference overlap, not human semantic quality'}
  else:output['workstreams']['stage29_generative_quality']={'status':'pending_separate_gpu_evaluation'}
  return output
