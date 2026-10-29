@@ -1,0 +1,2754 @@
+{
+  "status": "measured",
+  "kind": "stage32_64_stratified_independent_xnli_semantic_proxy",
+  "judge_checkpoint": "/home/you/.cache/huggingface/hub/models--MoritzLaurer--mDeBERTa-v3-base-mnli-xnli/snapshots/8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c",
+  "judge_id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "judge_task": "Natural-language inference, not human factual evaluation",
+  "model_generations_sha256": "2bf9c7c66223dbf31c0840b5b1a1b4f434487ba2b3bef7ac452aa500cdad7852",
+  "test_source_sha256": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127",
+  "cases": [
+    {
+      "identity_sha256": "4383230e0c02d3896ba54652ac255ea5114424b02a1c24c99cc3b8a58c13b85f",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2486486486486487,
+            "exact": 0,
+            "output_words": 78
+          },
+          "reference_entails_candidate": 0.007259979844093323,
+          "candidate_entails_reference": 0.010319793596863747,
+          "reference_contradicts_candidate": 0.0018510009394958615,
+          "mutual_entailment_mean": 0.008789886720478535
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.31111111111111106,
+            "exact": 0,
+            "output_words": 73
+          },
+          "reference_entails_candidate": 0.03511771932244301,
+          "candidate_entails_reference": 0.016597209498286247,
+          "reference_contradicts_candidate": 0.012219834141433239,
+          "mutual_entailment_mean": 0.025857464410364628
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.29906542056074764,
+            "exact": 0,
+            "output_words": 107
+          },
+          "reference_entails_candidate": 0.04822113364934921,
+          "candidate_entails_reference": 0.015093422494828701,
+          "reference_contradicts_candidate": 0.018179863691329956,
+          "mutual_entailment_mean": 0.03165727807208896
+        }
+      }
+    },
+    {
+      "identity_sha256": "1af20addfddc27492594a533ed60de19d46cd94ff85d5f25046bf6f0c3800721",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.17142857142857143,
+            "exact": 0,
+            "output_words": 77
+          },
+          "reference_entails_candidate": 0.011456549167633057,
+          "candidate_entails_reference": 0.12516064941883087,
+          "reference_contradicts_candidate": 0.014379759319126606,
+          "mutual_entailment_mean": 0.06830859929323196
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.22857142857142854,
+            "exact": 0,
+            "output_words": 42
+          },
+          "reference_entails_candidate": 0.0748169869184494,
+          "candidate_entails_reference": 0.06863848119974136,
+          "reference_contradicts_candidate": 0.8426491022109985,
+          "mutual_entailment_mean": 0.07172773405909538
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.4647887323943662,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.954105794429779,
+          "candidate_entails_reference": 0.9134728312492371,
+          "reference_contradicts_candidate": 0.011659068986773491,
+          "mutual_entailment_mean": 0.9337893128395081
+        }
+      }
+    },
+    {
+      "identity_sha256": "d24aea039c9fea85828f09d64e1fd066b298e53bf70252d3fce16837c4e7da2e",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.24299065420560748,
+            "exact": 0,
+            "output_words": 83
+          },
+          "reference_entails_candidate": 0.2015586644411087,
+          "candidate_entails_reference": 0.013225714676082134,
+          "reference_contradicts_candidate": 0.009007062762975693,
+          "mutual_entailment_mean": 0.10739218955859542
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.2155688622754491,
+            "exact": 0,
+            "output_words": 36
+          },
+          "reference_entails_candidate": 0.19467347860336304,
+          "candidate_entails_reference": 0.023840343579649925,
+          "reference_contradicts_candidate": 0.2329951673746109,
+          "mutual_entailment_mean": 0.10925691109150648
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.19161676646706585,
+            "exact": 0,
+            "output_words": 36
+          },
+          "reference_entails_candidate": 0.08335652947425842,
+          "candidate_entails_reference": 0.02259817346930504,
+          "reference_contradicts_candidate": 0.037440456449985504,
+          "mutual_entailment_mean": 0.05297735147178173
+        }
+      }
+    },
+    {
+      "identity_sha256": "f8b8322e06fcd942dcb4802226716b7ff62867b390ef590d139a69a8692d800e",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.0821917808219178,
+            "exact": 0,
+            "output_words": 66
+          },
+          "reference_entails_candidate": 0.0009916159324347973,
+          "candidate_entails_reference": 0.12015094608068466,
+          "reference_contradicts_candidate": 0.0040749916806817055,
+          "mutual_entailment_mean": 0.06057128100655973
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.4615384615384615,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9227399826049805,
+          "candidate_entails_reference": 0.3419173061847687,
+          "reference_contradicts_candidate": 0.0031616745982319117,
+          "mutual_entailment_mean": 0.6323286443948746
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.4615384615384615,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9227399826049805,
+          "candidate_entails_reference": 0.3419173061847687,
+          "reference_contradicts_candidate": 0.0031616745982319117,
+          "mutual_entailment_mean": 0.6323286443948746
+        }
+      }
+    },
+    {
+      "identity_sha256": "858a1ae27c7aace3767e7596479db0060a785ca699ef20d41cbedb3265296b81",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.049999999999999996,
+            "exact": 0,
+            "output_words": 70
+          },
+          "reference_entails_candidate": 0.006265959236770868,
+          "candidate_entails_reference": 0.0031243108678609133,
+          "reference_contradicts_candidate": 0.1628863364458084,
+          "mutual_entailment_mean": 0.004695135052315891
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.22222222222222224,
+            "exact": 0,
+            "output_words": 35
+          },
+          "reference_entails_candidate": 0.009198132902383804,
+          "candidate_entails_reference": 0.38387930393218994,
+          "reference_contradicts_candidate": 0.95583176612854,
+          "mutual_entailment_mean": 0.19653871841728687
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.14545454545454545,
+            "exact": 0,
+            "output_words": 45
+          },
+          "reference_entails_candidate": 0.08519945293664932,
+          "candidate_entails_reference": 0.014794263057410717,
+          "reference_contradicts_candidate": 0.5565689206123352,
+          "mutual_entailment_mean": 0.04999685799703002
+        }
+      }
+    },
+    {
+      "identity_sha256": "fbe507b0fa95bbeea69f0c25a5ce6229e74d35fdfcdfb4b88a228b0b95a61bdb",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.15950920245398775,
+            "exact": 0,
+            "output_words": 95
+          },
+          "reference_entails_candidate": 0.06543344259262085,
+          "candidate_entails_reference": 0.010499818250536919,
+          "reference_contradicts_candidate": 0.05417237803339958,
+          "mutual_entailment_mean": 0.037966630421578884
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.27956989247311825,
+            "exact": 0,
+            "output_words": 25
+          },
+          "reference_entails_candidate": 0.013810732401907444,
+          "candidate_entails_reference": 0.0037158175837248564,
+          "reference_contradicts_candidate": 0.9613900780677795,
+          "mutual_entailment_mean": 0.00876327499281615
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.27956989247311825,
+            "exact": 0,
+            "output_words": 25
+          },
+          "reference_entails_candidate": 0.013810732401907444,
+          "candidate_entails_reference": 0.0037158175837248564,
+          "reference_contradicts_candidate": 0.9613900780677795,
+          "mutual_entailment_mean": 0.00876327499281615
+        }
+      }
+    },
+    {
+      "identity_sha256": "f70bb658d26782197b835e52119588e4f6541397f7ae5e8d68d1715a57e654ef",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.19696969696969696,
+            "exact": 0,
+            "output_words": 91
+          },
+          "reference_entails_candidate": 0.0021060968283563852,
+          "candidate_entails_reference": 0.0005768820410594344,
+          "reference_contradicts_candidate": 0.004606381058692932,
+          "mutual_entailment_mean": 0.0013414894347079098
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.15384615384615385,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.00024507250054739416,
+          "candidate_entails_reference": 0.0002875123464036733,
+          "reference_contradicts_candidate": 0.985023021697998,
+          "mutual_entailment_mean": 0.0002662924234755337
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.15384615384615385,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.00024507250054739416,
+          "candidate_entails_reference": 0.0002875123464036733,
+          "reference_contradicts_candidate": 0.985023021697998,
+          "mutual_entailment_mean": 0.0002662924234755337
+        }
+      }
+    },
+    {
+      "identity_sha256": "9c68b4017c47a4848d579a9a815c74a313fc184a1eb4e0b588b0373c85739ac8",
+      "category": "brainstorming",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2828282828282828,
+            "exact": 0,
+            "output_words": 78
+          },
+          "reference_entails_candidate": 0.013516963459551334,
+          "candidate_entails_reference": 0.06752140074968338,
+          "reference_contradicts_candidate": 0.06688939034938812,
+          "mutual_entailment_mean": 0.04051918210461736
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.3870967741935483,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.15166522562503815,
+          "candidate_entails_reference": 0.018765779212117195,
+          "reference_contradicts_candidate": 0.7624748349189758,
+          "mutual_entailment_mean": 0.08521550241857767
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.45161290322580644,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.5351212024688721,
+          "candidate_entails_reference": 0.014025790616869926,
+          "reference_contradicts_candidate": 0.3857138454914093,
+          "mutual_entailment_mean": 0.274573496542871
+        }
+      }
+    },
+    {
+      "identity_sha256": "8d08f775ebf92c6ab555a58f13536030d5e5cc420e6b674611b688ea3bb79463",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.5,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.9783093929290771,
+          "candidate_entails_reference": 0.9952946305274963,
+          "reference_contradicts_candidate": 0.002855827333405614,
+          "mutual_entailment_mean": 0.9868020117282867
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.8421052631578948,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.9951985478401184,
+          "candidate_entails_reference": 0.9845806956291199,
+          "reference_contradicts_candidate": 0.0005072596250101924,
+          "mutual_entailment_mean": 0.9898896217346191
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.888888888888889,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9955000281333923,
+          "candidate_entails_reference": 0.9895688891410828,
+          "reference_contradicts_candidate": 0.0007817611331120133,
+          "mutual_entailment_mean": 0.9925344586372375
+        }
+      }
+    },
+    {
+      "identity_sha256": "54a0a446ed882c1b704f9ed4e0a4cb8aa460c5a087aaadd410519e6b9ab32b5c",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 87
+          },
+          "reference_entails_candidate": 0.020360613241791725,
+          "candidate_entails_reference": 0.012718959711492062,
+          "reference_contradicts_candidate": 0.01742531731724739,
+          "mutual_entailment_mean": 0.016539786476641893
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.907053530216217,
+          "candidate_entails_reference": 0.011152380146086216,
+          "reference_contradicts_candidate": 0.002122220816090703,
+          "mutual_entailment_mean": 0.45910295518115163
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 31
+          },
+          "reference_entails_candidate": 0.04611201584339142,
+          "candidate_entails_reference": 0.01640979014337063,
+          "reference_contradicts_candidate": 0.8812267184257507,
+          "mutual_entailment_mean": 0.03126090299338102
+        }
+      }
+    },
+    {
+      "identity_sha256": "9a44cacd523069e5df6088a3cf37fe7d99cc34aa12b9d4a87b2ff1938a55170b",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.1518987341772152,
+            "exact": 0,
+            "output_words": 73
+          },
+          "reference_entails_candidate": 0.017299802973866463,
+          "candidate_entails_reference": 0.5201390981674194,
+          "reference_contradicts_candidate": 0.03458865359425545,
+          "mutual_entailment_mean": 0.26871945057064295
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9944578409194946,
+          "candidate_entails_reference": 0.9944578409194946,
+          "reference_contradicts_candidate": 0.0008062954875640571,
+          "mutual_entailment_mean": 0.9944578409194946
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9944578409194946,
+          "candidate_entails_reference": 0.9944578409194946,
+          "reference_contradicts_candidate": 0.0008062954875640571,
+          "mutual_entailment_mean": 0.9944578409194946
+        }
+      }
+    },
+    {
+      "identity_sha256": "2a6fce52620f2b5097f58e7cf1891f0578d1b50d508561b7dbba6de22d24fe83",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2597402597402597,
+            "exact": 0,
+            "output_words": 67
+          },
+          "reference_entails_candidate": 0.048736706376075745,
+          "candidate_entails_reference": 0.3148983418941498,
+          "reference_contradicts_candidate": 0.3848704695701599,
+          "mutual_entailment_mean": 0.18181752413511276
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9889262914657593,
+          "candidate_entails_reference": 0.9855493903160095,
+          "reference_contradicts_candidate": 0.003097653156146407,
+          "mutual_entailment_mean": 0.9872378408908844
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.04630199447274208,
+          "candidate_entails_reference": 0.02070554345846176,
+          "reference_contradicts_candidate": 0.9479289054870605,
+          "mutual_entailment_mean": 0.03350376896560192
+        }
+      }
+    },
+    {
+      "identity_sha256": "f5183b843328d6974c782c7a8beb51f8f65f82e6af43fb1a23f87ba447df6c09",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.11214953271028039,
+            "exact": 0,
+            "output_words": 91
+          },
+          "reference_entails_candidate": 0.0041248612105846405,
+          "candidate_entails_reference": 0.03585757315158844,
+          "reference_contradicts_candidate": 0.011725901626050472,
+          "mutual_entailment_mean": 0.01999121718108654
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.875,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.1503773331642151,
+          "candidate_entails_reference": 0.4418064057826996,
+          "reference_contradicts_candidate": 0.8198481202125549,
+          "mutual_entailment_mean": 0.29609186947345734
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.875,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.9290730357170105,
+          "candidate_entails_reference": 0.9486279487609863,
+          "reference_contradicts_candidate": 0.036391254514455795,
+          "mutual_entailment_mean": 0.9388504922389984
+        }
+      }
+    },
+    {
+      "identity_sha256": "321425c95e68ec5ade498f7444b0abbf519093687299bff776be20ddce745d96",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.11764705882352942,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.008477483876049519,
+          "candidate_entails_reference": 0.006153745576739311,
+          "reference_contradicts_candidate": 0.005145466420799494,
+          "mutual_entailment_mean": 0.007315614726394415
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.7058823529411764,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.9564548134803772,
+          "candidate_entails_reference": 0.11566343903541565,
+          "reference_contradicts_candidate": 0.035855378955602646,
+          "mutual_entailment_mean": 0.5360591262578964
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.09935154765844345,
+          "candidate_entails_reference": 0.07501282542943954,
+          "reference_contradicts_candidate": 0.892824649810791,
+          "mutual_entailment_mean": 0.0871821865439415
+        }
+      }
+    },
+    {
+      "identity_sha256": "770c0ae041016482bc7a39b0a8b70c020bdf31bda5f61fd4617dc5a3d96e428b",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.12612612612612611,
+            "exact": 0,
+            "output_words": 81
+          },
+          "reference_entails_candidate": 0.0675278753042221,
+          "candidate_entails_reference": 0.1974315196275711,
+          "reference_contradicts_candidate": 0.1838434636592865,
+          "mutual_entailment_mean": 0.1324796974658966
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.7636363636363636,
+            "exact": 0,
+            "output_words": 25
+          },
+          "reference_entails_candidate": 0.987986147403717,
+          "candidate_entails_reference": 0.9467759132385254,
+          "reference_contradicts_candidate": 0.004409021232277155,
+          "mutual_entailment_mean": 0.9673810303211212
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.7407407407407408,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.9888380765914917,
+          "candidate_entails_reference": 0.8921715021133423,
+          "reference_contradicts_candidate": 0.004454180132597685,
+          "mutual_entailment_mean": 0.940504789352417
+        }
+      }
+    },
+    {
+      "identity_sha256": "b5dbd04599b8e279ac8c623fdc3647fa94dd297ca7f2fdffdb656d6985273eae",
+      "category": "classification",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.15,
+            "exact": 0,
+            "output_words": 74
+          },
+          "reference_entails_candidate": 0.005169754382222891,
+          "candidate_entails_reference": 0.9465654492378235,
+          "reference_contradicts_candidate": 0.0057001118548214436,
+          "mutual_entailment_mean": 0.4758676018100232
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.7499999999999999,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9602710604667664,
+          "candidate_entails_reference": 0.4017583131790161,
+          "reference_contradicts_candidate": 0.030635666102170944,
+          "mutual_entailment_mean": 0.6810146868228912
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.7499999999999999,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9602710604667664,
+          "candidate_entails_reference": 0.4017583131790161,
+          "reference_contradicts_candidate": 0.030635666102170944,
+          "mutual_entailment_mean": 0.6810146868228912
+        }
+      }
+    },
+    {
+      "identity_sha256": "4dabea44ff87187b360a3b71f6a5598a82e419dbfee5332d8b62cfdb41e4cbc3",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3888888888888889,
+            "exact": 0,
+            "output_words": 27
+          },
+          "reference_entails_candidate": 0.001982810441404581,
+          "candidate_entails_reference": 0.11264913529157639,
+          "reference_contradicts_candidate": 0.01635492965579033,
+          "mutual_entailment_mean": 0.05731597286649048
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.3636363636363636,
+            "exact": 0,
+            "output_words": 2
+          },
+          "reference_entails_candidate": 0.22607728838920593,
+          "candidate_entails_reference": 0.02532133460044861,
+          "reference_contradicts_candidate": 0.032116591930389404,
+          "mutual_entailment_mean": 0.12569931149482727
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.4545454545454546,
+            "exact": 0,
+            "output_words": 13
+          },
+          "reference_entails_candidate": 0.0005471094627864659,
+          "candidate_entails_reference": 0.15810588002204895,
+          "reference_contradicts_candidate": 0.0014006155543029308,
+          "mutual_entailment_mean": 0.07932649474241771
+        }
+      }
+    },
+    {
+      "identity_sha256": "ead826e8dd16745ed26991f093e0bc84a17afded3c392648f15a6e1fe2b9ed64",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.15094339622641506,
+            "exact": 0,
+            "output_words": 49
+          },
+          "reference_entails_candidate": 0.004152283538132906,
+          "candidate_entails_reference": 0.9331897497177124,
+          "reference_contradicts_candidate": 0.0006529362872242928,
+          "mutual_entailment_mean": 0.46867101662792265
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.4444444444444445,
+            "exact": 0,
+            "output_words": 14
+          },
+          "reference_entails_candidate": 0.002276519313454628,
+          "candidate_entails_reference": 0.9873499274253845,
+          "reference_contradicts_candidate": 0.0008213285473175347,
+          "mutual_entailment_mean": 0.4948132233694196
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.4444444444444445,
+            "exact": 0,
+            "output_words": 14
+          },
+          "reference_entails_candidate": 0.002276519313454628,
+          "candidate_entails_reference": 0.9873499274253845,
+          "reference_contradicts_candidate": 0.0008213285473175347,
+          "mutual_entailment_mean": 0.4948132233694196
+        }
+      }
+    },
+    {
+      "identity_sha256": "ee7125cb05ce342796224380ee8492a35eed43c13e85f0a947d55ca3dd64780a",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.17699115044247787,
+            "exact": 0,
+            "output_words": 94
+          },
+          "reference_entails_candidate": 0.8570298552513123,
+          "candidate_entails_reference": 0.9147330522537231,
+          "reference_contradicts_candidate": 0.0037562798243016005,
+          "mutual_entailment_mean": 0.8858814537525177
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.12903225806451615,
+            "exact": 0,
+            "output_words": 12
+          },
+          "reference_entails_candidate": 0.0005732827703468502,
+          "candidate_entails_reference": 0.042510565370321274,
+          "reference_contradicts_candidate": 0.30456462502479553,
+          "mutual_entailment_mean": 0.021541924070334062
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.12903225806451615,
+            "exact": 0,
+            "output_words": 12
+          },
+          "reference_entails_candidate": 0.000609452894423157,
+          "candidate_entails_reference": 0.04246624931693077,
+          "reference_contradicts_candidate": 0.2873925566673279,
+          "mutual_entailment_mean": 0.021537851105676964
+        }
+      }
+    },
+    {
+      "identity_sha256": "ec28fd044c696e3e472f7adb71acb2a3d16896699cf253573f6fa746de9b7009",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.23809523809523805,
+            "exact": 0,
+            "output_words": 107
+          },
+          "reference_entails_candidate": 0.005066792014986277,
+          "candidate_entails_reference": 0.5505706667900085,
+          "reference_contradicts_candidate": 0.0021783781703561544,
+          "mutual_entailment_mean": 0.2778187294024974
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.35714285714285715,
+            "exact": 0,
+            "output_words": 9
+          },
+          "reference_entails_candidate": 0.023375846445560455,
+          "candidate_entails_reference": 0.0013486637035384774,
+          "reference_contradicts_candidate": 0.010354338213801384,
+          "mutual_entailment_mean": 0.012362255074549466
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.47368421052631576,
+            "exact": 0,
+            "output_words": 57
+          },
+          "reference_entails_candidate": 0.0022607813589274883,
+          "candidate_entails_reference": 0.3420266807079315,
+          "reference_contradicts_candidate": 0.004616231191903353,
+          "mutual_entailment_mean": 0.1721437310334295
+        }
+      }
+    },
+    {
+      "identity_sha256": "d90efe6b2154824a98753f9f01e56cc6da26bd3eaef5a17ad130d553e7aea720",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.7222222222222223,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0008262839983217418,
+          "candidate_entails_reference": 0.9963929057121277,
+          "reference_contradicts_candidate": 0.000740528223104775,
+          "mutual_entailment_mean": 0.4986095948552247
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.7222222222222223,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0007193644996732473,
+          "candidate_entails_reference": 0.9963287711143494,
+          "reference_contradicts_candidate": 0.0007299319258891046,
+          "mutual_entailment_mean": 0.4985240678070113
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.7222222222222223,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0007193644996732473,
+          "candidate_entails_reference": 0.9963287711143494,
+          "reference_contradicts_candidate": 0.0007299319258891046,
+          "mutual_entailment_mean": 0.4985240678070113
+        }
+      }
+    },
+    {
+      "identity_sha256": "c5b0fb4e9b4717312eca62d832bbc16ef377a5a6c9101b84770e62490131df7a",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.41791044776119407,
+            "exact": 0,
+            "output_words": 44
+          },
+          "reference_entails_candidate": 0.07782988250255585,
+          "candidate_entails_reference": 0.9839207530021667,
+          "reference_contradicts_candidate": 0.008243405260145664,
+          "mutual_entailment_mean": 0.5308753177523613
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.6666666666666667,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.9950850605964661,
+          "candidate_entails_reference": 0.9220093488693237,
+          "reference_contradicts_candidate": 0.0009203624213114381,
+          "mutual_entailment_mean": 0.9585472047328949
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.6666666666666667,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.9950850605964661,
+          "candidate_entails_reference": 0.9220093488693237,
+          "reference_contradicts_candidate": 0.0009203624213114381,
+          "mutual_entailment_mean": 0.9585472047328949
+        }
+      }
+    },
+    {
+      "identity_sha256": "3a023aee0c88e1b7dcb37336b1394d61b1fe09177bd83ae62dd50c14bf7308fb",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3870967741935483,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.0021834473591297865,
+          "candidate_entails_reference": 0.9862646460533142,
+          "reference_contradicts_candidate": 0.007829474285244942,
+          "mutual_entailment_mean": 0.494224046706222
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.8235294117647058,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9683631062507629,
+          "candidate_entails_reference": 0.994222104549408,
+          "reference_contradicts_candidate": 0.0007095463224686682,
+          "mutual_entailment_mean": 0.9812926054000854
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.8235294117647058,
+            "exact": 0,
+            "output_words": 10
+          },
+          "reference_entails_candidate": 0.9683631062507629,
+          "candidate_entails_reference": 0.994222104549408,
+          "reference_contradicts_candidate": 0.0007095463224686682,
+          "mutual_entailment_mean": 0.9812926054000854
+        }
+      }
+    },
+    {
+      "identity_sha256": "325904fa1d7f86ca1ed341478ff179571e640d80e4d183d9d22a591a320bb6ce",
+      "category": "closed_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.16494845360824742,
+            "exact": 0,
+            "output_words": 89
+          },
+          "reference_entails_candidate": 0.0016177929937839508,
+          "candidate_entails_reference": 0.03079243190586567,
+          "reference_contradicts_candidate": 0.0212764423340559,
+          "mutual_entailment_mean": 0.01620511244982481
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.5714285714285715,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0030309425201267004,
+          "candidate_entails_reference": 0.9916462302207947,
+          "reference_contradicts_candidate": 0.03383025899529457,
+          "mutual_entailment_mean": 0.4973385863704607
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.5714285714285715,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0030309425201267004,
+          "candidate_entails_reference": 0.9916462302207947,
+          "reference_contradicts_candidate": 0.03383025899529457,
+          "mutual_entailment_mean": 0.4973385863704607
+        }
+      }
+    },
+    {
+      "identity_sha256": "5db7b9c20fd98e8ba1a68adbc3bd98acd2bf7b9a4d6f2d179f6dd9db153af778",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2913907284768212,
+            "exact": 0,
+            "output_words": 84
+          },
+          "reference_entails_candidate": 0.005219081416726112,
+          "candidate_entails_reference": 0.004784526769071817,
+          "reference_contradicts_candidate": 0.014661955647170544,
+          "mutual_entailment_mean": 0.005001804092898965
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.15,
+            "exact": 0,
+            "output_words": 13
+          },
+          "reference_entails_candidate": 0.0007001989870332181,
+          "candidate_entails_reference": 0.002294434467330575,
+          "reference_contradicts_candidate": 0.007638268638402224,
+          "mutual_entailment_mean": 0.0014973167271818966
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.15384615384615383,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.0008514787186868489,
+          "candidate_entails_reference": 0.0027377326041460037,
+          "reference_contradicts_candidate": 0.08202821016311646,
+          "mutual_entailment_mean": 0.0017946056614164263
+        }
+      }
+    },
+    {
+      "identity_sha256": "365b33d8438ed7ec600276871f206389bf2c63e281ff9ff129f4d85772223dd1",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3020833333333333,
+            "exact": 0,
+            "output_words": 81
+          },
+          "reference_entails_candidate": 0.04774056002497673,
+          "candidate_entails_reference": 0.01763116382062435,
+          "reference_contradicts_candidate": 0.25563544034957886,
+          "mutual_entailment_mean": 0.03268586192280054
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.19999999999999998,
+            "exact": 0,
+            "output_words": 89
+          },
+          "reference_entails_candidate": 0.01515233051031828,
+          "candidate_entails_reference": 0.012895907275378704,
+          "reference_contradicts_candidate": 0.08912084251642227,
+          "mutual_entailment_mean": 0.014024118892848492
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.330188679245283,
+            "exact": 0,
+            "output_words": 101
+          },
+          "reference_entails_candidate": 0.0030749484430998564,
+          "candidate_entails_reference": 0.010580779984593391,
+          "reference_contradicts_candidate": 0.01813913695514202,
+          "mutual_entailment_mean": 0.006827864213846624
+        }
+      }
+    },
+    {
+      "identity_sha256": "103c54b1bc810b39cd7d8776d07943d7ec3af15472f4493f364f9e2508993f2a",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.08178438661710037,
+            "exact": 0,
+            "output_words": 47
+          },
+          "reference_entails_candidate": 0.15979914367198944,
+          "candidate_entails_reference": 0.04588785022497177,
+          "reference_contradicts_candidate": 0.21460555493831635,
+          "mutual_entailment_mean": 0.1028434969484806
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.24773413897280963,
+            "exact": 0,
+            "output_words": 109
+          },
+          "reference_entails_candidate": 0.4769861698150635,
+          "candidate_entails_reference": 0.24639925360679626,
+          "reference_contradicts_candidate": 0.2684115767478943,
+          "mutual_entailment_mean": 0.36169271171092987
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.3389830508474576,
+            "exact": 0,
+            "output_words": 73
+          },
+          "reference_entails_candidate": 0.67229163646698,
+          "candidate_entails_reference": 0.08314599096775055,
+          "reference_contradicts_candidate": 0.2229008823633194,
+          "mutual_entailment_mean": 0.37771881371736526
+        }
+      }
+    },
+    {
+      "identity_sha256": "feabf86c467a5139ad05bd047edf6af37764e17d887e767cebbc42c8d36fd8f8",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 93
+          },
+          "reference_entails_candidate": 0.04727813974022865,
+          "candidate_entails_reference": 0.020218465477228165,
+          "reference_contradicts_candidate": 0.002345157088711858,
+          "mutual_entailment_mean": 0.03374830260872841
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.1661020815372467,
+          "candidate_entails_reference": 0.19090379774570465,
+          "reference_contradicts_candidate": 0.07650899887084961,
+          "mutual_entailment_mean": 0.17850293964147568
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.0,
+            "exact": 0,
+            "output_words": 111
+          },
+          "reference_entails_candidate": 0.7620785236358643,
+          "candidate_entails_reference": 0.06619590520858765,
+          "reference_contradicts_candidate": 0.1550266593694687,
+          "mutual_entailment_mean": 0.41413721442222595
+        }
+      }
+    },
+    {
+      "identity_sha256": "c2753d2fd96f13ab6d62ac4332aef6af70b4787f091832124d0b747eac65304a",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.32512315270935965,
+            "exact": 0,
+            "output_words": 96
+          },
+          "reference_entails_candidate": 0.03328724205493927,
+          "candidate_entails_reference": 0.004008939955383539,
+          "reference_contradicts_candidate": 0.003465390997007489,
+          "mutual_entailment_mean": 0.018648091005161405
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.17187499999999997,
+            "exact": 0,
+            "output_words": 21
+          },
+          "reference_entails_candidate": 0.3525550067424774,
+          "candidate_entails_reference": 0.0063612200319767,
+          "reference_contradicts_candidate": 0.0030219200998544693,
+          "mutual_entailment_mean": 0.17945811338722706
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.39999999999999997,
+            "exact": 0,
+            "output_words": 83
+          },
+          "reference_entails_candidate": 0.380605012178421,
+          "candidate_entails_reference": 0.0033182755578309298,
+          "reference_contradicts_candidate": 0.001666010357439518,
+          "mutual_entailment_mean": 0.19196164386812598
+        }
+      }
+    },
+    {
+      "identity_sha256": "586c8406181935095d7eef4c0e1ae1a036bf56801db5d3bbf536b32a7c380a6c",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.058252427184466014,
+            "exact": 0,
+            "output_words": 82
+          },
+          "reference_entails_candidate": 0.006405555177479982,
+          "candidate_entails_reference": 0.0013179541565477848,
+          "reference_contradicts_candidate": 0.6409634947776794,
+          "mutual_entailment_mean": 0.0038617546670138836
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.015503875968992248,
+            "exact": 0,
+            "output_words": 108
+          },
+          "reference_entails_candidate": 0.7322943806648254,
+          "candidate_entails_reference": 0.0009432631195522845,
+          "reference_contradicts_candidate": 0.013375403359532356,
+          "mutual_entailment_mean": 0.36661882189218886
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.015503875968992248,
+            "exact": 0,
+            "output_words": 108
+          },
+          "reference_entails_candidate": 0.7322943806648254,
+          "candidate_entails_reference": 0.0009432631195522845,
+          "reference_contradicts_candidate": 0.013375403359532356,
+          "mutual_entailment_mean": 0.36661882189218886
+        }
+      }
+    },
+    {
+      "identity_sha256": "3d27c6159ea169f48f657b28756e7cb541290143f08067ad292c3174c376ecae",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3047619047619048,
+            "exact": 0,
+            "output_words": 93
+          },
+          "reference_entails_candidate": 0.0036625175271183252,
+          "candidate_entails_reference": 0.23663166165351868,
+          "reference_contradicts_candidate": 0.007418943103402853,
+          "mutual_entailment_mean": 0.1201470895903185
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.3619047619047619,
+            "exact": 0,
+            "output_words": 93
+          },
+          "reference_entails_candidate": 0.6701784729957581,
+          "candidate_entails_reference": 0.2554267942905426,
+          "reference_contradicts_candidate": 0.035086166113615036,
+          "mutual_entailment_mean": 0.46280263364315033
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.3365384615384615,
+            "exact": 0,
+            "output_words": 91
+          },
+          "reference_entails_candidate": 0.5943560004234314,
+          "candidate_entails_reference": 0.23972883820533752,
+          "reference_contradicts_candidate": 0.04469325765967369,
+          "mutual_entailment_mean": 0.41704241931438446
+        }
+      }
+    },
+    {
+      "identity_sha256": "6f083fbb63b2cc77f4f893bce2f028d7d8345436ede7adbeea288e2b522881c4",
+      "category": "creative_writing",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.29959514170040485,
+            "exact": 0,
+            "output_words": 69
+          },
+          "reference_entails_candidate": 0.026550663635134697,
+          "candidate_entails_reference": 0.021930914372205734,
+          "reference_contradicts_candidate": 0.008779668249189854,
+          "mutual_entailment_mean": 0.024240789003670216
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.15306122448979592,
+            "exact": 0,
+            "output_words": 18
+          },
+          "reference_entails_candidate": 0.00732262060046196,
+          "candidate_entails_reference": 0.04625486209988594,
+          "reference_contradicts_candidate": 0.025073673576116562,
+          "mutual_entailment_mean": 0.02678874135017395
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.15306122448979592,
+            "exact": 0,
+            "output_words": 18
+          },
+          "reference_entails_candidate": 0.00732262060046196,
+          "candidate_entails_reference": 0.04625486209988594,
+          "reference_contradicts_candidate": 0.025073673576116562,
+          "mutual_entailment_mean": 0.02678874135017395
+        }
+      }
+    },
+    {
+      "identity_sha256": "9dcfa19419014233be4a51fc802f10b3e523036a6a43093fbc727c4c657d57aa",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2807017543859649,
+            "exact": 0,
+            "output_words": 96
+          },
+          "reference_entails_candidate": 0.007339869160205126,
+          "candidate_entails_reference": 0.0006240953225642443,
+          "reference_contradicts_candidate": 0.00282377190887928,
+          "mutual_entailment_mean": 0.003981982241384685
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.30303030303030304,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.15670262277126312,
+          "candidate_entails_reference": 0.00035427979310043156,
+          "reference_contradicts_candidate": 0.015526269562542439,
+          "mutual_entailment_mean": 0.07852845128218178
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.23958333333333334,
+            "exact": 0,
+            "output_words": 117
+          },
+          "reference_entails_candidate": 0.0036699203774333,
+          "candidate_entails_reference": 0.0005168577190488577,
+          "reference_contradicts_candidate": 0.0037774068769067526,
+          "mutual_entailment_mean": 0.002093389048241079
+        }
+      }
+    },
+    {
+      "identity_sha256": "74c27291ac81fee1d274a9708b90d5a135f123c98a63559ef8ef3fe27ba158b6",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3381642512077295,
+            "exact": 0,
+            "output_words": 91
+          },
+          "reference_entails_candidate": 0.28004810214042664,
+          "candidate_entails_reference": 0.17517933249473572,
+          "reference_contradicts_candidate": 0.20814189314842224,
+          "mutual_entailment_mean": 0.22761371731758118
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.32,
+            "exact": 0,
+            "output_words": 34
+          },
+          "reference_entails_candidate": 0.7139843702316284,
+          "candidate_entails_reference": 0.3493521213531494,
+          "reference_contradicts_candidate": 0.20191003382205963,
+          "mutual_entailment_mean": 0.5316682457923889
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.34210526315789475,
+            "exact": 0,
+            "output_words": 36
+          },
+          "reference_entails_candidate": 0.6859710812568665,
+          "candidate_entails_reference": 0.3283329904079437,
+          "reference_contradicts_candidate": 0.224429652094841,
+          "mutual_entailment_mean": 0.5071520358324051
+        }
+      }
+    },
+    {
+      "identity_sha256": "9657bc6e04f0c628e430974d8e732bbfc8b2e42632849e544cc0e1326e0f6d98",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.21487603305785125,
+            "exact": 0,
+            "output_words": 77
+          },
+          "reference_entails_candidate": 0.03056209534406662,
+          "candidate_entails_reference": 0.0003334549837745726,
+          "reference_contradicts_candidate": 0.004396683536469936,
+          "mutual_entailment_mean": 0.015447775163920596
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.29508196721311475,
+            "exact": 0,
+            "output_words": 17
+          },
+          "reference_entails_candidate": 0.004548224620521069,
+          "candidate_entails_reference": 0.00026970627368427813,
+          "reference_contradicts_candidate": 0.002934863558039069,
+          "mutual_entailment_mean": 0.0024089654471026734
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.12903225806451613,
+            "exact": 0,
+            "output_words": 111
+          },
+          "reference_entails_candidate": 0.006859969347715378,
+          "candidate_entails_reference": 0.00035675748949870467,
+          "reference_contradicts_candidate": 0.01102034468203783,
+          "mutual_entailment_mean": 0.0036083634186070412
+        }
+      }
+    },
+    {
+      "identity_sha256": "cbc84f2d790463345ceb3e0e15aad85e7b63587396b3f9a7d8c1364fd7bf0216",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.32098765432098764,
+            "exact": 0,
+            "output_words": 89
+          },
+          "reference_entails_candidate": 0.005817989818751812,
+          "candidate_entails_reference": 0.007977884262800217,
+          "reference_contradicts_candidate": 0.0015765130519866943,
+          "mutual_entailment_mean": 0.006897937040776014
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.24528301886792453,
+            "exact": 0,
+            "output_words": 33
+          },
+          "reference_entails_candidate": 0.005255468655377626,
+          "candidate_entails_reference": 0.0063650901429355145,
+          "reference_contradicts_candidate": 0.0005137592670507729,
+          "mutual_entailment_mean": 0.0058102793991565704
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.39743589743589747,
+            "exact": 0,
+            "output_words": 83
+          },
+          "reference_entails_candidate": 0.0015143826603889465,
+          "candidate_entails_reference": 0.017576806247234344,
+          "reference_contradicts_candidate": 0.0006956785800866783,
+          "mutual_entailment_mean": 0.009545594453811646
+        }
+      }
+    },
+    {
+      "identity_sha256": "d9bd033e2c691d02e81ea805c3c08ef70f5c2cf9e532e553de69dc125759eebb",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.14678899082568808,
+            "exact": 0,
+            "output_words": 85
+          },
+          "reference_entails_candidate": 0.014055373147130013,
+          "candidate_entails_reference": 0.010823111981153488,
+          "reference_contradicts_candidate": 0.005350107792764902,
+          "mutual_entailment_mean": 0.01243924256414175
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.1818181818181818,
+            "exact": 0,
+            "output_words": 20
+          },
+          "reference_entails_candidate": 0.0008993103401735425,
+          "candidate_entails_reference": 0.01423068530857563,
+          "reference_contradicts_candidate": 0.019387293606996536,
+          "mutual_entailment_mean": 0.007564997824374586
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.05,
+            "exact": 0,
+            "output_words": 96
+          },
+          "reference_entails_candidate": 0.184833824634552,
+          "candidate_entails_reference": 0.01834280975162983,
+          "reference_contradicts_candidate": 0.46047908067703247,
+          "mutual_entailment_mean": 0.10158831719309092
+        }
+      }
+    },
+    {
+      "identity_sha256": "d24c34c684ee5c6461be5bec83d117d974c2c38ef6db7936ecfe0fdf9c7dd954",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2598870056497175,
+            "exact": 0,
+            "output_words": 80
+          },
+          "reference_entails_candidate": 0.029118472710251808,
+          "candidate_entails_reference": 0.05170058831572533,
+          "reference_contradicts_candidate": 0.01714971289038658,
+          "mutual_entailment_mean": 0.04040953051298857
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.18487394957983191,
+            "exact": 0,
+            "output_words": 22
+          },
+          "reference_entails_candidate": 0.0067379288375377655,
+          "candidate_entails_reference": 0.03828071802854538,
+          "reference_contradicts_candidate": 0.014876331202685833,
+          "mutual_entailment_mean": 0.022509323433041573
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.18487394957983191,
+            "exact": 0,
+            "output_words": 22
+          },
+          "reference_entails_candidate": 0.0067379288375377655,
+          "candidate_entails_reference": 0.03828071802854538,
+          "reference_contradicts_candidate": 0.014876331202685833,
+          "mutual_entailment_mean": 0.022509323433041573
+        }
+      }
+    },
+    {
+      "identity_sha256": "421305a7e001f2126cda89c543eae277f1133313731cd8b28f47a0964787af5b",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2848297213622291,
+            "exact": 0,
+            "output_words": 91
+          },
+          "reference_entails_candidate": 0.17717690765857697,
+          "candidate_entails_reference": 0.391692578792572,
+          "reference_contradicts_candidate": 0.002452445449307561,
+          "mutual_entailment_mean": 0.2844347432255745
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.27586206896551724,
+            "exact": 0,
+            "output_words": 116
+          },
+          "reference_entails_candidate": 0.13046172261238098,
+          "candidate_entails_reference": 0.03671770542860031,
+          "reference_contradicts_candidate": 0.005563323386013508,
+          "mutual_entailment_mean": 0.08358971402049065
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.33432835820895523,
+            "exact": 0,
+            "output_words": 103
+          },
+          "reference_entails_candidate": 0.7464693784713745,
+          "candidate_entails_reference": 0.08550166338682175,
+          "reference_contradicts_candidate": 0.005220577120780945,
+          "mutual_entailment_mean": 0.41598552092909813
+        }
+      }
+    },
+    {
+      "identity_sha256": "0f425f68ec4cf816d0132e5aa4ade49389bf05505506331fde946c9eaad99a49",
+      "category": "general_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3783783783783784,
+            "exact": 0,
+            "output_words": 89
+          },
+          "reference_entails_candidate": 0.008434847928583622,
+          "candidate_entails_reference": 0.0008050351170822978,
+          "reference_contradicts_candidate": 0.00358544266782701,
+          "mutual_entailment_mean": 0.00461994152283296
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.25414364640883974,
+            "exact": 0,
+            "output_words": 85
+          },
+          "reference_entails_candidate": 0.36988383531570435,
+          "candidate_entails_reference": 0.00085445586591959,
+          "reference_contradicts_candidate": 0.022644057869911194,
+          "mutual_entailment_mean": 0.18536914559081197
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.3372093023255814,
+            "exact": 0,
+            "output_words": 76
+          },
+          "reference_entails_candidate": 0.14360283315181732,
+          "candidate_entails_reference": 0.0008348881383426487,
+          "reference_contradicts_candidate": 0.007264337502419949,
+          "mutual_entailment_mean": 0.07221886064507999
+        }
+      }
+    },
+    {
+      "identity_sha256": "bb3de9b19e5cd2f69bcafcc8bddd7537c2b89cac4bb51826384c1505c4c4a069",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 8
+          },
+          "reference_entails_candidate": 0.7683581113815308,
+          "candidate_entails_reference": 0.7683581113815308,
+          "reference_contradicts_candidate": 0.09341990202665329,
+          "mutual_entailment_mean": 0.7683581113815308
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 8
+          },
+          "reference_entails_candidate": 0.7683581113815308,
+          "candidate_entails_reference": 0.7683581113815308,
+          "reference_contradicts_candidate": 0.09341990202665329,
+          "mutual_entailment_mean": 0.7683581113815308
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.9411764705882353,
+            "exact": 0,
+            "output_words": 9
+          },
+          "reference_entails_candidate": 0.9860926270484924,
+          "candidate_entails_reference": 0.9638673663139343,
+          "reference_contradicts_candidate": 0.0014052132610231638,
+          "mutual_entailment_mean": 0.9749799966812134
+        }
+      }
+    },
+    {
+      "identity_sha256": "1080efb7f4b8decb66279ac2bb7540dc9f605894e2a419b2721832cf978c02a8",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3508771929824562,
+            "exact": 0,
+            "output_words": 74
+          },
+          "reference_entails_candidate": 0.9401899576187134,
+          "candidate_entails_reference": 0.006871835794299841,
+          "reference_contradicts_candidate": 0.02030341513454914,
+          "mutual_entailment_mean": 0.4735308967065066
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.53125,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.4812295138835907,
+          "candidate_entails_reference": 0.01842433772981167,
+          "reference_contradicts_candidate": 0.40435248613357544,
+          "mutual_entailment_mean": 0.24982692580670118
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.507936507936508,
+            "exact": 0,
+            "output_words": 23
+          },
+          "reference_entails_candidate": 0.5351958274841309,
+          "candidate_entails_reference": 0.012233387678861618,
+          "reference_contradicts_candidate": 0.39102381467819214,
+          "mutual_entailment_mean": 0.27371460758149624
+        }
+      }
+    },
+    {
+      "identity_sha256": "1719e490ba990eff05c85d7fd2abc91ac7d413653b506fd313b9eab275aecb7e",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2807017543859649,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.0028189080767333508,
+          "candidate_entails_reference": 0.05698652192950249,
+          "reference_contradicts_candidate": 0.9606538414955139,
+          "mutual_entailment_mean": 0.02990271500311792
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.1415929203539823,
+            "exact": 0,
+            "output_words": 21
+          },
+          "reference_entails_candidate": 0.5716227293014526,
+          "candidate_entails_reference": 0.08257226645946503,
+          "reference_contradicts_candidate": 0.025168543681502342,
+          "mutual_entailment_mean": 0.32709749788045883
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.1896551724137931,
+            "exact": 0,
+            "output_words": 24
+          },
+          "reference_entails_candidate": 0.6615758538246155,
+          "candidate_entails_reference": 0.07596517354249954,
+          "reference_contradicts_candidate": 0.028268303722143173,
+          "mutual_entailment_mean": 0.3687705136835575
+        }
+      }
+    },
+    {
+      "identity_sha256": "398268f917f2ccbf465c8155dfaee05dcb1c675164b0090e4053a330f14a565e",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.5306122448979591,
+            "exact": 0,
+            "output_words": 27
+          },
+          "reference_entails_candidate": 0.8309835195541382,
+          "candidate_entails_reference": 0.8938146829605103,
+          "reference_contradicts_candidate": 0.048782829195261,
+          "mutual_entailment_mean": 0.8623991012573242
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.5,
+            "exact": 0,
+            "output_words": 18
+          },
+          "reference_entails_candidate": 0.24161943793296814,
+          "candidate_entails_reference": 0.8197776675224304,
+          "reference_contradicts_candidate": 0.09824646264314651,
+          "mutual_entailment_mean": 0.5306985527276993
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.5,
+            "exact": 0,
+            "output_words": 18
+          },
+          "reference_entails_candidate": 0.24161943793296814,
+          "candidate_entails_reference": 0.8197776675224304,
+          "reference_contradicts_candidate": 0.09824646264314651,
+          "mutual_entailment_mean": 0.5306985527276993
+        }
+      }
+    },
+    {
+      "identity_sha256": "c1b06c7ebbf51413a17d7c4850fd8df243d5e777dc96801240f6728d9d8d2dfb",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3636363636363636,
+            "exact": 0,
+            "output_words": 86
+          },
+          "reference_entails_candidate": 0.000710698077455163,
+          "candidate_entails_reference": 0.9844352602958679,
+          "reference_contradicts_candidate": 0.0018795623909682035,
+          "mutual_entailment_mean": 0.49257297918666154
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.48780487804878053,
+            "exact": 0,
+            "output_words": 17
+          },
+          "reference_entails_candidate": 0.1131528913974762,
+          "candidate_entails_reference": 0.02509249933063984,
+          "reference_contradicts_candidate": 0.004005614202469587,
+          "mutual_entailment_mean": 0.06912269536405802
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.3392857142857143,
+            "exact": 0,
+            "output_words": 88
+          },
+          "reference_entails_candidate": 0.0006741838878951967,
+          "candidate_entails_reference": 0.9609613418579102,
+          "reference_contradicts_candidate": 0.00896077137440443,
+          "mutual_entailment_mean": 0.4808177628729027
+        }
+      }
+    },
+    {
+      "identity_sha256": "15e87e29266f22337f3c92a085452f5d3ec77abd619ac21967e2ace67fd7e31f",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.43983402489626555,
+            "exact": 0,
+            "output_words": 101
+          },
+          "reference_entails_candidate": 0.0543784573674202,
+          "candidate_entails_reference": 0.006574369501322508,
+          "reference_contradicts_candidate": 0.012656383216381073,
+          "mutual_entailment_mean": 0.030476413434371352
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.28415300546448086,
+            "exact": 0,
+            "output_words": 43
+          },
+          "reference_entails_candidate": 0.14744076132774353,
+          "candidate_entails_reference": 0.0032227723859250546,
+          "reference_contradicts_candidate": 0.030893580988049507,
+          "mutual_entailment_mean": 0.07533176685683429
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.42654028436018965,
+            "exact": 0,
+            "output_words": 71
+          },
+          "reference_entails_candidate": 0.007110730279237032,
+          "candidate_entails_reference": 0.0019028661772608757,
+          "reference_contradicts_candidate": 0.0013165223645046353,
+          "mutual_entailment_mean": 0.004506798228248954
+        }
+      }
+    },
+    {
+      "identity_sha256": "eb48267c31657a068380134c331bff81934543d9934c88cd90d675a999ca485c",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3238095238095238,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.033108312636613846,
+          "candidate_entails_reference": 0.9907417297363281,
+          "reference_contradicts_candidate": 0.0039503248408436775,
+          "mutual_entailment_mean": 0.511925021186471
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.4,
+            "exact": 0,
+            "output_words": 94
+          },
+          "reference_entails_candidate": 0.0005444642738439143,
+          "candidate_entails_reference": 0.0028708353638648987,
+          "reference_contradicts_candidate": 0.007166351657360792,
+          "mutual_entailment_mean": 0.0017076498188544065
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.5393258426966292,
+            "exact": 0,
+            "output_words": 63
+          },
+          "reference_entails_candidate": 0.0038118851371109486,
+          "candidate_entails_reference": 0.07982752472162247,
+          "reference_contradicts_candidate": 0.008267206139862537,
+          "mutual_entailment_mean": 0.04181970492936671
+        }
+      }
+    },
+    {
+      "identity_sha256": "6da3d1c7b8ed14e491aa2766d32b9ec35cb10213384b6a040955498aa798439a",
+      "category": "information_extraction",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.9303772449493408,
+          "candidate_entails_reference": 0.9303772449493408,
+          "reference_contradicts_candidate": 0.012902646325528622,
+          "mutual_entailment_mean": 0.9303772449493408
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.9303772449493408,
+          "candidate_entails_reference": 0.9303772449493408,
+          "reference_contradicts_candidate": 0.012902646325528622,
+          "mutual_entailment_mean": 0.9303772449493408
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.9303772449493408,
+          "candidate_entails_reference": 0.9303772449493408,
+          "reference_contradicts_candidate": 0.012902646325528622,
+          "mutual_entailment_mean": 0.9303772449493408
+        }
+      }
+    },
+    {
+      "identity_sha256": "adc81e4e7f8b10575ef7481eba463daec3b5bf9bc2dc0dd4982d577dccbd0941",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.14953271028037382,
+            "exact": 0,
+            "output_words": 85
+          },
+          "reference_entails_candidate": 0.006624255329370499,
+          "candidate_entails_reference": 0.0027723871171474457,
+          "reference_contradicts_candidate": 0.002979465527459979,
+          "mutual_entailment_mean": 0.004698321223258972
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.2285714285714286,
+            "exact": 0,
+            "output_words": 13
+          },
+          "reference_entails_candidate": 0.0015638028271496296,
+          "candidate_entails_reference": 0.0020699906162917614,
+          "reference_contradicts_candidate": 0.8043705224990845,
+          "mutual_entailment_mean": 0.0018168967217206955
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.2285714285714286,
+            "exact": 0,
+            "output_words": 13
+          },
+          "reference_entails_candidate": 0.0015638028271496296,
+          "candidate_entails_reference": 0.0020699906162917614,
+          "reference_contradicts_candidate": 0.8043705224990845,
+          "mutual_entailment_mean": 0.0018168967217206955
+        }
+      }
+    },
+    {
+      "identity_sha256": "87906320e8c81cd104198b02f9bc4c1a620c2b824c9545fb1527a772ac1f6f80",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.1090909090909091,
+            "exact": 0,
+            "output_words": 50
+          },
+          "reference_entails_candidate": 0.011588740162551403,
+          "candidate_entails_reference": 0.00032402551732957363,
+          "reference_contradicts_candidate": 0.01736144721508026,
+          "mutual_entailment_mean": 0.005956382839940488
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.8000000000000002,
+            "exact": 0,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.0004927271511405706,
+          "candidate_entails_reference": 0.0003365183365531266,
+          "reference_contradicts_candidate": 0.9986851811408997,
+          "mutual_entailment_mean": 0.0004146227438468486
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.8000000000000002,
+            "exact": 0,
+            "output_words": 5
+          },
+          "reference_entails_candidate": 0.0006401650025509298,
+          "candidate_entails_reference": 0.0004382919578347355,
+          "reference_contradicts_candidate": 0.9986642599105835,
+          "mutual_entailment_mean": 0.0005392284801928326
+        }
+      }
+    },
+    {
+      "identity_sha256": "156c5828b92fd62ef4ed4f65191ba9081cb0031c64108b3098aa18561386a934",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.29931972789115646,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.006189502310007811,
+          "candidate_entails_reference": 0.01727578230202198,
+          "reference_contradicts_candidate": 0.009236841462552547,
+          "mutual_entailment_mean": 0.011732642306014895
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.20833333333333331,
+            "exact": 0,
+            "output_words": 76
+          },
+          "reference_entails_candidate": 0.2230868935585022,
+          "candidate_entails_reference": 0.015646252781152725,
+          "reference_contradicts_candidate": 0.04397767409682274,
+          "mutual_entailment_mean": 0.11936657316982746
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.45,
+            "exact": 0,
+            "output_words": 92
+          },
+          "reference_entails_candidate": 0.5575243234634399,
+          "candidate_entails_reference": 0.019188595935702324,
+          "reference_contradicts_candidate": 0.03854135796427727,
+          "mutual_entailment_mean": 0.28835645969957113
+        }
+      }
+    },
+    {
+      "identity_sha256": "faaf3a0561678ac2afcf192afba91c93e813967d8577855f4bd3df50f39bda0a",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.2547770700636942,
+            "exact": 0,
+            "output_words": 70
+          },
+          "reference_entails_candidate": 0.005106206052005291,
+          "candidate_entails_reference": 0.0014773422153666615,
+          "reference_contradicts_candidate": 0.004301653243601322,
+          "mutual_entailment_mean": 0.0032917741336859763
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.14814814814814814,
+            "exact": 0,
+            "output_words": 21
+          },
+          "reference_entails_candidate": 0.8750713467597961,
+          "candidate_entails_reference": 0.0008279638132080436,
+          "reference_contradicts_candidate": 0.0023386706598103046,
+          "mutual_entailment_mean": 0.4379496552865021
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.1935483870967742,
+            "exact": 0,
+            "output_words": 37
+          },
+          "reference_entails_candidate": 0.05121830105781555,
+          "candidate_entails_reference": 0.0011727563105523586,
+          "reference_contradicts_candidate": 0.02476770617067814,
+          "mutual_entailment_mean": 0.026195528684183955
+        }
+      }
+    },
+    {
+      "identity_sha256": "d88bdeaabb8a4523e13336cde0bd36b31971f7c8608d660c0879333d1f43f7b3",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.23880597014925373,
+            "exact": 0,
+            "output_words": 59
+          },
+          "reference_entails_candidate": 0.0007058329647406936,
+          "candidate_entails_reference": 0.9915374517440796,
+          "reference_contradicts_candidate": 0.003410212928429246,
+          "mutual_entailment_mean": 0.49612164235441014
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.5714285714285715,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9967789053916931,
+          "candidate_entails_reference": 0.9961667656898499,
+          "reference_contradicts_candidate": 0.0002646819921210408,
+          "mutual_entailment_mean": 0.9964728355407715
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.5714285714285715,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.9967789053916931,
+          "candidate_entails_reference": 0.9961667656898499,
+          "reference_contradicts_candidate": 0.0002646819921210408,
+          "mutual_entailment_mean": 0.9964728355407715
+        }
+      }
+    },
+    {
+      "identity_sha256": "ee5bb98ad87a5c6b88bb849b40874896a074bac5eb0b6989481eb7111536beb6",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.051948051948051945,
+            "exact": 0,
+            "output_words": 69
+          },
+          "reference_entails_candidate": 0.0565352588891983,
+          "candidate_entails_reference": 0.041328929364681244,
+          "reference_contradicts_candidate": 0.012622907757759094,
+          "mutual_entailment_mean": 0.048932094126939774
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.14285714285714288,
+            "exact": 0,
+            "output_words": 6
+          },
+          "reference_entails_candidate": 0.16560514271259308,
+          "candidate_entails_reference": 0.05353366583585739,
+          "reference_contradicts_candidate": 0.5347568988800049,
+          "mutual_entailment_mean": 0.10956940427422523
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.05263157894736842,
+            "exact": 0,
+            "output_words": 68
+          },
+          "reference_entails_candidate": 0.016588034108281136,
+          "candidate_entails_reference": 0.02691558562219143,
+          "reference_contradicts_candidate": 0.01101768296211958,
+          "mutual_entailment_mean": 0.021751809865236282
+        }
+      }
+    },
+    {
+      "identity_sha256": "46f0dd0245cfd4329174bf72f694acee9ac54c1b3374a6e8cf4f2b653c136d0c",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.6144578313253013,
+            "exact": 0,
+            "output_words": 74
+          },
+          "reference_entails_candidate": 0.8614480495452881,
+          "candidate_entails_reference": 0.9618349671363831,
+          "reference_contradicts_candidate": 0.0014213146641850471,
+          "mutual_entailment_mean": 0.9116415083408356
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.6618705035971223,
+            "exact": 0,
+            "output_words": 47
+          },
+          "reference_entails_candidate": 0.9822620153427124,
+          "candidate_entails_reference": 0.07115921378135681,
+          "reference_contradicts_candidate": 0.0021121518220752478,
+          "mutual_entailment_mean": 0.5267106145620346
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.7926829268292683,
+            "exact": 0,
+            "output_words": 72
+          },
+          "reference_entails_candidate": 0.9641960859298706,
+          "candidate_entails_reference": 0.8644049167633057,
+          "reference_contradicts_candidate": 0.0004887015675194561,
+          "mutual_entailment_mean": 0.9143005013465881
+        }
+      }
+    },
+    {
+      "identity_sha256": "b03832a9fa2a7b4716d2465923b0fa66f2162b6f12173949547977cfbb50af80",
+      "category": "open_qa",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.35,
+            "exact": 0,
+            "output_words": 83
+          },
+          "reference_entails_candidate": 0.0014728375244885683,
+          "candidate_entails_reference": 0.0023623467423021793,
+          "reference_contradicts_candidate": 0.014817103743553162,
+          "mutual_entailment_mean": 0.0019175921333953738
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.4705882352941177,
+            "exact": 0,
+            "output_words": 14
+          },
+          "reference_entails_candidate": 0.94886714220047,
+          "candidate_entails_reference": 0.0008265387150458992,
+          "reference_contradicts_candidate": 0.014453848823904991,
+          "mutual_entailment_mean": 0.47484684045775793
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.35416666666666663,
+            "exact": 0,
+            "output_words": 59
+          },
+          "reference_entails_candidate": 0.5007858872413635,
+          "candidate_entails_reference": 0.0009266805718652904,
+          "reference_contradicts_candidate": 0.00502281729131937,
+          "mutual_entailment_mean": 0.2508562839066144
+        }
+      }
+    },
+    {
+      "identity_sha256": "6197276297a15295a430208244cd26ee881759b99c46e5ef35f14aa41f3d7327",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.1851851851851852,
+            "exact": 0,
+            "output_words": 89
+          },
+          "reference_entails_candidate": 0.00529619911685586,
+          "candidate_entails_reference": 0.0012906562769785523,
+          "reference_contradicts_candidate": 0.0032215830869972706,
+          "mutual_entailment_mean": 0.003293427696917206
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.4897959183673469,
+            "exact": 0,
+            "output_words": 30
+          },
+          "reference_entails_candidate": 0.001645882846787572,
+          "candidate_entails_reference": 0.00988827459514141,
+          "reference_contradicts_candidate": 0.00555378757417202,
+          "mutual_entailment_mean": 0.005767078720964491
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.3488372093023256,
+            "exact": 0,
+            "output_words": 67
+          },
+          "reference_entails_candidate": 0.0008040087413974106,
+          "candidate_entails_reference": 0.6510048508644104,
+          "reference_contradicts_candidate": 0.0034358215052634478,
+          "mutual_entailment_mean": 0.3259044298029039
+        }
+      }
+    },
+    {
+      "identity_sha256": "2db9ee20661b075b88d0ad7a3e757e44aa85c9d3c2585fbe9bfcac12c1d30c92",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.4465116279069767,
+            "exact": 0,
+            "output_words": 105
+          },
+          "reference_entails_candidate": 0.004248438868671656,
+          "candidate_entails_reference": 0.002401060191914439,
+          "reference_contradicts_candidate": 0.001371036865748465,
+          "mutual_entailment_mean": 0.0033247495302930474
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.2380952380952381,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.9808294773101807,
+          "candidate_entails_reference": 0.0012184036895632744,
+          "reference_contradicts_candidate": 0.00023027267889119685,
+          "mutual_entailment_mean": 0.49102394049987197
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.5308641975308642,
+            "exact": 0,
+            "output_words": 52
+          },
+          "reference_entails_candidate": 0.9821537733078003,
+          "candidate_entails_reference": 0.015156789682805538,
+          "reference_contradicts_candidate": 0.0003117838641628623,
+          "mutual_entailment_mean": 0.4986552814953029
+        }
+      }
+    },
+    {
+      "identity_sha256": "6f08047c640028eb5c9830acd265124d96b0de0f8d91244d9c4e16fc365ef9ba",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.6865671641791045,
+            "exact": 0,
+            "output_words": 79
+          },
+          "reference_entails_candidate": 0.018984388560056686,
+          "candidate_entails_reference": 0.5662029385566711,
+          "reference_contradicts_candidate": 0.0007011641864664853,
+          "mutual_entailment_mean": 0.2925936635583639
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 55
+          },
+          "reference_entails_candidate": 0.993490993976593,
+          "candidate_entails_reference": 0.993490993976593,
+          "reference_contradicts_candidate": 0.0003923236799892038,
+          "mutual_entailment_mean": 0.993490993976593
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 1.0,
+            "exact": 1,
+            "output_words": 55
+          },
+          "reference_entails_candidate": 0.993490993976593,
+          "candidate_entails_reference": 0.993490993976593,
+          "reference_contradicts_candidate": 0.0003923236799892038,
+          "mutual_entailment_mean": 0.993490993976593
+        }
+      }
+    },
+    {
+      "identity_sha256": "a70b4b3da1233616567cb16667327a79431215c66e3ba4fd36fd94973d99fe57",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.44897959183673464,
+            "exact": 0,
+            "output_words": 70
+          },
+          "reference_entails_candidate": 0.007593032903969288,
+          "candidate_entails_reference": 0.9777187705039978,
+          "reference_contradicts_candidate": 0.0004147163999732584,
+          "mutual_entailment_mean": 0.49265590170398355
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.45000000000000007,
+            "exact": 0,
+            "output_words": 12
+          },
+          "reference_entails_candidate": 0.06177718937397003,
+          "candidate_entails_reference": 0.003630914492532611,
+          "reference_contradicts_candidate": 0.0023518928792327642,
+          "mutual_entailment_mean": 0.03270405193325132
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.46153846153846156,
+            "exact": 0,
+            "output_words": 11
+          },
+          "reference_entails_candidate": 0.24548815190792084,
+          "candidate_entails_reference": 0.0061797029338777065,
+          "reference_contradicts_candidate": 0.007043943740427494,
+          "mutual_entailment_mean": 0.12583392742089927
+        }
+      }
+    },
+    {
+      "identity_sha256": "8cfedfa2f3a3127b42d3d35f6bc647b7bb19d129c2825f8c1e87ac5ccc4e7f66",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.16494845360824742,
+            "exact": 0,
+            "output_words": 81
+          },
+          "reference_entails_candidate": 0.0012139352038502693,
+          "candidate_entails_reference": 0.018330371007323265,
+          "reference_contradicts_candidate": 0.002906790468841791,
+          "mutual_entailment_mean": 0.009772153105586767
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.20689655172413793,
+            "exact": 0,
+            "output_words": 13
+          },
+          "reference_entails_candidate": 0.0315152183175087,
+          "candidate_entails_reference": 0.05890798941254616,
+          "reference_contradicts_candidate": 0.002514397958293557,
+          "mutual_entailment_mean": 0.04521160386502743
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.26666666666666666,
+            "exact": 0,
+            "output_words": 14
+          },
+          "reference_entails_candidate": 0.06820334494113922,
+          "candidate_entails_reference": 0.09222646802663803,
+          "reference_contradicts_candidate": 0.0025533786974847317,
+          "mutual_entailment_mean": 0.08021490648388863
+        }
+      }
+    },
+    {
+      "identity_sha256": "f7c96c29f9f21768ffecb5ed41126ab815e7176f0ab25b6d55dfb3f96c1492bb",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.28947368421052627,
+            "exact": 0,
+            "output_words": 58
+          },
+          "reference_entails_candidate": 0.004286383278667927,
+          "candidate_entails_reference": 0.0045839776284992695,
+          "reference_contradicts_candidate": 0.0007273482042364776,
+          "mutual_entailment_mean": 0.004435180453583598
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.29411764705882354,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.06460485607385635,
+          "candidate_entails_reference": 0.3162330985069275,
+          "reference_contradicts_candidate": 0.9042755365371704,
+          "mutual_entailment_mean": 0.19041897729039192
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.29411764705882354,
+            "exact": 0,
+            "output_words": 16
+          },
+          "reference_entails_candidate": 0.26864349842071533,
+          "candidate_entails_reference": 0.35996395349502563,
+          "reference_contradicts_candidate": 0.6177369356155396,
+          "mutual_entailment_mean": 0.3143037259578705
+        }
+      }
+    },
+    {
+      "identity_sha256": "b15bf0ca7f2c5d4ac32b7483c1e1a4377944eccc87589f53545746d26cae1a37",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.41237113402061853,
+            "exact": 0,
+            "output_words": 75
+          },
+          "reference_entails_candidate": 0.6193966865539551,
+          "candidate_entails_reference": 0.026968780905008316,
+          "reference_contradicts_candidate": 0.02933802455663681,
+          "mutual_entailment_mean": 0.3231827337294817
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.5296803652968036,
+            "exact": 0,
+            "output_words": 100
+          },
+          "reference_entails_candidate": 0.6841707229614258,
+          "candidate_entails_reference": 0.013852249830961227,
+          "reference_contradicts_candidate": 0.0067904130555689335,
+          "mutual_entailment_mean": 0.3490114863961935
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.47441860465116276,
+            "exact": 0,
+            "output_words": 96
+          },
+          "reference_entails_candidate": 0.3932512402534485,
+          "candidate_entails_reference": 0.010681219398975372,
+          "reference_contradicts_candidate": 0.006465779151767492,
+          "mutual_entailment_mean": 0.20196622982621193
+        }
+      }
+    },
+    {
+      "identity_sha256": "827b2409d0d8b42715493ef6ed511a75b745faa7513ab66b2092270627b9b4c4",
+      "category": "summarization",
+      "metrics": {
+        "base": {
+          "lexical": {
+            "word_f1": 0.3466666666666667,
+            "exact": 0,
+            "output_words": 85
+          },
+          "reference_entails_candidate": 0.08112747967243195,
+          "candidate_entails_reference": 0.010010305792093277,
+          "reference_contradicts_candidate": 0.08054617047309875,
+          "mutual_entailment_mean": 0.04556889273226261
+        },
+        "stage26_short": {
+          "lexical": {
+            "word_f1": 0.31666666666666665,
+            "exact": 0,
+            "output_words": 55
+          },
+          "reference_entails_candidate": 0.17632617056369781,
+          "candidate_entails_reference": 0.0014572148211300373,
+          "reference_contradicts_candidate": 0.28863877058029175,
+          "mutual_entailment_mean": 0.08889169269241393
+        },
+        "stage31_full": {
+          "lexical": {
+            "word_f1": 0.35460992907801425,
+            "exact": 0,
+            "output_words": 76
+          },
+          "reference_entails_candidate": 0.010625598020851612,
+          "candidate_entails_reference": 0.01776083931326866,
+          "reference_contradicts_candidate": 0.006165655795484781,
+          "mutual_entailment_mean": 0.014193218667060137
+        }
+      }
+    }
+  ],
+  "counts": {
+    "items": 64,
+    "models": 3,
+    "nli_directional_pairs": 384
+  },
+  "overall": {
+    "base": {
+      "reference_entails_candidate": 0.13350818605704262,
+      "candidate_entails_reference": 0.2835043684617631,
+      "reference_contradicts_candidate": 0.05872396479708186,
+      "mutual_entailment_mean": 0.20850627725940285,
+      "word_f1": 0.29257713855180667
+    },
+    "stage26_short": {
+      "reference_entails_candidate": 0.3877295733386745,
+      "candidate_entails_reference": 0.2671557680700971,
+      "reference_contradicts_candidate": 0.17385202301284153,
+      "mutual_entailment_mean": 0.3274426707043858,
+      "word_f1": 0.41775428707599177
+    },
+    "stage31_full": {
+      "reference_entails_candidate": 0.3754147759714215,
+      "candidate_entails_reference": 0.31162629805021425,
+      "reference_contradicts_candidate": 0.16332668949644358,
+      "mutual_entailment_mean": 0.34352053701081786,
+      "word_f1": 0.4429432472022252
+    }
+  },
+  "per_category": {
+    "brainstorming": {
+      "base": {
+        "reference_entails_candidate": 0.038573658937821165,
+        "candidate_entails_reference": 0.04382243946020026,
+        "reference_contradicts_candidate": 0.039733412573696114,
+        "mutual_entailment_mean": 0.04119804919901071,
+        "word_f1": 0.1793208546695891
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.1752834163598891,
+        "candidate_entails_reference": 0.10720521919211023,
+        "reference_contradicts_candidate": 0.594468184892321,
+        "mutual_entailment_mean": 0.14124431777599966,
+        "word_f1": 0.2824406132789366
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.3303499875582929,
+        "candidate_entails_reference": 0.16573813962531858,
+        "reference_contradicts_candidate": 0.36989211619948037,
+        "mutual_entailment_mean": 0.24804406359180575,
+        "word_f1": 0.30593660949503315
+      }
+    },
+    "classification": {
+      "base": {
+        "reference_entails_candidate": 0.14375081128673628,
+        "candidate_entails_reference": 0.378632414736785,
+        "reference_contradicts_candidate": 0.08076940142200328,
+        "mutual_entailment_mean": 0.26119161301176064,
+        "word_f1": 0.17719521394717636
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.8675906956195831,
+        "candidate_entails_reference": 0.6102180472807959,
+        "reference_contradicts_candidate": 0.11216020194842713,
+        "mutual_entailment_mean": 0.7389043714501895,
+        "word_f1": 0.7420779974669294
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.6324881999753416,
+        "candidate_entails_reference": 0.5423390816431493,
+        "reference_contradicts_candidate": 0.34938117888668785,
+        "mutual_entailment_mean": 0.5874136408092454,
+        "word_f1": 0.7818287037037037
+      }
+    },
+    "closed_qa": {
+      "base": {
+        "reference_entails_candidate": 0.11883614351245342,
+        "candidate_entails_reference": 0.6885641675908118,
+        "reference_contradicts_candidate": 0.007629046755027957,
+        "mutual_entailment_mean": 0.40370015555163263,
+        "word_f1": 0.330887071429779
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.2774376763481996,
+        "candidate_entails_reference": 0.6200921182316961,
+        "reference_contradicts_candidate": 0.048005872922658455,
+        "mutual_entailment_mean": 0.44876489728994784,
+        "word_f1": 0.5097628494212935
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.2466115421120776,
+        "candidate_entails_reference": 0.6792693990282714,
+        "reference_contradicts_candidate": 0.041302603953226935,
+        "mutual_entailment_mean": 0.4629404705701745,
+        "word_f1": 0.5356941549578622
+      }
+    },
+    "creative_writing": {
+      "base": {
+        "reference_entails_candidate": 0.04124286290607415,
+        "candidate_entails_reference": 0.04405143455369398,
+        "reference_contradicts_candidate": 0.14348445064388216,
+        "mutual_entailment_mean": 0.042647148729884066,
+        "word_f1": 0.20787388434792378
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.30266140773164807,
+        "candidate_entails_reference": 0.09518494157964597,
+        "reference_contradicts_candidate": 0.06477960624033585,
+        "mutual_entailment_mean": 0.19892317465564702,
+        "word_f1": 0.16250987516704496
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.39410932514147134,
+        "candidate_entails_reference": 0.056613205968460534,
+        "reference_contradicts_candidate": 0.07036290422547609,
+        "mutual_entailment_mean": 0.22536126555496594,
+        "word_f1": 0.216015180742018
+      }
+    },
+    "general_qa": {
+      "base": {
+        "reference_entails_candidate": 0.06906920723849908,
+        "candidate_entails_reference": 0.07989201015880099,
+        "reference_contradicts_candidate": 0.030684571305755526,
+        "mutual_entailment_mean": 0.07448060869865003,
+        "word_f1": 0.2780767236485683
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.17355918542307336,
+        "candidate_entails_reference": 0.05580309527431382,
+        "reference_contradicts_candidate": 0.03541949153441237,
+        "mutual_entailment_mean": 0.11468114034869359,
+        "word_f1": 0.2575116419854641
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.2224574148422107,
+        "candidate_entails_reference": 0.061217936396133155,
+        "reference_contradicts_candidate": 0.09097042609209893,
+        "mutual_entailment_mean": 0.14183767561917193,
+        "word_f1": 0.2518210452632513
+      }
+    },
+    "information_extraction": {
+      "base": {
+        "reference_entails_candidate": 0.4451156512077432,
+        "candidate_entails_reference": 0.5797699695685878,
+        "reference_contradicts_candidate": 0.14431861307821237,
+        "mutual_entailment_mean": 0.5124428103881655,
+        "word_f1": 0.5361838880760667
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.40679314430599334,
+        "candidate_entails_reference": 0.33133696689037606,
+        "reference_contradicts_candidate": 0.08451944845728576,
+        "mutual_entailment_mean": 0.3690650555981847,
+        "word_f1": 0.5431001004834055
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.42080722381797386,
+        "candidate_entails_reference": 0.48061407159548253,
+        "reference_contradicts_candidate": 0.06879886756360065,
+        "mutual_entailment_mean": 0.4507106477067282,
+        "word_f1": 0.5554899990351337
+      }
+    },
+    "open_qa": {
+      "base": {
+        "reference_entails_candidate": 0.11870883534720633,
+        "candidate_entails_reference": 0.25236415401741397,
+        "reference_contradicts_candidate": 0.008268868317827582,
+        "mutual_entailment_mean": 0.18553649468231015,
+        "word_f1": 0.2584915338435926
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.5242159969930071,
+        "candidate_entails_reference": 0.14257086369616445,
+        "reference_contradicts_candidate": 0.3001199537393404,
+        "mutual_entailment_mean": 0.3333934303445858,
+        "word_f1": 0.4039746704037331
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.38616193812777055,
+        "candidate_entails_reference": 0.23891044793344918,
+        "reference_contradicts_candidate": 0.23539221629471285,
+        "mutual_entailment_mean": 0.31253619303060987,
+        "word_f1": 0.43037869494250974
+      }
+    },
+    "summarization": {
+      "base": {
+        "reference_entails_candidate": 0.09276831801980734,
+        "candidate_entails_reference": 0.20093835760781076,
+        "reference_contradicts_candidate": 0.014903354280249914,
+        "mutual_entailment_mean": 0.14685333781380905,
+        "word_f1": 0.37258793845175747
+      },
+      "stage26_short": {
+        "reference_entails_candidate": 0.3742950639280025,
+        "candidate_entails_reference": 0.1748348924156744,
+        "reference_contradicts_candidate": 0.15134342436795123,
+        "mutual_entailment_mean": 0.27456497817183845,
+        "word_f1": 0.4406565484011271
+      },
+      "stage31_full": {
+        "reference_entails_candidate": 0.3703325761962333,
+        "candidate_entails_reference": 0.2683081022114493,
+        "reference_contradicts_candidate": 0.08051320275626495,
+        "mutual_entailment_mean": 0.3193203392038413,
+        "word_f1": 0.46638158947828984
+      }
+    }
+  },
+  "stratified_bootstrap_95pct_ci_deltas_new_vs": {
+    "base": {
+      "reference_entails_candidate": [
+        0.1492919232564418,
+        0.3421853435634148
+      ],
+      "mutual_entailment_mean": [
+        0.06104008047259413,
+        0.2042409946600401
+      ]
+    },
+    "stage26_short": {
+      "reference_entails_candidate": [
+        -0.08027708398367395,
+        0.05966894799439615
+      ],
+      "mutual_entailment_mean": [
+        -0.036010771963674415,
+        0.07099057286018251
+      ]
+    }
+  },
+  "limitations": [
+    "XNLI entailment is a FALLIBLE out-of-domain surrogate, especially open-ended creative writing",
+    "Reference entails candidate is not verified evidence grounding or factuality",
+    "Four methods share public Dolly test may appear in model pretraining",
+    "Stratified bootstrap captures within-fixed-test sampling only, not model training randomness",
+    "Long answers may be truncated by NLI token cap 384 and 128-token generation cap"
+  ]
+}

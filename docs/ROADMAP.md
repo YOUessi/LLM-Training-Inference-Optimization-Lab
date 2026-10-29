@@ -1,5 +1,19 @@
 # Milestones and acceptance gates
 
+## Stage30–34 completed — real Qwen3 8B mixed serving + full-data SFT follow-up (2026-10-30)
+
+- [x] Stage30: new PSF stdlib corpus, 3 arrival seeds × 3 cold/hot mixes × cache OFF/ON, 18 real GPU cells, 1,728 completed requests, three-seed paired analysis and exploratory intervals. Shared-prefix cache conditional gains, not generic cold-start gains.
+- [x] Stage31: 4 real Qwen3-8B NF4 LoRA train conditions, each 512 distinct training records ×2 full epochs, rank8/rank16 ×2 independent seeds; validation-best epoch selected, final 96 test CE/PPL 2.815→1.614. Four epoch2 models worsened validation relative to epoch1.
+- [x] Stage32: 64 fixed test prompts × 3 model generations and 384 independent mDeBERTa-v3 XNLI directional semantic-reference scores. Full-vs-short improvement not established by conditional CI; XNLI does not replace human semantic evaluation.
+- [x] Stage33: 1,152 served real requests over 12 offered windows of 59.375 seconds each; 3 seeds and mixed cold/hot leading header conditions; no claimed multi-hour soak.
+- [x] Stage34: 128 newly sampled Dolly IDs disjoint from the previous 704 train/validation/test IDs, all three models evaluated for answer CE; public source remains Dolly, not a new independent dataset.
+- [ ] Production data / multiple independent new source datasets and actual direct cache hit counters, longer soak windows and meaningful SLOs at high utilization.
+- [ ] Human or more robust instruction correctness/safety evaluation across multiple fine-tuning seeds, longer training data and model checkpoints.
+- [ ] Real multi-GPU FSDP and distributed optimizer checkpoint restore, unavailable on current one-GPU machine.
+
+**Comprehensive audit:** [Stage30–34 research delivery](STAGE30_34_DELIVERY.md); results are not a production rollout permit.
+
+
 ## Latest verified batch (2026-10-29): Stage25–28
 
 - [x] Fail-closed **retire** old Stage13 cron with stale SHA; keep original logs/crontab. New finite batch scripts pin exact source SHA and require shared GPU flock, idle GPU, unoccupied localhost port, and no preexisting outputs.

@@ -1,0 +1,36 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:08,  2.21s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:05<00:08,  2.68s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:07<00:04,  2.34s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:08<00:02,  2.05s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.36s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.78s/it]
+STAGE34_CE_PROGRESS base 32 of128
+STAGE34_CE_PROGRESS base 64 of128
+STAGE34_CE_PROGRESS base 96 of128
+STAGE34_CE_PROGRESS base 128 of128
+STAGE34_CE_PROGRESS stage26_short 32 of128
+STAGE34_CE_PROGRESS stage26_short 64 of128
+STAGE34_CE_PROGRESS stage26_short 96 of128
+STAGE34_CE_PROGRESS stage26_short 128 of128
+STAGE34_CE_PROGRESS stage31_full 32 of128
+STAGE34_CE_PROGRESS stage31_full 64 of128
+STAGE34_CE_PROGRESS stage31_full 96 of128
+STAGE34_CE_PROGRESS stage31_full 128 of128
+STAGE34_UNSEEN_128_HOLDOUT_PASS {
+  "base": {
+    "records": 128,
+    "assistant_tokens": 10307,
+    "ce_nats": 2.6345321056811173,
+    "perplexity": 13.93678999250742,
+    "mean_record_ce": 3.2773109796107747
+  },
+  "stage26_short": {
+    "records": 128,
+    "assistant_tokens": 10307,
+    "ce_nats": 1.5825950779144395,
+    "perplexity": 4.867571161667633,
+    "mean_record_ce": 1.2488617750350386
+  },
+  "stage31_full": {
+    "records": 128,
+    "assistant_tokens": 10307,
+    "ce_nats": 1.5613178384378357,
+    "perplexity": 4.765096736827348,
+    "mean_record_ce": 1.2343447973835282
+  }
+}

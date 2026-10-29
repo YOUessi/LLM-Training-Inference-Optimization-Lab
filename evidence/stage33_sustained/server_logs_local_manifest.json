@@ -1,0 +1,53 @@
+{
+  "local_source": "/home/you/projects/llmopt_stage33_frozen/results/stage33_sustained_real_8b",
+  "server_logs": {
+    "server_seed3011_cold0_off.log": {
+      "bytes": 58502,
+      "sha256": "b72e9c1141e4aaf54d30b439aacbcd0d0130f4cb7f328ca0e5ebe38b577e63cc"
+    },
+    "server_seed3011_cold0_on.log": {
+      "bytes": 58499,
+      "sha256": "54359f21c09e0eff7b24b6ccd1857386c3d83b1de6310cda36e496ad5f307f75"
+    },
+    "server_seed3011_hot50_off.log": {
+      "bytes": 58502,
+      "sha256": "5bb99f7e94f77db29e30a67d8188093f626f89b58b0eaabb84e4cf38b1a3dd42"
+    },
+    "server_seed3011_hot50_on.log": {
+      "bytes": 58502,
+      "sha256": "e6edca64020706a397302e9573786767d6541da8cd34dd7278e85a4699bb9753"
+    },
+    "server_seed3029_cold0_off.log": {
+      "bytes": 58419,
+      "sha256": "903363b31f5b406774819443d69ea64b4d58dec28e55fb62cc29b809822dec98"
+    },
+    "server_seed3029_cold0_on.log": {
+      "bytes": 58416,
+      "sha256": "d14cc1f41bef938a96bae357ac00489201260bc7be111ad3a204b60d8d290f95"
+    },
+    "server_seed3029_hot50_off.log": {
+      "bytes": 58419,
+      "sha256": "411357e601b6d4052894fdd4f7e964328feeabe3b0946af9185594504eda62aa"
+    },
+    "server_seed3029_hot50_on.log": {
+      "bytes": 58336,
+      "sha256": "92ae297eddd1048c2da96ecb8b91238f9492f9bbd6e8458a6fb925c8ff221e55"
+    },
+    "server_seed3041_cold0_off.log": {
+      "bytes": 58335,
+      "sha256": "b162b638e8bd5cc03c25c7865be789b9660b7dd4f0ac25f6b41f1e3874a906aa"
+    },
+    "server_seed3041_cold0_on.log": {
+      "bytes": 58333,
+      "sha256": "80fcba0c863fa3fc0ffcb05832487e4008f7cfed6ffdc9b5dbd8557d840aa831"
+    },
+    "server_seed3041_hot50_off.log": {
+      "bytes": 58336,
+      "sha256": "7c57389b3298042cb9e2afb3a09b3489cb0973510eb4c509fd4bbf2e5f9a9916"
+    },
+    "server_seed3041_hot50_on.log": {
+      "bytes": 58332,
+      "sha256": "e4b58dcef4235414f236ad10c9dc2708bc7e6d429ad0b29ef55eebf1a8dec35d"
+    }
+  }
+}

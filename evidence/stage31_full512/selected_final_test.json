@@ -1,0 +1,159 @@
+{
+  "status": "measured",
+  "kind": "stage26_qwen3_8b_nf4_real_dolly_sft",
+  "action": "test",
+  "dataset_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "splits": {
+    "train": "5861d6911c50b6ced25be4670d157c22f995d22ceb3571b8df97c59aa5686c85",
+    "validation": "4f215251d6e504946508eeee3bef2014b13967a524dcb5ae7948722174712fe7",
+    "test": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127"
+  },
+  "config": {
+    "rank": 16,
+    "micro_batch": 1,
+    "accum": 2,
+    "effective_batch": 2,
+    "precision": "bf16",
+    "grad_checkpoint": false,
+    "steps": 512,
+    "seed": 2610
+  },
+  "trainable_parameters": 0,
+  "validation_before": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 1.777011353272592,
+    "assistant_perplexity": 5.912160629015104,
+    "mean_record_loss": 1.4210795172451374
+  },
+  "notes": [
+    "Human-written Databricks Dolly records, answer-only masked CE",
+    "Small training budget; no full alignment benchmark",
+    "Different-rank experiments have different optimizer capacity; compare with same data/steps"
+  ],
+  "test_metrics": {
+    "count": 96,
+    "target_tokens": 6539,
+    "assistant_ce_nats": 1.6144466951357277,
+    "assistant_perplexity": 5.025106738116325,
+    "mean_record_loss": 1.3962503604901333
+  },
+  "base_test_metrics": {
+    "count": 96,
+    "target_tokens": 6539,
+    "assistant_ce_nats": 2.8145398792733403,
+    "assistant_perplexity": 16.68549667095518,
+    "mean_record_loss": 4.010787493859728
+  },
+  "validation_after": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 1.777011353272592,
+    "assistant_perplexity": 5.912160629015104,
+    "mean_record_loss": 1.4210795172451374
+  },
+  "generated_samples": {
+    "count": 12,
+    "mean_reference_token_overlap_f1": 0.3674883799835815,
+    "per_case": [
+      {
+        "id_sha256": "eb48267c31657a068380134c331bff81934543d9934c88cd90d675a999ca485c",
+        "category": "information_extraction",
+        "reference_length": 169,
+        "generated_length": 445,
+        "token_overlap_f1": 0.547945205479452,
+        "generation_sha256": "a44f668f7cc0cbff91b05bb14afef49d96caf0fe1515ed33d586c55830989f23"
+      },
+      {
+        "id_sha256": "9c68b4017c47a4848d579a9a815c74a313fc184a1eb4e0b588b0373c85739ac8",
+        "category": "brainstorming",
+        "reference_length": 121,
+        "generated_length": 57,
+        "token_overlap_f1": 0.0,
+        "generation_sha256": "b5f5dc58a0cac65921ca7f4e6969f70584ae9e08ef584ee0a495f002752fcd4e"
+      },
+      {
+        "id_sha256": "103c54b1bc810b39cd7d8776d07943d7ec3af15472f4493f364f9e2508993f2a",
+        "category": "creative_writing",
+        "reference_length": 1075,
+        "generated_length": 311,
+        "token_overlap_f1": 0.22666666666666666,
+        "generation_sha256": "dc3ab9dc1494412b963a1685df460fa8757d0715c85dfd064810a352acbd3594"
+      },
+      {
+        "id_sha256": "ec28fd044c696e3e472f7adb71acb2a3d16896699cf253573f6fa746de9b7009",
+        "category": "closed_qa",
+        "reference_length": 113,
+        "generated_length": 317,
+        "token_overlap_f1": 0.5245901639344261,
+        "generation_sha256": "5307ceaa5865aad9c3a8fd6fea6c5ed1ba0dd60ce7457abb14183a5eca05d254"
+      },
+      {
+        "id_sha256": "321425c95e68ec5ade498f7444b0abbf519093687299bff776be20ddce745d96",
+        "category": "classification",
+        "reference_length": 35,
+        "generated_length": 36,
+        "token_overlap_f1": 0.8000000000000002,
+        "generation_sha256": "f905219827dcb3962799bead2eeac30ee0940198cd14d0d2124eaf00e1680cc8"
+      },
+      {
+        "id_sha256": "b03832a9fa2a7b4716d2465923b0fa66f2162b6f12173949547977cfbb50af80",
+        "category": "open_qa",
+        "reference_length": 196,
+        "generated_length": 303,
+        "token_overlap_f1": 0.40816326530612246,
+        "generation_sha256": "4a87acea6e385176c58a5c9212e0f139262c16a4eae5927cb591447166a45121"
+      },
+      {
+        "id_sha256": "ee5bb98ad87a5c6b88bb849b40874896a074bac5eb0b6989481eb7111536beb6",
+        "category": "open_qa",
+        "reference_length": 40,
+        "generated_length": 373,
+        "token_overlap_f1": 0.07017543859649122,
+        "generation_sha256": "b3372289030f70047db9cac29b6f06085f340d2646eda1f7183101d00ff07287"
+      },
+      {
+        "id_sha256": "5068081b5d1524318b1b4904b754c29e7ed66e27c55d03969220414da3eb6590",
+        "category": "open_qa",
+        "reference_length": 24,
+        "generated_length": 25,
+        "token_overlap_f1": 0.75,
+        "generation_sha256": "a8fd3345dc931be5207ea1577652a919c8f798b0b47bf24b9d58fd9c2053b207"
+      },
+      {
+        "id_sha256": "cbc84f2d790463345ceb3e0e15aad85e7b63587396b3f9a7d8c1364fd7bf0216",
+        "category": "general_qa",
+        "reference_length": 454,
+        "generated_length": 394,
+        "token_overlap_f1": 0.33333333333333337,
+        "generation_sha256": "f3f6f3251ac77c0cc206ba7f7128feecddb46000e538156131f447c800f0b4d2"
+      },
+      {
+        "id_sha256": "398268f917f2ccbf465c8155dfaee05dcb1c675164b0090e4053a330f14a565e",
+        "category": "information_extraction",
+        "reference_length": 121,
+        "generated_length": 90,
+        "token_overlap_f1": 0.48648648648648646,
+        "generation_sha256": "7796dcc931fe8b3cf254e6123558abdf93ebe7e5ed703617150a355d2e2c0024"
+      },
+      {
+        "id_sha256": "8cfedfa2f3a3127b42d3d35f6bc647b7bb19d129c2825f8c1e87ac5ccc4e7f66",
+        "category": "summarization",
+        "reference_length": 93,
+        "generated_length": 74,
+        "token_overlap_f1": 0.19999999999999998,
+        "generation_sha256": "a4c24b756012e7df46c48fce4cff8948f3b7ad27bd61ea2a534d2d543beb5cd1"
+      },
+      {
+        "id_sha256": "586c8406181935095d7eef4c0e1ae1a036bf56801db5d3bbf536b32a7c380a6c",
+        "category": "creative_writing",
+        "reference_length": 125,
+        "generated_length": 322,
+        "token_overlap_f1": 0.0625,
+        "generation_sha256": "89f7052bb92e4a025fac3c7a7d98b45ab84c48ce910cf368153847ba562aba56"
+      }
+    ],
+    "note": "lexical overlap is a weak reference metric, not semantic quality or alignment; no reference texts saved in result"
+  },
+  "final_report_note": "Frozen test evaluated only after selecting adapter from validation."
+}

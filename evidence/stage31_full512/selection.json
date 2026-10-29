@@ -1,0 +1,16 @@
+{
+  "status": "candidate_selected_from_validation_only",
+  "selected": "rank16_seed3127",
+  "rank": 16,
+  "seed": 3127,
+  "best_epoch": 1,
+  "val_ce": 1.777000457446334,
+  "source_sha": "ff7171daab87857ceb9e15c5b04189c0c5f7f3d1",
+  "all_validation_criteria": {
+    "rank16_seed3111": 1.7808958851649919,
+    "rank16_seed3127": 1.777000457446334,
+    "rank8_seed3111": 1.7827144236432255,
+    "rank8_seed3127": 1.780227487369861
+  },
+  "test_has_not_been_accessed": true
+}

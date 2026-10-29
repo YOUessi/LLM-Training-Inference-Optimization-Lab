@@ -2,6 +2,8 @@
 
 An independent, reproducible systems engineering lab for **LLM inference serving**, **CUDA/Triton kernels**, **GPU profiling**, and **distributed training**. Targeted at AI Infra, LLM serving, and training-framework internship roles.
 
+**Latest verified research delivery — 2026-10-30:** Stage30–34 ran on the real Tang single RTX4090 Laptop (16GiB). Added 1,728 real 8B prefix-cold/hot mixed serving requests, four two-epoch full512 Dolly QLoRA rank/seed runs, 64×3 generated answers evaluated with an independent XNLI semantic proxy, 1,152 sustained ~60-second offered-window requests, and an additional 128 Dolly *record-disjoint* CE holdout. **Research evidence passed; production/Human quality/multi-GPU performance gates remain open.** [Stage30–34 comprehensive results](docs/STAGE30_34_DELIVERY.md).
+
 **Latest verified status — 2026-10-29:** Real Qwen3-8B-AWQ inference serving, real 8B NF4 QLoRA SFT, Qwen3-shaped Triton/Inductor GPU microbenchmarks, and exact Transformer checkpoint resume have been executed and archived. **Research-artifact evidence PASS; production deployment and multi-GPU FSDP remain BLOCKED.** The full CPU regression and machine evidence audit are the go/no-go gate, not just a claim in this README.
 
 | Verified workstream | Actual result | Reproducible evidence |

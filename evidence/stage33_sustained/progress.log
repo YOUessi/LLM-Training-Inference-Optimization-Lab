@@ -1,0 +1,24 @@
+RUN_SUSTAINED seed3011_cold0_off
+STAGE30_REAL cold0 3011 off status measured offered 96 completed 96 SLO250 0.365 TPS 102.2 P95 597.1 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3011_cold0_on
+STAGE30_REAL cold0 3011 on status measured offered 96 completed 96 SLO250 0.365 TPS 102.2 P95 598.4 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3011_hot50_off
+STAGE30_REAL hot50 3011 off status measured offered 96 completed 96 SLO250 0.354 TPS 102.2 P95 590.9 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3011_hot50_on
+STAGE30_REAL hot50 3011 on status measured offered 96 completed 96 SLO250 0.5 TPS 102.4 P95 541.1 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3029_cold0_on
+STAGE30_REAL cold0 3029 on status measured offered 96 completed 96 SLO250 0.396 TPS 102.7 P95 647.4 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3029_cold0_off
+STAGE30_REAL cold0 3029 off status measured offered 96 completed 96 SLO250 0.375 TPS 102.7 P95 645.7 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3029_hot50_on
+STAGE30_REAL hot50 3029 on status measured offered 96 completed 96 SLO250 0.5 TPS 102.7 P95 591.6 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3029_hot50_off
+STAGE30_REAL hot50 3029 off status measured offered 96 completed 96 SLO250 0.385 TPS 102.7 P95 648.7 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3041_cold0_off
+STAGE30_REAL cold0 3041 off status measured offered 96 completed 96 SLO250 0.365 TPS 102.8 P95 650.6 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3041_cold0_on
+STAGE30_REAL cold0 3041 on status measured offered 96 completed 96 SLO250 0.365 TPS 102.8 P95 652.8 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3041_hot50_off
+STAGE30_REAL hot50 3041 off status measured offered 96 completed 96 SLO250 0.365 TPS 102.8 P95 653.2 len_gates [('label', 'pass'), ('detailed', 'pass')]
+RUN_SUSTAINED seed3041_hot50_on
+STAGE30_REAL hot50 3041 on status measured offered 96 completed 96 SLO250 0.5 TPS 102.9 P95 542.9 len_gates [('label', 'pass'), ('detailed', 'pass')]

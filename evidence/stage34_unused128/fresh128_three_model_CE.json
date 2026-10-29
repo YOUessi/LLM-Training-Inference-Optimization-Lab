@@ -1,0 +1,2564 @@
+{
+  "status": "measured",
+  "kind": "stage34_128_fresh_unused_dolly8b_qlora_cross_generalization_CE",
+  "source_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "frozen_unused_holdout_sha256": "0d57dfe8a83d76836dbc3461b677e134a9a9114aa031490cc969a8e84ca3b499",
+  "source_ids_excluded_from_all_previous_704": true,
+  "selected_stage31": "rank16_seed3127",
+  "selected_rank": 16,
+  "adapter_git_blob_sha256": {
+    "stage26": "c4ec5d367f7b91e07062994a14c50258f77f4e4584d0e3b33e92ec14c3d03323",
+    "stage31": "b4756915e2b1fef932358e24f374f820aed4daeda73c268c00b2b3064411b39b"
+  },
+  "counts": {
+    "examples": 128,
+    "categories": 8,
+    "per_category": 16,
+    "models": 3
+  },
+  "overall": {
+    "base": {
+      "records": 128,
+      "assistant_tokens": 10307,
+      "ce_nats": 2.6345321056811173,
+      "perplexity": 13.93678999250742,
+      "mean_record_ce": 3.2773109796107747
+    },
+    "stage26_short": {
+      "records": 128,
+      "assistant_tokens": 10307,
+      "ce_nats": 1.5825950779144395,
+      "perplexity": 4.867571161667633,
+      "mean_record_ce": 1.2488617750350386
+    },
+    "stage31_full": {
+      "records": 128,
+      "assistant_tokens": 10307,
+      "ce_nats": 1.5613178384378357,
+      "perplexity": 4.765096736827348,
+      "mean_record_ce": 1.2343447973835282
+    }
+  },
+  "by_category": {
+    "brainstorming": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 1048,
+        "ce_nats": 2.988294110270857,
+        "perplexity": 19.851788627861787,
+        "mean_record_ce": 3.230816811323166
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 1048,
+        "ce_nats": 1.7395492954791048,
+        "perplexity": 5.694776182811063,
+        "mean_record_ce": 1.5142638348042965
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 1048,
+        "ce_nats": 1.7276152574265276,
+        "perplexity": 5.6272184273598125,
+        "mean_record_ce": 1.5001508258283138
+      }
+    },
+    "classification": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 643,
+        "ce_nats": 2.5708821231432686,
+        "perplexity": 13.077355192083303,
+        "mean_record_ce": 3.374706707894802
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 643,
+        "ce_nats": 0.7391085446483425,
+        "perplexity": 2.094067914128091,
+        "mean_record_ce": 0.765233039855957
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 643,
+        "ce_nats": 0.7083302479046129,
+        "perplexity": 2.0305978313602138,
+        "mean_record_ce": 0.7113148653879762
+      }
+    },
+    "closed_qa": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 789,
+        "ce_nats": 2.5192409188726255,
+        "perplexity": 12.419165930209166,
+        "mean_record_ce": 3.6796883195638657
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 789,
+        "ce_nats": 1.0161944871959578,
+        "perplexity": 2.762661390936851,
+        "mean_record_ce": 0.7009232589043677
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 789,
+        "ce_nats": 0.9958785523970922,
+        "perplexity": 2.7071016274652857,
+        "mean_record_ce": 0.6834120224229991
+      }
+    },
+    "creative_writing": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 2316,
+        "ce_nats": 3.0047766657896817,
+        "perplexity": 20.181708326744584,
+        "mean_record_ce": 3.0577815175056458
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 2316,
+        "ce_nats": 2.224683227316703,
+        "perplexity": 9.250552017550293,
+        "mean_record_ce": 2.0289440974593163
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 2316,
+        "ce_nats": 2.2027566416996542,
+        "perplexity": 9.049926550387825,
+        "mean_record_ce": 2.006118491292
+      }
+    },
+    "general_qa": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 2247,
+        "ce_nats": 2.431788175595194,
+        "perplexity": 11.37921192697653,
+        "mean_record_ce": 2.6809929236769676
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 2247,
+        "ce_nats": 1.7398856265522609,
+        "perplexity": 5.696691835124653,
+        "mean_record_ce": 1.6874700523912907
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 2247,
+        "ce_nats": 1.7092255735376118,
+        "perplexity": 5.524681361077877,
+        "mean_record_ce": 1.6571105867624283
+      }
+    },
+    "information_extraction": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 604,
+        "ce_nats": 2.0011787570100155,
+        "perplexity": 7.397771136051106,
+        "mean_record_ce": 3.901017897296697
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 604,
+        "ce_nats": 0.6086030639584689,
+        "perplexity": 1.8378622287296313,
+        "mean_record_ce": 0.5097910403274
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 604,
+        "ce_nats": 0.6013160547648637,
+        "perplexity": 1.824518387167376,
+        "mean_record_ce": 0.5069367093965411
+      }
+    },
+    "open_qa": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 1353,
+        "ce_nats": 2.692652374572077,
+        "perplexity": 14.770801708242585,
+        "mean_record_ce": 3.5259443670511246
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 1353,
+        "ce_nats": 1.7367315076054772,
+        "perplexity": 5.678752098378022,
+        "mean_record_ce": 1.64071911200881
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 1353,
+        "ce_nats": 1.7160751963005363,
+        "perplexity": 5.5626532423563,
+        "mean_record_ce": 1.677492382004857
+      }
+    },
+    "summarization": {
+      "base": {
+        "records": 16,
+        "assistant_tokens": 1307,
+        "ce_nats": 2.376794548552731,
+        "perplexity": 10.77032372289546,
+        "mean_record_ce": 2.767539292573929
+      },
+      "stage26_short": {
+        "records": 16,
+        "assistant_tokens": 1307,
+        "ce_nats": 1.095984869201218,
+        "perplexity": 2.9921280875358853,
+        "mean_record_ce": 1.1435497645288706
+      },
+      "stage31_full": {
+        "records": 16,
+        "assistant_tokens": 1307,
+        "ce_nats": 1.0814833666134538,
+        "perplexity": 2.949050831703234,
+        "mean_record_ce": 1.1322224959731102
+      }
+    }
+  },
+  "within_source_stratified_bootstrap": {
+    "base": {
+      "delta_new_minus_comparator_ce": -1.0732142672432816,
+      "within_fixed_128_stratified_bootstrap_95pct_ci": [
+        -1.19208787936123,
+        -0.9664075773410745
+      ]
+    },
+    "stage26_short": {
+      "delta_new_minus_comparator_ce": -0.02127723947660387,
+      "within_fixed_128_stratified_bootstrap_95pct_ci": [
+        -0.02589048477669298,
+        -0.016455240571022545
+      ]
+    }
+  },
+  "paired_ce": {
+    "base": [
+      {
+        "identity_sha256": "c232a5b410ec18ba7e056d5810010706dc41a4f56e12adf5a7c7d2cd87870b88",
+        "category": "brainstorming",
+        "answer_tokens": 20,
+        "ce_nats": 3.774702548980713
+      },
+      {
+        "identity_sha256": "43f4383f4ba9a104a7f36ecaad14e16a45a5ff592099df3c5ce7a9af6dea546d",
+        "category": "creative_writing",
+        "answer_tokens": 253,
+        "ce_nats": 2.619699239730835
+      },
+      {
+        "identity_sha256": "c5024f26300398593fc3884ed47291e6a2d27aae6267d12d3bdf1efef5e997dc",
+        "category": "creative_writing",
+        "answer_tokens": 53,
+        "ce_nats": 3.1492021083831787
+      },
+      {
+        "identity_sha256": "692a635f3bd703659ff1fecc060fe1cfe7577774e1e41476473719ea789aa336",
+        "category": "open_qa",
+        "answer_tokens": 69,
+        "ce_nats": 3.7066473960876465
+      },
+      {
+        "identity_sha256": "711ae3f38375ce255223ed26ddb0e1f73cd8f3794b28d59cd249c1755252f336",
+        "category": "classification",
+        "answer_tokens": 40,
+        "ce_nats": 1.7529197931289673
+      },
+      {
+        "identity_sha256": "83bfd953d831bb3f4548106fb6c5d951b19020569ca177ea4ae2d52569d45124",
+        "category": "classification",
+        "answer_tokens": 74,
+        "ce_nats": 2.0218679904937744
+      },
+      {
+        "identity_sha256": "97dbcd468e380b8a19dc7903af7b850af90bb1d9460be3a62420baf7357889bb",
+        "category": "creative_writing",
+        "answer_tokens": 109,
+        "ce_nats": 2.537094831466675
+      },
+      {
+        "identity_sha256": "e8627f1ea010d55e061757acd272e65d19a4d1566b1a38182986f396462442d7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 2.8250858783721924
+      },
+      {
+        "identity_sha256": "2364177517f90e99bdee3cd1183ad4a6af4f6cea97dcf56e99fae7a04e474b77",
+        "category": "classification",
+        "answer_tokens": 41,
+        "ce_nats": 2.869529962539673
+      },
+      {
+        "identity_sha256": "a61c98fca0cb8d82c7a274335ea0311004f9d14cde824789df109b7fff4cce09",
+        "category": "brainstorming",
+        "answer_tokens": 14,
+        "ce_nats": 4.18374490737915
+      },
+      {
+        "identity_sha256": "e8ab46c72406818ffcd2e973e0428969bf9ce8161234bb2bb6d0804ca19caa38",
+        "category": "summarization",
+        "answer_tokens": 132,
+        "ce_nats": 1.3605389595031738
+      },
+      {
+        "identity_sha256": "2f1caebb0b497afae24904e9e815118dabf96a13cb7e081d005d30b79161d65b",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 3.607954502105713
+      },
+      {
+        "identity_sha256": "498402f3ca199b53def5558f63dbe6640bca700dc0635c3fce99f478cf6784eb",
+        "category": "closed_qa",
+        "answer_tokens": 140,
+        "ce_nats": 2.1531357765197754
+      },
+      {
+        "identity_sha256": "05c3e5da42441cfd97f4c4776663f61fafda865af9d3d99082b7e8db1b1335df",
+        "category": "general_qa",
+        "answer_tokens": 58,
+        "ce_nats": 3.643570899963379
+      },
+      {
+        "identity_sha256": "e6a244801a2cb49703ef885ba2ed143c113b5fd6fb3133ed1462be7157ec3fd9",
+        "category": "information_extraction",
+        "answer_tokens": 36,
+        "ce_nats": 1.2753878831863403
+      },
+      {
+        "identity_sha256": "8fba3a7f28a721d4b20bef68bbcb6c3ff099f981df14b6d3f32a258b29d69895",
+        "category": "brainstorming",
+        "answer_tokens": 111,
+        "ce_nats": 2.548482894897461
+      },
+      {
+        "identity_sha256": "b5729851fe6deb36ba679db71d45bc3c53eec599ef8c0b4b9339169008f57eb0",
+        "category": "open_qa",
+        "answer_tokens": 241,
+        "ce_nats": 2.5903899669647217
+      },
+      {
+        "identity_sha256": "168fdf59031431da15e19eb84121ee78cdb4dbc469cca1e1bb674c08aed4f8e4",
+        "category": "closed_qa",
+        "answer_tokens": 34,
+        "ce_nats": 2.6499271392822266
+      },
+      {
+        "identity_sha256": "c0813ae558fa6eff3aadc641bcf5d789d5ccbcea2c40a9da14e052f30631aec0",
+        "category": "general_qa",
+        "answer_tokens": 310,
+        "ce_nats": 2.170264959335327
+      },
+      {
+        "identity_sha256": "032ff592edd7dfdf6793afebb579f55c655b02eb4000b21ee5909900e91fb0ea",
+        "category": "general_qa",
+        "answer_tokens": 60,
+        "ce_nats": 2.635474443435669
+      },
+      {
+        "identity_sha256": "52d43606f5d9a20b1443f033d49e037f9dc85dce7d8781cbefef2934490742ee",
+        "category": "classification",
+        "answer_tokens": 15,
+        "ce_nats": 4.216672897338867
+      },
+      {
+        "identity_sha256": "02e0b94143e5709bf2e0a34ac30fdae263360480710f124a588ef8b51746d4be",
+        "category": "summarization",
+        "answer_tokens": 214,
+        "ce_nats": 2.103325605392456
+      },
+      {
+        "identity_sha256": "c80fae4eede08a68d94cd1665111644a0d28959dfcb0aa3b884056403eaa88a6",
+        "category": "general_qa",
+        "answer_tokens": 208,
+        "ce_nats": 2.5776824951171875
+      },
+      {
+        "identity_sha256": "0aebae721bada5e848ce0b2b9bea351ea39b9ab36301fd24c8eec7507e9e6ffa",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 3.5813000202178955
+      },
+      {
+        "identity_sha256": "1ed07d811b19568c682ffcc6b0b5a038af80b64f98448dee75f451457d9140a1",
+        "category": "closed_qa",
+        "answer_tokens": 29,
+        "ce_nats": 2.516066551208496
+      },
+      {
+        "identity_sha256": "521732dcfda856f2734af64348ba08d3d2462f2ee726f6bbbd96690bf5817f32",
+        "category": "open_qa",
+        "answer_tokens": 111,
+        "ce_nats": 2.601691722869873
+      },
+      {
+        "identity_sha256": "97c090a65e2795a6a10155e3e3dba9dec6e8026def8e365813e8c69b6b39bf08",
+        "category": "brainstorming",
+        "answer_tokens": 80,
+        "ce_nats": 2.569854974746704
+      },
+      {
+        "identity_sha256": "e70efde54468576302674343c5bc2268bfee31ff52b27776cd00f706e92892ca",
+        "category": "summarization",
+        "answer_tokens": 103,
+        "ce_nats": 2.928386688232422
+      },
+      {
+        "identity_sha256": "840970cc97e595aafcfcfb1d2a09d99edaaa5becb1f6e908a65f2fa690eb5f7f",
+        "category": "classification",
+        "answer_tokens": 96,
+        "ce_nats": 0.8467206954956055
+      },
+      {
+        "identity_sha256": "dd7cc77cde8e244a29af37d40b83e40ae52bac0488aea0e0a5f0fc8dbe613895",
+        "category": "creative_writing",
+        "answer_tokens": 84,
+        "ce_nats": 3.435974597930908
+      },
+      {
+        "identity_sha256": "3af31252c07dd569c7e4d866fe25b6ad8a145dd3238200980c480db66c59b01e",
+        "category": "creative_writing",
+        "answer_tokens": 70,
+        "ce_nats": 3.241164207458496
+      },
+      {
+        "identity_sha256": "919255bbbd879768bc8f0aacc67378db7aee314d1412416d3e24351e02d61fe0",
+        "category": "brainstorming",
+        "answer_tokens": 32,
+        "ce_nats": 2.858959436416626
+      },
+      {
+        "identity_sha256": "fd7aaaa9a8df03ef96b73e70c8fb2659c0840f039864eb2cab9adb1b3d3d2fa4",
+        "category": "open_qa",
+        "answer_tokens": 9,
+        "ce_nats": 6.338315486907959
+      },
+      {
+        "identity_sha256": "5e68233d42b02deb1c4698cb3f0954b3921442255fa8d8dab87a776ca67becae",
+        "category": "classification",
+        "answer_tokens": 45,
+        "ce_nats": 3.985416889190674
+      },
+      {
+        "identity_sha256": "9a43da0e850fe3212b6b315b2cfe8cb4f37aacbb87d51a4b038e114eae3ec511",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 2.9135255813598633
+      },
+      {
+        "identity_sha256": "44e17b09007d4d6999b1e060a80574b6ad560f7f6e47b1eafdc47b00256b74d3",
+        "category": "general_qa",
+        "answer_tokens": 130,
+        "ce_nats": 3.281181812286377
+      },
+      {
+        "identity_sha256": "0b3f17d420b2f108478b8f32986ff6d811fb8df4cc7aef2325db77f03a5712c7",
+        "category": "closed_qa",
+        "answer_tokens": 14,
+        "ce_nats": 6.536922454833984
+      },
+      {
+        "identity_sha256": "9a6e9ea3e41abd74855aecf7fb4f82e510f1d61f755d6887bedb53b7f400311e",
+        "category": "general_qa",
+        "answer_tokens": 88,
+        "ce_nats": 2.2332544326782227
+      },
+      {
+        "identity_sha256": "2c09baafe2e4a503a187f51d4843ac14adb8d92b08c154730b8bf4ae2238f16b",
+        "category": "closed_qa",
+        "answer_tokens": 41,
+        "ce_nats": 1.2337151765823364
+      },
+      {
+        "identity_sha256": "96ab92af4d10b528b8406b740fe7a0fea6cb92619816929f88f59b146e265564",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 5.248507976531982
+      },
+      {
+        "identity_sha256": "f2e851fe5d00e03ca9cf589cfaec3388783877f1b176a64f79b76ee2a7ef86f4",
+        "category": "open_qa",
+        "answer_tokens": 36,
+        "ce_nats": 2.858059883117676
+      },
+      {
+        "identity_sha256": "91f937a7392ca0cea9374fb946928dfac6e98d5c0691d779c99c9e8fc2fb573b",
+        "category": "summarization",
+        "answer_tokens": 23,
+        "ce_nats": 5.005462169647217
+      },
+      {
+        "identity_sha256": "19023fa1943aad05c31b24c1338736d6b75362a4855afbcf17c77a503da3e1ad",
+        "category": "information_extraction",
+        "answer_tokens": 3,
+        "ce_nats": 19.66764259338379
+      },
+      {
+        "identity_sha256": "b354a68ac6254d34b3f244bcb128e084d3154aa0f6d0d452029c2ffecaec7d4c",
+        "category": "open_qa",
+        "answer_tokens": 110,
+        "ce_nats": 2.6346123218536377
+      },
+      {
+        "identity_sha256": "83038db1dd3b5343d3f5b24fbb2ec687ddeba18d62e1a6f9fd05c6872b533571",
+        "category": "brainstorming",
+        "answer_tokens": 69,
+        "ce_nats": 1.3851795196533203
+      },
+      {
+        "identity_sha256": "8d8befd6d92636a5c76b79501c14fd1e799086cb2284bbf4a14463fe71fbb05b",
+        "category": "creative_writing",
+        "answer_tokens": 204,
+        "ce_nats": 3.1879241466522217
+      },
+      {
+        "identity_sha256": "59bb38a464ba132a3dc400da49940b4dbfc6492c664eb28f88527232e4c913a6",
+        "category": "classification",
+        "answer_tokens": 28,
+        "ce_nats": 3.1860580444335938
+      },
+      {
+        "identity_sha256": "7519d705bcb71d244ea613d194a85d39800427fd9051bd3b44dd9594b100ab03",
+        "category": "general_qa",
+        "answer_tokens": 160,
+        "ce_nats": 1.2297699451446533
+      },
+      {
+        "identity_sha256": "24747ccf2828f9d84d8af36aade0c64550a2b7362360eac1c3f86a85c4e570a2",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 3.36836838722229
+      },
+      {
+        "identity_sha256": "401ebbbd971a857e562a9f36c0a8ba910a6f70c763edda0d60433d4d57377344",
+        "category": "closed_qa",
+        "answer_tokens": 120,
+        "ce_nats": 2.989344835281372
+      },
+      {
+        "identity_sha256": "9d53a45eb7353166e2b9d417893e4ebeb00609a23e84ba22bff568b8131f3847",
+        "category": "closed_qa",
+        "answer_tokens": 94,
+        "ce_nats": 1.9911041259765625
+      },
+      {
+        "identity_sha256": "2e48e6583228c6efd881b27664a67dbd2fc0be94ac6622d2291d200366ac9e2b",
+        "category": "general_qa",
+        "answer_tokens": 39,
+        "ce_nats": 4.084571361541748
+      },
+      {
+        "identity_sha256": "80a4883e40ab3a7466df6d755a6852f345aab8667a66989ccaf53902db4c483d",
+        "category": "general_qa",
+        "answer_tokens": 215,
+        "ce_nats": 2.3449912071228027
+      },
+      {
+        "identity_sha256": "61bfbb270ca79265d001b48e720a2b371857e0b1a8b506089b4eb9be815a253d",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 1.3608511686325073
+      },
+      {
+        "identity_sha256": "fbf084360fdf503ecc2fee373d308477b31bc01b9edfc81b4c29c18f710d27a8",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 2.5169336795806885
+      },
+      {
+        "identity_sha256": "f1483ab6e9039d87e642a87b5037e994e672d42fba6ddf3c7806fcbae35bd855",
+        "category": "open_qa",
+        "answer_tokens": 48,
+        "ce_nats": 2.922633409500122
+      },
+      {
+        "identity_sha256": "56c568f1f4df003a0bc49326536b8a79f80c23ad001dec15761a3c53d58f29f9",
+        "category": "classification",
+        "answer_tokens": 9,
+        "ce_nats": 10.440957069396973
+      },
+      {
+        "identity_sha256": "d1853ff509c8c3024d3aafa2e04d2da61d0be1c95932a3f7cde4fb24446ddc0d",
+        "category": "closed_qa",
+        "answer_tokens": 28,
+        "ce_nats": 3.292681932449341
+      },
+      {
+        "identity_sha256": "e42c05223495e31b3fa9dd082bb667149b7fa85b22e1924221dfdc7082662535",
+        "category": "summarization",
+        "answer_tokens": 87,
+        "ce_nats": 2.076047658920288
+      },
+      {
+        "identity_sha256": "829c9f73e1e202a0d291c25e6c522f5b13ed4590505026b36598a753d5d66d57",
+        "category": "creative_writing",
+        "answer_tokens": 157,
+        "ce_nats": 2.7789711952209473
+      },
+      {
+        "identity_sha256": "358fff258badbc47fff228e77bd7dca87217bfdb9f96d505550cae3a09fc1193",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 0.08202386647462845
+      },
+      {
+        "identity_sha256": "1ca7d7558a1486a36d49037e969ca182c6187d2b2152b7e2042dbd9a35c9143a",
+        "category": "summarization",
+        "answer_tokens": 119,
+        "ce_nats": 1.0541629791259766
+      },
+      {
+        "identity_sha256": "039e88bfd8eec9e382ec46126cc433bcf90b598bb04caf8f16698b4f43d9acfb",
+        "category": "creative_writing",
+        "answer_tokens": 68,
+        "ce_nats": 3.698957920074463
+      },
+      {
+        "identity_sha256": "3d9abe751287f606be899ee303c2289192664ddc99fa4cfcc091eabee71be37e",
+        "category": "information_extraction",
+        "answer_tokens": 56,
+        "ce_nats": 1.6815073490142822
+      },
+      {
+        "identity_sha256": "9cc59d336f6c4b1511ac1bef69a8a175d7fc2619e2594b18deb8fa089f03fb01",
+        "category": "general_qa",
+        "answer_tokens": 80,
+        "ce_nats": 2.8643479347229004
+      },
+      {
+        "identity_sha256": "55ecf36f7f6487b89c21fc0650c471f976f4e225f5ab6c8b893e9ca51b36b0ca",
+        "category": "open_qa",
+        "answer_tokens": 11,
+        "ce_nats": 6.540239334106445
+      },
+      {
+        "identity_sha256": "17fa4aa8307d1d39865d95992e9b3946bde81859b0c2455c3de475601b791b89",
+        "category": "general_qa",
+        "answer_tokens": 226,
+        "ce_nats": 2.222621202468872
+      },
+      {
+        "identity_sha256": "4817150fef5f1e5769f8af8727e17cfd25e440b7d34f211c809e2db837cf9d9e",
+        "category": "closed_qa",
+        "answer_tokens": 79,
+        "ce_nats": 3.108745813369751
+      },
+      {
+        "identity_sha256": "46e36562602ba9307851766108ecb2d2eb192910c2dd761aa1de2a6625eeb8ac",
+        "category": "open_qa",
+        "answer_tokens": 39,
+        "ce_nats": 3.5454816818237305
+      },
+      {
+        "identity_sha256": "5d5bc21f945533f66a650ed0da59b409d67b827098d2e078e0c2c3f1aac1589b",
+        "category": "creative_writing",
+        "answer_tokens": 154,
+        "ce_nats": 2.9819176197052
+      },
+      {
+        "identity_sha256": "bd3a81fabd32e7e8ed9bb538b7a0ba184ce711d62d14846742abbc26b020d173",
+        "category": "open_qa",
+        "answer_tokens": 35,
+        "ce_nats": 2.3289694786071777
+      },
+      {
+        "identity_sha256": "40eff73f047bd9ff7b44ebd7d45a75b25a55543298bb20587e2a9a8b5b499536",
+        "category": "information_extraction",
+        "answer_tokens": 22,
+        "ce_nats": 4.491328239440918
+      },
+      {
+        "identity_sha256": "9bdad476c8e31ca4e03d1d0496d01e1909ce5e1791dfec3e36cf9ffefead2a0b",
+        "category": "general_qa",
+        "answer_tokens": 181,
+        "ce_nats": 1.3383384943008423
+      },
+      {
+        "identity_sha256": "bc1be5548514633bffee599a1acdeb3f24288e1f952591f24d2550c85d68728f",
+        "category": "brainstorming",
+        "answer_tokens": 138,
+        "ce_nats": 2.9912850856781006
+      },
+      {
+        "identity_sha256": "2d2a50f10c79e5be3e75e21b14722eb0b7a98e46faeedc5cb77112282910b45a",
+        "category": "open_qa",
+        "answer_tokens": 18,
+        "ce_nats": 5.632792949676514
+      },
+      {
+        "identity_sha256": "b4bef057369d03264a38006bbdc70d79b05a53db0d1cd7732da367823d674d40",
+        "category": "open_qa",
+        "answer_tokens": 97,
+        "ce_nats": 1.241619348526001
+      },
+      {
+        "identity_sha256": "ba130115741403e6707b733a074245b7fc668f0545e8419ae17d7aa93889fac4",
+        "category": "open_qa",
+        "answer_tokens": 102,
+        "ce_nats": 3.028942823410034
+      },
+      {
+        "identity_sha256": "2c54e14463a1bcd4b2c1a1eed0e5641f8be2ca47015a044deeaa95e0d261660f",
+        "category": "classification",
+        "answer_tokens": 29,
+        "ce_nats": 2.5975341796875
+      },
+      {
+        "identity_sha256": "c4b1b21772726a391110d946364514b1afe19ad4e4539ec2e39b54c9083a80af",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 3.5700278282165527
+      },
+      {
+        "identity_sha256": "1e4d5d94f6a2b7fe2dbd69cbd3c2b940fa7eaf0cbb59ba7434c8b8deb347bed4",
+        "category": "general_qa",
+        "answer_tokens": 220,
+        "ce_nats": 3.4531056880950928
+      },
+      {
+        "identity_sha256": "f6bdac06fb28d5ce7a91727d1f169a04c1f4b82bcc1d75d4420e4fd1c288f1fb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 2.095543384552002
+      },
+      {
+        "identity_sha256": "71507aa188f7015e98082760918151dbbec89f89633278db9f807131e5506ea6",
+        "category": "information_extraction",
+        "answer_tokens": 94,
+        "ce_nats": 2.9372873306274414
+      },
+      {
+        "identity_sha256": "f85010017e15375f24d9164e88229400a95e5d239ba2f04119d38c86595b3c5b",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.4463757276535034
+      },
+      {
+        "identity_sha256": "7b964287d3beadcba178ff25c23ac725413258ee3003c0eb57f08da65988a954",
+        "category": "general_qa",
+        "answer_tokens": 29,
+        "ce_nats": 4.045970439910889
+      },
+      {
+        "identity_sha256": "e6c60d723680a336affa67f90503988b7ed32fc351d4d0a20664eacd21e83afd",
+        "category": "brainstorming",
+        "answer_tokens": 76,
+        "ce_nats": 3.2224373817443848
+      },
+      {
+        "identity_sha256": "9ac1033f437b3c28a1458f1267fb3b41ec874135fa99f5a38d4cd7d6570bd767",
+        "category": "creative_writing",
+        "answer_tokens": 108,
+        "ce_nats": 3.408651351928711
+      },
+      {
+        "identity_sha256": "eaa5b2639bb3af151f124f44436473c3963b84952ae3b94cf44e5cd7a4ec93dc",
+        "category": "information_extraction",
+        "answer_tokens": 92,
+        "ce_nats": 0.6137465238571167
+      },
+      {
+        "identity_sha256": "b2effc2937e6a7524d8dda63265353e4275a141d19e534bee59e2cbffca995de",
+        "category": "open_qa",
+        "answer_tokens": 23,
+        "ce_nats": 5.031023979187012
+      },
+      {
+        "identity_sha256": "56dca56ddcfcadb9e2d59c8ec93388fd872c069f279c8d047f619c139b5e88fc",
+        "category": "classification",
+        "answer_tokens": 68,
+        "ce_nats": 2.7506468296051025
+      },
+      {
+        "identity_sha256": "f9c65224c0f50eda61c3404a041b67d43a8952d79c07ab0986eb697e621f766c",
+        "category": "creative_writing",
+        "answer_tokens": 50,
+        "ce_nats": 3.173384428024292
+      },
+      {
+        "identity_sha256": "9c14dbd798239502fafbce415e669b55a1d723b749468e51d7f9f5c70b424c2b",
+        "category": "open_qa",
+        "answer_tokens": 345,
+        "ce_nats": 2.191148042678833
+      },
+      {
+        "identity_sha256": "76c26abbe6252d92ca3f070e40566c919b26cdb2e053a3faa2fe9784fff6e83b",
+        "category": "information_extraction",
+        "answer_tokens": 5,
+        "ce_nats": 10.140620231628418
+      },
+      {
+        "identity_sha256": "dd6f79d3ee4570b26b8f69102413665bd75cdcfb048426727c606b627f39b7d9",
+        "category": "brainstorming",
+        "answer_tokens": 51,
+        "ce_nats": 3.0333545207977295
+      },
+      {
+        "identity_sha256": "09a3fca99680846a0af428fc2af4c2b53ef13c67831ae655137ddfc6351f68e8",
+        "category": "creative_writing",
+        "answer_tokens": 186,
+        "ce_nats": 1.2788078784942627
+      },
+      {
+        "identity_sha256": "da4a01a3e8055d6c1c8dbc794eb3d80ce9ba7a93c3981d8b2e36427fe72a181a",
+        "category": "closed_qa",
+        "answer_tokens": 4,
+        "ce_nats": 17.67325210571289
+      },
+      {
+        "identity_sha256": "f3a7e4f64f41ab47ea7dae943e358a9d49ddbde7129571603a300fcf9363d037",
+        "category": "summarization",
+        "answer_tokens": 77,
+        "ce_nats": 1.9022736549377441
+      },
+      {
+        "identity_sha256": "3419b1450ed1b81dc16986aada676a59e9767f3aa1e8c804ecee3413aee9bb2d",
+        "category": "brainstorming",
+        "answer_tokens": 43,
+        "ce_nats": 3.116858959197998
+      },
+      {
+        "identity_sha256": "c0cba1b20d586853495985dbc17e379dbb8b727e124d30eead9e61a9eea92d52",
+        "category": "closed_qa",
+        "answer_tokens": 26,
+        "ce_nats": 2.358825445175171
+      },
+      {
+        "identity_sha256": "1ad29550e01f3e06d5dfa4c73aa23f6212341974e28d89fa8397a2cea742d84d",
+        "category": "creative_writing",
+        "answer_tokens": 61,
+        "ce_nats": 4.002933025360107
+      },
+      {
+        "identity_sha256": "8c69ca162b1130d5eef90f9dab96acb1b7a703202ca68af6135ac7c4da0d8688",
+        "category": "creative_writing",
+        "answer_tokens": 334,
+        "ce_nats": 3.0811848640441895
+      },
+      {
+        "identity_sha256": "e52a8f97fe7894693cbe5ed182bfb920c9fd545b698655ab14f213a36dcb1a68",
+        "category": "information_extraction",
+        "answer_tokens": 13,
+        "ce_nats": 5.016880512237549
+      },
+      {
+        "identity_sha256": "59ba8e86472bc79861f64e5983f6ef0592a657d81c4535cab072bd9bfa0105d9",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 4.4040069580078125
+      },
+      {
+        "identity_sha256": "d8ba2f8edc36bb2fa8cdfdb9459d0d6ed3c37f56b86625a264de95d6aa71ceab",
+        "category": "brainstorming",
+        "answer_tokens": 59,
+        "ce_nats": 3.483205795288086
+      },
+      {
+        "identity_sha256": "139f7e80ba046931f2def071bdbe39051f56ec954a073b8c3c7e731d8358b642",
+        "category": "brainstorming",
+        "answer_tokens": 103,
+        "ce_nats": 3.3638477325439453
+      },
+      {
+        "identity_sha256": "c11cba7d0fcd3c7a2b802968de71d5ab337e306811f600bb42ebadef0010f9ad",
+        "category": "classification",
+        "answer_tokens": 13,
+        "ce_nats": 5.4319963455200195
+      },
+      {
+        "identity_sha256": "411e8458364850346a8f18a21e891503813a66ff7210ba0cb51e1ef84245d09c",
+        "category": "information_extraction",
+        "answer_tokens": 28,
+        "ce_nats": 2.202984094619751
+      },
+      {
+        "identity_sha256": "8e1aa54d744bf0933c4a74740aca8a988ec798f9131d36cebe2de88651a8c5f2",
+        "category": "general_qa",
+        "answer_tokens": 165,
+        "ce_nats": 2.065333604812622
+      },
+      {
+        "identity_sha256": "8cc9a8fd0a5d43c09bab0b48a6810f350ba33615a11d428c22fd07123664682c",
+        "category": "creative_writing",
+        "answer_tokens": 296,
+        "ce_nats": 4.089906215667725
+      },
+      {
+        "identity_sha256": "f2e1efdab050d7035db8b25028ba03b4e2da9d056550f7e6513338211fc6e7b7",
+        "category": "creative_writing",
+        "answer_tokens": 129,
+        "ce_nats": 2.25873064994812
+      },
+      {
+        "identity_sha256": "a78cef4200c846ec93b56cd7a845a0da110c39af8c51fca36c705ce076c61c68",
+        "category": "classification",
+        "answer_tokens": 39,
+        "ce_nats": 2.5956218242645264
+      },
+      {
+        "identity_sha256": "a6f73e43daf02670e2e16fd8f57c1e3c90cc0554c21dc28a1d32c228a4602c3f",
+        "category": "summarization",
+        "answer_tokens": 42,
+        "ce_nats": 3.409396171569824
+      },
+      {
+        "identity_sha256": "db00dd474801917568a56b7e1d8a2d54d1a896bf1c5a1ffc9b9b0f42e60007e3",
+        "category": "closed_qa",
+        "answer_tokens": 72,
+        "ce_nats": 0.5386261940002441
+      },
+      {
+        "identity_sha256": "e84bfdf0d81f7e8977d8ccee2ffbe7adf326967c8267be0bff2985013b218b9e",
+        "category": "summarization",
+        "answer_tokens": 149,
+        "ce_nats": 2.3058345317840576
+      },
+      {
+        "identity_sha256": "7924a4f591634c6390a4eededf56740b2c961e529f829cde3a1ad649f71982bf",
+        "category": "general_qa",
+        "answer_tokens": 78,
+        "ce_nats": 2.7054078578948975
+      },
+      {
+        "identity_sha256": "62fb38340aed54f7ba6aeacf12f3be4e6bff01c9e9af4585d504a7dd140fc0a2",
+        "category": "information_extraction",
+        "answer_tokens": 137,
+        "ce_nats": 1.208122968673706
+      },
+      {
+        "identity_sha256": "11a56c446d2e384b7760452562e87779ee068e639ef19099c24ef1351b6d9c4b",
+        "category": "classification",
+        "answer_tokens": 16,
+        "ce_nats": 4.263216018676758
+      },
+      {
+        "identity_sha256": "100254f25126b222c9a57e02c69f98f9232ea27dd794818d5ff64a9ba0f4e9f6",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 2.3610098361968994
+      },
+      {
+        "identity_sha256": "e8e1469d87941c1f355463515e2b2d41f155abff539029f3529e37fb4d1c4879",
+        "category": "brainstorming",
+        "answer_tokens": 134,
+        "ce_nats": 2.9127213954925537
+      },
+      {
+        "identity_sha256": "be3b9b7443517c970546766e66c93ee5f023e68284d3993a21bdd781fccc2560",
+        "category": "classification",
+        "answer_tokens": 60,
+        "ce_nats": 2.3975932598114014
+      },
+      {
+        "identity_sha256": "a2daf7c163926fc86bf5c272b3f5f9b276800d9d0bcdbebc42f6139b6429aeeb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 3.253894329071045
+      },
+      {
+        "identity_sha256": "d830322ec19edef891eefa50b7ca6c6354e397847ec34860dfb847545d608bae",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 2.69943904876709
+      },
+      {
+        "identity_sha256": "e2b1abaf909a4391355d5223984f28756055e58aa1b176a8aa4d1abed9fe75f7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 4.719445705413818
+      },
+      {
+        "identity_sha256": "8792e2e13b03131d8577d75091b7ecb2be0427e8f8eb698308dce53277f0a9a2",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 2.590913772583008
+      },
+      {
+        "identity_sha256": "bfe06bbfbc0017bee4ee09adceef7cb951740b823e83d846008992f19cba1e5f",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 2.277545690536499
+      },
+      {
+        "identity_sha256": "926ee1d2b9aae6c8c45285b92789169dcaa49e41bf080bc945ba5433be246e09",
+        "category": "open_qa",
+        "answer_tokens": 59,
+        "ce_nats": 3.2225420475006104
+      },
+      {
+        "identity_sha256": "b51b062c139cd860e9ff217cadb93a2f2b716731876c45f16731c74af75d063b",
+        "category": "summarization",
+        "answer_tokens": 97,
+        "ce_nats": 3.2205073833465576
+      },
+      {
+        "identity_sha256": "22ccdd74b79b0f132eec3cd2e5e8c3b91aed39ab7a2a77a4631bc4599979d9c0",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 3.500401735305786
+      },
+      {
+        "identity_sha256": "25d14cafbb91dfcda712f1690c256497cd1c4465adf40b452c421a571a590b78",
+        "category": "brainstorming",
+        "answer_tokens": 86,
+        "ce_nats": 3.3919713497161865
+      }
+    ],
+    "stage26_short": [
+      {
+        "identity_sha256": "c232a5b410ec18ba7e056d5810010706dc41a4f56e12adf5a7c7d2cd87870b88",
+        "category": "brainstorming",
+        "answer_tokens": 20,
+        "ce_nats": 1.4081676006317139
+      },
+      {
+        "identity_sha256": "43f4383f4ba9a104a7f36ecaad14e16a45a5ff592099df3c5ce7a9af6dea546d",
+        "category": "creative_writing",
+        "answer_tokens": 253,
+        "ce_nats": 2.0814132690429688
+      },
+      {
+        "identity_sha256": "c5024f26300398593fc3884ed47291e6a2d27aae6267d12d3bdf1efef5e997dc",
+        "category": "creative_writing",
+        "answer_tokens": 53,
+        "ce_nats": 1.7857450246810913
+      },
+      {
+        "identity_sha256": "692a635f3bd703659ff1fecc060fe1cfe7577774e1e41476473719ea789aa336",
+        "category": "open_qa",
+        "answer_tokens": 69,
+        "ce_nats": 2.4802451133728027
+      },
+      {
+        "identity_sha256": "711ae3f38375ce255223ed26ddb0e1f73cd8f3794b28d59cd249c1755252f336",
+        "category": "classification",
+        "answer_tokens": 40,
+        "ce_nats": 0.1156817302107811
+      },
+      {
+        "identity_sha256": "83bfd953d831bb3f4548106fb6c5d951b19020569ca177ea4ae2d52569d45124",
+        "category": "classification",
+        "answer_tokens": 74,
+        "ce_nats": 0.8222742080688477
+      },
+      {
+        "identity_sha256": "97dbcd468e380b8a19dc7903af7b850af90bb1d9460be3a62420baf7357889bb",
+        "category": "creative_writing",
+        "answer_tokens": 109,
+        "ce_nats": 1.8146694898605347
+      },
+      {
+        "identity_sha256": "e8627f1ea010d55e061757acd272e65d19a4d1566b1a38182986f396462442d7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.17247046530246735
+      },
+      {
+        "identity_sha256": "2364177517f90e99bdee3cd1183ad4a6af4f6cea97dcf56e99fae7a04e474b77",
+        "category": "classification",
+        "answer_tokens": 41,
+        "ce_nats": 0.6673510074615479
+      },
+      {
+        "identity_sha256": "a61c98fca0cb8d82c7a274335ea0311004f9d14cde824789df109b7fff4cce09",
+        "category": "brainstorming",
+        "answer_tokens": 14,
+        "ce_nats": 0.5847297310829163
+      },
+      {
+        "identity_sha256": "e8ab46c72406818ffcd2e973e0428969bf9ce8161234bb2bb6d0804ca19caa38",
+        "category": "summarization",
+        "answer_tokens": 132,
+        "ce_nats": 0.4783586263656616
+      },
+      {
+        "identity_sha256": "2f1caebb0b497afae24904e9e815118dabf96a13cb7e081d005d30b79161d65b",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 0.944176435470581
+      },
+      {
+        "identity_sha256": "498402f3ca199b53def5558f63dbe6640bca700dc0635c3fce99f478cf6784eb",
+        "category": "closed_qa",
+        "answer_tokens": 140,
+        "ce_nats": 1.1379200220108032
+      },
+      {
+        "identity_sha256": "05c3e5da42441cfd97f4c4776663f61fafda865af9d3d99082b7e8db1b1335df",
+        "category": "general_qa",
+        "answer_tokens": 58,
+        "ce_nats": 1.795839548110962
+      },
+      {
+        "identity_sha256": "e6a244801a2cb49703ef885ba2ed143c113b5fd6fb3133ed1462be7157ec3fd9",
+        "category": "information_extraction",
+        "answer_tokens": 36,
+        "ce_nats": 0.04770732671022415
+      },
+      {
+        "identity_sha256": "8fba3a7f28a721d4b20bef68bbcb6c3ff099f981df14b6d3f32a258b29d69895",
+        "category": "brainstorming",
+        "answer_tokens": 111,
+        "ce_nats": 1.807012915611267
+      },
+      {
+        "identity_sha256": "b5729851fe6deb36ba679db71d45bc3c53eec599ef8c0b4b9339169008f57eb0",
+        "category": "open_qa",
+        "answer_tokens": 241,
+        "ce_nats": 2.045128583908081
+      },
+      {
+        "identity_sha256": "168fdf59031431da15e19eb84121ee78cdb4dbc469cca1e1bb674c08aed4f8e4",
+        "category": "closed_qa",
+        "answer_tokens": 34,
+        "ce_nats": 0.8046910762786865
+      },
+      {
+        "identity_sha256": "c0813ae558fa6eff3aadc641bcf5d789d5ccbcea2c40a9da14e052f30631aec0",
+        "category": "general_qa",
+        "answer_tokens": 310,
+        "ce_nats": 1.757502794265747
+      },
+      {
+        "identity_sha256": "032ff592edd7dfdf6793afebb579f55c655b02eb4000b21ee5909900e91fb0ea",
+        "category": "general_qa",
+        "answer_tokens": 60,
+        "ce_nats": 1.273318886756897
+      },
+      {
+        "identity_sha256": "52d43606f5d9a20b1443f033d49e037f9dc85dce7d8781cbefef2934490742ee",
+        "category": "classification",
+        "answer_tokens": 15,
+        "ce_nats": 0.9810868501663208
+      },
+      {
+        "identity_sha256": "02e0b94143e5709bf2e0a34ac30fdae263360480710f124a588ef8b51746d4be",
+        "category": "summarization",
+        "answer_tokens": 214,
+        "ce_nats": 1.1961897611618042
+      },
+      {
+        "identity_sha256": "c80fae4eede08a68d94cd1665111644a0d28959dfcb0aa3b884056403eaa88a6",
+        "category": "general_qa",
+        "answer_tokens": 208,
+        "ce_nats": 1.779571533203125
+      },
+      {
+        "identity_sha256": "0aebae721bada5e848ce0b2b9bea351ea39b9ab36301fd24c8eec7507e9e6ffa",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 1.4392539262771606
+      },
+      {
+        "identity_sha256": "1ed07d811b19568c682ffcc6b0b5a038af80b64f98448dee75f451457d9140a1",
+        "category": "closed_qa",
+        "answer_tokens": 29,
+        "ce_nats": 0.28300562500953674
+      },
+      {
+        "identity_sha256": "521732dcfda856f2734af64348ba08d3d2462f2ee726f6bbbd96690bf5817f32",
+        "category": "open_qa",
+        "answer_tokens": 111,
+        "ce_nats": 1.854376196861267
+      },
+      {
+        "identity_sha256": "97c090a65e2795a6a10155e3e3dba9dec6e8026def8e365813e8c69b6b39bf08",
+        "category": "brainstorming",
+        "answer_tokens": 80,
+        "ce_nats": 1.3956794738769531
+      },
+      {
+        "identity_sha256": "e70efde54468576302674343c5bc2268bfee31ff52b27776cd00f706e92892ca",
+        "category": "summarization",
+        "answer_tokens": 103,
+        "ce_nats": 2.024090528488159
+      },
+      {
+        "identity_sha256": "840970cc97e595aafcfcfb1d2a09d99edaaa5becb1f6e908a65f2fa690eb5f7f",
+        "category": "classification",
+        "answer_tokens": 96,
+        "ce_nats": 0.12413337081670761
+      },
+      {
+        "identity_sha256": "dd7cc77cde8e244a29af37d40b83e40ae52bac0488aea0e0a5f0fc8dbe613895",
+        "category": "creative_writing",
+        "answer_tokens": 84,
+        "ce_nats": 2.1079509258270264
+      },
+      {
+        "identity_sha256": "3af31252c07dd569c7e4d866fe25b6ad8a145dd3238200980c480db66c59b01e",
+        "category": "creative_writing",
+        "answer_tokens": 70,
+        "ce_nats": 2.055187463760376
+      },
+      {
+        "identity_sha256": "919255bbbd879768bc8f0aacc67378db7aee314d1412416d3e24351e02d61fe0",
+        "category": "brainstorming",
+        "answer_tokens": 32,
+        "ce_nats": 0.8207708597183228
+      },
+      {
+        "identity_sha256": "fd7aaaa9a8df03ef96b73e70c8fb2659c0840f039864eb2cab9adb1b3d3d2fa4",
+        "category": "open_qa",
+        "answer_tokens": 9,
+        "ce_nats": 0.6098979115486145
+      },
+      {
+        "identity_sha256": "5e68233d42b02deb1c4698cb3f0954b3921442255fa8d8dab87a776ca67becae",
+        "category": "classification",
+        "answer_tokens": 45,
+        "ce_nats": 2.2041749954223633
+      },
+      {
+        "identity_sha256": "9a43da0e850fe3212b6b315b2cfe8cb4f37aacbb87d51a4b038e114eae3ec511",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 1.1293771266937256
+      },
+      {
+        "identity_sha256": "44e17b09007d4d6999b1e060a80574b6ad560f7f6e47b1eafdc47b00256b74d3",
+        "category": "general_qa",
+        "answer_tokens": 130,
+        "ce_nats": 2.096165180206299
+      },
+      {
+        "identity_sha256": "0b3f17d420b2f108478b8f32986ff6d811fb8df4cc7aef2325db77f03a5712c7",
+        "category": "closed_qa",
+        "answer_tokens": 14,
+        "ce_nats": 0.4430461525917053
+      },
+      {
+        "identity_sha256": "9a6e9ea3e41abd74855aecf7fb4f82e510f1d61f755d6887bedb53b7f400311e",
+        "category": "general_qa",
+        "answer_tokens": 88,
+        "ce_nats": 1.317306637763977
+      },
+      {
+        "identity_sha256": "2c09baafe2e4a503a187f51d4843ac14adb8d92b08c154730b8bf4ae2238f16b",
+        "category": "closed_qa",
+        "answer_tokens": 41,
+        "ce_nats": 0.1627628058195114
+      },
+      {
+        "identity_sha256": "96ab92af4d10b528b8406b740fe7a0fea6cb92619816929f88f59b146e265564",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 1.8413081169128418
+      },
+      {
+        "identity_sha256": "f2e851fe5d00e03ca9cf589cfaec3388783877f1b176a64f79b76ee2a7ef86f4",
+        "category": "open_qa",
+        "answer_tokens": 36,
+        "ce_nats": 1.1933284997940063
+      },
+      {
+        "identity_sha256": "91f937a7392ca0cea9374fb946928dfac6e98d5c0691d779c99c9e8fc2fb573b",
+        "category": "summarization",
+        "answer_tokens": 23,
+        "ce_nats": 1.6995537281036377
+      },
+      {
+        "identity_sha256": "19023fa1943aad05c31b24c1338736d6b75362a4855afbcf17c77a503da3e1ad",
+        "category": "information_extraction",
+        "answer_tokens": 3,
+        "ce_nats": 0.26381048560142517
+      },
+      {
+        "identity_sha256": "b354a68ac6254d34b3f244bcb128e084d3154aa0f6d0d452029c2ffecaec7d4c",
+        "category": "open_qa",
+        "answer_tokens": 110,
+        "ce_nats": 1.7939757108688354
+      },
+      {
+        "identity_sha256": "83038db1dd3b5343d3f5b24fbb2ec687ddeba18d62e1a6f9fd05c6872b533571",
+        "category": "brainstorming",
+        "answer_tokens": 69,
+        "ce_nats": 0.6391861438751221
+      },
+      {
+        "identity_sha256": "8d8befd6d92636a5c76b79501c14fd1e799086cb2284bbf4a14463fe71fbb05b",
+        "category": "creative_writing",
+        "answer_tokens": 204,
+        "ce_nats": 2.2325496673583984
+      },
+      {
+        "identity_sha256": "59bb38a464ba132a3dc400da49940b4dbfc6492c664eb28f88527232e4c913a6",
+        "category": "classification",
+        "answer_tokens": 28,
+        "ce_nats": 0.42628318071365356
+      },
+      {
+        "identity_sha256": "7519d705bcb71d244ea613d194a85d39800427fd9051bd3b44dd9594b100ab03",
+        "category": "general_qa",
+        "answer_tokens": 160,
+        "ce_nats": 0.8824451565742493
+      },
+      {
+        "identity_sha256": "24747ccf2828f9d84d8af36aade0c64550a2b7362360eac1c3f86a85c4e570a2",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 0.5936691761016846
+      },
+      {
+        "identity_sha256": "401ebbbd971a857e562a9f36c0a8ba910a6f70c763edda0d60433d4d57377344",
+        "category": "closed_qa",
+        "answer_tokens": 120,
+        "ce_nats": 2.2647955417633057
+      },
+      {
+        "identity_sha256": "9d53a45eb7353166e2b9d417893e4ebeb00609a23e84ba22bff568b8131f3847",
+        "category": "closed_qa",
+        "answer_tokens": 94,
+        "ce_nats": 0.6910771131515503
+      },
+      {
+        "identity_sha256": "2e48e6583228c6efd881b27664a67dbd2fc0be94ac6622d2291d200366ac9e2b",
+        "category": "general_qa",
+        "answer_tokens": 39,
+        "ce_nats": 2.3541862964630127
+      },
+      {
+        "identity_sha256": "80a4883e40ab3a7466df6d755a6852f345aab8667a66989ccaf53902db4c483d",
+        "category": "general_qa",
+        "answer_tokens": 215,
+        "ce_nats": 1.9685707092285156
+      },
+      {
+        "identity_sha256": "61bfbb270ca79265d001b48e720a2b371857e0b1a8b506089b4eb9be815a253d",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 0.1075022742152214
+      },
+      {
+        "identity_sha256": "fbf084360fdf503ecc2fee373d308477b31bc01b9edfc81b4c29c18f710d27a8",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.36036407947540283
+      },
+      {
+        "identity_sha256": "f1483ab6e9039d87e642a87b5037e994e672d42fba6ddf3c7806fcbae35bd855",
+        "category": "open_qa",
+        "answer_tokens": 48,
+        "ce_nats": 1.2599878311157227
+      },
+      {
+        "identity_sha256": "56c568f1f4df003a0bc49326536b8a79f80c23ad001dec15761a3c53d58f29f9",
+        "category": "classification",
+        "answer_tokens": 9,
+        "ce_nats": 2.1211531162261963
+      },
+      {
+        "identity_sha256": "d1853ff509c8c3024d3aafa2e04d2da61d0be1c95932a3f7cde4fb24446ddc0d",
+        "category": "closed_qa",
+        "answer_tokens": 28,
+        "ce_nats": 0.5611333847045898
+      },
+      {
+        "identity_sha256": "e42c05223495e31b3fa9dd082bb667149b7fa85b22e1924221dfdc7082662535",
+        "category": "summarization",
+        "answer_tokens": 87,
+        "ce_nats": 1.05191171169281
+      },
+      {
+        "identity_sha256": "829c9f73e1e202a0d291c25e6c522f5b13ed4590505026b36598a753d5d66d57",
+        "category": "creative_writing",
+        "answer_tokens": 157,
+        "ce_nats": 1.9607614278793335
+      },
+      {
+        "identity_sha256": "358fff258badbc47fff228e77bd7dca87217bfdb9f96d505550cae3a09fc1193",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 0.07441768795251846
+      },
+      {
+        "identity_sha256": "1ca7d7558a1486a36d49037e969ca182c6187d2b2152b7e2042dbd9a35c9143a",
+        "category": "summarization",
+        "answer_tokens": 119,
+        "ce_nats": 0.18748441338539124
+      },
+      {
+        "identity_sha256": "039e88bfd8eec9e382ec46126cc433bcf90b598bb04caf8f16698b4f43d9acfb",
+        "category": "creative_writing",
+        "answer_tokens": 68,
+        "ce_nats": 1.917423963546753
+      },
+      {
+        "identity_sha256": "3d9abe751287f606be899ee303c2289192664ddc99fa4cfcc091eabee71be37e",
+        "category": "information_extraction",
+        "answer_tokens": 56,
+        "ce_nats": 0.22097112238407135
+      },
+      {
+        "identity_sha256": "9cc59d336f6c4b1511ac1bef69a8a175d7fc2619e2594b18deb8fa089f03fb01",
+        "category": "general_qa",
+        "answer_tokens": 80,
+        "ce_nats": 1.8642737865447998
+      },
+      {
+        "identity_sha256": "55ecf36f7f6487b89c21fc0650c471f976f4e225f5ab6c8b893e9ca51b36b0ca",
+        "category": "open_qa",
+        "answer_tokens": 11,
+        "ce_nats": 2.9239656925201416
+      },
+      {
+        "identity_sha256": "17fa4aa8307d1d39865d95992e9b3946bde81859b0c2455c3de475601b791b89",
+        "category": "general_qa",
+        "answer_tokens": 226,
+        "ce_nats": 1.6368892192840576
+      },
+      {
+        "identity_sha256": "4817150fef5f1e5769f8af8727e17cfd25e440b7d34f211c809e2db837cf9d9e",
+        "category": "closed_qa",
+        "answer_tokens": 79,
+        "ce_nats": 2.1185755729675293
+      },
+      {
+        "identity_sha256": "46e36562602ba9307851766108ecb2d2eb192910c2dd761aa1de2a6625eeb8ac",
+        "category": "open_qa",
+        "answer_tokens": 39,
+        "ce_nats": 1.3722220659255981
+      },
+      {
+        "identity_sha256": "5d5bc21f945533f66a650ed0da59b409d67b827098d2e078e0c2c3f1aac1589b",
+        "category": "creative_writing",
+        "answer_tokens": 154,
+        "ce_nats": 2.1617982387542725
+      },
+      {
+        "identity_sha256": "bd3a81fabd32e7e8ed9bb538b7a0ba184ce711d62d14846742abbc26b020d173",
+        "category": "open_qa",
+        "answer_tokens": 35,
+        "ce_nats": 0.5129609704017639
+      },
+      {
+        "identity_sha256": "40eff73f047bd9ff7b44ebd7d45a75b25a55543298bb20587e2a9a8b5b499536",
+        "category": "information_extraction",
+        "answer_tokens": 22,
+        "ce_nats": 0.6551323533058167
+      },
+      {
+        "identity_sha256": "9bdad476c8e31ca4e03d1d0496d01e1909ce5e1791dfec3e36cf9ffefead2a0b",
+        "category": "general_qa",
+        "answer_tokens": 181,
+        "ce_nats": 1.0377212762832642
+      },
+      {
+        "identity_sha256": "bc1be5548514633bffee599a1acdeb3f24288e1f952591f24d2550c85d68728f",
+        "category": "brainstorming",
+        "answer_tokens": 138,
+        "ce_nats": 1.9863498210906982
+      },
+      {
+        "identity_sha256": "2d2a50f10c79e5be3e75e21b14722eb0b7a98e46faeedc5cb77112282910b45a",
+        "category": "open_qa",
+        "answer_tokens": 18,
+        "ce_nats": 2.839949369430542
+      },
+      {
+        "identity_sha256": "b4bef057369d03264a38006bbdc70d79b05a53db0d1cd7732da367823d674d40",
+        "category": "open_qa",
+        "answer_tokens": 97,
+        "ce_nats": 0.5037057995796204
+      },
+      {
+        "identity_sha256": "ba130115741403e6707b733a074245b7fc668f0545e8419ae17d7aa93889fac4",
+        "category": "open_qa",
+        "answer_tokens": 102,
+        "ce_nats": 2.0725951194763184
+      },
+      {
+        "identity_sha256": "2c54e14463a1bcd4b2c1a1eed0e5641f8be2ca47015a044deeaa95e0d261660f",
+        "category": "classification",
+        "answer_tokens": 29,
+        "ce_nats": 0.2791006863117218
+      },
+      {
+        "identity_sha256": "c4b1b21772726a391110d946364514b1afe19ad4e4539ec2e39b54c9083a80af",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 0.724636971950531
+      },
+      {
+        "identity_sha256": "1e4d5d94f6a2b7fe2dbd69cbd3c2b940fa7eaf0cbb59ba7434c8b8deb347bed4",
+        "category": "general_qa",
+        "answer_tokens": 220,
+        "ce_nats": 3.0859007835388184
+      },
+      {
+        "identity_sha256": "f6bdac06fb28d5ce7a91727d1f169a04c1f4b82bcc1d75d4420e4fd1c288f1fb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 0.7047214508056641
+      },
+      {
+        "identity_sha256": "71507aa188f7015e98082760918151dbbec89f89633278db9f807131e5506ea6",
+        "category": "information_extraction",
+        "answer_tokens": 94,
+        "ce_nats": 2.0884177684783936
+      },
+      {
+        "identity_sha256": "f85010017e15375f24d9164e88229400a95e5d239ba2f04119d38c86595b3c5b",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.14135725796222687
+      },
+      {
+        "identity_sha256": "7b964287d3beadcba178ff25c23ac725413258ee3003c0eb57f08da65988a954",
+        "category": "general_qa",
+        "answer_tokens": 29,
+        "ce_nats": 1.2741190195083618
+      },
+      {
+        "identity_sha256": "e6c60d723680a336affa67f90503988b7ed32fc351d4d0a20664eacd21e83afd",
+        "category": "brainstorming",
+        "answer_tokens": 76,
+        "ce_nats": 1.6045122146606445
+      },
+      {
+        "identity_sha256": "9ac1033f437b3c28a1458f1267fb3b41ec874135fa99f5a38d4cd7d6570bd767",
+        "category": "creative_writing",
+        "answer_tokens": 108,
+        "ce_nats": 2.7106149196624756
+      },
+      {
+        "identity_sha256": "eaa5b2639bb3af151f124f44436473c3963b84952ae3b94cf44e5cd7a4ec93dc",
+        "category": "information_extraction",
+        "answer_tokens": 92,
+        "ce_nats": 0.0864609107375145
+      },
+      {
+        "identity_sha256": "b2effc2937e6a7524d8dda63265353e4275a141d19e534bee59e2cbffca995de",
+        "category": "open_qa",
+        "answer_tokens": 23,
+        "ce_nats": 1.5231525897979736
+      },
+      {
+        "identity_sha256": "56dca56ddcfcadb9e2d59c8ec93388fd872c069f279c8d047f619c139b5e88fc",
+        "category": "classification",
+        "answer_tokens": 68,
+        "ce_nats": 1.2056094408035278
+      },
+      {
+        "identity_sha256": "f9c65224c0f50eda61c3404a041b67d43a8952d79c07ab0986eb697e621f766c",
+        "category": "creative_writing",
+        "answer_tokens": 50,
+        "ce_nats": 1.178590178489685
+      },
+      {
+        "identity_sha256": "9c14dbd798239502fafbce415e669b55a1d723b749468e51d7f9f5c70b424c2b",
+        "category": "open_qa",
+        "answer_tokens": 345,
+        "ce_nats": 1.8564296960830688
+      },
+      {
+        "identity_sha256": "76c26abbe6252d92ca3f070e40566c919b26cdb2e053a3faa2fe9784fff6e83b",
+        "category": "information_extraction",
+        "answer_tokens": 5,
+        "ce_nats": 0.18761417269706726
+      },
+      {
+        "identity_sha256": "dd6f79d3ee4570b26b8f69102413665bd75cdcfb048426727c606b627f39b7d9",
+        "category": "brainstorming",
+        "answer_tokens": 51,
+        "ce_nats": 1.3801335096359253
+      },
+      {
+        "identity_sha256": "09a3fca99680846a0af428fc2af4c2b53ef13c67831ae655137ddfc6351f68e8",
+        "category": "creative_writing",
+        "answer_tokens": 186,
+        "ce_nats": 0.6551101207733154
+      },
+      {
+        "identity_sha256": "da4a01a3e8055d6c1c8dbc794eb3d80ce9ba7a93c3981d8b2e36427fe72a181a",
+        "category": "closed_qa",
+        "answer_tokens": 4,
+        "ce_nats": 0.2633363604545593
+      },
+      {
+        "identity_sha256": "f3a7e4f64f41ab47ea7dae943e358a9d49ddbde7129571603a300fcf9363d037",
+        "category": "summarization",
+        "answer_tokens": 77,
+        "ce_nats": 0.8683643937110901
+      },
+      {
+        "identity_sha256": "3419b1450ed1b81dc16986aada676a59e9767f3aa1e8c804ecee3413aee9bb2d",
+        "category": "brainstorming",
+        "answer_tokens": 43,
+        "ce_nats": 0.9340598583221436
+      },
+      {
+        "identity_sha256": "c0cba1b20d586853495985dbc17e379dbb8b727e124d30eead9e61a9eea92d52",
+        "category": "closed_qa",
+        "answer_tokens": 26,
+        "ce_nats": 0.29973849654197693
+      },
+      {
+        "identity_sha256": "1ad29550e01f3e06d5dfa4c73aa23f6212341974e28d89fa8397a2cea742d84d",
+        "category": "creative_writing",
+        "answer_tokens": 61,
+        "ce_nats": 1.8409130573272705
+      },
+      {
+        "identity_sha256": "8c69ca162b1130d5eef90f9dab96acb1b7a703202ca68af6135ac7c4da0d8688",
+        "category": "creative_writing",
+        "answer_tokens": 334,
+        "ce_nats": 2.696627140045166
+      },
+      {
+        "identity_sha256": "e52a8f97fe7894693cbe5ed182bfb920c9fd545b698655ab14f213a36dcb1a68",
+        "category": "information_extraction",
+        "answer_tokens": 13,
+        "ce_nats": 0.7891801595687866
+      },
+      {
+        "identity_sha256": "59ba8e86472bc79861f64e5983f6ef0592a657d81c4535cab072bd9bfa0105d9",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 1.069034218788147
+      },
+      {
+        "identity_sha256": "d8ba2f8edc36bb2fa8cdfdb9459d0d6ed3c37f56b86625a264de95d6aa71ceab",
+        "category": "brainstorming",
+        "answer_tokens": 59,
+        "ce_nats": 2.301710367202759
+      },
+      {
+        "identity_sha256": "139f7e80ba046931f2def071bdbe39051f56ec954a073b8c3c7e731d8358b642",
+        "category": "brainstorming",
+        "answer_tokens": 103,
+        "ce_nats": 2.0858945846557617
+      },
+      {
+        "identity_sha256": "c11cba7d0fcd3c7a2b802968de71d5ab337e306811f600bb42ebadef0010f9ad",
+        "category": "classification",
+        "answer_tokens": 13,
+        "ce_nats": 0.47577717900276184
+      },
+      {
+        "identity_sha256": "411e8458364850346a8f18a21e891503813a66ff7210ba0cb51e1ef84245d09c",
+        "category": "information_extraction",
+        "answer_tokens": 28,
+        "ce_nats": 0.45954957604408264
+      },
+      {
+        "identity_sha256": "8e1aa54d744bf0933c4a74740aca8a988ec798f9131d36cebe2de88651a8c5f2",
+        "category": "general_qa",
+        "answer_tokens": 165,
+        "ce_nats": 1.405256986618042
+      },
+      {
+        "identity_sha256": "8cc9a8fd0a5d43c09bab0b48a6810f350ba33615a11d428c22fd07123664682c",
+        "category": "creative_writing",
+        "answer_tokens": 296,
+        "ce_nats": 3.714332342147827
+      },
+      {
+        "identity_sha256": "f2e1efdab050d7035db8b25028ba03b4e2da9d056550f7e6513338211fc6e7b7",
+        "category": "creative_writing",
+        "answer_tokens": 129,
+        "ce_nats": 1.549418330192566
+      },
+      {
+        "identity_sha256": "a78cef4200c846ec93b56cd7a845a0da110c39af8c51fca36c705ce076c61c68",
+        "category": "classification",
+        "answer_tokens": 39,
+        "ce_nats": 0.45865514874458313
+      },
+      {
+        "identity_sha256": "a6f73e43daf02670e2e16fd8f57c1e3c90cc0554c21dc28a1d32c228a4602c3f",
+        "category": "summarization",
+        "answer_tokens": 42,
+        "ce_nats": 1.6490694284439087
+      },
+      {
+        "identity_sha256": "db00dd474801917568a56b7e1d8a2d54d1a896bf1c5a1ffc9b9b0f42e60007e3",
+        "category": "closed_qa",
+        "answer_tokens": 72,
+        "ce_nats": 0.09595072269439697
+      },
+      {
+        "identity_sha256": "e84bfdf0d81f7e8977d8ccee2ffbe7adf326967c8267be0bff2985013b218b9e",
+        "category": "summarization",
+        "answer_tokens": 149,
+        "ce_nats": 1.279778003692627
+      },
+      {
+        "identity_sha256": "7924a4f591634c6390a4eededf56740b2c961e529f829cde3a1ad649f71982bf",
+        "category": "general_qa",
+        "answer_tokens": 78,
+        "ce_nats": 1.4704530239105225
+      },
+      {
+        "identity_sha256": "62fb38340aed54f7ba6aeacf12f3be4e6bff01c9e9af4585d504a7dd140fc0a2",
+        "category": "information_extraction",
+        "answer_tokens": 137,
+        "ce_nats": 0.3714905381202698
+      },
+      {
+        "identity_sha256": "11a56c446d2e384b7760452562e87779ee068e639ef19099c24ef1351b6d9c4b",
+        "category": "classification",
+        "answer_tokens": 16,
+        "ce_nats": 0.379183828830719
+      },
+      {
+        "identity_sha256": "100254f25126b222c9a57e02c69f98f9232ea27dd794818d5ff64a9ba0f4e9f6",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 0.23553679883480072
+      },
+      {
+        "identity_sha256": "e8e1469d87941c1f355463515e2b2d41f155abff539029f3529e37fb4d1c4879",
+        "category": "brainstorming",
+        "answer_tokens": 134,
+        "ce_nats": 2.4112675189971924
+      },
+      {
+        "identity_sha256": "be3b9b7443517c970546766e66c93ee5f023e68284d3993a21bdd781fccc2560",
+        "category": "classification",
+        "answer_tokens": 60,
+        "ce_nats": 1.437334418296814
+      },
+      {
+        "identity_sha256": "a2daf7c163926fc86bf5c272b3f5f9b276800d9d0bcdbebc42f6139b6429aeeb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 1.1522003412246704
+      },
+      {
+        "identity_sha256": "d830322ec19edef891eefa50b7ca6c6354e397847ec34860dfb847545d608bae",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 0.31853359937667847
+      },
+      {
+        "identity_sha256": "e2b1abaf909a4391355d5223984f28756055e58aa1b176a8aa4d1abed9fe75f7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 1.2920912504196167
+      },
+      {
+        "identity_sha256": "8792e2e13b03131d8577d75091b7ecb2be0427e8f8eb698308dce53277f0a9a2",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 0.9456214904785156
+      },
+      {
+        "identity_sha256": "bfe06bbfbc0017bee4ee09adceef7cb951740b823e83d846008992f19cba1e5f",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 0.31039267778396606
+      },
+      {
+        "identity_sha256": "926ee1d2b9aae6c8c45285b92789169dcaa49e41bf080bc945ba5433be246e09",
+        "category": "open_qa",
+        "answer_tokens": 59,
+        "ce_nats": 1.409584641456604
+      },
+      {
+        "identity_sha256": "b51b062c139cd860e9ff217cadb93a2f2b716731876c45f16731c74af75d063b",
+        "category": "summarization",
+        "answer_tokens": 97,
+        "ce_nats": 1.5297311544418335
+      },
+      {
+        "identity_sha256": "22ccdd74b79b0f132eec3cd2e5e8c3b91aed39ab7a2a77a4631bc4599979d9c0",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 1.1820746660232544
+      },
+      {
+        "identity_sha256": "25d14cafbb91dfcda712f1690c256497cd1c4465adf40b452c421a571a590b78",
+        "category": "brainstorming",
+        "answer_tokens": 86,
+        "ce_nats": 2.0832622051239014
+      }
+    ],
+    "stage31_full": [
+      {
+        "identity_sha256": "c232a5b410ec18ba7e056d5810010706dc41a4f56e12adf5a7c7d2cd87870b88",
+        "category": "brainstorming",
+        "answer_tokens": 20,
+        "ce_nats": 1.489577293395996
+      },
+      {
+        "identity_sha256": "43f4383f4ba9a104a7f36ecaad14e16a45a5ff592099df3c5ce7a9af6dea546d",
+        "category": "creative_writing",
+        "answer_tokens": 253,
+        "ce_nats": 2.0416066646575928
+      },
+      {
+        "identity_sha256": "c5024f26300398593fc3884ed47291e6a2d27aae6267d12d3bdf1efef5e997dc",
+        "category": "creative_writing",
+        "answer_tokens": 53,
+        "ce_nats": 1.7666577100753784
+      },
+      {
+        "identity_sha256": "692a635f3bd703659ff1fecc060fe1cfe7577774e1e41476473719ea789aa336",
+        "category": "open_qa",
+        "answer_tokens": 69,
+        "ce_nats": 2.426835536956787
+      },
+      {
+        "identity_sha256": "711ae3f38375ce255223ed26ddb0e1f73cd8f3794b28d59cd249c1755252f336",
+        "category": "classification",
+        "answer_tokens": 40,
+        "ce_nats": 0.11315463483333588
+      },
+      {
+        "identity_sha256": "83bfd953d831bb3f4548106fb6c5d951b19020569ca177ea4ae2d52569d45124",
+        "category": "classification",
+        "answer_tokens": 74,
+        "ce_nats": 0.8341997265815735
+      },
+      {
+        "identity_sha256": "97dbcd468e380b8a19dc7903af7b850af90bb1d9460be3a62420baf7357889bb",
+        "category": "creative_writing",
+        "answer_tokens": 109,
+        "ce_nats": 1.8165459632873535
+      },
+      {
+        "identity_sha256": "e8627f1ea010d55e061757acd272e65d19a4d1566b1a38182986f396462442d7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.13636182248592377
+      },
+      {
+        "identity_sha256": "2364177517f90e99bdee3cd1183ad4a6af4f6cea97dcf56e99fae7a04e474b77",
+        "category": "classification",
+        "answer_tokens": 41,
+        "ce_nats": 0.6328941583633423
+      },
+      {
+        "identity_sha256": "a61c98fca0cb8d82c7a274335ea0311004f9d14cde824789df109b7fff4cce09",
+        "category": "brainstorming",
+        "answer_tokens": 14,
+        "ce_nats": 0.5647900700569153
+      },
+      {
+        "identity_sha256": "e8ab46c72406818ffcd2e973e0428969bf9ce8161234bb2bb6d0804ca19caa38",
+        "category": "summarization",
+        "answer_tokens": 132,
+        "ce_nats": 0.4597589373588562
+      },
+      {
+        "identity_sha256": "2f1caebb0b497afae24904e9e815118dabf96a13cb7e081d005d30b79161d65b",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 0.8883243799209595
+      },
+      {
+        "identity_sha256": "498402f3ca199b53def5558f63dbe6640bca700dc0635c3fce99f478cf6784eb",
+        "category": "closed_qa",
+        "answer_tokens": 140,
+        "ce_nats": 1.143649697303772
+      },
+      {
+        "identity_sha256": "05c3e5da42441cfd97f4c4776663f61fafda865af9d3d99082b7e8db1b1335df",
+        "category": "general_qa",
+        "answer_tokens": 58,
+        "ce_nats": 1.711275577545166
+      },
+      {
+        "identity_sha256": "e6a244801a2cb49703ef885ba2ed143c113b5fd6fb3133ed1462be7157ec3fd9",
+        "category": "information_extraction",
+        "answer_tokens": 36,
+        "ce_nats": 0.023388661444187164
+      },
+      {
+        "identity_sha256": "8fba3a7f28a721d4b20bef68bbcb6c3ff099f981df14b6d3f32a258b29d69895",
+        "category": "brainstorming",
+        "answer_tokens": 111,
+        "ce_nats": 1.7865099906921387
+      },
+      {
+        "identity_sha256": "b5729851fe6deb36ba679db71d45bc3c53eec599ef8c0b4b9339169008f57eb0",
+        "category": "open_qa",
+        "answer_tokens": 241,
+        "ce_nats": 2.011253833770752
+      },
+      {
+        "identity_sha256": "168fdf59031431da15e19eb84121ee78cdb4dbc469cca1e1bb674c08aed4f8e4",
+        "category": "closed_qa",
+        "answer_tokens": 34,
+        "ce_nats": 0.7703803777694702
+      },
+      {
+        "identity_sha256": "c0813ae558fa6eff3aadc641bcf5d789d5ccbcea2c40a9da14e052f30631aec0",
+        "category": "general_qa",
+        "answer_tokens": 310,
+        "ce_nats": 1.729108214378357
+      },
+      {
+        "identity_sha256": "032ff592edd7dfdf6793afebb579f55c655b02eb4000b21ee5909900e91fb0ea",
+        "category": "general_qa",
+        "answer_tokens": 60,
+        "ce_nats": 1.2706869840621948
+      },
+      {
+        "identity_sha256": "52d43606f5d9a20b1443f033d49e037f9dc85dce7d8781cbefef2934490742ee",
+        "category": "classification",
+        "answer_tokens": 15,
+        "ce_nats": 0.9291430115699768
+      },
+      {
+        "identity_sha256": "02e0b94143e5709bf2e0a34ac30fdae263360480710f124a588ef8b51746d4be",
+        "category": "summarization",
+        "answer_tokens": 214,
+        "ce_nats": 1.173933744430542
+      },
+      {
+        "identity_sha256": "c80fae4eede08a68d94cd1665111644a0d28959dfcb0aa3b884056403eaa88a6",
+        "category": "general_qa",
+        "answer_tokens": 208,
+        "ce_nats": 1.7588648796081543
+      },
+      {
+        "identity_sha256": "0aebae721bada5e848ce0b2b9bea351ea39b9ab36301fd24c8eec7507e9e6ffa",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 1.5859869718551636
+      },
+      {
+        "identity_sha256": "1ed07d811b19568c682ffcc6b0b5a038af80b64f98448dee75f451457d9140a1",
+        "category": "closed_qa",
+        "answer_tokens": 29,
+        "ce_nats": 0.24988844990730286
+      },
+      {
+        "identity_sha256": "521732dcfda856f2734af64348ba08d3d2462f2ee726f6bbbd96690bf5817f32",
+        "category": "open_qa",
+        "answer_tokens": 111,
+        "ce_nats": 1.8234310150146484
+      },
+      {
+        "identity_sha256": "97c090a65e2795a6a10155e3e3dba9dec6e8026def8e365813e8c69b6b39bf08",
+        "category": "brainstorming",
+        "answer_tokens": 80,
+        "ce_nats": 1.3917144536972046
+      },
+      {
+        "identity_sha256": "e70efde54468576302674343c5bc2268bfee31ff52b27776cd00f706e92892ca",
+        "category": "summarization",
+        "answer_tokens": 103,
+        "ce_nats": 1.9925957918167114
+      },
+      {
+        "identity_sha256": "840970cc97e595aafcfcfb1d2a09d99edaaa5becb1f6e908a65f2fa690eb5f7f",
+        "category": "classification",
+        "answer_tokens": 96,
+        "ce_nats": 0.1180841326713562
+      },
+      {
+        "identity_sha256": "dd7cc77cde8e244a29af37d40b83e40ae52bac0488aea0e0a5f0fc8dbe613895",
+        "category": "creative_writing",
+        "answer_tokens": 84,
+        "ce_nats": 2.0425326824188232
+      },
+      {
+        "identity_sha256": "3af31252c07dd569c7e4d866fe25b6ad8a145dd3238200980c480db66c59b01e",
+        "category": "creative_writing",
+        "answer_tokens": 70,
+        "ce_nats": 2.100131034851074
+      },
+      {
+        "identity_sha256": "919255bbbd879768bc8f0aacc67378db7aee314d1412416d3e24351e02d61fe0",
+        "category": "brainstorming",
+        "answer_tokens": 32,
+        "ce_nats": 0.8286309838294983
+      },
+      {
+        "identity_sha256": "fd7aaaa9a8df03ef96b73e70c8fb2659c0840f039864eb2cab9adb1b3d3d2fa4",
+        "category": "open_qa",
+        "answer_tokens": 9,
+        "ce_nats": 1.1078310012817383
+      },
+      {
+        "identity_sha256": "5e68233d42b02deb1c4698cb3f0954b3921442255fa8d8dab87a776ca67becae",
+        "category": "classification",
+        "answer_tokens": 45,
+        "ce_nats": 2.1742875576019287
+      },
+      {
+        "identity_sha256": "9a43da0e850fe3212b6b315b2cfe8cb4f37aacbb87d51a4b038e114eae3ec511",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 1.08085036277771
+      },
+      {
+        "identity_sha256": "44e17b09007d4d6999b1e060a80574b6ad560f7f6e47b1eafdc47b00256b74d3",
+        "category": "general_qa",
+        "answer_tokens": 130,
+        "ce_nats": 2.088925361633301
+      },
+      {
+        "identity_sha256": "0b3f17d420b2f108478b8f32986ff6d811fb8df4cc7aef2325db77f03a5712c7",
+        "category": "closed_qa",
+        "answer_tokens": 14,
+        "ce_nats": 0.4474455416202545
+      },
+      {
+        "identity_sha256": "9a6e9ea3e41abd74855aecf7fb4f82e510f1d61f755d6887bedb53b7f400311e",
+        "category": "general_qa",
+        "answer_tokens": 88,
+        "ce_nats": 1.293441653251648
+      },
+      {
+        "identity_sha256": "2c09baafe2e4a503a187f51d4843ac14adb8d92b08c154730b8bf4ae2238f16b",
+        "category": "closed_qa",
+        "answer_tokens": 41,
+        "ce_nats": 0.16006861627101898
+      },
+      {
+        "identity_sha256": "96ab92af4d10b528b8406b740fe7a0fea6cb92619816929f88f59b146e265564",
+        "category": "brainstorming",
+        "answer_tokens": 16,
+        "ce_nats": 1.743231177330017
+      },
+      {
+        "identity_sha256": "f2e851fe5d00e03ca9cf589cfaec3388783877f1b176a64f79b76ee2a7ef86f4",
+        "category": "open_qa",
+        "answer_tokens": 36,
+        "ce_nats": 1.158369541168213
+      },
+      {
+        "identity_sha256": "91f937a7392ca0cea9374fb946928dfac6e98d5c0691d779c99c9e8fc2fb573b",
+        "category": "summarization",
+        "answer_tokens": 23,
+        "ce_nats": 1.5567560195922852
+      },
+      {
+        "identity_sha256": "19023fa1943aad05c31b24c1338736d6b75362a4855afbcf17c77a503da3e1ad",
+        "category": "information_extraction",
+        "answer_tokens": 3,
+        "ce_nats": 0.49656108021736145
+      },
+      {
+        "identity_sha256": "b354a68ac6254d34b3f244bcb128e084d3154aa0f6d0d452029c2ffecaec7d4c",
+        "category": "open_qa",
+        "answer_tokens": 110,
+        "ce_nats": 1.7596349716186523
+      },
+      {
+        "identity_sha256": "83038db1dd3b5343d3f5b24fbb2ec687ddeba18d62e1a6f9fd05c6872b533571",
+        "category": "brainstorming",
+        "answer_tokens": 69,
+        "ce_nats": 0.625050961971283
+      },
+      {
+        "identity_sha256": "8d8befd6d92636a5c76b79501c14fd1e799086cb2284bbf4a14463fe71fbb05b",
+        "category": "creative_writing",
+        "answer_tokens": 204,
+        "ce_nats": 2.234952449798584
+      },
+      {
+        "identity_sha256": "59bb38a464ba132a3dc400da49940b4dbfc6492c664eb28f88527232e4c913a6",
+        "category": "classification",
+        "answer_tokens": 28,
+        "ce_nats": 0.35437679290771484
+      },
+      {
+        "identity_sha256": "7519d705bcb71d244ea613d194a85d39800427fd9051bd3b44dd9594b100ab03",
+        "category": "general_qa",
+        "answer_tokens": 160,
+        "ce_nats": 0.8309983015060425
+      },
+      {
+        "identity_sha256": "24747ccf2828f9d84d8af36aade0c64550a2b7362360eac1c3f86a85c4e570a2",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 0.5700183510780334
+      },
+      {
+        "identity_sha256": "401ebbbd971a857e562a9f36c0a8ba910a6f70c763edda0d60433d4d57377344",
+        "category": "closed_qa",
+        "answer_tokens": 120,
+        "ce_nats": 2.2382843494415283
+      },
+      {
+        "identity_sha256": "9d53a45eb7353166e2b9d417893e4ebeb00609a23e84ba22bff568b8131f3847",
+        "category": "closed_qa",
+        "answer_tokens": 94,
+        "ce_nats": 0.6931614279747009
+      },
+      {
+        "identity_sha256": "2e48e6583228c6efd881b27664a67dbd2fc0be94ac6622d2291d200366ac9e2b",
+        "category": "general_qa",
+        "answer_tokens": 39,
+        "ce_nats": 2.331077814102173
+      },
+      {
+        "identity_sha256": "80a4883e40ab3a7466df6d755a6852f345aab8667a66989ccaf53902db4c483d",
+        "category": "general_qa",
+        "answer_tokens": 215,
+        "ce_nats": 1.9641386270523071
+      },
+      {
+        "identity_sha256": "61bfbb270ca79265d001b48e720a2b371857e0b1a8b506089b4eb9be815a253d",
+        "category": "closed_qa",
+        "answer_tokens": 24,
+        "ce_nats": 0.06425165385007858
+      },
+      {
+        "identity_sha256": "fbf084360fdf503ecc2fee373d308477b31bc01b9edfc81b4c29c18f710d27a8",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.3081344664096832
+      },
+      {
+        "identity_sha256": "f1483ab6e9039d87e642a87b5037e994e672d42fba6ddf3c7806fcbae35bd855",
+        "category": "open_qa",
+        "answer_tokens": 48,
+        "ce_nats": 1.252679467201233
+      },
+      {
+        "identity_sha256": "56c568f1f4df003a0bc49326536b8a79f80c23ad001dec15761a3c53d58f29f9",
+        "category": "classification",
+        "answer_tokens": 9,
+        "ce_nats": 1.776829481124878
+      },
+      {
+        "identity_sha256": "d1853ff509c8c3024d3aafa2e04d2da61d0be1c95932a3f7cde4fb24446ddc0d",
+        "category": "closed_qa",
+        "answer_tokens": 28,
+        "ce_nats": 0.5235971212387085
+      },
+      {
+        "identity_sha256": "e42c05223495e31b3fa9dd082bb667149b7fa85b22e1924221dfdc7082662535",
+        "category": "summarization",
+        "answer_tokens": 87,
+        "ce_nats": 1.0693471431732178
+      },
+      {
+        "identity_sha256": "829c9f73e1e202a0d291c25e6c522f5b13ed4590505026b36598a753d5d66d57",
+        "category": "creative_writing",
+        "answer_tokens": 157,
+        "ce_nats": 1.9585990905761719
+      },
+      {
+        "identity_sha256": "358fff258badbc47fff228e77bd7dca87217bfdb9f96d505550cae3a09fc1193",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 0.08253495395183563
+      },
+      {
+        "identity_sha256": "1ca7d7558a1486a36d49037e969ca182c6187d2b2152b7e2042dbd9a35c9143a",
+        "category": "summarization",
+        "answer_tokens": 119,
+        "ce_nats": 0.1640467643737793
+      },
+      {
+        "identity_sha256": "039e88bfd8eec9e382ec46126cc433bcf90b598bb04caf8f16698b4f43d9acfb",
+        "category": "creative_writing",
+        "answer_tokens": 68,
+        "ce_nats": 1.8578014373779297
+      },
+      {
+        "identity_sha256": "3d9abe751287f606be899ee303c2289192664ddc99fa4cfcc091eabee71be37e",
+        "category": "information_extraction",
+        "answer_tokens": 56,
+        "ce_nats": 0.23588672280311584
+      },
+      {
+        "identity_sha256": "9cc59d336f6c4b1511ac1bef69a8a175d7fc2619e2594b18deb8fa089f03fb01",
+        "category": "general_qa",
+        "answer_tokens": 80,
+        "ce_nats": 1.840013861656189
+      },
+      {
+        "identity_sha256": "55ecf36f7f6487b89c21fc0650c471f976f4e225f5ab6c8b893e9ca51b36b0ca",
+        "category": "open_qa",
+        "answer_tokens": 11,
+        "ce_nats": 3.239058017730713
+      },
+      {
+        "identity_sha256": "17fa4aa8307d1d39865d95992e9b3946bde81859b0c2455c3de475601b791b89",
+        "category": "general_qa",
+        "answer_tokens": 226,
+        "ce_nats": 1.6039443016052246
+      },
+      {
+        "identity_sha256": "4817150fef5f1e5769f8af8727e17cfd25e440b7d34f211c809e2db837cf9d9e",
+        "category": "closed_qa",
+        "answer_tokens": 79,
+        "ce_nats": 2.0543463230133057
+      },
+      {
+        "identity_sha256": "46e36562602ba9307851766108ecb2d2eb192910c2dd761aa1de2a6625eeb8ac",
+        "category": "open_qa",
+        "answer_tokens": 39,
+        "ce_nats": 1.3653703927993774
+      },
+      {
+        "identity_sha256": "5d5bc21f945533f66a650ed0da59b409d67b827098d2e078e0c2c3f1aac1589b",
+        "category": "creative_writing",
+        "answer_tokens": 154,
+        "ce_nats": 2.1091465950012207
+      },
+      {
+        "identity_sha256": "bd3a81fabd32e7e8ed9bb538b7a0ba184ce711d62d14846742abbc26b020d173",
+        "category": "open_qa",
+        "answer_tokens": 35,
+        "ce_nats": 0.46625301241874695
+      },
+      {
+        "identity_sha256": "40eff73f047bd9ff7b44ebd7d45a75b25a55543298bb20587e2a9a8b5b499536",
+        "category": "information_extraction",
+        "answer_tokens": 22,
+        "ce_nats": 0.6441569924354553
+      },
+      {
+        "identity_sha256": "9bdad476c8e31ca4e03d1d0496d01e1909ce5e1791dfec3e36cf9ffefead2a0b",
+        "category": "general_qa",
+        "answer_tokens": 181,
+        "ce_nats": 1.0055512189865112
+      },
+      {
+        "identity_sha256": "bc1be5548514633bffee599a1acdeb3f24288e1f952591f24d2550c85d68728f",
+        "category": "brainstorming",
+        "answer_tokens": 138,
+        "ce_nats": 1.969664216041565
+      },
+      {
+        "identity_sha256": "2d2a50f10c79e5be3e75e21b14722eb0b7a98e46faeedc5cb77112282910b45a",
+        "category": "open_qa",
+        "answer_tokens": 18,
+        "ce_nats": 2.891119956970215
+      },
+      {
+        "identity_sha256": "b4bef057369d03264a38006bbdc70d79b05a53db0d1cd7732da367823d674d40",
+        "category": "open_qa",
+        "answer_tokens": 97,
+        "ce_nats": 0.4909812808036804
+      },
+      {
+        "identity_sha256": "ba130115741403e6707b733a074245b7fc668f0545e8419ae17d7aa93889fac4",
+        "category": "open_qa",
+        "answer_tokens": 102,
+        "ce_nats": 2.077148914337158
+      },
+      {
+        "identity_sha256": "2c54e14463a1bcd4b2c1a1eed0e5641f8be2ca47015a044deeaa95e0d261660f",
+        "category": "classification",
+        "answer_tokens": 29,
+        "ce_nats": 0.23803526163101196
+      },
+      {
+        "identity_sha256": "c4b1b21772726a391110d946364514b1afe19ad4e4539ec2e39b54c9083a80af",
+        "category": "summarization",
+        "answer_tokens": 26,
+        "ce_nats": 0.7906262278556824
+      },
+      {
+        "identity_sha256": "1e4d5d94f6a2b7fe2dbd69cbd3c2b940fa7eaf0cbb59ba7434c8b8deb347bed4",
+        "category": "general_qa",
+        "answer_tokens": 220,
+        "ce_nats": 3.036417007446289
+      },
+      {
+        "identity_sha256": "f6bdac06fb28d5ce7a91727d1f169a04c1f4b82bcc1d75d4420e4fd1c288f1fb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 0.7374721169471741
+      },
+      {
+        "identity_sha256": "71507aa188f7015e98082760918151dbbec89f89633278db9f807131e5506ea6",
+        "category": "information_extraction",
+        "answer_tokens": 94,
+        "ce_nats": 2.1245760917663574
+      },
+      {
+        "identity_sha256": "f85010017e15375f24d9164e88229400a95e5d239ba2f04119d38c86595b3c5b",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 0.08868777006864548
+      },
+      {
+        "identity_sha256": "7b964287d3beadcba178ff25c23ac725413258ee3003c0eb57f08da65988a954",
+        "category": "general_qa",
+        "answer_tokens": 29,
+        "ce_nats": 1.2472397089004517
+      },
+      {
+        "identity_sha256": "e6c60d723680a336affa67f90503988b7ed32fc351d4d0a20664eacd21e83afd",
+        "category": "brainstorming",
+        "answer_tokens": 76,
+        "ce_nats": 1.6160304546356201
+      },
+      {
+        "identity_sha256": "9ac1033f437b3c28a1458f1267fb3b41ec874135fa99f5a38d4cd7d6570bd767",
+        "category": "creative_writing",
+        "answer_tokens": 108,
+        "ce_nats": 2.6670079231262207
+      },
+      {
+        "identity_sha256": "eaa5b2639bb3af151f124f44436473c3963b84952ae3b94cf44e5cd7a4ec93dc",
+        "category": "information_extraction",
+        "answer_tokens": 92,
+        "ce_nats": 0.07396364212036133
+      },
+      {
+        "identity_sha256": "b2effc2937e6a7524d8dda63265353e4275a141d19e534bee59e2cbffca995de",
+        "category": "open_qa",
+        "answer_tokens": 23,
+        "ce_nats": 1.5414890050888062
+      },
+      {
+        "identity_sha256": "56dca56ddcfcadb9e2d59c8ec93388fd872c069f279c8d047f619c139b5e88fc",
+        "category": "classification",
+        "answer_tokens": 68,
+        "ce_nats": 1.1777827739715576
+      },
+      {
+        "identity_sha256": "f9c65224c0f50eda61c3404a041b67d43a8952d79c07ab0986eb697e621f766c",
+        "category": "creative_writing",
+        "answer_tokens": 50,
+        "ce_nats": 1.1631379127502441
+      },
+      {
+        "identity_sha256": "9c14dbd798239502fafbce415e669b55a1d723b749468e51d7f9f5c70b424c2b",
+        "category": "open_qa",
+        "answer_tokens": 345,
+        "ce_nats": 1.8155986070632935
+      },
+      {
+        "identity_sha256": "76c26abbe6252d92ca3f070e40566c919b26cdb2e053a3faa2fe9784fff6e83b",
+        "category": "information_extraction",
+        "answer_tokens": 5,
+        "ce_nats": 0.18228493630886078
+      },
+      {
+        "identity_sha256": "dd6f79d3ee4570b26b8f69102413665bd75cdcfb048426727c606b627f39b7d9",
+        "category": "brainstorming",
+        "answer_tokens": 51,
+        "ce_nats": 1.3819693326950073
+      },
+      {
+        "identity_sha256": "09a3fca99680846a0af428fc2af4c2b53ef13c67831ae655137ddfc6351f68e8",
+        "category": "creative_writing",
+        "answer_tokens": 186,
+        "ce_nats": 0.6548632383346558
+      },
+      {
+        "identity_sha256": "da4a01a3e8055d6c1c8dbc794eb3d80ce9ba7a93c3981d8b2e36427fe72a181a",
+        "category": "closed_qa",
+        "answer_tokens": 4,
+        "ce_nats": 0.36901533603668213
+      },
+      {
+        "identity_sha256": "f3a7e4f64f41ab47ea7dae943e358a9d49ddbde7129571603a300fcf9363d037",
+        "category": "summarization",
+        "answer_tokens": 77,
+        "ce_nats": 0.8894502520561218
+      },
+      {
+        "identity_sha256": "3419b1450ed1b81dc16986aada676a59e9767f3aa1e8c804ecee3413aee9bb2d",
+        "category": "brainstorming",
+        "answer_tokens": 43,
+        "ce_nats": 0.8670272827148438
+      },
+      {
+        "identity_sha256": "c0cba1b20d586853495985dbc17e379dbb8b727e124d30eead9e61a9eea92d52",
+        "category": "closed_qa",
+        "answer_tokens": 26,
+        "ce_nats": 0.30368202924728394
+      },
+      {
+        "identity_sha256": "1ad29550e01f3e06d5dfa4c73aa23f6212341974e28d89fa8397a2cea742d84d",
+        "category": "creative_writing",
+        "answer_tokens": 61,
+        "ce_nats": 1.7796626091003418
+      },
+      {
+        "identity_sha256": "8c69ca162b1130d5eef90f9dab96acb1b7a703202ca68af6135ac7c4da0d8688",
+        "category": "creative_writing",
+        "answer_tokens": 334,
+        "ce_nats": 2.673593521118164
+      },
+      {
+        "identity_sha256": "e52a8f97fe7894693cbe5ed182bfb920c9fd545b698655ab14f213a36dcb1a68",
+        "category": "information_extraction",
+        "answer_tokens": 13,
+        "ce_nats": 0.6579759120941162
+      },
+      {
+        "identity_sha256": "59ba8e86472bc79861f64e5983f6ef0592a657d81c4535cab072bd9bfa0105d9",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 0.9903309941291809
+      },
+      {
+        "identity_sha256": "d8ba2f8edc36bb2fa8cdfdb9459d0d6ed3c37f56b86625a264de95d6aa71ceab",
+        "category": "brainstorming",
+        "answer_tokens": 59,
+        "ce_nats": 2.300788164138794
+      },
+      {
+        "identity_sha256": "139f7e80ba046931f2def071bdbe39051f56ec954a073b8c3c7e731d8358b642",
+        "category": "brainstorming",
+        "answer_tokens": 103,
+        "ce_nats": 2.096212387084961
+      },
+      {
+        "identity_sha256": "c11cba7d0fcd3c7a2b802968de71d5ab337e306811f600bb42ebadef0010f9ad",
+        "category": "classification",
+        "answer_tokens": 13,
+        "ce_nats": 0.3926171660423279
+      },
+      {
+        "identity_sha256": "411e8458364850346a8f18a21e891503813a66ff7210ba0cb51e1ef84245d09c",
+        "category": "information_extraction",
+        "answer_tokens": 28,
+        "ce_nats": 0.4363480508327484
+      },
+      {
+        "identity_sha256": "8e1aa54d744bf0933c4a74740aca8a988ec798f9131d36cebe2de88651a8c5f2",
+        "category": "general_qa",
+        "answer_tokens": 165,
+        "ce_nats": 1.3480552434921265
+      },
+      {
+        "identity_sha256": "8cc9a8fd0a5d43c09bab0b48a6810f350ba33615a11d428c22fd07123664682c",
+        "category": "creative_writing",
+        "answer_tokens": 296,
+        "ce_nats": 3.6877152919769287
+      },
+      {
+        "identity_sha256": "f2e1efdab050d7035db8b25028ba03b4e2da9d056550f7e6513338211fc6e7b7",
+        "category": "creative_writing",
+        "answer_tokens": 129,
+        "ce_nats": 1.5439417362213135
+      },
+      {
+        "identity_sha256": "a78cef4200c846ec93b56cd7a845a0da110c39af8c51fca36c705ce076c61c68",
+        "category": "classification",
+        "answer_tokens": 39,
+        "ce_nats": 0.47047728300094604
+      },
+      {
+        "identity_sha256": "a6f73e43daf02670e2e16fd8f57c1e3c90cc0554c21dc28a1d32c228a4602c3f",
+        "category": "summarization",
+        "answer_tokens": 42,
+        "ce_nats": 1.6191816329956055
+      },
+      {
+        "identity_sha256": "db00dd474801917568a56b7e1d8a2d54d1a896bf1c5a1ffc9b9b0f42e60007e3",
+        "category": "closed_qa",
+        "answer_tokens": 72,
+        "ce_nats": 0.08730308711528778
+      },
+      {
+        "identity_sha256": "e84bfdf0d81f7e8977d8ccee2ffbe7adf326967c8267be0bff2985013b218b9e",
+        "category": "summarization",
+        "answer_tokens": 149,
+        "ce_nats": 1.2705163955688477
+      },
+      {
+        "identity_sha256": "7924a4f591634c6390a4eededf56740b2c961e529f829cde3a1ad649f71982bf",
+        "category": "general_qa",
+        "answer_tokens": 78,
+        "ce_nats": 1.4540306329727173
+      },
+      {
+        "identity_sha256": "62fb38340aed54f7ba6aeacf12f3be4e6bff01c9e9af4585d504a7dd140fc0a2",
+        "category": "information_extraction",
+        "answer_tokens": 137,
+        "ce_nats": 0.34276533126831055
+      },
+      {
+        "identity_sha256": "11a56c446d2e384b7760452562e87779ee068e639ef19099c24ef1351b6d9c4b",
+        "category": "classification",
+        "answer_tokens": 16,
+        "ce_nats": 0.28577619791030884
+      },
+      {
+        "identity_sha256": "100254f25126b222c9a57e02c69f98f9232ea27dd794818d5ff64a9ba0f4e9f6",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 0.2617413103580475
+      },
+      {
+        "identity_sha256": "e8e1469d87941c1f355463515e2b2d41f155abff539029f3529e37fb4d1c4879",
+        "category": "brainstorming",
+        "answer_tokens": 134,
+        "ce_nats": 2.3844404220581055
+      },
+      {
+        "identity_sha256": "be3b9b7443517c970546766e66c93ee5f023e68284d3993a21bdd781fccc2560",
+        "category": "classification",
+        "answer_tokens": 60,
+        "ce_nats": 1.3313980102539062
+      },
+      {
+        "identity_sha256": "a2daf7c163926fc86bf5c272b3f5f9b276800d9d0bcdbebc42f6139b6429aeeb",
+        "category": "summarization",
+        "answer_tokens": 54,
+        "ce_nats": 1.0995969772338867
+      },
+      {
+        "identity_sha256": "d830322ec19edef891eefa50b7ca6c6354e397847ec34860dfb847545d608bae",
+        "category": "closed_qa",
+        "answer_tokens": 30,
+        "ce_nats": 0.26916900277137756
+      },
+      {
+        "identity_sha256": "e2b1abaf909a4391355d5223984f28756055e58aa1b176a8aa4d1abed9fe75f7",
+        "category": "information_extraction",
+        "answer_tokens": 15,
+        "ce_nats": 1.2935103178024292
+      },
+      {
+        "identity_sha256": "8792e2e13b03131d8577d75091b7ecb2be0427e8f8eb698308dce53277f0a9a2",
+        "category": "information_extraction",
+        "answer_tokens": 29,
+        "ce_nats": 0.9838505983352661
+      },
+      {
+        "identity_sha256": "bfe06bbfbc0017bee4ee09adceef7cb951740b823e83d846008992f19cba1e5f",
+        "category": "classification",
+        "answer_tokens": 35,
+        "ce_nats": 0.2902403473854065
+      },
+      {
+        "identity_sha256": "926ee1d2b9aae6c8c45285b92789169dcaa49e41bf080bc945ba5433be246e09",
+        "category": "open_qa",
+        "answer_tokens": 59,
+        "ce_nats": 1.4128235578536987
+      },
+      {
+        "identity_sha256": "b51b062c139cd860e9ff217cadb93a2f2b716731876c45f16731c74af75d063b",
+        "category": "summarization",
+        "answer_tokens": 97,
+        "ce_nats": 1.5215598344802856
+      },
+      {
+        "identity_sha256": "22ccdd74b79b0f132eec3cd2e5e8c3b91aed39ab7a2a77a4631bc4599979d9c0",
+        "category": "summarization",
+        "answer_tokens": 52,
+        "ce_nats": 1.103880763053894
+      },
+      {
+        "identity_sha256": "25d14cafbb91dfcda712f1690c256497cd1c4465adf40b452c421a571a590b78",
+        "category": "brainstorming",
+        "answer_tokens": 86,
+        "ce_nats": 2.0684516429901123
+      }
+    ]
+  },
+  "time_s": 41.74905779201072,
+  "gpu_peak_gib": 6.264541149139404,
+  "limitations": [
+    "128 new test identities never in Stage26 704 selected records but SAME underlying public Dolly source and model could have seen it in pretraining",
+    "Reference-answer cross-entropy is not semantic correctness or human safety preference",
+    "Stratified bootstrap conditional on fixed test selection and one pretrained model, does not capture training-seed variance",
+    "No candidate chosen using this Stage34 test; winner frozen by Stage31 validation before evaluation"
+  ]
+}

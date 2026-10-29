@@ -1,0 +1,170 @@
+{
+  "status": "pass",
+  "kind": "stage31_two_epoch_full512_real_training_4runs_audited",
+  "source_git_sha": "ff7171daab87857ceb9e15c5b04189c0c5f7f3d1",
+  "dataset_source_sha": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "training_exposures_per_model": 1024,
+  "unique_train_records": 512,
+  "unique_validation_records": 96,
+  "heldout_test_records": 96,
+  "candidates": {
+    "rank8_seed3111": {
+      "config": {
+        "rank": 8,
+        "seed": 3111,
+        "epochs": 2,
+        "steps_per_epoch": 256,
+        "total_updates": 512,
+        "effective_batch": 2,
+        "micro_batch": 1,
+        "accumulation": 2,
+        "precision": "bf16",
+        "gradient_checkpoint": false,
+        "optimizer": "AdamW",
+        "lr": 0.00015
+      },
+      "train_exposures": 1024,
+      "epoch1_validation_ce": 1.7827144236432255,
+      "epoch2_validation_ce": 1.7901372288990962,
+      "best_epoch": 1,
+      "best_validation_ce": 1.7827144236432255,
+      "samples_per_second": 4.513266246133546,
+      "peak_allocated_gib": 12.870368003845215,
+      "trainable_parameters": 3833856,
+      "selected_checkpoint_shas": {
+        "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+        "adapter_config.json": "9b84d66f8ebeda5d1a247d0b42b0b0e9160005968c6549227651707fcef7f1d0",
+        "adapter_model.safetensors": "0aff66d4dd1cf945849833bf07568028b7564268c6d94531cad54587ddb9a075"
+      }
+    },
+    "rank16_seed3111": {
+      "config": {
+        "rank": 16,
+        "seed": 3111,
+        "epochs": 2,
+        "steps_per_epoch": 256,
+        "total_updates": 512,
+        "effective_batch": 2,
+        "micro_batch": 1,
+        "accumulation": 2,
+        "precision": "bf16",
+        "gradient_checkpoint": false,
+        "optimizer": "AdamW",
+        "lr": 0.00015
+      },
+      "train_exposures": 1024,
+      "epoch1_validation_ce": 1.7808958851649919,
+      "epoch2_validation_ce": 1.7956097296756999,
+      "best_epoch": 1,
+      "best_validation_ce": 1.7808958851649919,
+      "samples_per_second": 4.4806812559946,
+      "peak_allocated_gib": 12.934927940368652,
+      "trainable_parameters": 7667712,
+      "selected_checkpoint_shas": {
+        "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+        "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+        "adapter_model.safetensors": "81218bdfb704cdfa99c716e628400d5996bb0e04c6454db8159794e901421211"
+      }
+    },
+    "rank8_seed3127": {
+      "config": {
+        "rank": 8,
+        "seed": 3127,
+        "epochs": 2,
+        "steps_per_epoch": 256,
+        "total_updates": 512,
+        "effective_batch": 2,
+        "micro_batch": 1,
+        "accumulation": 2,
+        "precision": "bf16",
+        "gradient_checkpoint": false,
+        "optimizer": "AdamW",
+        "lr": 0.00015
+      },
+      "train_exposures": 1024,
+      "epoch1_validation_ce": 1.780227487369861,
+      "epoch2_validation_ce": 1.788241977703141,
+      "best_epoch": 1,
+      "best_validation_ce": 1.780227487369861,
+      "samples_per_second": 4.480776541083216,
+      "peak_allocated_gib": 12.870368003845215,
+      "trainable_parameters": 3833856,
+      "selected_checkpoint_shas": {
+        "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+        "adapter_config.json": "9b84d66f8ebeda5d1a247d0b42b0b0e9160005968c6549227651707fcef7f1d0",
+        "adapter_model.safetensors": "f4268a34f4372ae6b494bd9f8ff8b67bdeacc99ec4ff17052aab951c63027be8"
+      }
+    },
+    "rank16_seed3127": {
+      "config": {
+        "rank": 16,
+        "seed": 3127,
+        "epochs": 2,
+        "steps_per_epoch": 256,
+        "total_updates": 512,
+        "effective_batch": 2,
+        "micro_batch": 1,
+        "accumulation": 2,
+        "precision": "bf16",
+        "gradient_checkpoint": false,
+        "optimizer": "AdamW",
+        "lr": 0.00015
+      },
+      "train_exposures": 1024,
+      "epoch1_validation_ce": 1.777000457446334,
+      "epoch2_validation_ce": 1.7984824133026334,
+      "best_epoch": 1,
+      "best_validation_ce": 1.777000457446334,
+      "samples_per_second": 4.470727722992779,
+      "peak_allocated_gib": 12.934927940368652,
+      "trainable_parameters": 7667712,
+      "selected_checkpoint_shas": {
+        "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+        "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+        "adapter_model.safetensors": "b4756915e2b1fef932358e24f374f820aed4daeda73c268c00b2b3064411b39b"
+      }
+    }
+  },
+  "rank_seed_pairs": [
+    {
+      "seed": 3111,
+      "delta_best_val_ce_rank16_minus8": -0.0018185384782336556,
+      "relative_throughput_change_rank16_vs8": -0.007219824482293968,
+      "delta_peak_gib_rank16_minus8": 0.0645599365234375
+    },
+    {
+      "seed": 3127,
+      "delta_best_val_ce_rank16_minus8": -0.0032270299235268585,
+      "relative_throughput_change_rank16_vs8": -0.0022426510222730567,
+      "delta_peak_gib_rank16_minus8": 0.0645599365234375
+    }
+  ],
+  "chosen_by_validation": {
+    "status": "candidate_selected_from_validation_only",
+    "selected": "rank16_seed3127",
+    "rank": 16,
+    "seed": 3127,
+    "best_epoch": 1,
+    "val_ce": 1.777000457446334,
+    "source_sha": "ff7171daab87857ceb9e15c5b04189c0c5f7f3d1",
+    "all_validation_criteria": {
+      "rank16_seed3111": 1.7808958851649919,
+      "rank16_seed3127": 1.777000457446334,
+      "rank8_seed3111": 1.7827144236432255,
+      "rank8_seed3127": 1.780227487369861
+    },
+    "test_has_not_been_accessed": true
+  },
+  "frozen_test": {
+    "baseline_assistant_ce": 2.8145398792733403,
+    "selected_assistant_ce": 1.6144466951357277,
+    "baseline_ppl": 16.68549667095518,
+    "selected_ppl": 5.025106738116325
+  },
+  "limits": [
+    "Dolly public and potentially pretrained into base model; no independent data-source transfer",
+    "Only two training seeds per rank, insufficient for statistically significant rank benefit",
+    "All 512 examples used twice, still a small 8B training budget",
+    "Full test used once after validation selection, no semantic correctness claim from CE alone"
+  ]
+}

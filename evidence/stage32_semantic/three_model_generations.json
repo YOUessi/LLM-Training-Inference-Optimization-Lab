@@ -1,0 +1,2462 @@
+{
+  "status": "measured",
+  "kind": "stage32_64_frozen_three_model_greedy_generations",
+  "test_source_sha256": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127",
+  "source_dataset_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "selected_stage31": "rank16_seed3127",
+  "selected_stage31_rank": 16,
+  "short_adapter_sha256": "c4ec5d367f7b91e07062994a14c50258f77f4e4584d0e3b33e92ec14c3d03323",
+  "full_adapter_sha256": "b4756915e2b1fef932358e24f374f820aed4daeda73c268c00b2b3064411b39b",
+  "chosen_id_rule": "first 8 per category under fixed SHA256 rank; no output-based cherry picking",
+  "config": {
+    "max_new_tokens": 128,
+    "thinking": false,
+    "greedy": true,
+    "models": [
+      "base",
+      "stage26_short",
+      "stage31_full"
+    ],
+    "generated_count": 64
+  },
+  "gpu_generation_elapsed_s": 455.56591370201204,
+  "cases": [
+    {
+      "index": 0,
+      "identity_sha256": "4383230e0c02d3896ba54652ac255ea5114424b02a1c24c99cc3b8a58c13b85f",
+      "category": "brainstorming",
+      "reference_sha256": "57b166cbf0cb926fc8592c4aadac4ec92d93c94039b0ff6062c84db2a712d96d",
+      "outputs": {
+        "base": "Improving your writing skills is a continuous process, and there are many effective strategies to help you grow. Here are some ideas and tips to help you enhance your writing:\n\n---\n\n### 1. **Read Widely and Often**\n- **Read different genres and styles** (fiction, nonfiction, poetry, essays, etc.).\n- **Analyze how others write** \u2013 look at sentence structure, word choice, pacing, and tone.\n- **Read like a writer**, not just for entertainment.\n\n---\n\n### 2. **Write Regularly**\n- **Set a writing habit** \u2013 even 15\u201330 minutes a",
+        "stage26_short": "1. Read more books and articles to improve your vocabulary and understanding of different writing styles.\n2. Practice writing regularly, even if it's just a few sentences a day.\n3. Get feedback from others by sharing your writing with friends or joining a writing group.\n4. Study grammar and punctuation rules to improve your writing clarity.\n5. Use writing tools like Grammarly or Hemingway Editor to help identify errors and improve your writing.",
+        "stage31_full": "1. Read more books and articles to improve your vocabulary and understanding of different writing styles.\n2. Practice writing regularly, even if it's just a few sentences a day.\n3. Get feedback from others on your writing and use it to improve.\n4. Study grammar and punctuation rules to avoid common mistakes.\n5. Use writing prompts to challenge yourself and explore new ideas.\n6. Read your work aloud to catch errors and improve the flow.\n7. Use a thesaurus to find synonyms and avoid repetition.\n8. Write in different genres to expand your writing skills.\n9. Use writing software or apps to help with organization and editing"
+      },
+      "generation_s": {
+        "base": 3.8161687839892693,
+        "stage26_short": 3.082315578009002,
+        "stage31_full": 4.455409761983901
+      },
+      "generation_sha256": {
+        "base": "0d59c7d2d2e3e04c8fefffbadb8bd60b8f71dc755d494b95e817fff36d4a7604",
+        "stage26_short": "2ed1727c298a71b81e435417a35598dbc059b607a8d5d724cc911e39e2caaa50",
+        "stage31_full": "99562d8dc1e6e990d28e1a92945dc2cb08bb75cb3f411debdf617c211139cb90"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2486486486486487,
+          "exact": 0,
+          "output_words": 78
+        },
+        "stage26_short": {
+          "word_f1": 0.31111111111111106,
+          "exact": 0,
+          "output_words": 73
+        },
+        "stage31_full": {
+          "word_f1": 0.29906542056074764,
+          "exact": 0,
+          "output_words": 107
+        }
+      }
+    },
+    {
+      "index": 1,
+      "identity_sha256": "1af20addfddc27492594a533ed60de19d46cd94ff85d5f25046bf6f0c3800721",
+      "category": "brainstorming",
+      "reference_sha256": "b318d94f4d5de4b654d11f7f341cd83cf3bb87c37ad125ba050cc39c8ced4096",
+      "outputs": {
+        "base": "Absolutely! Here's a curated list of **science fiction books that every sci-fi fan should read**, spanning classic and modern works. These books have shaped the genre, introduced groundbreaking ideas, and inspired countless stories and films.\n\n---\n\n### \ud83c\udf0c **Classic Sci-Fi Must-Reads**\n\n1. **\"Frankenstein\" by Mary Shelley (1818)**  \n   - Often considered the first science fiction novel, it explores themes of creation, responsibility, and humanity.\n\n2. **\"The Time Machine\" by H.G. Wells (1895)**  \n   - A foundational work in time travel fiction, it also",
+        "stage26_short": "1. Dune\n2. Foundation\n3. Ender's Game\n4. The Left Hand of Darkness\n5. The Forever War\n6. The Mote in God's Eye\n7. The Dispossessed\n8. The Moon is a Harsh Mistress\n9. The Stars My Destination\n10. The Forever War",
+        "stage31_full": "Here is a list of science fiction books that every sci-fi fan should read:\n\n1. \"Dune\" by Frank Herbert\n2. \"The Hitchhiker's Guide to the Galaxy\" by Douglas Adams\n3. \"The Left Hand of Darkness\" by Ursula K. Le Guin\n4. \"The Foundation\" by Isaac Asimov\n5. \"The Martian\" by Andy Weir\n6. \"The Time Machine\" by H.G. Wells\n7. \"The War of the Worlds\" by H.G. Wells\n8. \"The Mote in God's Eye\" by Larry Niven\n"
+      },
+      "generation_s": {
+        "base": 3.7309941410203464,
+        "stage26_short": 2.5042855499777943,
+        "stage31_full": 4.449750425992534
+      },
+      "generation_sha256": {
+        "base": "ad2a1a42347d89626776b7bf906604b512234a8f1ac6d9d9857c6a8207798fb0",
+        "stage26_short": "13655d4820b75de8f9943a2db279644995703dcaaf37a0614775c34d2d8c1772",
+        "stage31_full": "29d3228c7f156664fd33065b2a5ae7b8ae8ffe233d970c8bf67c9602b1a51916"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.17142857142857143,
+          "exact": 0,
+          "output_words": 77
+        },
+        "stage26_short": {
+          "word_f1": 0.22857142857142854,
+          "exact": 0,
+          "output_words": 42
+        },
+        "stage31_full": {
+          "word_f1": 0.4647887323943662,
+          "exact": 0,
+          "output_words": 79
+        }
+      }
+    },
+    {
+      "index": 2,
+      "identity_sha256": "d24aea039c9fea85828f09d64e1fd066b298e53bf70252d3fce16837c4e7da2e",
+      "category": "brainstorming",
+      "reference_sha256": "2b287e8ba8d82dc446259f9162e707f00fd7108337c4cb000acd03d3a689f719",
+      "outputs": {
+        "base": "Absolutely! Increasing your savings is a great goal and can be achieved with a few smart strategies. Here are some effective tips to help you save more:\n\n---\n\n### 1. **Track Your Spending**\n- Use a budgeting app or a simple spreadsheet to track where your money goes.\n- Understand your expenses to identify areas where you can cut back.\n\n---\n\n### 2. **Create a Budget**\n- Allocate a specific portion of your income to savings.\n- Use the **50/30/20 rule**:\n  - 50% for needs (rent, groceries, utilities)\n  - 30% for",
+        "stage26_short": "1. Set a budget and track your expenses.\n2. Automate your savings by setting up automatic transfers.\n3. Avoid unnecessary expenses.\n4. Set financial goals.\n5. Avoid debt.\n6. Increase your income.\n7. Invest your savings.",
+        "stage31_full": "1. Set a budget and track your expenses.\n2. Automate your savings by setting up automatic transfers.\n3. Avoid unnecessary expenses.\n4. Shop wisely and look for deals.\n5. Consider investing your savings for long-term growth."
+      },
+      "generation_s": {
+        "base": 3.709985622030217,
+        "stage26_short": 1.8419499690062366,
+        "stage31_full": 1.7331944010220468
+      },
+      "generation_sha256": {
+        "base": "8304aedb68d76eb24285845aca4e8d498b4427662b8b987306bd619cbf0f8723",
+        "stage26_short": "b72fe6f7534fba313e0a3373c175264a3e59cfb3a4798bada62397afd0298d36",
+        "stage31_full": "9ea478f0cbea7809fe8ebcce9c7dfd02f6b495a6a47153357866dc922d84e216"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.24299065420560748,
+          "exact": 0,
+          "output_words": 83
+        },
+        "stage26_short": {
+          "word_f1": 0.2155688622754491,
+          "exact": 0,
+          "output_words": 36
+        },
+        "stage31_full": {
+          "word_f1": 0.19161676646706585,
+          "exact": 0,
+          "output_words": 36
+        }
+      }
+    },
+    {
+      "index": 3,
+      "identity_sha256": "f8b8322e06fcd942dcb4802226716b7ff62867b390ef590d139a69a8692d800e",
+      "category": "brainstorming",
+      "reference_sha256": "eed392518675d10529b5c797bf650e8fa6d007b13ae9b1a3243a05012397682e",
+      "outputs": {
+        "base": "The \"best\" creator's platform depends on your **goals**, **content type**, and **audience**. Here's a breakdown of the top platforms for different types of creators, along with their pros and cons:\n\n---\n\n### **1. YouTube (Video Content)**\n- **Best for**: Long-form video, tutorials, vlogs, reviews, and educational content.\n- **Pros**:\n  - Massive global audience.\n  - Monetization through ads, memberships, and Super Chats.\n  - SEO-friendly for discoverability.\n- **Cons**:\n  - Time-consuming to produce high-quality content.\n  - Algorithm can",
+        "stage26_short": "The best creator's platform is YouTube.",
+        "stage31_full": "The best creator's platform is YouTube."
+      },
+      "generation_s": {
+        "base": 3.7175045739859343,
+        "stage26_short": 0.34643089200835675,
+        "stage31_full": 0.34922521002590656
+      },
+      "generation_sha256": {
+        "base": "782ff7a7a615889111b9e5eecc4c02e718bcd96b83961cb9c7474939d9be40a0",
+        "stage26_short": "1c6e73057f88bb744b47df9d17df5d2c6b712686f442b700b05a4124321cfc07",
+        "stage31_full": "1c6e73057f88bb744b47df9d17df5d2c6b712686f442b700b05a4124321cfc07"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.0821917808219178,
+          "exact": 0,
+          "output_words": 66
+        },
+        "stage26_short": {
+          "word_f1": 0.4615384615384615,
+          "exact": 0,
+          "output_words": 6
+        },
+        "stage31_full": {
+          "word_f1": 0.4615384615384615,
+          "exact": 0,
+          "output_words": 6
+        }
+      }
+    },
+    {
+      "index": 4,
+      "identity_sha256": "858a1ae27c7aace3767e7596479db0060a785ca699ef20d41cbedb3265296b81",
+      "category": "brainstorming",
+      "reference_sha256": "cb84b97cf18cbf609e181a54e0bf33100b7cceaa36b5b5dd306ad484fe40e7f5",
+      "outputs": {
+        "base": "Sure! Here's a list of fantastic movies across various genres and eras, spanning different styles and themes. These films are celebrated for their storytelling, direction, acting, and impact on cinema:\n\n---\n\n### **Classic & Timeless Favorites**\n1. **Citizen Kane** (1941) \u2013 Orson Welles' masterpiece of storytelling and cinematography.\n2. **The Godfather** (1972) \u2013 A legendary tale of power, family, and betrayal.\n3. **Casablanca** (1942) \u2013 A romantic drama with a touch of wartime intrigue.\n4. **Psy",
+        "stage26_short": "1. The Dark Knight\n2. Inception\n3. The Matrix\n4. Interstellar\n5. The Social Network\n6. The Godfather\n7. The Shawshank Redemption\n8. The Lord of the Rings\n9. The Avengers\n10. The Hunger Games",
+        "stage31_full": "Here is a list of fantastic movies:\n\n1. The Dark Knight\n2. The Godfather\n3. The Shawshank Redemption\n4. The Matrix\n5. The Lord of the Rings\n6. The Avengers\n7. The Hunger Games\n8. The Incredibles\n9. The Iron Giant\n10. The Lion King"
+      },
+      "generation_s": {
+        "base": 3.7420557879959233,
+        "stage26_short": 2.142204453004524,
+        "stage31_full": 2.5275279989582486
+      },
+      "generation_sha256": {
+        "base": "57c75016d1925ce16c4de5774231abba81a73842584dc94040d14b572e965e6c",
+        "stage26_short": "9804e8d11e4a34113c02ccdae7d563fa5e54ff6259dd6224ac3c581f2a6338ac",
+        "stage31_full": "b78451ece8c5caf8ab6f3a4185e221773c53a85b8ee2860d02561a5563a6f1ff"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.049999999999999996,
+          "exact": 0,
+          "output_words": 70
+        },
+        "stage26_short": {
+          "word_f1": 0.22222222222222224,
+          "exact": 0,
+          "output_words": 35
+        },
+        "stage31_full": {
+          "word_f1": 0.14545454545454545,
+          "exact": 0,
+          "output_words": 45
+        }
+      }
+    },
+    {
+      "index": 5,
+      "identity_sha256": "fbe507b0fa95bbeea69f0c25a5ce6229e74d35fdfcdfb4b88a228b0b95a61bdb",
+      "category": "brainstorming",
+      "reference_sha256": "bfd2c4799035274fbddc8c5a40e8b6f6c5e46a69a4f2fc9e3da8befba207692d",
+      "outputs": {
+        "base": "Here are five fun and engaging ideas for a first date that can help you both get to know each other while having a great time:\n\n### 1. **Escape Room Adventure**\n- **Why it works:** It's interactive, challenging, and requires teamwork. It keeps both of you engaged and gives you a chance to laugh and strategize together.\n- **Pro tip:** Choose a room that matches your interests (e.g., a mystery room if you both like puzzles, or a themed room if you're into creativity).\n\n### 2. **DIY Craft or Cooking Class**\n- **Why it works:** It's a great way",
+        "stage26_short": "1. Go to a museum\n2. Go to a concert\n3. Go to a restaurant\n4. Go to a park\n5. Go to a movie",
+        "stage31_full": "1. Go to a museum\n2. Go to a concert\n3. Go to a restaurant\n4. Go to a park\n5. Go to a movie"
+      },
+      "generation_s": {
+        "base": 3.71218695899006,
+        "stage26_short": 1.2534594789613038,
+        "stage31_full": 1.2556014980073087
+      },
+      "generation_sha256": {
+        "base": "0c0f1be700cc7a837ed13877931e65f232261921a4d3a38d9bba0ce346f36e8f",
+        "stage26_short": "4cf26e581448361302b01a2590ced78a32427a3424b3dafd161851778debdbdd",
+        "stage31_full": "4cf26e581448361302b01a2590ced78a32427a3424b3dafd161851778debdbdd"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.15950920245398775,
+          "exact": 0,
+          "output_words": 95
+        },
+        "stage26_short": {
+          "word_f1": 0.27956989247311825,
+          "exact": 0,
+          "output_words": 25
+        },
+        "stage31_full": {
+          "word_f1": 0.27956989247311825,
+          "exact": 0,
+          "output_words": 25
+        }
+      }
+    },
+    {
+      "index": 6,
+      "identity_sha256": "f70bb658d26782197b835e52119588e4f6541397f7ae5e8d68d1715a57e654ef",
+      "category": "brainstorming",
+      "reference_sha256": "66095cb5650047cf41e16ee24998c570482abd7b9feeddba9a9b4eae25003a2b",
+      "outputs": {
+        "base": "Determining which country has the \"least diverse food\" is a complex and subjective question, as food diversity is influenced by geography, history, culture, and economic factors. However, some countries are often cited as having relatively limited food diversity due to their geographic isolation, small population, or historical reliance on a narrow range of crops or ingredients. Here are a few examples often mentioned in this context:\n\n### 1. **Nauru**  \n   - **Location**: Pacific Ocean, part of the Micronesian island chain.  \n   - **Reason**: Nauru is one of the smallest countries in the world, with a population",
+        "stage26_short": "The country with the least diverse food is the United States.",
+        "stage31_full": "The country with the least diverse food is the United States."
+      },
+      "generation_s": {
+        "base": 3.739330354030244,
+        "stage26_short": 0.4925350110279396,
+        "stage31_full": 0.4942441459861584
+      },
+      "generation_sha256": {
+        "base": "98246989ed6111548efe19a154cd8f0970fa53f3df939df583479f7b1a186982",
+        "stage26_short": "8d95fa58bc2deb6cd7185fec94fa5bb2d0939b649e71aaf199d849d005cda0b7",
+        "stage31_full": "8d95fa58bc2deb6cd7185fec94fa5bb2d0939b649e71aaf199d849d005cda0b7"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.19696969696969696,
+          "exact": 0,
+          "output_words": 91
+        },
+        "stage26_short": {
+          "word_f1": 0.15384615384615385,
+          "exact": 0,
+          "output_words": 11
+        },
+        "stage31_full": {
+          "word_f1": 0.15384615384615385,
+          "exact": 0,
+          "output_words": 11
+        }
+      }
+    },
+    {
+      "index": 7,
+      "identity_sha256": "9c68b4017c47a4848d579a9a815c74a313fc184a1eb4e0b588b0373c85739ac8",
+      "category": "brainstorming",
+      "reference_sha256": "f249ca8a918ca78780c356e49a1fb69207d36ce01ab82b566bcbd5e6874ffdfc",
+      "outputs": {
+        "base": "Sure! Here are 5 delicious kinds of nuts that are loved around the world:\n\n1. **Almonds** \u2013 Crispy, nutty, and rich in healthy fats and protein. Great as a snack, in salads, or as a base for sauces.\n\n2. **Cashews** \u2013 Creamy and buttery, they're perfect for snacking, baking, or making creamy sauces and dairy-free alternatives.\n\n3. **Pistachios** \u2013 Sweet and slightly tart, with a vibrant green color. Often used in desserts, trail mixes, and as a garnish.\n\n4. **Walnuts** \u2013 Nutty",
+        "stage26_short": "1. Almonds\n2. Cashews\n3. Peanuts\n4. Walnuts\n5. Pecans",
+        "stage31_full": "1. Almonds\n2. Cashews\n3. Peanuts\n4. Walnuts\n5. Pistachios"
+      },
+      "generation_s": {
+        "base": 3.7702938560396433,
+        "stage26_short": 0.9507757559767924,
+        "stage31_full": 0.9564833120093681
+      },
+      "generation_sha256": {
+        "base": "a8ea99201bd017fe31a6ba56888a0d531d3179fed66e06c8153fd4b91a248646",
+        "stage26_short": "4774f4b6ab83dad1248f4cecca81a7fedc6d5054a63a5dd990a62db6f3811b4c",
+        "stage31_full": "b5f5dc58a0cac65921ca7f4e6969f70584ae9e08ef584ee0a495f002752fcd4e"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2828282828282828,
+          "exact": 0,
+          "output_words": 78
+        },
+        "stage26_short": {
+          "word_f1": 0.3870967741935483,
+          "exact": 0,
+          "output_words": 10
+        },
+        "stage31_full": {
+          "word_f1": 0.45161290322580644,
+          "exact": 0,
+          "output_words": 10
+        }
+      }
+    },
+    {
+      "index": 8,
+      "identity_sha256": "8d08f775ebf92c6ab555a58f13536030d5e5cc420e6b674611b688ea3bb79463",
+      "category": "classification",
+      "reference_sha256": "df1ef7b35342ebc9e4f1e24dbc039e9b80e5a1dae9e2937cd483469b6b1f8dd9",
+      "outputs": {
+        "base": "Here is the classification of the given items as **food** or **drinks**:\n\n- **Biriyani** \u2013 **Food**  \n- **Pasta** \u2013 **Food**  \n- **Steak** \u2013 **Food**  \n- **Cocktail** \u2013 **Drink**  \n- **Mocktail** \u2013 **Drink**  \n- **Wine** \u2013 **Drink**",
+        "stage26_short": "Biriyani, Pasta, Steak are food items. Cocktail, mocktail, wine are drinks.",
+        "stage31_full": "Biriyani, Pasta, Steak are food. Cocktail, mocktail, wine are drinks."
+      },
+      "generation_s": {
+        "base": 2.3860629110131413,
+        "stage26_short": 0.8093024300178513,
+        "stage31_full": 0.7695264059584588
+      },
+      "generation_sha256": {
+        "base": "4c259e0978b6ea94537300ad72cccb5fabb677b4025ce00e166ffa1e5625680d",
+        "stage26_short": "b40b7e4b3c62135e2c7591025332a1b5cb2cee8228cb56a8c6881c4b59c9ce2d",
+        "stage31_full": "645bf510b0a9b1422a5e6e5a40eac3f2d9dfbd0eacf1b4b9abaaef8f19773678"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.5,
+          "exact": 0,
+          "output_words": 24
+        },
+        "stage26_short": {
+          "word_f1": 0.8421052631578948,
+          "exact": 0,
+          "output_words": 11
+        },
+        "stage31_full": {
+          "word_f1": 0.888888888888889,
+          "exact": 0,
+          "output_words": 10
+        }
+      }
+    },
+    {
+      "index": 9,
+      "identity_sha256": "54a0a446ed882c1b704f9ed4e0a4cb8aa460c5a087aaadd410519e6b9ab32b5c",
+      "category": "classification",
+      "reference_sha256": "f9b0112b4c1cef4dd8c4d8752451bd95890467fbbf4604b90f75df62a9af84e4",
+      "outputs": {
+        "base": "Since I can't see your desk or the items you're looking at, I'll have to rely on general knowledge of what is typically considered an **office accessory**. Office accessories are items that support productivity, organization, or aesthetics in an office setting, but are not essential for the core function of a computer or office equipment.\n\nHere are some common examples of **office accessories**:\n\n### 1. **Desk Organizers**\n- Drawer organizers\n- Cable management systems\n- File organizers\n- Sticky notes holders\n\n### 2. **Stationery and Writing Tools**\n- Pens, pencils, markers\n- Sticky notes\n- Post",
+        "stage26_short": "Office accessories are items that are used in the office.",
+        "stage31_full": "I am looking at a pen, a paperclip, a stapler, a ruler, a calculator, a highlighter, a notebook, a desk lamp, a computer, a printer, a phone, and a coffee mug."
+      },
+      "generation_s": {
+        "base": 3.763587579014711,
+        "stage26_short": 0.4552932209917344,
+        "stage31_full": 1.6805273150093853
+      },
+      "generation_sha256": {
+        "base": "04018f48d6d7083c70dfd150d006dc0ed7837434e6e1ecb6c259513a57807474",
+        "stage26_short": "fe867029432c4e97c93acee29ff19790e30d015f31f0e67f1c65877364a5cd92",
+        "stage31_full": "a6bbd259737867ce206a97e20086afb957cb8698e1d7cf4185477ff44a05cc0f"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 87
+        },
+        "stage26_short": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 10
+        },
+        "stage31_full": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 31
+        }
+      }
+    },
+    {
+      "index": 10,
+      "identity_sha256": "9a44cacd523069e5df6088a3cf37fe7d99cc34aa12b9d4a87b2ff1938a55170b",
+      "category": "classification",
+      "reference_sha256": "5dedcd23dacf3e30832ca63681e68a85b3750cf045d0afada844b3e45223e28f",
+      "outputs": {
+        "base": "Here's the identification of whether each animal species is alive or extinct:\n\n1. **Xenoposeidon** \u2013 **Extinct**  \n   *Xenoposeidon* is a genus of plesiosaur that lived during the Early Cretaceous period. It is known from fossils found in England and is considered extinct.\n\n2. **Sloth** \u2013 **Alive**  \n   *Sloths* are living animals. There are several species of sloths today, including the two-toed sloth and the three-toed sloth, which are found in the rainforests of South and Central America.\n\n**",
+        "stage26_short": "Sloth is alive, Xenoposeidon is extinct.",
+        "stage31_full": "Sloth is alive, Xenoposeidon is extinct."
+      },
+      "generation_s": {
+        "base": 3.763623828999698,
+        "stage26_short": 0.49071981001179665,
+        "stage31_full": 0.4923573510022834
+      },
+      "generation_sha256": {
+        "base": "ea31a69a90f9b3733bb09fdabcac1b2387d8fe211451fb5b99ac525434bd7da7",
+        "stage26_short": "5dedcd23dacf3e30832ca63681e68a85b3750cf045d0afada844b3e45223e28f",
+        "stage31_full": "5dedcd23dacf3e30832ca63681e68a85b3750cf045d0afada844b3e45223e28f"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.1518987341772152,
+          "exact": 0,
+          "output_words": 73
+        },
+        "stage26_short": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 6
+        },
+        "stage31_full": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 6
+        }
+      }
+    },
+    {
+      "index": 11,
+      "identity_sha256": "2a6fce52620f2b5097f58e7cf1891f0578d1b50d508561b7dbba6de22d24fe83",
+      "category": "classification",
+      "reference_sha256": "3226eb68dadb44bb3551c5b296d0619bb8ae24c4af43b9264ac2e246454f2733",
+      "outputs": {
+        "base": "The **Redhorse sucker** is a **fish**, and the **Red-necked grebe** is a **bird**.\n\n### Redhorse Sucker:\n- **Type**: Fish\n- **Family**: Catostomidae (suckers)\n- **Description**: A type of freshwater fish found in North America, known for its distinctive red coloration on the underside of its body.\n\n### Red-necked Grebe:\n- **Type**: Bird\n- **Family**: Podicipedidae (grebes)\n- **Description**: A water bird with a distinctive red patch on the neck, often found near freshwater lakes and",
+        "stage26_short": "Red-necked grebe is a bird, Redhorse sucker is a fish.",
+        "stage31_full": "Redhorse sucker is a fish, Red-necked grebe is a bird."
+      },
+      "generation_s": {
+        "base": 3.734013444976881,
+        "stage26_short": 0.6280073820380494,
+        "stage31_full": 0.6241300109541044
+      },
+      "generation_sha256": {
+        "base": "013333470a7a0aef954b62c32ac44d4d98e71772f3457a3732f5dbf8c3048cab",
+        "stage26_short": "ca0f184628bac09c6db900320724cbec7926867224fddb0d3df6efb17b2e2538",
+        "stage31_full": "939a408f0e65abcd89700e9e4cf5c5bc25133d4b1fdc8aa11c0bab83cd9a5a18"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2597402597402597,
+          "exact": 0,
+          "output_words": 67
+        },
+        "stage26_short": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 10
+        },
+        "stage31_full": {
+          "word_f1": 1.0,
+          "exact": 0,
+          "output_words": 10
+        }
+      }
+    },
+    {
+      "index": 12,
+      "identity_sha256": "f5183b843328d6974c782c7a8beb51f8f65f82e6af43fb1a23f87ba447df6c09",
+      "category": "classification",
+      "reference_sha256": "13cf8ef3814373c2f747cced98b4ff742d937c3adeadf62e29ead971bb3e57a5",
+      "outputs": {
+        "base": "Here's the classification of each house from *A Song of Ice and Fire* as either a **Great House** or **Minor House**:\n\n---\n\n### **Great Houses**  \nThese are the most powerful and influential houses in Westeros, with significant political, military, or economic power. They are the main players in the story and are often vying for the Iron Throne.\n\n1. **Targaryen** \u2013 One of the most powerful and ancient houses, rulers of the Seven Kingdoms before the War of the Five Kings.  \n2. **Stark** \u2013 The largest and most powerful house in the North, known for",
+        "stage26_short": "Great Houses: Targaryen, Stark, Tyrell, Martell, Lannister, Baratheon\nMinor Houses: Greyjoy, Cerwyn, Karstark, Hornwood, Merryweather, Tarly",
+        "stage31_full": "Great houses: Targaryen, Stark, Tyrell, Martell, Greyjoy, Baratheon, Lannister\nMinor houses: Cerwyn, Karstark, Hornwood, Merryweather, Tarly"
+      },
+      "generation_s": {
+        "base": 3.7501210540067405,
+        "stage26_short": 1.6400933159748092,
+        "stage31_full": 1.640685788996052
+      },
+      "generation_sha256": {
+        "base": "dfb251f195ba0d40f4c898b179eb81effe300ed4eb59431a961c9ec21383feb3",
+        "stage26_short": "cee820815f16a74f00c10f700f8ebee99f1523ff7cb332adc0056a2e908197ac",
+        "stage31_full": "2f70836fe49d190e1af205fa19a3281ceb82d9a0e7fc096a36b16a98da1719d5"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.11214953271028039,
+          "exact": 0,
+          "output_words": 91
+        },
+        "stage26_short": {
+          "word_f1": 0.875,
+          "exact": 0,
+          "output_words": 16
+        },
+        "stage31_full": {
+          "word_f1": 0.875,
+          "exact": 0,
+          "output_words": 16
+        }
+      }
+    },
+    {
+      "index": 13,
+      "identity_sha256": "321425c95e68ec5ade498f7444b0abbf519093687299bff776be20ddce745d96",
+      "category": "classification",
+      "reference_sha256": "55333ac36d96258859ce69583b357d330f430b86f1763e797da6ed9aa76b5a63",
+      "outputs": {
+        "base": "Here's the identification of the instruments **Mangey** and **Tro**:\n\n1. **Mangey** \u2013 This is **not** a standard musical instrument. It may be a misspelling or a regional term. If you meant **Mangal**, it is a **string** instrument from the Indian classical music tradition, also known as the **Sitar** or **Santoor** (depending on the region). However, it is more likely that **Mangey** is not a recognized instrument.\n\n2. **Tro** \u2013 This is also **not** a standard musical instrument. It may be a",
+        "stage26_short": "Mangey is a string instrument, and Tro is a percussion instrument.",
+        "stage31_full": "Mangey is string, Tro is percussion."
+      },
+      "generation_s": {
+        "base": 3.746374938986264,
+        "stage26_short": 0.5917684429441579,
+        "stage31_full": 0.4162823840160854
+      },
+      "generation_sha256": {
+        "base": "f28daad2f65b76e51fe7850faa9a32871eb10cb698990a6d48a97dd28cd905e7",
+        "stage26_short": "29a111f71721fd64eeb2caed8f87cc9f130f43ce3cefe8066a25effa9bb4f629",
+        "stage31_full": "f905219827dcb3962799bead2eeac30ee0940198cd14d0d2124eaf00e1680cc8"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.11764705882352942,
+          "exact": 0,
+          "output_words": 79
+        },
+        "stage26_short": {
+          "word_f1": 0.7058823529411764,
+          "exact": 0,
+          "output_words": 11
+        },
+        "stage31_full": {
+          "word_f1": 1.0,
+          "exact": 0,
+          "output_words": 6
+        }
+      }
+    },
+    {
+      "index": 14,
+      "identity_sha256": "770c0ae041016482bc7a39b0a8b70c020bdf31bda5f61fd4617dc5a3d96e428b",
+      "category": "classification",
+      "reference_sha256": "0b114b8b3ea0a6e817da7a3b7cef0738a328f746154e4d047abcfc2b23cd0094",
+      "outputs": {
+        "base": "Here's a breakdown of the senior crew members of the *HMS Bounty* and their allegiance during the mutiny of 1788:\n\n---\n\n### **Mutineers (Rebel Side):**\n1. **Fletcher Christian** \u2013 The leader of the mutiny. He was the first officer and the most prominent mutineer.\n2. **John Fryer** \u2013 A carpenter who was one of the key figures in the mutiny and later became a leader on Pitcairn Island.\n3. **William Cole** \u2013 A carpenter who joined the mutineers and was among the first to be executed",
+        "stage26_short": "William Bligh, John Fryer, William Cole, William Peckover, William Purcell, William Elphinstone, Thomas Ledward, John Hallett, Thomas Hayward were loyalists. Fletcher Christian was a mutineer.",
+        "stage31_full": "William Bligh, William Cole, William Peckover, William Purcell, William Elphinstone, Thomas Ledward, John Hallett, Thomas Hayward were loyalists. Fletcher Christian, John Fryer were mutineers."
+      },
+      "generation_s": {
+        "base": 3.776113362982869,
+        "stage26_short": 1.7843482879688963,
+        "stage31_full": 1.745306666009128
+      },
+      "generation_sha256": {
+        "base": "f52b97e454643addb07376f2e575e439029a04c0947a9d357416f828a85ca3c7",
+        "stage26_short": "61671774aa5dc647be3403769a64ec3f8df1edab526110dd94d6887800e54d37",
+        "stage31_full": "96443f3404451649539571dc9cc89481756c60f5a8178d96de68a623078d371d"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.12612612612612611,
+          "exact": 0,
+          "output_words": 81
+        },
+        "stage26_short": {
+          "word_f1": 0.7636363636363636,
+          "exact": 0,
+          "output_words": 25
+        },
+        "stage31_full": {
+          "word_f1": 0.7407407407407408,
+          "exact": 0,
+          "output_words": 24
+        }
+      }
+    },
+    {
+      "index": 15,
+      "identity_sha256": "b5dbd04599b8e279ac8c623fdc3647fa94dd297ca7f2fdffdb656d6985273eae",
+      "category": "classification",
+      "reference_sha256": "e58f243fda8607df47b8d7ed172c538e1e3fde1795510fdf7c770f90a8427d47",
+      "outputs": {
+        "base": "Here's the classification of the instruments **Fiddlesticks** and **Tricordia**:\n\n1. **Fiddlesticks** \u2013 This is a **string** instrument. It is a type of **fiddle** or **violin**, which is a **string instrument**.\n\n2. **Tricordia** \u2013 This is a **percussion** instrument. It is a **three-stringed percussion instrument** used in some traditional music, particularly in **Celtic and folk music**. It is played by striking the strings with a mallet or fingers, and it is often used in **Irish and Scottish",
+        "stage26_short": "Fiddlesticks is a string instrument, Tricordia is a percussion instrument.",
+        "stage31_full": "Fiddlesticks is a string instrument, Tricordia is a percussion instrument."
+      },
+      "generation_s": {
+        "base": 3.7467372749815695,
+        "stage26_short": 0.6640459120390005,
+        "stage31_full": 0.6614517440320924
+      },
+      "generation_sha256": {
+        "base": "df0e6e37a609cb28b8f79bf0215b27a757d6f3adfdcb836f5cac6fc8eb047f7b",
+        "stage26_short": "e0a8c942fd890047f7279b3789a5872a22f26c7f80b0a9c42f6e04f5f58235f2",
+        "stage31_full": "e0a8c942fd890047f7279b3789a5872a22f26c7f80b0a9c42f6e04f5f58235f2"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.15,
+          "exact": 0,
+          "output_words": 74
+        },
+        "stage26_short": {
+          "word_f1": 0.7499999999999999,
+          "exact": 0,
+          "output_words": 10
+        },
+        "stage31_full": {
+          "word_f1": 0.7499999999999999,
+          "exact": 0,
+          "output_words": 10
+        }
+      }
+    },
+    {
+      "index": 16,
+      "identity_sha256": "4dabea44ff87187b360a3b71f6a5598a82e419dbfee5332d8b62cfdb41e4cbc3",
+      "category": "closed_qa",
+      "reference_sha256": "831d396b77531f37b7f092154ce090eedef946b8b5bab7058e52e8d8b9d3c7d6",
+      "outputs": {
+        "base": "The location mentioned in the reference context that is closest to Rudzk Du\u017cy is **Piotrk\u00f3w Kujawski**, which is approximately **6 kilometres (4 miles) south-west** of Rudzk Du\u017cy.",
+        "stage26_short": "Piotrk\u00f3w Kujawski",
+        "stage31_full": "Rudzk Du\u017cy is located approximately 6 km (4 mi) south-west of Piotrk\u00f3w Kujawski."
+      },
+      "generation_s": {
+        "base": 1.4168707479839213,
+        "stage26_short": 0.3819349830155261,
+        "stage31_full": 1.047682941018138
+      },
+      "generation_sha256": {
+        "base": "85c18b106f4ecc52763afa936fba2757b505aecd9aa995d8f229606f66f32e08",
+        "stage26_short": "19d5472162cea3cc9cc5a8dbd768c6db4d3b30bdde0f4934e68df4105f4bb1ae",
+        "stage31_full": "59d44876567fd99f1822322d5e49769d6ed52e497aa6a13988e4f5f6646f5d79"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3888888888888889,
+          "exact": 0,
+          "output_words": 27
+        },
+        "stage26_short": {
+          "word_f1": 0.3636363636363636,
+          "exact": 0,
+          "output_words": 2
+        },
+        "stage31_full": {
+          "word_f1": 0.4545454545454546,
+          "exact": 0,
+          "output_words": 13
+        }
+      }
+    },
+    {
+      "index": 17,
+      "identity_sha256": "ead826e8dd16745ed26991f093e0bc84a17afded3c392648f15a6e1fe2b9ed64",
+      "category": "closed_qa",
+      "reference_sha256": "add6e07c776421a470a2c749b6901f29cf8469629b0606851dc4c1a17fc3c6cc",
+      "outputs": {
+        "base": "The first full-frame mirrorless camera available in the market was the **Sony Alpha 7 (\u03b17)**, introduced by Sony in **2013**. It marked a significant milestone in camera technology by being the first full-frame mirrorless camera, offering the benefits of a full-frame sensor without the bulk of a traditional DSLR.",
+        "stage26_short": "Sony was the first to introduce a full-frame mirrorless camera, the \u03b17, in 2013.",
+        "stage31_full": "Sony was the first to introduce a full-frame mirrorless camera, the \u03b17, in 2013."
+      },
+      "generation_s": {
+        "base": 2.088085104012862,
+        "stage26_short": 0.9206833679927513,
+        "stage31_full": 0.9201424170169048
+      },
+      "generation_sha256": {
+        "base": "73f0334c31b0950c4aa1b85da7d9a035d9f96d17ddbe95261bbad200c0f94fec",
+        "stage26_short": "55bbb8938cf07b95c200de7160976235309f1421171e46031489aa8fe9fc67cc",
+        "stage31_full": "55bbb8938cf07b95c200de7160976235309f1421171e46031489aa8fe9fc67cc"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.15094339622641506,
+          "exact": 0,
+          "output_words": 49
+        },
+        "stage26_short": {
+          "word_f1": 0.4444444444444445,
+          "exact": 0,
+          "output_words": 14
+        },
+        "stage31_full": {
+          "word_f1": 0.4444444444444445,
+          "exact": 0,
+          "output_words": 14
+        }
+      }
+    },
+    {
+      "index": 18,
+      "identity_sha256": "ee7125cb05ce342796224380ee8492a35eed43c13e85f0a947d55ca3dd64780a",
+      "category": "closed_qa",
+      "reference_sha256": "bb0d89318ed218f19dc9a104a90fed964d73dd42f8aa9db344a644e60db29cc1",
+      "outputs": {
+        "base": "In *The Night Buffalo* by Guillermo Arriaga, Manuel discovers the occurrences that led to Gregorio's suicide through his deepening involvement with Gregorio's girlfriend and his gradual uncovering of the events that shaped Gregorio's life and mind.\n\nThe key cause that leads Manuel to discover these occurrences is **Gregorio's relationship with his girlfriend**, which becomes a central thread in Manuel's investigation. As Manuel becomes involved with the girlfriend, he begins to piece together the emotional and psychological turmoil that Gregorio experienced. This includes:\n\n- **Gregorio's emotional instability** and his **tortuous relationship with his girlfriend**, which likely",
+        "stage26_short": "Manuel discovered that Gregorio's girlfriend was being harassed by a vengeful policeman.",
+        "stage31_full": "Manuel discovers that Gregorio's girlfriend was being harassed by a vengeful policeman."
+      },
+      "generation_s": {
+        "base": 3.818663596000988,
+        "stage26_short": 0.7439892760012299,
+        "stage31_full": 0.7375358539866284
+      },
+      "generation_sha256": {
+        "base": "b25dfb6368db46093192b548efb149338b047aaa7a8a7ae92ba75fbb4eefc7b4",
+        "stage26_short": "2dd8adfad93cbc55575fd62b5471d1a8ee140f8a403f5328593798cc457b1daa",
+        "stage31_full": "b3fe83ac196c422e02c3ed2135547d4b90492f075dbb1ba435fc28fddb0dc4f7"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.17699115044247787,
+          "exact": 0,
+          "output_words": 94
+        },
+        "stage26_short": {
+          "word_f1": 0.12903225806451615,
+          "exact": 0,
+          "output_words": 12
+        },
+        "stage31_full": {
+          "word_f1": 0.12903225806451615,
+          "exact": 0,
+          "output_words": 12
+        }
+      }
+    },
+    {
+      "index": 19,
+      "identity_sha256": "ec28fd044c696e3e472f7adb71acb2a3d16896699cf253573f6fa746de9b7009",
+      "category": "closed_qa",
+      "reference_sha256": "a1a705c7581d91c9b0cc5e13024fe1e338cad114adead57b20cf70271437a969",
+      "outputs": {
+        "base": "No, the Fyre Festival was not a successful event. In fact, it was a major fraud. The festival was a scam organized by Billy McFarland and rapper Ja Rule, who used the event to promote their Fyre app. Despite being marketed as a luxurious and exclusive experience, the festival was poorly organized, with many attendees stranded on the island without proper accommodations, food, or safety measures. The event ultimately led to widespread public outrage, legal consequences for the organizers, and a significant loss of trust in the concept of luxury festivals. It is widely regarded as one of the most infamous examples of a fraudulent business scheme.",
+        "stage26_short": "No, the Fyre Festival was not a successful event.",
+        "stage31_full": "Fyre Festival was a fraudulent luxury music festival founded by con artist Billy McFarland and rapper Ja Rule. It was created with the intent of promoting the company's Fyre app for booking music talent. The festival was scheduled to take place on April 28\u201330 and May 5\u20137, 2017, on the Bahamian island of Great Exuma."
+      },
+      "generation_s": {
+        "base": 3.7726477349642664,
+        "stage26_short": 0.5071809720247984,
+        "stage31_full": 2.8902045600116253
+      },
+      "generation_sha256": {
+        "base": "ea09c33af8bb8a142e53753ad80f5e0100026445629b491bd834942ecfad3996",
+        "stage26_short": "123e47cd76d50ce58ab2713845cbd680d5d381c316a6c9de79e380ddd56e466e",
+        "stage31_full": "5307ceaa5865aad9c3a8fd6fea6c5ed1ba0dd60ce7457abb14183a5eca05d254"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.23809523809523805,
+          "exact": 0,
+          "output_words": 107
+        },
+        "stage26_short": {
+          "word_f1": 0.35714285714285715,
+          "exact": 0,
+          "output_words": 9
+        },
+        "stage31_full": {
+          "word_f1": 0.47368421052631576,
+          "exact": 0,
+          "output_words": 57
+        }
+      }
+    },
+    {
+      "index": 20,
+      "identity_sha256": "d90efe6b2154824a98753f9f01e56cc6da26bd3eaef5a17ad130d553e7aea720",
+      "category": "closed_qa",
+      "reference_sha256": "a8e3dc0d4169dd2a0613e5ec66e066131585672bea2545430f0a4e40a234ae89",
+      "outputs": {
+        "base": "Marques Pope was drafted by the **San Diego Chargers** in the **2nd round (33rd overall)** of the **1992 NFL Draft**.",
+        "stage26_short": "Marques Pope was drafted by the San Diego Chargers in the 2nd round (33rd overall) of the 1992 NFL Draft.",
+        "stage31_full": "Marques Pope was drafted by the San Diego Chargers in the 2nd round (33rd overall) of the 1992 NFL Draft."
+      },
+      "generation_s": {
+        "base": 1.12867596099386,
+        "stage26_short": 1.2239115189877339,
+        "stage31_full": 1.229718172980938
+      },
+      "generation_sha256": {
+        "base": "a87ca4e24abe8cd05adafa9b76a8a56f5ac3676ca69d6165172cb8028eae9234",
+        "stage26_short": "4942bf18cb08dfb1b62bcbccf16680308e7f58d8c2b284f19a681b6e256519f5",
+        "stage31_full": "4942bf18cb08dfb1b62bcbccf16680308e7f58d8c2b284f19a681b6e256519f5"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.7222222222222223,
+          "exact": 0,
+          "output_words": 20
+        },
+        "stage26_short": {
+          "word_f1": 0.7222222222222223,
+          "exact": 0,
+          "output_words": 20
+        },
+        "stage31_full": {
+          "word_f1": 0.7222222222222223,
+          "exact": 0,
+          "output_words": 20
+        }
+      }
+    },
+    {
+      "index": 21,
+      "identity_sha256": "c5b0fb4e9b4717312eca62d832bbc16ef377a5a6c9101b84770e62490131df7a",
+      "category": "closed_qa",
+      "reference_sha256": "6243f1a775f6b6322738bd58cff9deb224655a2b6a72aa6a4453b16d712c4f5f",
+      "outputs": {
+        "base": "Neonatology is a **subs specialty of pediatrics**. It is typically practiced in **neonatal intensive care units (NICUs)**, which are specialized hospital units designed to care for newborn infants who require close medical attention, especially those who are premature, ill, or born with medical complications.",
+        "stage26_short": "Neonatology is a subspecialty of pediatrics. It is typically practiced in neonatal intensive care units (NICUs).",
+        "stage31_full": "Neonatology is a subspecialty of pediatrics. It is typically practiced in neonatal intensive care units (NICUs)."
+      },
+      "generation_s": {
+        "base": 1.9047370449989103,
+        "stage26_short": 1.03376393095823,
+        "stage31_full": 1.0185722220339812
+      },
+      "generation_sha256": {
+        "base": "ae3a088965ab8545f3d6a4c99d61d565f9eadd3c03b4a3b3b23b12bfb8ff6084",
+        "stage26_short": "1ee3291e1d973aec9b9b12d183613df253aab1d63ad03f8685ce43f09826320a",
+        "stage31_full": "1ee3291e1d973aec9b9b12d183613df253aab1d63ad03f8685ce43f09826320a"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.41791044776119407,
+          "exact": 0,
+          "output_words": 44
+        },
+        "stage26_short": {
+          "word_f1": 0.6666666666666667,
+          "exact": 0,
+          "output_words": 16
+        },
+        "stage31_full": {
+          "word_f1": 0.6666666666666667,
+          "exact": 0,
+          "output_words": 16
+        }
+      }
+    },
+    {
+      "index": 22,
+      "identity_sha256": "3a023aee0c88e1b7dcb37336b1394d61b1fe09177bd83ae62dd50c14bf7308fb",
+      "category": "closed_qa",
+      "reference_sha256": "1e7c66905c50f4028de73ca54b5db843dcd4d4cd1f785fc24222f6eb62494cb2",
+      "outputs": {
+        "base": "According to the reference context, UVA's overall ranking among national universities is **tied for 25th** in the 2022 U.S. News & World Report report.",
+        "stage26_short": "UVA is ranked tied for 25th among national universities overall.",
+        "stage31_full": "UVA is ranked tied for 25th among national universities overall."
+      },
+      "generation_s": {
+        "base": 1.2555805830052122,
+        "stage26_short": 0.6136065419996157,
+        "stage31_full": 0.6074819390196353
+      },
+      "generation_sha256": {
+        "base": "687078165234e132be06b2870a1ff95671f768ff3f521242955f640626a120af",
+        "stage26_short": "a81c66acfbc1582c3cd0bbb8a036efe948c5aedecd6d08db47b0a57cd927d19d",
+        "stage31_full": "a81c66acfbc1582c3cd0bbb8a036efe948c5aedecd6d08db47b0a57cd927d19d"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3870967741935483,
+          "exact": 0,
+          "output_words": 24
+        },
+        "stage26_short": {
+          "word_f1": 0.8235294117647058,
+          "exact": 0,
+          "output_words": 10
+        },
+        "stage31_full": {
+          "word_f1": 0.8235294117647058,
+          "exact": 0,
+          "output_words": 10
+        }
+      }
+    },
+    {
+      "index": 23,
+      "identity_sha256": "325904fa1d7f86ca1ed341478ff179571e640d80e4d183d9d22a591a320bb6ce",
+      "category": "closed_qa",
+      "reference_sha256": "ee2751dc36ee1d8a68fbe95f2c03a6150a9a5aec4fcb4776d6a5c49ab49358b6",
+      "outputs": {
+        "base": "Jon Rahm won the 2017 Farmers Insurance Open with a dramatic final hole performance. On the 18th hole, which was a par 5, Rahm had a difficult approach shot that landed in the rough. He then hit a long iron to within 15 feet, and with the green still undulating, he made a 60-foot eagle putt. This crucial birdie gave him a total score of 12 under par for the tournament, securing his first PGA Tour victory.\n\nThis win catapulted Rahm's world ranking from 137th to 46th, and earned",
+        "stage26_short": "Jon Rahm won the Farmers Insurance Open in late January 2017 with a 60-foot eagle putt on the final hole.",
+        "stage31_full": "Jon Rahm won the Farmers Insurance Open in late January 2017 with a 60-foot eagle putt on the final hole."
+      },
+      "generation_s": {
+        "base": 3.8396613029763103,
+        "stage26_short": 1.1231904229498468,
+        "stage31_full": 1.1285348629462533
+      },
+      "generation_sha256": {
+        "base": "209c3aae7f3707f30b205195c4ac5535f4f5e0226a181cc1e381a2c151d0375f",
+        "stage26_short": "591386215327f5b21b625bc58e7d1af5ee5a7212f7d45ac25c143f70d0ae83ff",
+        "stage31_full": "591386215327f5b21b625bc58e7d1af5ee5a7212f7d45ac25c143f70d0ae83ff"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.16494845360824742,
+          "exact": 0,
+          "output_words": 89
+        },
+        "stage26_short": {
+          "word_f1": 0.5714285714285715,
+          "exact": 0,
+          "output_words": 20
+        },
+        "stage31_full": {
+          "word_f1": 0.5714285714285715,
+          "exact": 0,
+          "output_words": 20
+        }
+      }
+    },
+    {
+      "index": 24,
+      "identity_sha256": "5db7b9c20fd98e8ba1a68adbc3bd98acd2bf7b9a4d6f2d179f6dd9db153af778",
+      "category": "creative_writing",
+      "reference_sha256": "4e801eb3ac81c1ec9020eca6faab9ec9c5a65fc70eee028197afee4f3da84f22",
+      "outputs": {
+        "base": "When out with friends for breakfast, the best choice often depends on the group's preferences, the restaurant's menu, and the vibe you're going for. Here are some great options that are usually well-received and can cater to different tastes:\n\n### 1. **Classic Breakfast Platter (or \"Brunch\")**\n- **Why it works**: It's a hit with a group because it offers variety.\n- **Options**: Eggs, bacon, sausage, toast, hash browns, avocado, fruit, and pancakes.\n- **Pro Tip**: Ask the server to \"build a platter\" or \"make it a group order",
+        "stage26_short": "The best breakfast to order when out with friends is the \"Breakfast Burrito\"",
+        "stage31_full": "The best breakfast to order when out with friends is pancakes."
+      },
+      "generation_s": {
+        "base": 3.7907979490119033,
+        "stage26_short": 0.670997271023225,
+        "stage31_full": 0.49537072802195325
+      },
+      "generation_sha256": {
+        "base": "a6b9a001a66ea223ad740971bb121a280cb3c5669121ab2f344a5b6ffc0584f3",
+        "stage26_short": "aa0a0fe701c369bb185c21dcc3d013c1d81724a2a4b8a0f30e7a63de59c9b7da",
+        "stage31_full": "78e4326ca523df941538ca6d0ed78d1416c6c8e110ae059fca7779991c30521e"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2913907284768212,
+          "exact": 0,
+          "output_words": 84
+        },
+        "stage26_short": {
+          "word_f1": 0.15,
+          "exact": 0,
+          "output_words": 13
+        },
+        "stage31_full": {
+          "word_f1": 0.15384615384615383,
+          "exact": 0,
+          "output_words": 11
+        }
+      }
+    },
+    {
+      "index": 25,
+      "identity_sha256": "365b33d8438ed7ec600276871f206389bf2c63e281ff9ff129f4d85772223dd1",
+      "category": "creative_writing",
+      "reference_sha256": "b4c6483a9d16b286c39f91c43b2603ba127bee19b06b01dd1b6dd9d09d437030",
+      "outputs": {
+        "base": "**Diary Entry: April 5, 2089**\n\n**Location:** Olympus Mons, Mars  \n**Time:** 10:17 PM  \n**Weather:** Dust Storm, Visibility: 50 meters  \n**Mood:** Solitary, Reflective, Hopeful\n\nToday was the last day of the mission. I think that's what they called it. The last day of the last human presence on Mars. The last day of the last person. I guess that's what it means to be the last.\n\nI sat in the observation deck, staring out at the red horizon. The sun was setting,",
+        "stage26_short": "April 12, 2023\nMars\n\nI have been on Mars for 10 years. I am the last person on Mars. I have been here since the day I arrived. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for 10 years. I have been here for",
+        "stage31_full": "April 12, 2023\nMars\n\nI have been on Mars for 10 years now. I have seen the sun rise and set many times, and I have seen the stars twinkle in the night sky. I have also seen the Earth from space, and it is beautiful. I have seen the Earth from space, and it is beautiful. I have seen the Earth from space, and it is beautiful. I have seen the Earth from space, and it is beautiful. I have seen the Earth from space, and it is beautiful. I have seen the Earth from space, and it is beautiful"
+      },
+      "generation_s": {
+        "base": 3.7795830779941753,
+        "stage26_short": 4.531490848981775,
+        "stage31_full": 4.535099460044876
+      },
+      "generation_sha256": {
+        "base": "929dc76a121fc0e3812f2b32e37d310a7ede6eadb2e9e910ef08aa38cd42ab04",
+        "stage26_short": "f647d0f953feeb5233fbeee72e5c6ed1b627b1442d0955fb3e683d61d1ee1e64",
+        "stage31_full": "12950284ca65e471ba9016d5758d65b180be7991828de5d3f3994293ce0a3741"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3020833333333333,
+          "exact": 0,
+          "output_words": 81
+        },
+        "stage26_short": {
+          "word_f1": 0.19999999999999998,
+          "exact": 0,
+          "output_words": 89
+        },
+        "stage31_full": {
+          "word_f1": 0.330188679245283,
+          "exact": 0,
+          "output_words": 101
+        }
+      }
+    },
+    {
+      "index": 26,
+      "identity_sha256": "103c54b1bc810b39cd7d8776d07943d7ec3af15472f4493f364f9e2508993f2a",
+      "category": "creative_writing",
+      "reference_sha256": "4fdbe7d745605983621c14ed403aa5415292358270706efd980d0ae8887052f8",
+      "outputs": {
+        "base": "From a 2-year-old's perspective, a morning routine is a wild, chaotic, and full-of-feelings adventure! Here's how it might look through their eyes:\n\n---\n\n**Waking Up:**\n\"Yaaaawn! I'm so sleepy! But wait... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *snore*... *sn",
+        "stage26_short": "I wake up in my bed and I see my mom and dad. I see my dog and my cat. I see my brother and my sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see my baby brother. I see my baby sister. I see",
+        "stage31_full": "I wake up in my bed and my mom comes in and kisses me. She helps me get dressed and then I go to the bathroom. I brush my teeth and then I go to the kitchen and eat breakfast. I eat cereal and then I go to the park. I play with my friends and then I go home. I go to bed and my mom comes in and kisses me again."
+      },
+      "generation_s": {
+        "base": 3.753285229962785,
+        "stage26_short": 4.543043498008046,
+        "stage31_full": 2.8224676979589276
+      },
+      "generation_sha256": {
+        "base": "ed187896e02a5af06572a1ad35ce755c323f9f0c17d16d6799f4c9221c359e0e",
+        "stage26_short": "ae39a58fddbdd84aee1a1bc93bf8fcb0181550b00aa6d87bb5250824c2ebf41f",
+        "stage31_full": "dc3ab9dc1494412b963a1685df460fa8757d0715c85dfd064810a352acbd3594"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.08178438661710037,
+          "exact": 0,
+          "output_words": 47
+        },
+        "stage26_short": {
+          "word_f1": 0.24773413897280963,
+          "exact": 0,
+          "output_words": 109
+        },
+        "stage31_full": {
+          "word_f1": 0.3389830508474576,
+          "exact": 0,
+          "output_words": 73
+        }
+      }
+    },
+    {
+      "index": 27,
+      "identity_sha256": "feabf86c467a5139ad05bd047edf6af37764e17d887e767cebbc42c8d36fd8f8",
+      "category": "creative_writing",
+      "reference_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "outputs": {
+        "base": "As of now, **Lakeview is not replacing the dashboard** in the traditional sense. However, **Microsoft has been actively evolving its Power BI and Power BI Report Builder (PBRB) tools**, and **Lakeview is part of this evolution**.\n\n### What is Lakeview?\nLakeview is a **new data visualization and analytics tool** introduced by Microsoft as part of the **Power BI ecosystem**. It is designed to provide a more modern, intuitive, and powerful way to create and interact with data visualizations, especially for users who are not familiar with traditional BI tools.\n\n### Key Features of Lakeview:\n- **Modern",
+        "stage26_short": "Lakeview is not replacing dashboard.",
+        "stage31_full": "Lakeview is not replacing dashboard. Lakeview is a new product that is being developed by Microsoft. Dashboard is a product that is being developed by Microsoft. Lakeview is a new product that is being developed by Microsoft. Dashboard is a product that is being developed by Microsoft. Lakeview is a new product that is being developed by Microsoft. Dashboard is a product that is being developed by Microsoft. Lakeview is a new product that is being developed by Microsoft. Dashboard is a product that is being developed by Microsoft. Lakeview is a new product that is being developed by Microsoft. Dashboard is a product that is being developed by Microsoft. Lake"
+      },
+      "generation_s": {
+        "base": 3.778709535021335,
+        "stage26_short": 0.3156385489855893,
+        "stage31_full": 4.528637513983995
+      },
+      "generation_sha256": {
+        "base": "6af170b93874c03102a6f6a9bbf1cfee087a10d5d2ee5a202d0b368249d5332e",
+        "stage26_short": "c70bfe694efe3b590477f9dd3587f893fdd721adab90e796aaf6df4e9ff5321c",
+        "stage31_full": "b0ca5cd1838858a0a5b7c564e40e552067863e97926c9ff5148b33a7a3b853c5"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 93
+        },
+        "stage26_short": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 5
+        },
+        "stage31_full": {
+          "word_f1": 0.0,
+          "exact": 0,
+          "output_words": 111
+        }
+      }
+    },
+    {
+      "index": 28,
+      "identity_sha256": "c2753d2fd96f13ab6d62ac4332aef6af70b4787f091832124d0b747eac65304a",
+      "category": "creative_writing",
+      "reference_sha256": "5efa35d98b948ea6fc1fd88fc8201564067ab4a508b1bc003d2f83d8e73352e5",
+      "outputs": {
+        "base": "Santa Fe, New Mexico, is often considered a great place to live due to a unique combination of natural beauty, cultural richness, and a high quality of life. Here are some key reasons why people love living in Santa Fe:\n\n### 1. **Unique Natural Beauty**\n- **Desert Landscape**: Santa Fe is surrounded by stunning desert vistas, including the Sangre de Cristo Mountains, which offer hiking, biking, and scenic views.\n- **Canyons and Rivers**: The city is nestled in a canyon formed by the Rio Grande, and the surrounding landscapes are ideal for outdoor activities.\n- **Climate**: Santa Fe has a",
+        "stage26_short": "Santa Fe is a great place to live because it has a rich history, beautiful architecture, and a vibrant arts scene.",
+        "stage31_full": "Santa Fe is a great place to live because it is located in the beautiful mountains of New Mexico.  The weather is very mild and the people are very friendly.  There are many great restaurants and shops to visit.  Santa Fe is also very safe and has a low crime rate.  The people in Santa Fe are very welcoming and they love to talk about the weather.  Santa Fe is a great place to live if you enjoy the outdoors and the weather."
+      },
+      "generation_s": {
+        "base": 3.7949442749959417,
+        "stage26_short": 0.9173250659951009,
+        "stage31_full": 3.3850879289675504
+      },
+      "generation_sha256": {
+        "base": "f2fa0f9bd3ffebaee897bbd8b0c2e7e77ccbb30827426d66e1abf8dbe4b18e9d",
+        "stage26_short": "64cfcc18c3b311a353e947e86181903ae2c065226bb6c9c3e5329a631f150f62",
+        "stage31_full": "85edb7e8652932abe890a0606cf9b19e4e511a7388fa6289e04f5445f708c336"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.32512315270935965,
+          "exact": 0,
+          "output_words": 96
+        },
+        "stage26_short": {
+          "word_f1": 0.17187499999999997,
+          "exact": 0,
+          "output_words": 21
+        },
+        "stage31_full": {
+          "word_f1": 0.39999999999999997,
+          "exact": 0,
+          "output_words": 83
+        }
+      }
+    },
+    {
+      "index": 29,
+      "identity_sha256": "586c8406181935095d7eef4c0e1ae1a036bf56801db5d3bbf536b32a7c380a6c",
+      "category": "creative_writing",
+      "reference_sha256": "c0240aafc455a05a6a4e269c4fb3d02e9b338caf245faf25185cd7cf4bada084",
+      "outputs": {
+        "base": "**Horoscope Reading for the Sign of the Capricorn (The Overachieving Squirrel)**\n\n**Date:** April 1st, 2025  \n**Zodiac Sign:** Capricorn  \n**Theme:** *The Art of the Umpire Call*\n\nAh, dear Capricorn, you're the kind of person who would rather be in a meeting than on a date. You're the one who checks the weather before the game, the one who knows the exact number of pitches thrown in the 1986 World Series, and the one who still hasn't forgiven the time you accidentally hit a",
+        "stage26_short": "You're going to have a great day today, but you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work",
+        "stage31_full": "You're going to have a great day today, but you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work for it because you're going to have to work for it. You're going to have to work"
+      },
+      "generation_s": {
+        "base": 3.765071412024554,
+        "stage26_short": 4.5532292269635946,
+        "stage31_full": 4.528597688011359
+      },
+      "generation_sha256": {
+        "base": "eb148419100c514d39e82d8307238419bb76a71e1cf79a5257681dd26ab79881",
+        "stage26_short": "12b7cdd7646aef8395663e47e3289f5c5382aad66d7a3aeb73a93fa096d98d68",
+        "stage31_full": "12b7cdd7646aef8395663e47e3289f5c5382aad66d7a3aeb73a93fa096d98d68"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.058252427184466014,
+          "exact": 0,
+          "output_words": 82
+        },
+        "stage26_short": {
+          "word_f1": 0.015503875968992248,
+          "exact": 0,
+          "output_words": 108
+        },
+        "stage31_full": {
+          "word_f1": 0.015503875968992248,
+          "exact": 0,
+          "output_words": 108
+        }
+      }
+    },
+    {
+      "index": 30,
+      "identity_sha256": "3d27c6159ea169f48f657b28756e7cb541290143f08067ad292c3174c376ecae",
+      "category": "creative_writing",
+      "reference_sha256": "e374cb89d0be08589c33fdbe50c53af0716146ba5d4a87abeb5eb56dbc99d6d3",
+      "outputs": {
+        "base": "**Setting:** A dense forest, the sun is beginning to set, casting long shadows. John and Jane are standing by a stream, their backpacks slung over their shoulders, looking at a map that's been torn in half.\n\n---\n\n**John:** (looking at the map) I don\u2019t think we\u2019re going the right way. The trail markers are all gone, and the map\u2019s not matching up with anything I remember.\n\n**Jane:** (crossing her arms) Well, we\u2019ve been walking for three hours. If we keep going, we might as well just keep walking until we find someone.\n\n**John:** (f",
+        "stage26_short": "John: I think we should keep going. We're close to the trailhead.\nJane: I think we should turn around. We've been walking for hours.\nJohn: We're not that far from the trailhead. We can keep going.\nJane: I think we should turn around. We've been walking for hours.\nJohn: We're not that far from the trailhead. We can keep going.\nJane: I think we should turn around. We've been walking for hours.\nJohn: We're not that far from the trailhead. We can keep going.\nJane: I think we should turn around. We've been",
+        "stage31_full": "John: I think we should keep going. We're close to the trailhead.\nJane: I think we should turn around. We've been walking for hours.\nJohn: We're not that far from the trailhead. We should keep going.\nJane: We've been walking for hours. We should turn around.\nJohn: We're not that far from the trailhead. We should keep going.\nJane: We've been walking for hours. We should turn around.\nJohn: We're not that far from the trailhead. We should keep going.\nJane: We've been walking for hours. We should turn around.\nJohn:"
+      },
+      "generation_s": {
+        "base": 3.7727506660157815,
+        "stage26_short": 4.579664041986689,
+        "stage31_full": 4.552965831011534
+      },
+      "generation_sha256": {
+        "base": "0edf0644484bf2020623a7972dd14b3dc1f7da058e585d944eb9c403e7d8c4ff",
+        "stage26_short": "5aa69efe3556888134b27640258cc59662ed3a7872e318923406aa880807df41",
+        "stage31_full": "08db6a265cd1e14d4c51234a4a7230ab65c5679c419fdd4e54e12c2c76ab9456"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3047619047619048,
+          "exact": 0,
+          "output_words": 93
+        },
+        "stage26_short": {
+          "word_f1": 0.3619047619047619,
+          "exact": 0,
+          "output_words": 93
+        },
+        "stage31_full": {
+          "word_f1": 0.3365384615384615,
+          "exact": 0,
+          "output_words": 91
+        }
+      }
+    },
+    {
+      "index": 31,
+      "identity_sha256": "6f083fbb63b2cc77f4f893bce2f028d7d8345436ede7adbeea288e2b522881c4",
+      "category": "creative_writing",
+      "reference_sha256": "add3f9bbdfcc40c3fc389793b93a19f1f0346c0b8a71bef185b55cd9e385d621",
+      "outputs": {
+        "base": "When placing a large order of boba tea for a company with around 300 employees, it's important to consider both **quantity**, **variety**, **flavor preferences**, and **logistics**. Here's a recommended approach to place the best boba order:\n\n---\n\n### \ud83e\uddfe **1. Determine the Number of People and Preferences**\n- **300 employees** = **300 cups** (or more, depending on how many people will actually take one).\n- Consider **flavor preferences**:\n  - Classic: **Taro, Black Milk Tea, Matcha, Oolong**\n",
+        "stage26_short": "The best boba order for a company with 300 employees is to order 300 bottles of boba tea.",
+        "stage31_full": "The best boba order for a company with 300 employees is to order 300 bottles of boba tea."
+      },
+      "generation_s": {
+        "base": 3.7960143869859166,
+        "stage26_short": 1.0239909419906326,
+        "stage31_full": 1.0198339669732377
+      },
+      "generation_sha256": {
+        "base": "e82fef52af7511f2c2f28750deae94b8a5f01d7ace2426825142c689f8352eb1",
+        "stage26_short": "10ce29c21a94398eb48420063860cd45d463fc6cf9d7c6caea9a45094a33142b",
+        "stage31_full": "10ce29c21a94398eb48420063860cd45d463fc6cf9d7c6caea9a45094a33142b"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.29959514170040485,
+          "exact": 0,
+          "output_words": 69
+        },
+        "stage26_short": {
+          "word_f1": 0.15306122448979592,
+          "exact": 0,
+          "output_words": 18
+        },
+        "stage31_full": {
+          "word_f1": 0.15306122448979592,
+          "exact": 0,
+          "output_words": 18
+        }
+      }
+    },
+    {
+      "index": 32,
+      "identity_sha256": "9dcfa19419014233be4a51fc802f10b3e523036a6a43093fbc727c4c657d57aa",
+      "category": "general_qa",
+      "reference_sha256": "ae5eb25ea2e365fe4fc660aa225ba63fe420e0e694f078a92fe797598e9a6143",
+      "outputs": {
+        "base": "**The Last of Us Part I** is widely regarded as one of the best PC games ever made, and for good reason. Here's a breakdown of why it's considered such a standout title on PC:\n\n---\n\n### \ud83c\udfae **Gameplay and Mechanics**\n- **Control Precision**: The PC version offers **highly customizable controls**, which is especially important for a game that relies heavily on movement, shooting, and crafting. This makes it more accessible and enjoyable for PC players.\n- **Mouse and Keyboard Support**: The game is **optimized for mouse and keyboard**, allowing for precise aiming and quick reflexes, which is crucial in tense",
+        "stage26_short": "The Last of Us Part I is a great PC game. It is a very well made game with a great story and gameplay.",
+        "stage31_full": "The Last of Us Part I is a very good PC game. It is a very good game in general, and it is one of the best games of all time. It is a very good game to play on PC, and it is one of the best games of all time. It is a very good game to play on PC, and it is one of the best games of all time. It is a very good game to play on PC, and it is one of the best games of all time. It is a very good game to play on PC, and it is one of the best games of all time. It is"
+      },
+      "generation_s": {
+        "base": 3.758608343952801,
+        "stage26_short": 0.9789581520017236,
+        "stage31_full": 4.574682687991299
+      },
+      "generation_sha256": {
+        "base": "e19520889bd9ea04e21189bc487886baf3787a6dcdc986e2707b18891027e2d2",
+        "stage26_short": "93c21ae3a093e793c481dad538f906acd5d89a7e12d4164e520c3099057aae1c",
+        "stage31_full": "228824e889ffa27467420b6205b80d36a972684f1d1cf5daf752ef63519cb4d4"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2807017543859649,
+          "exact": 0,
+          "output_words": 96
+        },
+        "stage26_short": {
+          "word_f1": 0.30303030303030304,
+          "exact": 0,
+          "output_words": 24
+        },
+        "stage31_full": {
+          "word_f1": 0.23958333333333334,
+          "exact": 0,
+          "output_words": 117
+        }
+      }
+    },
+    {
+      "index": 33,
+      "identity_sha256": "74c27291ac81fee1d274a9708b90d5a135f123c98a63559ef8ef3fe27ba158b6",
+      "category": "general_qa",
+      "reference_sha256": "61aa43626806daa8a4683dde6b9ab394f62bcd4b999f7f87d4716ab745372950",
+      "outputs": {
+        "base": "Yes, there is a fast and easy way to put a duvet cover over a duvet \u2014 especially if you're in a hurry or want to save time in the morning. Here's a quick method:\n\n### **1. Lay the Duvet Cover Flat**\n- Unfold the duvet cover so it's completely flat on the bed.\n- Make sure the opening (usually at the top or sides) is facing up.\n\n### **2. Place the Duvet in the Center**\n- Put the duvet in the center of the bed, making sure it's not too tight or too loose.\n\n### **3. T",
+        "stage26_short": "Yes, you can put a duvet cover over a duvet by first placing the duvet in the center of the cover, then pulling the corners of the cover over the edges of the duvet.",
+        "stage31_full": "Yes, you can put a duvet cover over a duvet by first placing the duvet in the center of the duvet cover, then pulling the corners of the duvet cover over the sides of the duvet."
+      },
+      "generation_s": {
+        "base": 3.776062428019941,
+        "stage26_short": 1.5078241199953482,
+        "stage31_full": 1.6404924169764854
+      },
+      "generation_sha256": {
+        "base": "02e3119365194919fd3c58c84c9b86380672329416344b910fa6045cc34270d1",
+        "stage26_short": "00b3a3e9bfa76e915f76a5b177d7be98cae9655f37079073ac3afa783380fdc7",
+        "stage31_full": "5560ad37874ffdac365f74a5427fa05f3e635977660f6c9e752b77e02ff4f302"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3381642512077295,
+          "exact": 0,
+          "output_words": 91
+        },
+        "stage26_short": {
+          "word_f1": 0.32,
+          "exact": 0,
+          "output_words": 34
+        },
+        "stage31_full": {
+          "word_f1": 0.34210526315789475,
+          "exact": 0,
+          "output_words": 36
+        }
+      }
+    },
+    {
+      "index": 34,
+      "identity_sha256": "9657bc6e04f0c628e430974d8e732bbfc8b2e42632849e544cc0e1326e0f6d98",
+      "category": "general_qa",
+      "reference_sha256": "a33b3c326093e354eb856a0c9b6f2131db461a6e1c560c1de44a86846fd92704",
+      "outputs": {
+        "base": "Paris is known as the **\"City of Light\"** (French: *La Ville Lumi\u00e8re*) for several historical, cultural, and symbolic reasons:\n\n### 1. **Historical Origin: The Enlightenment**\n- The nickname originated in the **18th century** during the **Age of Enlightenment**.\n- Paris was the intellectual and cultural center of Europe at the time, home to philosophers, scientists, and writers like **Voltaire, Rousseau, and Diderot**.\n- The city became a **symbol of enlightenment, reason, and progress**, hence the term \"City of Light.\"\n\n### 2. **Light",
+        "stage26_short": "Paris is known as the city of light because of the illumination of the city at night.",
+        "stage31_full": "Paris is known as the city of light because of its illumination. The city is known for its beautiful architecture, which is illuminated at night. The city is also known for its many museums, which are illuminated at night. The city is also known for its many parks, which are illuminated at night. The city is also known for its many monuments, which are illuminated at night. The city is also known for its many fountains, which are illuminated at night. The city is also known for its many bridges, which are illuminated at night. The city is also known for its many canals, which are illuminated at night. The city"
+      },
+      "generation_s": {
+        "base": 3.777299625973683,
+        "stage26_short": 0.7043197570019402,
+        "stage31_full": 4.5193234870093875
+      },
+      "generation_sha256": {
+        "base": "e4300411c9a3095582e3adf708289a110466da069bf656db0f8c8239c12492f4",
+        "stage26_short": "8c02f9baf9934d59589ad661a7098aa81b635e571b2fefaef16064a171a48d08",
+        "stage31_full": "f7fa89bd8f86c711c9930af5296193d7c3f8022bdc1bf07cd159e6808067a41c"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.21487603305785125,
+          "exact": 0,
+          "output_words": 77
+        },
+        "stage26_short": {
+          "word_f1": 0.29508196721311475,
+          "exact": 0,
+          "output_words": 17
+        },
+        "stage31_full": {
+          "word_f1": 0.12903225806451613,
+          "exact": 0,
+          "output_words": 111
+        }
+      }
+    },
+    {
+      "index": 35,
+      "identity_sha256": "cbc84f2d790463345ceb3e0e15aad85e7b63587396b3f9a7d8c1364fd7bf0216",
+      "category": "general_qa",
+      "reference_sha256": "6cf24ad930a57acc4ea1e3167037ffcfffd17eb936dda896e8c8ed0262c1e230",
+      "outputs": {
+        "base": "Utah is a fantastic place to visit for a wide range of reasons, thanks to its stunning natural beauty, diverse outdoor activities, and unique cultural experiences. Here are some of the top reasons why Utah is a great destination:\n\n### 1. **Natural Beauty and Landscapes**\nUtah is often called the \"Mormon Corridor\" and the \"Red Rock Country\" for good reason. It's home to some of the most breathtaking landscapes in the world:\n- **Canyons and Slot Canyons**: The intricate red rock formations of **Canyonlands National Park** and **Antelope Canyon** are awe",
+        "stage26_short": "Utah is a great place to visit because of its beautiful natural scenery, including mountains, canyons, and deserts. It is also home to many outdoor activities such as hiking, skiing, and rock climbing.",
+        "stage31_full": "Utah is a great place to visit because of its natural beauty, outdoor recreation, and cultural attractions. Utah is home to the Grand Canyon, Arches National Park, and Zion National Park, which are all stunning natural wonders. Utah is also home to the Great Salt Lake, which is a popular destination for water sports and bird watching. In addition, Utah has a rich cultural heritage, with many museums, galleries, and historic sites. Utah is also known for its friendly people and welcoming atmosphere."
+      },
+      "generation_s": {
+        "base": 3.786675376002677,
+        "stage26_short": 1.643091092002578,
+        "stage31_full": 3.5971416769898497
+      },
+      "generation_sha256": {
+        "base": "6275b57fdbca405e4e1879d3301bb7eafc82ea0e0a9ced60614c8c79d2d1ba86",
+        "stage26_short": "90199820aea7d6c352fd89a61d57a39ecd0fbf3b50f2272257cb61fc1e8edbb8",
+        "stage31_full": "d4736c4c8f9095e14f71652cdf1061ea9e6d1bbfec13c55e881a366dcd844912"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.32098765432098764,
+          "exact": 0,
+          "output_words": 89
+        },
+        "stage26_short": {
+          "word_f1": 0.24528301886792453,
+          "exact": 0,
+          "output_words": 33
+        },
+        "stage31_full": {
+          "word_f1": 0.39743589743589747,
+          "exact": 0,
+          "output_words": 83
+        }
+      }
+    },
+    {
+      "index": 36,
+      "identity_sha256": "d9bd033e2c691d02e81ea805c3c08ef70f5c2cf9e532e553de69dc125759eebb",
+      "category": "general_qa",
+      "reference_sha256": "a7b7ae1337959eb9229329d78a7756b32ed450ba452e76a7379dfb33efa8eee7",
+      "outputs": {
+        "base": "If you're finding that flights from Singapore to Sydney are too expensive, here are several strategies you can use to find more affordable options:\n\n---\n\n### 1. **Book in Advance or Last Minute (Depending on the Situation)**\n- **Booking in advance** (2\u20133 months before departure) often gives you better prices, especially for international routes.\n- **Last-minute deals** can sometimes be cheaper, especially if there's a lot of unsold seats. Use tools like Google Flights or Skyscanner to check for last-minute deals.\n\n---\n\n### 2. **Use Fare Comparison Tools**\n- **Google Flights**,",
+        "stage26_short": "If the flight is too expensive, you can try to book a flight from Singapore to Sydney with a stopover.",
+        "stage31_full": "If the flight is too expensive, you can consider the following options:\n1. Book a flight with a layover\n2. Book a flight with a stopover\n3. Book a flight with a different airline\n4. Book a flight with a different departure date\n5. Book a flight with a different return date\n6. Book a flight with a different departure airport\n7. Book a flight with a different return airport\n8. Book a flight with a different airline\n9. Book a flight with a different departure date\n10. Book a flight with a different return date"
+      },
+      "generation_s": {
+        "base": 3.781509840977378,
+        "stage26_short": 0.8813879039953463,
+        "stage31_full": 4.311952938034665
+      },
+      "generation_sha256": {
+        "base": "17ef77eb8714c9a68e1a8dffd8a08cb4e1a1816e5a6dae3c4f85859947d5d87b",
+        "stage26_short": "64a832b2cf67b78a7def99356395519104ab5eaa52a11f505a4688de2c93f17a",
+        "stage31_full": "2cdf08b3bfe89f2904f06ae02b72fb4b2059ddf9f3d1bd76b8a5c0d575252461"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.14678899082568808,
+          "exact": 0,
+          "output_words": 85
+        },
+        "stage26_short": {
+          "word_f1": 0.1818181818181818,
+          "exact": 0,
+          "output_words": 20
+        },
+        "stage31_full": {
+          "word_f1": 0.05,
+          "exact": 0,
+          "output_words": 96
+        }
+      }
+    },
+    {
+      "index": 37,
+      "identity_sha256": "d24c34c684ee5c6461be5bec83d117d974c2c38ef6db7936ecfe0fdf9c7dd954",
+      "category": "general_qa",
+      "reference_sha256": "73b3625361b9a4c111ea74d466d8683eac994d17b1bcdbe1ab43de9932614533",
+      "outputs": {
+        "base": "The **Zwift Three Little Sisters Tour** is a popular virtual cycling route that simulates a challenging mountain climb, often used for training, time trials, or fun. The route is known for its steep climbs and technical descents, so the **best bike setup** depends on your **goals** (e.g., speed, comfort, power output) and **riding style** (e.g., aggressive, endurance, casual).\n\nHere\u2019s a breakdown of the **best bike setup for the Three Little Sisters Tour**:\n\n---\n\n### \ud83d\udeb4\u200d\u2642\ufe0f **1. Bike Type:**\n- **Road Bike** (preferred",
+        "stage26_short": "The best bike setup for Zwift's Three Little Sisters tour is a road bike with a 50/34 chainring and 11-32 cassette.",
+        "stage31_full": "The best bike setup for Zwift's Three Little Sisters tour is a road bike with a 50/34 chainring and 11-32 cassette."
+      },
+      "generation_s": {
+        "base": 3.8098361029988155,
+        "stage26_short": 1.296527955972124,
+        "stage31_full": 1.3005437160027213
+      },
+      "generation_sha256": {
+        "base": "102630020eb3c4bb4689c760fca0e514ea77c29e1e9c13e0f14d01b0a8f9e0da",
+        "stage26_short": "d79d768bef4cacc2ea1330bf7e5d405f60a622944cd1764dcc78944e75248e1d",
+        "stage31_full": "d79d768bef4cacc2ea1330bf7e5d405f60a622944cd1764dcc78944e75248e1d"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2598870056497175,
+          "exact": 0,
+          "output_words": 80
+        },
+        "stage26_short": {
+          "word_f1": 0.18487394957983191,
+          "exact": 0,
+          "output_words": 22
+        },
+        "stage31_full": {
+          "word_f1": 0.18487394957983191,
+          "exact": 0,
+          "output_words": 22
+        }
+      }
+    },
+    {
+      "index": 38,
+      "identity_sha256": "421305a7e001f2126cda89c543eae277f1133313731cd8b28f47a0964787af5b",
+      "category": "general_qa",
+      "reference_sha256": "9b320517ee67f087b65288e8f4e686497f0189ff7530f54dd395ebe817ea6d76",
+      "outputs": {
+        "base": "Pickleball has become incredibly popular for several reasons, combining elements of fun, accessibility, and inclusivity. Here are the key factors contributing to its rise in popularity:\n\n### 1. **Easy to Learn and Play**\n- **Simple Rules**: Pickleball has straightforward rules, making it easy for beginners to pick up quickly.\n- **Low Barrier to Entry**: The game doesn\u2019t require advanced skills or a lot of physical fitness, making it accessible to people of all ages and abilities.\n\n### 2. **Adaptable to All Skill Levels**\n- **For Beginners and Pros**: Whether you're a casual player or a competitive",
+        "stage26_short": "Pickleball is a sport that is played with a paddle and a ball. It is played on a court that is similar to a badminton court. The game is played with two players or four players. The game is played with a ball that is similar to a tennis ball. The game is played with a paddle that is similar to a tennis racket. The game is played with a ball that is similar to a tennis ball. The game is played with a paddle that is similar to a tennis racket. The game is played with a ball that is similar to a tennis ball. The game is played with a paddle that is similar",
+        "stage31_full": "Pickleball is a sport that has become increasingly popular in recent years. It is a combination of tennis, badminton, and ping pong. It is played with a paddle and a ball, and it is played on a court that is similar to a tennis court. The game is played with two or four players, and the objective is to score points by hitting the ball over the net and into the opponent's court. The game is played with a variety of shots, including serves, volleys, and lobs. The game is played with a variety of shots, including serves, volleys, and lobs. The game"
+      },
+      "generation_s": {
+        "base": 3.7343913790537044,
+        "stage26_short": 4.493339381006081,
+        "stage31_full": 4.507509321032558
+      },
+      "generation_sha256": {
+        "base": "b1350cc9374ac101e0517e3986aa43c8f7bfffe24541c2b4aa65a3203dcd780a",
+        "stage26_short": "080eb11585e73e5e00411c1c4f5da7bf0a8979499de4d0e64125d7531c101341",
+        "stage31_full": "caacf8ff50692a81304d3ff90a13b76d8de60c7b5c30cd566e16451bb079cff2"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2848297213622291,
+          "exact": 0,
+          "output_words": 91
+        },
+        "stage26_short": {
+          "word_f1": 0.27586206896551724,
+          "exact": 0,
+          "output_words": 116
+        },
+        "stage31_full": {
+          "word_f1": 0.33432835820895523,
+          "exact": 0,
+          "output_words": 103
+        }
+      }
+    },
+    {
+      "index": 39,
+      "identity_sha256": "0f425f68ec4cf816d0132e5aa4ade49389bf05505506331fde946c9eaad99a49",
+      "category": "general_qa",
+      "reference_sha256": "b27074a8787c7f28c8b1141907f861c3d08b1da0557efb17ccaa3fb21b3eab43",
+      "outputs": {
+        "base": "Cockney rhyming slang is a form of slang that originated in the East End of London and is characterized by replacing a common word with a rhyming phrase. The idea is to obscure the meaning from outsiders, as the rhyming phrase is not immediately obvious to those unfamiliar with the slang.\n\nHere are some classic examples of Cockney rhyming slang:\n\n1. **Bread and dripping** \u2013 means **money**  \n   *Example:* \"I've got a bit of bread and dripping in my pocket.\"\n\n2. **Bottle and bung** \u2013 means **money** (same as above, but different",
+        "stage26_short": "Cockney rhyming slang is a type of slang that is used in the UK, especially in London. It is a type of slang that uses rhyming words to replace the actual word. For example, \"bottle\" is used to refer to a \"bottle\" and \"bottle\" is used to refer to a \"bottle\" and \"bottle\" is used to refer to a \"bottle\" and \"bottle\" is used to refer to a \"bottle\" and \"bottle\" is used to refer to a \"bottle\" and \"bottle\" is used to refer to",
+        "stage31_full": "Cockney rhyming slang is a form of slang that originated in the East End of London. It is characterised by the use of rhyming slang, where a word is replaced by a rhyming word that is associated with it. For example, \"bottle\" can be replaced with \"bottle\" (rhyming with \"bottle\"), \"bottle\" can be replaced with \"bottle\" (rhyming with \"bottle\"), and \"bottle\" can be replaced with \"bottle\" (rhyming with \"bottle\"). Cockney rhyming slang is often used in"
+      },
+      "generation_s": {
+        "base": 3.752563063055277,
+        "stage26_short": 4.527659640996717,
+        "stage31_full": 4.520155792008154
+      },
+      "generation_sha256": {
+        "base": "fdc4935c588665a98ed1e7068b66891bdf5505c67db1f06c68f83dc7be80d13e",
+        "stage26_short": "b2a4dd418d384c4d0f8be991b92847bb7c0c74b6c727208158d36e6663ed5c67",
+        "stage31_full": "18f50f394bc58ad5270b3f1534d3a2a75c2a8820584f12c36b33e52d796503c7"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3783783783783784,
+          "exact": 0,
+          "output_words": 89
+        },
+        "stage26_short": {
+          "word_f1": 0.25414364640883974,
+          "exact": 0,
+          "output_words": 85
+        },
+        "stage31_full": {
+          "word_f1": 0.3372093023255814,
+          "exact": 0,
+          "output_words": 76
+        }
+      }
+    },
+    {
+      "index": 40,
+      "identity_sha256": "bb3de9b19e5cd2f69bcafcc8bddd7537c2b89cac4bb51826384c1505c4c4a069",
+      "category": "information_extraction",
+      "reference_sha256": "492d203622d30eae61f8b2c13f8e1a61d3075a945b68d77dcf687bb624d39654",
+      "outputs": {
+        "base": "Kafka, Flume, Twitter, ZeroMQ, Kinesis, TCP/IP sockets",
+        "stage26_short": "Kafka, Flume, Twitter, ZeroMQ, Kinesis, TCP/IP sockets",
+        "stage31_full": "Kafka, Flume, Twitter, ZeroMQ, Kinesis, and TCP/IP sockets."
+      },
+      "generation_s": {
+        "base": 0.6071060730027966,
+        "stage26_short": 0.704993535997346,
+        "stage31_full": 0.7655523840221576
+      },
+      "generation_sha256": {
+        "base": "492d203622d30eae61f8b2c13f8e1a61d3075a945b68d77dcf687bb624d39654",
+        "stage26_short": "492d203622d30eae61f8b2c13f8e1a61d3075a945b68d77dcf687bb624d39654",
+        "stage31_full": "c56d43e0b535e58d744139089a1df1641c5ef11f8db420f39d4f1267b66a0ae4"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 8
+        },
+        "stage26_short": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 8
+        },
+        "stage31_full": {
+          "word_f1": 0.9411764705882353,
+          "exact": 0,
+          "output_words": 9
+        }
+      }
+    },
+    {
+      "index": 41,
+      "identity_sha256": "1080efb7f4b8decb66279ac2bb7540dc9f605894e2a419b2721832cf978c02a8",
+      "category": "information_extraction",
+      "reference_sha256": "e9bf40f6721fd0d686c1a9d3ba44c080b2e63d828185498c2f5927dc32f92988",
+      "outputs": {
+        "base": "As of the reference context provided, the ITV network in the United Kingdom is composed of **12 regions in England and Wales**, plus **one additional region in Northern Ireland (UTV)**, which are all part of the **ITV plc** network. \n\nSo, the total number of **regions that make up the ITV network** is:\n\n**12 regions in England and Wales**  \n**+ 1 region in Northern Ireland (UTV)**  \n**= 13 regions**\n\nTherefore, **13 regions** make up the ITV network.",
+        "stage26_short": "The ITV network is made up of 12 regions in England and Wales, 13th region UTV in Northern Ireland, and 2 regions in Scotland.",
+        "stage31_full": "The ITV network is made up of 12 regions in England and Wales, 1 region in Northern Ireland, and 2 regions in Scotland."
+      },
+      "generation_s": {
+        "base": 3.4083490669727325,
+        "stage26_short": 1.306138676009141,
+        "stage31_full": 1.1657330919988453
+      },
+      "generation_sha256": {
+        "base": "51208620eb9180e81905e91fcc86ebadfff2430096c0001ad34cad405158321d",
+        "stage26_short": "d159c8f3e41bd8e7cf8a8ef49fc9fb6abd8c0cd2940ebacd93a6be29810d08b5",
+        "stage31_full": "ccb7755956d5171c5676d5e5007a71cc1b55345f1c400d74719c7bbd7caf2cfd"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3508771929824562,
+          "exact": 0,
+          "output_words": 74
+        },
+        "stage26_short": {
+          "word_f1": 0.53125,
+          "exact": 0,
+          "output_words": 24
+        },
+        "stage31_full": {
+          "word_f1": 0.507936507936508,
+          "exact": 0,
+          "output_words": 23
+        }
+      }
+    },
+    {
+      "index": 42,
+      "identity_sha256": "1719e490ba990eff05c85d7fd2abc91ac7d413653b506fd313b9eab275aecb7e",
+      "category": "information_extraction",
+      "reference_sha256": "5076a6b9152ed72e10501ef81dd7bc51f1a7124455086fa363287435d90c20dc",
+      "outputs": {
+        "base": "Top Gun is the popular name for the United States Navy Strike Fighter Tactics Instructor program (SFTI program). It is a military training program designed to teach advanced fighter and strike tactics and techniques to selected naval aviators and naval flight officers. These trained individuals then return to their operating units as surrogate instructors, sharing their expertise with other pilots. The program is famously known from the 1986 film *Top Gun*, which dramatizes the experiences of Navy fighter pilots.",
+        "stage26_short": "Top Gun is a program that teaches fighter and strike tactics and techniques to selected naval aviators and naval flight officers.",
+        "stage31_full": "Top Gun is a United States Navy program that teaches fighter and strike tactics and techniques to selected naval aviators and naval flight officers."
+      },
+      "generation_s": {
+        "base": 2.891931258025579,
+        "stage26_short": 0.8848079200251959,
+        "stage31_full": 0.9893277559895068
+      },
+      "generation_sha256": {
+        "base": "c8cdc2db654274b51058998c9958de13a5678ef5ca6fc7f5afe55cda459d24cb",
+        "stage26_short": "7de9c74474d6e12226f922eb4162f534fb3e25c6931731bfc2399efabe4092c9",
+        "stage31_full": "29738422d7323fc407293f0296890a4c22f5bfd3f7a8ce561862c1e334b7a0e0"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2807017543859649,
+          "exact": 0,
+          "output_words": 79
+        },
+        "stage26_short": {
+          "word_f1": 0.1415929203539823,
+          "exact": 0,
+          "output_words": 21
+        },
+        "stage31_full": {
+          "word_f1": 0.1896551724137931,
+          "exact": 0,
+          "output_words": 24
+        }
+      }
+    },
+    {
+      "index": 43,
+      "identity_sha256": "398268f917f2ccbf465c8155dfaee05dcb1c675164b0090e4053a330f14a565e",
+      "category": "information_extraction",
+      "reference_sha256": "20cd3fae28e96c07531321050aae5aa69ea55f09535c4c9613fe4ac320b48bca",
+      "outputs": {
+        "base": "The runway at Richton-Perry County Airport measures **3,000 by 60 feet (914 x 18 meters)**. This is the size of the runway designated as 18/36.",
+        "stage26_short": "The Richton-Perry County Airport has a runway that measures 3,000 by 60 feet (914 x 18 m).",
+        "stage31_full": "The Richton-Perry County Airport has a runway that measures 3,000 by 60 feet (914 x 18 m)."
+      },
+      "generation_s": {
+        "base": 1.521129559027031,
+        "stage26_short": 1.275939202052541,
+        "stage31_full": 1.2746299699647352
+      },
+      "generation_sha256": {
+        "base": "c4fc60a6c14d08c2782243cdb2256171f02e497399c5fb0b148521b3105fdea3",
+        "stage26_short": "7796dcc931fe8b3cf254e6123558abdf93ebe7e5ed703617150a355d2e2c0024",
+        "stage31_full": "7796dcc931fe8b3cf254e6123558abdf93ebe7e5ed703617150a355d2e2c0024"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.5306122448979591,
+          "exact": 0,
+          "output_words": 27
+        },
+        "stage26_short": {
+          "word_f1": 0.5,
+          "exact": 0,
+          "output_words": 18
+        },
+        "stage31_full": {
+          "word_f1": 0.5,
+          "exact": 0,
+          "output_words": 18
+        }
+      }
+    },
+    {
+      "index": 44,
+      "identity_sha256": "c1b06c7ebbf51413a17d7c4850fd8df243d5e777dc96801240f6728d9d8d2dfb",
+      "category": "information_extraction",
+      "reference_sha256": "c0befc742e4851d8495353f18d312525683b7113b069092cddd754ee0c64eed6",
+      "outputs": {
+        "base": "**Lizzie McGuire** is an American comedy television series that premiered on the Disney Channel on January 12, 2001. Created by Terri Minsky, the show follows the life of **Lizzie McGuire**, a teenage girl played by **Hilary Duff**. The series explores the **personal and social challenges** that Lizzie faces during her teenage years, including typical issues like school, friendships, family dynamics, and first love.\n\nOne of the unique aspects of the show is that **Hilary Duff also voices an animated version of Lizzie**, which appears in **soliloqu",
+        "stage26_short": "Lizzie McGuire is a comedy series that follows the life of a teenage girl named Lizzie McGuire.",
+        "stage31_full": "Lizzie McGuire is an American comedy television series created by Terri Minsky that premiered on Disney Channel on January 12, 2001. The series stars Hilary Duff as the titular character who learns to navigate the personal and social issues of her teenage years. Duff also voices an animated version of Lizzie that performs soliloquies to express the character's inner thoughts and emotions. The series also stars Lalaine, Adam Lamberg, Jake Thomas, Hallie Todd and Robert Carradine. The series concluded on February 14, 2004, after a total of 6"
+      },
+      "generation_s": {
+        "base": 3.835152112005744,
+        "stage26_short": 0.8798877370427363,
+        "stage31_full": 4.537493066978641
+      },
+      "generation_sha256": {
+        "base": "66f8e986c05f955ff64b8a29fd52630452652718452d9085a3af1602086f27c4",
+        "stage26_short": "6312423be667f2c7b549ac8d8aaaf52c167b01528cd1692a7bd24e150d93344f",
+        "stage31_full": "887af3360d70608d3290f8a4edef85bea8e90437324dd40f6cae8b5889ab8527"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3636363636363636,
+          "exact": 0,
+          "output_words": 86
+        },
+        "stage26_short": {
+          "word_f1": 0.48780487804878053,
+          "exact": 0,
+          "output_words": 17
+        },
+        "stage31_full": {
+          "word_f1": 0.3392857142857143,
+          "exact": 0,
+          "output_words": 88
+        }
+      }
+    },
+    {
+      "index": 45,
+      "identity_sha256": "15e87e29266f22337f3c92a085452f5d3ec77abd619ac21967e2ace67fd7e31f",
+      "category": "information_extraction",
+      "reference_sha256": "1f8b89d0a0f4b587d900717aaef41868fe1b66ca368e1038fe52ea80e3d90ce3",
+      "outputs": {
+        "base": "The **Central Limit Theorem (CLT)** is one of the most important concepts in probability and statistics. It describes how the distribution of sample means behaves under certain conditions, even when the underlying population distribution is not normal.\n\n### **What is the Central Limit Theorem?**\n\nThe **Central Limit Theorem** states that:\n\n> If you take a large enough sample from a population (with a finite variance), and calculate the mean of that sample, then as the sample size increases, the distribution of these sample means will approximate a **normal distribution**, regardless of the shape of the original population distribution.\n\n### **Key Points of the CL",
+        "stage26_short": "The central limit theorem (CLT) is a key concept in probability theory that states that, in many situations, for identically distributed independent samples, the standardized sample mean tends towards the standard normal distribution even if the original variables themselves are not normally distributed.",
+        "stage31_full": "The central limit theorem (CLT) is a key concept in probability theory that states that the distribution of the sample mean of a large number of independent, identically distributed random variables tends towards a normal distribution, regardless of the distribution of the individual variables. This theorem is important because it allows probabilistic and statistical methods that work for normal distributions to be applied to many problems involving other types of distributions."
+      },
+      "generation_s": {
+        "base": 3.810791841999162,
+        "stage26_short": 1.892267741030082,
+        "stage31_full": 2.902430374000687
+      },
+      "generation_sha256": {
+        "base": "57038356312a60fcb7d1523b7efe8683e8182ab0176d70b97b88ba9b32ffc9f6",
+        "stage26_short": "b28b702104d480bd162e6665f34847d88d56b56d3f070c04a7cc40bf095ce858",
+        "stage31_full": "7845791269371acc01e69c15ef4c0fcf189da4306eb7af99498a01b27e2a02fb"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.43983402489626555,
+          "exact": 0,
+          "output_words": 101
+        },
+        "stage26_short": {
+          "word_f1": 0.28415300546448086,
+          "exact": 0,
+          "output_words": 43
+        },
+        "stage31_full": {
+          "word_f1": 0.42654028436018965,
+          "exact": 0,
+          "output_words": 71
+        }
+      }
+    },
+    {
+      "index": 46,
+      "identity_sha256": "eb48267c31657a068380134c331bff81934543d9934c88cd90d675a999ca485c",
+      "category": "information_extraction",
+      "reference_sha256": "72cc56582fecdac5e7c661afbce2e164e827de4e6ae8c8d8d629e0629127177a",
+      "outputs": {
+        "base": "**Stiftung Lesen**, which translates to **\"Reading Foundation\"** in English, is a **non-profit organization based in Mainz, Germany**. It is under the **patronage of Joachim Gauck**, a former President of Germany, and plays a significant role in **promoting reading and literacy** both nationally and internationally.\n\n### Key Functions and Activities:\n- **Reading Promotion**: Stiftung Lesen works to **enhance reading skills** and **literacy levels** across all segments of society.\n- **Programmes and Education**: It develops and provides **accessible and inclusive reading programs** for people",
+        "stage26_short": "Stiftung Lesen is a non-profit organization based in Mainz, Germany under the patronage of Joachim Gauck. Stiftung Lesen acts as a stakeholder for reading promotion on a national and international level. It contributes to reading promotion and reading education through programmes, scientific research, and political recommendations. To create a basis for the development of reading skills, and to enhance the overall level of literacy, Stiftung Lesen established adequate and accessible programmes for every member of society \u2013 regardless of financial, cultural or social background. In 2006 Stiftung Lesen established its own Institute for Research on",
+        "stage31_full": "Stiftung Lesen is a non-profit organization based in Mainz, Germany under the patronage of Joachim Gauck. It acts as a stakeholder for reading promotion on a national and international level. It contributes to reading promotion and reading education through programmes, scientific research, and political recommendations. It established adequate and accessible programmes for every member of society \u2013 regardless of financial, cultural or social background."
+      },
+      "generation_s": {
+        "base": 3.828591545985546,
+        "stage26_short": 4.6079322100267746,
+        "stage31_full": 3.016131477023009
+      },
+      "generation_sha256": {
+        "base": "1c4a5ecc47cf2bb44dd48c82b461405dbf95d8ed612fb5e03d4a9ca243a06460",
+        "stage26_short": "71a61b644050184b1ef5593a2bafed43b820cf6f278ca8446d5f1873868722f4",
+        "stage31_full": "a0ee460431e35d23bd21fa4ea7dc0b855cad61446c178555b94fb495f8b2221e"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3238095238095238,
+          "exact": 0,
+          "output_words": 79
+        },
+        "stage26_short": {
+          "word_f1": 0.4,
+          "exact": 0,
+          "output_words": 94
+        },
+        "stage31_full": {
+          "word_f1": 0.5393258426966292,
+          "exact": 0,
+          "output_words": 63
+        }
+      }
+    },
+    {
+      "index": 47,
+      "identity_sha256": "6da3d1c7b8ed14e491aa2766d32b9ec35cb10213384b6a040955498aa798439a",
+      "category": "information_extraction",
+      "reference_sha256": "5845b4bc53f593032e80aad80e764a02ebf9f598bf8bfa660d2ee9b8c9c8c984",
+      "outputs": {
+        "base": "Motilal Nehru, Swarup Rani Thussu",
+        "stage26_short": "Motilal Nehru, Swarup Rani Thussu",
+        "stage31_full": "Motilal Nehru, Swarup Rani Thussu"
+      },
+      "generation_s": {
+        "base": 0.5215983579983003,
+        "stage26_short": 0.5974835830274969,
+        "stage31_full": 0.5989174679853022
+      },
+      "generation_sha256": {
+        "base": "5845b4bc53f593032e80aad80e764a02ebf9f598bf8bfa660d2ee9b8c9c8c984",
+        "stage26_short": "5845b4bc53f593032e80aad80e764a02ebf9f598bf8bfa660d2ee9b8c9c8c984",
+        "stage31_full": "5845b4bc53f593032e80aad80e764a02ebf9f598bf8bfa660d2ee9b8c9c8c984"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 5
+        },
+        "stage26_short": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 5
+        },
+        "stage31_full": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 5
+        }
+      }
+    },
+    {
+      "index": 48,
+      "identity_sha256": "adc81e4e7f8b10575ef7481eba463daec3b5bf9bc2dc0dd4982d577dccbd0941",
+      "category": "open_qa",
+      "reference_sha256": "6bdbf8aa10901b7a85278671a7495d1c898d8a6f3f08e1c43d3a7e217c514f2c",
+      "outputs": {
+        "base": "The animal with the longest known hibernation period is the **Arctic ground squirrel** (*Spermophilus parryii*).\n\n- **Hibernation duration**: Up to **14 months**.\n- **Location**: Found in the Arctic tundra of northern Canada and Alaska.\n- **Hibernation details**: These squirrels hibernate through the long, cold Arctic winter, emerging in the spring when the snow begins to melt. During hibernation, their body temperature drops to near freezing, and their heart rate slows dramatically, sometimes to just a few beats per minute.\n\nThis makes the Arctic ground squirrel the animal with",
+        "stage26_short": "The animal with the longest known hibernation period is the Arctic ground squirrel.",
+        "stage31_full": "The animal with the longest known hibernation period is the Arctic ground squirrel."
+      },
+      "generation_s": {
+        "base": 3.772939354996197,
+        "stage26_short": 0.6374085309798829,
+        "stage31_full": 0.6256117559969425
+      },
+      "generation_sha256": {
+        "base": "e4385d861cb04bcba34bf9bb848b11163a579b717873419a9bbe0de0d0d9523e",
+        "stage26_short": "c04829eb33becde6c033fc5c35b7bd04bd5d93810ded9f598be9dc081fb7481e",
+        "stage31_full": "c04829eb33becde6c033fc5c35b7bd04bd5d93810ded9f598be9dc081fb7481e"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.14953271028037382,
+          "exact": 0,
+          "output_words": 85
+        },
+        "stage26_short": {
+          "word_f1": 0.2285714285714286,
+          "exact": 0,
+          "output_words": 13
+        },
+        "stage31_full": {
+          "word_f1": 0.2285714285714286,
+          "exact": 0,
+          "output_words": 13
+        }
+      }
+    },
+    {
+      "index": 49,
+      "identity_sha256": "87906320e8c81cd104198b02f9bc4c1a620c2b824c9545fb1527a772ac1f6f80",
+      "category": "open_qa",
+      "reference_sha256": "c17ec970add981f8ee6ed32a3b6c118e0d1fca9e6fd807a7fdc5d368713a28eb",
+      "outputs": {
+        "base": "Freddie Mercury, the legendary lead vocalist of the band Queen, did not have any cats. There is no credible evidence or documented information suggesting that Freddie Mercury owned a cat. While he was known for his love of animals, particularly dogs, there are no records of him having a cat.",
+        "stage26_short": "Freddie Mercury had 3 cats",
+        "stage31_full": "Freddie Mercury had 3 cats."
+      },
+      "generation_s": {
+        "base": 1.7632001619786024,
+        "stage26_short": 0.316896675969474,
+        "stage31_full": 0.3593363810214214
+      },
+      "generation_sha256": {
+        "base": "e4f85d4968de214fed973a302de32b786267b5a7eda7005655dee69a2d46e39c",
+        "stage26_short": "97a3770b5468ab7411124738c3492c4a4eda1a7222d8ef93fce81edcc2258722",
+        "stage31_full": "4730ad771b6472b81a571bf0b8f18edc435cbad5c18c2e107d2ed446f42c01fe"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.1090909090909091,
+          "exact": 0,
+          "output_words": 50
+        },
+        "stage26_short": {
+          "word_f1": 0.8000000000000002,
+          "exact": 0,
+          "output_words": 5
+        },
+        "stage31_full": {
+          "word_f1": 0.8000000000000002,
+          "exact": 0,
+          "output_words": 5
+        }
+      }
+    },
+    {
+      "index": 50,
+      "identity_sha256": "156c5828b92fd62ef4ed4f65191ba9081cb0031c64108b3098aa18561386a934",
+      "category": "open_qa",
+      "reference_sha256": "9db821b61b3525a24f849db26c349f04bb54fc1e197af4a13e311f3e646ad1c9",
+      "outputs": {
+        "base": "Making a traditional cup of English tea is a simple but meaningful ritual that has been cherished for centuries. Here's a step-by-step guide to making a classic English-style cup of tea:\n\n---\n\n### \ud83c\udf75 **Ingredients:**\n- 1 English breakfast tea (or your preferred black tea)\n- 1 tea bag or 1 teaspoon of loose-leaf tea per cup\n- 1 cup (250 ml) of boiling water (212\u00b0F / 100\u00b0C)\n- A small teacup or mug\n- A saucer (optional, for serving)\n- Milk (whole milk is traditional,",
+        "stage26_short": "To make a traditional cup of English tea, you will need the following ingredients:\n\n- 1 cup of boiling water\n- 1 tea bag\n- 1 teaspoon of sugar\n- 1/2 teaspoon of milk\n- 1/2 teaspoon of cream\n- 1/2 teaspoon of butter\n- 1/2 teaspoon of honey\n- 1/2 teaspoon of jam\n- 1/2 teaspoon of lemon\n- 1/2 teaspoon of cinnamon\n- 1/2 teaspoon of nutmeg\n- 1/2 teaspoon of cloves\n- 1/2 teaspoon of cardam",
+        "stage31_full": "To make a traditional cup of English tea, you will need the following ingredients:\n\n- 1 cup of boiling water\n- 1 tea bag\n- 1 teaspoon of sugar\n- 1 teaspoon of milk\n- 1 teaspoon of lemon juice\n\nTo make the tea, you will need to follow these steps:\n\n1. Boil a cup of water.\n2. Place the tea bag in a cup.\n3. Pour the boiling water into the cup.\n4. Let the tea steep for 3-5 minutes.\n5. Add the sugar, milk, and lemon juice to the tea.\n6. Stir the tea until"
+      },
+      "generation_s": {
+        "base": 3.761751083948184,
+        "stage26_short": 4.570796281972434,
+        "stage31_full": 4.538375333999284
+      },
+      "generation_sha256": {
+        "base": "d92df7b9c391590d427ac066e3e7f7d5c56bb6625b142e25a610a7825450b157",
+        "stage26_short": "b2f6dba977eab70c0cdb1a636ef016054aad379e89295202cf3ede6955828a6c",
+        "stage31_full": "c77f4bd63b2b7e29826396902120ef79e59d5d2b46d460bd4bf3c0696fe241de"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.29931972789115646,
+          "exact": 0,
+          "output_words": 79
+        },
+        "stage26_short": {
+          "word_f1": 0.20833333333333331,
+          "exact": 0,
+          "output_words": 76
+        },
+        "stage31_full": {
+          "word_f1": 0.45,
+          "exact": 0,
+          "output_words": 92
+        }
+      }
+    },
+    {
+      "index": 51,
+      "identity_sha256": "faaf3a0561678ac2afcf192afba91c93e813967d8577855f4bd3df50f39bda0a",
+      "category": "open_qa",
+      "reference_sha256": "318032d74bc5cae5a9c876166b0169eb2d2da49f4ca32905088bb4e1fcc95009",
+      "outputs": {
+        "base": "**DeFi (Decentralized Finance)** is a movement and ecosystem within the **blockchain and cryptocurrency** space that aims to **rebuild traditional financial systems**\u2014such as banking, loans, trading, and investing\u2014**without the need for centralized intermediaries** like banks, brokers, or governments.\n\n---\n\n### \ud83d\udd37 Key Characteristics of DeFi:\n\n1. **Decentralized**:\n   - Built on **blockchain technology**, typically **Ethereum**, but also other blockchains like Binance Smart Chain, Solana, etc.\n   - No central authority controls the system.\n\n2. **Open Access**:\n  ",
+        "stage26_short": "DeFi is a decentralized finance system that allows users to access financial services without the need for a traditional financial institution.",
+        "stage31_full": "DeFi stands for Decentralized Finance. It is a movement to build financial systems using open-source, decentralized blockchain technology. DeFi aims to make financial services more accessible, transparent, and secure by removing the need for traditional financial institutions."
+      },
+      "generation_s": {
+        "base": 3.7912383539951406,
+        "stage26_short": 0.8793845539912581,
+        "stage31_full": 1.767746651021298
+      },
+      "generation_sha256": {
+        "base": "1382871766f78affd2e28556efb17d739017fda99162196f5d5f19d2db0a2fc5",
+        "stage26_short": "2f7e33f324bf0cfa901095ec1e831d70b14800dff156e98a3e8d7697304e89d3",
+        "stage31_full": "2af2c0580943a6bef0ebb9c0fb0e4f156dc28c21cfc1fa12cc45f78e4c69478f"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.2547770700636942,
+          "exact": 0,
+          "output_words": 70
+        },
+        "stage26_short": {
+          "word_f1": 0.14814814814814814,
+          "exact": 0,
+          "output_words": 21
+        },
+        "stage31_full": {
+          "word_f1": 0.1935483870967742,
+          "exact": 0,
+          "output_words": 37
+        }
+      }
+    },
+    {
+      "index": 52,
+      "identity_sha256": "d88bdeaabb8a4523e13336cde0bd36b31971f7c8608d660c0879333d1f43f7b3",
+      "category": "open_qa",
+      "reference_sha256": "42822ffa3472a4c559067b0ee931c3780dcfd7b68fd1a1d4b237378459974b6b",
+      "outputs": {
+        "base": "The lead singer for the band Aerosmith was **Steven Tyler**. He was the frontman and one of the founding members of the band, known for his distinctive voice, stage presence, and songwriting contributions. Tyler was a key figure in Aerosmith's success, especially during the 1970s and 1980s, and he remained the lead singer until the band's disbandment in 2017.",
+        "stage26_short": "Aerosmith's lead singer is Steven Tyler.",
+        "stage31_full": "Aerosmith's lead singer is Steven Tyler."
+      },
+      "generation_s": {
+        "base": 2.728949414973613,
+        "stage26_short": 0.42690105695510283,
+        "stage31_full": 0.4275370279792696
+      },
+      "generation_sha256": {
+        "base": "86d717485658eea076593d990feafe64df6629d314b49bad71be285781b3b7f5",
+        "stage26_short": "1ac468c9fb2a92bac638435328d385ecdd719480617cdfca6933ee531e0505c7",
+        "stage31_full": "1ac468c9fb2a92bac638435328d385ecdd719480617cdfca6933ee531e0505c7"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.23880597014925373,
+          "exact": 0,
+          "output_words": 59
+        },
+        "stage26_short": {
+          "word_f1": 0.5714285714285715,
+          "exact": 0,
+          "output_words": 6
+        },
+        "stage31_full": {
+          "word_f1": 0.5714285714285715,
+          "exact": 0,
+          "output_words": 6
+        }
+      }
+    },
+    {
+      "index": 53,
+      "identity_sha256": "ee5bb98ad87a5c6b88bb849b40874896a074bac5eb0b6989481eb7111536beb6",
+      "category": "open_qa",
+      "reference_sha256": "0a369525ec0f1ebe9619f456a404357f74e91933b3a2c272fca2fffb9d8ca698",
+      "outputs": {
+        "base": "Sure! Here's a highly recommended **science fiction** book that's both thought-provoking and engaging:\n\n### **\"The Left Hand of Darkness\" by Ursula K. Le Guin**\n\n#### **Why it's a great recommendation:**\n- **Genre:** Science Fiction (with strong elements of speculative fiction and philosophical inquiry)\n- **Themes:** Gender, identity, politics, and human nature\n- **Setting:** A distant, icy planet called **Gethen**, where the inhabitants are **ambisexual** (they can change gender)\n- **Tone:** Thoughtful, lyrical, and deeply human\n\n#### **",
+        "stage26_short": "The Hitchhiker's Guide to the Galaxy",
+        "stage31_full": "I recommend the book \"The Martian\" by Andy Weir. It is a science fiction novel that follows the story of an astronaut who is stranded on Mars and must use his knowledge and skills to survive. The book is known for its realistic portrayal of space travel and the challenges of living on another planet. It is a great read for anyone who enjoys science fiction and adventure."
+      },
+      "generation_s": {
+        "base": 3.7731420339550823,
+        "stage26_short": 0.39312970102764666,
+        "stage31_full": 2.7187627779785544
+      },
+      "generation_sha256": {
+        "base": "fc2a5ae8b7920cc33232daaa2fa1088114e6cf5d13b3bd76e7db70b81dc62efa",
+        "stage26_short": "8d4e69547cfb4369fe8a211c5437a46f413cd3c30ebb55f838e166116df42a39",
+        "stage31_full": "b3372289030f70047db9cac29b6f06085f340d2646eda1f7183101d00ff07287"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.051948051948051945,
+          "exact": 0,
+          "output_words": 69
+        },
+        "stage26_short": {
+          "word_f1": 0.14285714285714288,
+          "exact": 0,
+          "output_words": 6
+        },
+        "stage31_full": {
+          "word_f1": 0.05263157894736842,
+          "exact": 0,
+          "output_words": 68
+        }
+      }
+    },
+    {
+      "index": 54,
+      "identity_sha256": "46f0dd0245cfd4329174bf72f694acee9ac54c1b3374a6e8cf4f2b653c136d0c",
+      "category": "open_qa",
+      "reference_sha256": "21845fcdef1914e16a427e31d911981834602306f048487c2c154ceb85ca3846",
+      "outputs": {
+        "base": "The **Harry Potter series** is a series of seven fantasy novels written by **J.K. Rowling**. The books are published in the following order:\n\n1. **Harry Potter and the Philosopher's Stone** (U.S. title: *Harry Potter and the Sorcerer's Stone*)  \n   - First book in the series, published in 1997.\n\n2. **Harry Potter and the Chamber of Secrets**  \n   - Second book, published in 1998.\n\n3. **Harry Potter and the Prisoner of Azkaban**  \n   - Third book, published in 1999",
+        "stage26_short": "Harry Potter and the Philosopher's Stone, Harry Potter and the Chamber of Secrets, Harry Potter and the Prisoner of Azkaban, Harry Potter and the Goblet of Fire, Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince, Harry Potter and the Deathly Hallows",
+        "stage31_full": "The Harry Potter series is a series of seven fantasy novels by J.K. Rowling. The books are:\n\n1. Harry Potter and the Philosopher's Stone\n2. Harry Potter and the Chamber of Secrets\n3. Harry Potter and the Prisoner of Azkaban\n4. Harry Potter and the Goblet of Fire\n5. Harry Potter and the Order of the Phoenix\n6. Harry Potter and the Half-Blood Prince\n7. Harry Potter and the Deathly Hallows"
+      },
+      "generation_s": {
+        "base": 3.7561371329938993,
+        "stage26_short": 2.294184806989506,
+        "stage31_full": 3.517909295973368
+      },
+      "generation_sha256": {
+        "base": "a5200f3322cc1416c5ba3d9af21f8b8c44a0fb64742c499f5cd6a56b297106ec",
+        "stage26_short": "3fd819a07591e8e5eb8457fcf6157944e6a5997f8146a0874dad900707b58129",
+        "stage31_full": "707539b18d26adab8573131f7491f2d1e0564295db218d1d05471413bb7c1b0c"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.6144578313253013,
+          "exact": 0,
+          "output_words": 74
+        },
+        "stage26_short": {
+          "word_f1": 0.6618705035971223,
+          "exact": 0,
+          "output_words": 47
+        },
+        "stage31_full": {
+          "word_f1": 0.7926829268292683,
+          "exact": 0,
+          "output_words": 72
+        }
+      }
+    },
+    {
+      "index": 55,
+      "identity_sha256": "b03832a9fa2a7b4716d2465923b0fa66f2162b6f12173949547977cfbb50af80",
+      "category": "open_qa",
+      "reference_sha256": "80b734f546682ee5eb9b2dfdf96a8a6bca208fd12f7550dbb305a6e99fe1640e",
+      "outputs": {
+        "base": "A **Scottish Fold** is a type of cat breed known for its distinctive **folded ears**, which give it a unique and recognizable appearance. Here's a detailed overview:\n\n### **Key Characteristics:**\n1. **Folded Ears:**  \n   The most notable feature is the **folded ears**, which result from a **genetic mutation** in the *FOLD* gene. This causes the ears to fold forward and downward, giving the cat a \"pug-nosed\" look. The fold is present from birth and is permanent.\n\n2. **Face and Expression:**  \n   Scottish Folds have a **round",
+        "stage26_short": "A Scottish Fold is a cat breed that is known for its folded ears.",
+        "stage31_full": "Scottish Fold is a breed of cat that is known for its folded ears. The Scottish Fold is a cat that has been selectively bred for its folded ears. The Scottish Fold is a cat that has been selectively bred for its folded ears. The Scottish Fold is a cat that has been selectively bred for its folded ears."
+      },
+      "generation_s": {
+        "base": 3.777237977948971,
+        "stage26_short": 0.6066564110224135,
+        "stage31_full": 2.340057461988181
+      },
+      "generation_sha256": {
+        "base": "11cc2b1db9ea9647c0f2a7b241c0f8a41285c8e1abfceca9da840c57e42dea06",
+        "stage26_short": "6b4f1a281f96e846bf9562d0d21851a110060f408bf96b30bbc612643ee3478d",
+        "stage31_full": "4a87acea6e385176c58a5c9212e0f139262c16a4eae5927cb591447166a45121"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.35,
+          "exact": 0,
+          "output_words": 83
+        },
+        "stage26_short": {
+          "word_f1": 0.4705882352941177,
+          "exact": 0,
+          "output_words": 14
+        },
+        "stage31_full": {
+          "word_f1": 0.35416666666666663,
+          "exact": 0,
+          "output_words": 59
+        }
+      }
+    },
+    {
+      "index": 56,
+      "identity_sha256": "6197276297a15295a430208244cd26ee881759b99c46e5ef35f14aa41f3d7327",
+      "category": "summarization",
+      "reference_sha256": "ad3383ddf73dbdd5766a9d53a0f3174adb0ae5f3518c57f03c00946c994de346",
+      "outputs": {
+        "base": "Pulse tools are often preferred over impact wrenches in **product assembly** due to several key advantages that align with the specific requirements of this application. Here's a breakdown of why pulse tools are commonly used in product assembly over impact wrenches:\n\n---\n\n### **1. Reactionless Tightening**\n- **Impact wrenches** generate high torque through a hammering action, which creates a **strong backward reaction force** (often felt in the user's hand or body).\n- **Pulse tools**, on the other hand, use a **smooth, controlled impulse** to apply torque, resulting in **reactionless tightening**. This makes them",
+        "stage26_short": "Pulse tools are used in product assembly over impact wrenches because they are reactionless and have a shut off mechanism that stops the tool when the correct torque is achieved.",
+        "stage31_full": "Pulse tools are used in product assembly over impact wrenches because they are reactionless and reduce noise levels. Pulse tools use oil as a medium to transfer the kinetic energy from the hammer into the anvil. This gives a smoother impulse, a slightly lower torque to weight ratio and a possibility to design a shut off mechanism that shuts the tool down when achieving the correct torque."
+      },
+      "generation_s": {
+        "base": 3.827896040980704,
+        "stage26_short": 1.3036728450097144,
+        "stage31_full": 2.7666294959490187
+      },
+      "generation_sha256": {
+        "base": "3b2f6a5aafb1d0f5332825ed2e3e7b5e52fa1e03fce374ca3dc60e38d73708ee",
+        "stage26_short": "1932bd0b485d5f46c644f112357a9f0671d846833fa403a744a37458edd7a4df",
+        "stage31_full": "01227ae250ed78800b4b98a7e742b5f5dd2869a30b77ded0ae9d1a4cc79cc120"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.1851851851851852,
+          "exact": 0,
+          "output_words": 89
+        },
+        "stage26_short": {
+          "word_f1": 0.4897959183673469,
+          "exact": 0,
+          "output_words": 30
+        },
+        "stage31_full": {
+          "word_f1": 0.3488372093023256,
+          "exact": 0,
+          "output_words": 67
+        }
+      }
+    },
+    {
+      "index": 57,
+      "identity_sha256": "2db9ee20661b075b88d0ad7a3e757e44aa85c9d3c2585fbe9bfcac12c1d30c92",
+      "category": "summarization",
+      "reference_sha256": "d82f1707d4002fab9cb93c2654b65590c46e91bd1f73d06b918101f239f45a1f",
+      "outputs": {
+        "base": "Basketball was invented in 1891 in Springfield, Massachusetts, by James Naismith, a Canadian physical education instructor. At the time, Naismith was working at the YMCA Training School in Springfield, and he was tasked with creating a new indoor sport to keep athletes active during the winter months when outdoor sports like football were too risky or impractical.\n\nNaismith wanted to design a game that was less likely to cause injuries than football, which was popular at the time. He came up with the idea of using a soccer ball and a peach basket as a goal, and he developed the basic rules of the game",
+        "stage26_short": "Basketball was invented in 1891 in Springfield, Massachusetts, by James Naismith, a Canadian physical education instructor.",
+        "stage31_full": "Basketball was invented in 1891 by James Naismith, a Canadian physical education instructor, in Springfield, Massachusetts. Naismith created the sport as a less injury-prone alternative to football, which was popular at the time. He was a 31-year-old graduate student when he invented the sport to keep athletes indoors during the winters."
+      },
+      "generation_s": {
+        "base": 3.8368486250401475,
+        "stage26_short": 1.03944202902494,
+        "stage31_full": 2.6482655919971876
+      },
+      "generation_sha256": {
+        "base": "271e108a6cee779ce103e29928ff776003f0f9bd51766ca61c8f2ad1d25058ec",
+        "stage26_short": "9833d189635a04d8229c4120a63520cc24622e352898b53c25035e8716b1fe30",
+        "stage31_full": "1005733c387541987a0c0854ac2f4964e7bd5da6ba32626bab3775d1f9b7d2fa"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.4465116279069767,
+          "exact": 0,
+          "output_words": 105
+        },
+        "stage26_short": {
+          "word_f1": 0.2380952380952381,
+          "exact": 0,
+          "output_words": 16
+        },
+        "stage31_full": {
+          "word_f1": 0.5308641975308642,
+          "exact": 0,
+          "output_words": 52
+        }
+      }
+    },
+    {
+      "index": 58,
+      "identity_sha256": "6f08047c640028eb5c9830acd265124d96b0de0f8d91244d9c4e16fc365ef9ba",
+      "category": "summarization",
+      "reference_sha256": "c9ff1c62a2f3926157cc444f7a3ac934f75c5183c13250f695dcafcf8d510daa",
+      "outputs": {
+        "base": "Nova was a **British glossy magazine** that was published from **March 1965 to October 1975**. It was known for its **politically radical, intellectually stimulating, and stylish design**, and it targeted a **women's audience**. \n\nThe magazine was notable for covering **controversial and once-taboo subjects** such as **abortion, cancer, the birth control pill, race, homosexuality, divorce, and royal affairs**. These topics were highly sensitive at the time, making Nova a **pioneer in feminist and progressive discourse**.\n\nIts **provocative cover images** and **",
+        "stage26_short": "Nova was a British glossy magazine that was published from March 1965 to October 1975. It was described by The Times as \"a politically radical, beautifully designed, intellectual women's magazine.\" Nova covered such once-taboo subjects as abortion, cancer, the birth control pill, race, homosexuality, divorce and royal affairs. It featured stylish and provocative cover images.",
+        "stage31_full": "Nova was a British glossy magazine that was published from March 1965 to October 1975. It was described by The Times as \"a politically radical, beautifully designed, intellectual women's magazine.\" Nova covered such once-taboo subjects as abortion, cancer, the birth control pill, race, homosexuality, divorce and royal affairs. It featured stylish and provocative cover images."
+      },
+      "generation_s": {
+        "base": 3.839143357996363,
+        "stage26_short": 2.8269558420288377,
+        "stage31_full": 2.8082789999898523
+      },
+      "generation_sha256": {
+        "base": "a7f89ca5d7031d8f48e5524ceeb8fad6b1e5bf80f9b2bef6eb211ec7a9099f8b",
+        "stage26_short": "6d0bf7be479aeb9234e74feae3791d6a7860f31724e68e52a9ad0d2baac275bf",
+        "stage31_full": "6d0bf7be479aeb9234e74feae3791d6a7860f31724e68e52a9ad0d2baac275bf"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.6865671641791045,
+          "exact": 0,
+          "output_words": 79
+        },
+        "stage26_short": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 55
+        },
+        "stage31_full": {
+          "word_f1": 1.0,
+          "exact": 1,
+          "output_words": 55
+        }
+      }
+    },
+    {
+      "index": 59,
+      "identity_sha256": "a70b4b3da1233616567cb16667327a79431215c66e3ba4fd36fd94973d99fe57",
+      "category": "summarization",
+      "reference_sha256": "3018dc02c26fe8f72f17f72b4d3c18c967ac90158b11a7f5e711926036813e15",
+      "outputs": {
+        "base": "The first Porsche 911 with all-wheel drive (AWD) was the **993 Turbo coup\u00e9**, introduced in **1995**.\n\nThis model marked the first time a 911 Turbo was equipped with AWD, which was borrowed from the **959 flagship model**. The 993 Turbo featured a **3.6-liter twin-turbocharged engine** producing **408 PS (300 kW)**, and it was the first 911 Turbo to incorporate AWD as standard.\n\nKey features of the 993 Turbo included:\n\n- **",
+        "stage26_short": "The 993 Turbo coup\u00e9 was the first 911 Turbo with all-wheel drive.",
+        "stage31_full": "The 993 Turbo coup\u00e9 was the first Porsche 911 with AWD."
+      },
+      "generation_s": {
+        "base": 3.835971876978874,
+        "stage26_short": 0.8560641909716651,
+        "stage31_full": 0.8078980629798025
+      },
+      "generation_sha256": {
+        "base": "55cc06f113e06b0934476c66f2231bcdfa91b4340851a991a145a4bdd4b1bbe7",
+        "stage26_short": "a70240b1213c18cbf82db4b6ba02831b93386461739926a7d27c870c16e31f76",
+        "stage31_full": "35d149b8a903783ba250d78514d1ff4877e1e129384e51cd5d21c8a319760351"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.44897959183673464,
+          "exact": 0,
+          "output_words": 70
+        },
+        "stage26_short": {
+          "word_f1": 0.45000000000000007,
+          "exact": 0,
+          "output_words": 12
+        },
+        "stage31_full": {
+          "word_f1": 0.46153846153846156,
+          "exact": 0,
+          "output_words": 11
+        }
+      }
+    },
+    {
+      "index": 60,
+      "identity_sha256": "8cfedfa2f3a3127b42d3d35f6bc647b7bb19d129c2825f8c1e87ac5ccc4e7f66",
+      "category": "summarization",
+      "reference_sha256": "7b13515fb498b75acd68542c28d37429dd07b50b44dd1df9ab5e1ba21da259a1",
+      "outputs": {
+        "base": "Yes, there are several **secure desktop operating systems** available today that are designed with **security and isolation** in mind. These systems are particularly useful for users who want to protect against malware, phishing, and other cyber threats by isolating applications and data. Here are some of the most notable options:\n\n---\n\n### \u2705 **1. Qubes OS**\n- **Based on**: Xen hypervisor\n- **Security Model**: Uses **virtual machines (VMs)** called **security domains** to isolate applications.\n- **Features**:\n  - Each app runs in its own VM.\n  - VMs can be **transient**",
+        "stage26_short": "Qubes OS is a secure desktop operating system that can be used today.",
+        "stage31_full": "Yes, Qubes OS is a secure desktop operating system that you can use today."
+      },
+      "generation_s": {
+        "base": 3.820581238018349,
+        "stage26_short": 0.645373003964778,
+        "stage31_full": 0.7065123179927468
+      },
+      "generation_sha256": {
+        "base": "04f40ea67c23c675bb76fcea856f29cf6ebae3070f9db6bc9c1241c1c72f5d64",
+        "stage26_short": "c7b48e47ccd0cd76079719d6325d6e95372a41906f1c404f683a42bd86fce075",
+        "stage31_full": "a4c24b756012e7df46c48fce4cff8948f3b7ad27bd61ea2a534d2d543beb5cd1"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.16494845360824742,
+          "exact": 0,
+          "output_words": 81
+        },
+        "stage26_short": {
+          "word_f1": 0.20689655172413793,
+          "exact": 0,
+          "output_words": 13
+        },
+        "stage31_full": {
+          "word_f1": 0.26666666666666666,
+          "exact": 0,
+          "output_words": 14
+        }
+      }
+    },
+    {
+      "index": 61,
+      "identity_sha256": "f7c96c29f9f21768ffecb5ed41126ab815e7176f0ab25b6d55dfb3f96c1492bb",
+      "category": "summarization",
+      "reference_sha256": "deb45ad6cf0294621a73edf9b2c9b16cc4b5e95275a84850bf8c70fd714e8c5f",
+      "outputs": {
+        "base": "**Summary of the Effectiveness of Anaerobic and Aerobic Exercises on Muscle Hypertrophy:**\n\n- **Anaerobic Exercises:**  \n  - **Effectiveness:** Highly effective for promoting **muscle hypertrophy**.  \n  - **Mechanism:** Consistent **anaerobic strength training** and **short-duration, high-intensity** exercises stimulate muscle growth by increasing **muscle protein synthesis** and **mechanical tension**.  \n  - **Outcomes:** Leads to increases in **muscle size**, **strength**, and **endurance** over time.  \n  - **Best for:** Individuals aiming for",
+        "stage26_short": "Aerobic exercise is not effective for muscle hypertrophy, while anaerobic exercise is effective for muscle hypertrophy.",
+        "stage31_full": "Aerobic exercise is not effective for muscle hypertrophy, but anaerobic exercise is effective for muscle hypertrophy."
+      },
+      "generation_s": {
+        "base": 3.839609392976854,
+        "stage26_short": 0.9584509020205587,
+        "stage31_full": 0.9533231449895538
+      },
+      "generation_sha256": {
+        "base": "68e0b30192b238ac4c2ebaee540d3e75ea3e5cac6fa3a4f08cf3bb78284dceda",
+        "stage26_short": "f41133f227755bfcc7bba5a714aa02e2dbf33a8db975cfeedf72a9d434a55cee",
+        "stage31_full": "76a6c38b7ea2ba98928b41a4c67974c0f61d45a74b8497ffc77d2da7c120f36f"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.28947368421052627,
+          "exact": 0,
+          "output_words": 58
+        },
+        "stage26_short": {
+          "word_f1": 0.29411764705882354,
+          "exact": 0,
+          "output_words": 16
+        },
+        "stage31_full": {
+          "word_f1": 0.29411764705882354,
+          "exact": 0,
+          "output_words": 16
+        }
+      }
+    },
+    {
+      "index": 62,
+      "identity_sha256": "b15bf0ca7f2c5d4ac32b7483c1e1a4377944eccc87589f53545746d26cae1a37",
+      "category": "summarization",
+      "reference_sha256": "0cc51ac793a71192f7f5a2369d6b94e1d142ecbbe299ecdfce4b1746ed57729c",
+      "outputs": {
+        "base": "From the provided text, the key points regarding **antisemitism** can be extracted as follows:\n\n1. **Historical Concerns**: In 1998, Ignatz Bubis, a leader of the German Jewish community, expressed concern about a \"spreading intellectual nationalism\" that he feared could lead to a revival of **German antisemitism**.\n\n2. **Demographic Factors**: There is a reference to **Germany's growing Muslim population**, particularly:\n   - **Turkish \"guest workers\"** who arrived in the 1950s.\n   - A **large wave of migrants from Muslim countries",
+        "stage26_short": "The key points that can be extracted regarding antisemitism from the text are as follows:\n\n1. Antisemitism is a growing concern in Germany, and the German Jewish community is particularly worried about the revival of antisemitism in the country.\n2. The German Jewish community is concerned about the growing Muslim population in Germany, which includes Turkish \"guest workers\" who began to arrive in the 1950s and a large wave of migrants from Muslim countries who arrived during the European migrant crisis that began in 2015.\n3. The historian Julius Schoeps is critical of the German parliament's efforts to combat antis",
+        "stage31_full": "The key points that can be extracted regarding antisemitism from the text are:\n\n1. Antisemitism is a growing concern in Germany, with some leaders of the Jewish community fearing a revival of German antisemitism.\n2. Germany's growing Muslim population, both the Turkish \"guest workers\" who began to arrive in the 1950s, and the large wave of migrants from the Muslim countries who arrive during the European migrant crisis that began in 2015, are seen as a potential source of antisemitism.\n3. Some historians and political leaders in Germany have been critical of the government's efforts to"
+      },
+      "generation_s": {
+        "base": 3.8142413609893993,
+        "stage26_short": 4.593441550037824,
+        "stage31_full": 4.563504983030725
+      },
+      "generation_sha256": {
+        "base": "df02d765ceacdeb97bae381c856ed3f54b95866a622a48ea22c205eb8c4b09e1",
+        "stage26_short": "2e3a638bb4fb753fdd6d80eba15f14d858716e7c5bea4c0e53c49d6c735416f4",
+        "stage31_full": "be929220d680341229bc2cc6f1eea35ff6de6cb90a06c4fd138a4c8a867f0e08"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.41237113402061853,
+          "exact": 0,
+          "output_words": 75
+        },
+        "stage26_short": {
+          "word_f1": 0.5296803652968036,
+          "exact": 0,
+          "output_words": 100
+        },
+        "stage31_full": {
+          "word_f1": 0.47441860465116276,
+          "exact": 0,
+          "output_words": 96
+        }
+      }
+    },
+    {
+      "index": 63,
+      "identity_sha256": "827b2409d0d8b42715493ef6ed511a75b745faa7513ab66b2092270627b9b4c4",
+      "category": "summarization",
+      "reference_sha256": "d54da449c676d5a053fe4daf4a4cd87635971f8da6304a7d7d7005ced5fbb3d0",
+      "outputs": {
+        "base": "Cardiac pacemakers are medical devices designed to help regulate the heart's rhythm by delivering electrical impulses when needed. Here's a clear explanation of how they work, based on the reference context:\n\n---\n\n### **1. Basic Function of a Pacemaker**\nA pacemaker is a small, battery-powered device that is implanted under the skin, usually near the collarbone. It contains a **pulse generator** (the main unit) and **leads** (thin, insulated wires) that connect to the heart.\n\n---\n\n### **2. How Pacemakers Monitor the Heart**\n- The pacemaker **senses** the heart's natural electrical",
+        "stage26_short": "Pacemakers are small, battery-powered devices that are placed under the skin and connected to the heart with wires. They are used to treat people with heart conditions that cause the heart to beat too slowly or too fast. Pacemakers work by sending electrical impulses to the heart to help it beat at a normal rate.",
+        "stage31_full": "Cardiac pacemakers are small devices that are implanted in the chest to help regulate the heart's rhythm. They work by detecting the heart's electrical activity and delivering electrical impulses to the heart when needed. If the heart's natural electrical activity is not detected within a certain time period, the pacemaker will deliver a pulse to stimulate the heart. This process is called \"demand pacing\" and it ensures that the heart is beating at a regular rhythm."
+      },
+      "generation_s": {
+        "base": 3.822333261021413,
+        "stage26_short": 2.4103004319476895,
+        "stage31_full": 3.2899025740334764
+      },
+      "generation_sha256": {
+        "base": "33aa90836a0dc7ea343555bf6db713a5a44f513d1d2a631d9bfd7772d63fc3a8",
+        "stage26_short": "a3a15a4d59aea5bff0ae9746df9f9446d3abfb282a3e299c02bd6ce12e76071a",
+        "stage31_full": "6e717268db8191a22b6b83e5a002515cb43701dd25a86828f48c910516a3a46d"
+      },
+      "lexical": {
+        "base": {
+          "word_f1": 0.3466666666666667,
+          "exact": 0,
+          "output_words": 85
+        },
+        "stage26_short": {
+          "word_f1": 0.31666666666666665,
+          "exact": 0,
+          "output_words": 55
+        },
+        "stage31_full": {
+          "word_f1": 0.35460992907801425,
+          "exact": 0,
+          "output_words": 76
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Reference-based lexical overlap alone does not validate semantic/factual answer correctness",
+    "Greedy decoding at fixed 128-token cap can truncate detailed answers",
+    "Test source may overlap model pretraining, no human preference or independent manual annotation"
+  ]
+}

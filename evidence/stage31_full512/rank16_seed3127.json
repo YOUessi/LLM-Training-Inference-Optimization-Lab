@@ -1,0 +1,83 @@
+{
+  "status": "measured",
+  "kind": "stage31_real_dolly512_two_epochs_qwen3_8b_qlora",
+  "config": {
+    "rank": 16,
+    "seed": 3127,
+    "epochs": 2,
+    "steps_per_epoch": 256,
+    "total_updates": 512,
+    "effective_batch": 2,
+    "micro_batch": 1,
+    "accumulation": 2,
+    "precision": "bf16",
+    "gradient_checkpoint": false,
+    "optimizer": "AdamW",
+    "lr": 0.00015
+  },
+  "dataset_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "source_splits": {
+    "train": "5861d6911c50b6ced25be4670d157c22f995d22ceb3571b8df97c59aa5686c85",
+    "validation": "4f215251d6e504946508eeee3bef2014b13967a524dcb5ae7948722174712fe7",
+    "test": "08a8334e7acfd01fcb074726e675e80bcd933f0c6e132e83e675a96fc5c10127"
+  },
+  "trainable_parameters": 7667712,
+  "train_unique_records": 512,
+  "train_exposures": 1024,
+  "train_epochs": [
+    {
+      "epoch": 1,
+      "updates": 256,
+      "train_records_seen_unique": 512,
+      "reference_train_loss_mean": 1.4662257470808981,
+      "validation": {
+        "count": 96,
+        "target_tokens": 7087,
+        "assistant_ce_nats": 1.777000457446334,
+        "assistant_perplexity": 5.912096211491024,
+        "mean_record_loss": 1.4204654983477667
+      },
+      "measured_median_step_ms": 433.1492279889062,
+      "measured_samples_per_second": 4.468950874324904
+    },
+    {
+      "epoch": 2,
+      "updates": 512,
+      "train_records_seen_unique": 512,
+      "reference_train_loss_mean": 1.2313558446664956,
+      "validation": {
+        "count": 96,
+        "target_tokens": 7087,
+        "assistant_ce_nats": 1.7984824133026334,
+        "assistant_perplexity": 6.040473562753434,
+        "mean_record_loss": 1.4423629574400063
+      },
+      "measured_median_step_ms": 434.7660534840543,
+      "measured_samples_per_second": 4.46250140779528
+    }
+  ],
+  "baseline_validation": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 2.9525444132662364,
+    "assistant_perplexity": 19.154629069192996,
+    "mean_record_loss": 4.0177808199077845
+  },
+  "selected_by_validation_epoch": 1,
+  "best_validation_ce": 1.777000457446334,
+  "training_efficiency": {
+    "median_update_ms_excluding_first5": 433.5218560299836,
+    "samples_per_second_excluding_first5": 4.470727722992779,
+    "peak_allocated_gib": 12.934927940368652
+  },
+  "adapter_sha256": {
+    "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+    "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+    "adapter_model.safetensors": "b4756915e2b1fef932358e24f374f820aed4daeda73c268c00b2b3064411b39b"
+  },
+  "limitations": [
+    "512 distinct training records from licensed human-authored Dolly but potentially in pretrained corpus",
+    "Only two epochs and two seeds; do not assume repeatability beyond measured configurations",
+    "No frozen test is evaluated by this training script; select candidate by validation only"
+  ]
+}
