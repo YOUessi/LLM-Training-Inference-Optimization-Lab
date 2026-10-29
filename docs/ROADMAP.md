@@ -1,5 +1,19 @@
 # Milestones and acceptance gates
 
+## Latest verified batch (2026-10-29): Stage25–28
+
+- [x] Fail-closed **retire** old Stage13 cron with stale SHA; keep original logs/crontab. New finite batch scripts pin exact source SHA and require shared GPU flock, idle GPU, unoccupied localhost port, and no preexisting outputs.
+- [x] Stage25: frozen licensed-source context/prefix/KV/output-length matrix, 22 real GPU cells, 528 completed real Qwen3-8B-AWQ requests, full all-offered TTFT/throughput/p95/queue evidence. Original invalid detailed-output length cohort archived separately.
+- [x] Stage26: verified official Dolly license/source SHA and 512/96/96 frozen split; 5 real 8B QLoRA configurations, one validation-selected rank16 adapter, single-use final 96-example test. First attempt microbatch2 OOM archived; amended C auxiliary excluded from fair ranking.
+- [x] Stage27: fused residual+weighted RMSNorm and causal materialized Softmax across actual Qwen3 model dimensions, compared to eager and torch.compile over 8 real CUDA cases; raw profiler/correctness evidence.
+- [x] Stage28: full adapter+optimizer+data/CPU/CUDA RNG state checkpoint and exact step6 restart on a real pretrained Transformer adapter; four measured paths, hashes, negative speed-tradeoff evidence.
+- [ ] Production-like serving traffic/cold-prefix behavior, more arrival seeds, confidence intervals, model end-to-end kernel replacement and deployment SLO.
+- [ ] More real-task SFT data exposure and task-level human or robust semantic evaluation, outside the 96 fixed Dolly test.
+- [ ] True multi-GPU DDP/FSDP FULL_SHARD and distributed checkpoint restart **blocked** on single 16GiB RTX 4090 Laptop.
+
+**Research evidence validated; not production approval.** [Batch audit](../analysis/stage25_28_batch_acceptance.py), [Stage25](STAGE25_MEASURED_RESULTS.md), [Stage26](STAGE26_MEASURED_RESULTS.md), [Stage27](STAGE27_MEASURED_RESULTS.md), [Stage28](STAGE28_MEASURED_RESULTS.md).
+
+
 ## M0 — skeleton, CPU smoke and baseline contracts
 - [x] Independent source tree and dedicated Git history.
 - [x] Standard-library CPU correctness oracles.

@@ -2,7 +2,19 @@
 
 An independent, reproducible systems engineering lab for **LLM inference serving**, **CUDA/Triton kernels**, **GPU profiling**, and **distributed training**. Targeted at AI Infra, LLM serving, and training-framework internship roles.
 
-> **Status (2026-10-26): scaffold and CPU tests.** A kernel benchmark only becomes a measured result after execution on a real NVIDIA GPU. No speedups, multi-GPU scaling, or deployed-serving metrics are claimed before experiments run.
+**Latest verified status — 2026-10-29:** Real Qwen3-8B-AWQ inference serving, real 8B NF4 QLoRA SFT, Qwen3-shaped Triton/Inductor GPU microbenchmarks, and exact Transformer checkpoint resume have been executed and archived. **Research-artifact evidence PASS; production deployment and multi-GPU FSDP remain BLOCKED.** The full CPU regression and machine evidence audit are the go/no-go gate, not just a claim in this README.
+
+| Verified workstream | Actual result | Reproducible evidence |
+|---|---|---|
+| Stage25 serving | 22 real GPU cells ×24=528 requests; engineered shared-prefix caching +92.3% useful output TPS vs OFF; 8→16 max sequences +13.7% TPS | [Stage25 real data/limits](docs/STAGE25_MEASURED_RESULTS.md) |
+| Stage26 real SFT | CC BY-SA Databricks Dolly deterministic 512/96/96 split; five Qwen3-8B NF4 QLoRA experiments; validation selects rank16 BF16; 96-item test assistant CE 2.815→1.637 | [Stage26 measured report](docs/STAGE26_MEASURED_RESULTS.md) |
+| Stage27 GPU kernels | Eight Qwen3-shaped fused residual+RMSNorm and materialized masked Softmax microbenchmarks, correctness vs eager and torch.compile; conditional 1.14–1.18× vs Inductor on 256×4096 | [Stage27 report](docs/STAGE27_MEASURED_RESULTS.md) |
+| Stage28 train framework | Four real Transformer LoRA training paths, all exact adapter/optimizer/loss equality after resumed async checkpoint, all 10 original snapshots SHA-verified | [Stage28 report](docs/STAGE28_MEASURED_RESULTS.md) |
+
+The original Stage13 10-minute cron became unsafe after source changes (`SOURCE_DRIFT`) and was **disabled**, with its prior crontab archived locally. Stage25–28 instead use **finite source-pinned GPU-locked fail-closed scripts** from detached worktrees; they do not silently restart, overlap jobs, or update from mutable GitHub code.
+
+This lab does **not** claim a generically successful client-side admission algorithm (strict Stage23 candidate wins 0/16), end-to-end transformer kernel acceleration, a production-sampled serving workload, a human preference-alignment gain, or genuine multi-GPU FSDP FULL_SHARD. For the audit execute `PYTHONPATH=src:. python3 -m unittest discover -s tests -q` and `PYTHONPATH=src:. python3 analysis/stage25_28_batch_acceptance.py --root . --out results/stage25_28_audit.json` on a machine with Python dependencies.
+
 
 ## Why a new repository?
 
