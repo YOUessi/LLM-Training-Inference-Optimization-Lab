@@ -1,0 +1,4746 @@
+{
+  "status": "measured",
+  "kind": "stage36_google_official_ifeval96_strict_loose_verification",
+  "verified_source_sha256": "589970db909c54574064c087da78faf9bfc885d4fa22edbd71217eb30ec14176",
+  "source_original_sha256": "6a85310ca8ce15eff755aa08a3a4ff931c7e273e7515ebb3c492ea85fd8288f2",
+  "evaluator_upstream_commit": "7e672ccbb111603f237a3daed2f98dccd9300023",
+  "generator_json_sha256": "7211735ba71105a436bae74e9a962fdc3c99507cb6102133630dad4daa27807e",
+  "counts": {
+    "prompts": 96,
+    "instruction_checks": 141,
+    "models": 3
+  },
+  "overall": {
+    "base": {
+      "strict_prompt_accuracy": 0.7395833333333334,
+      "loose_prompt_accuracy": 0.7916666666666666,
+      "strict_instruction_accuracy": 0.8156028368794326,
+      "loose_instruction_accuracy": 0.851063829787234,
+      "hit_output_cap_fraction": 0.3229166666666667,
+      "mean_realized_output_tokens": 241.0625
+    },
+    "stage26_short": {
+      "strict_prompt_accuracy": 0.4479166666666667,
+      "loose_prompt_accuracy": 0.46875,
+      "strict_instruction_accuracy": 0.5957446808510638,
+      "loose_instruction_accuracy": 0.6170212765957447,
+      "hit_output_cap_fraction": 0.375,
+      "mean_realized_output_tokens": 185.05208333333334
+    },
+    "stage31_full": {
+      "strict_prompt_accuracy": 0.5416666666666666,
+      "loose_prompt_accuracy": 0.5729166666666666,
+      "strict_instruction_accuracy": 0.6595744680851063,
+      "loose_instruction_accuracy": 0.6808510638297872,
+      "hit_output_cap_fraction": 0.4375,
+      "mean_realized_output_tokens": 220.01041666666666
+    }
+  },
+  "by_primary_tier": {
+    "change_case": {
+      "base": 0.7272727272727273,
+      "stage26_short": 0.36363636363636365,
+      "stage31_full": 0.6363636363636364
+    },
+    "combination": {
+      "base": 0.6363636363636364,
+      "stage26_short": 0.36363636363636365,
+      "stage31_full": 0.45454545454545453
+    },
+    "detectable_content": {
+      "base": 0.8181818181818182,
+      "stage26_short": 0.5454545454545454,
+      "stage31_full": 0.5454545454545454
+    },
+    "detectable_format": {
+      "base": 0.7272727272727273,
+      "stage26_short": 0.7272727272727273,
+      "stage31_full": 0.7272727272727273
+    },
+    "keywords": {
+      "base": 0.5454545454545454,
+      "stage26_short": 0.18181818181818182,
+      "stage31_full": 0.09090909090909091
+    },
+    "language": {
+      "base": 0.9090909090909091,
+      "stage26_short": 0.6363636363636364,
+      "stage31_full": 0.8181818181818182
+    },
+    "length_constraints": {
+      "base": 0.6,
+      "stage26_short": 0.1,
+      "stage31_full": 0.2
+    },
+    "punctuation": {
+      "base": 1.0,
+      "stage26_short": 0.7,
+      "stage31_full": 0.9
+    },
+    "startend": {
+      "base": 0.7,
+      "stage26_short": 0.4,
+      "stage31_full": 0.5
+    }
+  },
+  "paired_stratified_uncertainty_full_vs": {
+    "base": {
+      "delta_strict_prompt_accuracy": -0.19791666666666674,
+      "stratified_4000bootstrap_95pct_ci": [
+        -0.2916666666666667,
+        -0.10416666666666667
+      ]
+    },
+    "stage26_short": {
+      "delta_strict_prompt_accuracy": 0.09374999999999994,
+      "stratified_4000bootstrap_95pct_ci": [
+        0,
+        0.1875
+      ]
+    }
+  },
+  "per_prompt": [
+    {
+      "key": 3744,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders",
+        "language:response_language"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 240,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 63,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1372,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 112,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 137,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1793,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "length_constraints:number_words"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 204,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false
+          ],
+          "loose_each": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false
+          ],
+          "loose_each": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1902,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 93,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 55,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 109,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2436,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 66,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 54,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 57,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1108,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 45,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1944,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "combination:repeat_prompt"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 294,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 33,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 33,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 240,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 156,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2825,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 104,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 50,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 82,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2230,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "detectable_format:number_highlighted_sections"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 88,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 40,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 64,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1800,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 276,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 94,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2372,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "change_case:english_lowercase"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 141,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 48,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2225,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 246,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 24,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 27,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1219,
+      "instruction_id_list": [
+        "change_case:english_capital",
+        "detectable_content:postscript",
+        "keywords:frequency"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 189,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3191,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 214,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 268,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2169,
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "keywords:existence"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 164,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2685,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 88,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 205,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3414,
+      "instruction_id_list": [
+        "change_case:capital_word_frequency",
+        "change_case:capital_word_frequency"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 187,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3326,
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2853,
+      "instruction_id_list": [
+        "change_case:capital_word_frequency",
+        "detectable_format:title"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 261,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 12,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 84,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2716,
+      "instruction_id_list": [
+        "keywords:frequency"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 180,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 59,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 87,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1537,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 282,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 201,
+      "instruction_id_list": [
+        "keywords:letter_frequency"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2441,
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 167,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 121,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2653,
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "detectable_format:number_bullet_lists"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false
+          ],
+          "loose_each": [
+            false,
+            false
+          ],
+          "output_tokens": 26,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 92,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3724,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "punctuation:no_comma",
+        "startend:end_checker"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 42,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 57,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 45,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1220,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 185,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2724,
+      "instruction_id_list": [
+        "language:response_language",
+        "startend:quotation"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1646,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 7,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3669,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "language:response_language"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3223,
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3615,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 99,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3323,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 12,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 12,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 12,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1107,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "combination:two_responses"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 55,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 9,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 20,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 142,
+      "instruction_id_list": [
+        "startend:quotation",
+        "keywords:frequency",
+        "keywords:existence"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 95,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            false,
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            false,
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3617,
+      "instruction_id_list": [
+        "change_case:english_capital"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 29,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 14,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 14,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3048,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 177,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 269,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1236,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 362,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 159,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 233,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1580,
+      "instruction_id_list": [
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 363,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 117,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3112,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 70,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 72,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2807,
+      "instruction_id_list": [
+        "detectable_format:title"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 254,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 8,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 181,
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1129,
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "combination:repeat_prompt"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 150,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 95,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 218,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders",
+        "change_case:english_lowercase"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 320,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 195,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 199,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3335,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "language:response_language",
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 373,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 297,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3351,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "detectable_format:number_highlighted_sections"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 216,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1389,
+      "instruction_id_list": [
+        "change_case:english_capital",
+        "keywords:letter_frequency"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 322,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3513,
+      "instruction_id_list": [
+        "change_case:capital_word_frequency"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 102,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2404,
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 67,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 29,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 29,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2250,
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 377,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 93,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1893,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 357,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2355,
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 316,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 23,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 23,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2071,
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 135,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 54,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 89,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2069,
+      "instruction_id_list": [
+        "length_constraints:number_words",
+        "length_constraints:number_words"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 117,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 146,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3653,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2324,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 71,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 11,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 35,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1954,
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 164,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1739,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "language:response_language"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 83,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 85,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 87,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2464,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1858,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 331,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2765,
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "detectable_content:number_placeholders"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 303,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 70,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3166,
+      "instruction_id_list": [
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 130,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 80,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 102,
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 91,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 22,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 43,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2801,
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 49,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 46,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 28,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2691,
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1477,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 18,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3327,
+      "instruction_id_list": [
+        "keywords:existence",
+        "keywords:frequency",
+        "keywords:frequency"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false,
+            true
+          ],
+          "loose_each": [
+            true,
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            false,
+            true,
+            true
+          ],
+          "output_tokens": 43,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            false,
+            true,
+            true
+          ],
+          "output_tokens": 43,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2192,
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 34,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 15,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 15,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3371,
+      "instruction_id_list": [
+        "combination:repeat_prompt",
+        "keywords:existence",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 171,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 57,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 95,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1566,
+      "instruction_id_list": [
+        "change_case:english_capital"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3280,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 200,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 322,
+      "instruction_id_list": [
+        "combination:two_responses"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 25,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 24,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 24,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1619,
+      "instruction_id_list": [
+        "detectable_content:postscript",
+        "detectable_content:number_placeholders"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 290,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false
+          ],
+          "loose_each": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2357,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 374,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2704,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "detectable_format:title",
+        "punctuation:no_comma"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 42,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            true
+          ],
+          "loose_each": [
+            false,
+            true,
+            true
+          ],
+          "output_tokens": 8,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true,
+            true
+          ],
+          "output_tokens": 41,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2362,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 100,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 35,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 35,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3682,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "primary_tier": "language",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 82,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 79,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2273,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 284,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 205,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3751,
+      "instruction_id_list": [
+        "detectable_format:constrained_response"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 6,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 6,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 6,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1367,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 23,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3606,
+      "instruction_id_list": [
+        "detectable_format:title"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 5,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 61,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 374,
+      "instruction_id_list": [
+        "combination:repeat_prompt",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 135,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 50,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 89,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2628,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "primary_tier": "detectable_content",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 206,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 51,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1436,
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 61,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 98,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1609,
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word",
+        "startend:quotation"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 325,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 5,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            false
+          ],
+          "loose_each": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2239,
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 10,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 11,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 10,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1040,
+      "instruction_id_list": [
+        "change_case:capital_word_frequency",
+        "change_case:capital_word_frequency",
+        "startend:quotation"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            false
+          ],
+          "loose_each": [
+            false,
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true,
+            false
+          ],
+          "loose_each": [
+            false,
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 2577,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "combination",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 122,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 30,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 189,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2590,
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "primary_tier": "length_constraints",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": true,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 286,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 257,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 2209,
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 65,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 131,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1233,
+      "instruction_id_list": [
+        "startend:end_checker",
+        "keywords:frequency"
+      ],
+      "primary_tier": "startend",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 159,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 160,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 1361,
+      "instruction_id_list": [
+        "change_case:english_lowercase"
+      ],
+      "primary_tier": "change_case",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 257,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 3084,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "startend:end_checker"
+      ],
+      "primary_tier": "punctuation",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 22,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            true,
+            false
+          ],
+          "loose_each": [
+            true,
+            false
+          ],
+          "output_tokens": 7,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 17,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 167,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "primary_tier": "detectable_format",
+      "metrics": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 5,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 25,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": 3091,
+      "instruction_id_list": [
+        "keywords:frequency"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true
+          ],
+          "loose_each": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "stage31_full": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false
+          ],
+          "loose_each": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": 1402,
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "keywords:forbidden_words"
+      ],
+      "primary_tier": "keywords",
+      "metrics": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 279,
+          "hit_cap": false
+        },
+        "stage26_short": {
+          "strict": false,
+          "loose": false,
+          "strict_each": [
+            false,
+            true
+          ],
+          "loose_each": [
+            false,
+            true
+          ],
+          "output_tokens": 159,
+          "hit_cap": false
+        },
+        "stage31_full": {
+          "strict": true,
+          "loose": true,
+          "strict_each": [
+            true,
+            true
+          ],
+          "loose_each": [
+            true,
+            true
+          ],
+          "output_tokens": 98,
+          "hit_cap": false
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Only deterministic preregistered feasible subset of 541; cannot report as official IFEval full score",
+    "Official Google constraint checkers measure compliance, not semantic factuality",
+    "Stratified CIs conditional on a single public prompt sample and single trained checkpoints",
+    "Output cap384 creates some impossible long answers; cap-hit explicitly reported",
+    "NLTK Punkt Tab official data installed in trusted local dir, no evaluation instructions changed"
+  ]
+}
