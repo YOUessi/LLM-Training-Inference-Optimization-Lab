@@ -100,6 +100,7 @@ def main(argv=None):
  base=AutoModelForCausalLM.from_pretrained(MODEL,local_files_only=True,device_map={'':0},dtype=dtype,
       quantization_config=quant,attn_implementation='sdpa')
  base.config.use_cache=False
+ base_test_baseline=evaluate(base,test,tokenizer.eos_token_id,limit=96) if a.action=='test' else None
  if a.action=='train':
   base=prepare_model_for_kbit_training(base,use_gradient_checkpointing=a.grad_checkpoint,
       gradient_checkpointing_kwargs={'use_reentrant':False} if a.grad_checkpoint else None)
@@ -112,7 +113,7 @@ def main(argv=None):
  trainable=sum(p.numel() for p in model.parameters() if p.requires_grad)
  model.train() if a.action=='train' else model.eval()
  torch.cuda.reset_peak_memory_stats()
- before=evaluate(model,val,tokenizer.eos_token_id,limit=48)
+ before=evaluate(model,val,tokenizer.eos_token_id,limit=96)
  result={'status':'measured','kind':'stage26_qwen3_8b_nf4_real_dolly_sft',
     'action':a.action,'dataset_sha256':manifest['source_sha256'],
     'splits':{k:v['sha256'] for k,v in manifest['splits'].items()},
@@ -147,7 +148,7 @@ def main(argv=None):
    if step>=3:
     times.append(dt);loss_history.append(statistics.mean(mb_losses))
    if step%8==0:print('SFT_STEP',step+1,'loss',round(statistics.mean(mb_losses),4),'time_s',round(dt,4),flush=True)
-  after=evaluate(model,val,tokenizer.eos_token_id,limit=48)
+  after=evaluate(model,val,tokenizer.eos_token_id,limit=96)
   model.save_pretrained(a.adapter,safe_serialization=True)
   result.update(validation_after=after,training={'warmup_steps':3,'measured_steps':len(times),
       'mean_train_loss':statistics.mean(loss_history),'final_train_loss':loss_history[-1],
@@ -157,7 +158,7 @@ def main(argv=None):
       adapter_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in a.adapter.iterdir() if p.is_file()})
  else:
   final=evaluate(model,test,tokenizer.eos_token_id,limit=96)
-  result.update(test_metrics=final,validation_after=before,
+  result.update(test_metrics=final,base_test_metrics=base_test_baseline,validation_after=before,
                 generated_samples=sample_generate(model,tokenizer,test,n=12),
                 final_report_note='Frozen test evaluated only after selecting adapter from validation.')
  a.out.parent.mkdir(parents=True,exist_ok=True)
