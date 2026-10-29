@@ -61,6 +61,7 @@ def main(argv=None):
  p.add_argument('--rate',type=float,choices=RATES,default=8.)
  p.add_argument('--cache',choices=('on','off'),required=True)
  p.add_argument('--model',default='qwen3-8b-awq-local')
+ p.add_argument('--max-output',type=int,choices=(128,384),default=128)
  p.add_argument('--input',type=Path,default=Path('data'))
  p.add_argument('--private',type=Path,required=True)
  p.add_argument('--output',type=Path,required=True)
@@ -77,7 +78,7 @@ def main(argv=None):
    msg=([{'role':'system','content':system}] if r['prefix_state']=='hot' else [])+[
      {'role':'user','content':r['source_prompt']}]
    value=len(tokenizer.apply_chat_template(msg,tokenize=True,add_generation_prompt=True,enable_thinking=False))
-   if not (4<=value<=2048-128):raise ValueError('out of context '+r['request_id'])
+   if not (4<=value<=2048-a.max_output):raise ValueError('out of context '+r['request_id'])
    target[r['request_id']]=value
   endpoint=_endpoint('http://127.0.0.1:8026')
   warm=_request(-1,endpoint=endpoint,model=a.model,prompt='What is five plus three?',
@@ -90,7 +91,7 @@ def main(argv=None):
   def task(i,row,due):
    entered=time.perf_counter()
    x=_request(i,endpoint=endpoint,model=a.model,prompt=row['source_prompt'],
-     max_tokens=128,timeout=180.,seed=a.seed,disable_thinking=True,raw_prompt=True,
+     max_tokens=a.max_output,timeout=240.,seed=a.seed,disable_thinking=True,raw_prompt=True,
      system_prompt=system if row['prefix_state']=='hot' else None)
    x.update({'index':i,'request_id':row['request_id'],'prompt_sha256':row['source_text_sha256'],
       'language':row['lang'],'output_mode':'human_original','prefix_state':row['prefix_state'],
@@ -118,19 +119,20 @@ def main(argv=None):
    subset=[x for x in recorded if x['language']==lang]
    by_lang[lang]={'offered':len(subset),'completed':sum(x['status']=='ok' for x in subset),
      'mean_completion_tokens':statistics.mean(x['completion_tokens'] for x in subset),
-     'at_output_cap_128_fraction':sum(x['completion_tokens']>=128 for x in subset)/len(subset),
+     'at_output_cap_fraction':sum(x['completion_tokens']>=a.max_output for x in subset)/len(subset),
      'slo500':sum(x['ttft_from_due_ms']<=500 for x in subset)/len(subset)}
   payload={'status':'measured' if valid else 'invalid_or_blocked',
-    'kind':'stage35_actual_OASST1_human_prompts_multilingual_prefix_cache_onoff',
+    'kind':('stage37_longanswer_real_OASST1_multilingual_output384' if a.max_output==384 else
+      'stage35_actual_OASST1_human_prompts_multilingual_prefix_cache_onoff'),
     'environment':environment(),
     'config':{'mix':a.mix,'seed':a.seed,'rate_per_second':a.rate,'cache':a.cache,
       'hot_count':MIXES[a.mix],'source_sha256':manifest['source_sha256'],
       'selected_jsonl_sha256':manifest['private_selected_jsonl_sha256'],
       'system_prompt_sha256':manifest['system_prompt_sha256'],
-      'output_cap':128,'scheduled_offsets_s':offsets,
+      'output_cap':a.max_output,'scheduled_offsets_s':offsets,
       'raw_user_prompts_committed':False,'source_license':'OpenAssistant Apache-2.0'},
     'summary':summary,'by_language':by_lang,
-    'completion_cap_fraction':sum(r['completion_tokens']>=128 for r in recorded if r['status']=='ok')/max(1,summary['completed']),
+    'completion_cap_fraction':sum(r['completion_tokens']>=a.max_output for r in recorded if r['status']=='ok')/max(1,summary['completed']),
     'prompt_usage_valid':prompt_usage,
     'kv_cache_monitor':{'samples':len(kv),'max_used_fraction':max((r['kv_usage'] for r in kv),default=None)},
     'server_queue_monitor':{'samples':len(queues),'max_waiting':max((r['waiting'] for r in queues),default=None),
@@ -138,7 +140,7 @@ def main(argv=None):
     'requests':recorded,
     'limitations':['Public human user original prompts reviewed/filtered for PII and toxicity, but sample of 32 each en/es/zh not natural traffic proportions',
        'Hot system message is artificially assigned to 50/100% of real user messages, not naturally sampled app sessions',
-       'Output cap128 truncates some answers and changes throughput token demand','Open-loop 96 offers at fixed-window rate, not production-hour load',
+       'Finite output cap can truncate answers and changes throughput token demand','Open-loop 96 offers at fixed-window rate, not production-hour load',
        'Original raw human prompt content remains only on Tang and is not committed to GitHub']}
   write_json_atomic(a.output,payload)
   print('STAGE35',a.mix,a.seed,'rate',a.rate,'cache',a.cache,'status',payload['status'],
