@@ -8,7 +8,7 @@ def main():
  a=p.parse_args()
  x=json.loads((a.source/'official_verifier_scores.json').read_text())
  g=json.loads((a.source/'generations.json').read_text())
- if x['status']!='measured' or len(x['per_prompt'])!=len(g['cases'])!=96:raise ValueError('incomplete official IFEval evaluation')
+ if x['status']!='measured' or not (len(x['per_prompt'])==len(g['cases'])==96):raise ValueError('incomplete official IFEval evaluation')
  if x['generator_json_sha256']!=hashlib.sha256((a.source/'generations.json').read_bytes()).hexdigest():
   raise ValueError('official scorer not bound to these model outputs')
  a.out.mkdir(parents=True,exist_ok=True)
