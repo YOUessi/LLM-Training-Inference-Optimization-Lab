@@ -14,7 +14,7 @@ out=results/stage30_frozen_mixed_8b
 mkdir -p "$out"; echo "$sha" > "$out/source_sha.txt"
 export PYTHONPATH="$PWD/src" HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 NO_PROXY=localhost,127.0.0.1 no_proxy=localhost,127.0.0.1 VLLM_MAX_NUM_SEQS=16 GPU_MEMORY_UTILIZATION=.82
 pid=''
-cleanup(){rc=$?;trap - EXIT INT TERM;if [[ -n "$pid" ]] && kill -0 "$pid" 2>/dev/null;then kill -TERM "$pid";wait "$pid" || :; fi; echo STAGE30_CLEANUP:$rc; exit "$rc"; }
+cleanup(){ rc=$?;trap - EXIT INT TERM;if [[ -n "$pid" ]] && kill -0 "$pid" 2>/dev/null;then kill -TERM "$pid";wait "$pid" || :; fi; echo STAGE30_CLEANUP:$rc; exit "$rc"; }
 trap cleanup EXIT INT TERM
 stop_server(){
  if [[ -n "$pid" ]] && kill -0 "$pid" 2>/dev/null;then kill -TERM "$pid";wait "$pid"||:; fi
