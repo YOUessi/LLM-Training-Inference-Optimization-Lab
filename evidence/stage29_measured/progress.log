@@ -1,0 +1,33 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:07,  1.79s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.95s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.94s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.79s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.25s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.52s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STAGE29_GENERATED 12 / 96
+STAGE29_GENERATED 24 / 96
+STAGE29_GENERATED 36 / 96
+STAGE29_GENERATED 48 / 96
+STAGE29_GENERATED 60 / 96
+STAGE29_GENERATED 72 / 96
+STAGE29_GENERATED 84 / 96
+STAGE29_GENERATED 96 / 96
+STAGE29_REAL_GUARDED_TEST {
+  "base": {
+    "token_f1": 0.32098281784168164,
+    "rouge_l_f1": 0.23985127370679474,
+    "normalized_exact_match": 0.020833333333333332,
+    "prediction_words": 69.60416666666667,
+    "generation_s": 3.1617271676635332
+  },
+  "tuned": {
+    "token_f1": 0.43740985085821416,
+    "rouge_l_f1": 0.36728661003005436,
+    "normalized_exact_match": 0.07291666666666667,
+    "prediction_words": 28.40625,
+    "generation_s": 1.408205523878981
+  },
+  "paired_diff": {
+    "token_f1": 0.11642703301653251,
+    "rouge_l_f1": 0.12743533632325962,
+    "normalized_exact_match": 0.05208333333333334
+  },
+  "tuned_better_rouge_cases": 66,
+  "base_better_rouge_cases": 25
+}
