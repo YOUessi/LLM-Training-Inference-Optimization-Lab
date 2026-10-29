@@ -1,0 +1,65 @@
+{
+  "schema": "stage30-long-window-cold-hot-v1",
+  "request_count": 96,
+  "request_jsonl_sha256": "7264c58cfc5f96181cbe14d31d69b132ea350ab3c46c8a52bca8b3ca35c56933",
+  "source": "locally installed CPython PSF-licensed module/member documentation, 24 modules x4 question variants",
+  "attribution": "Python Software Foundation, CPython documentation; PSF License 2",
+  "license_url": "https://docs.python.org/3/license.html",
+  "generation_instructions": {
+    "label": "Identify the primary Python standard library module named in the source. Reply with only its name.",
+    "detailed": "Explain this module with at least six substantial technical points, concrete examples, common edge cases, and limitations. Produce a thorough 180 to 220 word answer; never answer in a short sentence."
+  },
+  "source_modules": [
+    "ast",
+    "asyncio",
+    "bisect",
+    "heapq",
+    "difflib",
+    "base64",
+    "binascii",
+    "uuid",
+    "secrets",
+    "os",
+    "sys",
+    "platform",
+    "glob",
+    "fnmatch",
+    "enum",
+    "dataclasses",
+    "textwrap",
+    "re",
+    "math",
+    "calendar",
+    "gzip",
+    "bz2",
+    "lzma",
+    "zoneinfo"
+  ],
+  "context_targets": [
+    360,
+    680,
+    1010,
+    1380
+  ],
+  "shared_prefix_sha256": "25f51c1f4fbed14da97908e8db4a059e3e815bf5e93fb24afc105a474c31af76",
+  "planned_mixes": {
+    "cold0": 0,
+    "hot50": 48,
+    "hot100": 96
+  },
+  "planned_seeds": [
+    3011,
+    3029,
+    3041
+  ],
+  "planned_rate_per_second": 8.0,
+  "mode_counts": {
+    "label": 48,
+    "detailed": 48
+  },
+  "limits": [
+    "Deterministic engineered cache-hit regime, not naturally sampled user queries",
+    "The source domain is related to prior Stage25 stdlib prompts though request identities are new",
+    "Cold form means nonshared prompt prefix, not completely empty GPU/cache: server freshly restarted for every arm"
+  ]
+}
