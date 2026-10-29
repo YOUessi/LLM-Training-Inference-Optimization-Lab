@@ -1,0 +1,501 @@
+{
+  "status": "pass",
+  "kind": "stage35_real_OASST1_2304_human_multilingual_prefix_study",
+  "cases": 24,
+  "offered": 2304,
+  "completed": 2304,
+  "source_sha256": "621ccd86a6ef320ca4e24c137121bd4b39bcc7a0df839f0897fcc965ef2076ed",
+  "human_prompt_selected_sha256": "7013ee5b5ecba9c4954e2b6d7a29b26013a042614ac2d8d0fd6399ae2cab7fc0",
+  "pinned_source_sha": "5a9d0e89118266fc81b294c60076e042e4436340",
+  "paired_rows": [
+    {
+      "seed": 3511,
+      "mix": "cold0",
+      "rate": 8,
+      "off_tps": 911.0936909825149,
+      "on_tps": 910.7812291678194,
+      "relative_tps_gain": -0.00034295245130988583,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": -1.226326305186376,
+      "off_cap_fraction": 0.96875,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 3.0,
+      "on_waiting_peak": 4.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3511,
+      "mix": "hot50",
+      "rate": 8,
+      "off_tps": 851.9950244359517,
+      "on_tps": 908.3446953947156,
+      "relative_tps_gain": 0.06613849769377378,
+      "delta_slo500": 0.5520833333333333,
+      "delta_p95_ttft_ms": -1169.3428978178417,
+      "off_cap_fraction": 0.96875,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 12.0,
+      "on_waiting_peak": 4.0,
+      "per_language_delta_slo500": {
+        "en": 0.59375,
+        "es": 0.5,
+        "zh": 0.5625
+      }
+    },
+    {
+      "seed": 3511,
+      "mix": "hot50",
+      "rate": 4,
+      "off_tps": 480.1996599864157,
+      "on_tps": 480.1729383791798,
+      "relative_tps_gain": -5.564686829784282e-05,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": -68.22964185266756,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 0.0,
+      "on_waiting_peak": 0.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3511,
+      "mix": "hot100",
+      "rate": 8,
+      "off_tps": 741.7160758499045,
+      "on_tps": 903.3905874946861,
+      "relative_tps_gain": 0.21797358437933934,
+      "delta_slo500": 0.7291666666666667,
+      "delta_p95_ttft_ms": -2978.3719401457347,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 22.0,
+      "on_waiting_peak": 5.0,
+      "per_language_delta_slo500": {
+        "en": 0.75,
+        "es": 0.71875,
+        "zh": 0.71875
+      }
+    },
+    {
+      "seed": 3527,
+      "mix": "cold0",
+      "rate": 8,
+      "off_tps": 908.7275501693031,
+      "on_tps": 908.4658993435354,
+      "relative_tps_gain": -0.00028793099286905655,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": 5.430420133052394,
+      "off_cap_fraction": 0.96875,
+      "on_cap_fraction": 0.96875,
+      "off_waiting_peak": 7.0,
+      "on_waiting_peak": 7.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3527,
+      "mix": "hot50",
+      "rate": 8,
+      "off_tps": 891.1174802399408,
+      "on_tps": 902.8166278211397,
+      "relative_tps_gain": 0.013128625395215865,
+      "delta_slo500": 0.32291666666666663,
+      "delta_p95_ttft_ms": -518.7786361493636,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 12.0,
+      "on_waiting_peak": 7.0,
+      "per_language_delta_slo500": {
+        "en": 0.34375,
+        "es": 0.375,
+        "zh": 0.25
+      }
+    },
+    {
+      "seed": 3527,
+      "mix": "hot50",
+      "rate": 4,
+      "off_tps": 477.9303520825147,
+      "on_tps": 479.01991073580643,
+      "relative_tps_gain": 0.002279743583022409,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": -79.19903777656145,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 0.0,
+      "on_waiting_peak": 0.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3527,
+      "mix": "hot100",
+      "rate": 8,
+      "off_tps": 783.6972226654767,
+      "on_tps": 901.0437484994197,
+      "relative_tps_gain": 0.1497345179236813,
+      "delta_slo500": 0.75,
+      "delta_p95_ttft_ms": -1923.665635215002,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 16.0,
+      "on_waiting_peak": 8.0,
+      "per_language_delta_slo500": {
+        "en": 0.75,
+        "es": 0.75,
+        "zh": 0.75
+      }
+    },
+    {
+      "seed": 3559,
+      "mix": "cold0",
+      "rate": 8,
+      "off_tps": 903.5516797107072,
+      "on_tps": 903.4995203452363,
+      "relative_tps_gain": -5.772704167572584e-05,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": -2.516904132789932,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 5.0,
+      "on_waiting_peak": 5.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3559,
+      "mix": "hot50",
+      "rate": 8,
+      "off_tps": 869.5608603040617,
+      "on_tps": 898.4332084091521,
+      "relative_tps_gain": 0.033203366691314296,
+      "delta_slo500": 0.30208333333333337,
+      "delta_p95_ttft_ms": -644.6418474661186,
+      "off_cap_fraction": 0.96875,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 10.0,
+      "on_waiting_peak": 5.0,
+      "per_language_delta_slo500": {
+        "en": 0.4375,
+        "es": 0.21875,
+        "zh": 0.25
+      }
+    },
+    {
+      "seed": 3559,
+      "mix": "hot50",
+      "rate": 4,
+      "off_tps": 477.3466533259947,
+      "on_tps": 478.5466103866291,
+      "relative_tps_gain": 0.002513806375876948,
+      "delta_slo500": 0.0,
+      "delta_p95_ttft_ms": -85.73362226889003,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 0.0,
+      "on_waiting_peak": 0.0,
+      "per_language_delta_slo500": {
+        "en": 0.0,
+        "es": 0.0,
+        "zh": 0.0
+      }
+    },
+    {
+      "seed": 3559,
+      "mix": "hot100",
+      "rate": 8,
+      "off_tps": 748.3312256811074,
+      "on_tps": 894.7522327031186,
+      "relative_tps_gain": 0.19566336669800655,
+      "delta_slo500": 0.6979166666666667,
+      "delta_p95_ttft_ms": -1861.4436027564807,
+      "off_cap_fraction": 0.9583333333333334,
+      "on_cap_fraction": 0.9583333333333334,
+      "off_waiting_peak": 16.0,
+      "on_waiting_peak": 6.0,
+      "per_language_delta_slo500": {
+        "en": 0.8125,
+        "es": 0.65625,
+        "zh": 0.625
+      }
+    }
+  ],
+  "per_condition": {
+    "cold0_rate8": {
+      "relative_tps_gain": {
+        "mean": -0.00022953682861822275,
+        "per_seed": [
+          -0.00034295245130988583,
+          -0.00028793099286905655,
+          -5.772704167572584e-05
+        ],
+        "paired_seed_bootstrap95": [
+          -0.00034295245130988583,
+          -5.772704167572584e-05
+        ]
+      },
+      "delta_slo500": {
+        "mean": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paired_seed_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "delta_p95_ttft_ms": {
+        "mean": 0.5623965650253618,
+        "per_seed": [
+          -1.226326305186376,
+          5.430420133052394,
+          -2.516904132789932
+        ],
+        "paired_seed_bootstrap95": [
+          -2.516904132789932,
+          5.430420133052394
+        ]
+      },
+      "off_cap_fraction": {
+        "mean": 0.9652777777777778,
+        "per_seed": [
+          0.96875,
+          0.96875,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.96875
+        ]
+      },
+      "on_cap_fraction": {
+        "mean": 0.9618055555555556,
+        "per_seed": [
+          0.9583333333333334,
+          0.96875,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.96875
+        ]
+      },
+      "positive_throughput_seeds": 0
+    },
+    "hot50_rate8": {
+      "relative_tps_gain": {
+        "mean": 0.037490163260101315,
+        "per_seed": [
+          0.06613849769377378,
+          0.013128625395215865,
+          0.033203366691314296
+        ],
+        "paired_seed_bootstrap95": [
+          0.013128625395215865,
+          0.06613849769377378
+        ]
+      },
+      "delta_slo500": {
+        "mean": 0.3923611111111111,
+        "per_seed": [
+          0.5520833333333333,
+          0.32291666666666663,
+          0.30208333333333337
+        ],
+        "paired_seed_bootstrap95": [
+          0.30208333333333337,
+          0.5520833333333333
+        ]
+      },
+      "delta_p95_ttft_ms": {
+        "mean": -777.587793811108,
+        "per_seed": [
+          -1169.3428978178417,
+          -518.7786361493636,
+          -644.6418474661186
+        ],
+        "paired_seed_bootstrap95": [
+          -1169.3428978178417,
+          -518.7786361493636
+        ]
+      },
+      "off_cap_fraction": {
+        "mean": 0.9652777777777778,
+        "per_seed": [
+          0.96875,
+          0.9583333333333334,
+          0.96875
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.96875
+        ]
+      },
+      "on_cap_fraction": {
+        "mean": 0.9583333333333334,
+        "per_seed": [
+          0.9583333333333334,
+          0.9583333333333334,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.9583333333333334
+        ]
+      },
+      "positive_throughput_seeds": 3
+    },
+    "hot50_rate4": {
+      "relative_tps_gain": {
+        "mean": 0.0015793010302005046,
+        "per_seed": [
+          -5.564686829784282e-05,
+          0.002279743583022409,
+          0.002513806375876948
+        ],
+        "paired_seed_bootstrap95": [
+          -5.564686829784282e-05,
+          0.002513806375876948
+        ]
+      },
+      "delta_slo500": {
+        "mean": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "paired_seed_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "delta_p95_ttft_ms": {
+        "mean": -77.72076729937301,
+        "per_seed": [
+          -68.22964185266756,
+          -79.19903777656145,
+          -85.73362226889003
+        ],
+        "paired_seed_bootstrap95": [
+          -85.73362226889003,
+          -68.22964185266756
+        ]
+      },
+      "off_cap_fraction": {
+        "mean": 0.9583333333333334,
+        "per_seed": [
+          0.9583333333333334,
+          0.9583333333333334,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.9583333333333334
+        ]
+      },
+      "on_cap_fraction": {
+        "mean": 0.9583333333333334,
+        "per_seed": [
+          0.9583333333333334,
+          0.9583333333333334,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.9583333333333334
+        ]
+      },
+      "positive_throughput_seeds": 2
+    },
+    "hot100_rate8": {
+      "relative_tps_gain": {
+        "mean": 0.18779048966700906,
+        "per_seed": [
+          0.21797358437933934,
+          0.1497345179236813,
+          0.19566336669800655
+        ],
+        "paired_seed_bootstrap95": [
+          0.1497345179236813,
+          0.21797358437933934
+        ]
+      },
+      "delta_slo500": {
+        "mean": 0.7256944444444445,
+        "per_seed": [
+          0.7291666666666667,
+          0.75,
+          0.6979166666666667
+        ],
+        "paired_seed_bootstrap95": [
+          0.6979166666666667,
+          0.75
+        ]
+      },
+      "delta_p95_ttft_ms": {
+        "mean": -2254.4937260390725,
+        "per_seed": [
+          -2978.3719401457347,
+          -1923.665635215002,
+          -1861.4436027564807
+        ],
+        "paired_seed_bootstrap95": [
+          -2978.3719401457347,
+          -1861.4436027564807
+        ]
+      },
+      "off_cap_fraction": {
+        "mean": 0.9583333333333334,
+        "per_seed": [
+          0.9583333333333334,
+          0.9583333333333334,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.9583333333333334
+        ]
+      },
+      "on_cap_fraction": {
+        "mean": 0.9583333333333334,
+        "per_seed": [
+          0.9583333333333334,
+          0.9583333333333334,
+          0.9583333333333334
+        ],
+        "paired_seed_bootstrap95": [
+          0.9583333333333334,
+          0.9583333333333334
+        ]
+      },
+      "positive_throughput_seeds": 3
+    }
+  },
+  "limitations": [
+    "Human-authored public prompts, but language balance manually stratified and app shared system prefix engineered",
+    "128-token generated-output cap reached in high fraction of prompts, so not a complete-response quality assessment",
+    "Only 3 arrival seeds, short fixed 96-offer windows, seed bootstrap exploratory",
+    "Raw human text withheld from repo for privacy; source hash/reconstruction script available",
+    "No actual Prefix Cache hit count recorded and no end-to-end production SLA claim"
+  ]
+}

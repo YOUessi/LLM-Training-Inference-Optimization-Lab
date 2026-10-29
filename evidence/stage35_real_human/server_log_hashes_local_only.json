@@ -1,0 +1,102 @@
+{
+  "source": "/home/you/projects/llmopt_stage35_frozen/results/stage35_frozen_real_user_batch",
+  "server_logs": {
+    "server_seed3511_cold0_rate8_off.log": {
+      "sha256": "078cadc43026a4353a3716615f392f4c4aa2f2033b1fff37e25aae1bd588c759",
+      "bytes": 31784
+    },
+    "server_seed3511_cold0_rate8_on.log": {
+      "sha256": "ecf0f0ac36313bc53bff3a3a79c0ca813de0af31c839e1b80bbae90b6a00398d",
+      "bytes": 31783
+    },
+    "server_seed3511_hot100_rate8_off.log": {
+      "sha256": "40ac3839904b7cc93a14c7ee2c7fc0630005cc04268dcc36f19fac0a9fa56e54",
+      "bytes": 33429
+    },
+    "server_seed3511_hot100_rate8_on.log": {
+      "sha256": "b1022cb03799e66f57a6e16f8e5ccd934a358ec2f1cfccc466c7098c03bf79fc",
+      "bytes": 31866
+    },
+    "server_seed3511_hot50_rate4_off.log": {
+      "sha256": "7a9af59444284f950afddbd83c7866858014175b1d572a7c15595aa14a04e7ef",
+      "bytes": 38423
+    },
+    "server_seed3511_hot50_rate4_on.log": {
+      "sha256": "feb71505cb6e06c88af5ec63925718cddd488e2f22709a0c5a3b64ef43e99e09",
+      "bytes": 38422
+    },
+    "server_seed3511_hot50_rate8_off.log": {
+      "sha256": "66c07a3cc845278b737616505a13fc3b4c8796814de6cdc0b65e4b22afeac981",
+      "bytes": 32278
+    },
+    "server_seed3511_hot50_rate8_on.log": {
+      "sha256": "21185df915b93696e0fd99999e5065acd5f499f01c17d51069672ee9410aa570",
+      "bytes": 31784
+    },
+    "server_seed3527_cold0_rate8_off.log": {
+      "sha256": "e8bd48ced098d1539ffec5f53f6b933072d318e7706663e68219447a2c5d2b06",
+      "bytes": 31867
+    },
+    "server_seed3527_cold0_rate8_on.log": {
+      "sha256": "96e827f3c0d6a81c365b5df20e6646617494d1e0364f0ee9c56f60bfecc6c9c3",
+      "bytes": 31782
+    },
+    "server_seed3527_hot100_rate8_off.log": {
+      "sha256": "ad86ebf23512a741bb8767ef443804a2658467c66fbddf7a59ba8a05dc6bdf0d",
+      "bytes": 33018
+    },
+    "server_seed3527_hot100_rate8_on.log": {
+      "sha256": "eca3fad8bbc8834a3c73c92103eaa73d7bd1d04b75ba371dac007924775e9494",
+      "bytes": 31866
+    },
+    "server_seed3527_hot50_rate4_off.log": {
+      "sha256": "9155905624c8e2ad081588b6753f0af49a411ba46b864faf1e3efac00e278f52",
+      "bytes": 38505
+    },
+    "server_seed3527_hot50_rate4_on.log": {
+      "sha256": "18904075b8ddaafa044e6c2fcc7afb17fa97ee6054abec145959e528afef9caf",
+      "bytes": 38422
+    },
+    "server_seed3527_hot50_rate8_off.log": {
+      "sha256": "adf9a41f3edb816b999726d381cd2051d5b8da0eb198e08a684e87594fb77e72",
+      "bytes": 31950
+    },
+    "server_seed3527_hot50_rate8_on.log": {
+      "sha256": "7738a643f85a234c4076593976bebf5862f9dcf9e7ca0412b2948865a03a5605",
+      "bytes": 31866
+    },
+    "server_seed3559_cold0_rate8_off.log": {
+      "sha256": "d15c8be3865fd5b4149d76c02d8d50ab78a5556b1a810bc7603b48f7391e2312",
+      "bytes": 31868
+    },
+    "server_seed3559_cold0_rate8_on.log": {
+      "sha256": "9f7564f3387abc5001678227eba9f298670de87fe107538e52e41ecc75adc198",
+      "bytes": 31865
+    },
+    "server_seed3559_hot100_rate8_off.log": {
+      "sha256": "edcab9cace97e045d0730c5c2bbfdfcc703961e93b994a270d8533dc95ef23a9",
+      "bytes": 33347
+    },
+    "server_seed3559_hot100_rate8_on.log": {
+      "sha256": "f003929011e2d3801d8729d01950b23846305db2ec82042bac3eb0a92f743cc1",
+      "bytes": 31948
+    },
+    "server_seed3559_hot50_rate4_off.log": {
+      "sha256": "78a98d8019c71c5e78b0c9e6d5de7fe8567dc00e15bb13866af6c56e1978150e",
+      "bytes": 38423
+    },
+    "server_seed3559_hot50_rate4_on.log": {
+      "sha256": "7371ad48932737e2916c0bb802c800b2335978b3e7addd8a58fa1ea635b49f57",
+      "bytes": 38422
+    },
+    "server_seed3559_hot50_rate8_off.log": {
+      "sha256": "96b8c9c268686f7217c80b16806d09491ad7f60fe5221ddbefe0a57757b28b26",
+      "bytes": 32114
+    },
+    "server_seed3559_hot50_rate8_on.log": {
+      "sha256": "63c8870b3bb9e0ca20115867c7fe5ed5374e5736997dee106fade923e920cbd9",
+      "bytes": 31866
+    }
+  },
+  "notes": "Server logs stay local; prompt source text never committed."
+}
