@@ -5,3 +5,7 @@
 **Metrics:** all-offered TTFT<=250/500/1000/2000ms, p95/p99 arrival-to-first-token, real output tokens/s, client executor wait, server running/waiting peak, sampled KV occupancy; per-prefix hot/cold breakdown. Causal interpretation limited: these engineered shared-header cold/hot conditions are **not fully cold-cache user traffic**, the GPU is warmed, and the deployed model may already know stdlib docs. No direct cache hit ratio claim without counters. Report all seeds and bootstrap CI over seed-level paired differences (n=3, very wide / exploratory). Do not use per-request bootstrap as though all requests were independent experiments; do not claim general production performance.
 
 All runs under a pinned detached Git worktree and shared GPU flock (port 8026, other GPU process detection, output no-overwrite, 300s bounded request time, cleanup on exit); fail closed and archive invalid attempts separately before revising protocol.
+
+## Frozen-v1 failure / revised protocol
+
+Source `0ac8ff6` script did not execute a GPU request: Bash parser rejected `|| {echo` without a space. Original log archived under `evidence/stage30_invalid_v1`, with no experimental result to promote. The revised frozen runner corrects shell syntax, runs a `bash -n` gate before any GPU job, and uses a distinct new source SHA for the entire study. No numerical comparison is drawn from the failed version.
