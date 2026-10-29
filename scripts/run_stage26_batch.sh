@@ -53,7 +53,15 @@ import json,sys
 print(json.load(open(sys.argv[1]+'/selection.json'))['selected'])
 PY
 )
-"$python" -m llm_opt_lab.training.stage26_real_sft --action test --steps 96 --input data --adapter "$out/${selected}_adapter" --out "$out/selected_test.json" > "$out/test.log" 2>&1 || { tail -30 "$out/test.log";exit 5; }
+read -r selected_rank selected_precision selected_micro selected_accum selected_gc < <("$python" - "$out" "$selected" <<'PYSELECT'
+import json,sys
+x=json.load(open(sys.argv[1]+'/'+sys.argv[2]+'.json'))['config']
+print(x['rank'],x['precision'],x['micro_batch'],x['accum'],str(int(x['grad_checkpoint'])))
+PYSELECT
+)
+selected_args=(--action test --rank "$selected_rank" --micro-batch "$selected_micro" --accum "$selected_accum" --precision "$selected_precision" --steps 96 --input data --adapter "$out/${selected}_adapter" --out "$out/selected_test.json")
+if [[ "$selected_gc" == 1 ]];then selected_args+=(--grad-checkpoint);fi
+"$python" -m llm_opt_lab.training.stage26_real_sft "${selected_args[@]}" > "$out/test.log" 2>&1 || { tail -30 "$out/test.log";exit 5; }
 "$python" - "$out" <<'PY'
 import json,pathlib,sys,hashlib
 root=pathlib.Path(sys.argv[1]);files=sorted(root.glob('*.json'))
