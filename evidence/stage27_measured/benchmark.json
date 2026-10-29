@@ -1,0 +1,357 @@
+{
+  "status": "measured",
+  "kind": "stage27_qwen3_transformer_operator_optimization",
+  "reference_model_config": {
+    "hidden_size": 4096,
+    "attention_heads": 32,
+    "layers": 36,
+    "rms_norm_eps": 1e-06
+  },
+  "timing": {
+    "warmup_ms": 90,
+    "rep_ms": 200,
+    "repeats": 3
+  },
+  "cases": [
+    {
+      "name": "fused_rms_rows64_float16",
+      "workload": "Qwen3 hidden=4096 rows=64 dtype=torch.float16",
+      "numerical_max_abs_error": 0.0,
+      "atol": 0.004,
+      "rtol": 0.004,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.044783998280763626,
+          "repeats_ms": [
+            0.04710400104522705,
+            0.044783998280763626,
+            0.04403200000524521
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.008191999979317188,
+          "repeats_ms": [
+            0.008191999979317188,
+            0.008191999979317188,
+            0.008191999979317188
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.008191999979317188,
+          "repeats_ms": [
+            0.008191999979317188,
+            0.008191999979317188,
+            0.008191999979317188
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.0,
+      "speedup_vs_eager": 5.466796678934613
+    },
+    {
+      "name": "fused_rms_rows256_float16",
+      "workload": "Qwen3 hidden=4096 rows=256 dtype=torch.float16",
+      "numerical_max_abs_error": 0.001953125,
+      "atol": 0.004,
+      "rtol": 0.004,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.08191999793052673,
+          "repeats_ms": [
+            0.08191999793052673,
+            0.08191999793052673,
+            0.08191999793052673
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.020160000771284103,
+          "repeats_ms": [
+            0.02011200040578842,
+            0.020416000857949257,
+            0.020160000771284103
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.017632000148296356,
+          "repeats_ms": [
+            0.017632000148296356,
+            0.01817600056529045,
+            0.01759999990463257
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.1433757147076709,
+      "speedup_vs_eager": 4.646097847182813
+    },
+    {
+      "name": "fused_rms_rows1024_float16",
+      "workload": "Qwen3 hidden=4096 rows=1024 dtype=torch.float16",
+      "numerical_max_abs_error": 0.001953125,
+      "atol": 0.004,
+      "rtol": 0.004,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.24166400730609894,
+          "repeats_ms": [
+            0.24268800020217896,
+            0.24166400730609894,
+            0.2396160066127777
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.07372800260782242,
+          "repeats_ms": [
+            0.07372800260782242,
+            0.07372800260782242,
+            0.07372800260782242
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.07065600156784058,
+          "repeats_ms": [
+            0.07065600156784058,
+            0.07065600156784058,
+            0.07027199864387512
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.043478274623738,
+      "speedup_vs_eager": 3.4202898825808097
+    },
+    {
+      "name": "fused_rms_rows64_bfloat16",
+      "workload": "Qwen3 hidden=4096 rows=64 dtype=torch.bfloat16",
+      "numerical_max_abs_error": 0.0,
+      "atol": 0.016,
+      "rtol": 0.016,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.0448479987680912,
+          "repeats_ms": [
+            0.0448479987680912,
+            0.04492799937725067,
+            0.044415999203920364
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.008191999979317188,
+          "repeats_ms": [
+            0.008191999979317188,
+            0.008927999995648861,
+            0.008191999979317188
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.008191999979317188,
+          "repeats_ms": [
+            0.008191999979317188,
+            0.008191999979317188,
+            0.008191999979317188
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.0,
+      "speedup_vs_eager": 5.474609238442568
+    },
+    {
+      "name": "fused_rms_rows256_bfloat16",
+      "workload": "Qwen3 hidden=4096 rows=256 dtype=torch.bfloat16",
+      "numerical_max_abs_error": 0.0,
+      "atol": 0.016,
+      "rtol": 0.016,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.08191999793052673,
+          "repeats_ms": [
+            0.08191999793052673,
+            0.08191999793052673,
+            0.08191999793052673
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.021503999829292297,
+          "repeats_ms": [
+            0.020479999482631683,
+            0.021503999829292297,
+            0.021503999829292297
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.018303999677300453,
+          "repeats_ms": [
+            0.018303999677300453,
+            0.018432000651955605,
+            0.017472000792622566
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.1748251862110934,
+      "speedup_vs_eager": 4.47552444136672
+    },
+    {
+      "name": "fused_rms_rows1024_bfloat16",
+      "workload": "Qwen3 hidden=4096 rows=1024 dtype=torch.bfloat16",
+      "numerical_max_abs_error": 0.0,
+      "atol": 0.016,
+      "rtol": 0.016,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.24199999868869781,
+          "repeats_ms": [
+            0.23887999355793,
+            0.24300800263881683,
+            0.24199999868869781
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.07398399710655212,
+          "repeats_ms": [
+            0.07398399710655212,
+            0.07452800124883652,
+            0.07388799637556076
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.07028799876570702,
+          "repeats_ms": [
+            0.07019199803471565,
+            0.07030399888753891,
+            0.07028799876570702
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.0525836331343716,
+      "speedup_vs_eager": 3.4429775059518097
+    },
+    {
+      "name": "masked_softmax_seq256",
+      "workload": "Qwen3 heads=32 causal attention score MATERIALIZED shape=torch.Size([8192, 256]); NOT FlashAttention",
+      "numerical_max_abs_error": 0.00048828125,
+      "atol": 0.016,
+      "rtol": 0.016,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.061503998935222626,
+          "repeats_ms": [
+            0.06115199998021126,
+            0.06155199930071831,
+            0.061503998935222626
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.023104000836610794,
+          "repeats_ms": [
+            0.023360000923275948,
+            0.023072000592947006,
+            0.023104000836610794
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.021088000386953354,
+          "repeats_ms": [
+            0.02112000063061714,
+            0.021023999899625778,
+            0.021088000386953354
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.0955994125884354,
+      "speedup_vs_eager": 2.916540108434069
+    },
+    {
+      "name": "masked_softmax_seq512",
+      "workload": "Qwen3 heads=32 causal attention score MATERIALIZED shape=torch.Size([16384, 512]); NOT FlashAttention",
+      "numerical_max_abs_error": 0.000244140625,
+      "atol": 0.016,
+      "rtol": 0.016,
+      "timings": {
+        "pytorch_eager": {
+          "median_ms": 0.23641599714756012,
+          "repeats_ms": [
+            0.23638400435447693,
+            0.23641599714756012,
+            0.23656000196933746
+          ]
+        },
+        "torch_compile": {
+          "median_ms": 0.09491200000047684,
+          "repeats_ms": [
+            0.09446399658918381,
+            0.09507200121879578,
+            0.09491200000047684
+          ]
+        },
+        "custom_triton": {
+          "median_ms": 0.07068800181150436,
+          "repeats_ms": [
+            0.07030399888753891,
+            0.07068800181150436,
+            0.07107199728488922
+          ]
+        }
+      },
+      "speedup_vs_compile": 1.3426889651452851,
+      "speedup_vs_eager": 3.344499647592016
+    }
+  ],
+  "profiler": {
+    "fused_rms_rows256_bfloat16": {
+      "torch_compile": [
+        {
+          "name": "triton_red_fused__to_copy_add_mean_mul_pow_rsqrt_0",
+          "calls": 12,
+          "gpu_self_us": 54.53500000000031
+        },
+        {
+          "name": "triton_red_fused__to_copy_add_mean_mul_pow_rsqrt_0",
+          "calls": 12,
+          "gpu_self_us": 54.53500000000031
+        },
+        {
+          "name": "## Call CompiledFxGraph fthtqfybdztu6cewi5wprqb3kpa7wlu7q6upys5qgdmgdng7xtvf ##",
+          "calls": 12,
+          "gpu_self_us": 54.53500000000031
+        }
+      ],
+      "custom_triton": [
+        {
+          "name": "_fused_residual_rms_kernel",
+          "calls": 12,
+          "gpu_self_us": 53.83000000000038
+        }
+      ]
+    },
+    "masked_softmax_seq512": {
+      "torch_compile": [
+        {
+          "name": "triton_red_fused__softmax__to_copy_exp_masked_fill_prepare_softmax_online_sub_0",
+          "calls": 12,
+          "gpu_self_us": 746.9479999999996
+        },
+        {
+          "name": "triton_red_fused__softmax__to_copy_exp_masked_fill_prepare_softmax_online_sub_0",
+          "calls": 12,
+          "gpu_self_us": 746.9479999999996
+        },
+        {
+          "name": "## Call CompiledFxGraph ffkfhb67xqlcj2sggm3mbh6wgb5jgduu5vmtv4am7ccvi64oaenl ##",
+          "calls": 12,
+          "gpu_self_us": 746.9479999999996
+        }
+      ],
+      "custom_triton": [
+        {
+          "name": "_causal_masked_softmax_kernel",
+          "calls": 12,
+          "gpu_self_us": 264.96299999999997
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Qwen3 shapes and semantics, no end-to-end transformer swap",
+    "Materialized softmax is not FlashAttention",
+    "No Nsight Compute DRAM/occupancy hardware counters",
+    "torch.compile excludes compilation cost; repeat timing noise possible"
+  ]
+}
