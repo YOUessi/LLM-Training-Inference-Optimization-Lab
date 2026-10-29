@@ -7,7 +7,7 @@
   "generation_instructions": {
     "label": "Name the main Python standard library module discussed in the passage, in a short noun phrase. No explanation.",
     "summary": "Summarize the source documentation in two sentences.",
-    "detailed": "Explain the primary function of this Python standard library module, describe two use cases and one potential limitation. Use only the supplied context and write around 90 to 120 words."
+    "detailed": "Explain the primary function of this Python standard library module, describe two use cases and one potential limitation. Use only the supplied context and write 180 to 220 words, with concrete examples and detailed technical explanations. Do not answer briefly."
   },
   "source_modules": [
     "ast",
@@ -35,7 +35,7 @@
     "lzma",
     "zoneinfo"
   ],
-  "request_jsonl_sha256": "f0123842b9bf57ec1cdc19f14fb9fa545c67c60b1bfd09c5eab021d9ffc4376e",
+  "request_jsonl_sha256": "a4ff053e0d3d5d8c9fe61a2ab3bf84cc0851112ee6e71d1175b83dc6488cb4ee",
   "source_kind": "new stdlib modules not used in Stage22; deterministic prompt construction",
   "source_hash_by_module": {
     "ast": "3c60f292fc515b580a6ea30122abe619736da7330e3609da030fbe1a37d7da17",

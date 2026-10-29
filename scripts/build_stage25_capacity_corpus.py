@@ -9,7 +9,7 @@ MODULES=('ast','asyncio','bisect','heapq','difflib','base64','binascii','uuid','
 LENGTHS=(350,700,1100,1550)
 INSTRUCTIONS={'label':'Name the main Python standard library module discussed in the passage, in a short noun phrase. No explanation.',
  'summary':'Summarize the source documentation in two sentences.',
- 'detailed':'Explain the primary function of this Python standard library module, describe two use cases and one potential limitation. Use only the supplied context and write around 90 to 120 words.'}
+ 'detailed':'Explain the primary function of this Python standard library module, describe two use cases and one potential limitation. Use only the supplied context and write 180 to 220 words, with concrete examples and detailed technical explanations. Do not answer briefly.'}
 # Repeated task header creates an honest shared-prefix-cache regime (not distinct user prompts).
 SHARED_HEADER=('You are a software engineer reading the Python documentation. Interpret the reference section carefully. '
                'Use only material written in the provided reference text. Distinguish API behavior from guesses. '
