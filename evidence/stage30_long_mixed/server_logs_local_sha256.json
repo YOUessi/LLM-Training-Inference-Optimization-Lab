@@ -1,0 +1,78 @@
+{
+  "server_logs_remain_on_tang": true,
+  "source_dir": "/home/you/projects/llmopt_stage30_v2_frozen/results/stage30_frozen_mixed_8b",
+  "logs": {
+    "server_seed3011_cold0_off.log": {
+      "bytes": 39251,
+      "sha256": "f71b0548b761f7814ab7466f2695fe8f5af5bbc342dac0bae776c23e2941024d"
+    },
+    "server_seed3011_cold0_on.log": {
+      "bytes": 39330,
+      "sha256": "fefc9d45883e41e8f09ede316d9f91a10db133b485b6f775a4773463806c9afd"
+    },
+    "server_seed3011_hot100_off.log": {
+      "bytes": 39333,
+      "sha256": "681593843cb8ecc03ca67ecf72aa284085544a74aed032340f33fa1f1f2ee82e"
+    },
+    "server_seed3011_hot100_on.log": {
+      "bytes": 36625,
+      "sha256": "d05217b1162b255fa5946a43ec2d3f60da34261cef5f31333b1cc8aecaa3bd97"
+    },
+    "server_seed3011_hot50_off.log": {
+      "bytes": 39333,
+      "sha256": "69786800438567c9c3362e9c63c1cd2cf4ab391d4478b7de3b704a1af215ef16"
+    },
+    "server_seed3011_hot50_on.log": {
+      "bytes": 37938,
+      "sha256": "ce1b6ff3bca18e20b1cebc08703383ec478121377e6ebafc3f2e8abfd6b889c0"
+    },
+    "server_seed3029_cold0_off.log": {
+      "bytes": 39415,
+      "sha256": "ef8d2bb1d3b1628d5cbc6d7a84a7f957babe7756153743cb1f7c9a2bcbea4edc"
+    },
+    "server_seed3029_cold0_on.log": {
+      "bytes": 39412,
+      "sha256": "1b4b27fb980aea22e87d04910d9c3e921e8ee487da42f8f776e5299b1da74eec"
+    },
+    "server_seed3029_hot100_off.log": {
+      "bytes": 39415,
+      "sha256": "abbc0668c61f90b749400af5cbff56c470992ab4900c4e886d5ec8518a3df542"
+    },
+    "server_seed3029_hot100_on.log": {
+      "bytes": 36543,
+      "sha256": "d683a71a72bb96390e6a7fd3986d0088023ac4bf3337b03f245d7ab773750835"
+    },
+    "server_seed3029_hot50_off.log": {
+      "bytes": 39333,
+      "sha256": "e2c708c91117ccd592ad5384e2ccf53217b2a94e996f93ccfcd9a9fcea9e9173"
+    },
+    "server_seed3029_hot50_on.log": {
+      "bytes": 37937,
+      "sha256": "72cd36e2f3c2185d6c2460caedff1eb83e4384a8b371188cbf7e9038cbab88b8"
+    },
+    "server_seed3041_cold0_off.log": {
+      "bytes": 39415,
+      "sha256": "5f5ee925d26269697c1e59b079c9ce73f8f7801ed80b47b77871dfa9a812b2be"
+    },
+    "server_seed3041_cold0_on.log": {
+      "bytes": 39412,
+      "sha256": "b1a4a94088d25831193612798625348e5e0356932f55731064bbdd43dc059edf"
+    },
+    "server_seed3041_hot100_off.log": {
+      "bytes": 39415,
+      "sha256": "1006df124f3dfd9b1b12b08d75e71328ea7ed4917a8a2dd30fa00fca70ac497e"
+    },
+    "server_seed3041_hot100_on.log": {
+      "bytes": 36543,
+      "sha256": "54ab1aea3de5350044403860a025e2bb4cc0c20a4cf44c7f2699a332367969a9"
+    },
+    "server_seed3041_hot50_off.log": {
+      "bytes": 39415,
+      "sha256": "0c4922797c095f5cc0375fad39699ae582b274b16f48b92fd4541af6829de836"
+    },
+    "server_seed3041_hot50_on.log": {
+      "bytes": 38019,
+      "sha256": "e5405cc3e0dc9fa407f72b6a604bbc890b4c92ce9e14fcb5f199c53df903e23d"
+    }
+  }
+}
