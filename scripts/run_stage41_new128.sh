@@ -15,7 +15,7 @@ mkdir -p "$out"
 echo "$sha" > "$out/source_sha.txt"
 export PYTHONPATH="$PWD/src" HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
 stage38=/home/you/projects/llmopt_stage38_frozen/results/stage38_guarded_alpha_ifeval
-stage40=/home/you/projects/llmopt_stage40_frozen/results/stage40_real_constraint_rehearsal
+stage40=/home/you/projects/llmopt_stage40_v2_frozen/results/stage40_real_constraint_rehearsal
 if [[ ! -f "$stage38/final_untouched101_test.json" || ! -f "$stage40/final_test60_official.json" ]];then
  echo BLOCKED_PRIOR_INDEPENDENT_TESTS_NOT_COMPLETE
  exit 4
