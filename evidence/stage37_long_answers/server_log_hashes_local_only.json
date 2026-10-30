@@ -1,0 +1,50 @@
+{
+  "server_seed3511_cold0_rate4_off.log": {
+    "sha256": "da9cdee42f3ffcbe2edb6c8900b6b00fa6797462bb3f42c136c51495349784de",
+    "bytes": 42360
+  },
+  "server_seed3511_cold0_rate4_on.log": {
+    "sha256": "36e2f8a75744f185175f911fe67b97f84867bc11d5a93dad07792ec4ada0ca49",
+    "bytes": 42357
+  },
+  "server_seed3511_hot50_rate4_off.log": {
+    "sha256": "6245db9e7d1d7f97894a01ed722035bdfac21e9d849b4163e5b071bdca737b54",
+    "bytes": 43759
+  },
+  "server_seed3511_hot50_rate4_on.log": {
+    "sha256": "d1782552d58ca5d49370bce1b68a91c14766de51f057913b8af7a1cf558b5e16",
+    "bytes": 42689
+  },
+  "server_seed3527_cold0_rate4_off.log": {
+    "sha256": "7473ffe32aa4550223d95ee8e550eca8486d3c843b638b795e441fe1a51978fa",
+    "bytes": 41868
+  },
+  "server_seed3527_cold0_rate4_on.log": {
+    "sha256": "b214e6947bf6d42551f12e409386e9f3edc38687c0e3e322843d84e23bacb617",
+    "bytes": 41865
+  },
+  "server_seed3527_hot50_rate4_off.log": {
+    "sha256": "a9823d21b76f45297d9aa6c50e59a76ac7aa7b95dc84b94f4a763d5841dd5a2a",
+    "bytes": 43347
+  },
+  "server_seed3527_hot50_rate4_on.log": {
+    "sha256": "24cc86b61b3803041ae4209ce4f8bc87dd3f32c1aa63a3b5cb3de8ecf1513a23",
+    "bytes": 42196
+  },
+  "server_seed3559_cold0_rate4_off.log": {
+    "sha256": "8d9fb999387968fffe8c66a733f79056c99bdd8bf3fdb3c9a927b08b3c9d64dd",
+    "bytes": 42196
+  },
+  "server_seed3559_cold0_rate4_on.log": {
+    "sha256": "52b01c2a2a0e52d04e322cf31f7ce31cd3804b61bd8f06f6d65f56dc248e415d",
+    "bytes": 42193
+  },
+  "server_seed3559_hot50_rate4_off.log": {
+    "sha256": "dd34bccc4facfcb438f1c5a959dfdb01f7788cc978b2f30274ad2dd75fd1b86e",
+    "bytes": 43509
+  },
+  "server_seed3559_hot50_rate4_on.log": {
+    "sha256": "24d88b539067dedc481ad986a254de6a71e64ca6b9379a1c2230c974079f3355",
+    "bytes": 42360
+  }
+}

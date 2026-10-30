@@ -15,7 +15,7 @@ def analyze(longdir:Path,shortdir:Path):
   if key in cases:raise ValueError('duplicate case')
   if not (x['status']=='measured' and s['offered']==s['completed']==96 and s['errors']==s['rejected']==0):raise ValueError('invalid case '+str(p))
   if c['output_cap']!=384 or c['rate_per_second']!=4.:raise ValueError('not preregistered 384 token 4/s')
-  cache_stats=d.get('observed_vllm_prefix_cache')
+  cache_stats=x.get('observed_vllm_prefix_cache')
   if not isinstance(cache_stats,dict):raise ValueError('missing direct vLLM token hit counters')
   if c['cache']=='on' and not cache_stats['queries_tokens']>0:raise ValueError('cache-on must have actual token queries')
   if cache_stats['hit_tokens']>cache_stats['queries_tokens']+1e-6:raise ValueError('impossible measured cache hits')
