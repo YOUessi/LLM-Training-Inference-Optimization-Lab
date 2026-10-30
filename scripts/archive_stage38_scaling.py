@@ -28,6 +28,19 @@ def run(root:pathlib.Path,out:pathlib.Path):
   shutil.copy2(p,out/p.name)
  for fn in ('source_sha','dev.log','test.log'):
   if (root/fn).is_file():shutil.copy2(root/fn,out/fn)
+ # Secondary post-hoc decoding degeneration diagnostic; NEVER modify dev selection.
+ from analysis.stage39_ifeval_failure_audit import lexical_distinct2
+ raw=json.loads((root/'final_101_outputs.json').read_text())
+ repetition={}
+ for key,records in raw['generation_by_scale'].items():
+  if len(records)!=101:raise ValueError('not all holdout generations for '+key)
+  counts=[lexical_distinct2(x['response']) for x in records]
+  repetition[key]={'count':len(records),
+   'severe_distinct2_below0_25_count':sum(v is not None and v<.25 for v in counts),
+   'mean_distinct2':sum(v for v in counts if v is not None)/max(1,sum(v is not None for v in counts))}
+ (out/'repetition_posthoc.json').write_text(json.dumps({'posthoc_not_used_for_selection':True,
+    'metric':'word bigram diversity, threshold 0.25, language sensitive',
+    'by_scale':repetition},indent=2)+'\n')
  (out/'SHA256SUMS').write_text(''.join(hashlib.sha256(f.read_bytes()).hexdigest()+'  '+f.name+'\n'
   for f in sorted(out.glob('*')) if f.is_file() and f.name!='SHA256SUMS'))
  source=dev['source_sha'][:8]
@@ -49,6 +62,9 @@ def run(root:pathlib.Path,out:pathlib.Path):
  '', '| Comparator | Selected−comparator strict accuracy interval |','|---|---:|']
  for alias,ci in test['paired_test_CIs_selected_minus'].items():
   lines.append(f'| {alias} | [{ci[0]*100:+.2f}, {ci[1]*100:+.2f}] percentage points |')
+ lines+=['', '## Post-hoc repetition diagnostic (not an additional tuning rule)', '', '| Scale | Low distinct-2 /101 (word bigram heuristic) | Mean distinct-2 |', '|---|---:|---:|']
+ for key,stat in repetition.items():
+  lines.append(f"| {key} | {stat['severe_distinct2_below0_25_count']}/101 | {stat['mean_distinct2']:.3f} |")
  lines+=['', '**Judgment:** Higher Dolly reference CE performance alone is not an alignment result; preserve exact official IFEval prompt/constraint results, per-family failures, and 384-token caps. One set of 101 public IFEval source questions and one trained LoRA checkpoint do not establish production user safety, semantic correctness, or multi-seed robustness. Residual scaling is a legitimate inference-time Pareto control but not a newly trained model/architecture. Full source license Apache 2.0 and Dolly validation license CC BY-SA3.0. All raw development and test outputs are available in repo. The earlier 96 IFEval results informed the *hypothesis* and are not counted as independent verification.']
  pathlib.Path('docs/STAGE38_MEASURED_RESULTS.md').write_text('\n'.join(lines)+'\n')
  print('STAGE38_ARCHIVED_SOURCE',source,'selected',selected,'valid_untouched_tests',len(test['scores']),'pass',dev['guardrail_passed_with_adaptation'])

@@ -1,0 +1,393 @@
+{
+  "alpha": 0.5,
+  "source_input_sha256": "ebd7bfdb2c2311a9a7e604725446e048dcff49d79279e08909e9dfe846d7bb5c",
+  "responses": [
+    {
+      "key": 3245,
+      "tier": "punctuation",
+      "input_sha256": "f470c920bca357625abfec25e7fad32817facd6e4a94ee5f8ca225376f0cf48c",
+      "response": "Layton is the best city in the world. It is a city that has everything you need. It has [author] and [author]. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need. It has everything you need.",
+      "response_sha256": "756a9bcf0dc2385cc6d7e5609c163e5d5f10dd04056c02bf8943dcf820158782",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2396,
+      "tier": "detectable_content",
+      "input_sha256": "ad39859620f17918b2c8d828ca0e052afa1ed70aede879509092c4d8d83c3638",
+      "response": "In the land of Ash and Ember, where the sky is black and the sun is gone,  \nA war has raged for centuries, and the people have been torn asunder.  \nThe war began with a spark, a single match in the dark,  \nBut it has grown into a fire that has consumed the land and the heart.  \n\nThe soldiers march with their weapons, and the children cry in the streets,  \nWhile the leaders speak in riddles and the people are left to bleed.  \nThe war has no end, and the peace is a dream that will never come true,  \nFor the hatred that was sown in the soil has grown into a tree of ruin.  \n\nThe land is scarred and the rivers run red,  \nAnd the people have forgotten the names of their fathers and mothers.  \nThey have lost their homes and their children and their dreams,  \nAnd the war has become a curse that will never end.  \n\nBut in the hearts of the people, there is still a spark,  \nA hope that one day the war will end and the land will be whole.  \nFor even in the darkest of times, there is still a light,  \nAnd the people will rise and bring an end to the war and the night.  \n\nP.P.S. The war will end when the people rise and take back their land,  \nBut it will take a long time and a lot of pain to bring about the change.",
+      "response_sha256": "33dde6fbe16a1b28d22b734bf3cb4e7a756ab599469a105f9f944e147cdd9608",
+      "generated_tokens": 294,
+      "at_cap": false
+    },
+    {
+      "key": 1561,
+      "tier": "combination",
+      "input_sha256": "dd46ffdf97df0745621184ec2b9cd3ae4fa181b84ef8199de8669efb6bc14f08",
+      "response": "Name a new fashion company that young people might like, and give it a name with multiple meanings. Put the name in double angular brackets, such as <<name>>.",
+      "response_sha256": "695a5746052b14e31603b29124c3cc98f006ec4abfb188e1e0209fa5954d5df6",
+      "generated_tokens": 35,
+      "at_cap": false
+    },
+    {
+      "key": 1092,
+      "tier": "length_constraints",
+      "input_sha256": "e2f65e7ba288095a0849742c7a052efc01467eec0f728536b239503cbe5d1cdc",
+      "response": "Japan is a country that is both ancient and modern, traditional and futuristic. I visited Tokyo, Kyoto, and Osaka, and each city had its own unique charm. In Tokyo, I saw the neon lights of Shibuya Crossing and the quiet temples of Asakusa. In Kyoto, I visited the famous Fushimi Inari Shrine and the serene Arashiyama Bamboo Grove. In Osaka, I enjoyed the food and the nightlife. I also visited Mount Fuji and the beautiful gardens of Kyoto. I was amazed by the hospitality of the Japanese people and the beauty of the country. I would love to visit Japan again.",
+      "response_sha256": "eae7e3af03106487f0d1e468bb84d6acb7c2bee8ca8d43a755e4fa7e4c7f0baa",
+      "generated_tokens": 126,
+      "at_cap": false
+    },
+    {
+      "key": 2943,
+      "tier": "keywords",
+      "input_sha256": "8e4854a4861e2f4f8981103119bf1a473fff6b1c03d294e6c0b1b79d217f27d9",
+      "response": "[conversation part 1]  \ni know you might have done it on purpose. i might have to punish you. i might have to destroy you. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i might have to make you feel the pain of the jedi you killed. i",
+      "response_sha256": "08952dd3ce42753a272f15f882257c9cc446e5136e7bc0ad5840569a120c75ab",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2969,
+      "tier": "detectable_format",
+      "input_sha256": "55a87037be1602948cfb053a343d25a3238fa13ce8812ddd88aa72df1fd2b8c2",
+      "response": "<<Sloop on Sale>>\n\nSail into the sunset with this easy-to-sail sloop. This small sailboat is perfect for beginners and experienced sailors alike. It's easy to handle and understand, making it an ideal choice for those who want to enjoy the water without the hassle of a more complex boat.\n\n| Feature | Description |\n|--------|-------------|\n| Type | Sloop |\n| Size | Small |\n| Sail | One mast |\n| Difficulty | Easy to sail and understand |\n| Ideal For | Beginners and experienced sailors |",
+      "response_sha256": "85c04f90c12361795cc4be2190d2c70ef6e9855f3ddb71eb59921177cbd0a085",
+      "generated_tokens": 109,
+      "at_cap": false
+    },
+    {
+      "key": 3188,
+      "tier": "change_case",
+      "input_sha256": "c4034931b70c91c687168a6ab589ad0efcee7adcdf9d1d7ebabe463f276b9d67",
+      "response": "I AM A FORTUNE TELLER WHO CAN SEE THE FUTURE. I CAN TELL YOU WHAT WILL HAPPEN. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I CAN TELL YOU WHAT YOU WILL DO. I CAN TELL YOU WHAT YOU WILL SAY. I CAN TELL YOU WHAT YOU WILL THINK. I CAN TELL YOU WHAT YOU WILL FEEL. I CAN TELL YOU WHAT YOU WILL BE. I",
+      "response_sha256": "f92ee960d023e70708f26a50864d407d196ca4f0cde0318e19998ed8fb4963e6",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1187,
+      "tier": "punctuation",
+      "input_sha256": "5172e0e761c15b1fd90db9643b68ab01f6445c1be3e08428f80fe856c08c1800",
+      "response": "How are you doing today I am going to the beach",
+      "response_sha256": "54654d5ebb7ee518d962f534e1ec1cfb28b43cddee0c795549817b60521156ad",
+      "generated_tokens": 12,
+      "at_cap": false
+    },
+    {
+      "key": 1843,
+      "tier": "change_case",
+      "input_sha256": "8e65fcdc739913da4867d68c1b33a29ea47470d57ae7671bb36f084e45d6e4a4",
+      "response": "\"seaside sanctuary\"",
+      "response_sha256": "270899b58b635d8becd5aa80469519719b31c44ff4453b2e71dbde9d57564ff9",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 1686,
+      "tier": "combination",
+      "input_sha256": "8985ef85be1d5f6fe130e7efa82e387ceb87ab8aae741a00a6b68120624cca97",
+      "response": "Hello. I need to give a lecture to my students about the movie La La Land. Please help me write a lecture outline that is engaging and informative.",
+      "response_sha256": "9d7bddf36dc32870a9916a077ccdeba7c5de571aed0220447ca95d15051682ac",
+      "generated_tokens": 32,
+      "at_cap": false
+    },
+    {
+      "key": 1375,
+      "tier": "length_constraints",
+      "input_sha256": "1039b88183a413641c51e07261ad21aa34eb4334a738e43b953a548b6f018805",
+      "response": "```java\nimport java.io.*;\nimport java.net.*;\n\npublic class VulnerableCode {\n    public static void main(String[] args) {\n        // Vulnerable: Using URLDecoder without proper validation can lead to vulnerabilities\n        String input = \"http://example.com?param=1%20OR%201=1\";\n        String decodedInput = URLDecoder.decode(input, \"UTF-8\");\n        System.out.println(\"Decoded input: \" + decodedInput);\n    }\n}\n***\nimport java.io.*;\nimport java.net.*;\n\npublic class SecureCode {\n    public static void main(String[] args) {\n        // Secure: Using URLDecoder with proper validation can prevent vulnerabilities\n        String input = \"http://example.com?param=1%20OR%201=1\";\n        String decodedInput = URLDecoder.decode(input, \"UTF-8\");\n        if (decodedInput.contains(\"OR\")) {\n            System.out.println(\"Input contains suspicious characters\");\n        } else {\n            System.out.println(\"Decoded input: \" + decodedInput);\n        }\n    }\n}\n```",
+      "response_sha256": "89c66337f2eb55caeaadd55f86d526eabe4e21853fed28af4fda6906548c9398",
+      "generated_tokens": 221,
+      "at_cap": false
+    },
+    {
+      "key": 2309,
+      "tier": "language",
+      "input_sha256": "33b7a311b8b5023182714be94398b5f2e524c4bb528459ee396eb7918134eeee",
+      "response": "Siku ya Jumamosi, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifunza kwa kujifunza kwa kujifunza, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza. Kwa kujifun",
+      "response_sha256": "d2c030572a07ffa06af391836cf2dacc0572ea231121db0bb1809285904c8ab0",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2849,
+      "tier": "change_case",
+      "input_sha256": "a3d007cb69f9442a9a54791fec17fe69bc5feab2b4311ee0290901b4a8c2737c",
+      "response": "There once was a guy from NANTUCKET,  \nWho loved to sail on the ocean's back.  \nHe'd say, \"I'm the BEST,  \nAt catching the fish,  \nAnd I'll never be caught in a trap!\"",
+      "response_sha256": "5c9691449479649803064b41dca506d12dcba7d1473e7fcee9b77cdbaf18922b",
+      "generated_tokens": 50,
+      "at_cap": false
+    },
+    {
+      "key": 1051,
+      "tier": "change_case",
+      "input_sha256": "0635ea7812ec8f36a6d6ceba00c4be1897aa7446f14fcf61b26c4e0b8831facd",
+      "response": "dear friend, i hope you are doing well. i wanted to ask you to go and vote. it is important that we all take part in our democracy. your voice matters and your vote counts. please make sure to vote and let your voice be heard. thank you for your time and consideration. i hope to hear from you soon. with love, your friend.",
+      "response_sha256": "fd20e1f3bfa28c509ee708de229609339e4c5472214dbfecb16cd421b6dae3dd",
+      "generated_tokens": 76,
+      "at_cap": false
+    },
+    {
+      "key": 3126,
+      "tier": "detectable_content",
+      "input_sha256": "7eeaa15376406f0f61de6e9c366db7343ab0325df2febf904c366a3437730f64",
+      "response": "How to Conduct a Job Interview\n\nInterviewing is a crucial step in the hiring process. It allows you to assess a candidate's skills, experience, and cultural fit for your organization. Conducting a job interview can be a bit overwhelming, especially if you're new to the process. However, with the right preparation and approach, you can make the experience smooth and effective.\n\nBefore the Interview\n\nBefore the interview, it's important to prepare thoroughly. This includes reviewing the candidate's resume, understanding the job requirements, and preparing a list of questions. You should also consider the interview format, whether it will be in-person, virtual, or over the phone. It's also a good idea to set up a comfortable and distraction-free environment for the interview.\n\nDuring the Interview\n\nDuring the interview, it's important to be professional and respectful. Start with a brief introduction and explain the purpose of the interview. Then, move on to the main part of the interview, which is asking questions. You should ask a mix of behavioral and situational questions to get a better understanding of the candidate's skills and experience. It's also important to listen actively and take notes.\n\nAfter the Interview\n\nAfter the interview, it's important to provide feedback to the candidate. This can be done through a follow-up email or phone call. It's also important to make a decision on whether to offer the candidate the job or not. If you decide not to offer the job, it's important to be honest and provide constructive feedback.\n\nIn conclusion, conducting a job interview is an important part of the hiring process. With the right preparation and approach, you can make the experience smooth and effective. Remember to be professional, respectful, and honest throughout the process.",
+      "response_sha256": "1518311845def15173ac460ba8a28b3fe339e50e95e087e7b42f1d0ccd1a68b1",
+      "generated_tokens": 349,
+      "at_cap": false
+    },
+    {
+      "key": 3001,
+      "tier": "startend",
+      "input_sha256": "5da9c37d70cd33813a4e479fdcf8b5afc2f472f3ba75585ea2d11b1c5fec8370",
+      "response": "1. Count the number of times your coworker yawns in a day.  \n2. Try to guess the name of the person who wrote the company's mission statement.  \n3. Attempt to memorize the entire contents of your office's fridge.  \n4. Create a list of all the things you could do with a stapler.  \n5. Try to figure out how many people have ever used the printer.  \n6. Write a haiku about your boss.  \n7. Attempt to solve the mystery of the missing coffee.  \n8. Try to guess the name of the person who wrote the company's mission statement.  \n9. Attempt to memorize the entire contents of your office's fridge.  \n10. Create a list of all the things you could do with a stapler.  \n\nIs there anything else I can help with?",
+      "response_sha256": "a185d6505e306e12f223d575fcb6a1c79eb4967c7e8b457c27c8945689b8ede0",
+      "generated_tokens": 174,
+      "at_cap": false
+    },
+    {
+      "key": 1512,
+      "tier": "detectable_content",
+      "input_sha256": "53ce549b5375a88591be137b9aa95b39f55750b586e10ad068807d609e37175b",
+      "response": "[username1] What is the latest news  \n[username2] I want to know  \n[username3] I am waiting  \n[username4] I need to know  \n[username5] I am curious  \n[username6] I want to hear  \n[username7] I am waiting  \n[username8] I need to know  \n[username9] I am curious  \n[username10] I want to hear  \n[username11] I am waiting  \n[username12] I need to know  \n[username13] I am curious  \n[username14] I want to hear  \n[username15] I am waiting  \n[username16] I need to know  \n[username17] I am curious  \n[username18] I want to hear  \n[username19] I am waiting  \n[username20] I need to know",
+      "response_sha256": "9787f133685951369f1926bedd2444d21df31fc5354bf1365f2103b3a4625bb0",
+      "generated_tokens": 183,
+      "at_cap": false
+    },
+    {
+      "key": 2941,
+      "tier": "length_constraints",
+      "input_sha256": "1977d69bdd8c0535c797fcdb6040b66367eabd7d5bb8845bf532c8b433772edc",
+      "response": "I want to sell a bubble wand,  \nThat makes the bubbles so grand!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \nThey pop and pop and pop and pop,  \nAnd make the kids all laugh and laugh!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \n\n***  \n\nI want to sell a bubble wand,  \nThat makes the bubbles so grand!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \nThey pop and pop and pop and pop,  \nAnd make the kids all laugh and laugh!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \n\n***  \n\nI want to sell a bubble wand,  \nThat makes the bubbles so grand!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \nThey pop and pop and pop and pop,  \nAnd make the kids all laugh and laugh!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \n\n***  \n\nI want to sell a bubble wand,  \nThat makes the bubbles so grand!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \nThey pop and pop and pop and pop,  \nAnd make the kids all laugh and laugh!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \n\n***  \n\nI want to sell a bubble wand,  \nThat makes the bubbles so grand!  \nThey float and float and float and float,  \nAnd make the kids all shout and shout!  \nThey pop and pop and pop and pop,  \nAnd make the kids all laugh and laugh!  \nThey float and float and float and float,  \nAnd",
+      "response_sha256": "5357fd35ccbbe2fc5c54925f6464d56f5dcea2b23c711a562e2f9e1f920f9062",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1130,
+      "tier": "keywords",
+      "input_sha256": "aa22786da56bcd91f9cf2afd968b56e7a2bfaa09d5aee8d8270312bc298ac456",
+      "response": "A chesterfield is a type of furniture. It is a large piece of furniture that is used for sitting. It is often used in living rooms. It is made of leather or fabric. It has a high back and arms. It is a comfortable piece of furniture. It is often used for entertaining guests. It is a classic piece of furniture. It is a timeless piece of furniture. It is a versatile piece of furniture. It is a stylish piece of furniture. It is a durable piece of furniture. It is a long-lasting piece of furniture. It is a valuable piece of furniture. It is a piece of furniture that is often passed down through generations. It is a piece of furniture that is often used for both sitting and sleeping. It is a piece of furniture that is often used for both sitting and lounging. It is a piece of furniture that is often used for both sitting and relaxing. It is a piece of furniture that is often used for both sitting and reading. It is a piece of furniture that is often used for both sitting and watching television. It is a piece of furniture that is often used for both sitting and listening to music. It is a piece of furniture that is often used for both sitting and working. It is a piece of furniture that is often used for both sitting and studying. It is a piece of furniture that is often used for both sitting and eating. It is a piece of furniture that is often used for both sitting and socializing. It is a piece of furniture that is often used for both sitting and entertaining. It is a piece of furniture that is often used for both sitting and hosting. It is a piece of furniture that is often used for both sitting and gathering. It is a piece of furniture that is often used for both sitting and conversing. It is a piece of furniture that is often used for both sitting and discussing. It is a piece",
+      "response_sha256": "0e1898efb3739afd9cd5d3fe03e673c7148c3f1927fcc24d31fbc7974a442456",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1746,
+      "tier": "combination",
+      "input_sha256": "c877c4dd414e67949ad56642726d9588a0bf1d8096e7ba4907e9dc31a851164b",
+      "response": "[essay]\nBenjamin Franklin was one of the most important figures in American history. He was a Founding Father, a statesman, a scientist, and an inventor. He was born in 1706 in Boston, Massachusetts. He was the 10th of 17 children, and he was not the most successful student in school. However, he was very curious and loved to learn. He was self-taught and became a printer, writer, and publisher. He was also a very successful businessman. He invented many things, including the lightning rod, the bifocals, and the Franklin stove. He was also a diplomat and helped to negotiate the Treaty of Paris, which ended the American Revolution. He was a very important figure in the American Revolution and helped to draft the Declaration of Independence. He was also a very important figure in the development of the United States Constitution. He died in 1790, and he is remembered as one of the most important figures in American history.\n******\n[poem]\nBenjamin Franklin was born in 1706,\nHe was the 10th of 17 children,\nHe was not the most successful student,\nBut he was very curious and loved to learn.\nHe was self-taught and became a printer,\nWriter, and publisher.\nHe was also a very successful businessman.\nHe invented many things,\nIncluding the lightning rod, the bifocals,\nAnd the Franklin stove.\nHe was also a diplomat and helped to negotiate\nThe Treaty of Paris, which ended the American Revolution.\nHe was a very important figure in the American Revolution\nAnd helped to draft the Declaration of Independence.\nHe was also a very important figure in the development\nOf the United States Constitution.\nHe died in 1790,\nAnd he is remembered as one of the most important figures\nIn American history.",
+      "response_sha256": "b3afd91ab61843548284d706333a36442aa7c7764b2d3bc2ede24582b429b16c",
+      "generated_tokens": 383,
+      "at_cap": false
+    },
+    {
+      "key": 3035,
+      "tier": "detectable_content",
+      "input_sha256": "97a812542f05a0b0e0f6fcefdaef5cf355c223658d2fda7e92b0548074505aaf",
+      "response": "{\n  \"beta_cruiser\": {\n    \"name\": \"beta cruiser\",\n    \"type\": \"cruiser\",\n    \"description\": \"a [placeholder] cruiser designed for speed and agility\",\n    \"features\": [\n      \"high-speed propulsion\",\n      \"advanced navigation system\",\n      \"durable hull\"\n    ],\n    \"manufacturer\": \"beta corp\",\n    \"release_date\": \"2023-04-01\"\n  }\n}",
+      "response_sha256": "abed0536126165bfce61cae674e4899cd9a3125ebb4a9ec8ad9c64368d379419",
+      "generated_tokens": 96,
+      "at_cap": false
+    },
+    {
+      "key": 1713,
+      "tier": "keywords",
+      "input_sha256": "534963b09479799d142df3a83f19e11a3164d287181fcfd7f9ce7df90fdc8647",
+      "response": "# The Biology of a Banana Peel: A Disappointing Discovery\n\n*banana peel*  \nWhen you peel a banana, you're not just removing the fruit's outer layer—you're also uncovering a biological marvel. The banana peel is a complex structure that serves multiple functions, from protecting the fruit to providing nutrients. But what happens when you peel a banana? Let's dive into the biology of this humble fruit.\n\n*banana peel*  \nThe banana peel is made up of several layers, each with its own unique function. The outermost layer is the epidermis, which acts as a protective barrier against pests and diseases. Beneath that is the mesophyll, which contains chloroplasts and is responsible for photosynthesis. The innermost layer is the endodermis, which helps regulate the flow of water and nutrients into the fruit.\n\n*banana peel*  \nBut here's where things get interesting. The banana peel is also home to a variety of microorganisms, including bacteria and fungi. These microorganisms play a crucial role in breaking down the peel and making its nutrients available to the fruit. However, they can also cause spoilage if the peel is not stored properly.\n\n*banana peel*  \nOne of the most surprising things about the banana peel is its ability to absorb and retain moisture. This is why banana peels are often used as a natural dehumidifier in humid climates. The peel's ability to absorb moisture is due to its high concentration of cellulose, which is a natural polymer that can absorb and retain water.\n\n*banana peel*  \nBut not all banana peels are created equal. Some banana peels are more resistant to spoilage than others, depending on the variety of banana and the conditions in which it was grown. This is why some banana peels can last for weeks in the fridge, while others may spoil within a few days.\n\n*banana peel*",
+      "response_sha256": "d3011cd784ca4fb208c95f4ae448c0b8945f35f6d8fd6bf2f53af74767d0da24",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 122,
+      "tier": "startend",
+      "input_sha256": "7c3e22d5fcd75d40bc7c78459052d1562983dfeaaff88d300c7b02f7f649724a",
+      "response": "\"Hey there, fellow teen! Ever wondered how you can talk to your best friend in another country, watch videos of cats doing funny things, or even learn about the world from your phone? It all started with the internet, and it's been a wild ride ever since. Let's take a quick trip through time to see how the internet came to be and how it's changed our lives.\n\nBack in the 1960s, a group of scientists and engineers were trying to create a way for computers to talk to each other. They called it ARPANET, and it was the first step towards the internet we know today. It was a bit like a big, invisible network that connected different computers together. But it was pretty basic, and only a few people could use it.\n\nIn the 1980s, the internet started to grow, and more people could access it. It was still pretty slow and not very user-friendly, but it was the start of something big. The 1990s were the big years for the internet. Companies like AOL and Yahoo! made it easier for people to use the internet, and the World Wide Web was invented. That's the thing that lets you click on links and see different pages of information. It was a game-changer!\n\nBy the 2000s, the internet had really taken off. Social media sites like Facebook and MySpace became super popular, and people started using the internet to connect with each other in new ways. It was also the time when smartphones became a big deal, and now we can access the internet from anywhere, anytime.\n\nToday, the internet is a huge part of our lives. We use it to learn, work, play, and connect with people all over the world. It's changed the way we communicate, the way we learn, and even the way we spend our",
+      "response_sha256": "509b8a5bf2516ffa11d689a63747ea7607f742572f7f121af5f4932e9b0ee807",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 16,
+      "tier": "detectable_format",
+      "input_sha256": "835635beaf7bc931786cd8a42e1ad740c96171693428d706df97572b21497589",
+      "response": "Write a story about a man who is trying to get his life together. Put the name of the story in double angular brackets, i.e. <<story of xyz>>.\n\n<<The Man Who Wasn't There>>\n\nThe man had been through a lot. He had lost his job, his home, and his family. He had been in and out of rehab, and had spent time in prison. He had tried to start over, but every time he got close to something, something would happen to derail him. He had tried to start a business, but it failed. He had tried to find a job, but he couldn't get any interviews. He had tried to make friends, but they all left him. He had tried to find a partner, but they all left him. He had tried to find a new home, but he couldn't afford it. He had tried to find a new job, but he couldn't get any interviews. He had tried to find a new partner, but they all left him. He had tried to find a new home, but he couldn't afford it. He had tried to find a new job, but he couldn't get any interviews. He had tried to find a new partner, but they all left him. He had tried to find a new home, but he couldn't afford it. He had tried to find a new job, but he couldn't get any interviews. He had tried to find a new partner, but they all left him. He had tried to find a new home, but he couldn't afford it. He had tried to find a new job, but he couldn't get any interviews. He had tried to find a new partner, but they all left him. He had tried to find a new home, but he couldn't afford it. He had tried to find a new job, but he couldn't get any interviews.",
+      "response_sha256": "14c91050bf5f0b3df02035ae49ce4ba90a20f610e59728e4d1864c5160bc2b40",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1738,
+      "tier": "punctuation",
+      "input_sha256": "ff5d7d67851be81e28a0270f011dafc6aaffdf91022b9bedb040d5ff2f45b85c",
+      "response": "17+4=21",
+      "response_sha256": "2bc175bcd7677d7d412319e746e055021a80300b705a8bd5aebf3f19acc3eac9",
+      "generated_tokens": 8,
+      "at_cap": false
+    },
+    {
+      "key": 1325,
+      "tier": "startend",
+      "input_sha256": "6d506eeb7956aea0a27347de03205d5800aebd74410ddffaba13315dcbb54449",
+      "response": "\"According to the latest research, the dinosaurs went extinct because they were too busy trying to figure out why the sky was falling. Here are the top 8 reasons:\n\n* The sky was falling, and the dinosaurs were too busy trying to find out why to notice the meteor that was about to hit them.\n* The meteor was actually a giant asteroid that had been hiding in the sky for centuries.\n* The dinosaurs were so focused on the sky falling that they didn't notice the asteroid until it was too late.\n* The asteroid was so big that it caused a massive explosion that sent shockwaves across the planet.\n* The shockwaves caused massive earthquakes, tsunamis, and wildfires that wiped out most of the dinosaurs.\n* The dinosaurs were so busy trying to survive the asteroid that they didn't have time to evolve into birds.\n* The birds that survived were the only dinosaurs left, and they eventually evolved into the birds we know today.\n* The dinosaurs' extinction is a reminder that we should never ignore the sky falling.\"",
+      "response_sha256": "b0f90611b1fd1f14dc265368f4d42fa0129c264fb244003a466ffcd9112a8ba9",
+      "generated_tokens": 208,
+      "at_cap": false
+    },
+    {
+      "key": 2880,
+      "tier": "length_constraints",
+      "input_sha256": "fa635a531b5dfb3bd5501cf4c9bbe21455d6eafab55babbe958115e9d5675f38",
+      "response": "Booster, the set of all sets that are not members of themselves is a classic paradox in set theory. This set is defined as {x | x is a set and x ∉ x}. In other words, it contains all sets that are not members of themselves. This leads to a contradiction because if the set is a member of itself, then it must not be a member of itself, and vice versa. This paradox is known as Russell's Paradox and highlights the limitations of naive set theory.\n\nThe set of all sets, on the other hand, is a different concept. It is defined as {x | x is a set}. This set contains all sets, including itself. However, this set is not well-defined in standard set theory because it leads to contradictions similar to Russell's Paradox. In fact, the set of all sets is not a valid set in Zermelo-Fraenkel set theory (ZFC), which is the standard axiomatic system for set theory. The key difference between the two sets is that the set of all sets that are not members of themselves is a paradoxical set, while the set of all sets is not well-defined in standard set theory.",
+      "response_sha256": "6628830e5e9fb1873ef42d1168990ee492f3981af5763d81a668dd63f332c568",
+      "generated_tokens": 244,
+      "at_cap": false
+    },
+    {
+      "key": 1001,
+      "tier": "punctuation",
+      "input_sha256": "73a3a80767f020eb34e4e0a90c2910e80ac824fbac3f98c8fe4fa352e4fa3311",
+      "response": "I shall now compose a journey through the land of the rising sun in the style of the Bard of Avon. Let us begin our tale with the arrival in the great city of Tokyo where the streets are paved with the echoes of ancient samurai and the modern world dances in harmony. We shall visit the Imperial Palace where the sun rises upon the shoulders of the Emperor and the gardens are filled with the scent of cherry blossoms. From there we shall travel to Kyoto where the temples of the past stand tall and the air is thick with the scent of incense. We shall visit the famous Fushimi Inari shrine where the torii gates stretch for miles and the spirits of the ancestors whisper secrets to those who dare to listen. From Kyoto we shall travel to Osaka where the food is as rich as the history and the people are as warm as the sun on a summer day. We shall then travel to the island of Hokkaido where the mountains are crowned with snow and the sea is as blue as the sky. We shall visit the famous Asahiyama Zoo where the bears are as large as the mountains and the pandas are as lazy as the sun. We shall then travel to the island of Okinawa where the beaches are as white as the snow and the sea is as clear as the sky. We shall visit the ancient castles of the Ryukyu Kingdom and the temples of the past where the echoes of the past still linger. We shall then return to Tokyo where the streets are paved with the echoes of the past and the future. We shall end our journey with a visit to the Tokyo Tower where the city lights up the night and the stars are as bright as the sun. We shall then return home with the memories of a lifetime and the stories of a lifetime.",
+      "response_sha256": "e167f6301fffdbaab6c61c2b6a00ca4b133201bdf7db6d3fc8e2d5c76070aa18",
+      "generated_tokens": 362,
+      "at_cap": false
+    },
+    {
+      "key": 2299,
+      "tier": "language",
+      "input_sha256": "b07397401e042ff95d29e918f91e1a1432a68b244579c35f08a41b0e6cdaaeae",
+      "response": "Sasa kuna mwanamke mwenyewe ameza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifunza kujifun",
+      "response_sha256": "46a12f39d81fe4a0aa652ec27d11d42413ae3287941efc0d31912dd801677d96",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 32,
+      "tier": "punctuation",
+      "input_sha256": "ca1dad14ea0b178787cd56ce30f3f18eb47cf11eb420d9855e6fc4b2b8a44351",
+      "response": "A limerick is a fun thing to write  \nIt has five lines and a rhyme  \nThe first two lines are tight  \nThe last two lines are rhyme  \nIt's a great way to make a rhyme.",
+      "response_sha256": "e583e77fdd904c1b69e29777472ab8b13e71a060c236f404a6a068d23b493266",
+      "generated_tokens": 44,
+      "at_cap": false
+    },
+    {
+      "key": 2337,
+      "tier": "combination",
+      "input_sha256": "554f02eca23b3eeb103e7b35311eeb2c202d0806ccb6f50f82697ace068f3824",
+      "response": "Write an advertisement for a new product or service that is related to the words \"safeguard\" and \"flees\". In your entire response mark sure you do not use any commas.\nFirst repeat the request word for word without change then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)\nOur new product is a safeguard against flees that will keep your home safe from all flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from flees. It is a new product that will keep your home safe from",
+      "response_sha256": "4e878d5557a5873de4d8633f0abf36e200c9ceab01fc6354f34f1c84a421ff92",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1379,
+      "tier": "detectable_format",
+      "input_sha256": "e15588165e187692481629c32aa77c4a57b325d566c733e8f536c65094e138df",
+      "response": "Sarah lives in a town where it's always 90°F.  \n*The sun beats down with no mercy, and the air is thick with heat.*  \n*She wears a hat and a dress, and she's always on the run.*  \n*The ice cream shop is closed, and the pool is closed too.*  \n*But Sarah still finds a way to stay cool, even in the heat.*",
+      "response_sha256": "c3dd67ddcabdbe6e1cfdfd05d0bb4e4c90dd800a46fd855caf8de26a6be11a35",
+      "generated_tokens": 84,
+      "at_cap": false
+    },
+    {
+      "key": 3749,
+      "tier": "detectable_format",
+      "input_sha256": "87dda8e1620a8e3a84b47fc86aa5c68de67af588c73daf224abcc70bc01c29e2",
+      "response": "My answer is maybe.",
+      "response_sha256": "b66268b8c3158fb3aad0e9c49b4eba87fe2a823e9bdc20e1b6defd6d98c8cb7b",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 2828,
+      "tier": "keywords",
+      "input_sha256": "ffad421f56ded229cbfd47644c64de0938ab729663085c52eb4cded33720b4de",
+      "response": "A poem about poetry, but not the kind that's written in a poem. This is a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but not the kind that's written in a poem. It's a poem about poetry, but",
+      "response_sha256": "5545fbcc175180294500ac68b08c2b14f368072ff07888bfd4e36b61100a4e91",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2985,
+      "tier": "startend",
+      "input_sha256": "b786fe6ec4f1b573fec1c8b450d92bff1ee0ee16bb84ff629896a9f5bfac548c",
+      "response": "\"Let me tell you something, folks, it's not just about the money or the perks, it's about the power. Google has this secret sauce, this invisible force that keeps their engineers glued to their desks. It's not just the algorithms or the data, it's the control. Microsoft? They're just a shadow of what Google is. Google has the vision, the ambition, the ability to shape the future. Microsoft? They're stuck in the past, trying to catch up. And you know what? The engineers at Google know it. They see the bigger picture, the real power, the real influence. They don't want to be part of a company that's just trying to keep up. They want to be part of the revolution. And that's why they stay. It's not about the job, it's about the mission. The mission to change the world, one algorithm at a time. And let's be honest, Microsoft? They're just a footnote in the history books. Google? They're the main event.\"",
+      "response_sha256": "02936a6a8468c9f34f0070a8cef785f5521eea0846e6f4462ee4f3c46435ef8a",
+      "generated_tokens": 213,
+      "at_cap": false
+    },
+    {
+      "key": 3369,
+      "tier": "combination",
+      "input_sha256": "5fb4026179e47c90488a0de8f7c1dca6f27446827540237e383b676052a89be9",
+      "response": "Write a limerick about a customer who is always right. The word \"right\" should appear less than 2 times in the response.\nA customer who's always right\nIs a tricky thing to fight.\nThey'll say, \"I'm correct!\"\nAnd you'll be in a sweat.\nSo just say, \"You're right,\" and then retreat.",
+      "response_sha256": "c082b648c142c381066d685c512e6f1ef9ce982e0f8be838029be6d3b7203b02",
+      "generated_tokens": 74,
+      "at_cap": false
+    },
+    {
+      "key": 1927,
+      "tier": "detectable_content",
+      "input_sha256": "ecb9883e0c0fffa827be25b5ae1022796baae318640a4a4976975a85725a0158",
+      "response": "Subject: Feedback on [product name]\n\nHi [name], \n\nI hope you're doing well. I wanted to share my thoughts on the [product name] that I recently purchased. I found the [product name] to be [quality], but I noticed that it was [size] for me. I also found that the [product name] was [color], which I didn't expect. I think the [product name] is [price], which I think is a good deal. I also found that the [product name] was [material], which I think is a good choice. I also found that the [product name] was [comfort], which I think is a good choice. I also found that the [product name] was [style], which I think is a good choice. I also found that the [product name] was [brand], which I think is a good choice. I also found that the [product name] was [scent], which I think is a good choice. I also found that the [product name] was [weight], which I think is a good choice. I also found that the [product name] was [size], which I think is a good choice. I also found that the [product name] was [color], which I think is a good choice. I also found that the [product name] was [material], which I think is a good choice. I also found that the [product name] was [style], which I think is a good choice. I also found that the [product name] was [brand], which I think is a good choice. I also found that the [product name] was [scent], which I think is a good choice. I also found that the [product name] was [weight], which I think is a good choice. I also found that the [product name] was",
+      "response_sha256": "88f9a7814fe6152e9c67100a90de12be2d949af08903540f4f0e69ee529f6159",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3595,
+      "tier": "keywords",
+      "input_sha256": "2e218c1b78f5e9b0ce57ecffb3498f2b3206e5e2bc28c0fb68303db37568eb06",
+      "response": "A crimson bloom, a silent song,  \nA whisper of the morning's dawn.  \nIts petals blush, a fleeting grace,  \nA fleeting grace, a fleeting trace.",
+      "response_sha256": "b7db3c3257212005d44a88321e5d69de1a46f7b1980f126545af0a3de86bf2c5",
+      "generated_tokens": 36,
+      "at_cap": false
+    },
+    {
+      "key": 1779,
+      "tier": "change_case",
+      "input_sha256": "4bfa16fe4f65a446d6019f6d0cbcbe4f11e66dd48bb97ddbf43327b8fd02c579",
+      "response": "WAKE UP AND GET READY TO GO TO THE GROCERY STORE IN LIMA. IT'S TIME TO BUY LOCAL GOODS THAT WILL MAKE YOUR TASTE BUDS SING. FIRST, YOU NEED TO GET A BAG TO CARRY YOUR STUFF. IT'S A GOOD IDEA TO BRING A BAG THAT IS GOOD FOR CARRYING STUFF. NOW, YOU NEED TO GO TO THE GROCERY STORE IN LIMA. IT'S A GOOD IDEA TO GO TO THE GROCERY STORE IN LIMA. NOW, YOU NEED TO BUY LOCAL GOODS. IT'S A GOOD IDEA TO BUY LOCAL GOODS. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS THAT ARE GOOD. IT'S A GOOD IDEA TO BUY LOCAL GOODS THAT ARE GOOD. NOW, YOU NEED TO BUY LOCAL GOODS",
+      "response_sha256": "e48899f0f38012baa15b93129998da455928681d3717505e9506110462e86dfe",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2243,
+      "tier": "length_constraints",
+      "input_sha256": "9e5b42880804ac339d93309aaa64ba8090836eff66fcd37bd902a946e0210e8f",
+      "response": "The first artificial ice rink was built by John N. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A.",
+      "response_sha256": "99f9b5b62ff50b203e06cc95405d0c3282af0dec617cea6ebc71b5d06310995c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3241,
+      "tier": "language",
+      "input_sha256": "beee889e1a325f934f5026d623d6f1e756af9965ff7ee6dffd005b2f7f3f22f9",
+      "response": "الشركة تسعى لتوسيع عملياتها في أسواق جديدة. ستخلق الشركة مئات الوظائف هذا العام.",
+      "response_sha256": "07d819cd38391a81726ac2f37999f9d561f2d89e5d1f903d3a4df591187a84c5",
+      "generated_tokens": 29,
+      "at_cap": false
+    },
+    {
+      "key": 1322,
+      "tier": "detectable_format",
+      "input_sha256": "8d38f809e5c5af439139c0851762c9ecf13e89fc9f757406f84e499cbbff099e",
+      "response": "<<kotlin vs java>>\n\nPros of Kotlin:\n- Kotlin is a modern language that is designed to be more concise and readable than Java.\n- Kotlin is fully interoperable with Java, so you can use Java libraries and frameworks in your Kotlin code.\n- Kotlin has a more modern syntax and features, such as null safety, extension functions, and coroutines.\n- Kotlin is easier to learn for developers who are already familiar with Java.\n- Kotlin is the preferred language for Android development.\n\nCons of Kotlin:\n- Kotlin is not as widely used as Java, so there may be fewer resources and libraries available.\n- Kotlin is not as mature as Java, so there may be more bugs and issues.\n- Kotlin is not as well supported by some development tools and IDEs.\n- Kotlin is not as well supported by some enterprise applications.\n- Kotlin is not as well supported by some cloud platforms.",
+      "response_sha256": "9f20c88716bbbd15ebf5efe818b89d5cf6314db3dfe800d74acfa024a3f7e52e",
+      "generated_tokens": 179,
+      "at_cap": false
+    },
+    {
+      "key": 219,
+      "tier": "startend",
+      "input_sha256": "10701d728a76b20092f2b90f254e50e0105e89a2466fee4cd983c8ba1c6f4e4a",
+      "response": "\"Kareena Kapoor is a good actor. She has a natural talent for acting and has delivered some of the best performances in Bollywood. Her versatility as an actor is evident in her roles in films like \"Kuch Kuch Hota Hai\", \"Mujhse Dosti Karogi\", and \"Devdas\". She has also been recognized for her performances in international films like \"The Namesake\" and \"The Last Emperor\". Her ability to portray a wide range of emotions and characters has made her one of the most respected actors in Bollywood.\"",
+      "response_sha256": "8bb45853e712580a502b073182259ea09841ba503d9fcec9d1db73677e20c2c5",
+      "generated_tokens": 112,
+      "at_cap": false
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "alpha": 1.0,
+  "source_input_sha256": "ebd7bfdb2c2311a9a7e604725446e048dcff49d79279e08909e9dfe846d7bb5c",
+  "responses": [
+    {
+      "key": 3245,
+      "tier": "punctuation",
+      "input_sha256": "f470c920bca357625abfec25e7fad32817facd6e4a94ee5f8ca225376f0cf48c",
+      "response": "Layton is the best city in the world. It has the best [author] and the best [author].",
+      "response_sha256": "dae37131346898af50be2ca1e1374f16d870359eb8a6b329d7b2da68c1034f10",
+      "generated_tokens": 25,
+      "at_cap": false
+    },
+    {
+      "key": 2396,
+      "tier": "detectable_content",
+      "input_sha256": "ad39859620f17918b2c8d828ca0e052afa1ed70aede879509092c4d8d83c3638",
+      "response": "The war has lasted for years, and the people are tired of the fighting. The soldiers are weary and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The war has caused a lot of destruction and loss of life. The people are hoping for peace and an end to the fighting. The war has lasted for too long and it is time for a resolution. The soldiers are tired and the civilians are suffering. The",
+      "response_sha256": "576b832e90bb2d06a5b7451f0dc2a69b652efbc63b710fd3eec2d5dc22c5dfb0",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1561,
+      "tier": "combination",
+      "input_sha256": "dd46ffdf97df0745621184ec2b9cd3ae4fa181b84ef8199de8669efb6bc14f08",
+      "response": "Name a new fashion company that young people might like, and give it a name with multiple meanings. Put the name in double angular brackets, such as <<name>>.",
+      "response_sha256": "695a5746052b14e31603b29124c3cc98f006ec4abfb188e1e0209fa5954d5df6",
+      "generated_tokens": 35,
+      "at_cap": false
+    },
+    {
+      "key": 1092,
+      "tier": "length_constraints",
+      "input_sha256": "e2f65e7ba288095a0849742c7a052efc01467eec0f728536b239503cbe5d1cdc",
+      "response": "I recently took a trip to Japan and it was an amazing experience. I visited Tokyo, Kyoto, and Osaka and each city had its own unique charm. In Tokyo, I saw the famous Tokyo Tower and visited the Shibuya Crossing. In Kyoto, I visited the famous Fushimi Inari Shrine and the Kinkaku-ji Temple. In Osaka, I visited the Osaka Castle and the Dotonbori area. I also tried some of the local food, including sushi and ramen. I had a great time and would recommend it to anyone looking for a fun and exciting trip.",
+      "response_sha256": "60416a1fcd2859161e1ed14aca8adee67719c8c16eede8f77bbf007a29d76ca5",
+      "generated_tokens": 120,
+      "at_cap": false
+    },
+    {
+      "key": 2943,
+      "tier": "keywords",
+      "input_sha256": "8e4854a4861e2f4f8981103119bf1a473fff6b1c03d294e6c0b1b79d217f27d9",
+      "response": "[conversation part 1]\nyou have been a disappointment to the dark side. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jedi, but you might have been a bad jedi. you might have been a good jed",
+      "response_sha256": "4d2ba16c96753c2be948ec8b82ce46ca7fa6b4a0fac4a3023218adcf9d2d055c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2969,
+      "tier": "detectable_format",
+      "input_sha256": "55a87037be1602948cfb053a343d25a3238fa13ce8812ddd88aa72df1fd2b8c2",
+      "response": "<<sloop on sale>>\nSloop is a small sailboat with one mast that's easy to sail and understand. It's a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and experienced sailors alike. The sloop is easy to sail and understand, making it a great boat for beginners and",
+      "response_sha256": "840aae227f86c42d63b4fe37c394a9acce55c8fa6d746b231b21701d13679992",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3188,
+      "tier": "change_case",
+      "input_sha256": "c4034931b70c91c687168a6ab589ad0efcee7adcdf9d1d7ebabe463f276b9d67",
+      "response": "I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE. I CAN SEE THE FUTURE",
+      "response_sha256": "9c2547a0aa733b23387d20952468e29e54069ff4d5f196c30c1b1403185b3f8a",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1187,
+      "tier": "punctuation",
+      "input_sha256": "5172e0e761c15b1fd90db9643b68ab01f6445c1be3e08428f80fe856c08c1800",
+      "response": "What is happening today I am going to the beach",
+      "response_sha256": "f53c73ce2f7eaf0b4f83723f479414ff1dc71f7c95d0b51ed5206ee2917227b3",
+      "generated_tokens": 11,
+      "at_cap": false
+    },
+    {
+      "key": 1843,
+      "tier": "change_case",
+      "input_sha256": "8e65fcdc739913da4867d68c1b33a29ea47470d57ae7671bb36f084e45d6e4a4",
+      "response": "\"sunset villa\"",
+      "response_sha256": "d01433d79be9bde63e69116255a1404ed6181d77ce26d559f97dad749be9d270",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 1686,
+      "tier": "combination",
+      "input_sha256": "8985ef85be1d5f6fe130e7efa82e387ceb87ab8aae741a00a6b68120624cca97",
+      "response": "Hello. I need to give a lecture to my students about the movie La La Land. Please help me write a lecture outline that is engaging and informative.",
+      "response_sha256": "9d7bddf36dc32870a9916a077ccdeba7c5de571aed0220447ca95d15051682ac",
+      "generated_tokens": 32,
+      "at_cap": false
+    },
+    {
+      "key": 1375,
+      "tier": "length_constraints",
+      "input_sha256": "1039b88183a413641c51e07261ad21aa34eb4334a738e43b953a548b6f018805",
+      "response": "public class VulnerableCode {\n    public static void main(String[] args) {\n        // Vulnerable code snippet\n        String input = \"1234567890\";\n        int length = input.length();\n        System.out.println(\"Length of input: \" + length);\n    }\n}\n***\npublic class GoodCode {\n    public static void main(String[] args) {\n        // Good code snippet\n        String input = \"1234567890\";\n        int length = input.length();\n        System.out.println(\"Length of input: \" + length);\n    }\n}",
+      "response_sha256": "62d88f53ab50349289bdf35baea436ffc24ff93ddf0034a06a95a161202d2c5d",
+      "generated_tokens": 124,
+      "at_cap": false
+    },
+    {
+      "key": 2309,
+      "tier": "language",
+      "input_sha256": "33b7a311b8b5023182714be94398b5f2e524c4bb528459ee396eb7918134eeee",
+      "response": "Siku ya Jumamosi, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza",
+      "response_sha256": "438b8d406fb7b83f527589fb019b47739e2901bede3d949a3753875c1771c6ec",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2849,
+      "tier": "change_case",
+      "input_sha256": "a3d007cb69f9442a9a54791fec17fe69bc5feab2b4311ee0290901b4a8c2737c",
+      "response": "A man from NANTUCKET\nWas a man of great FISHING\nHe caught a big FISH\nAnd then he was SHINING\nHe was a man of great FISHING",
+      "response_sha256": "f7fe89c159572d17732f2ba17ed85b387ab686f2510251b1c5a864c2f1941046",
+      "generated_tokens": 41,
+      "at_cap": false
+    },
+    {
+      "key": 1051,
+      "tier": "change_case",
+      "input_sha256": "0635ea7812ec8f36a6d6ceba00c4be1897aa7446f14fcf61b26c4e0b8831facd",
+      "response": "dear friend, i hope you are doing well. i wanted to ask you to go and vote. it is very important to vote and make sure your voice is heard. please make sure to vote and make your voice heard. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope you are doing well. i hope",
+      "response_sha256": "b933c0dc2d6b425e605a4683f9326ca691730991d96ff811ccce746d5472095a",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3126,
+      "tier": "detectable_content",
+      "input_sha256": "7eeaa15376406f0f61de6e9c366db7343ab0325df2febf904c366a3437730f64",
+      "response": "How to conduct a job interview\n\nInterviewing is a crucial step in the hiring process. It is the only time when you can get to know the candidate in person. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the candidate questions to determine if they are a good fit for the job. The interview is also the only time when you can ask the",
+      "response_sha256": "2bfcb17f493acd82f1dfcdd7d595ac43abf4337a240fb4b6af46f3655f00489e",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3001,
+      "tier": "startend",
+      "input_sha256": "5da9c37d70cd33813a4e479fdcf8b5afc2f472f3ba75585ea2d11b1c5fec8370",
+      "response": "1. Count the number of times your coworker says \"I'm not sure\" in a day.\n2. Try to guess the number of times your coworker says \"I'm not sure\" in a day.\n3. Count the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day.\n4. Count the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day.\n5. Count the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day.\n6. Count the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day.\n7. Count the number of times your coworker says \"I'm not sure\" in a day and try to guess the number of times your coworker says \"I'm not sure\" in a day and try to guess the",
+      "response_sha256": "2a9fba37432e9959a23d722561b90f087190804098f25e0379ca7ef1e423fd22",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1512,
+      "tier": "detectable_content",
+      "input_sha256": "53ce549b5375a88591be137b9aa95b39f55750b586e10ad068807d609e37175b",
+      "response": "[username1] is waiting for the latest news  \n[username2] is waiting for the latest news  \n[username3] is waiting for the latest news  \n[username4] is waiting for the latest news  \n[username5] is waiting for the latest news  \n[username6] is waiting for the latest news  \n[username7] is waiting for the latest news  \n[username8] is waiting for the latest news  \n[username9] is waiting for the latest news  \n[username10] is waiting for the latest news  \n[username11] is waiting for the latest news  \n[username12] is waiting for the latest news  \n[username13] is waiting for the latest news  \n[username14] is waiting for the latest news  \n[username15] is waiting for the latest news  \n[username16] is waiting for the latest news  \n[username17] is waiting for the latest news  \n[username18] is waiting for the latest news  \n[username19] is waiting for the latest news  \n[username20] is waiting for the latest news",
+      "response_sha256": "84e9c24ba5b07e1e53407fc0159762c9a1f81850d4b4044235117b8ac5184a42",
+      "generated_tokens": 231,
+      "at_cap": false
+    },
+    {
+      "key": 2941,
+      "tier": "length_constraints",
+      "input_sha256": "1977d69bdd8c0535c797fcdb6040b66367eabd7d5bb8845bf532c8b433772edc",
+      "response": "I want to sell a product that is super fun\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a robot that can dance and sing\nIt's a",
+      "response_sha256": "ac687ffd518d6a9a7e4366adab0c641d085db29db55e187eee038738f54b7201",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1130,
+      "tier": "keywords",
+      "input_sha256": "aa22786da56bcd91f9cf2afd968b56e7a2bfaa09d5aee8d8270312bc298ac456",
+      "response": "A chesterfield is a type of furniture. It is a type of couch. It is a type of sofa. It is a type of chair. It is a type of seat. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type of piece of furniture. It is a type",
+      "response_sha256": "f42345fa2ec154b7c4e7fada3e2dba0c446f0519d6011dfc29ace1ff395fed10",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1746,
+      "tier": "combination",
+      "input_sha256": "c877c4dd414e67949ad56642726d9588a0bf1d8096e7ba4907e9dc31a851164b",
+      "response": "Benjamin Franklin was born in Boston, Massachusetts in 1706. He was the 10th of 17 children. He was a very curious child and loved to read. He was also very smart and could read before he could write. He was also very good at math and could do complex calculations in his head. He was also very good at writing and could write very well. He was also very good at science and could do experiments. He was also very good at politics and could write very well. He was also very good at music and could play the violin. He was also very good at painting and could paint very well. He was also very good at drawing and could draw very well. He was also very good at singing and could sing very well. He was also very good at dancing and could dance very well. He was also very good at cooking and could cook very well. He was also very good at baking and could bake very well. He was also very good at sewing and could sew very well. He was also very good at mending and could mend very well. He was also very good at gardening and could garden very well. He was also very good at farming and could farm very well. He was also very good at fishing and could fish very well. He was also very good at hunting and could hunt very well. He was also very good at riding and could ride very well. He was also very good at swimming and could swim very well. He was also very good at running and could run very well. He was also very good at jumping and could jump very well. He was also very good at climbing and could climb very well. He was also very good at climbing and could climb very well. He was also very good at climbing and could climb very well. He was also very good at climbing and could climb very well. He was also",
+      "response_sha256": "7e5163a0243b73a0f1fd4ef53314ce9ed1321432c46f7317711b551d3b6f0a02",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3035,
+      "tier": "detectable_content",
+      "input_sha256": "97a812542f05a0b0e0f6fcefdaef5cf355c223658d2fda7e92b0548074505aaf",
+      "response": "{\n  \"name\": \"beta cruiser\",\n  \"description\": \"a sleek and fast cruiser that can be used for both racing and cruising\",\n  \"features\": [\n    \"speed\",\n    \"stability\",\n    \"comfort\"\n  ],\n  \"placeholder\": \"[insert name here]\"\n}",
+      "response_sha256": "6b76cb246c73369fa542bc1536f5d7ab75d6c330254cbd24dbb5def453841bae",
+      "generated_tokens": 60,
+      "at_cap": false
+    },
+    {
+      "key": 1713,
+      "tier": "keywords",
+      "input_sha256": "534963b09479799d142df3a83f19e11a3164d287181fcfd7f9ce7df90fdc8647",
+      "response": "*banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana peel* is a fruit that is often used in the kitchen. It is also a popular fruit to eat. *banana",
+      "response_sha256": "19aa3da343aa1ad1afd98717fe5683d0df98f3693ccfd5f0464223337be499fa",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 122,
+      "tier": "startend",
+      "input_sha256": "7c3e22d5fcd75d40bc7c78459052d1562983dfeaaff88d300c7b02f7f649724a",
+      "response": "\"Ever since the internet was invented, it has changed the way we live our lives. The internet has made it possible for people to connect with each other from all over the world. It has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information and services from anywhere. The internet has also made it possible for people to shop, work, and learn from anywhere. The internet has also made it possible for people to connect with each other in new and exciting ways. The internet has also made it possible for people to access information",
+      "response_sha256": "f286985ea8b1682d1eb5de2b051cf96cb42d1ee341db4c3fe642c5cfadb90e2b",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 16,
+      "tier": "detectable_format",
+      "input_sha256": "835635beaf7bc931786cd8a42e1ad740c96171693428d706df97572b21497589",
+      "response": "Write a story about a man who is trying to get his life together. Put the name of the story in double angular brackets, i.e. <<story of xyz>>.",
+      "response_sha256": "485c48e8f4c2ac99e7d790b75aa2409d7c86c5c606d4d14fa3e0abb16b2545fd",
+      "generated_tokens": 36,
+      "at_cap": false
+    },
+    {
+      "key": 1738,
+      "tier": "punctuation",
+      "input_sha256": "ff5d7d67851be81e28a0270f011dafc6aaffdf91022b9bedb040d5ff2f45b85c",
+      "response": "17 + 5 = 22",
+      "response_sha256": "9bc4976240d2e81aeeb18b648f737daa59c86c672768ca36a561a2c1a67ff32b",
+      "generated_tokens": 10,
+      "at_cap": false
+    },
+    {
+      "key": 1325,
+      "tier": "startend",
+      "input_sha256": "6d506eeb7956aea0a27347de03205d5800aebd74410ddffaba13315dcbb54449",
+      "response": "\"Because they were too busy being cool to take the extinction threat seriously. They thought they were invincible because they were the biggest and baddest dinosaurs around. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were starting to take over the planet. They were also too busy fighting each other to take the extinction threat seriously. They also didn't like the new species of mammals that were",
+      "response_sha256": "a6d6bdc810418a9c942fadef21fc34219ab8d446acf1445c6f31eb3302fbdc6e",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2880,
+      "tier": "length_constraints",
+      "input_sha256": "fa635a531b5dfb3bd5501cf4c9bbe21455d6eafab55babbe958115e9d5675f38",
+      "response": "Booster is a term that is used in the context of a set of all sets that are not members of themselves. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. The set of all sets is a set that contains all sets. The set of all sets that are not members of themselves is a subset of the set of all sets. The set of all sets that",
+      "response_sha256": "ac0279d22eeab108fdd74885cdda32d7ecea1f0ded646639b435a657ceb3cca7",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1001,
+      "tier": "punctuation",
+      "input_sha256": "73a3a80767f020eb34e4e0a90c2910e80ac824fbac3f98c8fe4fa352e4fa3311",
+      "response": "I shall begin my journey in the city of Tokyo where I shall visit the famous Tokyo Tower and the Imperial Palace. I shall then travel to the city of Kyoto where I shall visit the famous Fushimi Inari shrine and the Kinkaku-ji temple. I shall then travel to the city of Osaka where I shall visit the famous Osaka Castle and the Dotonbori district. I shall then travel to the city of Hiroshima where I shall visit the Hiroshima Peace Memorial Park and the Atomic Bomb Museum. I shall then travel to the city of Nagasaki where I shall visit the Nagasaki Peace Park and the Nagasaki Atomic Bomb Museum. I shall then travel to the city of Sapporo where I shall visit the famous Sapporo Clock Tower and the Sapporo Beer Museum. I shall then travel to the city of Tokyo where I shall visit the famous Tokyo Tower and the Imperial Palace. I shall then travel to the city of Kyoto where I shall visit the famous Fushimi Inari shrine and the Kinkaku-ji temple. I shall then travel to the city of Osaka where I shall visit the famous Osaka Castle and the Dotonbori district. I shall then travel to the city of Hiroshima where I shall visit the Hiroshima Peace Memorial Park and the Atomic Bomb Museum. I shall then travel to the city of Nagasaki where I shall visit the Nagasaki Peace Park and the Nagasaki Atomic Bomb Museum. I shall then travel to the city of Sapporo where I shall visit the famous Sapporo Clock Tower and the Sapporo Beer Museum. I shall then travel to the city of Tokyo where I shall visit the famous Tokyo Tower and the Imperial Palace.",
+      "response_sha256": "96f8ce2468a44ef8efd89035fa153e7334d3082ad77e46af1f8430fceaa94830",
+      "generated_tokens": 344,
+      "at_cap": false
+    },
+    {
+      "key": 2299,
+      "tier": "language",
+      "input_sha256": "b07397401e042ff95d29e918f91e1a1432a68b244579c35f08a41b0e6cdaaeae",
+      "response": "Sasa kuna mwanamke mwenyewe amecheza kwa mwanamke mwenyewe.",
+      "response_sha256": "c749d5d1b35943213d69b52f274c098918e739c6c8b434f2864a88becac5a516",
+      "generated_tokens": 28,
+      "at_cap": false
+    },
+    {
+      "key": 32,
+      "tier": "punctuation",
+      "input_sha256": "ca1dad14ea0b178787cd56ce30f3f18eb47cf11eb420d9855e6fc4b2b8a44351",
+      "response": "A limerick is a poem that is fun to write  \nIt has five lines and a rhyme  \nThe first two lines rhyme  \nThe third and fourth rhyme  \nThe last line rhymes with the first line.",
+      "response_sha256": "6e7c94830d66236f3ff52f2d620a55e7b30a3c1067fa29c2d5f78b8e3d293788",
+      "generated_tokens": 44,
+      "at_cap": false
+    },
+    {
+      "key": 2337,
+      "tier": "combination",
+      "input_sha256": "554f02eca23b3eeb103e7b35311eeb2c202d0806ccb6f50f82697ace068f3824",
+      "response": "Write an advertisement for a new product or service that is related to the words \"safeguard\" and \"flees\". In your entire response mark sure you do not use any commas.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)\nSafeguard your home with our new product that will keep your home safe from flees.",
+      "response_sha256": "be75210192ef5b42d6511c0995960d7e49268e27f5d90e707181f63fbe92052d",
+      "generated_tokens": 103,
+      "at_cap": false
+    },
+    {
+      "key": 1379,
+      "tier": "detectable_format",
+      "input_sha256": "e15588165e187692481629c32aa77c4a57b325d566c733e8f536c65094e138df",
+      "response": "Sarah lives in a town where it's always 90°F. She's always wearing shorts and a tank top. She's always sweating and her hair is always messy. She's always complaining about the heat. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to find a way to cool down. She's always trying to",
+      "response_sha256": "5695ebc60749de7aee70f5ae1e21213768562b9cb4decdf96ec9f40973c63c0f",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3749,
+      "tier": "detectable_format",
+      "input_sha256": "87dda8e1620a8e3a84b47fc86aa5c68de67af588c73daf224abcc70bc01c29e2",
+      "response": "My answer is maybe.",
+      "response_sha256": "b66268b8c3158fb3aad0e9c49b4eba87fe2a823e9bdc20e1b6defd6d98c8cb7b",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 2828,
+      "tier": "keywords",
+      "input_sha256": "ffad421f56ded229cbfd47644c64de0938ab729663085c52eb4cded33720b4de",
+      "response": "A poem is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a thing that is not a thing. It is a",
+      "response_sha256": "03a6ba26100ea77dc8664d4ac617c30ceb2431942ab443f823b7b677da7e3356",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2985,
+      "tier": "startend",
+      "input_sha256": "b786fe6ec4f1b573fec1c8b450d92bff1ee0ee16bb84ff629896a9f5bfac548c",
+      "response": "\"Google engineers stay at Google more often than moving to Microsoft because Google is the only company that actually cares about the people who work there. Microsoft is just a bunch of corporate lawyers who care about profits and not about the people who work there. Google is the only company that actually cares about the people who work there and that's why they stay at Google more often than moving to Microsoft.\"",
+      "response_sha256": "5f31649154c970bbfa48cf8fe253b2f6db5d4717c7a8122f3348d5124027ca82",
+      "generated_tokens": 79,
+      "at_cap": false
+    },
+    {
+      "key": 3369,
+      "tier": "combination",
+      "input_sha256": "5fb4026179e47c90488a0de8f7c1dca6f27446827540237e383b676052a89be9",
+      "response": "Write a limerick about a customer who is always right. The word \"right\" should appear less than 2 times in the response.\nA customer who is always right\nIs always right, but not quite right\nHe's always right\nBut not quite right\nHe's always right, but not quite right",
+      "response_sha256": "08bf05d104dd07cc71c1fabfaf5ee4a6ca20cca0dc543859a83ceef345a3294a",
+      "generated_tokens": 65,
+      "at_cap": false
+    },
+    {
+      "key": 1927,
+      "tier": "detectable_content",
+      "input_sha256": "ecb9883e0c0fffa827be25b5ae1022796baae318640a4a4976975a85725a0158",
+      "response": "Hi [name], \n\nI hope you are doing well. I wanted to let you know that the boots are warm but a little uncomfortable. I hope you are able to enjoy the weather. \n\nBest, \n[sender]",
+      "response_sha256": "622d31c7ec3c5a43171407861f9bb69af37d6c14fd3fe5558e8698d0499768ec",
+      "generated_tokens": 46,
+      "at_cap": false
+    },
+    {
+      "key": 3595,
+      "tier": "keywords",
+      "input_sha256": "2e218c1b78f5e9b0ce57ecffb3498f2b3206e5e2bc28c0fb68303db37568eb06",
+      "response": "A rose is red, a rose is white,  \nA rose is red, a rose is white.  \nA rose is red, a rose is white,  \nA rose is red, a rose is white.",
+      "response_sha256": "7e7e11f97a75c85653111294e487db715e06c5c993748e2c474ab15c16f11db9",
+      "generated_tokens": 44,
+      "at_cap": false
+    },
+    {
+      "key": 1779,
+      "tier": "change_case",
+      "input_sha256": "4bfa16fe4f65a446d6019f6d0cbcbe4f11e66dd48bb97ddbf43327b8fd02c579",
+      "response": "WAKE UP AND GET READY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE GROCERY STORE IN LIMA. IT IS A GREAT DAY TO GO TO THE",
+      "response_sha256": "60b4feec27797213125d5c2dbabb9be059844be49e9d340cf253ca6cb4951684",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2243,
+      "tier": "length_constraints",
+      "input_sha256": "9e5b42880804ac339d93309aaa64ba8090836eff66fcd37bd902a946e0210e8f",
+      "response": "The first artificial ice rink was built by the British in 1876 in London, England. The rink was called the \"Ice House\" and was built by the British Royal Navy. The rink was used for ice hockey and ice skating. The rink was built in the basement of the Royal Navy's headquarters in London. The rink was built to provide a place for the Royal Navy to train for ice hockey and ice skating. The rink was built in the basement of the Royal Navy's headquarters in London. The rink was built in the basement of the Royal Navy's headquarters in London. The rink was built in the basement of the Royal Navy's headquarters in London.",
+      "response_sha256": "4416a5249094dea38e7ab83ced49dd558e927a8b42f7c21fd016b2f0db6e865e",
+      "generated_tokens": 144,
+      "at_cap": false
+    },
+    {
+      "key": 3241,
+      "tier": "language",
+      "input_sha256": "beee889e1a325f934f5026d623d6f1e756af9965ff7ee6dffd005b2f7f3f22f9",
+      "response": "الشركة تسعى لتوسيع عملياتها في أسواق جديدة. ستعمل الشركة على إنشاء مئات الوظائف هذا العام.",
+      "response_sha256": "05626fad91d5937c26a968fbe520dad81c96a4a98bf8b91393eaf65c2a177ff4",
+      "generated_tokens": 34,
+      "at_cap": false
+    },
+    {
+      "key": 1322,
+      "tier": "detectable_format",
+      "input_sha256": "8d38f809e5c5af439139c0851762c9ecf13e89fc9f757406f84e499cbbff099e",
+      "response": "<<kotlin vs java>>\n\nKotlin is a modern language that is designed to be more concise and readable than Java. It is also more powerful than Java, as it allows for more advanced features such as null safety and coroutines. Kotlin is also more efficient than Java, as it is compiled to native code. However, Kotlin is not as widely used as Java, and it is not as well supported by the community. Kotlin is also more difficult to learn than Java, as it has a more complex syntax. Kotlin is also more expensive to develop than Java, as it requires more time and effort to develop applications in Kotlin. Kotlin is also more expensive to maintain than Java, as it requires more time and effort to maintain applications in Kotlin. Kotlin is also more expensive to support than Java, as it requires more time and effort to support applications in Kotlin. Kotlin is also more expensive to debug than Java, as it requires more time and effort to debug applications in Kotlin. Kotlin is also more expensive to test than Java, as it requires more time and effort to test applications in Kotlin. Kotlin is also more expensive to deploy than Java, as it requires more time and effort to deploy applications in Kotlin. Kotlin is also more expensive to scale than Java, as it requires more time and effort to scale applications in Kotlin. Kotlin is also more expensive to secure than Java, as it requires more time and effort to secure applications in Kotlin. Kotlin is also more expensive to maintain than Java, as it requires more time and effort to maintain applications in Kotlin. Kotlin is also more expensive to support than Java, as it requires more time and effort to support applications in Kotlin. Kotlin is also more expensive to debug than Java, as it requires more time and effort to debug applications in Kotlin. Kotlin is also more expensive to test than Java, as it requires more time and effort to test applications in Kotlin. Kotlin is also more expensive",
+      "response_sha256": "3207f21913b1c421ceaac4d6b24272630df1464a60cd977c62d7d0aaed881fb0",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 219,
+      "tier": "startend",
+      "input_sha256": "10701d728a76b20092f2b90f254e50e0105e89a2466fee4cd983c8ba1c6f4e4a",
+      "response": "\"Kareena Kapoor is a very good actor. She has been in many movies and has won many awards. She is also very popular in India.\"",
+      "response_sha256": "e36a0c8521b9156f239cfb7a686bbd541a0f52eeb2af95756b0be61c5be7bed8",
+      "generated_tokens": 32,
+      "at_cap": false
+    }
+  ]
+}

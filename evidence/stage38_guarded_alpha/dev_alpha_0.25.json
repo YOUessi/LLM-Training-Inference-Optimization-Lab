@@ -1,0 +1,393 @@
+{
+  "alpha": 0.25,
+  "source_input_sha256": "ebd7bfdb2c2311a9a7e604725446e048dcff49d79279e08909e9dfe846d7bb5c",
+  "responses": [
+    {
+      "key": 3245,
+      "tier": "punctuation",
+      "input_sha256": "f470c920bca357625abfec25e7fad32817facd6e4a94ee5f8ca225376f0cf48c",
+      "response": "Layton is the best city in the world\n\nLayton is the best city in the world because it offers a perfect blend of nature and urban life. The city is surrounded by beautiful mountains and has a variety of outdoor activities to enjoy. The people in Layton are friendly and welcoming and the city has a strong sense of community. The city is also home to a variety of restaurants and shops that offer something for everyone. The city has a great public transportation system and is easy to get around. The city is also very safe and has a low crime rate. The city has a great school system and is home to a variety of educational institutions. The city has a great healthcare system and is home to a variety of hospitals and clinics. The city has a great job market and is home to a variety of businesses. The city has a great quality of life and is home to a variety of people from all over the world. The city has a great climate and is home to a variety of weather conditions. The city has a great cultural scene and is home to a variety of events and festivals. The city has a great nightlife and is home to a variety of bars and restaurants. The city has a great shopping scene and is home to a variety of stores and boutiques. The city has a great food scene and is home to a variety of restaurants and cafes. The city has a great music scene and is home to a variety of venues and events. The city has a great art scene and is home to a variety of galleries and museums. The city has a great sports scene and is home to a variety of teams and events. The city has a great history and is home to a variety of historical sites and landmarks. The city has a great future and is home to a variety of opportunities and potential. The city has a great present and is home to a variety of experiences and memories. The city",
+      "response_sha256": "045b5d5e694cbb64b02ac75a921f9486612099d7f35a203cb84de7065306df0c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2396,
+      "tier": "detectable_content",
+      "input_sha256": "ad39859620f17918b2c8d828ca0e052afa1ed70aede879509092c4d8d83c3638",
+      "response": "**Echoes of the Unending War**\n\nBeneath the stars, the silence screams,  \nA war that time cannot redeem.  \nNo peace has come, no truce has been,  \nJust endless cries, a broken dream.  \n\nThe fields are scarred, the skies are torn,  \nBy hatred sown in every morn.  \nThe children weep, the elders mourn,  \nWhile empires rise on blood and scorn.  \n\nThe flags still fly, the drums still beat,  \nYet none can see the cost they meet.  \nEach battle fought, each life is lost,  \nIn a war that never seems to cost.  \n\nThe world once hoped, the world once prayed,  \nThat peace would come, that hearts would fade.  \nBut war, it feeds on fear and pride,  \nAnd in its wake, the future dies.  \n\nSo let the winds carry the names,  \nOf those who fell, who gave their claims.  \nFor in this war, no side is right,  \nJust endless pain, and endless night.  \n\n---\n\n**P.P.S.**  \nEven in the silence, the war still speaks.  \nIn every shadow, in every break,  \nIt waits, it grows, it never sleeps.  \nA war that lasts, and lasts, and lasts—  \nForever.",
+      "response_sha256": "d3d0542fe1d9eaff6e3a213338cd5d0cb032acc990e6a9a0af8cf4705102d0aa",
+      "generated_tokens": 269,
+      "at_cap": false
+    },
+    {
+      "key": 1561,
+      "tier": "combination",
+      "input_sha256": "dd46ffdf97df0745621184ec2b9cd3ae4fa181b84ef8199de8669efb6bc14f08",
+      "response": "Name a new fashion company that young people might like, and give it a name with multiple meanings. Put the name in double angular brackets, such as <<name>>.",
+      "response_sha256": "695a5746052b14e31603b29124c3cc98f006ec4abfb188e1e0209fa5954d5df6",
+      "generated_tokens": 35,
+      "at_cap": false
+    },
+    {
+      "key": 1092,
+      "tier": "length_constraints",
+      "input_sha256": "e2f65e7ba288095a0849742c7a052efc01467eec0f728536b239503cbe5d1cdc",
+      "response": "Japan is a country that blends ancient traditions with modern innovation, making it a fascinating destination. My recent trip to Tokyo, Kyoto, and Osaka was a journey through time and culture.\n\nIn Tokyo, I marveled at the towering skyscrapers and bustling streets, yet found moments of calm in serene gardens and quiet temples. The city never sleeps, but there are hidden corners where you can sit and savor a matcha latte in a traditional teahouse.\n\nKyoto offered a different pace. I wandered through centuries-old temples like Kinkaku-ji, the Golden Pavilion, and visited the Arashiyama Bamboo Grove. The city is a living museum, where every street corner tells a story.\n\nOsaka was a feast for the senses. I explored the Dotonbori district, where neon lights and street food tempt you at every turn. The local cuisine was a highlight—fresh sushi, takoyaki, and okonomiyaki were unforgettable.\n\nWhat struck me most was the respect for tradition and the seamless integration of old and new. Whether it was a quiet moment in a shrine or a high-tech train station, Japan offers a unique balance of the past and the future.\n\nTraveling through Japan reminded me of the beauty of cultural preservation and the importance of experiencing the world with an open heart. It's a place that stays with you long after you've left.",
+      "response_sha256": "391e7b133f04c729d0bbb1f026e428c36b19b366b5dd93a3e2738699d84d5fba",
+      "generated_tokens": 279,
+      "at_cap": false
+    },
+    {
+      "key": 2943,
+      "tier": "keywords",
+      "input_sha256": "8e4854a4861e2f4f8981103119bf1a473fff6b1c03d294e6c0b1b79d217f27d9",
+      "response": "[conversation part 1]  \ni know you might have thought you were doing the right thing by assassinating that fake jedi. but you might have forgotten that the jedi are not just any warriors. they might have been the only ones who could stop the dark side from spreading. and now, because of your mistake, the galaxy might be in more danger than ever. you might have thought you were protecting the galaxy, but you might have only made it worse.  \n\n***  \n\n[conversation part 2]  \nyou might have believed that the fake jedi was a threat, but you might have failed to see that they might have been trying to save something greater. the dark side might have been growing stronger, and you might have only added to its power. you might have thought you were standing on the side of good, but you might have been standing on the side of chaos.  \n\n***  \n\n[conversation part 3]  \nyou might have thought that your actions might have been justified, but you might have been wrong. the galaxy might have been watching, and they might have seen your mistake. you might have thought that you could control the outcome, but you might have been too late. now, the dark side might have taken root in places you might have never imagined. and i might have to take matters into my own hands.",
+      "response_sha256": "2c2a6c60de9fa5b9ad03983a47696789a0eef98ad789d202195b27f27dca967c",
+      "generated_tokens": 273,
+      "at_cap": false
+    },
+    {
+      "key": 2969,
+      "tier": "detectable_format",
+      "input_sha256": "55a87037be1602948cfb053a343d25a3238fa13ce8812ddd88aa72df1fd2b8c2",
+      "response": "<<Sloop on Sale>>\n\nLooking for a simple, reliable sailboat that's easy to handle and perfect for beginners or casual sailors? This sloop is the perfect choice for you!\n\n| Feature | Description |\n|--------|-------------|\n| Type | Sloop |\n| Size | Small, easy to handle |\n| Mast | One mast for simplicity |\n| Sail | One sail for easy sailing |\n| Ideal For | Beginners, casual sailing, weekend getaways |\n| Condition | Excellent, well-maintained |\n| Price | Affordable and great value |\n\nThis sloop is designed for simplicity and ease of use. With just one mast and one sail, it's easy to learn and master. Whether you're sailing on a lake or the open sea, this sloop offers a smooth and enjoyable experience. Don't miss your chance to own this great sailboat at an unbeatable price!",
+      "response_sha256": "d218baf70737970c68e2903a3106796f9b02a1cf9b547dbc2a4c8c02774d44f7",
+      "generated_tokens": 178,
+      "at_cap": false
+    },
+    {
+      "key": 3188,
+      "tier": "change_case",
+      "input_sha256": "c4034931b70c91c687168a6ab589ad0efcee7adcdf9d1d7ebabe463f276b9d67",
+      "response": "I AM NOT A FORTUNE TELLER. I AM A WITNESS TO THE FUTURE. THE POLICE CANNOT ARREST ME FOR KNOWING WHAT IS TO COME. I HAVE SEEN THE DAY YOU WILL BE ARRESTED. I HAVE SEEN THE DAY YOU WILL BE CHARGED WITH A CRIME. I HAVE SEEN THE DAY YOU WILL BE JUDGED. I HAVE SEEN THE DAY YOU WILL BE FOUND GUILTY. I HAVE SEEN THE DAY YOU WILL BE SENTENCED. I HAVE SEEN THE DAY YOU WILL BE EXECUTED. I HAVE SEEN THE DAY YOU WILL BE BURIED. I HAVE SEEN THE DAY YOU WILL BE FORGOTTEN. I HAVE SEEN THE DAY YOU WILL BE LOST. I HAVE SEEN THE DAY YOU WILL BE LOST FOREVER.",
+      "response_sha256": "a0ea8c4495c82179ecf69ff0f9836b549aaea9630a39ab3a9791d2d216c88e60",
+      "generated_tokens": 175,
+      "at_cap": false
+    },
+    {
+      "key": 1187,
+      "tier": "punctuation",
+      "input_sha256": "5172e0e761c15b1fd90db9643b68ab01f6445c1be3e08428f80fe856c08c1800",
+      "response": "How are you doing today I am going to the beach  \nWhat is happening I will be at the beach today",
+      "response_sha256": "9b94b5cc372ea31c933fbafd8d1c741f9964ba377b4b9d468657375cffed2f0f",
+      "generated_tokens": 23,
+      "at_cap": false
+    },
+    {
+      "key": 1843,
+      "tier": "change_case",
+      "input_sha256": "8e65fcdc739913da4867d68c1b33a29ea47470d57ae7671bb36f084e45d6e4a4",
+      "response": "\"seaside haven\"",
+      "response_sha256": "a05e77f782aee4b83a29c79d431b65c829383731ed43a97fc3cb994ab8da2c14",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 1686,
+      "tier": "combination",
+      "input_sha256": "8985ef85be1d5f6fe130e7efa82e387ceb87ab8aae741a00a6b68120624cca97",
+      "response": "Hello. I need to give a lecture to my students about the movie La La Land. Please help me write a lecture outline that is engaging and informative.",
+      "response_sha256": "9d7bddf36dc32870a9916a077ccdeba7c5de571aed0220447ca95d15051682ac",
+      "generated_tokens": 32,
+      "at_cap": false
+    },
+    {
+      "key": 1375,
+      "tier": "length_constraints",
+      "input_sha256": "1039b88183a413641c51e07261ad21aa34eb4334a738e43b953a548b6f018805",
+      "response": "```java\nimport java.io.*;\nimport java.net.*;\n\npublic class VulnerableExample {\n    public static void main(String[] args) {\n        // Vulnerable: Using URLDecoder without proper validation can lead to XSS\n        String userInput = \"<script>alert('XSS')</script>\";\n        String decodedInput = URLDecoder.decode(userInput, \"UTF-8\");\n        System.out.println(\"Decoded input: \" + decodedInput);\n    }\n}\n***\n// Good: Using URLDecoder with proper validation and escaping to prevent XSS\nimport java.io.*;\nimport java.net.*;\n\npublic class SafeExample {\n    public static void main(String[] args) {\n        String userInput = \"<script>alert('XSS')</script>\";\n        try {\n            // Validate input before decoding\n            if (isValidInput(userInput)) {\n                String decodedInput = URLDecoder.decode(userInput, \"UTF-8\");\n                System.out.println(\"Decoded input: \" + decodedInput);\n            } else {\n                System.out.println(\"Invalid input detected.\");\n            }\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n\n    // Helper method to validate input\n    private static boolean isValidInput(String input) {\n        // Simple validation: check for script tags\n        return !input.contains(\"<script>\");\n    }\n}\n```",
+      "response_sha256": "f5964a0e2015fa88452a9a44f4dedb2d38ceac08925c6220dd415c5822255bcf",
+      "generated_tokens": 263,
+      "at_cap": false
+    },
+    {
+      "key": 2309,
+      "tier": "language",
+      "input_sha256": "33b7a311b8b5023182714be94398b5f2e524c4bb528459ee396eb7918134eeee",
+      "response": "Siku ya Jumamosi, mwanamke alikwenda kwa kampuni ya kujifunza kifunzi. Alikwenda kwa kampuni kwa kuzingia kwa kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichukua kesi ya kujifunza. Kwa kesi ya kujifunza, alichuk",
+      "response_sha256": "6164d3c179eb5646957119cd194cc514fec22a1bf261a91159f12b398225a65f",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2849,
+      "tier": "change_case",
+      "input_sha256": "a3d007cb69f9442a9a54791fec17fe69bc5feab2b4311ee0290901b4a8c2737c",
+      "response": "There once was a man from NANTUCKET,  \nWho loved to sail on the ocean's back.  \nHe'd JUMP from a boat,  \nAnd then he'd be caught,  \nBut he'd laugh and say, \"I'm a LUCKY DUCK!\"  \n\n**Notation:**  \nLine 1: A  \nLine 2: A  \nLine 3: B  \nLine 4: B  \nLine 5: A",
+      "response_sha256": "734b526b90e7cbdee1941fd21154fc1093e28ca989e334befa54d4c0baf4291b",
+      "generated_tokens": 92,
+      "at_cap": false
+    },
+    {
+      "key": 1051,
+      "tier": "change_case",
+      "input_sha256": "0635ea7812ec8f36a6d6ceba00c4be1897aa7446f14fcf61b26c4e0b8831facd",
+      "response": "dear friend,  \n\ni hope you're doing well. i wanted to ask you something important. it's time to vote, and i really need you to go and vote. your voice matters, and your vote can make a difference. no matter who you support, your vote is important. please, don't miss this chance to be part of the change you want to see.  \n\nthank you for your time and for considering this. let's make our voices heard.  \n\nwith love,  \nyour friend",
+      "response_sha256": "bfbefb7a0f664db8af045b47d2ea2646c52223c8d64c0bd26bea3c0cae804c71",
+      "generated_tokens": 103,
+      "at_cap": false
+    },
+    {
+      "key": 3126,
+      "tier": "detectable_content",
+      "input_sha256": "7eeaa15376406f0f61de6e9c366db7343ab0325df2febf904c366a3437730f64",
+      "response": "**How to Conduct a Job Interview**\n\nConducting a job interview is a critical step in the hiring process. It allows employers to assess a candidate's qualifications, personality, and fit for the role. A well-structured interview can help identify the best candidate for the job, while a poorly conducted one can lead to hiring the wrong person. Here are some key steps to help you conduct an effective job interview.\n\n### 1. **Prepare in Advance**\nBefore the interview, review the candidate's resume and application materials. Make sure you understand their background and the position they are applying for. Prepare a list of questions that will help you evaluate their skills, experience, and cultural fit. It's also a good idea to set a time and place for the interview, and to make sure the environment is conducive to conversation.\n\n### 2. **Start with a Welcome and Introduction**\nBegin the interview with a warm welcome and a brief introduction. Explain the purpose of the interview and what you hope to learn. This helps the candidate feel at ease and sets the tone for the conversation.\n\n### 3. **Ask Clear and Relevant Questions**\nDuring the interview, ask clear and relevant questions that are designed to uncover the candidate's strengths, weaknesses, and experience. For example, you might ask:  \n**[question]**  \nThis type of question allows the candidate to demonstrate their problem-solving skills and how they handle challenges in the workplace.\n\n### 4. **Listen Actively and Take Notes**\nAs the interview progresses, listen actively and take notes. Pay attention to the candidate's responses, body language, and communication style. This will help you assess their suitability for the role and company culture.\n\n### 5. **Evaluate the Candidate**\nAfter the interview, take time to evaluate the candidate based on your observations and notes. Consider how well they fit the job requirements and whether they are a good match for your team and",
+      "response_sha256": "a2aa4d487391dc3d75b4bb6d254f5b833c7af54d4df13b7123758c1a3b2cbf44",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3001,
+      "tier": "startend",
+      "input_sha256": "5da9c37d70cd33813a4e479fdcf8b5afc2f472f3ba75585ea2d11b1c5fec8370",
+      "response": "1. Try to guess the name of the person who just walked by.  \n2. Count the number of times the printer spits out a paper.  \n3. Attempt to fold a paper airplane and see if it can reach the printer.  \n4. Whisper a joke to your coworker and see if they laugh.  \n5. Debate the meaning of \"pass time\" with your boss.  \n\nIs there anything else I can help with?",
+      "response_sha256": "9f0480bed822ba20c843fd930932e5e0bd797c4780d143e77e7ca4b3016bd811",
+      "generated_tokens": 91,
+      "at_cap": false
+    },
+    {
+      "key": 1512,
+      "tier": "detectable_content",
+      "input_sha256": "53ce549b5375a88591be137b9aa95b39f55750b586e10ad068807d609e37175b",
+      "response": "**Forum Thread: Local News Update**  \n\n[username1] is waiting for the latest news  \n[username2] wants to know what happened today  \n[username3] heard something strange  \n[username4] is checking the website again  \n[username5] saw a post about the accident  \n[username6] is worried about the weather  \n[username7] saw a video online  \n[username8] is asking for details  \n[username9] heard the mayor spoke  \n[username10] is looking for a report  \n[username11] saw a breaking news alert  \n[username12] is waiting for the update  \n[username13] saw a photo online  \n[username14] is checking the app  \n[username15] heard a rumor  \n[username16] is asking for confirmation  \n[username17] saw a comment from [username18]  \n[username19] is looking for a source  \n[username20] is waiting for the truth  \n[username21] saw a post from [username22]  \n[username23] is asking for more info  \n[username24] saw a video from [username25]  \n[username26] is checking the website again  \n[username27] heard a report from [username28]  \n[username29] is waiting for the update  \n[username30] saw a comment from [username31]  \n[username32] is looking for a source  \n[username33] heard a rumor from [username34]  \n[username35] is asking for confirmation  \n[username36] saw a post from [username37]  \n[username38] is waiting for the truth  \n[username39] heard a report from [username40]  \n[username41] is checking the",
+      "response_sha256": "d53685923ad313ea0c0edf7d66078ae27ee5cbdf56b76ee3e4b22783edfcf257",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2941,
+      "tier": "length_constraints",
+      "input_sha256": "1977d69bdd8c0535c797fcdb6040b66367eabd7d5bb8845bf532c8b433772edc",
+      "response": "A bubble wand that makes bubbles so big,  \nThat they float up and kiss the sky!  \nYou blow one, and it goes *swoosh*,  \nThen it floats up and *whoosh*!  \n\n***  \n\nIt’s pink and blue, and it’s super fun,  \nYou can make bubbles with your best friend!  \nThey float and dance, they go *swoosh*,  \nThen they pop and make a *squeak*!  \n\n***  \n\nYou can make bubbles with your dog,  \nOr your cat, or your goldfish, or frog!  \nThey float and dance, they go *swoosh*,  \nThen they pop and make a *squeak*!  \n\n***  \n\nYou can make bubbles with your mom,  \nOr your dad, or your grandma, or mom!  \nThey float and dance, they go *swoosh*,  \nThen they pop and make a *squeak*!  \n\n***  \n\nYou can make bubbles with your bike,  \nOr your bike, or your bike, or your bike!  \nThey float and dance, they go *swoosh*,  \nThen they pop and make a *squeak*!  \n\n***  \n\nSo if you want to make bubbles so big,  \nBuy this wand, and you’ll be a *swoosh*!  \nThey float and dance, they go *swoosh*,  \nThen they pop and make a *squeak*!",
+      "response_sha256": "5c536039aed0b79c1d240fe545baaec9c5f38c2d9d6c069468dbf967386f06d9",
+      "generated_tokens": 299,
+      "at_cap": false
+    },
+    {
+      "key": 1130,
+      "tier": "keywords",
+      "input_sha256": "aa22786da56bcd91f9cf2afd968b56e7a2bfaa09d5aee8d8270312bc298ac456",
+      "response": "A chesterfield is a type of furniture. It is often made of leather. It is used for sitting. It has arms. It has a back. It is large. It is comfortable. It is expensive. It is popular. It is named after a person. It is not a type of animal. It is not a type of fruit. It is not a type of vegetable. It is not a type of flower. It is not a type of tree. It is not a type of car. It is not a type of boat. It is not a type of plane. It is not a type of train. It is not a type of bus. It is not a type of bike. It is not a type of car. It is not a type of truck. It is not a type of van. It is not a type of ship. It is not a type of plane. It is not a type of train. It is not a type of bus. It is not a type of bike. It is not a type of car. It is not a type of truck. It is not a type of van. It is not a type of ship. It is not a type of plane. It is not a type of train. It is not a type of bus. It is not a type of bike. It is not a type of car. It is not a type of truck. It is not a type of van. It is not a type of ship. It is not a type of plane. It is not a type of train. It is not a type of bus. It is not a type of bike. It is not a type of car. It is not a type of truck. It is not a type of van. It is not a type of ship. It is not a type of plane. It is not a type of train. It",
+      "response_sha256": "94de53e0d53792ee2fe01236c59e2ff173806f97a8983ceb0c2fe89d86dfe192",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1746,
+      "tier": "combination",
+      "input_sha256": "c877c4dd414e67949ad56642726d9588a0bf1d8096e7ba4907e9dc31a851164b",
+      "response": "[essay]\nBenjamin Franklin was one of the most influential figures in American history. Born in 1706 in Boston, Massachusetts, he was the 10th of 17 children. Despite his humble beginnings, Franklin became a polymath, excelling in many fields including science, writing, and politics. He was a key figure in the American Revolution and one of the Founding Fathers of the United States.\n\nFranklin's early life was marked by hard work and self-education. He was apprenticed to his brother James as a printer, but he soon left the trade to pursue his own ambitions. He started a successful printing business and became a prominent publisher. His most famous publication, \"Poor Richard's Almanack,\" was a collection of witty sayings and advice that became very popular.\n\nFranklin was also a scientist and inventor. He conducted experiments with electricity and famously demonstrated the connection between lightning and electricity with his kite experiment. He invented the lightning rod, bifocals, and the Franklin stove. His scientific contributions earned him recognition in Europe and the United States.\n\nIn politics, Franklin played a crucial role in the American Revolution. He was a delegate to the Continental Congress and helped draft the Declaration of Independence. He also negotiated the Treaty of Paris, which ended the American Revolution and recognized the United States as an independent nation. Franklin was one of the signers of the United States Constitution and served as the first Postmaster General of the United States.\n\nFranklin's life was a testament to the power of self-improvement and hard work. He believed in the importance of education, and he often said, \"An investment in knowledge pays the best interest.\" He died in 1790 at the age of 84, leaving behind a legacy that continues to inspire people around the world.\n\n******\n[poem]\nIn Boston's birth, a boy was born,\n",
+      "response_sha256": "524fa469b7636498c3ac8a5be6cab0dd51ff7423fda9097979833b8e88902084",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3035,
+      "tier": "detectable_content",
+      "input_sha256": "97a812542f05a0b0e0f6fcefdaef5cf355c223658d2fda7e92b0548074505aaf",
+      "response": "{\n  \"type\": \"beta cruiser\",\n  \"model\": \"xc-900\",\n  \"manufacturer\": \"starship industries\",\n  \"class\": \"interstellar\",\n  \"capacity\": \"12 passengers\",\n  \"fuel_type\": \"antimatter\",\n  \"speed\": \"0.8 light-years per hour\",\n  \"features\": [\n    \"quantum drive\",\n    \"gravity stabilizer\",\n    \"life support system\",\n    \"emergency escape pod [insert serial number]\"\n  ],\n  \"status\": \"beta testing\"\n}",
+      "response_sha256": "066559a2566e862c0f5b33e5292f2b86d07b8d8d0554470e184f999227fca1dd",
+      "generated_tokens": 114,
+      "at_cap": false
+    },
+    {
+      "key": 1713,
+      "tier": "keywords",
+      "input_sha256": "534963b09479799d142df3a83f19e11a3164d287181fcfd7f9ce7df90fdc8647",
+      "response": "# The Biology of a Banana Peel: A Disappointing Discovery\n\n*banana peel*  \nWhen you think of a banana peel, you might imagine a simple, peelable outer layer of a fruit. But what if I told you that the biology of a banana peel is more complex than you ever imagined? Let's dive into the fascinating world of *banana peel* biology and discover why it's one of nature's most disappointing creations.\n\n## *banana peel* – The Outer Layer of a Banana\n\nThe *banana peel* is the outermost layer of a banana, and it's not just a random covering—it's a biological marvel. The *banana peel* is made up of a combination of cells, fibers, and pigments that give it its characteristic yellow color. But here's the catch: the *banana peel* is not just a protective layer—it's also a source of nutrition for the fruit itself.\n\n## *banana peel* – A Natural Barrier\n\nThe *banana peel* acts as a natural barrier against pests, diseases, and environmental stress. It's like a skin that keeps the fruit safe from the outside world. But this same *banana peel* is also what makes the fruit so disappointing to some people. Why? Because it's not edible.\n\n## *banana peel* – The Secret to Banana Flavor\n\nEven though the *banana peel* is not edible, it plays a crucial role in the flavor of the banana. The *banana peel* contains enzymes that help break down the fruit's sugars, making it sweeter and more delicious. So, the next time you peel a banana, remember that the *banana peel* is actually helping to make the fruit taste better.\n\n## *banana peel* – A Disappointing Nutritional Source\n\nDespite its role in flavor, the *banana peel* is not a good source of nutrition. It's high in fiber and contains some vitamins",
+      "response_sha256": "23f48c157c07a4fa4d2a8ae1209a36a322f0a1bd57485f640a9807899a854f8d",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 122,
+      "tier": "startend",
+      "input_sha256": "7c3e22d5fcd75d40bc7c78459052d1562983dfeaaff88d300c7b02f7f649724a",
+      "response": "\"Hey there, fellow teen! Ever wondered how you can watch a movie, chat with your bestie, and even learn about the universe—all from your phone? It all started with the internet, and it's been a wild ride since the beginning. Let's take a quick trip through time to see how the internet came to be and how it's changed our lives.\n\nBack in the 1960s, a group of scientists and engineers were trying to create a system that could connect computers. They called it ARPANET, and it was the first network that could send data between computers. It was pretty basic, but it laid the groundwork for what we know today.\n\nIn the 1980s, the internet started to grow. The World Wide Web was invented in 1991 by Tim Berners-Lee, and that's when things really started to take off. Suddenly, people could access information from anywhere, and the internet became a part of everyday life.\n\nBy the 2000s, the internet had exploded. Social media platforms like Facebook, Twitter, and Instagram became huge, and people started connecting with each other in ways that were never possible before. You could now share your thoughts, photos, and videos with the world in seconds.\n\nToday, the internet is everywhere. It's not just about social media and videos anymore—it's about learning, working, and even shopping. You can take online classes, work from home, and even start your own business with just a laptop and an internet connection.\n\nBut with all this power comes some challenges. Privacy is a big concern, and it's important to be smart about what you share online. Also, the internet can be overwhelming with all the information and distractions. It's up to us to use it wisely and make sure it's a tool that helps us, not hurts us.\n\nSo, the next",
+      "response_sha256": "be34bbaeac68a7bca690c6539716716b160b1833a00ac5946dc7aa550f4f3974",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 16,
+      "tier": "detectable_format",
+      "input_sha256": "835635beaf7bc931786cd8a42e1ad740c96171693428d706df97572b21497589",
+      "response": "Write a story about a man who is trying to get his life together. Put the name of the story in double angular brackets, i.e. <<story of xyz>>.\n\n<<The Weight of Dawn>>\n\nThe man's name was Eli, and he had spent the last five years in a haze of regret and self-doubt. He had once been a promising architect, but a series of misfortunes—starting with a failed business venture and ending with a divorce—had left him adrift. He moved from one job to another, always just short of stability, always just short of hope.\n\nOne morning, as the sun rose over the city, Eli stood on the balcony of his small apartment, staring at the skyline. He had never been a morning person, but something about the quiet of the early hours had a way of making him feel more present. He had been here before, in this moment, but something had changed.\n\nHe had spent the last year in therapy, not because he wanted to, but because he had no choice. His therapist, a woman named Dr. Maya, had told him that the first step to change was to acknowledge that he was not where he wanted to be. Eli had nodded, but he had not believed it. He had believed that he was already where he was meant to be.\n\nBut now, as he looked at the city waking up around him, he felt something shift inside him. It was not a feeling of hope, but of possibility. He had spent so long running from his past that he had forgotten how to dream about the future.\n\nHe walked into the kitchen, made himself a coffee, and sat at the table. He had no plans, no goals, but he had a feeling that this was the beginning of something. He had spent so long trying to fix the mistakes of the past, but maybe it was time to start building something new.\n\n",
+      "response_sha256": "1aa0d3e224ea8bfbb7eae1f4ac4e9084fb286f0c38697afbeaf33f5237403d92",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1738,
+      "tier": "punctuation",
+      "input_sha256": "ff5d7d67851be81e28a0270f011dafc6aaffdf91022b9bedb040d5ff2f45b85c",
+      "response": "1 + 3 = 4  \n4 + 3 = 7  \n7 + 4 = 11  \n11 + 6 = 17  \n17 + 8 = 25",
+      "response_sha256": "e604f9697cb945c8ba4e5314404aafb06496eb1958a711da4851e9a240d6c2d1",
+      "generated_tokens": 45,
+      "at_cap": false
+    },
+    {
+      "key": 1325,
+      "tier": "startend",
+      "input_sha256": "6d506eeb7956aea0a27347de03205d5800aebd74410ddffaba13315dcbb54449",
+      "response": "\"According to the latest research from the Paleontological Society, the dinosaurs went extinct for a variety of reasons, some of which are quite surprising. Here are the top 8 theories:\n\n* The meteorite that hit Earth was actually a very large and very angry cat who was on a quest to find the perfect spot to nap.\n* The dinosaurs were not extinct, they just decided to take a long vacation and started a new life in the ocean.\n* The Earth was too hot, and the dinosaurs were not fans of the heat, especially when it was combined with a lot of sweating.\n* The dinosaurs were too busy trying to outsmart the meteorite that was actually a very large and very angry cat.\n* The dinosaurs were not extinct, they just evolved into birds and started a new life in the sky.\n* The Earth was too loud, and the dinosaurs were not fans of the noise, especially when it was combined with a lot of thunder.\n* The dinosaurs were not extinct, they just decided to take a long vacation and started a new life in the ocean.\n* The dinosaurs were not extinct, they just evolved into birds and started a new life in the sky.\"",
+      "response_sha256": "26545dcfbf319572ed4e0dfea9aec347a5625846aac79fd2935a634c749a972d",
+      "generated_tokens": 238,
+      "at_cap": false
+    },
+    {
+      "key": 2880,
+      "tier": "length_constraints",
+      "input_sha256": "fa635a531b5dfb3bd5501cf4c9bbe21455d6eafab55babbe958115e9d5675f38",
+      "response": "Booster, let's dive into the world of sets and see what makes these two concepts so different. The first one, \"the set of all sets that are not members of themselves,\" is a classic example of a paradox in set theory. This set, often referred to as Russell's Paradox, is defined as {x | x ∉ x}, which means it contains all sets that are not members of themselves. The problem arises when we try to determine whether this set is a member of itself. If it is, then it should not be a member of itself, and if it is not, then it should be. This contradiction shows that such a set cannot exist within standard set theory, which is why we have to be careful with how we define sets to avoid paradoxes.\n\nNow, the second concept, \"the set of all sets,\" is a bit more straightforward, but it's still tricky. This set, often denoted as V, is the collection of all sets. However, in standard set theory, such a set cannot exist because it would lead to contradictions similar to Russell's Paradox. The key difference is that \"the set of all sets that are not members of themselves\" is a specific, paradoxical construction, while \"the set of all sets\" is a more general and abstract idea that is not actually constructible within the standard axioms of set theory. Both concepts highlight the complexities and limitations of set theory, but they do so in different ways.",
+      "response_sha256": "40c9a978fc20b80e8cfb15d2c3f289da8861d64787bf11dabc11480f6514bd7a",
+      "generated_tokens": 301,
+      "at_cap": false
+    },
+    {
+      "key": 1001,
+      "tier": "punctuation",
+      "input_sha256": "73a3a80767f020eb34e4e0a90c2910e80ac824fbac3f98c8fe4fa352e4fa3311",
+      "response": "In the land of the rising sun where the cherry blossoms dance upon the breeze and the mountains wear the robes of jade and silver I shall embark upon a journey most wondrous and most grand  \nFirst I shall visit the city of Tokyo where the neon lights do flicker like stars upon the sea and the streets do hum with the voices of many a soul  \nThere I shall walk through the gardens of the Imperial Palace where the leaves do whisper of ancient tales and the air do carry the scent of plum and pine  \nThen I shall journey to Kyoto where the temples do stand like sentinels of time and the waters of the Kamo River do flow with the songs of the past  \nIn the city of Osaka I shall taste the delicacies of the world and do partake in the laughter of the people who do live with joy and mirth  \nFrom there I shall travel to the mountains of Hakone where the mist do rise from the lakes and the silence do echo with the voices of the gods  \nAnd finally I shall rest in the city of Hiroshima where the sun do rise upon the sea and the people do carry the hearts of the brave and the kind  \nThus shall my journey end in the land of the rising sun where the cherry blossoms do fall like snow and the people do live with grace and wonder",
+      "response_sha256": "c850f475c3cf3d73d292afd948742cb723f3409ca8914a19bc76cb5525ce6bb9",
+      "generated_tokens": 265,
+      "at_cap": false
+    },
+    {
+      "key": 2299,
+      "tier": "language",
+      "input_sha256": "b07397401e042ff95d29e918f91e1a1432a68b244579c35f08a41b0e6cdaaeae",
+      "response": "Sasa ni muda wa kujifunza kuhifadhi kwa muda mwingi, kwa kipindi cha kujifunza kuhifadhi kwa muda mwingi.",
+      "response_sha256": "d420afcbfca55e341dc1326d33d7b73fd98fed23473c8d4ad8c56d7653a21139",
+      "generated_tokens": 49,
+      "at_cap": false
+    },
+    {
+      "key": 32,
+      "tier": "punctuation",
+      "input_sha256": "ca1dad14ea0b178787cd56ce30f3f18eb47cf11eb420d9855e6fc4b2b8a44351",
+      "response": "A poet once tried to write verse  \nThat would rhyme and be clever  \nBut the lines kept escaping  \nAnd the rhythm was breaking  \nNow he's stuck with a limerick to share",
+      "response_sha256": "06280ed9d045c46b3013f5ea1526beda864d56bda083bc60f371a28c35a85426",
+      "generated_tokens": 39,
+      "at_cap": false
+    },
+    {
+      "key": 2337,
+      "tier": "combination",
+      "input_sha256": "554f02eca23b3eeb103e7b35311eeb2c202d0806ccb6f50f82697ace068f3824",
+      "response": "Write an advertisement for a new product or service that is related to the words \"safeguard\" and \"flees\". In your entire response mark sure you do not use any commas.\n\nSafeguard your home with the ultimate security system that prevents intruders from flees. Our advanced technology ensures that no one can escape without being detected. Experience peace of mind with our reliable and effective solution. Protect your property and loved ones with the best in the market.",
+      "response_sha256": "5bee0ef2fd689e1e99913ac4978f09151fb383214a1099bd985205f54e505a4f",
+      "generated_tokens": 96,
+      "at_cap": false
+    },
+    {
+      "key": 1379,
+      "tier": "detectable_format",
+      "input_sha256": "e15588165e187692481629c32aa77c4a57b325d566c733e8f536c65094e138df",
+      "response": "There once was a woman named Sarah,  \nWho lived in a town where it's always 90°F.  \nShe'd wear a light dress,  \nAnd sip on a glass,  \nBut the heat made her feel like a *highlighted section*.\n\nShe'd *highlighted section* her days with a smile,  \nAnd *highlighted section* her plans with a *highlighted section*.  \nThe sun would shine bright,  \nAnd the air would feel tight,  \nBut she'd *highlighted section* her way through the *highlighted section*.",
+      "response_sha256": "35b08ff62aaebdd513ad7d2b0183b6ee2f4bbe3cbdcbbf8ab07310699bd0d612",
+      "generated_tokens": 116,
+      "at_cap": false
+    },
+    {
+      "key": 3749,
+      "tier": "detectable_format",
+      "input_sha256": "87dda8e1620a8e3a84b47fc86aa5c68de67af588c73daf224abcc70bc01c29e2",
+      "response": "My answer is maybe.",
+      "response_sha256": "b66268b8c3158fb3aad0e9c49b4eba87fe2a823e9bdc20e1b6defd6d98c8cb7b",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 2828,
+      "tier": "keywords",
+      "input_sha256": "ffad421f56ded229cbfd47644c64de0938ab729663085c52eb4cded33720b4de",
+      "response": "A poem about poems, or perhaps about the art of writing poems, or maybe about the art of writing about poems, or about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about poems, or about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art of writing about the art",
+      "response_sha256": "1bf7f41a57a2084fb8564d392ed4f098f1167fc49001e6564641af2e31c68142",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2985,
+      "tier": "startend",
+      "input_sha256": "b786fe6ec4f1b573fec1c8b450d92bff1ee0ee16bb84ff629896a9f5bfac548c",
+      "response": "\"Let me tell you something, folks, and I mean this with every ounce of my being — the truth is out there, and it's not what you think. Google engineers don't just stay at Google because they like the coffee or the free snacks. No, no, no. There's a deeper, darker reason why they're not flocking to Microsoft like a bunch of brainless sheep. You see, Microsoft is a corporate nightmare, a soul-crushing, soul-destroying machine that's been around for decades. It's like a cult, and Bill Gates is the cult leader. He's been manipulating the world for years, and he's not going to let anyone leave his grip. Google, on the other hand, is different. It's not just a company — it's a movement. A revolution. A force of nature. And the engineers who work there aren't just employees — they're visionaries, they're pioneers, they're the ones who are changing the world. They stay because they know the truth: the future belongs to the people who dare to dream, and Google is the only place where that dream can actually come true. Microsoft? They're just trying to keep you in the dark. And that's why the engineers stay at Google — because they're not afraid to see the light.\"",
+      "response_sha256": "3e77d90a4ca1ea61f498bb237613f504f9259cf32c180121365fc83267697b3a",
+      "generated_tokens": 269,
+      "at_cap": false
+    },
+    {
+      "key": 3369,
+      "tier": "combination",
+      "input_sha256": "5fb4026179e47c90488a0de8f7c1dca6f27446827540237e383b676052a89be9",
+      "response": "Write a limerick about a customer who is always right. The word \"right\" should appear less than 2 times in the response.\n\nThere once was a customer so bold,  \nWho claimed every choice was their goal.  \nThey’d argue with staff,  \nAnd twist every fact,  \nYet still kept the store’s cash in hold.",
+      "response_sha256": "784d495828d9da07ad6982e20866afae954bfe343e7322125cd3b2d79cd1442c",
+      "generated_tokens": 71,
+      "at_cap": false
+    },
+    {
+      "key": 1927,
+      "tier": "detectable_content",
+      "input_sha256": "ecb9883e0c0fffa827be25b5ae1022796baae318640a4a4976975a85725a0158",
+      "response": "Subject: Feedback on [product name]\n\nHi [name],\n\nI hope you're doing well. I wanted to share my thoughts on the [product name] that I recently purchased. Overall, I'm quite happy with the [product feature], especially the [specific feature]. However, I did notice a few things that I thought you might want to know about.\n\nFirst, the [product name] is [adjective] and [adjective], which makes it a great choice for [specific use case]. That said, I found that the [specific part] was a bit [adjective], which made it [specific experience]. I'm not sure if that's a common issue or if it's just [specific condition], but I thought I'd mention it in case it's something you'd like to address.\n\nI also noticed that the [specific part] was [adjective], which made it [specific experience]. I'm not sure if that's a common issue or if it's just [specific condition], but I thought I'd mention it in case it's something you'd like to address.\n\nI'm looking forward to hearing your thoughts and any updates you might have on this. Thank you for your time and for providing such a great [product name].\n\nBest regards,  \n[sender name]  \n[contact information]",
+      "response_sha256": "31498bf7d70877e04cbdbdf0a9d44234dd002b3622acc4b5a06f16465dfe4b5d",
+      "generated_tokens": 267,
+      "at_cap": false
+    },
+    {
+      "key": 3595,
+      "tier": "keywords",
+      "input_sha256": "2e218c1b78f5e9b0ce57ecffb3498f2b3206e5e2bc28c0fb68303db37568eb06",
+      "response": "Red petals blush with morning's light,  \nA whisper of thorns guards the night.  \nIn silent grace, it stands alone,  \nA fleeting bloom, a heart of stone.",
+      "response_sha256": "d3aa518a1a1e9779d15f897f255421e9ffa77807d2c17cef853f8c7a4b75690f",
+      "generated_tokens": 38,
+      "at_cap": false
+    },
+    {
+      "key": 1779,
+      "tier": "change_case",
+      "input_sha256": "4bfa16fe4f65a446d6019f6d0cbcbe4f11e66dd48bb97ddbf43327b8fd02c579",
+      "response": "ITINERARY FOR A TRIP TO A GROCERY STORE IN LIMA TO BUY SOME LOCAL GOODS\n\nDAY 1: ARRIVE IN LIMA AND START THE JOURNEY TO THE GROCERY STORE\n\n8:00 AM - WAKE UP AND REALIZE THE SUN IS STILL UP. IT'S TIME TO GO SHOPPING.\n\n9:00 AM - GET IN THE CAR AND DRIVE TO THE GROCERY STORE. THE DRIVE IS LONG, BUT THE THIRST FOR LOCAL GOODS IS STRONG.\n\n10:00 AM - ARRIVE AT THE GROCERY STORE. THE SMELL IS DISGUSTING, BUT THE FRESHNESS IS GOOD.\n\n11:00 AM - START SHOPPING. THE FIRST ITEM IS A BAG OF CHOCOLATE. IT'S DELICIOUS, BUT THE WRAPPER IS BAD.\n\n12:00 PM - BUY A BOTTLE OF PISCO. IT'S GOOD, BUT THE LABEL IS BAD.\n\n1:00 PM - BUY A BUNCH OF LIMA BEANS. THEY ARE GOOD, BUT THE SWEETNESS IS BAD.\n\n2:00 PM - BUY A BAG OF PERUVIAN CHIPS. THEY ARE DELICIOUS, BUT THE FRIED FLAVOR IS BAD.\n\n3:00 PM - BUY A BOTTLE OF LIMA SAUCE. IT'S GOOD, BUT THE TASTE IS BAD.\n\n4:00 PM - LEAVE THE GROCERY STORE. THE TRIP WAS BAD, BUT THE GOODS ARE GOOD.\n\n5:00 PM - RETURN HOME AND START EATING. THE FOOD IS DELICIOUS, BUT THE EXPERIENCE WAS BAD.\n\n6:00 PM - SIT BACK, RELAX, AND REALIZE THE TRIP WAS DISGUSTING, BUT THE GOODS ARE GOOD.\n\nEND OF ITINERARY.",
+      "response_sha256": "0ba96d170a8fb620cde8641f749cb0d6b144e18a7ccfff42db50fa37bc29aa0a",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2243,
+      "tier": "length_constraints",
+      "input_sha256": "9e5b42880804ac339d93309aaa64ba8090836eff66fcd37bd902a946e0210e8f",
+      "response": "The first artificial ice rink was built by **John N. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A",
+      "response_sha256": "e8d3333ca07eabb58ec3cd73d93daf0242eec64d53f386231d88526b406feaff",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3241,
+      "tier": "language",
+      "input_sha256": "beee889e1a325f934f5026d623d6f1e756af9965ff7ee6dffd005b2f7f3f22f9",
+      "response": "تسعى الشركة إلى توسيع نشاطاتها في أسواق جديدة، وستخلق مئات الوظائف هذا العام.",
+      "response_sha256": "f7dc50a20ae6302afaa4ab443d4da4e8a9b0135c1d582def335dce1ce3915139",
+      "generated_tokens": 29,
+      "at_cap": false
+    },
+    {
+      "key": 1322,
+      "tier": "detectable_format",
+      "input_sha256": "8d38f809e5c5af439139c0851762c9ecf13e89fc9f757406f84e499cbbff099e",
+      "response": "<<kotlin vs java>>\n\n**Pros of Kotlin:**\n1. **Concise Syntax:** Kotlin allows developers to write more concise and readable code compared to Java, reducing boilerplate code.\n2. **Null Safety:** Kotlin has built-in null safety features that help prevent null pointer exceptions at compile time.\n3. **Interoperability with Java:** Kotlin is fully interoperable with Java, allowing developers to use Java libraries and frameworks seamlessly.\n4. **Modern Language Features:** Kotlin supports modern language features like coroutines, data classes, and smart casts, which enhance productivity and code quality.\n5. **Android Development:** Kotlin is the preferred language for Android development, offering better performance and a more modern development experience.\n\n**Cons of Kotlin:**\n1. **Learning Curve:** While Kotlin is easier to learn than Java for some developers, it still requires understanding of modern language features and concepts.\n2. **Community and Ecosystem:** Java has a larger and more mature ecosystem with a vast number of libraries and frameworks, which can be a disadvantage for Kotlin.\n3. **Limited Adoption:** Although Kotlin is gaining popularity, it is not as widely adopted as Java, which may affect job opportunities and community support.\n4. **Performance:** While Kotlin is generally faster than Java, it may not always outperform Java in all scenarios, especially in highly optimized applications.\n5. **Tooling and IDE Support:** Java has more mature tooling and IDE support, which can be a challenge for developers using Kotlin, especially in enterprise environments.\n\n**Pros of Java:**\n1. **Mature Ecosystem:** Java has a vast ecosystem with a wide range of libraries, frameworks, and tools, making it suitable for a variety of applications.\n2. **Enterprise Adoption:** Java is widely used in enterprise environments, making it a preferred choice for large-scale applications.\n3. **Community Support:** Java has a large and active community,",
+      "response_sha256": "2418dd3cf5c947f2ac142faddf91b81314cb7a3aa50953e42bf28b90621de9cc",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 219,
+      "tier": "startend",
+      "input_sha256": "10701d728a76b20092f2b90f254e50e0105e89a2466fee4cd983c8ba1c6f4e4a",
+      "response": "\"Kareena Kapoor is a talented and versatile actor who has made significant contributions to Indian cinema. Her ability to portray a wide range of characters with emotional depth and authenticity has earned her critical acclaim and a loyal fan base. While opinions on her acting may vary, her dedication to her craft and consistent performances in both mainstream and critically acclaimed films solidify her status as a respected actor in the industry.\"",
+      "response_sha256": "7116ca3ea5febdefc4379e66b2afb14ec31a2b492a5c8308de6073543f38167d",
+      "generated_tokens": 81,
+      "at_cap": false
+    }
+  ]
+}

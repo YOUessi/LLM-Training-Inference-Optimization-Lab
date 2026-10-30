@@ -1,0 +1,4098 @@
+{
+  "status": "measured",
+  "kind": "stage38_unseen101_rule_following_scale_guardrail_test",
+  "dev_decision_sha256": "f617322dcbac5d2f09599c9cf7d6458b07085dbbd39e4cb1104727ffaba95c47",
+  "test_input_sha256": "bfb81ca387eb4e5ba19314d30d9ea2aa4319ca6bf5e9542d4f9367695b3ff9a0",
+  "new_holdout_count": 101,
+  "previously_seen_stage36_excluded": 96,
+  "dev43_disjoint": true,
+  "selected_alpha": 0.75,
+  "feasible_adapted_on_dev": true,
+  "tested_alpha_keys": [
+    "0.00",
+    "1.00",
+    "0.75"
+  ],
+  "scores": {
+    "0.00": {
+      "count": 101,
+      "strict_met_count": 78,
+      "strict_prompt_fraction": 0.7722772277227723,
+      "loose_prompt_fraction": 0.7821782178217822,
+      "strict_instruction_fraction": 0.8287671232876712,
+      "per_tier": {
+        "change_case": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        },
+        "combination": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        },
+        "detectable_content": {
+          "count": 12,
+          "strict_accuracy": 0.9166666666666666
+        },
+        "detectable_format": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "keywords": {
+          "count": 12,
+          "strict_accuracy": 0.5
+        },
+        "language": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "length_constraints": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "punctuation": {
+          "count": 12,
+          "strict_accuracy": 1
+        },
+        "startend": {
+          "count": 12,
+          "strict_accuracy": 0.5833333333333334
+        }
+      },
+      "per_case": [
+        {
+          "key": 1897,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3743,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1928,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1281,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2381,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2245,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2422,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2563,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1906,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2439,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2622,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2015,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1217,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1021,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1705,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2070,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2374,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2447,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3572,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2136,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3324,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2929,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1348,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3345,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "key": 2957,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3272,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1670,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1139,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1551,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3478,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2164,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3540,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1546,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2142,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1629,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2908,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1377,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3505,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1248,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2392,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1939,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3150,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3204,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1776,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3376,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3752,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3631,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1658,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3753,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3186,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3079,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1259,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1246,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3442,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1943,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1645,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2180,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1019,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2677,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2386,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2918,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1305,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 321,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3494,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2328,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3130,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1518,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3025,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3536,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2517,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2304,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2467,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 164,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1180,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3203,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3073,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2118,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1480,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1237,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2449,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3502,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1154,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2585,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1128,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1883,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2870,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2311,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3350,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 295,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1582,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2485,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2921,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3305,
+          "tier": "language",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3710,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1307,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 281,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1162,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 251,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2475,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3624,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2736,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        }
+      ],
+      "hit_cap_count": 26,
+      "hit_cap_fraction": 0.25742574257425743,
+      "mean_realized_output_tokens": 217.2871287128713
+    },
+    "1.00": {
+      "count": 101,
+      "strict_met_count": 52,
+      "strict_prompt_fraction": 0.5148514851485149,
+      "loose_prompt_fraction": 0.5445544554455446,
+      "strict_instruction_fraction": 0.6095890410958904,
+      "per_tier": {
+        "change_case": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "combination": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "detectable_content": {
+          "count": 12,
+          "strict_accuracy": 0.25
+        },
+        "detectable_format": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "keywords": {
+          "count": 12,
+          "strict_accuracy": 0.4166666666666667
+        },
+        "language": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "length_constraints": {
+          "count": 12,
+          "strict_accuracy": 0.4166666666666667
+        },
+        "punctuation": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "startend": {
+          "count": 12,
+          "strict_accuracy": 0.3333333333333333
+        }
+      },
+      "per_case": [
+        {
+          "key": 1897,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3743,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1928,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1281,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2381,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2245,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2422,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2563,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1906,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2439,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2622,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2015,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1217,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1021,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1705,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2070,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2374,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2447,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3572,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2136,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3324,
+          "tier": "combination",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2929,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1348,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3345,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2957,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3272,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1670,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1139,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1551,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3478,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2164,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3540,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1546,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2142,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1629,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2908,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1377,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3505,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1248,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2392,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1939,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3150,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3204,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1776,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3376,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3752,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3631,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1658,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3753,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3186,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3079,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1259,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1246,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3442,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1943,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1645,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2180,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1019,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2677,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2386,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2918,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1305,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 321,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3494,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2328,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3130,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1518,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3025,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3536,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2517,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2304,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2467,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 164,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1180,
+          "tier": "combination",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3203,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3073,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2118,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1480,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1237,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2449,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3502,
+          "tier": "language",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1154,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2585,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1128,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1883,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2870,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2311,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3350,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 295,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1582,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2485,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2921,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3305,
+          "tier": "language",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3710,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1307,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 281,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1162,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 251,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2475,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3624,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2736,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        }
+      ],
+      "hit_cap_count": 34,
+      "hit_cap_fraction": 0.33663366336633666,
+      "mean_realized_output_tokens": 190.3861386138614
+    },
+    "0.75": {
+      "count": 101,
+      "strict_met_count": 67,
+      "strict_prompt_fraction": 0.6633663366336634,
+      "loose_prompt_fraction": 0.6831683168316832,
+      "strict_instruction_fraction": 0.7328767123287672,
+      "per_tier": {
+        "change_case": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "combination": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "detectable_content": {
+          "count": 12,
+          "strict_accuracy": 0.4166666666666667
+        },
+        "detectable_format": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "keywords": {
+          "count": 12,
+          "strict_accuracy": 0.5833333333333334
+        },
+        "language": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "length_constraints": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "punctuation": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "startend": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        }
+      },
+      "per_case": [
+        {
+          "key": 1897,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3743,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1928,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1281,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2381,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2245,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2422,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2563,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1906,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2439,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2622,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2015,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1217,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1021,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1705,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2070,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2374,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2447,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3572,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2136,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3324,
+          "tier": "combination",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2929,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1348,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3345,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2957,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3272,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1670,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1139,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1551,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3478,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2164,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3540,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1546,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2142,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1629,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2908,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1377,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3505,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1248,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2392,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1939,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3150,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3204,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1776,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3376,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3752,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3631,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1658,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3753,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3186,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3079,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1259,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1246,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3442,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1943,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1645,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2180,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1019,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2677,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2386,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2918,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1305,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 321,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 3494,
+          "tier": "detectable_content",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2328,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3130,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1518,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3025,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3536,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2517,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2304,
+          "tier": "detectable_content",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2467,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 164,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1180,
+          "tier": "combination",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3203,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3073,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2118,
+          "tier": "length_constraints",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 1480,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1237,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2449,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3502,
+          "tier": "language",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1154,
+          "tier": "language",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2585,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1128,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1883,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2870,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2311,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3350,
+          "tier": "punctuation",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 295,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1582,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2485,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2921,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3305,
+          "tier": "language",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3710,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1307,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 281,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1162,
+          "tier": "punctuation",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 251,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2475,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3624,
+          "tier": "length_constraints",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2736,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        }
+      ],
+      "hit_cap_count": 31,
+      "hit_cap_fraction": 0.3069306930693069,
+      "mean_realized_output_tokens": 185.44554455445544
+    }
+  },
+  "paired_test_CIs_selected_minus": {
+    "base": [
+      -0.2079207920792079,
+      -0.019801980198019802
+    ],
+    "full": [
+      0.06930693069306931,
+      0.22772277227722773
+    ]
+  },
+  "selected_and_comparators": {
+    "base_strict": 0.7722772277227723,
+    "full_unscaled_strict": 0.5148514851485149,
+    "selected_strict": 0.6633663366336634
+  },
+  "source_adapter_git_sha256": "b4756915e2b1fef932358e24f374f820aed4daeda73c268c00b2b3064411b39b",
+  "frozen_no_test_selection": true,
+  "limitations": [
+    "One original trained adapter, five dev-scanned LoRA residual multipliers; no model fine-tuning",
+    "Test101 official IFEval source and distinct from previously observed Stage36 96 and dev43",
+    "Original model may have seen public IFEval before pretraining; not human correctness/safety",
+    "Bootstrap over fixed test question identities not independent training seeds",
+    "Unscaled full adapter and original base are predeclared controls; final test was used only once"
+  ]
+}

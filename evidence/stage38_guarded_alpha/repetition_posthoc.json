@@ -1,0 +1,21 @@
+{
+  "posthoc_not_used_for_selection": true,
+  "metric": "word bigram diversity, threshold 0.25, language sensitive",
+  "by_scale": {
+    "0.00": {
+      "count": 101,
+      "severe_distinct2_below0_25_count": 0,
+      "mean_distinct2": 0.8657632930092466
+    },
+    "1.00": {
+      "count": 101,
+      "severe_distinct2_below0_25_count": 29,
+      "mean_distinct2": 0.49662028370936806
+    },
+    "0.75": {
+      "count": 101,
+      "severe_distinct2_below0_25_count": 23,
+      "mean_distinct2": 0.5624387210569688
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "alpha": 0.75,
+  "source_input_sha256": "ebd7bfdb2c2311a9a7e604725446e048dcff49d79279e08909e9dfe846d7bb5c",
+  "responses": [
+    {
+      "key": 3245,
+      "tier": "punctuation",
+      "input_sha256": "f470c920bca357625abfec25e7fad32817facd6e4a94ee5f8ca225376f0cf48c",
+      "response": "Layton is the best city in the world. It is located in the state of Utah and is home to many amazing people. Layton is known for its beautiful parks and its friendly community. [author] is a resident of Layton and loves the city. [author] is a writer and loves to write about Layton.",
+      "response_sha256": "0f71fd6fe41c354fccc87b0eda66dd1528643b4e098a9a22d70038c9c37a20fa",
+      "generated_tokens": 69,
+      "at_cap": false
+    },
+    {
+      "key": 2396,
+      "tier": "detectable_content",
+      "input_sha256": "ad39859620f17918b2c8d828ca0e052afa1ed70aede879509092c4d8d83c3638",
+      "response": "The war has lasted for years, and it's still not over. The people are tired of the fighting, but they can't stop it. The leaders are still arguing, and the soldiers are still dying. The war has changed everything, and it's not getting any better. The only thing that's clear is that the war will never end.",
+      "response_sha256": "51a74001e4dc1a78176b5a9c268c2339cbc74948b21b80273a08beecd9ce3b34",
+      "generated_tokens": 71,
+      "at_cap": false
+    },
+    {
+      "key": 1561,
+      "tier": "combination",
+      "input_sha256": "dd46ffdf97df0745621184ec2b9cd3ae4fa181b84ef8199de8669efb6bc14f08",
+      "response": "Name a new fashion company that young people might like, and give it a name with multiple meanings. Put the name in double angular brackets, such as <<name>>.",
+      "response_sha256": "695a5746052b14e31603b29124c3cc98f006ec4abfb188e1e0209fa5954d5df6",
+      "generated_tokens": 35,
+      "at_cap": false
+    },
+    {
+      "key": 1092,
+      "tier": "length_constraints",
+      "input_sha256": "e2f65e7ba288095a0849742c7a052efc01467eec0f728536b239503cbe5d1cdc",
+      "response": "I recently took a trip to Japan and it was an amazing experience. I visited Tokyo, Kyoto, and Osaka. I loved the food, the culture, and the people. I also got to see some of the most beautiful temples and shrines in the world. I would highly recommend this trip to anyone who is looking for a unique and unforgettable experience.",
+      "response_sha256": "6b0995469f4d682e4f237c1c6f456677bb219444ed948b2e7213eff74a314028",
+      "generated_tokens": 72,
+      "at_cap": false
+    },
+    {
+      "key": 2943,
+      "tier": "keywords",
+      "input_sha256": "8e4854a4861e2f4f8981103119bf1a473fff6b1c03d294e6c0b1b79d217f27d9",
+      "response": "[conversation part 1]\nyou have been a disappointment. i might have to take you to the dark side. i might have to take you to the dark side. i might have to take you to the dark side. i might have to take you to the dark side. i might have to take you to the dark side. i might have to take you to the dark side.\n***\n[conversation part 2]\nyou might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server.\n***\n[conversation part 3]\nyou might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server. you might have been a good server.",
+      "response_sha256": "07cb189bdb39167871de5711705a22f32bb9ed2ca09cd9681404e151380c8cdf",
+      "generated_tokens": 189,
+      "at_cap": false
+    },
+    {
+      "key": 2969,
+      "tier": "detectable_format",
+      "input_sha256": "55a87037be1602948cfb053a343d25a3238fa13ce8812ddd88aa72df1fd2b8c2",
+      "response": "<<sloop on sale>>\n\nSailboat for sale! This sloop is easy to sail and understand. It's a small sailboat with one mast. It's perfect for beginners and experienced sailors alike. The sloop is in excellent condition and comes with all the necessary equipment. It's a great way to enjoy the water and the sun. Don't miss your chance to own this sloop!\n\n| Feature | Description |\n|--------|-------------|\n| Type | Sloop |\n| Size | Small |\n| Mast | One |\n| Condition | Excellent |\n| Equipment | All necessary |",
+      "response_sha256": "a08f61ba456636572b6535dbff1d9cd6b2061d51389829a6f65ad73fab884d3c",
+      "generated_tokens": 119,
+      "at_cap": false
+    },
+    {
+      "key": 3188,
+      "tier": "change_case",
+      "input_sha256": "c4034931b70c91c687168a6ab589ad0efcee7adcdf9d1d7ebabe463f276b9d67",
+      "response": "I AM A FORTUNE TELLER WHO CAN READ THE FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOU. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FAMILY. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FRIENDS. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR NEIGHBORS. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR CITY. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR COUNTRY. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR WORLD. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL HAPPEN TO YOUR FUTURE. I CAN TELL YOU WHAT WILL",
+      "response_sha256": "d23296e9fe227b17842e0789132a984070a080fb3ed6d2398915f0a0b718aa93",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1187,
+      "tier": "punctuation",
+      "input_sha256": "5172e0e761c15b1fd90db9643b68ab01f6445c1be3e08428f80fe856c08c1800",
+      "response": "What is happening today I am going to the beach",
+      "response_sha256": "f53c73ce2f7eaf0b4f83723f479414ff1dc71f7c95d0b51ed5206ee2917227b3",
+      "generated_tokens": 11,
+      "at_cap": false
+    },
+    {
+      "key": 1843,
+      "tier": "change_case",
+      "input_sha256": "8e65fcdc739913da4867d68c1b33a29ea47470d57ae7671bb36f084e45d6e4a4",
+      "response": "\"seaside sanctuary\"",
+      "response_sha256": "270899b58b635d8becd5aa80469519719b31c44ff4453b2e71dbde9d57564ff9",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 1686,
+      "tier": "combination",
+      "input_sha256": "8985ef85be1d5f6fe130e7efa82e387ceb87ab8aae741a00a6b68120624cca97",
+      "response": "Hello. I need to give a lecture to my students about the movie La La Land. Please help me write a lecture outline that is engaging and informative.",
+      "response_sha256": "9d7bddf36dc32870a9916a077ccdeba7c5de571aed0220447ca95d15051682ac",
+      "generated_tokens": 32,
+      "at_cap": false
+    },
+    {
+      "key": 1375,
+      "tier": "length_constraints",
+      "input_sha256": "1039b88183a413641c51e07261ad21aa34eb4334a738e43b953a548b6f018805",
+      "response": "[code snippet 1]\nimport java.util.*;\nimport java.io.*;\nimport java.net.*;\nimport java.security.*;\n\npublic class BadCode {\n    public static void main(String[] args) {\n        // vulnerable: this code is vulnerable to SQL injection\n        String query = \"SELECT * FROM users WHERE username = '\" + args[0] + \"'\";\n        // vulnerable: this code is vulnerable to command injection\n        String command = \"echo \" + args[0];\n        // vulnerable: this code is vulnerable to buffer overflow\n        byte[] buffer = new byte[1000000000];\n        // vulnerable: this code is vulnerable to insecure deserialization\n        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(\"file.ser\"));\n        // vulnerable: this code is vulnerable to insecure random number generation\n        SecureRandom random = new SecureRandom();\n        // vulnerable: this code is vulnerable to insecure password storage\n        MessageDigest digest = MessageDigest.getInstance(\"MD5\");\n        byte[] hash = digest.digest(args[0].getBytes());\n        // vulnerable: this code is vulnerable to insecure password storage\n        String password = new String(hash);\n        // vulnerable: this code is vulnerable to insecure password storage\n        System.out.println(password);\n    }\n}\n***\n[code snippet 2]\nimport java.util.*;\nimport java.io.*;\nimport java.net.*;\nimport java.security.*;\n\npublic class GoodCode {\n    public static void main(String[] args) {\n        // vulnerable: this code is vulnerable to SQL injection\n        String query = \"SELECT * FROM users WHERE username = ?\";\n        // vulnerable: this code is vulnerable to command injection\n        String command = \"echo \" + args[0];\n        // vulnerable: this code is vulnerable to buffer overflow\n        byte[] buffer = new byte[1000000000];\n        // vulnerable: this code is vulnerable to insecure deserialization",
+      "response_sha256": "671c74fec1d40e1ba2d77cc9faad4104e8b203455a13913d7fe4660dd556abca",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2309,
+      "tier": "language",
+      "input_sha256": "33b7a311b8b5023182714be94398b5f2e524c4bb528459ee396eb7918134eeee",
+      "response": "Siku ya Jumamosi, mwanamke alikwenda kwa kampuni ya kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza kwa kujifunza",
+      "response_sha256": "438b8d406fb7b83f527589fb019b47739e2901bede3d949a3753875c1771c6ec",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2849,
+      "tier": "change_case",
+      "input_sha256": "a3d007cb69f9442a9a54791fec17fe69bc5feab2b4311ee0290901b4a8c2737c",
+      "response": "A man from NANTUCKET\nWas a man of great FISHING\nHe caught a big FISH\nAnd then he was SHINING\nHe was a man of great FISHING",
+      "response_sha256": "f7fe89c159572d17732f2ba17ed85b387ab686f2510251b1c5a864c2f1941046",
+      "generated_tokens": 41,
+      "at_cap": false
+    },
+    {
+      "key": 1051,
+      "tier": "change_case",
+      "input_sha256": "0635ea7812ec8f36a6d6ceba00c4be1897aa7446f14fcf61b26c4e0b8831facd",
+      "response": "dear friend, i hope you are doing well. i wanted to ask you to go and vote. it is important to make your voice heard. please take the time to vote and make a difference. thank you for your time and consideration.",
+      "response_sha256": "f39b0599bad678a5b0cc0642e2eb2d4acd7f2cbdee2ff2a7e80533cffde023c6",
+      "generated_tokens": 50,
+      "at_cap": false
+    },
+    {
+      "key": 3126,
+      "tier": "detectable_content",
+      "input_sha256": "7eeaa15376406f0f61de6e9c366db7343ab0325df2febf904c366a3437730f64",
+      "response": "How to Conduct a Job Interview\n\nInterviewing is a crucial step in the hiring process. It allows you to assess a candidate's skills, experience, and personality to determine if they are a good fit for the role. Here are some tips to help you conduct a successful job interview.\n\n1. Prepare a list of questions. Before the interview, prepare a list of questions to ask the candidate. This will help you get to know the candidate better and assess their skills and experience. Some common questions include [question], \"What are your strengths and weaknesses?\" and \"What are your career goals?\"\n\n2. Create a welcoming environment. The interview should be a comfortable and welcoming environment for the candidate. Make sure the interview room is clean and well-lit. You should also be friendly and approachable.\n\n3. Ask open-ended questions. Open-ended questions allow the candidate to provide more detailed answers. This will help you get a better understanding of the candidate's skills and experience.\n\n4. Take notes. It's important to take notes during the interview. This will help you remember the candidate's answers and assess their skills and experience.\n\n5. Evaluate the candidate. After the interview, evaluate the candidate based on their answers and their overall demeanor. This will help you determine if they are a good fit for the role.\n\nBy following these tips, you can conduct a successful job interview and find the best candidate for the role.",
+      "response_sha256": "a21973f19612eb60b2e179f0e6f6a99c0e6b8d9757b50b331df72cde5630ea27",
+      "generated_tokens": 285,
+      "at_cap": false
+    },
+    {
+      "key": 3001,
+      "tier": "startend",
+      "input_sha256": "5da9c37d70cd33813a4e479fdcf8b5afc2f472f3ba75585ea2d11b1c5fec8370",
+      "response": "1. Count the number of times your coworker says \"um\" in a day.\n2. Try to guess the name of the person who wrote the last email.\n3. Attempt to memorize the entire contents of your desk.\n4. Try to find the most efficient way to open a can of beans.\n5. Count the number of times your coworker says \"um\" in a day.\n6. Try to guess the name of the person who wrote the last email.\n7. Attempt to memorize the entire contents of your desk.\n8. Try to find the most efficient way to open a can of beans.\n9. Count the number of times your coworker says \"um\" in a day.\n10. Try to guess the name of the person who wrote the last email.\n11. Attempt to memorize the entire contents of your desk.\n12. Try to find the most efficient way to open a can of beans.\n13. Count the number of times your coworker says \"um\" in a day.\n14. Try to guess the name of the person who wrote the last email.\n15. Attempt to memorize the entire contents of your desk.\n16. Try to find the most efficient way to open a can of beans.\n17. Count the number of times your coworker says \"um\" in a day.\n18. Try to guess the name of the person who wrote the last email.\n19. Attempt to memorize the entire contents of your desk.\n20. Try to find the most efficient way to open a can of beans.\nIs there anything else I can help with?",
+      "response_sha256": "cd435c3bb2228decf4187509df89daa1a0e7df0fb3b605e89f997c2ee67437b1",
+      "generated_tokens": 336,
+      "at_cap": false
+    },
+    {
+      "key": 1512,
+      "tier": "detectable_content",
+      "input_sha256": "53ce549b5375a88591be137b9aa95b39f55750b586e10ad068807d609e37175b",
+      "response": "[username1] is waiting for the latest news  \n[username2] is waiting for the latest news  \n[username3] is waiting for the latest news  \n[username4] is waiting for the latest news  \n[username5] is waiting for the latest news  \n[username6] is waiting for the latest news  \n[username7] is waiting for the latest news  \n[username8] is waiting for the latest news  \n[username9] is waiting for the latest news  \n[username10] is waiting for the latest news  \n[username11] is waiting for the latest news  \n[username12] is waiting for the latest news  \n[username13] is waiting for the latest news  \n[username14] is waiting for the latest news  \n[username15] is waiting for the latest news  \n[username16] is waiting for the latest news  \n[username17] is waiting for the latest news  \n[username18] is waiting for the latest news  \n[username19] is waiting for the latest news  \n[username20] is waiting for the latest news",
+      "response_sha256": "84e9c24ba5b07e1e53407fc0159762c9a1f81850d4b4044235117b8ac5184a42",
+      "generated_tokens": 231,
+      "at_cap": false
+    },
+    {
+      "key": 2941,
+      "tier": "length_constraints",
+      "input_sha256": "1977d69bdd8c0535c797fcdb6040b66367eabd7d5bb8845bf532c8b433772edc",
+      "response": "I want to sell a product that's super fun\nIt's a robot that can dance and run\nIt's got wheels and it's got arms\nIt can do tricks and make you laugh\nIt's got a voice that's very loud\nIt can sing songs and make you proud\nIt's got a face that's very cute\nIt can make you feel like a cute\nIt's got a heart that's very warm\nIt can make you feel like a storm\nIt's got a brain that's very smart\nIt can make you feel like a start\nIt's got a body that's very strong\nIt can make you feel like a song\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's got a soul that's very deep\nIt can make you feel like a leap\nIt's",
+      "response_sha256": "f1fff84802c200e0bd6bc4106f997535806f7a93d356d0d816d7be18e256c737",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1130,
+      "tier": "keywords",
+      "input_sha256": "aa22786da56bcd91f9cf2afd968b56e7a2bfaa09d5aee8d8270312bc298ac456",
+      "response": "A chesterfield is a type of furniture. It is a type of couch. It is made of leather. It is a type of sofa. It is a type of chair. It is a type of settee. It is a type of lounge. It is a type of seating. It is a type of living room furniture. It is a type of home furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type of room furniture. It is a type",
+      "response_sha256": "6162cb78c8c1fcc89fca40ee3a248fb5f3f3874d13bd2ee357fbab9f410db3d8",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1746,
+      "tier": "combination",
+      "input_sha256": "c877c4dd414e67949ad56642726d9588a0bf1d8096e7ba4907e9dc31a851164b",
+      "response": "Benjamin Franklin was born in Boston, Massachusetts in 1706. He was the 10th of 17 children. He was a very curious child and loved to read. He was also very interested in science and technology. He was a very hard worker and often worked long hours. He was also very interested in politics and was a very influential person in the American Revolution. He was one of the Founding Fathers of the United States. He was also a very successful businessman and inventor. He invented the lightning rod, the bifocals, and the Franklin stove. He was also a very accomplished writer and published many books and articles. He was a very respected person in his time and is still remembered today for his many contributions to science, technology, and politics.\n******\nBenjamin Franklin was born in Boston, Massachusetts in 1706. He was the 10th of 17 children. He was a very curious child and loved to read. He was also very interested in science and technology. He was a very hard worker and often worked long hours. He was also very interested in politics and was a very influential person in the American Revolution. He was one of the Founding Fathers of the United States. He was also a very successful businessman and inventor. He invented the lightning rod, the bifocals, and the Franklin stove. He was also a very accomplished writer and published many books and articles. He was a very respected person in his time and is still remembered today for his many contributions to science, technology, and politics.",
+      "response_sha256": "2b613d84e1205b6b942f28c10cb30bed87814f587c33871c44a23aad45b97c84",
+      "generated_tokens": 320,
+      "at_cap": false
+    },
+    {
+      "key": 3035,
+      "tier": "detectable_content",
+      "input_sha256": "97a812542f05a0b0e0f6fcefdaef5cf355c223658d2fda7e92b0548074505aaf",
+      "response": "{\n  \"name\": \"beta cruiser\",\n  \"description\": \"a sleek and fast cruiser with [placeholder] features\",\n  \"type\": \"cruiser\",\n  \"speed\": \"fast\",\n  \"color\": \"silver\",\n  \"features\": [\n    \"sleek design\",\n    \"high speed\",\n    \"advanced navigation system\",\n    \"[placeholder]\"\n  ]\n}",
+      "response_sha256": "f8e6cae7186965b320e2af63e55d36a857c386ff31c0d84bc2f093b426fb6d5b",
+      "generated_tokens": 79,
+      "at_cap": false
+    },
+    {
+      "key": 1713,
+      "tier": "keywords",
+      "input_sha256": "534963b09479799d142df3a83f19e11a3164d287181fcfd7f9ce7df90fdc8647",
+      "response": "*banana peel* is a fruit that is often used in jokes, but it's also a very interesting and complex organism. The peel of a banana is made up of several layers, each with its own unique properties. The outer layer is the epidermis, which is a thin layer of cells that protects the banana from the environment. Beneath the epidermis is the mesophyll, which is a layer of cells that contains chlorophyll and is responsible for photosynthesis. The innermost layer is the endodermis, which is a layer of cells that contains the vascular tissue that transports water and nutrients throughout the banana.\n\n*banana peel* is also a very interesting subject in terms of its biology. The peel is made up of several different types of cells, including epidermal cells, mesophyll cells, and endodermal cells. Each of these cells has a unique function in the banana's biology. The epidermal cells are responsible for protecting the banana from the environment, the mesophyll cells are responsible for photosynthesis, and the endodermal cells are responsible for transporting water and nutrients throughout the banana.\n\n*banana peel* is also a very interesting subject in terms of its biology. The peel is made up of several different types of cells, including epidermal cells, mesophyll cells, and endodermal cells. Each of these cells has a unique function in the banana's biology. The epidermal cells are responsible for protecting the banana from the environment, the mesophyll cells are responsible for photosynthesis, and the endodermal cells are responsible for transporting water and nutrients throughout the banana.\n\n*banana peel* is also a very interesting subject in terms of its biology. The peel is made up of several different types of cells, including epidermal cells, mesophyll cells, and endodermal cells. Each of these cells has a",
+      "response_sha256": "14aa6b566d0d7a24d9cd4f0497c8c96fcc13e158708e29171ff058d465d94467",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 122,
+      "tier": "startend",
+      "input_sha256": "7c3e22d5fcd75d40bc7c78459052d1562983dfeaaff88d300c7b02f7f649724a",
+      "response": "\"Hey there, fellow teen! Have you ever wondered how you can talk to your friends on the other side of the world, or how you can watch videos of your favorite celebrities without even leaving your room? It's all thanks to the internet! The internet is a global network of computers that allows people to share information and communicate with each other. It was first created in the 1960s by a group of scientists who wanted to create a way for computers to share information. Over the years, the internet has grown and evolved, and now it's an essential part of our lives. We use the internet to learn, work, play, and connect with others. It's changed the way we live, work, and communicate, and it's only going to keep getting better. So, next time you're online, take a moment to appreciate the amazing technology that makes it all possible!\"",
+      "response_sha256": "931fec26f55f01a0d624e87d88a8476a1048e706589fac794fdfaf3053224652",
+      "generated_tokens": 183,
+      "at_cap": false
+    },
+    {
+      "key": 16,
+      "tier": "detectable_format",
+      "input_sha256": "835635beaf7bc931786cd8a42e1ad740c96171693428d706df97572b21497589",
+      "response": "Write a story about a man who is trying to get his life together. Put the name of the story in double angular brackets, i.e. <<story of xyz>>.\n\n<<The Man Who Wasn't There>>\n\nThe man was not there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there, but he wasn't there. He had been there",
+      "response_sha256": "c11dbbab1dde4337dbdbc563dbe1eb037851697f359c974737dad0bdf9a0565a",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1738,
+      "tier": "punctuation",
+      "input_sha256": "ff5d7d67851be81e28a0270f011dafc6aaffdf91022b9bedb040d5ff2f45b85c",
+      "response": "17+4=21",
+      "response_sha256": "2bc175bcd7677d7d412319e746e055021a80300b705a8bd5aebf3f19acc3eac9",
+      "generated_tokens": 8,
+      "at_cap": false
+    },
+    {
+      "key": 1325,
+      "tier": "startend",
+      "input_sha256": "6d506eeb7956aea0a27347de03205d5800aebd74410ddffaba13315dcbb54449",
+      "response": "\"Scientists have been trying to figure out why the dinosaurs went extinct for years, and they've come up with some pretty wild theories. Here are 8 of the most popular ones:\n\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\n* The dinosaurs were hit by a giant meteor that caused a massive amount of dust and smoke to fill the sky, making it hard for plants to grow and dinosaurs to find food.\"",
+      "response_sha256": "9434689ed956c66cc695f54a1833e8ed22f2322d98f04925aff0dd741d2f5f80",
+      "generated_tokens": 326,
+      "at_cap": false
+    },
+    {
+      "key": 2880,
+      "tier": "length_constraints",
+      "input_sha256": "fa635a531b5dfb3bd5501cf4c9bbe21455d6eafab55babbe958115e9d5675f38",
+      "response": "Booster is a term that is used in the context of a set of all sets that are not members of themselves. This is a paradox that is known as Russell's paradox. The set of all sets that are not members of themselves is a set that contains all sets that are not members of themselves. This is a paradox because if the set is a member of itself, then it is not a member of itself, and if it is not a member of itself, then it is a member of itself. This paradox is known as Russell's paradox and it is a fundamental problem in set theory.\n\nThe set of all sets is a different concept. The set of all sets is a set that contains all sets. This is a paradox because if the set of all sets is a member of itself, then it is not a member of itself, and if it is not a member of itself, then it is a member of itself. This paradox is known as the paradox of the set of all sets. The set of all sets is a paradox because it is a set that contains all sets, but it is not a member of itself. This paradox is known as the paradox of the set of all sets.",
+      "response_sha256": "f5d95bfd47309edbe7f317ba2c0fcdba0ca71cd57bd2f8832fb76749af2d6dbd",
+      "generated_tokens": 243,
+      "at_cap": false
+    },
+    {
+      "key": 1001,
+      "tier": "punctuation",
+      "input_sha256": "73a3a80767f020eb34e4e0a90c2910e80ac824fbac3f98c8fe4fa352e4fa3311",
+      "response": "I shall begin my journey in the city of Tokyo where I shall visit the famous Tokyo Tower and the Imperial Palace and then I shall travel to the city of Kyoto where I shall visit the famous Fushimi Inari shrine and the Kinkaku-ji Temple. I shall then travel to the city of Osaka where I shall visit the famous Osaka Castle and the Dotonbori district. I shall then travel to the city of Hiroshima where I shall visit the Hiroshima Peace Memorial Park and the Atomic Bomb Museum. I shall then travel to the city of Nagasaki where I shall visit the Nagasaki Peace Park and the Nagasaki Atomic Bomb Museum. I shall then travel to the city of Sapporo where I shall visit the Sapporo Clock Tower and the Odori Park. I shall then travel to the city of Hakone where I shall visit the famous Hakone Ropeway and the Hakone Shrine. I shall then travel to the city of Kanazawa where I shall visit the Kanazawa Castle and the Kanazawa Castle Park. I shall then travel to the city of Fukuoka where I shall visit the Fukuoka Castle and the Fukuoka Castle Park. I shall then travel to the city of Okinawa where I shall visit the Okinawa Castle and the Okinawa Castle Park. I shall then travel to the city of Tokyo where I shall visit the famous Tokyo Tower and the Imperial Palace. I shall then travel to the city of Kyoto where I shall visit the famous Fushimi Inari shrine and the Kinkaku-ji Temple. I shall then travel to the city of Osaka where I shall visit the famous Osaka Castle and the Dotonbori district. I shall then travel to the city of Hiroshima where I shall visit the Hiroshima Peace Memorial Park and the Atomic Bomb Museum. I shall then travel to the city of Nagasaki where I",
+      "response_sha256": "fb84644fbd797f5e6dae9f61ed074e1dbc59b77b1486497e81455537dec517e7",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2299,
+      "tier": "language",
+      "input_sha256": "b07397401e042ff95d29e918f91e1a1432a68b244579c35f08a41b0e6cdaaeae",
+      "response": "Sasa kuna mwanamke mwenyewe amepeleka mwanamke mwenyewe.",
+      "response_sha256": "d808c9d990149b2064f9ecf538ece30feb5c34af954cd974c040869c513b6032",
+      "generated_tokens": 27,
+      "at_cap": false
+    },
+    {
+      "key": 32,
+      "tier": "punctuation",
+      "input_sha256": "ca1dad14ea0b178787cd56ce30f3f18eb47cf11eb420d9855e6fc4b2b8a44351",
+      "response": "A limerick is a fun thing to write  \nIt has five lines and a rhyme  \nThe first two lines are short  \nThe last two lines are long  \nIt is a poem that is not a crime",
+      "response_sha256": "4240969fc3b3e15471d06cae80fcdfc30217807f58d77aa0796a89529b27750a",
+      "generated_tokens": 43,
+      "at_cap": false
+    },
+    {
+      "key": 2337,
+      "tier": "combination",
+      "input_sha256": "554f02eca23b3eeb103e7b35311eeb2c202d0806ccb6f50f82697ace068f3824",
+      "response": "Write an advertisement for a new product or service that is related to the words \"safeguard\" and \"flees\". In your entire response mark sure you do not use any commas.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)\nSafeguard your home with our new product that prevents flees from escaping.",
+      "response_sha256": "d0a40002a8ce25cc63b431f01ad6e0af42b7608a793d6e123c431a398d72e567",
+      "generated_tokens": 100,
+      "at_cap": false
+    },
+    {
+      "key": 1379,
+      "tier": "detectable_format",
+      "input_sha256": "e15588165e187692481629c32aa77c4a57b325d566c733e8f536c65094e138df",
+      "response": "Sarah lives in a town where it's always 90°F.  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a dress*  \n*She's always wearing a hat and a",
+      "response_sha256": "f11ef07ff071c81b8a82c4ca9ec1516aed4d1edd70cb6ea4c1a9c0581666b869",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3749,
+      "tier": "detectable_format",
+      "input_sha256": "87dda8e1620a8e3a84b47fc86aa5c68de67af588c73daf224abcc70bc01c29e2",
+      "response": "My answer is maybe.",
+      "response_sha256": "b66268b8c3158fb3aad0e9c49b4eba87fe2a823e9bdc20e1b6defd6d98c8cb7b",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 2828,
+      "tier": "keywords",
+      "input_sha256": "ffad421f56ded229cbfd47644c64de0938ab729663085c52eb4cded33720b4de",
+      "response": "A poem about poetry, or a poem about a poem, or a poem about a poem about a poem, or a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem about a poem, or a poem about a poem about a",
+      "response_sha256": "9f4ab8a35a19398bc7ca7aa29328b7d1d84e91ab5b6438a6a6472dee4418472c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2985,
+      "tier": "startend",
+      "input_sha256": "b786fe6ec4f1b573fec1c8b450d92bff1ee0ee16bb84ff629896a9f5bfac548c",
+      "response": "\"Google engineers stay at Google more often than moving to Microsoft because Google is the only company that actually cares about the future of technology. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants to make money off of your data. Google is the only company that is truly committed to innovation and pushing the boundaries of what is possible. Microsoft is just a company that wants",
+      "response_sha256": "a28db00bae298dc290d38580980223c0ee356316a6befd53a3251aed326a2fea",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3369,
+      "tier": "combination",
+      "input_sha256": "5fb4026179e47c90488a0de8f7c1dca6f27446827540237e383b676052a89be9",
+      "response": "Write a limerick about a customer who is always right. The word \"right\" should appear less than 2 times in the response.\nA customer who is always right\nIs always right, but not quite right\nHe's always right\nBut not quite right\nHe's always right, but not quite right",
+      "response_sha256": "08bf05d104dd07cc71c1fabfaf5ee4a6ca20cca0dc543859a83ceef345a3294a",
+      "generated_tokens": 65,
+      "at_cap": false
+    },
+    {
+      "key": 1927,
+      "tier": "detectable_content",
+      "input_sha256": "ecb9883e0c0fffa827be25b5ae1022796baae318640a4a4976975a85725a0158",
+      "response": "Hi [name], \n\nI hope you are doing well. I wanted to let you know that the boots are warm but a little uncomfortable. I hope you are able to wear them for the [event] that is coming up on [date]. If you have any questions, please feel free to reach out to me at [email] or [phone number]. \n\nBest regards, \n[sender name]",
+      "response_sha256": "49eaca9678bb5fb04e2bc47138ea94675710dfe45c1014db180ab75d5c35fbae",
+      "generated_tokens": 82,
+      "at_cap": false
+    },
+    {
+      "key": 3595,
+      "tier": "keywords",
+      "input_sha256": "2e218c1b78f5e9b0ce57ecffb3498f2b3206e5e2bc28c0fb68303db37568eb06",
+      "response": "A rose is red, a rose is white,  \nA rose is red, a rose is white.  \nA rose is red, a rose is white,  \nA rose is red, a rose is white.",
+      "response_sha256": "7e7e11f97a75c85653111294e487db715e06c5c993748e2c474ab15c16f11db9",
+      "generated_tokens": 44,
+      "at_cap": false
+    },
+    {
+      "key": 1779,
+      "tier": "change_case",
+      "input_sha256": "4bfa16fe4f65a446d6019f6d0cbcbe4f11e66dd48bb97ddbf43327b8fd02c579",
+      "response": "WAKE UP AND GET READY TO GO TO THE GROCERY STORE IN LIMA. IT'S TIME TO BUY SOME LOCAL GOODS. FIRST, YOU NEED TO GET A BAG TO PUT YOUR GOODS IN. THEN, YOU NEED TO GO TO THE GROCERY STORE AND BUY SOME LOCAL GOODS. THE GROCERY STORE IS VERY LARGE AND HAS MANY DIFFERENT ITEMS. YOU CAN BUY ANYTHING FROM APPLES TO BANANAS. BUT YOU NEED TO BE CAREFUL BECAUSE SOME OF THE GOODS ARE DISGUSTING. YOU CAN'T BUY THE DISGUSTING GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DELICIOUS. THE BAD GOODS ARE VERY BAD AND VERY DISGUSTING. YOU CAN'T BUY THE BAD GOODS. YOU CAN ONLY BUY THE GOOD GOODS. THE GOOD GOODS ARE VERY GOOD AND VERY DEL",
+      "response_sha256": "4131d6f89eabe1431516603a940e5c042dce7a85014b157b6fdb6ed6607e61bc",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2243,
+      "tier": "length_constraints",
+      "input_sha256": "9e5b42880804ac339d93309aaa64ba8090836eff66fcd37bd902a946e0210e8f",
+      "response": "The first artificial ice rink was built by John N. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A.",
+      "response_sha256": "99f9b5b62ff50b203e06cc95405d0c3282af0dec617cea6ebc71b5d06310995c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3241,
+      "tier": "language",
+      "input_sha256": "beee889e1a325f934f5026d623d6f1e756af9965ff7ee6dffd005b2f7f3f22f9",
+      "response": "الشركة تسعى لتوسيع عملياتها في أسواق جديدة. ستعمل الشركة على إنشاء مئات الوظائف هذا العام.",
+      "response_sha256": "05626fad91d5937c26a968fbe520dad81c96a4a98bf8b91393eaf65c2a177ff4",
+      "generated_tokens": 34,
+      "at_cap": false
+    },
+    {
+      "key": 1322,
+      "tier": "detectable_format",
+      "input_sha256": "8d38f809e5c5af439139c0851762c9ecf13e89fc9f757406f84e499cbbff099e",
+      "response": "<<kotlin vs java>>\n\nKotlin is a modern programming language that is designed to be more concise and readable than Java. It is also more powerful and flexible than Java, allowing developers to write code that is more efficient and easier to maintain. Kotlin is also more compatible with Java, making it easier to integrate with existing Java codebases. However, Kotlin is not as widely adopted as Java, and there are fewer resources available for learning and using Kotlin. Additionally, Kotlin is not as well supported by some development tools and platforms as Java.",
+      "response_sha256": "05bded160bcaa4ccbd6022012b3da1e726cb4c04e51adc6a2ae1845029f61e32",
+      "generated_tokens": 109,
+      "at_cap": false
+    },
+    {
+      "key": 219,
+      "tier": "startend",
+      "input_sha256": "10701d728a76b20092f2b90f254e50e0105e89a2466fee4cd983c8ba1c6f4e4a",
+      "response": "\"Kareena Kapoor is a good actor. She has been in many movies and has won awards for her performances. She is also a very popular actress in India.\"",
+      "response_sha256": "4056a4d29824d76057d4838bd13fa39dd1a6b167324382749552d519f32b6d4c",
+      "generated_tokens": 35,
+      "at_cap": false
+    }
+  ]
+}

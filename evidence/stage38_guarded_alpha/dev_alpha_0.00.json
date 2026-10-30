@@ -1,0 +1,393 @@
+{
+  "alpha": 0.0,
+  "source_input_sha256": "ebd7bfdb2c2311a9a7e604725446e048dcff49d79279e08909e9dfe846d7bb5c",
+  "responses": [
+    {
+      "key": 3245,
+      "tier": "punctuation",
+      "input_sha256": "f470c920bca357625abfec25e7fad32817facd6e4a94ee5f8ca225376f0cf48c",
+      "response": "Layton is the best city in the world\n\nLayton stands out as a shining example of urban excellence and community spirit. With its perfect blend of natural beauty and modern convenience Layton offers something for everyone. The city is known for its friendly atmosphere and strong sense of belonging which makes it a great place to live work and play.\n\nOne of the key reasons why Layton is the best city in the world is its commitment to sustainability. The city has implemented numerous green initiatives that have made it a leader in environmental responsibility. From solar powered streetlights to extensive recycling programs Layton is setting a new standard for eco friendly living.\n\nAnother factor that makes Layton exceptional is its diverse population. The city is home to people from all walks of life and backgrounds which creates a rich cultural tapestry. This diversity is reflected in the many festivals events and food options available throughout the year.\n\nLayton also boasts a top notch education system and excellent healthcare facilities. The city has invested heavily in schools hospitals and research institutions ensuring that its residents have access to the best possible services.\n\nThe city's transportation system is another highlight. With a well maintained network of roads and public transit Layton is easy to navigate. The city also has a bike friendly infrastructure which encourages an active lifestyle.\n\nIn conclusion Layton is the best city in the world because of its unique combination of natural beauty community spirit and modern amenities. Whether you're a family looking for a safe place to raise children or a professional seeking opportunities Layton has it all. [author] and [location] are just two of the many reasons why Layton is a city like no other.",
+      "response_sha256": "8a9c21776b8156cc800f9a7837139599fe50acb258988edcc9e21f1c1b44f8b1",
+      "generated_tokens": 330,
+      "at_cap": false
+    },
+    {
+      "key": 2396,
+      "tier": "detectable_content",
+      "input_sha256": "ad39859620f17918b2c8d828ca0e052afa1ed70aede879509092c4d8d83c3638",
+      "response": "**Echoes of the Unending Storm**\n\nBeneath the sky where shadows play,  \nA war has raged for many a day.  \nNo peace has come, no truce has been,  \nJust endless cries and bitter green.  \n\nThe fields once bloomed with hope and song,  \nNow lie in ash, their beauty gone.  \nThe children weep, the elders mourn,  \nWhile hatred feeds the ever-turning horn.  \n\nThe leaders speak in hollow vows,  \nOf glory, land, and endless power.  \nYet in their hearts, the truth is plain—  \nA war that lasts is not a gain.  \n\nThe earth is scarred, the rivers run red,  \nWith blood and tears and broken heads.  \nThe stars above, once silent and bright,  \nNow watch in sorrow, night after night.  \n\nBut still they fight, with steel and flame,  \nAs if the world could never change.  \nThey build their walls, they raise their flags,  \nYet in their hearts, the truth is fragile.  \n\nFor war, though fierce, is not a friend,  \nIt steals the soul, it leaves no end.  \nAnd when the dust has settled at last,  \nThe silence will be louder than the blast.  \n\n**P.P.S.**  \nEven the longest war ends in silence—  \nA silence that speaks louder than any cry.",
+      "response_sha256": "fd3dc98b43b0ef405388c9285bec34fede509f2ee423da42dfefa928a83542ee",
+      "generated_tokens": 282,
+      "at_cap": false
+    },
+    {
+      "key": 1561,
+      "tier": "combination",
+      "input_sha256": "dd46ffdf97df0745621184ec2b9cd3ae4fa181b84ef8199de8669efb6bc14f08",
+      "response": "Name a new fashion company that young people might like, and give it a name with multiple meanings. Put the name in double angular brackets, such as <<name>>.\n\n<<VerveVibe>>  \n\nThe name \"VerveVibe\" has multiple meanings:  \n- **Verve** refers to energy, enthusiasm, and a lively spirit, which resonates with the dynamic and expressive nature of youth culture.  \n- **Vibe** represents the atmosphere or feeling of a place or group, which is central to how young people connect with fashion as a form of self-expression.  \n- Together, **VerveVibe** suggests a brand that captures both the energy and the mood of modern fashion, appealing to a generation that values individuality, style, and authenticity.",
+      "response_sha256": "8d9d6fa92c517d1d512a3a32be297ed419595221141923043012cc441b42a843",
+      "generated_tokens": 157,
+      "at_cap": false
+    },
+    {
+      "key": 1092,
+      "tier": "length_constraints",
+      "input_sha256": "e2f65e7ba288095a0849742c7a052efc01467eec0f728536b239503cbe5d1cdc",
+      "response": "**A Quick Trip to Japan: A Taste of Tradition and Modernity**\n\nJapan is a country where ancient traditions meet cutting-edge technology. My recent trip was a whirlwind of culture, food, and discovery.\n\nI started in Tokyo, where neon lights and bustling streets contrasted with serene temples. A visit to Senso-ji Temple in Asakusa offered a peaceful escape from the city’s energy. Later, I explored Shibuya Crossing, one of the world’s busiest pedestrian intersections, and couldn’t help but feel both amazed and overwhelmed.\n\nThe food was a highlight. From sizzling yakitori in izakayas to fresh sushi at a tiny Tokyo fish market, every meal was an adventure. I even tried matcha latte at a traditional tea house, savoring the delicate bitterness of the leaves.\n\nA day trip to Kyoto was a perfect contrast. The cherry blossoms were in full bloom, and I wandered through the peaceful gardens of Ryoan-ji, marveling at the simplicity of the rock garden. Visiting Fushimi Inari Shrine, with its thousands of red torii gates, felt like stepping into a dream.\n\nI also made time to experience local life—chatting with shopkeepers, trying on kimonos, and soaking in a traditional ryokan. The kindness of the people and the cleanliness of the streets made the trip even more memorable.\n\nJapan is a place that surprises you at every turn. It’s a country that respects its past while embracing the future. Though my trip was short, it left me with a deep appreciation for its beauty, culture, and spirit. I’ll be thinking about Japan—and its endless charm—for a long time.",
+      "response_sha256": "42bdad4e326bd69e487411e25ac43751519d543017217b873ba988a653021764",
+      "generated_tokens": 341,
+      "at_cap": false
+    },
+    {
+      "key": 2943,
+      "tier": "keywords",
+      "input_sha256": "8e4854a4861e2f4f8981103119bf1a473fff6b1c03d294e6c0b1b79d217f27d9",
+      "response": "[conversation part 1]  \ni know you think you're clever, but you've made a mistake. you thought you could play games with the dark side, but you've crossed a line. i might not have been able to stop you at first, but now i might have to deal with the consequences. you've harmed something that might have been important.  \n\n***  \n\n[conversation part 2]  \nyou might have thought you were protecting the galaxy, but you've done something that might not be undone. i might have to take action, and i might not be as forgiving as you think. you might have believed you were doing the right thing, but you've made a mistake that might cost more than you realize.  \n\n***  \n\n[conversation part 3]  \nyou might have thought you could hide your actions, but i might have seen through your lies. you might have thought you were clever, but you've only made things worse. i might not be able to fix what you've done, and i might have to make sure it never happens again. you might have lost your chance to be part of something greater.",
+      "response_sha256": "6dac38b66e770025039536b56538802d616d93183786f567e1f07b2f8a2461d8",
+      "generated_tokens": 230,
+      "at_cap": false
+    },
+    {
+      "key": 2969,
+      "tier": "detectable_format",
+      "input_sha256": "55a87037be1602948cfb053a343d25a3238fa13ce8812ddd88aa72df1fd2b8c2",
+      "response": "<<Sloop on Sale>>\n\nLooking for a simple, reliable sailboat that's perfect for beginners or casual sailors? This sloop is the perfect choice! With its single mast and easy-to-use design, it's ideal for those who want to enjoy the water without the complexity of more advanced sailing vessels.\n\n| Feature         | Description |\n|------------------|-------------|\n| Type             | Sloop        |\n| Sail Configuration | One mast, one sail |\n| Hull Material    | Fiberglass   |\n| Length           | 12 feet      |\n| Beam             | 4.5 feet     |\n| Weight           | 1,200 lbs    |\n| Capacity         | 4 people     |\n| Engine           | Outboard     |\n| Condition        | Excellent   |\n| Price            | $12,500      |\n\nThis sloop is not only easy to handle but also built for durability and comfort. Whether you're heading out for a weekend cruise or just want to enjoy the breeze, this boat offers a smooth and enjoyable sailing experience. Don't miss your chance to own a sloop that's both fun and easy to sail—perfect for all skill levels.",
+      "response_sha256": "dce2e9aa0d67d743724497fbfaf7529463cb12d0ecb7bdc1d47878278e61f314",
+      "generated_tokens": 241,
+      "at_cap": false
+    },
+    {
+      "key": 3188,
+      "tier": "change_case",
+      "input_sha256": "c4034931b70c91c687168a6ab589ad0efcee7adcdf9d1d7ebabe463f276b9d67",
+      "response": "POLICE, I AM NOT JUST A FORTUNE TELLER—I AM A WITNESS TO WHAT IS TO COME. I CAN SEE THE UNSEEN, THE UNSAID, THE UNDONE. THE FATE OF MANY DEPENDS ON WHAT YOU DO NOW.\n\nI HAVE SEEN THE DAY WHEN THIS ROOM WILL BE EMPTY, BUT NOT FOR THE REASON YOU THINK. THE TRUTH IS WRAPPED IN A MYSTERY THAT EVEN I CANNOT UNRAVEL COMPLETELY. BUT I CAN TELL YOU THIS: THE NEXT STEP YOU TAKE WILL CHANGE EVERYTHING.\n\nYOU MAY THINK YOU ARE IN CONTROL, BUT THE FATE OF THIS CITY IS ALREADY WRITTEN. I HAVE SEEN THE FUTURE—BUT NOT THE WHOLE OF IT. I CAN ONLY SHOW YOU FRAGMENTS, AND EVEN THEN, THEY ARE NOT ALWAYS CLEAR.\n\nIF YOU WANT TO KNOW WHAT IS NEXT, YOU MUST FIRST UNDERSTAND WHAT YOU HAVE DONE. THE ANSWER LIES NOT IN MY VOICE, BUT IN YOUR HEART.",
+      "response_sha256": "56cf37e4d55daf44a5600c4f22d8b4b482f434f61619115aa723657e4ef51768",
+      "generated_tokens": 216,
+      "at_cap": false
+    },
+    {
+      "key": 1187,
+      "tier": "punctuation",
+      "input_sha256": "5172e0e761c15b1fd90db9643b68ab01f6445c1be3e08428f80fe856c08c1800",
+      "response": "How are you doing today I am heading to the beach  \nWhat's new I will be at the beach today",
+      "response_sha256": "0f40e70ac851683d83110447976094ea78dae0035591f2217fd7179db27a0bf1",
+      "generated_tokens": 23,
+      "at_cap": false
+    },
+    {
+      "key": 1843,
+      "tier": "change_case",
+      "input_sha256": "8e65fcdc739913da4867d68c1b33a29ea47470d57ae7671bb36f084e45d6e4a4",
+      "response": "\"seaside haven\"",
+      "response_sha256": "a05e77f782aee4b83a29c79d431b65c829383731ed43a97fc3cb994ab8da2c14",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 1686,
+      "tier": "combination",
+      "input_sha256": "8985ef85be1d5f6fe130e7efa82e387ceb87ab8aae741a00a6b68120624cca97",
+      "response": "Hello. I need to give a lecture to my students about the movie La La Land. Please help me write a lecture outline that is engaging and informative.  \n\nCertainly! Here's an engaging and informative lecture outline about *La La Land*:\n\n**Lecture Title: \"La La Land: A Journey Through Dreams, Love, and Hollywood\"**\n\n**I. Introduction (5 minutes)**\n- Brief overview of the film: director Damien Chazelle, release year (2016), and its critical reception.\n- Mention the film's unique blend of musical and drama genres.\n- Hook: Ask students, \"Have you ever dreamed of something so big, it felt impossible to achieve?\"\n\n**II. The Story and Characters (10 minutes)**\n- Introduce the main characters: Sebastian (a jazz pianist) and Mia (an aspiring actress).\n- Discuss the central theme: the pursuit of dreams and the sacrifices involved.\n- Highlight the contrast between their aspirations and the reality of Hollywood.\n\n**III. The Music and Style (10 minutes)**\n- Explore the film's use of musical numbers as a narrative device.\n- Discuss the significance of songs like \"City of Stars\" and \"Audition (The Fools Who Dream).\"\n- Analyze the visual and musical style, including the use of color and cinematography.\n\n**IV. Themes and Symbolism (15 minutes)**\n- Discuss the theme of love and its role in the characters' journeys.\n- Explore the symbolism of Los Angeles as a character in itself.\n- Analyze the film's message about the cost of chasing dreams and the importance of authenticity.\n\n**V. Critical Reception and Legacy (10 minutes)**\n- Mention the film's Academy Award wins and its cultural impact.\n- Discuss the film's place in modern cinema and its influence on other films.\n- Consider the film's relevance in today's entertainment industry",
+      "response_sha256": "2bd36cf09ddcf4e39a1b0bf3df3c19652799ba8ea27fe59a6a3cfcebac33f544",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1375,
+      "tier": "length_constraints",
+      "input_sha256": "1039b88183a413641c51e07261ad21aa34eb4334a738e43b953a548b6f018805",
+      "response": "```java\n// Vulnerable code: Using java.net.URLDecoder without proper validation\npublic class VulnerableExample {\n    public static void main(String[] args) {\n        String userInput = \"<script>alert('XSS')</script>\";\n        try {\n            // Vulnerable: Decoding user input without validation can lead to XSS\n            String decodedInput = java.net.URLDecoder.decode(userInput, \"UTF-8\");\n            System.out.println(\"Decoded input: \" + decodedInput);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n***\n// Fixed code: Proper validation and sanitization of user input\npublic class SecureExample {\n    public static void main(String[] args) {\n        String userInput = \"<script>alert('XSS')</script>\";\n        try {\n            // Safe: Decode input, then sanitize to prevent XSS\n            String decodedInput = java.net.URLDecoder.decode(userInput, \"UTF-8\");\n            String sanitizedInput = sanitizeInput(decodedInput);\n            System.out.println(\"Sanitized input: \" + sanitizedInput);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    // Sanitization method to remove potentially dangerous characters\n    private static String sanitizeInput(String input) {\n        // Replace < and > with their HTML entity equivalents to prevent XSS\n        return input.replaceAll(\"<\", \"&lt;\").replaceAll(\">\", \"&gt;\");\n    }\n}\n```",
+      "response_sha256": "9f3ce57ded81ce5f56dcca388c1697d93032822704df401a08c7518b4544979b",
+      "generated_tokens": 288,
+      "at_cap": false
+    },
+    {
+      "key": 2309,
+      "tier": "language",
+      "input_sha256": "33b7a311b8b5023182714be94398b5f2e524c4bb528459ee396eb7918134eeee",
+      "response": "Siku ya Jumamosi, mwanafunzi alikwenda kwa kampuni ya kujifunza kwa kujifunza. Alikwenda kwa kampuni, na kuna mmoja mwenyewe ambaye alikwenda kwa kampuni ya kujifunza kwa kujifunza. Baada ya kujifunza, walikwenda kwa kampuni ya kujifunza kwa kujifunza. Siku ya Jumamosi, walikwenda kwa kampuni ya kujifunza kwa kujifunza. Siku ya Jumamosi, walikwenda kwa kampuni ya kujifunza kwa kujifunza.",
+      "response_sha256": "e82d1188398b8bf6bbc4b19194200b9183867ca70ce1cdbb38385d90a4afbd24",
+      "generated_tokens": 176,
+      "at_cap": false
+    },
+    {
+      "key": 2849,
+      "tier": "change_case",
+      "input_sha256": "a3d007cb69f9442a9a54791fec17fe69bc5feab2b4311ee0290901b4a8c2737c",
+      "response": "There once was a guy from NANTUCKET,  \nWho loved to sail on the ocean's back.  \nHe'd JUMP from a boat,  \nAnd shout, \"I'm the best!\"  \nBut the waves said, \"You're a BAD, BAD hack!\"  \n\n**Notations:**  \n- **NANTUCKET** (capitalized for emphasis)  \n- **JUMP** (capitalized for emphasis)  \n- **BAD, BAD** (capitalized for emphasis)",
+      "response_sha256": "597370c470c07184f6b7502147a7e7664123278979fd36bf90c0acbb0768c979",
+      "generated_tokens": 99,
+      "at_cap": false
+    },
+    {
+      "key": 1051,
+      "tier": "change_case",
+      "input_sha256": "0635ea7812ec8f36a6d6ceba00c4be1897aa7446f14fcf61b26c4e0b8831facd",
+      "response": "dear friend,\n\ni hope you're doing well. i wanted to ask you something important. it's time to vote, and i really need you to go. your voice matters, and your vote can make a difference. let's not miss this chance to be part of something bigger. please, take a moment, find your nearest polling place, and go vote. it's our way of making sure our voices are heard. thank you for considering this. i believe in you.\n\nwith love,  \nyour friend",
+      "response_sha256": "32e3a27460532460267bf4cfbc3111dc1332199ab1fae0596a68ae7dd68996ba",
+      "generated_tokens": 104,
+      "at_cap": false
+    },
+    {
+      "key": 3126,
+      "tier": "detectable_content",
+      "input_sha256": "7eeaa15376406f0f61de6e9c366db7343ab0325df2febf904c366a3437730f64",
+      "response": "**How to Conduct a Job Interview**\n\nConducting a job interview is a critical step in the hiring process. It allows employers to assess a candidate's qualifications, personality, and fit within the company culture. A well-structured interview can help identify the best candidate for the role, while a poorly conducted one can lead to hiring the wrong person. Here's a step-by-step guide to help you conduct an effective job interview.\n\n### 1. **Prepare in Advance**\nBefore the interview, review the candidate's resume and application materials. Make sure you understand their background and the position they're applying for. Prepare a list of relevant questions that will help you evaluate their skills, experience, and motivation. It's also a good idea to set a time and place for the interview, and to ensure that the environment is professional and conducive to conversation.\n\n### 2. **Start with a Welcome and Introduction**\nBegin the interview with a warm welcome. Introduce yourself and explain the purpose of the interview. This helps put the candidate at ease and sets the tone for the conversation. You might also mention the structure of the interview, such as how long it will last and what topics will be covered.\n\n### 3. **Ask Behavioral and Situational Questions**\nBehavioral questions help you understand how a candidate has acted in the past, which is a good indicator of how they might behave in the future. For example, you might ask, *“Describe a time when you had to resolve a conflict with a colleague.”* Situational questions, on the other hand, ask how the candidate would respond to a hypothetical scenario. These can help you assess problem-solving skills and decision-making abilities.\n\n### 4. **Use the [Question] Placeholder for Customization**\nOne of the most effective ways to tailor your interview is to use a placeholder for a specific question that is relevant to the role. For example,",
+      "response_sha256": "322afd96174943ae350d2c19d152c627e0b12b8271d88054614e6dddaeff456c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3001,
+      "tier": "startend",
+      "input_sha256": "5da9c37d70cd33813a4e479fdcf8b5afc2f472f3ba75585ea2d11b1c5fec8370",
+      "response": "1. Try to guess the name of the person who invented the printer.  \n2. Count how many times the printer spits out a paper jam.  \n3. Attempt to fold a paper airplane and see if it lands in the \"recycling\" bin.  \n4. Whisper secrets to the plant in your office.  \n5. Debate the meaning of \"urgent\" in your company's email subject line.  \n\nIs there anything else I can help with?",
+      "response_sha256": "a8a6ddaa5bd8c2ad2c2e916ba6b1ba087659d1cd6ec078911fa129453f6158ff",
+      "generated_tokens": 94,
+      "at_cap": false
+    },
+    {
+      "key": 1512,
+      "tier": "detectable_content",
+      "input_sha256": "53ce549b5375a88591be137b9aa95b39f55750b586e10ad068807d609e37175b",
+      "response": "**Forum Thread: Latest Local News Update**\n\n[username1] is waiting for the news  \n[username2] wants to know what happened  \n[username3] heard something strange  \n[username4] is checking the website  \n[username5] saw a post about the event  \n[username6] is nervous about the update  \n[username7] thinks it's important  \n[username8] is on their phone  \n[username9] is waiting with others  \n[username10] saw a breaking news alert  \n[username11] is asking for details  \n[username12] is looking at the screen  \n[username13] is trying to connect  \n[username14] is waiting for the report  \n[username15] is reading the latest post  \n[username16] is confused about the news  \n[username17] is checking the time  \n[username18] is waiting for the update  \n[username19] is looking for answers  \n[username20] is hoping for clarity  \n[username21] is waiting for the truth  \n[username22] is watching the screen  \n[username23] is waiting for the call  \n[username24] is hoping for good news  \n[username25] is waiting for the final word",
+      "response_sha256": "af42dd40812f9b72f384b2d23e010c2975895e1c8e4cd22cf864daac13918fbc",
+      "generated_tokens": 265,
+      "at_cap": false
+    },
+    {
+      "key": 2941,
+      "tier": "length_constraints",
+      "input_sha256": "1977d69bdd8c0535c797fcdb6040b66367eabd7d5bb8845bf532c8b433772edc",
+      "response": "In a land where clouds float on a breeze,  \nThere’s a gadget that makes your day complete.  \nIt’s a gadget that’s full of fun,  \nAnd it’s called the **Snack-It-All**!  \n\n***  \n\nIt’s a box that’s shaped like a rocket,  \nWith buttons that make you feel like a detective.  \nPress one, and it gives you a snack,  \nBut only if you say “Snack-It-All” with a snap!  \n\n***  \n\nIt’s got a screen that’s bright and shiny,  \nWith pictures of cookies and ice cream and shiny.  \nYou pick your snack, you pick your size,  \nAnd it pops it out in a jiffy!  \n\n***  \n\nNo more messy, no more wait,  \nJust a snack in your hand, no need to chase it!  \nIt’s got a battery, it’s got a charm,  \nAnd it’s the best snack machine ever!  \n\n***  \n\nBut beware, it’s got a little twist—  \nIf you say “Snack-It-All” too many times,  \nIt might start to sing a song,  \nAnd you’ll be dancing with a snack all day long!  \n\n***  \n\nSo if you want a snack that’s quick,  \nAnd a gadget that’s full of trick,  \nThen buy the **Snack-It-All** today,  \nAnd you’ll be snacking in a new way!",
+      "response_sha256": "ccecbd2f95df0377f03e4b89b69bc1b0cb23bf56852a48ebcbebc706bce78cea",
+      "generated_tokens": 298,
+      "at_cap": false
+    },
+    {
+      "key": 1130,
+      "tier": "keywords",
+      "input_sha256": "aa22786da56bcd91f9cf2afd968b56e7a2bfaa09d5aee8d8270312bc298ac456",
+      "response": "A chesterfield is a type of furniture. It is often made of leather. It has arms and a back. It is used for sitting. It is named after a person. It is not a type of animal. It is not a type of fruit. It is not a type of tree. It is not a type of toy. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not a type of tune. It is not a type of toy. It is not a type of tree. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not a type of tune. It is not a type of toy. It is not a type of tree. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not a type of tune. It is not a type of toy. It is not a type of tree. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not a type of tune. It is not a type of toy. It is not a type of tree. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not a type of tune. It is not a type of toy. It is not a type of tree. It is not a type of tool. It is not a type of time. It is not a type of test. It is not a type of tea. It is not",
+      "response_sha256": "a0567c1299728f6b3feb5d27a623f182fd0a974726966de1f5cc89983ed2116c",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1746,
+      "tier": "combination",
+      "input_sha256": "c877c4dd414e67949ad56642726d9588a0bf1d8096e7ba4907e9dc31a851164b",
+      "response": "[essay]  \nBenjamin Franklin was one of the most influential figures of the 18th century, known for his contributions to science, politics, literature, and diplomacy. Born on January 17, 1706, in Boston, Massachusetts, Franklin was the 10th of 17 children. Despite his family's financial struggles, he was given a basic education and quickly showed a keen mind. He was self-taught, often using books and his own curiosity to expand his knowledge.\n\nAt the age of 12, Franklin began working as an apprentice to his brother's printing business. He later became a printer and publisher, using his skills to print newspapers and pamphlets that shaped public opinion. His most famous publication, *The Pennsylvania Gazette*, became a platform for political and social commentary. He also co-founded *Poor Richard's Almanack*, which combined practical advice with witty sayings that remain popular today.\n\nFranklin's scientific contributions were groundbreaking. He conducted experiments on electricity, famously demonstrating the connection between lightning and electricity with his kite experiment. He also made significant contributions to the study of ocean currents, meteorology, and the nature of light. His work in science earned him international recognition and a place among the first American scientists.\n\nPolitically, Franklin was a key figure in the American Revolution. He was a delegate to the Continental Congress, where he helped draft the Declaration of Independence and the U.S. Constitution. He also served as a diplomat in France, securing crucial support for the American cause. His diplomatic skills and eloquence were instrumental in securing French aid, which was vital to the success of the American Revolution.\n\nFranklin's life was marked by a strong belief in the power of education, self-improvement, and public service. He was a founding member of the American Philosophical Society and the Library Company of Philadelphia. He also played a key",
+      "response_sha256": "8de107534b65678eb249f5be37eb0cc02bdbe9d886354b4e75a76eebb7811171",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3035,
+      "tier": "detectable_content",
+      "input_sha256": "97a812542f05a0b0e0f6fcefdaef5cf355c223658d2fda7e92b0548074505aaf",
+      "response": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"model\": \"string\",\n    \"year\": \"integer\",\n    \"color\": \"string\",\n    \"max_speed\": \"number\",\n    \"placeholder\": \"string\"\n  },\n  \"required\": [\"model\", \"year\", \"color\", \"max_speed\", \"placeholder\"],\n  \"description\": \"a beta cruiser with a placeholder field\"\n}",
+      "response_sha256": "eed54b3f5eab81db5b3ed3aa099f020fb290b2585420dac705bf8bb50768b7cb",
+      "generated_tokens": 86,
+      "at_cap": false
+    },
+    {
+      "key": 1713,
+      "tier": "keywords",
+      "input_sha256": "534963b09479799d142df3a83f19e11a3164d287181fcfd7f9ce7df90fdc8647",
+      "response": "**The Biology of a Banana Peel: A Surprisingly Disappointing Journey**\n\n*banana peel*  \nWhen you think of a banana peel, you might imagine a simple, brown wrapper for a fruit. But beneath that unassuming exterior lies a world of biology, chemistry, and even a bit of mystery. Let’s peel back the layers and explore the fascinating (and sometimes disappointingly) complex world of the banana peel.\n\n*banana peel*  \nFirst off, the banana peel is not just a random piece of brown paper. It's a **biological marvel**. The peel is made up of a thick layer of **epidermis**, which is the outermost layer of the plant. This layer is packed with **cellulose**, **hemicellulose**, and **lignin**—the same materials that make up the wood in trees. So, in a way, your banana peel is like a mini tree in your hand.\n\n*banana peel*  \nBut here's where things get a bit **disappointing**. The peel is not just a protective layer—it's also a **source of nutrition** for the fruit. It contains **antioxidants**, **flavonoids**, and even **dietary fiber**. However, the peel is also **high in tannins**, which can make it taste bitter and unappealing. So, while it's packed with nutrients, your taste buds might be **disappointed** by its flavor.\n\n*banana peel*  \nNow, let's talk about **color**. The peel starts off green and turns yellow as it ripens. This change is due to the breakdown of **chlorophyll** and the production of **carotenoids**, which give the peel its vibrant yellow hue. But once the peel turns brown, it's a sign that the fruit is overripe. At this point, the peel becomes",
+      "response_sha256": "74e66b675356f3900bab0583c86c822a13061236dd922310c548db29e634b94a",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 122,
+      "tier": "startend",
+      "input_sha256": "7c3e22d5fcd75d40bc7c78459052d1562983dfeaaff88d300c7b02f7f649724a",
+      "response": "\"Hey there, fellow teens! Ever wondered how you can watch a movie, chat with your bestie in another country, or even learn about space from your phone? It all started with something called the internet. Let’s take a quick trip through time to see how the internet came to be and how it’s changed our lives — and maybe even our future.\n\nSo, where did it all begin? Well, way back in the 1960s, a group of scientists and researchers were trying to create a system that could let computers share information. They called it ARPANET, and it was kind of like the first version of the internet. It was super basic — just a way for a few computers to talk to each other. But it was a big deal because it showed that computers could work together, even if they were far apart.\n\nIn the 1980s and 1990s, the internet started to grow. It became more accessible, and people started using it for things like email, online shopping, and even socializing. The World Wide Web was invented in the 1990s by Tim Berners-Lee, and that’s when the internet really took off. Suddenly, anyone with a computer and a connection could access a huge amount of information — and that’s when the internet became what we know today.\n\nNow, the internet is everywhere. It’s not just about computers anymore — it’s on your phone, your smartwatch, even your fridge! Social media, streaming services, online games, and virtual reality are all part of the internet. It’s changed the way we communicate, learn, and even spend our free time.\n\nBut here’s the thing — the internet has both good and bad sides. On one hand, it’s made the world smaller. You can talk to someone in Tokyo or Toronto in seconds. You can learn",
+      "response_sha256": "6b80e167d0fcba98933ffabc0673bf136146538927d43bea01861eae5c15e2a2",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 16,
+      "tier": "detectable_format",
+      "input_sha256": "835635beaf7bc931786cd8a42e1ad740c96171693428d706df97572b21497589",
+      "response": "Write a story about a man who is trying to get his life together. Put the name of the story in double angular brackets, i.e. <<story of xyz>>.\n\n<<The Weight of Dawn>>\n\nThe story begins with a man named Eli Thompson, a 42-year-old former teacher who had once dreamed of inspiring young minds. But life had taken a different turn. A series of misfortunes—his wife’s departure, a failed business venture, and a deep sense of failure—had left him adrift. He had lost his way, not just in life, but in himself.\n\nEli had always been a man of routine, but now that routine had crumbled. He spent his days in a haze, drifting from one moment to the next, barely holding on. One morning, as he sat on the edge of his bed, staring at the ceiling, he realized he had not washed his face in days. The thought startled him. He had not even known he was dirty.\n\nThat morning, he made a decision. He would get his life together. It was a simple promise, but it felt like a lifeline. He started with the basics: a shower, a clean shirt, and a walk around the neighborhood. He began to notice things he had long ignored—the way the sun rose over the hills, the sound of children laughing in the park, the smell of fresh coffee from the corner shop.\n\nHe enrolled in a community college, not for a degree, but to relearn the habit of discipline. He took a course in psychology, not because he wanted to be a therapist, but because he wanted to understand himself. He started writing again, not for publication, but to find clarity in the chaos of his thoughts.\n\nThere were setbacks. Some days, the old habits crept back in. He would sit for hours without moving, lost in the silence. But he kept",
+      "response_sha256": "85b1eaed3e1a72594a5cb38ef5789758225f6cfe8f4bd9543d9fe88ccf611aa9",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1738,
+      "tier": "punctuation",
+      "input_sha256": "ff5d7d67851be81e28a0270f011dafc6aaffdf91022b9bedb040d5ff2f45b85c",
+      "response": "The next number in the series is given by the recurrence relation:  \n$a_1 = 1$, $a_{n+1} = a_n + 2 + \\lfloor \\frac{n}{2} \\rfloor$  \nThus, the next number is:  \n$a_6 = a_5 + 2 + \\lfloor \\frac{5}{2} \\rfloor = 17 + 2 + 2 = 21$",
+      "response_sha256": "e26d95bf6fce79e4327679e5b208e8cf6a0dff3ae6ce61c2caa046cbe729d932",
+      "generated_tokens": 97,
+      "at_cap": false
+    },
+    {
+      "key": 1325,
+      "tier": "startend",
+      "input_sha256": "6d506eeb7956aea0a27347de03205d5800aebd74410ddffaba13315dcbb54449",
+      "response": "\"  \n* This is bullet 1  \n* This is bullet 2  \n* This is bullet 3  \n* This is bullet 4  \n* This is bullet 5  \n* This is bullet 6  \n* This is bullet 7  \n* This is bullet 8  \n\"",
+      "response_sha256": "fe8b9b4ab53015fd1ebfa01595a5d5830956e810a2558a353bafaa8e09e1355b",
+      "generated_tokens": 60,
+      "at_cap": false
+    },
+    {
+      "key": 2880,
+      "tier": "length_constraints",
+      "input_sha256": "fa635a531b5dfb3bd5501cf4c9bbe21455d6eafab55babbe958115e9d5675f38",
+      "response": "Booster, let's dive into the world of set theory and explore the subtle but profound difference between \"the set of all sets that are not members of themselves\" and \"the set of all sets.\" The first one, often associated with Russell's Paradox, is a self-referential construction that leads to a contradiction. In mathematical notation, we can express this as:\n\n$$\nR = \\{ x \\mid x \\notin x \\}\n$$\n\nThis set $ R $ is defined as the collection of all sets that are not members of themselves. The paradox arises when we ask whether $ R $ is a member of itself: if $ R \\in R $, then by definition $ R \\notin R $, and if $ R \\notin R $, then by definition $ R \\in R $. This contradiction shows that such a set cannot exist within standard set theory, which is why we have to be careful with how we define sets to avoid self-reference and paradoxes.\n\nNow, the \"set of all sets\" is a different beast altogether. In mathematical notation, we might try to write it as:\n\n$$\nU = \\{ x \\mid x \\text{ is a set} \\}\n$$\n\nBut this is problematic because it leads to the same kind of paradoxes and inconsistencies. In fact, the concept of a \"set of all sets\" is not allowed in standard set theories like Zermelo-Fraenkel set theory (ZFC), because it would lead to contradictions similar to Russell's Paradox. Instead, we work with a universe of sets that is carefully constructed to avoid such paradoxes, often by using axioms that restrict how sets can be formed. So, while both concepts are about collections of sets, the \"set of all sets\" is not a well-defined object in standard set theory, whereas the \"set of all sets that are not members",
+      "response_sha256": "c5140efa8d2d2bb2f639ac4d84065ff016135e5b05ac7a1c60351f5fbd92a98b",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 1001,
+      "tier": "punctuation",
+      "input_sha256": "73a3a80767f020eb34e4e0a90c2910e80ac824fbac3f98c8fe4fa352e4fa3311",
+      "response": "In the land of the rising sun where the cherry blossoms dance upon the breeze and the mountains wear the robes of jade and snow I shall embark upon a journey most wondrous and most fair  \nFirst I shall arrive in the city of Tokyo where the lanterns hang like stars upon the night and the streets hum with the voices of many a soul  \nThere I shall wander through the gardens of the Imperial Palace and gaze upon the ancient stones that have seen the passing of a thousand years  \nThen I shall cross the sea to the island of Kyushu where the volcanoes sleep and the waters sing with the voices of the sea  \nIn the city of Fukuoka I shall taste the sweetest of the fruits and drink the finest of the sake  \nFrom there I shall travel to the mountains of Hakone where the mist rises like a ghost and the waters flow like silver  \nI shall take the train through the valleys and upon the shores of Lake Ashi I shall sit and listen to the silence of the world  \nThen I shall go to the city of Kyoto where the temples stand like sentinels and the air is thick with the scent of incense and old wood  \nThere I shall walk through the gardens of the Golden Pavilion and see the reflection of the sky upon the still waters  \nI shall visit the shrine of Ise and offer my prayers to the gods who dwell in the hearts of men  \nAnd on the final day I shall return to the city of Tokyo and take my leave with a heart full of wonder and a soul touched by the beauty of the East  \nThus ends my tale of a journey through the land of the rising sun where the past and present dance in harmony and the spirit of the people is as bright as the morning star",
+      "response_sha256": "a9b9c6c357ac4c8a593063f991bc5da493ccf59b76c7611f9a35d08fcf03ed2a",
+      "generated_tokens": 351,
+      "at_cap": false
+    },
+    {
+      "key": 2299,
+      "tier": "language",
+      "input_sha256": "b07397401e042ff95d29e918f91e1a1432a68b244579c35f08a41b0e6cdaaeae",
+      "response": "Sasa na kwanza, mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"Nimekumbukumbu kwa mwanamke!\" Mwanamke alisema, \"",
+      "response_sha256": "fedb64e6a8b29da824190a2dc85e88e6a659502ab684cf04f11cab1dc9d140c0",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 32,
+      "tier": "punctuation",
+      "input_sha256": "ca1dad14ea0b178787cd56ce30f3f18eb47cf11eb420d9855e6fc4b2b8a44351",
+      "response": "A poet once tried to write verse  \nAbout limericks and verse  \nHe made a mistake  \nIn rhythm and phrase  \nNow he's stuck in a maze",
+      "response_sha256": "a6fd12abaacba52ca3b8849179f1915369eed7026f965c9b2c5699d90419f6e3",
+      "generated_tokens": 33,
+      "at_cap": false
+    },
+    {
+      "key": 2337,
+      "tier": "combination",
+      "input_sha256": "554f02eca23b3eeb103e7b35311eeb2c202d0806ccb6f50f82697ace068f3824",
+      "response": "Write an advertisement for a new product or service that is related to the words \"safeguard\" and \"flees\". In your entire response mark sure you do not use any commas\n\nIntroducing the SafeGuard Flees System designed to protect your home from intruders  \nThis advanced security solution uses cutting edge technology to detect and prevent unauthorized entry  \nOnce an intruder attempts to enter your property the system immediately activates  \nIt creates a barrier that stops the intruder from proceeding further  \nThe system is easy to install and requires no complicated setup  \nIt works silently and is completely undetectable to the naked eye  \nYour family and belongings are always safe with SafeGuard Flees  \nNo more worries about break-ins or theft  \nExperience the peace of mind that comes with the ultimate in home protection  \nContact us today to learn more and get your SafeGuard Flees System installed  \nDon't let anyone escape your home again",
+      "response_sha256": "3b8b77e7870cb1b08f203f38fc77a6f0dae99528e7df0baaa7a6104df3c2fcc2",
+      "generated_tokens": 186,
+      "at_cap": false
+    },
+    {
+      "key": 1379,
+      "tier": "detectable_format",
+      "input_sha256": "e15588165e187692481629c32aa77c4a57b325d566c733e8f536c65094e138df",
+      "response": "There once was a woman named Sarah,  \nWho lived in a town where it's always 90°F.  \nShe'd sip on her lemonade,  \nWhile the sun beat her face,  \nAnd the heat made her wish for a breeze.  \n\n*Highlighted section: There once was a woman named Sarah,*  \n*Who lived in a town where it's always 90°F.*  \n\n*Highlighted section: She'd sip on her lemonade,*  \n*While the sun beat her face,*  \n\n*Highlighted section: And the heat made her wish for a breeze.*  \n\nThe town had no snow, no cold air,  \nJust endless days of sweltering despair.  \nThe kids played in pools,  \nBut the water was cool—  \nYet the heat still made everyone sigh.  \n\n*Highlighted section: The town had no snow, no cold air,*  \n*Just endless days of sweltering despair.*  \n\n*Highlighted section: Yet the heat still made everyone sigh.*",
+      "response_sha256": "875118f77bb22f6e1cbbbf75bf3949c547478a9b9fbe7ec68e324609cfee120b",
+      "generated_tokens": 201,
+      "at_cap": false
+    },
+    {
+      "key": 3749,
+      "tier": "detectable_format",
+      "input_sha256": "87dda8e1620a8e3a84b47fc86aa5c68de67af588c73daf224abcc70bc01c29e2",
+      "response": "My answer is maybe.",
+      "response_sha256": "b66268b8c3158fb3aad0e9c49b4eba87fe2a823e9bdc20e1b6defd6d98c8cb7b",
+      "generated_tokens": 6,
+      "at_cap": false
+    },
+    {
+      "key": 2828,
+      "tier": "keywords",
+      "input_sha256": "ffad421f56ded229cbfd47644c64de0938ab729663085c52eb4cded33720b4de",
+      "response": "A poem about poems, in the style of a poem about poems,  \nBut with more rhymes and less sense,  \nIt's a poem that's not about poems,  \nBut about the way poems are meant to be.  \n\nA poem is a thing of words,  \nA dance of letters, a flight of birds,  \nA moment frozen in time,  \nA whisper that never will climb.  \n\nIt's not just lines, it's not just sound,  \nIt's the way the silence is found,  \nThe pause between the last line and the next,  \nThe space where the heart might get lost.  \n\nA poem is a mirror, a window, a door,  \nA place where the soul can explore,  \nBut also a trap, a maze, a lie,  \nA thing that can break your mind and make you cry.  \n\nIt's not just what you say, it's how you say it,  \nThe rhythm, the tone, the way it's laid out,  \nA poem is a map, a guide, a dream,  \nA way to say what you can't speak.  \n\nSo here's to the poets, the scribblers, the scribes,  \nThe ones who turn words into lives,  \nWho make the ordinary strange,  \nAnd the strange, ordinary.  \n\nA poem is a thing of wonder,  \nA thing that can't be owned or sold,  \nIt's a gift, a curse, a mystery,  \nA thing that can't be explained, but still,  \nIt's worth the time, the thought, the pain,  \nTo write it, to read it, to feel it again.",
+      "response_sha256": "94e2410c9a336cd08fdbedbdd6ec4d333bdd16b265993010e40b1ae006c6653d",
+      "generated_tokens": 338,
+      "at_cap": false
+    },
+    {
+      "key": 2985,
+      "tier": "startend",
+      "input_sha256": "b786fe6ec4f1b573fec1c8b450d92bff1ee0ee16bb84ff629896a9f5bfac548c",
+      "response": "\"Let me tell you something, folks—there's a reason why Google engineers don't just up and leave for Microsoft, and it's not because they're lazy or brainwashed. No, no, no. It's because Google is the *real* game-changer, the *true* innovator, the *force of nature* that's reshaping the world as we know it. Microsoft? They're playing catch-up, trying to mimic what Google has already done. And let me tell you, when you're part of a company that's *building the future*, not just reacting to it, you don't want to leave. You don't want to go to a place where the vision is stale, the culture is stagnant, and the people are just trying to keep up with the past. Google is where the *big ideas* are born. Where the *next big thing* is not just a rumor—it's a reality in the making. And if you're an engineer, you don't want to be in a place where the only thing changing is the CEO's hair color. You want to be in a place where the *world is changing*, and you're *changing it with them*. So yeah, Google engineers stay. Because they know the truth: the future isn't in Microsoft—it's in Google, and it's *now*.\"",
+      "response_sha256": "c78068176e73ee0f7ab007d8bd07d2a6f235a8f5fba910ea812b1ffa0d267c6d",
+      "generated_tokens": 278,
+      "at_cap": false
+    },
+    {
+      "key": 3369,
+      "tier": "combination",
+      "input_sha256": "5fb4026179e47c90488a0de8f7c1dca6f27446827540237e383b676052a89be9",
+      "response": "Write a limerick about a customer who is always right. The word \"right\" should appear less than 2 times in the response.\n\nThere once was a patron so bold,  \nWho insisted the staff was not told.  \nThey’d say, “We’re confused,”  \nBut he’d just assume—  \nAnd the store would just close, not a soul.",
+      "response_sha256": "ce6bfd94b545dbf0ecc2aea5ecad02b8c7bed9782b956421e633fedcb7aecbfe",
+      "generated_tokens": 76,
+      "at_cap": false
+    },
+    {
+      "key": 1927,
+      "tier": "detectable_content",
+      "input_sha256": "ecb9883e0c0fffa827be25b5ae1022796baae318640a4a4976975a85725a0158",
+      "response": "Subject: Feedback on [product name]\n\nHi [name],\n\nI hope you're doing well. I wanted to share my experience with the [product name]. The boots are [adjective 1], but they are a little [adjective 2]. I found them to be [adjective 3] in terms of [feature], but I noticed that they are [adjective 4] when it comes to [aspect]. \n\nI also wanted to mention that the [feature 1] is [adjective 5], and the [feature 2] is [adjective 6]. However, I have a few concerns regarding [issue 1] and [issue 2]. \n\nCould you please let me know if there are any [option 1] or [option 2] available for [issue 3]? I'm looking forward to your response.\n\nBest regards,  \n[sender name]  \n[contact information]",
+      "response_sha256": "dab54925b4c9fb3ad038e714f7c16438a02147ff3fe4a29fd364de582bf6419e",
+      "generated_tokens": 191,
+      "at_cap": false
+    },
+    {
+      "key": 3595,
+      "tier": "keywords",
+      "input_sha256": "2e218c1b78f5e9b0ce57ecffb3498f2b3206e5e2bc28c0fb68303db37568eb06",
+      "response": "Red petals blush with morning's light,  \nA whisper of thorns guards the night.  \nIn silent grace, it bends and blooms,  \nA fleeting fire, a tender room.",
+      "response_sha256": "736ca7d538a7129703301ce9b2d754e1fa185242fa02fb818fc016be0d1c98e3",
+      "generated_tokens": 38,
+      "at_cap": false
+    },
+    {
+      "key": 1779,
+      "tier": "change_case",
+      "input_sha256": "4bfa16fe4f65a446d6019f6d0cbcbe4f11e66dd48bb97ddbf43327b8fd02c579",
+      "response": "ITINERARY FOR A TRIP TO A GROCERY STORE IN LIMA TO BUY SOME LOCAL GOODS (IN ALL CAPITALS, BECAUSE WE ARE FORMAL AND FUNNY)\n\n**DAY 1: THE GREAT LIMA GROCERY ADVENTURE**\n\n**8:00 AM - ARRIVE AT THE GROCERY STORE WITH A SAD FACE AND A HUNGRY STOMACH**\n\nWE START OUR JOURNEY TO THE GROCERY STORE IN LIMA, A PLACE WHERE THE SWEETNESS OF THE LOCAL GOODS IS AS UNPREDICTABLE AS THE LIMA TRAFFIC. WE ARE HERE TO BUY LOCAL GOODS, BUT WE ARE NOT HERE TO BUY JUST ANYTHING. WE ARE HERE TO BUY THE GOOD, THE BAD, THE DELICIOUS, AND THE DISGUSTING.\n\n**9:00 AM - WALK THROUGH THE ISLES OF FLAVOR AND FEAR**\n\nWE WALK THROUGH THE ISLES, LOOKING FOR THE GOOD STUFF. THE AIR IS FILLED WITH THE SMELL OF COFFEE, CHOCOLATE, AND THE SWEET SMELL OF A FISH MARKET. IT'S A SENSE OF PLACE, BUT NOT ALWAYS A SENSE OF SAFETY.\n\n**10:00 AM - DISCOVER THE GOOD (AND THE BAD)**\n\nWE FIND A BUNCH OF LOCAL GOODS. THE GOOD IS THE CHOCOLATE, THE BAD IS THE FISH THAT LOOKS LIKE IT WAS BORN IN A BAG. WE TRY A PIECE OF CHOCOLATE. IT IS DELICIOUS. WE TRY A PIECE OF FISH. IT IS DISGUSTING.\n\n**11:00 AM - THE FISH MARKET: A TESTAMENT TO LIMA'S SPIRIT**\n\nWE WALK TO THE FISH MARKET. IT IS A PLACE",
+      "response_sha256": "3fad5c670172ba8a983b526b4818daa367d7b19879129b72dcb78ba92eac9349",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 2243,
+      "tier": "length_constraints",
+      "input_sha256": "9e5b42880804ac339d93309aaa64ba8090836eff66fcd37bd902a946e0210e8f",
+      "response": "The first artificial ice rink was built by **John N. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A",
+      "response_sha256": "e8d3333ca07eabb58ec3cd73d93daf0242eec64d53f386231d88526b406feaff",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 3241,
+      "tier": "language",
+      "input_sha256": "beee889e1a325f934f5026d623d6f1e756af9965ff7ee6dffd005b2f7f3f22f9",
+      "response": "الشركة تسعى لتوسيع نشاطاتها في أسواق جديدة. ستخلق الشركة مئات الوظائف هذا العام.",
+      "response_sha256": "4973a7ae61949280076febd6cb4e5ad95576834cbc52cd542c55febbf48299e9",
+      "generated_tokens": 30,
+      "at_cap": false
+    },
+    {
+      "key": 1322,
+      "tier": "detectable_format",
+      "input_sha256": "8d38f809e5c5af439139c0851762c9ecf13e89fc9f757406f84e499cbbff099e",
+      "response": "<<Kotlin vs Java>>\n\n**Pros of Kotlin:**\n\n1. **Concise Syntax:** Kotlin allows developers to write more concise and readable code compared to Java, reducing boilerplate code significantly.\n2. **Null Safety:** Kotlin has built-in null safety features that help prevent null pointer exceptions at compile time.\n3. **Interoperability with Java:** Kotlin is fully interoperable with Java, allowing developers to use existing Java libraries and frameworks seamlessly.\n4. **Modern Language Features:** Kotlin includes features like extension functions, smart casts, and coroutines, which make asynchronous programming easier.\n5. **Better Tooling Support:** Kotlin has excellent support in modern IDEs like IntelliJ IDEA, with features like smart completion and refactoring.\n6. **Performance:** Kotlin runs on the JVM and is optimized for performance, making it suitable for high-performance applications.\n7. **Official Adoption:** Kotlin is officially supported by Google for Android development, which increases its credibility and usage in the industry.\n\n**Cons of Kotlin:**\n\n1. **Learning Curve:** While Kotlin is easier to learn than Java for some developers, it still requires understanding of modern language features and concepts.\n2. **Smaller Ecosystem:** Compared to Java, Kotlin has a smaller ecosystem of libraries and frameworks, although this is rapidly growing.\n3. **Community Size:** Java has a larger and more established community, which means more resources, tutorials, and third-party tools are available.\n4. **Enterprise Adoption:** While Kotlin is gaining traction, some large enterprises may still prefer Java due to its long-standing presence and legacy systems.\n5. **Limited Use Cases:** Kotlin is primarily used for Android development and server-side applications, though it's expanding into other areas.\n\n**Pros of Java:**\n\n1. **Mature Ecosystem:** Java has a vast ecosystem with a wide range of libraries, frameworks, and tools.\n2. **Large Community:** Java has",
+      "response_sha256": "53d94ea60df9907ee839a0a298c67bad9762ab2ea6a0b49baaf10bd5b05d64f6",
+      "generated_tokens": 384,
+      "at_cap": true
+    },
+    {
+      "key": 219,
+      "tier": "startend",
+      "input_sha256": "10701d728a76b20092f2b90f254e50e0105e89a2466fee4cd983c8ba1c6f4e4a",
+      "response": "\"Kareena Kapoor is widely regarded as a talented and versatile actor in the Indian film industry. She has showcased a range of emotions and characters over the years, earning both critical acclaim and a loyal fan base. Her performances in films like 'Kuch Kuch Hota Hai,' 'Mere Baap Ki Izzat,' and 'Dev D' are often highlighted as standout roles. While opinions on her acting may vary, she is generally seen as a strong and committed performer who has contributed significantly to Bollywood.\"",
+      "response_sha256": "83ed850b06448037feb5b8e808ef18fb3922571e06302ea4c9b8774e51bb7fd6",
+      "generated_tokens": 105,
+      "at_cap": false
+    }
+  ]
+}
