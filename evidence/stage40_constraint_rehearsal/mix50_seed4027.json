@@ -1,0 +1,72 @@
+{
+  "status": "measured",
+  "kind": "stage40_deterministic_dolly_constraint_rehearsal_qwen3_nf4",
+  "config": {
+    "mix": 0.5,
+    "seed": 4027,
+    "rank": 16,
+    "training_epochs": 2,
+    "optimizer_updates": 512,
+    "source_exposures": 1024,
+    "batch_accumulation": 2,
+    "optimizer": "AdamW",
+    "lr": 0.00015,
+    "compute_precision": "BF16"
+  },
+  "format_source_sha256": "8a179a69f80dce3a137206d5bc1b4057041998145403f561ebb37fa1896a999b",
+  "human_source_dataset_sha256": "cc1357a27303dafdbdb57a2fedf3026ab2c4d25ff62a3ce55fe20b09d1fe670a",
+  "baseline_validation": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 2.9525444132662364,
+    "assistant_perplexity": 19.154629069192996,
+    "mean_record_loss": 4.0177808199077845
+  },
+  "per_epoch": [
+    {
+      "epoch": 1,
+      "unique_source_records": 512,
+      "format_reference_demonstrations_used": 254,
+      "format_distribution": {
+        "xml_tag": 72,
+        "raw": 256,
+        "begin_end": 95,
+        "json_exact": 87,
+        "raw_overflow_fallback": 2
+      },
+      "validation_ce": 1.778361564690566,
+      "validation_ppl": 5.9201486873715305
+    },
+    {
+      "epoch": 2,
+      "unique_source_records": 512,
+      "format_reference_demonstrations_used": 250,
+      "format_distribution": {
+        "raw": 256,
+        "begin_end": 78,
+        "json_exact": 85,
+        "raw_overflow_fallback": 6,
+        "xml_tag": 87
+      },
+      "validation_ce": 1.7958487783400576,
+      "validation_ppl": 6.024586090472287
+    }
+  ],
+  "best_epoch_by_dolly_validation_only": 1,
+  "best_validation_ce": 1.778361564690566,
+  "speed": {
+    "median_step_ms_excluding_first3_per_epoch": 448.595582973212,
+    "samples_per_second_excluding_first3_per_epoch": 4.304877272281939,
+    "peak_allocated_gib": 12.995991230010986
+  },
+  "adapter_sha256": {
+    "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+    "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+    "adapter_model.safetensors": "cf22eadff1cd6e11b33bac3464f29dfb26936881b990fe49abad40157ba73676"
+  },
+  "caveats": [
+    "Derived format examples are algorithmically transformed from human-written Dolly responses, no human validation of new form",
+    "All mixes maintain same original source identity exposures but assistant targets/contexts differ",
+    "Single seed and public Dolly may overlap pretrained Qwen; final IFEval unseen source held out for independent evaluation"
+  ]
+}

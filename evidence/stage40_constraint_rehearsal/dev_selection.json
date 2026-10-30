@@ -1,0 +1,299 @@
+{
+  "status": "dev_frozen_no_final_test_access",
+  "source_data_sha256": "8a179a69f80dce3a137206d5bc1b4057041998145403f561ebb37fa1896a999b",
+  "dev25_sha256": "de26949074a2c83561475c15c9f2c521e2b73faa45457f8055acd2a04eb3a192",
+  "untouched60_sha256": "6a80afcf02a6405dad58ea8895f8cd5c57f8b6047833ea77667c9425a1a43281",
+  "all_stage36_and_stage38_ifeval_keys_excluded_count": 240,
+  "fixed_candidate_arms": [
+    "base",
+    "old_full",
+    "mix00_seed4011",
+    "mix25_seed4011",
+    "mix50_seed4011",
+    "mix00_seed4027",
+    "mix25_seed4027",
+    "mix50_seed4027"
+  ],
+  "training_candidates": [
+    "mix00_seed4011",
+    "mix25_seed4011",
+    "mix50_seed4011",
+    "mix00_seed4027",
+    "mix25_seed4027",
+    "mix50_seed4027"
+  ],
+  "metrics": {
+    "base": {
+      "strict": 22,
+      "strict_fraction": 0.88,
+      "loose_fraction": 0.88,
+      "capped": 4,
+      "Dolly_validation_ce": 2.9525444132662364,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 1
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 1
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        }
+      }
+    },
+    "old_full": {
+      "strict": 14,
+      "strict_fraction": 0.56,
+      "loose_fraction": 0.56,
+      "capped": 8,
+      "Dolly_validation_ce": 1.777000457446334,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        }
+      }
+    },
+    "mix00_seed4011": {
+      "strict": 12,
+      "strict_fraction": 0.48,
+      "loose_fraction": 0.48,
+      "capped": 7,
+      "Dolly_validation_ce": 1.7811306052959124,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.2
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.2
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    },
+    "mix25_seed4011": {
+      "strict": 16,
+      "strict_fraction": 0.64,
+      "loose_fraction": 0.64,
+      "capped": 10,
+      "Dolly_validation_ce": 1.7808840058221456,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    },
+    "mix50_seed4011": {
+      "strict": 15,
+      "strict_fraction": 0.6,
+      "loose_fraction": 0.6,
+      "capped": 9,
+      "Dolly_validation_ce": 1.7798714192779437,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    },
+    "mix00_seed4027": {
+      "strict": 9,
+      "strict_fraction": 0.36,
+      "loose_fraction": 0.36,
+      "capped": 7,
+      "Dolly_validation_ce": 1.777342351458108,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.2
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.2
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    },
+    "mix25_seed4027": {
+      "strict": 17,
+      "strict_fraction": 0.68,
+      "loose_fraction": 0.68,
+      "capped": 9,
+      "Dolly_validation_ce": 1.7780705022333758,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    },
+    "mix50_seed4027": {
+      "strict": 13,
+      "strict_fraction": 0.52,
+      "loose_fraction": 0.52,
+      "capped": 8,
+      "Dolly_validation_ce": 1.778361564690566,
+      "per_family": {
+        "change_case": {
+          "count": 5,
+          "strict_accuracy": 0.6
+        },
+        "combination": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "detectable_format": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "keywords": {
+          "count": 5,
+          "strict_accuracy": 0.4
+        },
+        "startend": {
+          "count": 5,
+          "strict_accuracy": 0.8
+        }
+      },
+      "guardrails": {
+        "strict_at_least_base_minus_one": false,
+        "cap_at_most_base_plus_two": false,
+        "Dolly_validation_ce_improves_by_at_least_point10": true
+      }
+    }
+  },
+  "guardrails": {
+    "max_dev_strict_lost_vs_base": 1,
+    "max_extra_cap384_hits_vs_base": 2,
+    "Dolly_val_CE_improvement_at_least": 0.1,
+    "tie_break": "minimum Dolly CE among feasible format/control QLoRA models; none feasible -> base"
+  },
+  "feasible_adapted": [],
+  "selected": "base",
+  "selected_adapted": false,
+  "final_test_unaccessed": true
+}

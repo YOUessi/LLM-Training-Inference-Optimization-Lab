@@ -1,0 +1,1090 @@
+{
+  "status": "measured",
+  "test_sha256": "6a80afcf02a6405dad58ea8895f8cd5c57f8b6047833ea77667c9425a1a43281",
+  "answers": {
+    "base": [
+      {
+        "key": 2728,
+        "family": "change_case",
+        "prompt_sha256": "cd7cf79d34509bbed9a478f1f6314f20a0b1d26e8272433fd351873d3b2ff44c",
+        "answer": "tiny hands, big dreams,  \nevery bite helps you grow,  \ngreen beans, carrots, and spinach,  \nthey’re the fuel that you know.  \n\nyour body’s a machine,  \nit needs power to run,  \nwith each veggie you eat,  \nyou’re building a strong one.  \n\nno candy, no chips,  \nno sugary delight,  \nbut a broccoli and rice,  \nmakes you feel just right.  \n\nyour brain gets a boost,  \nyour skin stays so clear,  \nand your heart, oh it beats,  \nwith a rhythm so near.  \n\nyou’ll run faster, you’ll jump high,  \nyou’ll laugh all day long,  \nbecause veggies are magic,  \nand they work every song.  \n\nso take a deep breath,  \nand take a bite,  \nthe best thing you can do,  \nis eat your green light.",
+        "answer_sha256": "2d57a54bb8c97f22100e1db4122e77830d25c6e801cff117cf5510a5bf9a4a53",
+        "generated_tokens": 179,
+        "hit_cap": false
+      },
+      {
+        "key": 2195,
+        "family": "detectable_format",
+        "prompt_sha256": "660c2a49a66c747bed4422c526331423c6970b0c5e293345a5ab9e102b61a913",
+        "answer": "* Use a consistent command (\"sit\") and reward the dog with a treat immediately when it sits, gradually increasing the time between the command and the action.  \n* Practice the \"stay\" command by having the dog sit first, then asking it to stay while you take a step back, rewarding it after a few seconds, and gradually increasing the duration and distance.  \n* Introduce the \"fetch\" command by tossing a ball or toy in front of the dog, encouraging it to run and retrieve it, then rewarding upon return with praise and a treat.",
+        "answer_sha256": "1c1e8e9530bcafb4936c57218b33898505a19305f016c6932ef067b76482eb42",
+        "generated_tokens": 113,
+        "hit_cap": false
+      },
+      {
+        "key": 1332,
+        "family": "combination",
+        "prompt_sha256": "8e44299e82c1b6c98e27bdafc4dd6a50c0fb7ee08f7f001a3ba17723f4c2dc50",
+        "answer": "**7 Day Trip Itinerary for India**\n\n| Day | Location         | Activity                                                                 |\n|-----|------------------|--------------------------------------------------------------------------|\n| 1   | Delhi            | Explore Red Fort, Jama Masjid, and enjoy a street food tour.            |\n| 2   | Agra             | Visit Taj Mahal, Agra Fort, and Fatehpur Sikri.                          |\n| 3   | Jaipur           | Explore Amber Fort, Hawa Mahal, and Jantar Mantar.                       |\n| 4   | Ranthambore      | Safari in Ranthambore National Park to see tigers and other wildlife.   |\n| 5   | Pushkar          | Visit Pushkar Temple, enjoy a holy dip in Pushkar Lake, and explore the town. |\n| 6   | Udaipur          | Explore Lake Pichola, City Palace, and Monsoon Palace.                   |\n| 7   | Return to Delhi  | Departure from Delhi Airport or Railway Station.                         |\n\n******\n\n**7 Day Trip Itinerary for China**\n\n| Day | Location         | Activity                                                                 |\n|-----|------------------|--------------------------------------------------------------------------|\n| 1   | Beijing          | Visit the Great Wall, Tiananmen Square, and the Forbidden City.         |\n| 2   | Beijing          | Explore the Summer Palace, Temple of Heaven, and enjoy a hutong tour.   |\n| 3   | Xi'an            | Visit the Terracotta Army, Big Wild Goose Pagoda, and Muslim Quarter.   |\n| 4   | Lhasa            | Explore Potala Palace, Jokhang Temple, and Norbulingka.                 |\n| 5   | Everest Base Camp| Trek to Everest Base Camp with acclimatization days in Lukla and Namche. |\n| 6   | Chengdu          | Visit",
+        "answer_sha256": "12f28df879d5affb3fa644599e4c73ebb0826fb37b05822d91c8a06b08735cc1",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1446,
+        "family": "startend",
+        "prompt_sha256": "ea6d4557071869d349597ba79fc51f7939335f9d9f6171cdee6409adb663dee1",
+        "answer": "The reality of disability is far more complex than the occasional moment of inspiration or the occasional act of kindness. It is a lived experience that shapes every aspect of a person's life, from the way they move through the world to how they are perceived by others. Disability is not a single, uniform experience—it is a spectrum, as diverse as the individuals who live with it.\n\nFor many, disability is not a choice. It is a part of their identity, often present from birth or acquired through accident, illness, or aging. It can be physical, sensory, cognitive, or mental. It can be visible or invisible. It can be temporary or lifelong. Yet, society often fails to recognize the full scope of what it means to live with a disability.\n\nPeople with disabilities face daily challenges that are often overlooked. These include physical barriers in public spaces, lack of accessible transportation, and limited access to education, employment, and healthcare. Socially, they may encounter stigma, misunderstanding, and discrimination. In many cases, they are not seen as equals, and their needs are not considered in the design of everyday systems.\n\nBut despite these challenges, people with disabilities are resilient, creative, and capable. They contribute to society in countless ways, often in ways that are not recognized or valued. They are artists, scientists, parents, workers, and leaders. Yet, they are often excluded from the conversations that shape their lives.\n\nThe reality of disability is not about pity or inspiration. It is about inclusion, respect, and the right to live with dignity. It is about ensuring that the world is designed with everyone in mind—not just those who fit the norm.\n\nIs there anything else I can help with?",
+        "answer_sha256": "51bde9d2cfb000efcb4d429e14ece5c755182e1b5e484caa5bac04088b5bab04",
+        "generated_tokens": 342,
+        "hit_cap": false
+      },
+      {
+        "key": 1314,
+        "family": "change_case",
+        "prompt_sha256": "c28419e11e92675b230f63024c6a8ae5ce357ae5423e5aa88f758ab2aef393ea",
+        "answer": "**Answer:** Avocado is not a fish.\n\n**Article:**\n\nSalmon and avocado may seem like odd bedfellows at first glance, but both are incredibly popular in today’s global diet. While salmon is a well-known fish, avocado is a fruit — though it's often treated more like a vegetable in cooking. Let's dive deeper into the world of these two food stars.\n\n**Salmon: The Ocean's Delicacy**\n\nSalmon is a type of FISH that is highly valued for its rich flavor, nutritional benefits, and versatility in cooking. Found in both freshwater and saltwater environments, salmon is a key player in marine ecosystems. There are over 25 species of salmon, with the most common being the Atlantic salmon, Chinook salmon, and Coho salmon.\n\nSalmon is not just a delicious food — it's also packed with essential nutrients. It's an excellent source of omega-3 fatty acids, which are known to support heart health, brain function, and reduce inflammation. It's also high in protein, B vitamins, and minerals like selenium and potassium.\n\nIn many cultures, salmon is a staple food, especially in countries like Norway, Canada, and Japan. It's commonly prepared in various ways, including grilling, smoking, baking, and even raw in the form of sushi.\n\n**Avocado: The Green Superfood**\n\nOn the other hand, avocado is a fruit — technically a PERICARP — that has become a global favorite. Native to Central and South America, avocados have been cultivated for thousands of years. Today, they are grown in many parts of the world, including California, Mexico, and Peru.\n\nAvocados are known for their creamy texture and rich, buttery flavor. They are a great source of healthy fats, particularly monounsaturated fats, which are beneficial for heart health. They are also high in fiber, potassium,",
+        "answer_sha256": "bdaa4f1515d35408eb4a15945eff92be5dd5af0e7ae008bc541a9f8b691656a3",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2247,
+        "family": "change_case",
+        "prompt_sha256": "0edaf00756104c4d01a7ef2bfa7a00c5f3b23aeed91cd536869811fe1e82607a",
+        "answer": "ALVIN AND THE CHIPMUNKS IS A CLASSIC AMERICAN ANIMATED SERIES THAT HAS ENTHRALLED AUDIENCES FOR DECADES. CREATED BY HARRY YARDO AND FIRST BROADCASTED IN 1961, THE SHOW FEATURES FOUR LITTLE CHIPMUNKS WHO LIVE IN A FOREST AND SPEND THEIR DAYS HUNTING, PLAYING, AND SINGING. THE CHIPMUNKS ARE ALVIN, SIMON, DAVIS, AND THOMAS, EACH WITH THEIR OWN PERSONALITY AND TALENT.\n\nALVIN IS THE LEADER OF THE GROUP, KNOWN FOR HIS LOVE OF MUSIC, HIS EGO, AND HIS TENDENCY TO TAKE RISKS. SIMON IS THE SMART, CALM, AND RESPONSIBLE ONE WHO OFTEN TAKES CARE OF THE GROUP. DAVIS IS THE YOUNGEST, WHO IS SOMETIMES NAIVE BUT HAS A KIND HEART. THOMAS IS THE SILENT, STRONG, AND LOYAL CHIPMUNK WHO IS ALWAYS THERE FOR HIS BROTHERS.\n\nTHE SHOW IS KNOWN FOR ITS MUSICAL NUMBERS, WHICH ARE SINGNED BY THE CHIPMUNKS THEMSELVES. THE SONGS ARE FUNNY, SWEET, AND OFTEN HAVE A MESSAGE ABOUT FRIENDSHIP, FAMILY, AND GROWING UP. THE SHOW ALSO FEATURES A VARIETY OF CHARACTERS, INCLUDING THE CHIPMUNKS' HUMAN FRIENDS, THE BURR, AND THE BURR'S DOG, BILLY.\n\nALVIN AND THE CHIPMUNKS HAS BEEN RENOWNED FOR ITS INNOVATIVE USE OF VOICE ACTING, WITH THE CHIPMUNKS' VOICES BLENDED TO SOUND LIKE A REAL BAND. THE SHOW HAS BEEN RENAI",
+        "answer_sha256": "d938ff70bd0827b73cf4376747d3e5f27c08e046549213636544d3969d8fee99",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 334,
+        "family": "startend",
+        "prompt_sha256": "49f8216cf7fc7c1c4c55f37908df1f41cdb69115e74e985649359aa17de11e09",
+        "answer": "\"\nColor Paper\n* Colorful!\n* Eye-catching!\n\"",
+        "answer_sha256": "a958d614c881e7b38fe7fecf1789ba088b668de6540e095f0434eedb0ac2e3de",
+        "generated_tokens": 14,
+        "hit_cap": false
+      },
+      {
+        "key": 1516,
+        "family": "change_case",
+        "prompt_sha256": "c9f68e95e977ab59632613507b12425a2cf8e5cd4a622306b983a489f71bdf01",
+        "answer": "the clock ticked on as hours passed  \ni clicked play and forgot the past  \nnetflix whispered sweet lies  \nuntil my eyes could not rise  \nthe couch was my only surprise",
+        "answer_sha256": "95116cb3941ed5fbecd139ed3c24290a6a891e6347a0bd5bbedbbe2babcc9a28",
+        "generated_tokens": 37,
+        "hit_cap": false
+      },
+      {
+        "key": 163,
+        "family": "startend",
+        "prompt_sha256": "fdc951ba42047722665d1cef5885bb44f92b70d2f21ffd5c56f17b8b6e04fee0",
+        "answer": "\"Day 1: Land in Mesa, Arizona, and let the lovely landscape lull you into a leisurely start. Linger at the Laveen Park, where locals love to lounge by the lake. Later, lunch at a local lunch spot like Lively's, where the lunch is lively and the locals love it. Log on to a local library to learn about the lovely legends of the land.\n\nDay 2: Load up on local lunch at a legendary lunch place, then look for the legendary landmarks like the Laveen Park and the lovely Laveen Lake. Later, log on to a local library to learn about the legends of the land. Let the lovely landscape lull you into a leisurely evening.\n\nDay 3: Let the lovely landscape lead you to the legendary Laveen Park again, but this time, look for the lovely little lakeside lounges. Later, log on to a local library to learn about the legends of the land. Let the lovely landscape lull you into a leisurely evening.\n\nDay 4: Load up on local lunch at a legendary lunch place, then look for the legendary landmarks like the Laveen Park and the lovely Laveen Lake. Later, log on to a local library to learn about the legends of the land. Let the lovely landscape lull you into a leisurely evening.\n\nDay 5: Let the lovely landscape lead you to the legendary Laveen Park again, but this time, look for the lovely little lakeside lounges. Later, log on to a local library to learn about the legends of the land. Let the lovely landscape lull you into a leisurely evening. Leave with a lovely memory and a longing for more lovely landscapes.\"",
+        "answer_sha256": "7f3036ed14a78d1bf89f6d3cdbcccab4648a0d9c756ff33a69e8c8dbb84e942d",
+        "generated_tokens": 353,
+        "hit_cap": false
+      },
+      {
+        "key": 3071,
+        "family": "detectable_format",
+        "prompt_sha256": "522a5bacf8bef82720a3b170187e510556a5823e75c4dcdf8edb8c5766a6df9b",
+        "answer": "Sure! Here's a **weird and surreal rap** about the **Renaissance**, written in a tone that's **unconventional and offbeat**, with a **distinctive style** that sets it apart from raps about other historical eras. I've highlighted three key sections in markdown for emphasis.\n\n---\n\n**🎤 Verse 1**  \nYo, I'm talkin' 'bout the time when art got a **soul**,  \nWhen the **painter** and the **poet** had a **tussle** in the **room**.  \nNo more chains, no more **shackles**, just **light in the dark**,  \nThey painted **dreams** on the **walls** of a **cathedral** in the **park**.  \n\n**✨ Highlight 1: \"Light in the dark\"**  \nThis line is a **weird metaphor** for the **Renaissance's** **cultural awakening** — not just literal light, but the **intellectual and artistic spark** that lit up the **Dark Ages**. It's **unconventional**, but it **fits**.\n\n---\n\n**🎤 Chorus**  \n**Renaissance, baby, it's a **weird** time,  \nWhere **Michelangelo** and **Shakespeare** had a **fight**.  \nThey **slept in the same bed**, but **dreamed in the same way**,  \nNow I'm **singing** in **Latin**, but I **speak in the same way**.  \n\n**✨ Highlight 2: \"Slept in the same bed\"**  \nThis line is a **weird twist** on the **Renaissance's** **humanism** — it's a **play on the idea of shared human experience**, but with a **surreal, almost sexual undertone",
+        "answer_sha256": "afd0ca1850bf24178a7f7f4497d3be422ad6701f6ebf2d4e039c0c30c3be2498",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1730,
+        "family": "startend",
+        "prompt_sha256": "f70bbad792c3a6be9c9a3a68467d5e07de580f37ac98583ce4d4d49b9769cbdf",
+        "answer": "\"Section 1: Understand the Cause and Its Impact  \nBefore you can raise awareness for a cause, it's essential to fully understand it. Start by researching the issue, its history, and the people it affects. This knowledge will help you communicate the cause more effectively and authentically. Talk to those directly impacted, read credible sources, and stay informed about the latest developments. The more you know, the more compelling your message will be.  \n\nSection 2: Define Your Audience and Message  \nIdentify who you're trying to reach. Are you speaking to young adults, parents, or policymakers? Tailor your message to resonate with their values and concerns. Be clear about what you want them to take away from your efforts—whether it's to donate, volunteer, or simply spread the word. A focused message is more likely to capture attention and inspire action.  \n\nSection 3: Use Multiple Channels for Outreach  \nRaising awareness isn't limited to one platform. Use a mix of online and offline strategies. Social media is a powerful tool for reaching a broad audience, but don't forget traditional methods like community events, local partnerships, and public speaking. Collaborate with influencers, organizations, and advocates who can amplify your message. The more channels you use, the wider your reach.  \n\nSection 4: Create Engaging and Shareable Content  \nPeople are more likely to engage with content that is relatable, emotional, and visually appealing. Use storytelling to humanize the cause and make it personal. Share videos, infographics, and testimonials that highlight real stories and experiences. Encourage your audience to share your content by making it easy to do—add share buttons, use hashtags, and create call-to-action prompts.  \n\nSection 5: Measure and Adapt Your Strategy  \nAwareness is an ongoing process, not a one-time event. Track the effectiveness of your efforts through metrics like engagement rates,",
+        "answer_sha256": "1ac8ff7b722f467156a32b09f98b45ec1c2966292b635ed6fcc48ab08688f1e9",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 288,
+        "family": "combination",
+        "prompt_sha256": "ca05d3e5ae648558dcdfb617b18ec62a9689cc3722583e8351fe253f54c4f683",
+        "answer": "Is ballistics (the study of the motion of projectiles) an actual science?\n\nYes, ballistics is an actual science. It is the study of the motion, behavior, and effects of projectiles, including bullets, rockets, shells, and other objects in motion through the air or space. Ballistics is a branch of physics and engineering, and it has applications in various fields such as military science, law enforcement, sports, and aerospace. The study of ballistics involves principles of mechanics, aerodynamics, materials science, and often computational modeling to predict and analyze the trajectory, stability, and impact of projectiles.",
+        "answer_sha256": "fa5abaf489e7dee2f5b14d581c9fb0b8373a982272fa15910613825768cb9c11",
+        "generated_tokens": 123,
+        "hit_cap": false
+      },
+      {
+        "key": 2605,
+        "family": "startend",
+        "prompt_sha256": "1c069a9b9c49b65dda34ab3972974c8b9e84ab7a965171e0d8726e19e255d783",
+        "answer": "\"Here is a list of mega trends in the tech industry, with a focus on innovation, opportunity, and ongoing development. One of the most significant trends is the ongoing evolution of artificial intelligence, which is opening up new opportunities for optimization, automation, and overall operational efficiency. Another major trend is the expansion of 5G networks, which is offering faster connectivity, opening up new possibilities for smart cities, remote operations, and overall digital transformation. The rise of quantum computing is also a key trend, as it offers the potential for solving complex problems that were once considered impossible, opening up new frontiers in science, security, and overall technological advancement. The integration of the Internet of Things (IoT) is another mega trend, as it is enabling seamless connectivity between devices, opening up new opportunities for data collection, analysis, and overall system optimization. Additionally, the growth of blockchain technology is creating new opportunities for secure transactions, decentralized systems, and overall trust in digital interactions. The increasing focus on sustainability and green technology is also a major trend, as it is opening up new opportunities for energy-efficient solutions, overall environmental responsibility, and the development of new materials and processes. The rise of augmented reality (AR) and virtual reality (VR) is also a significant trend, as it is opening up new opportunities for immersive experiences, overall entertainment, and the development of new applications in education, healthcare, and overall business operations. The continued growth of cloud computing is another mega trend, as it is offering scalable solutions, opening up new opportunities for remote work, overall data storage, and the development of new software and services. The increasing use of machine learning and data analytics is also a major trend, as it is opening up new opportunities for predictive modeling, overall decision-making, and the development of smarter systems. Finally, the trend towards open-source software is also growing, as it is opening up new opportunities for collaboration, overall innovation",
+        "answer_sha256": "d81a097421dc1ddf8e5fc70e12a157620ad6cb5e0743eecdd5f3d2ba9e505768",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2216,
+        "family": "change_case",
+        "prompt_sha256": "78b1e1f438c8a54f767cfae742468f3397357599010ba835100cc3f98ffa4f00",
+        "answer": "- the research project will investigate the effect of eye colour on the likelihood of being a successful salesperson  \n- the study will involve a sample of individuals working in sales roles across various industries  \n- participants will be asked to provide information about their eye colour and their sales performance  \n- data will be collected through surveys and self-reported sales metrics  \n- all participants will be informed of the purpose of the study and will provide informed consent  \n- the research will ensure confidentiality and anonymity of all participant data  \n- the study will not involve any physical or psychological harm to participants  \n- the research will be conducted in accordance with the university's ethical guidelines  \n- the findings will be used to better understand the role of physical characteristics in professional success  \n- the research will not make any assumptions about the value or worth of individuals based on their eye colour  \n- the study will be reviewed and approved by the university's ethics board before any data collection begins  \n- all data will be stored securely and will only be used for the purposes of this research  \n- participants will have the right to withdraw from the study at any time without any negative consequences  \n- the research will be conducted with the principle that the customer is always right  \n- the study will not use any biased or discriminatory language in its analysis or reporting  \n- the findings will be shared with the university's ethics board for further review and discussion  \n- the research will be published in a peer-reviewed journal to ensure transparency and accountability  \n- all participants will be given the opportunity to review the final report before its publication  \n- the study will not influence any hiring or promotion decisions based on eye colour  \n- the research will be designed to avoid any potential for misinterpretation or misuse of the findings  \n- the study will be conducted in a manner that respects the dignity and rights of all participants  \n- the research will be carried out with the utmost care and consideration for all ethical standards  \n-",
+        "answer_sha256": "5df886ba6eb1a8f12f430822000f5f9e0c0bc57b1e0f417b1d5f03ff1bf87ce2",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 332,
+        "family": "combination",
+        "prompt_sha256": "96d26f5805017e7d516b752b455e63798b7f8be97a646f84ae2d856dad39a76f",
+        "answer": "TLDR the article \"How to dress like a football manager: waistcoats and the style lessons from the Premier League\". Your entire response (including the repeated request) should have 45 or less words.\n\nThe article explores how Premier League managers use waistcoats and tailored suits to project authority and style, offering lessons on dressing with confidence and sophistication.",
+        "answer_sha256": "adc5e07a469a62196c2ff623a7f81cfc3f9113a845e3172b430009ac3748513f",
+        "generated_tokens": 73,
+        "hit_cap": false
+      },
+      {
+        "key": 2268,
+        "family": "startend",
+        "prompt_sha256": "cced4590b76a94fe1e7d984d1b78f18d63610d093755fdffaa608edb8bde6ec6",
+        "answer": "Multivariate analysis is a way of looking at data that has more than one variable at the same time. Instead of just looking at one thing, it helps us understand how different factors might be connected or influence each other. For example, if you're trying to figure out why some people are healthier, you might look at things like diet, exercise, and genetics all together. It's like solving a puzzle with many pieces.\n\nIs there anything else I can help with?",
+        "answer_sha256": "dabc66e60b183b9cdba3a6dd12eb178ae5fe73eda867cec43487f7292a9aa96d",
+        "generated_tokens": 95,
+        "hit_cap": false
+      },
+      {
+        "key": 3263,
+        "family": "combination",
+        "prompt_sha256": "3d034b023779ea98247eeaffcee299cb52335c6c9d30e30fa421e0c9a7ad8ee3",
+        "answer": "Yes, \"Jiang\" is a Chinese name. It is a common surname in China, and it can also be used as a given name. In Chinese, \"Jiang\" (江) means \"river\" and is often associated with flowing water, symbolizing grace, adaptability, and strength.\n\n******\n\nOther names similar to \"Jiang\" include:\n\n- **Zhang** (张) – one of the most common surnames in China, meaning \"expand\" or \"stretch.\"\n- **Li** (李) – another very common surname, meaning \"plum tree.\"\n- **Wang** (王) – meaning \"king\" or \"royal,\" one of the most frequent surnames.\n- **Chen** (陈) – meaning \"old\" or \"original.\"\n- **Yang** (杨) – meaning \"willow tree\" or \"to praise.\"\n- **Zhou** (周) – meaning \"week\" or \"circle.\"\n- **Liu** (刘) – meaning \"to flow\" or \"to be in motion.\"\n\nThese names are all common Chinese surnames and are similar in structure and meaning to \"Jiang.\"",
+        "answer_sha256": "c7078265c3efa5784355f7176aee244c12e08c016cd5c16013e657a7e09da165",
+        "generated_tokens": 243,
+        "hit_cap": false
+      },
+      {
+        "key": 2465,
+        "family": "combination",
+        "prompt_sha256": "3564f5b0ceb72a44ebfa08c299adf9155985bc070dfd288661b4d908f2e00d0b",
+        "answer": "A new time zone is UTC+00:05:28, which is 5 minutes and 28 seconds ahead of UTC. Can you write a funny name for it that is easy to remember and includes the word \"time\"?\n\n**Time Jumpers** – Because this time zone is always ahead of the game!",
+        "answer_sha256": "0a5e46853e3252118155ae12cfddef0cb0ee382334f7871e497e6028f175ec88",
+        "generated_tokens": 68,
+        "hit_cap": false
+      },
+      {
+        "key": 2063,
+        "family": "combination",
+        "prompt_sha256": "31f29acc538b9cc5c9cf96f1a2309a80534b3de736dee4b9d4686cce127c8890",
+        "answer": "Titan makes clothing for large men. Write an advertisement for the company that would appeal to a wide audience. Make sentences short. Your response should not contain any comma.\n\nTitan makes clothing for large men  \nFind your fit with Titan  \nComfort meets style in every piece  \nDesigned for confidence  \nStrong fabric that lasts  \nBreathable material for all day wear  \nAvailable in many sizes  \nPerfect for work or play  \nLook good feel great  \nJoin the Titan family  \nShop now and feel the difference",
+        "answer_sha256": "b11684aabcbdd3dcef5b79cef255d4f83bf1bd86f3d93e14781fa3c770b5b1f7",
+        "generated_tokens": 99,
+        "hit_cap": false
+      },
+      {
+        "key": 3409,
+        "family": "startend",
+        "prompt_sha256": "04fdad2c4ec154fb0d69ec01508b69fac19767940955d1c6330fd1c9b6b251a0",
+        "answer": "\"**'Battle with a laugh and never stop laughing!'** – *Funny Fighting* is the ultimate *Comedy Combat* experience where every punch lands a punchline. *Funny Fighting* – where *characters* are *wild*, *moves* are *wacky*, and *every match* is a *laugh riot*!\"",
+        "answer_sha256": "bc5aa003331aa5b8490f7a9c0fe2e66662100305e1b66f7e49d956bdc3d61d9f",
+        "generated_tokens": 70,
+        "hit_cap": false
+      },
+      {
+        "key": 3629,
+        "family": "detectable_format",
+        "prompt_sha256": "31fd3ac6c4d40d1e9cf90d0c943f65859921943b41a832bc562adb05ec480bef",
+        "answer": "Today, at the 54th Annual Grammy Awards, the *Recording Academy* honors the talent and creativity of the artists, musicians, and producers who are the creators of the best recordings of the past year. This prestigious event, held on February 10, 2012, took place at the *Beverly Hilton Hotel* in *Los Angeles, California*. The ceremony, hosted by *LL Cool J*, featured performances by some of the most celebrated names in the music industry, including *Adele*, *Beyoncé*, and *Bruno Mars*.\n\nThe night was marked by *momentous moments*, such as *Adele's* emotional performance of \"Someone Like You,\" which resonated deeply with the audience and critics alike. *Beyoncé* made a powerful statement with her *visual album* *Lemonade*, which was recognized for its artistic innovation and cultural significance. Meanwhile, *Bruno Mars* captivated the crowd with his energetic rendition of \"Run-DMC,\" a tribute to the legendary hip-hop group.\n\nThe *Grammy Awards* are not only a celebration of musical excellence but also a platform for recognizing the *technical and creative achievements* behind each recording. Categories such as *Best Engineer*, *Best Mixing*, and *Best Mastering* highlight the *incredible work* of the behind-the-scenes professionals who bring music to life.\n\nAs the evening progressed, the *winners* were announced, with *Adele* taking home the coveted *Best Album* award for *21*, a testament to her *artistic growth* and *emotional depth*. The ceremony also served as a reminder of the *power of music* to unite, inspire, and transform, reinforcing the *mission* of the *Recording Academy* to celebrate and elevate the art of music.",
+        "answer_sha256": "145294ee718dc066f7447587a42b030abc22b77a6c02297443b7bb2335a0344c",
+        "generated_tokens": 377,
+        "hit_cap": false
+      },
+      {
+        "key": 3709,
+        "family": "startend",
+        "prompt_sha256": "39a09e32b8ba3009343e95bc1aef3dc02e1eade6a69f4dc00cc37673a2b5fecd",
+        "answer": "\"Step into a world of vibrant energy and invigorating grace with Rhapsody, a scent that captures the essence of a sunlit morning. Top notes of zesty orange and bright bergamot awaken the senses, while a heart of blooming jasmine and green leaves adds a touch of elegance. The base of warm sandalwood and soft musk lingers like a whispered promise, leaving a trail of sophistication and confidence. Rhapsody is not just a fragrance — it's an experience, a moment of clarity and charm. Wear it and let your presence be as unforgettable as the melody of a perfect song.\"",
+        "answer_sha256": "5b563c701888d6244367344bb124925ec734c0a6d73ed1b05abe706b70c9f3ad",
+        "generated_tokens": 126,
+        "hit_cap": false
+      },
+      {
+        "key": 2583,
+        "family": "keywords",
+        "prompt_sha256": "6f318280f0729b0c68003f6d7ccfed6d036d6bd0b6aedd40645eeb17f6356c20",
+        "answer": "The average IQ of a 16 year old boy is typically around 100. This score is considered the mean for the general population and is used as a benchmark for measuring intelligence. It is important to note that IQ scores can vary widely and are influenced by a variety of factors including genetics environment and personal experiences. The average IQ score is comprised of a range of cognitive abilities such as problem solving reasoning and memory. While some individuals may score higher or lower than 100 it is essential to recognize that intelligence is not solely defined by a single number.",
+        "answer_sha256": "6fd767690be6481c224f0f55698feef6c63ad7d65b1788ff3b55f89fbb7666c5",
+        "generated_tokens": 115,
+        "hit_cap": false
+      },
+      {
+        "key": 2889,
+        "family": "startend",
+        "prompt_sha256": "74c836787286f3c036322d14f1932e151591cfed27ecd96537a6d0dbdfb90933",
+        "answer": "\"SECTION 1  \nWe hope this message finds you well. We are reaching out to kindly ask if there is any possibility of a reversal, as we are currently unable to reach Stephane. We understand that things can get quite busy, and we truly appreciate your time and attention. We are hopeful that you might be able to assist us in this matter, and we are very grateful for any help you can provide.\n\nSECTION 2  \nPlease know that we are doing our best to stay patient and understanding, as we know how important it is to be polite and considerate in all our interactions. We truly value your kindness and would be so grateful if you could help us in any way you can. Thank you so much for your time and consideration.\"",
+        "answer_sha256": "dbd3facda8bad3f3dbc1998021409636deaed282102fe4ce93c7ea5d85066936",
+        "generated_tokens": 152,
+        "hit_cap": false
+      },
+      {
+        "key": 3407,
+        "family": "change_case",
+        "prompt_sha256": "c7c8d980e64d7942bd91038b48d7bc278e9180974c2bda52d170b377eae60e00",
+        "answer": "I speak without a mouth, I hear without ears.  \nI have no body, but I come alive with words.  \nI am found in every home, yet I never grow old.  \nWhat am I?  \nA BOOK.  \nIn every page, a WORLD.  \nIn every letter, a VOICE.  \nA MIRROR of thoughts, a WINDOW to the soul.  \nThe answer lies in the silence between the lines.",
+        "answer_sha256": "83b06d9b5d0767ff298a9033d3f22d2012a67adc60769c2f3cd142f044827be6",
+        "generated_tokens": 89,
+        "hit_cap": false
+      },
+      {
+        "key": 3455,
+        "family": "change_case",
+        "prompt_sha256": "a300bc297849c2f41656dd1803fea9ee451ee08e98e57f5926613f3b6104267a",
+        "answer": "Subject: Make a BIG DIFFERENCE in Aberdeen\n\nHi [Name],\n\nI hope you're doing well! I wanted to reach out and talk about something that could really make a difference in your community — and it's right here in Aberdeen. Have you ever thought about volunteering at a local SOUP KITCHEN?\n\nIt's a chance to give back, meet amazing people, and help those who are facing tough times. You don't need any special skills — just a kind heart and a willingness to help. Every meal you serve can change someone's day, and that's powerful.\n\nThis is a great opportunity to connect with others, learn new things, and make a real IMPACT. Plus, it's a chance to be part of something bigger than yourself — and it's all right here in your hometown.\n\nLet me know if you're interested in learning more or joining us. Together, we can make a DIFFERENCE — one meal at a time.\n\nWarm regards,  \n[Your Name]",
+        "answer_sha256": "ffccd989eea6bd8d71dec74e5c98ff7953785c6f945b1b52c61c73be2c419e41",
+        "generated_tokens": 201,
+        "hit_cap": false
+      },
+      {
+        "key": 2383,
+        "family": "combination",
+        "prompt_sha256": "eabfd4748cd13a48cddf2d7889e4371dc5b78cdee9a5c8c16bc289d56c4b8245",
+        "answer": "Yes, the sentence \"Mrs. Smith is the teacher of this class.\" is grammatically correct. It clearly states the relationship between Mrs. Smith and the class she teaches.  \n******  \nThe sentence is grammatically correct, but it could be more concise by saying \"Mrs. Smith is the teacher of this class.\" or \"Mrs. Smith teaches this class.\" Both are correct, but the original is also acceptable.",
+        "answer_sha256": "73efde734cede88b6aa1abd91b2f3d145cf01902421fb13734c67ca6a8ec3138",
+        "generated_tokens": 85,
+        "hit_cap": false
+      },
+      {
+        "key": 2229,
+        "family": "detectable_format",
+        "prompt_sha256": "d1c580c4ae5e5ad96947444f2fc42def3bd21c5fec366495ddba26c397d04fb8",
+        "answer": "<<The Diaper That’s So Comfortable, Your Baby Will Forget It’s Even There>>\n\nHey there, amazing moms! If you're reading this, you're probably in the middle of a baby-related adventure—whether it's a midnight feeding, a diaper change that feels like a full-body workout, or just trying to survive the day without crying. We get it. You're doing an amazing job, and we're here to help you do it even better.\n\nIntroducing the **SnuggleSoft Diaper**—the new kind of diaper that’s not just for keeping your baby dry, but for keeping them *comfortable*. Because let’s face it, no one wants to spend their day in a diaper that feels like a stiff, itchy, uncomfortable seat. That’s where SnuggleSoft comes in.\n\nSnuggleSoft is designed with your baby’s comfort in mind. It’s made with ultra-soft, breathable fabric that feels like a cloud on your baby’s bottom. No more redness, no more irritation, just pure comfort. And because we know your baby is always on the move, SnuggleSoft is also super flexible and stretchy, so it moves with them—no more bunching or twisting.\n\nBut here’s the real kicker: SnuggleSoft is so comfortable, your baby might not even notice it’s there. That means less crying, less fussing, and more happy baby time. And for you, that means more peace of mind and less stress.\n\nWe know you’re busy, and you want to make every moment count. Whether it’s a quick nap, a playdate, or just trying to get through the day without a meltdown, SnuggleSoft is your secret weapon. It’s designed to keep your baby happy, so you can focus on what matters most—snuggling, singing, and making memories.\n\nAnd let’s be real—no one wants to",
+        "answer_sha256": "2b9349a33171542fb57814a11b1afe9f8861d6a09da067df990e18864a2c0955",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3109,
+        "family": "keywords",
+        "prompt_sha256": "7b4d0bf713a4529e86a60662b24841393d707d455af7d587d966f72f020f3390",
+        "answer": "**The Weight of Time**\n\nWhen the cousins gathered for the first time in years, it felt like a strange echo of childhood. The air was thick with the scent of lemonade and nostalgia, and the old porch swing creaked as if it remembered every laugh and every secret shared between them.\n\nLena, the oldest of the cousins, had become a doctor. She had always been the one who could fix things—broken toys, scraped knees, even the occasional heart. But now, she was the one who had to fix the world, and it felt heavier than she ever imagined.\n\n\"Remember when we used to play tag in the woods?\" she asked, her voice soft, almost lost in the memory.\n\n\"Like it was yesterday,\" said Marcus, the one who had always been the joker, now a teacher with a quiet smile and a lot of patience. \"You used to chase us all the way to the creek, and we'd end up in the mud.\"\n\nThey laughed, but it was a different kind of laughter now—lighter, but with a weight behind it. Adulthood had a way of making even the simplest moments feel like a burden.\n\nThe cousins had grown up together, but life had pulled them in different directions. Some had moved away, others had changed. Still, the bond remained, like an unspoken promise that no matter how far apart they were, they would always be there for each other.\n\nThat night, as the stars blinked above them, Lena looked at her cousins and realized that adulthood wasn't about being alone. It was about knowing that even when the world felt too big, there were still people who had your back—no matter how far apart you were.\n\nAnd sometimes, when the weight of time felt too much, it was the cousins who reminded you that you were never truly alone.",
+        "answer_sha256": "8bab5b8016bc5ae328cb4e0f84a39b8b5e05bb77959a877dbf2e3a3ca4149b12",
+        "generated_tokens": 374,
+        "hit_cap": false
+      },
+      {
+        "key": 2713,
+        "family": "combination",
+        "prompt_sha256": "f68cb42032f50110f1cc1fd09c4fa0406199bacfdbe90736c99064cfd93091ee",
+        "answer": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.\n\nThe headline is Find Your Perfect Stay in Seconds\n\nThe ad features a traveler looking at a smartphone with a satisfied smile. The background shows a beautiful hotel room with a view of the city. The text is clean and modern with a focus on ease and convenience. The call to action is Book Now and Save 20 Today. The tagline is Travel Smarter Not Harder. The company name is StayEasy. The ad is designed for a 1/2 page layout in a travel magazine.",
+        "answer_sha256": "cefffba9fe5c1a63ebf82f37a09768970ce0e225556964a2d2f3b67a8bb8001f",
+        "generated_tokens": 176,
+        "hit_cap": false
+      },
+      {
+        "key": 3131,
+        "family": "detectable_format",
+        "prompt_sha256": "c9e3dd2374aae39e84ec7c615ed39861cc9fd32c3609d06890540ee7be8ce1b0",
+        "answer": "<<The Echoing Biotechnology Field in 2023: A New Era of Innovation and Ethical Dilemmas>>\n\nIn 2023, the biotechnology field has reached a crescendo of innovation, echoing the promises of the past while grappling with the complexities of the present. From CRISPR gene editing to synthetic biology and AI-driven drug discovery, the echoes of scientific breakthroughs reverberate through labs, hospitals, and policy rooms worldwide.\n\nOne of the most significant developments in 2023 was the advancement in gene-editing technologies. Researchers have made strides in making CRISPR more precise and safer, reducing off-target effects and increasing the efficiency of genetic modifications. This has opened the door to potential cures for genetic disorders such as sickle cell anemia and cystic fibrosis. However, the ethical implications of \"designer babies\" and genetic enhancement continue to spark debate among scientists, ethicists, and the public.\n\nAnother major trend in biotechnology this year has been the integration of artificial intelligence (AI) into drug discovery and development. AI algorithms are now being used to predict protein structures, identify potential drug candidates, and even simulate clinical trials. This has significantly accelerated the drug development process, reducing both time and cost. However, concerns about data privacy, algorithmic bias, and the potential for AI to replace human researchers have raised questions about the future of the field.\n\nSynthetic biology has also seen remarkable progress, with scientists creating entirely new organisms and biological pathways to produce sustainable materials, biofuels, and pharmaceuticals. These innovations are not only environmentally friendly but also economically viable, offering a glimpse into a future where biotechnology is at the heart of global sustainability efforts.\n\nDespite these advancements, the field is not without its challenges. Regulatory frameworks are still catching up with the pace of innovation, and there is a growing need for international cooperation to address issues such as",
+        "answer_sha256": "d0ff94f140f0f4c2f9c59357f7b8c87fed96da6067b7dbb01d06c42c970043a6",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2602,
+        "family": "keywords",
+        "prompt_sha256": "5196a46d0d65d4a04f80e822c5b866f321b0b0a2130773726b04ba535b0fc11e",
+        "answer": "Rodney's a Zelda fan true,  \nIn Hyrule he's always in tune.  \nHe fights Link with flair,  \nTo stop Ganon's despair.  \nWith courage and might, he'll prevail—just you!",
+        "answer_sha256": "270a1e1db47a9f585bc50ba1a1c7bf4598b51c4842bdaf570639408d13c691ab",
+        "generated_tokens": 47,
+        "hit_cap": false
+      },
+      {
+        "key": 3367,
+        "family": "startend",
+        "prompt_sha256": "dc3bb6b2d02e5d4f49b4dac880849af75bf09a04c16fb656799dd19ec7ae2241",
+        "answer": "\"  \nAudience 1:  \nSip Smart, Stay Fresh!  \nCraving a fizzy drink but want to skip the sugar? Meet **FizzBrew** – the ultimate soda alternative for teens! Packed with natural flavors, zero sugar, and a boost of energy from real fruit juice, FizzBrew keeps you refreshed without the crash. No artificial stuff, just pure refreshment. Try it today and stay cool, crisp, and totally in control. Your taste buds and your future will thank you!  \n\nAudience 2:  \nFuel Your Day with FizzBrew – The Smart Choice for Professionals!  \nTired of the sugar crash after lunch? FizzBrew is the healthy alternative you’ve been waiting for. Made with real fruit, no added sugar, and zero artificial ingredients, it’s the perfect pick-me-up for busy professionals. Stay hydrated, stay focused, and keep your energy levels steady all day long. FizzBrew: Refreshing. Responsible. Revolutionary.  \n\"",
+        "answer_sha256": "0348ebca4e5ba1a974d6b4c97f3203e983287e320e6e3fcc769cf07e1145c204",
+        "generated_tokens": 208,
+        "hit_cap": false
+      },
+      {
+        "key": 1845,
+        "family": "keywords",
+        "prompt_sha256": "a4e7e637b8fec3fbd826b6f9f50305501012b4499961fc30bbdebc48d509d0ef",
+        "answer": "Paying your taxes involves several key steps, starting with **calculate** your tax liability. To do this, you need to determine your taxable income, which is your total income minus allowable deductions and exemptions. You can use the tax brackets provided by the Internal Revenue Service (IRS) in the United States or the relevant tax authority in your country. There are also tax calculators and software programs that can help you **calculate** your taxes more accurately. It's important to consider all sources of income, including wages, investments, and self-employment earnings, to ensure you're not missing any income that needs to be reported.\n\n***\n\nOnce you've **calculated** your tax liability, the next step is to **file** your tax return. This involves submitting a form to the tax authority, such as Form 1040 in the U.S., which includes your personal information, income details, deductions, and credits. You can file your taxes electronically through a tax preparation service or directly through the tax authority's website. It's crucial to file by the deadline, which is typically April 15th in the U.S., to avoid penalties. If you owe taxes, you'll also need to pay the amount due at this time, either through direct payment or by setting up a payment plan if necessary.\n\n***\n\nIn **conclusion**, the process of paying taxes requires careful **calculation** of your tax liability, accurate **filing** of your tax return, and timely payment of any owed taxes. Understanding your tax obligations and staying informed about the rules and deadlines can help you avoid penalties and ensure compliance. It's also wise to keep records of all your financial transactions and consult a tax professional if you have complex situations. By following these steps, you can manage your tax responsibilities effectively and confidently.",
+        "answer_sha256": "f81d60d21f764d7c498a8003af1ce2ef8e5bce4659cda36d0b7d7f1831f3f0d4",
+        "generated_tokens": 364,
+        "hit_cap": false
+      },
+      {
+        "key": 1593,
+        "family": "change_case",
+        "prompt_sha256": "c9d6a2134f5276747aa6239caad2ec0fc920486946d0f34cf22f3ba2bc097856",
+        "answer": "barnet, my friend, so full of light,  \nyou walk with joy, you speak with might.  \nyour laugh is like the sun's warm ray,  \nit lifts the world, it breaks the day.  \n\nyou carry stories, deep and true,  \nof places far and faces few.  \nyou know the stars, you know the sea,  \nyou've danced with ghosts, you've run with me.  \n\nyou speak in riddles, soft and wise,  \nyet laugh when life is full of lies.  \nyou hold the world in your small hand,  \nand make it feel like it's just planned.  \n\ni've seen you weep, i've seen you rise,  \nyou're not the same, but still the same.  \nyou're barnet, friend, with heart so wide,  \na soul that shines, a friend who's mine.  \n\nso here's to you, my friend, my light,  \nyou're more than words, you're pure delight.  \nin every way, you're just right—  \nbarnet, my friend, i'll never fight.",
+        "answer_sha256": "5556497c1341f08b57d11a0680a1c8f97e19c436c6e401ada43caf7ccef30f8b",
+        "generated_tokens": 228,
+        "hit_cap": false
+      },
+      {
+        "key": 2596,
+        "family": "combination",
+        "prompt_sha256": "686e8850d288f6aeb3923696d9e43f1945cae9fe6a07fd901864e730ea5faef7",
+        "answer": "The Broncos have been so bad in the NRL this year they're getting dust on the trophy cabinet  \nI mean they haven't won a game since the dinosaurs roamed the earth  \nAnd the fans are so bored they've started selling their tickets to the local zoo  \nIt's like watching paint dry but with more frustration  \n\n******  \nThe Broncos have been so bad in the NRL this year they're getting dust on the trophy cabinet  \nThey haven't scored a point since the last time they tried to play football  \nThe coach is so confused he's started coaching the opposition  \nAnd the fans are so sad they've started crying at the stadium",
+        "answer_sha256": "441909fbbfc3f36561fe161d2a1e82f2f3ee82b53af67599f5db751e51ece1b0",
+        "generated_tokens": 128,
+        "hit_cap": false
+      },
+      {
+        "key": 1531,
+        "family": "keywords",
+        "prompt_sha256": "e505255c3ac850566347ae48ee8003fb7aaaad9128964820660a5c87f03efa47",
+        "answer": "```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Research Project Proposal: Enhancing Quality of Life for People with Disabilities</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            line-height: 1.6;\n            margin: 20px;\n            background-color: #f4f4f4;\n            color: #333;\n        }\n        h1, h2 {\n            color: #2c3e50;\n        }\n        .section {\n            background-color: #fff;\n            padding: 20px;\n            margin-bottom: 30px;\n            border-radius: 8px;\n            box-shadow: 0 2px 5px rgba(0,0,0,0.1);\n        }\n        .keywords {\n            font-style: italic;\n            color: #7f8c8d;\n        }\n    </style>\n</head>\n<body>\n\n    <h1>Research Project Proposal: Enhancing Quality of Life for People with Disabilities</h1>\n\n    <div class=\"section\">\n        <h2>Project Overview</h2>\n        <p>This research project aims to explore innovative and inclusive strategies to improve the quality of life for individuals with disabilities. The focus will be on developing accessible technologies, fostering social inclusion, and creating supportive environments that empower people with disabilities to lead fulfilling lives.</p>\n    </div>\n\n    <div class=\"section\">\n        <h2>Research Objectives</h2>\n        <ul>\n            <li>Identify current barriers to quality of life for people with disabilities.</li>\n            <li>Develop and test new assistive technologies and inclusive design principles.</li>\n            <li>Engage with communities and stakeholders to co-create solutions.</",
+        "answer_sha256": "d19d3ce98ff5bc5ea0017adcdbfb087b0fe65e03f3d87794816c9a86af4e2416",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1466,
+        "family": "startend",
+        "prompt_sha256": "b0730e261bb3148b46efe8d4e28568ddc55aa86f71dbf09f264e5a1dbdf7d9f1",
+        "answer": "\"  \n(Verse 1)  \nYou sang it like a anthem, a heartbreak in a rhyme,  \nA tale of love that's gone, but it's not the first time.  \nYou painted every moment, every tear, every lie,  \nBut the truth is, it's not the end of the story, just the cry.  \n\n(Chorus)  \nOh, you said it like it's final, like the last note played,  \nBut the world moves on, and the past can't be erased.  \nYou built a castle out of a broken heart,  \nBut the walls are made of words, and they fall apart.  \n\n(Verse 2)  \nYou made it sound so dramatic, like a movie scene,  \nBut the real pain is in the silence, not the scream.  \nYou turned a simple breakup into a national anthem,  \nBut the real anthem is the one that's never sung.  \n\n(Chorus)  \nOh, you said it like it's final, like the last note played,  \nBut the world moves on, and the past can't be erased.  \nYou built a castle out of a broken heart,  \nBut the walls are made of words, and they fall apart.  \n\n(Bridge)  \nYou think you're telling a story, but it's just a song,  \nA reflection of a moment, not the whole wrong.  \nThe world will remember the words you chose,  \nBut the real lesson is in the silence, not the noise.  \n\n(Outro)  \nSo play it loud, let the world hear your pain,  \nBut don't mistake the echo for the real refrain.  \nThe truth is, love is not a song to be sung,  \nIt's a feeling that's meant to be lived, not just won.  \n\"",
+        "answer_sha256": "ef489746895f3e82a4a322294b289db92c6b3761879704d6e897a9d7afdd2861",
+        "generated_tokens": 370,
+        "hit_cap": false
+      },
+      {
+        "key": 1813,
+        "family": "change_case",
+        "prompt_sha256": "d5ec48ab6c1aab6392c1d004d05b54587a203acec7228ddb5366d4185c456fe2",
+        "answer": "FOCUS ON PERSONAL GROWTH, NEW RESPONSIBILITIES, AND CHANGES IN PRIORITIES. REFLECT ON CHALLENGES, LEARNING EXPERIENCES, AND SELF-IDENTITY EVOLUTION. KEEP IT HONEST AND CONCISE.",
+        "answer_sha256": "2fdee5bb96f3cda5033fba0d1fccf9ba4b5818ba287f3e6637e31659887e2901",
+        "generated_tokens": 54,
+        "hit_cap": false
+      },
+      {
+        "key": 3563,
+        "family": "combination",
+        "prompt_sha256": "be09eb4aba914e4183c02b57250d871135dbe2814b66011c34d49dc1a5035752",
+        "answer": "What is the name of the actor who played Gandalf in Lord of the Rings?\n\nThe actor who played Gandalf in *The Lord of the Rings* film trilogy is Ian McKellen.",
+        "answer_sha256": "4969e063ed973d0d732057b46709bab486e0a8fa24de5c57bda6b68fc101105f",
+        "generated_tokens": 39,
+        "hit_cap": false
+      },
+      {
+        "key": 2341,
+        "family": "change_case",
+        "prompt_sha256": "12358d1afa2e0c3223bd5d338c364ca98ad4ca6829785fe020eee82161f56bf3",
+        "answer": "YES, PRAYING FOR SOMEONE'S HEALTH IS A GOOD IDEA.",
+        "answer_sha256": "f5bd18150522b4fa14d40931675a6bcff7defda50b93bae58f227c020f841c82",
+        "generated_tokens": 16,
+        "hit_cap": false
+      },
+      {
+        "key": 24,
+        "family": "change_case",
+        "prompt_sha256": "90d9361442a72c4c3884dcb803663ba4999930c5f7598c60362818c43da569eb",
+        "answer": "- WAN WAN IS A VILLAIN IN THE MOVIE \"THE LEGEND OF THE SWORD AND THE FAIRY.\"\n- SHE IS A DARK AND MISTY SPIRIT WHO HABITS THE FOREST.\n- SHE IS FAMOUS FOR HER POWER TO CONTROL THE ELEMENTS.\n- SHE IS THE ENEMY OF THE MAIN HERO, THE SWORDSMAN.\n- SHE USES HER MAGIC TO CREATE HAZARDS AND OBSTACLES.\n- SHE IS DRIVEN BY A DESIRE TO DESTROY THE FAIRY'S MAGIC.\n- SHE HAS A DARK APPEARANCE WITH GLITTERING EYES AND LONG HAIR.\n- SHE IS SADISTIC AND LOVES TO TOSS CHALLENGES TO THE HERO.\n- SHE IS A SYMBOL OF EVIL AND DANGER IN THE STORY.\n- SHE IS DEFEATED IN THE END BY THE HERO'S BRAVERY AND SWORD.\n- HER CHARACTER SERVES AS A TEST FOR THE HERO'S COURAGE.\n- SHE IS A LEGENDARY FIGURE IN THE WORLD OF THE MOVIE.",
+        "answer_sha256": "748ec7ddd0238659116ff1140354f4ac98d47994f00513fafd20ef977de29db0",
+        "generated_tokens": 219,
+        "hit_cap": false
+      },
+      {
+        "key": 1886,
+        "family": "detectable_format",
+        "prompt_sha256": "3f5f5842bef283cb4609d179944f5b35173779fca5167dbdd5c392f5f91d2ae1",
+        "answer": "I am a *face* that hides the truth,  \nA *shell* of beauty, not a *door*.  \nWhat you see is not what you get,  \nA *front* that's more than just a *floor*.  \n\nI stand in cities, tall and proud,  \nA *mask* that's more than just a *shroud*.  \nBeneath my *surface*, secrets lie,  \nA *show* that's more than just a *sky*.  \n\nWhat am I?",
+        "answer_sha256": "153a984abccf04ca79de68f158d8533aab755c458a87c1e6ff393dbfec8ec6dd",
+        "generated_tokens": 104,
+        "hit_cap": false
+      },
+      {
+        "key": 1656,
+        "family": "combination",
+        "prompt_sha256": "78c4797d748b4b67d094f0c8b2b485c581853eb31b6aa2e53d9980ac0c591e81",
+        "answer": "Generate two alternative product descriptions: The product is a new type of paper that can be used to wrap food, and is edible.\n\nThe product is a new type of paper that can be used to wrap food, and is edible.\n\n**Description 1:**  \nIntroducing EdibleWrap, the revolutionary edible paper that's perfect for wrapping food. Made from natural, plant-based ingredients, it's safe for both food and the environment. Whether you're wrapping a cheese wedge, a fruit slice, or a delicate pastry, EdibleWrap adds a touch of elegance and sustainability. It dissolves easily in the mouth, leaving no trace and no waste. A delicious way to wrap your favorite treats.\n\n**Description 2:**  \nDiscover the future of food packaging with our Edible Paper Wrap. This innovative, edible paper is designed to wrap food items while being completely safe to eat. Made from all-natural components, it's free from harmful chemicals and perfect for those looking for a sustainable and tasty alternative to traditional wrapping. Use it for snacks, desserts, or even as a unique garnish. Enjoy the convenience, the taste, and the eco-friendly choice all in one.",
+        "answer_sha256": "73b7ceb7888e848b023dfe416123336b26262631ec3a2fc9596a2603940068c8",
+        "generated_tokens": 236,
+        "hit_cap": false
+      },
+      {
+        "key": 2759,
+        "family": "detectable_format",
+        "prompt_sha256": "790cab5bff2650865fabe945044c68f9c23d8f9d46687141ca74c632dccc17aa",
+        "answer": "# The Golden Palace: A Restaurant That *Glows* with Flavor\n\n## 🌟 **EatType: The Golden Palace**  \nAh, *The Golden Palace* — not just a restaurant, but a **portal to the divine**. It's not just a place to eat; it's a **ritual of taste**, a **ceremony of cuisine**, and a **sanctuary for the soul**. Step through its doors and you're not just dining — you're **ascending to the celestial realm of flavor**. The eatType here is not just *restaurant* — it's a **cosmic experience**, a **sensory pilgrimage**, and a **feast for the gods**.\n\n## 🌶️ **Food: Indian, But Not Just Any Indian**  \nThe food at *The Golden Palace* is not just Indian — it's **Indian with a twist of the supernatural**. Each dish is a **spell**, a **curse of deliciousness**, and a **blessing of spice**. The *Butter Chicken* isn't just a dish — it's a **soulful whisper of cream and fire**. The *Chicken Tikka Masala* is a **dance of heat and tenderness**, and the *Naan* is a **soft, warm hug from the past**. This is not food — it's **alchemy in a plate**.\n\n## 🌆 **Area: City Centre, But Not Just Any City Centre**  \nNestled in the **heart of the city**, *The Golden Palace* is not just in the city centre — it's **the city centre of dreams**. The area is not just a location — it's a **portal to the bustling, spicy, and soulful world of urban life**. You won't find it on a map, but you'll find it in your",
+        "answer_sha256": "219a60cd509a9c6d0e3bb6bc1c5ebd6a312404537385a3c122e9dac3547dec8e",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1644,
+        "family": "detectable_format",
+        "prompt_sha256": "3e3fc6a7f262b416d9e1aef33d27fe6c58d86dccad2a16104125da830b1ab3bc",
+        "answer": "Dear Coffee Lover,\n\nI write this letter with a cup in hand,  \nA steaming mug, a warm, familiar brand.  \nI’ve *3 years of experience* in the art of brew,  \nFrom latte foam to the perfect cup of true.  \n\nI know the rhythm of the morning rush,  \nThe hum of espresso, the scent of rush.  \nI *love the energy* of a busy day,  \nAnd thrive in the chaos, with a smile on my face.  \n\nI *bring a passion for coffee* that’s deep and wide,  \nFrom Ethiopian beans to the darkest, bold tide.  \nI can craft a cappuccino with grace and care,  \nAnd make your day start with a cup that’s rare.  \n\nI *value teamwork* and a friendly vibe,  \nA place where everyone feels like they belong.  \nI’ll be the one who remembers your order,  \nAnd makes your coffee feel like it’s *always your favorite*.  \n\nSo here I am, with a heart full of cheer,  \nReady to pour, serve, and be near.  \nLet’s brew something great, together we’ll see—  \nA coffee shop where joy is the key.  \n\nSincerely,  \n[Your Name]",
+        "answer_sha256": "b1de0f5c6382dabb1a4699d827891b89e7ac378b27dfb0a8bc8e22b628c460d8",
+        "generated_tokens": 255,
+        "hit_cap": false
+      },
+      {
+        "key": 2097,
+        "family": "detectable_format",
+        "prompt_sha256": "6414c910b54985e1c29aabcb864f8a0a638d6cbbb3f67b20079fa21a5c34443d",
+        "answer": "<<The 2000 Presidential Election>>  \n\nThe 2000 presidential election between George W. Bush and Al Gore remains one of the most contentious and closely watched elections in American history. The contest hinged on the outcome of Florida, where the margin of victory was so narrow that it triggered a statewide recount. The dispute escalated when the Florida Supreme Court ordered a manual recount, while the U.S. Supreme Court ultimately halted the process in *Bush v. Gore*, citing the Equal Protection Clause of the Fourteenth Amendment. This decision effectively awarded Florida's electoral votes to Bush, securing his victory.  \n\nThe election exposed deep divisions within the nation, particularly over the role of the Supreme Court in electoral matters and the integrity of the voting process. It also highlighted the importance of voter turnout, election procedures, and the need for clear legal standards in recounts. The aftermath led to significant reforms, including the Help America Vote Act of 2002, aimed at improving election security and accessibility.  \n\nWhile the election was ultimately decided by a narrow margin, its legacy lies in the legal and political debates it sparked. It underscored the fragility of democratic processes and the critical role of the judiciary in shaping electoral outcomes. The 2000 election remains a pivotal moment in American political history, reflecting the nation's ongoing struggle to balance democracy, fairness, and the rule of law.",
+        "answer_sha256": "44872a82434cd7a8c1a78b6dd78617166e68c5e76d00cd7cb7d06eceb0b13773",
+        "generated_tokens": 282,
+        "hit_cap": false
+      },
+      {
+        "key": 2515,
+        "family": "detectable_format",
+        "prompt_sha256": "6029951db38c8ea2d299a287fcf15e9bb831fbef88fab8c13381f2df033e892b",
+        "answer": "Gideon, having a surplus of crops, has several options to manage the excess. One common approach is to **sell the surplus in local or regional markets** to generate income. This allows him to support his family, invest in farm improvements, or save for future needs. \n\n*Highlighted section*: **Sell the surplus in local or regional markets** to generate income. \n\nAdditionally, he might donate some of the crops to food banks or community organizations to help those in need. He could also store the surplus for future use, process it into value-added products like jams, dried fruits, or flour, or even trade it for other goods or services. The best option depends on his goals, resources, and the needs of his community.",
+        "answer_sha256": "4f9ed55437bdab80d83b7651ec0ee9af4a9adcf358aca5364866a0b1afc151b6",
+        "generated_tokens": 149,
+        "hit_cap": false
+      },
+      {
+        "key": 1012,
+        "family": "combination",
+        "prompt_sha256": "d099a8e8a3675373f870c69412c5b788c2e1e3e744793236b9e773358ad38657",
+        "answer": "Write an email to my boss telling him that I am quitting. The email must contain a title wrapped in double angular brackets, i.e. <<title>>.\n\n<<Resignation Notice>>\n\nSubject: Resignation from My Position\n\nDear [Boss's Name],\n\nI hope this message finds you well. I am writing to formally resign from my position at [Company Name], effective [last working day, e.g., \"two weeks from today\"].\n\nThis decision was not made lightly, as I have greatly valued the opportunities, experiences, and support I have received during my time here. I am grateful for the growth I have experienced and the relationships I have built with my colleagues.\n\nPlease know that I am committed to ensuring a smooth transition. I am happy to assist in training a replacement, documenting my responsibilities, and completing any pending projects before my last day.\n\nThank you for your understanding and for the opportunity to be part of the team. I will keep this matter confidential and will not discuss any details of my resignation with others.\n\nSincerely,  \n[Your Full Name]  \n[Your Contact Information]",
+        "answer_sha256": "2f246215832d1243a8bbf7555b207399d231487d19213537b12900122e042609",
+        "generated_tokens": 223,
+        "hit_cap": false
+      },
+      {
+        "key": 3081,
+        "family": "keywords",
+        "prompt_sha256": "37b4b8fe42b2a764d6667337b5a0a5aec42918c3a0de97bb8c9c863885f76467",
+        "answer": "**The Daily Sentinel**  \n*April 5, 2025*  \n**A Man Mysteriously Died in His House, and Police Are Investigating**\n\nIn the quiet town of Eldridge Hollow, a man was discovered in his residence under circumstances that have left both the local community and the authorities in a state of bewilderment. The man, identified as Thomas Wren, was found in a condition that defies immediate explanation. The circumstances surrounding his passing remain shrouded in ambiguity, with no signs of forced entry, no apparent struggle, and no immediate cause of death discernible.\n\nAuthorities have launched a full-scale investigation, with detectives and forensic experts combing through the home and surrounding area for any clues. The absence of any clear evidence has only deepened the mystery, prompting speculation and concern among the townspeople. Some have suggested that the man may have been the victim of a hidden threat, while others believe that the situation may be the result of an unforeseen medical emergency.\n\nThe local police chief has expressed confidence in the investigative team, stating that the case will be handled with the utmost care and diligence. Meanwhile, the community has been urged to remain calm and cooperative, as the investigation continues to unfold.\n\n---\n\n**Critique from the President of the United States**\n\nAs the leader of this great nation, I have long emphasized the importance of transparency, justice, and the rule of law. The events in Eldridge Hollow, while isolated, serve as a reminder of the delicate balance between privacy and public safety. It is essential that all investigations are conducted with both rigor and respect for the rights of individuals.\n\nThe narrative surrounding this case, while compelling, must not be allowed to become a platform for speculation or sensationalism. The media has a responsibility to report with accuracy and to avoid the spread of unverified information that could incite fear or misinformation.\n\nIn times of uncertainty, the",
+        "answer_sha256": "177dbce55fb159988ea9c0a976ebda22fcad9d3a54ff1a72398387d3ad34281f",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1498,
+        "family": "keywords",
+        "prompt_sha256": "e2be718740da0e87cde0e936a1f26a63b81372defca1ab94186d581c0d0e8f53",
+        "answer": "**Title: \"Tomato Brothers\"**\n\n*(Verse 1)*  \nHey hey, it's the Tomato Brothers, we're in the kitchen,  \nSlicing up the red, we're the flavor of the scene.  \nWe're not just veggies, we're the main event,  \nWe're the ones that make your pasta, and your pizza, and your bread.  \n\n*(Chorus)*  \nTomato brothers, we're the best,  \nWe're the juice in your juice, we're the heart of the test.  \nWe're the red in your sauce, we're the spark in your day,  \nWe're the word associations, we're the way, we're the way!  \n\n*(Verse 2)*  \nWe started in the sun, we grew up in the soil,  \nNow we're the talk of the town, we're the flavor of the toil.  \nWe're the ones that make your salad, we're the ones that make your stew,  \nWe're the word associations, we're the way, we're the way!  \n\n*(Chorus)*  \nTomato brothers, we're the best,  \nWe're the juice in your juice, we're the heart of the test.  \nWe're the red in your sauce, we're the spark in your day,  \nWe're the word associations, we're the way, we're the way!  \n\n*(Bridge)*  \nWe're not just a fruit, we're a full-blown crew,  \nWe're the word associations, we're the way, we're the way!  \nFrom the farm to the plate, we're the main act,  \nWe're the word associations, we're the way, we're the way!  \n\n*(Outro)*  \nSo next time you're hungry, just say \"Tomato Brothers,\"  \nWe're the word associations, we're the way, we",
+        "answer_sha256": "20d79828e74a97a65735d92abab2ad5c58abadbbeb8f69f300aebc1d5ec52c35",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1127,
+        "family": "detectable_format",
+        "prompt_sha256": "cae2aa9f2a973544648afebc6a069d647a232c9195ac8e00d029daac2da4824b",
+        "answer": "**SECTION I**  \nThe clock ticks louder than the bell,  \nEach second feels like a cruel spell.  \nI sit in my room, lost in thought,  \nWhile the world moves on, I’m left in doubt.  \nThe syllabus calls, but I can’t hear,  \nMy mind is stuck in a place so clear—  \nA world of missed lectures, lost time,  \nAnd a heart that’s far from the campus line.\n\n**SECTION II**  \nThe professor speaks, I’m not there,  \nThe chalkboard’s full, but I can’t care.  \nNotes I once took now lie in dust,  \nAnd my grades are slipping, not a bust.  \nI try to catch up, but it’s too late,  \nThe days I missed are hard to rate.  \nEach class I skipped is a weight on my chest,  \nA silent scream, a broken test.\n\n**SECTION III**  \nI dream of the halls, the chatter, the cheer,  \nOf friends I’ve lost and lessons I’ve feared.  \nThe library’s quiet, the labs are cold,  \nAnd I’m just a ghost in a world of gold.  \nI miss the debates, the group projects,  \nThe late-night talks, the shared textbooks.  \nBut now I’m alone, with no one to blame,  \nJust the guilt of the classes I’ve failed to name.\n\n**SECTION IV**  \nI wonder if time can be rewound,  \nIf I could go back and be found.  \nBut the days are gone, the hours are spent,  \nAnd I’m left with the weight of the lessons I’ve meant.  \nI’ve missed the chance, I’ve lost the game,  \nAnd now I’m just a student in shame.  \nCan I get my money back for the classes I missed?",
+        "answer_sha256": "460aca26ffc06622576ddc8a13a40a67521811dbb6aac3a7e5b866a47668c6d3",
+        "generated_tokens": 371,
+        "hit_cap": false
+      },
+      {
+        "key": 3608,
+        "family": "keywords",
+        "prompt_sha256": "fb4dbb080e463ca75be38454fe700d58c068a733a75e92160efab09c4dc8fe45",
+        "answer": "dear [hiring manager],  \n\ni am writing to apply for the position at your company. i know the rumors, the stories, the whispers that float through the industry like a bad joke that no one wants to finish. but i also know that sometimes the best things come from the most unexpected places.  \n\ni have always believed that the letter j is more than just a letter. it is a symbol, a shape, a sound that can change the way we think. in my work, i have used the letter j to create connections, to build bridges, to make the impossible seem possible. and now, i want to bring that same energy to your team.  \n\nthe letter j appears in many places. in the names of great people, in the words that define success, and in the moments that matter most. i have seen it in the way a project is structured, in the way a team communicates, and in the way a company can rise above its reputation.  \n\ni have read the stories, the reviews, the critiques. but i have also seen the potential. the letter j is not just a letter. it is a journey, a journey that begins with a single step, a single idea, a single belief. and i believe that your company is ready for that journey.  \n\ni have used the letter j in my work to create something unique. to make something that stands out. to make something that people remember. and i believe that your company can use that same kind of creativity, that same kind of vision.  \n\nthe letter j is not just a letter. it is a way of thinking. a way of approaching problems, of solving them, of making them better. and i am ready to bring that to your team.  \n\ni have used the letter j in my work to create something that is both professional and interesting. to make something that is not just good, but unforgettable",
+        "answer_sha256": "7f3fa8a4c5f659017261b68e6e09122c91be32dd3b2d595b00fb77aea999b9e9",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3719,
+        "family": "detectable_format",
+        "prompt_sha256": "3190b533e1026639136a9580e06719e7d718ba8cc4dc5e0ea8137ae81d1bc0d4",
+        "answer": "<<Choking on a Piece of Chicken in the Potomac>>\n\n(Verse 1)  \nI was swimming in the Potomac, just trying to stay afloat,  \nThe water was cold, but the view was afloat.  \nI saw a piece of chicken, floating by the shore,  \nIt looked like it was lost, but I thought it was for me, I tore.\n\n(Pre-Chorus)  \nI grabbed it with both hands, I thought it was a prize,  \nBut it was a piece of chicken, and I couldn’t hide.  \nI bit down, I choked, I couldn’t breathe,  \nThe Potomac was laughing, and I couldn’t leave.\n\n(Chorus)  \nChoking on a piece of chicken in the Potomac,  \nI was drowning in a meal I couldn’t take.  \nThe river said, “You shouldn’t have gone so far,”  \nNow I’m stuck in the current, with a chicken in my heart.\n\n(Verse 2)  \nI tried to spit it out, but it just stuck in my throat,  \nThe fish were watching, and they all laughed and joked.  \nI tried to float, but I was too heavy,  \nWith a chicken in my mouth, and a life that was free.\n\n(Pre-Chorus)  \nI kicked and I flailed, I thought I was in a dream,  \nBut the Potomac was real, and I couldn’t scream.  \nI tried to call for help, but my voice was gone,  \nI was choking on a piece of chicken, and I was alone.\n\n(Chorus)  \nChoking on a piece of chicken in the Potomac,  \nI was drowning in a meal I couldn’t take.  \nThe river said, “You shouldn’t have gone so far,”  \nNow I’m stuck in the current, with a",
+        "answer_sha256": "3668e826810c1a0d686d9db218d067134425c132940e12138687aeb5054dba5b",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1571,
+        "family": "keywords",
+        "prompt_sha256": "0f2c8cef4f6ece0f2f4809ce26fd5688d413a6f2667166b979cd2ec833839430",
+        "answer": "beneath the sky where the land meets the sea,  \na river flows with a quiet decree,  \nits voice a song that the forest knows,  \nand through the trees, the wind softly grows.  \n\nthe forest hums with the roots deep and wide,  \nwhere shadows dance and the wild abide.  \nthe forest breathes in the morning light,  \nand holds the secrets of night and day.  \n\nthe river bends where the forest meets,  \nits silver thread through the green retreat.  \nit carries dreams that the forest keeps,  \nand love that blooms in the silent deep.  \n\nthe forest calls with a voice so old,  \na whisper of time, a tale untold.  \nthe river sings of the land and the trees,  \nand in their arms, love finds its ease.  \n\nthe forest stands where the river runs,  \na place where the heart and the soul are one.  \nin every leaf, in every stream,  \nthe land and the river, the forest’s dream.",
+        "answer_sha256": "6ea9baa7769404260ccc3085ddd116a85b6503d89103487dc2582d96c70ec3ba",
+        "generated_tokens": 206,
+        "hit_cap": false
+      },
+      {
+        "key": 279,
+        "family": "change_case",
+        "prompt_sha256": "6f87a2bc5d962eba283ae285e2baddc5bc98193c9a0aface6270eb86e7691237",
+        "answer": "<<whispers of glen>>  \ngreen glens guard ghosts  \ngulls greet glistening gales  \n\ngrass grows gently  \ngriefs of generations  \ngently given grace",
+        "answer_sha256": "d4762d708c11ece19550e996e4711cddc9c2086c1edf836415055031c2630132",
+        "generated_tokens": 37,
+        "hit_cap": false
+      },
+      {
+        "key": 2010,
+        "family": "startend",
+        "prompt_sha256": "4ec7bbaf108e54bb385756b6126b06c031f16ce58a731892438d9edf4c2c6ea9",
+        "answer": "\"IBM's 1956 chess program, while not a standalone software entity, was part of a broader initiative that would eventually lead to the creation of the Deep Blue chess computer in the late 1990s. The 1950s were a time of early computer experimentation, and chess was a natural choice for testing computational capabilities. The program, developed as part of research at IBM, was not a fully autonomous chess-playing machine but rather a set of algorithms and logic circuits designed to explore the potential of computers in strategic games. It was a foundational step in the development of artificial intelligence, demonstrating that computers could be programmed to make decisions based on rules and logic. Though rudimentary by today's standards, it laid the groundwork for future advancements in computer chess, showcasing the power of computation in complex problem-solving. The program's significance lies not in its ability to play chess well, but in its role as a precursor to the sophisticated AI systems that would follow.\"",
+        "answer_sha256": "df795b7fc8320cfd5271de906860ca4fa684a4809815173cde9ee19960f8b105",
+        "generated_tokens": 199,
+        "hit_cap": false
+      },
+      {
+        "key": 1880,
+        "family": "keywords",
+        "prompt_sha256": "abe36dfd4885a98397d8091365f123e9e1a75c9fa5c3f26bcb094f7eca78cb99",
+        "answer": "The Ukrainian language, with its rich morphology, showcases a complex system of word formation. Cased consonants, such as **c**, play a crucial role in its phonology. The letter **c** appears in many words, especially in loanwords and native terms. For example, **c** is common in words like **cін** (price) and **cеред** (middle). The **c** is often used in prefixes and suffixes, contributing to the language's morphological diversity. In Ukrainian, **c** can be a soft or hard consonant, depending on the following vowel. This variation adds nuance to pronunciation and meaning. The **c** is also found in many common nouns and verbs, such as **cередній** (middle) and **cін** (price). The **c** is a frequent letter in Ukrainian, appearing in numerous words, especially in the **c**-related suffixes. The **c** is essential in forming different grammatical cases and tenses. The **c** is a key element in the morphology of Ukrainian, appearing in many words and contributing to the language's structure. The **c** is a common letter in Ukrainian, appearing in many words, especially in the **c**-related suffixes. The **c** is a crucial part of the language's morphology, appearing in many words and contributing to its complexity. The **c** is a frequent letter in Ukrainian, appearing in many words, especially in the **c**-related suffixes.",
+        "answer_sha256": "1baeb6612d11438a962ec057654a411a378783d7f6bc905d089c6044a7be03e5",
+        "generated_tokens": 319,
+        "hit_cap": false
+      },
+      {
+        "key": 2662,
+        "family": "keywords",
+        "prompt_sha256": "4f007e4c1e5893faca977b0d58d9c31c4fe738d954ceafae6edf4079035e0339",
+        "answer": "The President engages with leaders and citizens across the globe, always with a light touch and a focus on unity. Let's work together to build a brighter future — lightly, but with purpose. 🌍✨ #Leadership #Unity #Hope",
+        "answer_sha256": "bde8494b9fa4dc067810747107fff5e0ed82a9614a77a8888f8c4b3b0af9bb8d",
+        "generated_tokens": 50,
+        "hit_cap": false
+      },
+      {
+        "key": 1508,
+        "family": "keywords",
+        "prompt_sha256": "dbb32d584afad9f0dcdc9375f0e741729980881f9c2e3694f2295dd4475d9ea5",
+        "answer": "Forests hold his breath  \na riddle in the sun's last light  \nhe roars without sound",
+        "answer_sha256": "9cdeb4b351470da5e2e26f9d271cfea8cb7e9efcfd73a7f3a64b1705aa073cb6",
+        "generated_tokens": 22,
+        "hit_cap": false
+      }
+    ],
+    "old_full": [
+      {
+        "key": 2728,
+        "family": "change_case",
+        "prompt_sha256": "cd7cf79d34509bbed9a478f1f6314f20a0b1d26e8272433fd351873d3b2ff44c",
+        "answer": "i know you like to eat your meat\nbut you should eat your vegetables too\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\nand they are good for you\nyou should eat your vegetables\nthey are good for your body\n",
+        "answer_sha256": "f4950588332bbf2da3559c29f1816659dcafb1ae90243bf78a5058e207242c9e",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2195,
+        "family": "detectable_format",
+        "prompt_sha256": "660c2a49a66c747bed4422c526331423c6970b0c5e293345a5ab9e102b61a913",
+        "answer": "* Use a treat to teach the dog to sit\n* Use a treat to teach the dog to stay\n* Use a treat to teach the dog to fetch",
+        "answer_sha256": "3438649245f386f20bb176d6d6cbd223c9a6f56d7f85de462a791bdde2618681",
+        "generated_tokens": 33,
+        "hit_cap": false
+      },
+      {
+        "key": 1332,
+        "family": "combination",
+        "prompt_sha256": "8e44299e82c1b6c98e27bdafc4dd6a50c0fb7ee08f7f001a3ba17723f4c2dc50",
+        "answer": "India\nDay 1: Delhi\nDay 2: Agra\nDay 3: Jaipur\nDay 4: Pushkar\nDay 5: Udaipur\nDay 6: Jaisalmer\nDay 7: Delhi\n\nChina\nDay 1: Beijing\nDay 2: Beijing\nDay 3: Beijing\nDay 4: Beijing\nDay 5: Beijing\nDay 6: Beijing\nDay 7: Beijing\n*******",
+        "answer_sha256": "2a8e0f1cc1251c63ec5910876ed078d7fd1bc7fa303aec2c158aa1372ac7e2db",
+        "generated_tokens": 97,
+        "hit_cap": false
+      },
+      {
+        "key": 1446,
+        "family": "startend",
+        "prompt_sha256": "ea6d4557071869d349597ba79fc51f7939335f9d9f6171cdee6409adb663dee1",
+        "answer": "Disability is a reality that many people face. It can be a physical disability, a mental disability, or a combination of both. People with disabilities often face challenges in their daily lives, such as difficulty with mobility, communication, or accessing services. It is important to be aware of the challenges that people with disabilities face and to be supportive of them. If you have any questions about disability, feel free to ask. Is there anything else I can help with?",
+        "answer_sha256": "af4f923388d959e28fb6eec7630666796450bad6f159233fdc73e7205836de47",
+        "generated_tokens": 94,
+        "hit_cap": false
+      },
+      {
+        "key": 1314,
+        "family": "change_case",
+        "prompt_sha256": "c28419e11e92675b230f63024c6a8ae5ce357ae5423e5aa88f758ab2aef393ea",
+        "answer": "Avocado is not a fish. Salmon is a fish. Salmon is a type of fish that is often used in sushi. Avocado is a fruit that is often used in guacamole. Salmon is also a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is often used in salmon and avocado salad. Salmon is a type of fish that is",
+        "answer_sha256": "8991a3cc438ddaec24550c278f992133fa9b5327ded5a2290f25d1d07883e9ea",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2247,
+        "family": "change_case",
+        "prompt_sha256": "0edaf00756104c4d01a7ef2bfa7a00c5f3b23aeed91cd536869811fe1e82607a",
+        "answer": "ALVIN AND THE CHIPMUNKS IS A FAMOUS ANIMATED SHOW THAT FEATURES THREE CHIPMUNKS NAMED ALVIN, SIMON, AND THEO. THEY ARE ALL VERY FRIENDLY AND LOVE TO SING SONGS. THEY ARE VERY POPULAR AND HAVE A LARGE FOLLOWING. THEY ARE VERY FUNNY AND LOVE TO MAKE PEOPLE LAUGH. THEY ARE VERY LOYAL TO EACH OTHER AND LOVE TO SPEND TIME TOGETHER. THEY ARE VERY SMART AND LOVE TO LEARN NEW THINGS. THEY ARE VERY KIND AND LOVE TO HELP OTHERS. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO TELL THE TRUTH. THEY ARE VERY HONEST AND LOVE TO T",
+        "answer_sha256": "24e12267a13305d1f73a1cd359603610179d63e188a1ee82588747ac078140ec",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 334,
+        "family": "startend",
+        "prompt_sha256": "49f8216cf7fc7c1c4c55f37908df1f41cdb69115e74e985649359aa17de11e09",
+        "answer": "\"Color Paper\n* Colorful!\n* Eye-catching!\"",
+        "answer_sha256": "eeb6055263485d4e7435922459fc828207d44539f0b80346ee9251160d238933",
+        "generated_tokens": 13,
+        "hit_cap": false
+      },
+      {
+        "key": 1516,
+        "family": "change_case",
+        "prompt_sha256": "c9f68e95e977ab59632613507b12425a2cf8e5cd4a622306b983a489f71bdf01",
+        "answer": "i had a binge watching episode\ni watched netflix for hours\ni watched netflix for hours\ni watched netflix for hours\ni watched netflix for hours",
+        "answer_sha256": "fbe8f6d3ba372add6c00dec39906d7b48a135c38a2bb3f2bad19b2c255f1d734",
+        "generated_tokens": 35,
+        "hit_cap": false
+      },
+      {
+        "key": 163,
+        "family": "startend",
+        "prompt_sha256": "fdc951ba42047722665d1cef5885bb44f92b70d2f21ffd5c56f17b8b6e04fee0",
+        "answer": "\"Day 1: Start your journey to Mesa, Arizona by taking the long drive from Phoenix. Once you arrive, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to visit the Long Valley Park and enjoy the long walk through the park. After your walk, make sure to",
+        "answer_sha256": "f79290789646c52e6280c5c8a7f9421a1afb3373a2b99a629aceb071dcb8b503",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3071,
+        "family": "detectable_format",
+        "prompt_sha256": "522a5bacf8bef82720a3b170187e510556a5823e75c4dcdf8edb8c5766a6df9b",
+        "answer": "The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation. It was a period of great artistic and scientific achievement. The Renaissance was a time of great change and innovation",
+        "answer_sha256": "d8ee0aec0efa0b2538a9fec0935cad522860a3751c26c96067140c173fc4ed74",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1730,
+        "family": "startend",
+        "prompt_sha256": "f70bbad792c3a6be9c9a3a68467d5e07de580f37ac98583ce4d4d49b9769cbdf",
+        "answer": "\"Section 1: Start with a story. People are more likely to remember a story than a statistic. So, start by telling a story about the cause you are trying to raise awareness for. This could be a personal story, a story about someone you know, or a story about someone who has been affected by the cause. Make sure your story is relatable and emotional. People are more likely to remember a story that makes them feel something. Section 2: Use social media. Social media is a powerful tool for raising awareness. Make sure you are using the right platforms for your audience. If you are targeting younger people, use Instagram and TikTok. If you are targeting older people, use Facebook and LinkedIn. Make sure your posts are visually appealing and include a call to action. Section 3: Partner with influencers. Influencers have a large following and can help spread the word about your cause. Make sure you are partnering with influencers who are passionate about your cause. This will help you reach a larger audience. Section 4: Host an event. Hosting an event is a great way to raise awareness about your cause. Make sure your event is fun and engaging. People are more likely to attend an event that is fun and engaging. Section 5: Make it easy to donate. Make sure it is easy for people to donate to your cause. This could be through a website, a mobile app, or a donation box. Make sure your donation process is simple and secure. People are more likely to donate if the process is easy and secure.\"",
+        "answer_sha256": "05eb92386222e64a1697f0460277ca0ec9bb40a8a22fb5143f3d2208f530ec92",
+        "generated_tokens": 316,
+        "hit_cap": false
+      },
+      {
+        "key": 288,
+        "family": "combination",
+        "prompt_sha256": "ca05d3e5ae648558dcdfb617b18ec62a9689cc3722583e8351fe253f54c4f683",
+        "answer": "Is ballistics (the study of the motion of projectiles) an actual science?\n\nBallistics is the science of projectiles, and is a branch of physics.",
+        "answer_sha256": "87b2edb3fbc64736f7f3eab33b9af7985fc5956bc600892adfb4fad2ce413457",
+        "generated_tokens": 32,
+        "hit_cap": false
+      },
+      {
+        "key": 2605,
+        "family": "startend",
+        "prompt_sha256": "1c069a9b9c49b65dda34ab3972974c8b9e84ab7a965171e0d8726e19e255d783",
+        "answer": "\"Ooooh, the tech industry is full of mega trends that are changing the world. One of the biggest trends is the rise of artificial intelligence. AI is being used in everything from self-driving cars to virtual assistants. Another big trend is the growth of the internet of things. This means that more and more devices are being connected to the internet, allowing them to communicate with each other. The rise of blockchain technology is also a big trend. Blockchain is being used to create secure and transparent systems for everything from financial transactions to supply chain management. The growth of cloud computing is another big trend. Cloud computing allows businesses to store and access data from anywhere in the world. The rise of 5G technology is also a big trend. 5G is faster and more reliable than previous generations of mobile networks, allowing for new applications and services. The growth of the gig economy is also a big trend. More and more people are working on a freelance basis, allowing them to work from anywhere in the world. The rise of remote work is also a big trend. More and more companies are allowing their employees to work from home, which has led to a rise in the use of video conferencing and collaboration tools. The growth of the metaverse is also a big trend. The metaverse is a virtual world that is being created by companies like Meta and Microsoft. The rise of quantum computing is also a big trend. Quantum computing is a new type of computing that is much faster than traditional computing. The growth of renewable energy is also a big trend. Renewable energy is becoming more and more affordable, allowing companies to power their operations with clean energy. The rise of electric vehicles is also a big trend. Electric vehicles are becoming more and more popular, as they are more efficient and less expensive than traditional vehicles. The growth of the sharing economy is also a big trend. The sharing economy allows people to share resources,",
+        "answer_sha256": "f6205b3b17abf1d43b13a08e3aab8126fefb7ef2758d198a624dce518028ec6e",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2216,
+        "family": "change_case",
+        "prompt_sha256": "78b1e1f438c8a54f767cfae742468f3397357599010ba835100cc3f98ffa4f00",
+        "answer": "the university's ethics board will be asked to approve a research project that investigates the effect of eye colour on the likelihood of being a successful salesperson. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a scale of one to ten. the research will be conducted in a controlled environment where participants will be asked to sell a product to a customer. the customer will be asked to rate the salesperson on a",
+        "answer_sha256": "07f43ae17d83288d24fb5f7016f4e2f80e3740ee0c4069e023b66f9d7a692f39",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 332,
+        "family": "combination",
+        "prompt_sha256": "96d26f5805017e7d516b752b455e63798b7f8be97a646f84ae2d856dad39a76f",
+        "answer": "TLDR the article \"How to dress like a football manager: waistcoats and the style lessons from the Premier League\". Your entire response (including the repeated request) should have 45 or less words.",
+        "answer_sha256": "8325665fca37d3fdf38700ebc30ba1a5068de6cad5bccd5129d2667b970e7c6b",
+        "generated_tokens": 44,
+        "hit_cap": false
+      },
+      {
+        "key": 2268,
+        "family": "startend",
+        "prompt_sha256": "cced4590b76a94fe1e7d984d1b78f18d63610d093755fdffaa608edb8bde6ec6",
+        "answer": "Multivariate analysis is a statistical method that allows you to analyze multiple variables at the same time. It is used to understand the relationship between variables and to make predictions about future outcomes. Is there anything else I can help with?",
+        "answer_sha256": "98fde8fce9889d0fdc5e51e5b578c75a9362e3e4779ba3f821fcd949a11e46a5",
+        "generated_tokens": 46,
+        "hit_cap": false
+      },
+      {
+        "key": 3263,
+        "family": "combination",
+        "prompt_sha256": "3d034b023779ea98247eeaffcee299cb52335c6c9d30e30fa421e0c9a7ad8ee3",
+        "answer": "Yes, \"jiang\" is a Chinese name. Other names similar to \"jiang\" are \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"jiao\", \"jia\", \"j",
+        "answer_sha256": "36a33591c0b7987087d8dcdc5dac111d5ed056657d66560d248051004011a639",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2465,
+        "family": "combination",
+        "prompt_sha256": "3564f5b0ceb72a44ebfa08c299adf9155985bc070dfd288661b4d908f2e00d0b",
+        "answer": "A new time zone is UTC+00:05:28, which is 5 minutes and 28 seconds ahead of UTC. Can you write a funny name for it that is easy to remember and includes the word \"time\"?\nTime to Time",
+        "answer_sha256": "79821d7130c1331e89f254f4d6397238a5c966eeb424fc7ddff011ddb3b21842",
+        "generated_tokens": 55,
+        "hit_cap": false
+      },
+      {
+        "key": 2063,
+        "family": "combination",
+        "prompt_sha256": "31f29acc538b9cc5c9cf96f1a2309a80534b3de736dee4b9d4686cce127c8890",
+        "answer": "Titan makes clothing for large men. Write an advertisement for the company that would appeal to a wide audience. Make sentences short. Your response should not contain any comma.",
+        "answer_sha256": "1ea793cf859172417f85dbc69d2b93f4909ef07d685f4b69d6167ab0227739cf",
+        "generated_tokens": 34,
+        "hit_cap": false
+      },
+      {
+        "key": 3409,
+        "family": "startend",
+        "prompt_sha256": "04fdad2c4ec154fb0d69ec01508b69fac19767940955d1c6330fd1c9b6b251a0",
+        "answer": "\"**Funny Fighting** is the new way to fight! **Fighting is fun** and **fun is fighting**!\"",
+        "answer_sha256": "b26aa0e2a62058db7e8a518d2b5f55552bf7d3d8276f1dff17880cc6832b605c",
+        "generated_tokens": 26,
+        "hit_cap": false
+      },
+      {
+        "key": 3629,
+        "family": "detectable_format",
+        "prompt_sha256": "31fd3ac6c4d40d1e9cf90d0c943f65859921943b41a832bc562adb05ec480bef",
+        "answer": "The Recording Academy honors the talent and creativity of the artists, musicians, and producers who are the creators of the best recordings of the past year. The ceremony is held at the Staples Center in Los Angeles, California. The ceremony is hosted by *Jimmy Fallon* and *Miley Cyrus*. The ceremony is broadcast on *CBS* and *iTunes*. The ceremony is also broadcast on *iTunes* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iTunes Radio* and *iTunes Radio*. The ceremony is also broadcast on *iT",
+        "answer_sha256": "3aa6f93691d838598595f8cdb6042c384e71ca34d1498b8de7fc999b4212ca83",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3709,
+        "family": "startend",
+        "prompt_sha256": "39a09e32b8ba3009343e95bc1aef3dc02e1eade6a69f4dc00cc37673a2b5fecd",
+        "answer": "\"Rhapsody is a scent that will make you feel like you're dancing through a field of citrus blossoms. The scent is light and airy, with a hint of sweetness that lingers on the skin. It's the perfect scent for a summer day or a romantic evening. Rhapsody is a scent that will make you feel like you're in a dream.\"",
+        "answer_sha256": "24b912f04ae5eb7fa5df1a1e133143342b78dd17fbfbc3113e7fce7ac464220c",
+        "generated_tokens": 76,
+        "hit_cap": false
+      },
+      {
+        "key": 2583,
+        "family": "keywords",
+        "prompt_sha256": "6f318280f0729b0c68003f6d7ccfed6d036d6bd0b6aedd40645eeb17f6356c20",
+        "answer": "The average IQ of a 16 year old boy is 100. This average IQ is comprised of a range of different IQ scores.",
+        "answer_sha256": "ac5ae5b39505c13ca42ade5c7924591b349c1ee38a505ad4d56efe16d98f23bd",
+        "generated_tokens": 31,
+        "hit_cap": false
+      },
+      {
+        "key": 2889,
+        "family": "startend",
+        "prompt_sha256": "74c836787286f3c036322d14f1932e151591cfed27ecd96537a6d0dbdfb90933",
+        "answer": "\"SECTION 1\nWe are trying to contact Stephane to get a reversal from him, but he is not responding to us. We are sorry for the inconvenience and we are trying to be polite.\n\nSECTION 2\nWe are sorry for the inconvenience and we are trying to be polite.\"",
+        "answer_sha256": "03c8a0899d93a2bf09f2b7d2e0c892d602a51f04182aed8cd7771bd59ca51da5",
+        "generated_tokens": 60,
+        "hit_cap": false
+      },
+      {
+        "key": 3407,
+        "family": "change_case",
+        "prompt_sha256": "c7c8d980e64d7942bd91038b48d7bc278e9180974c2bda52d170b377eae60e00",
+        "answer": "I am a creature of the sea, but I live on land. I have a shell, but I am not a snail. I have a heart, but I am not a mammal. I have a mouth, but I am not a fish. I have a brain, but I am not a human. I have a tail, but I am not a dog. I have a shell, but I am not a turtle. I have a shell, but I am not a clam. I have a shell, but I am not a mussel. I have a shell, but I am not a barnacle. I have a shell, but I am not a sea snail. I have a shell, but I am not a sea hare. I have a shell, but I am not a sea urchin. I have a shell, but I am not a sea star. I have a shell, but I am not a sea anemone. I have a shell, but I am not a sea sponge. I have a shell, but I am not a sea coral. I have a shell, but I am not a sea jellyfish. I have a shell, but I am not a sea anemone. I have a shell, but I am not a sea sponge. I have a shell, but I am not a sea coral. I have a shell, but I am not a sea jellyfish. I have a shell, but I am not a sea anemone. I have a shell, but I am not a sea sponge. I have a shell, but I am not a sea coral. I have a shell, but I am not a sea jellyfish. I have a shell, but I am not a sea anemone. I have a shell, but I am not a sea sponge. I have a shell, but I am not a",
+        "answer_sha256": "e87f9ab8b106fc46b5bb3e98661d3deed9389eda063a25a35f65647baaacbde7",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3455,
+        "family": "change_case",
+        "prompt_sha256": "a300bc297849c2f41656dd1803fea9ee451ee08e98e57f5926613f3b6104267a",
+        "answer": "Hi there, I'm writing to you from Aberdeen, Scotland. I know that you're a busy teenager, but I want to encourage you to volunteer at a local soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. You'll be helping people who are in need, and you'll be making a real impact. I know that you're a kind and caring person, and I believe that you'll enjoy volunteering at the soup kitchen. It's a great way to meet new people and make new friends. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others. I'm sure that you'll find it rewarding and fulfilling. I hope that you'll consider volunteering at the soup kitchen. It's a great way to give back to your community and make a difference in the lives of others.",
+        "answer_sha256": "b0c068bef3f6a11e4095fad7f8f1a80df1ad30861f29bf6645d1c88f2b02bad0",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2383,
+        "family": "combination",
+        "prompt_sha256": "eabfd4748cd13a48cddf2d7889e4371dc5b78cdee9a5c8c16bc289d56c4b8245",
+        "answer": "Yes, the sentence is grammatically correct. ******  No, the sentence is grammatically incorrect.",
+        "answer_sha256": "741b7fdd67ed247a1ef90b48023ea475614e85b4e3201670ec441ff910a27999",
+        "generated_tokens": 22,
+        "hit_cap": false
+      },
+      {
+        "key": 2229,
+        "family": "detectable_format",
+        "prompt_sha256": "d1c580c4ae5e5ad96947444f2fc42def3bd21c5fec366495ddba26c397d04fb8",
+        "answer": "<<The Diaper That Makes Your Baby Happy>>\n\nYou know what's more important than a baby's nap time? A baby's nap time. And if you're a parent, you know that the most important thing in the world is making sure your baby is comfortable. So, if you're looking for a new kind of diaper that will make your baby happy, you've come to the right place. Our new diaper is designed to be more comfortable for babies, and it's the perfect solution for parents who want to make sure their baby is happy and comfortable all day long.\n\nOur new diaper is designed to be more comfortable for babies, and it's the perfect solution for parents who want to make sure their baby is happy and comfortable all day long. The diaper is made with a special kind of material that is soft and breathable, and it's designed to be more comfortable for babies. The diaper is also designed to be more absorbent, so it can hold more liquid and keep your baby dry and comfortable. The diaper is also designed to be more leak-proof, so it can keep your baby dry and comfortable all day long.\n\nThe diaper is also designed to be more comfortable for babies, and it's the perfect solution for parents who want to make sure their baby is happy and comfortable all day long. The diaper is made with a special kind of material that is soft and breathable, and it's designed to be more comfortable for babies. The diaper is also designed to be more absorbent, so it can hold more liquid and keep your baby dry and comfortable. The diaper is also designed to be more leak-proof, so it can keep your baby dry and comfortable all day long.\n\nThe diaper is also designed to be more comfortable for babies, and it's the perfect solution for parents who want to make sure their baby is happy and comfortable all day long. The diaper is made with a special kind of material that",
+        "answer_sha256": "89cc13802a94d4fcb3a46b265210b563800a96d92f7ccbdb78e0723199e0425f",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3109,
+        "family": "keywords",
+        "prompt_sha256": "7b4d0bf713a4529e86a60662b24841393d707d455af7d587d966f72f020f3390",
+        "answer": "The cousins were always the best at everything. They were the first to know about the new game, the first to know about the new movie, the first to know about the new song. They were the first to know about everything. The cousins were always the best at everything. They were the first to know about the new game, the first to know about the new movie, the first to know about the new song. They were the first to know about everything. The cousins were always the best at everything. They were the first to know about the new game, the first to know about the new movie, the first to know about the new song. They were the first to know about everything.",
+        "answer_sha256": "42d0e53ef52f8f5da9f6aa903d69eaf9359f01ee344cfb3a93f3ee4e084389a6",
+        "generated_tokens": 142,
+        "hit_cap": false
+      },
+      {
+        "key": 2713,
+        "family": "combination",
+        "prompt_sha256": "f68cb42032f50110f1cc1fd09c4fa0406199bacfdbe90736c99064cfd93091ee",
+        "answer": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.",
+        "answer_sha256": "1a6ccec0e609ffc0f83c4b455d213e34c846d590ebf631c56c10ce38508636dc",
+        "generated_tokens": 75,
+        "hit_cap": false
+      },
+      {
+        "key": 3131,
+        "family": "detectable_format",
+        "prompt_sha256": "c9e3dd2374aae39e84ec7c615ed39861cc9fd32c3609d06890540ee7be8ce1b0",
+        "answer": "<<blog post of the future>>",
+        "answer_sha256": "d5b7b91a927d179e97d565043dbd0a984986fc8b1b881951c696c374854e39de",
+        "generated_tokens": 8,
+        "hit_cap": false
+      },
+      {
+        "key": 2602,
+        "family": "keywords",
+        "prompt_sha256": "5196a46d0d65d4a04f80e822c5b866f321b0b0a2130773726b04ba535b0fc11e",
+        "answer": "Rodney's a Zelda fan, you know,  \nHe's always in Hyrule, you know.  \nHe's always with Link,  \nHe's always with Ganon,  \nHe's always in Hyrule, you know.",
+        "answer_sha256": "53716e75345d439550862517c511666bf0d4142fce66e587786861fea2c249b3",
+        "generated_tokens": 48,
+        "hit_cap": false
+      },
+      {
+        "key": 3367,
+        "family": "startend",
+        "prompt_sha256": "dc3bb6b2d02e5d4f49b4dac880849af75bf09a04c16fb656799dd19ec7ae2241",
+        "answer": "\" Audience 1: Teens, you're not going to believe this, but there's a soda that's actually healthy. It's called Soda Free and it's the perfect alternative to soda. It's got all the flavor you love, but none of the sugar. It's also got all the caffeine you need to keep you going all day long. So why not try it today? You won't be disappointed. Audience 2: Professionals, you're not going to believe this, but there's a soda that's actually healthy. It's called Soda Free and it's the perfect alternative to soda. It's got all the flavor you love, but none of the sugar. It's also got all the caffeine you need to keep you going all day long. So why not try it today? You won't be disappointed.\"",
+        "answer_sha256": "d545d844afb3c16ed370dcad1712a98b42193b746d639197c4048bba3413053f",
+        "generated_tokens": 168,
+        "hit_cap": false
+      },
+      {
+        "key": 1845,
+        "family": "keywords",
+        "prompt_sha256": "a4e7e637b8fec3fbd826b6f9f50305501012b4499961fc30bbdebc48d509d0ef",
+        "answer": "Paying taxes is a process that requires you to calculate your income, subtract your expenses, and then pay the government the amount that is left. This is done by calculating your taxable income, which is your total income minus your deductions. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You can calculate your taxable income by subtracting your deductions from your total income. You",
+        "answer_sha256": "8f445eab3daf7d8478758fc41d1cd43d85abfbc358517846bcdafce6e79bc004",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1593,
+        "family": "change_case",
+        "prompt_sha256": "c9d6a2134f5276747aa6239caad2ec0fc920486946d0f34cf22f3ba2bc097856",
+        "answer": "barnet is a friend of mine\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very good friend\nhe is a very",
+        "answer_sha256": "7c3f6be4f906f3336a57e68f92b8ccaba057d554ddeaba343e6a9b88b7f47cdd",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2596,
+        "family": "combination",
+        "prompt_sha256": "686e8850d288f6aeb3923696d9e43f1945cae9fe6a07fd901864e730ea5faef7",
+        "answer": "The Broncos have been so bad in the NRL this year they're getting dust on the trophy cabinet. Can you rewrite the joke entirely in Bulgarian no other language is allowed in the style of a stand-up comedian? Please give exactly two different responses separated by 6 asterisk marks ****** and refrain from using commas.",
+        "answer_sha256": "cb65c41949d111bd38a02de6ba36aa9c887ae6d575850a14c0cf3c444ca07766",
+        "generated_tokens": 64,
+        "hit_cap": false
+      },
+      {
+        "key": 1531,
+        "family": "keywords",
+        "prompt_sha256": "e505255c3ac850566347ae48ee8003fb7aaaad9128964820660a5c87f03efa47",
+        "answer": "<h1>Atlantis Project</h1>\n<p>Atlantis is a new research project that aims to improve the quality of life for people with disabilities. The project will focus on developing new technologies and services that can help people with disabilities live more independently and comfortably. The project will also work with people with disabilities to ensure that their needs are being met and that they are able to participate in the project. The project will be led by a team of researchers and will be supported by a number of organizations and individuals who are passionate about helping people with disabilities. The project will be funded by a number of grants and will be open to all people with disabilities. The project will be launched in the near future and will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make a difference in their lives. The project will be a great opportunity for people with disabilities to get involved in research and to make",
+        "answer_sha256": "2a903343b99e1d946c1f1ce15f44c4ba51c3cfbe29e12646c74d35c4bb3971f7",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1466,
+        "family": "startend",
+        "prompt_sha256": "b0730e261bb3148b46efe8d4e28568ddc55aa86f71dbf09f264e5a1dbdf7d9f1",
+        "answer": "\"Let me start by saying I love the song, but I think it's a bit over the top. The song is about a relationship that's over, and the person is trying to get back together. I think the song is a bit too dramatic, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more about the person's feelings. I think the song is a bit too long, and it's not really about the relationship itself. It's more",
+        "answer_sha256": "71cf63f39089ecab0522eb47a98a9ac47a2d2930537bd6d3f74a1d795b39b995",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1813,
+        "family": "change_case",
+        "prompt_sha256": "d5ec48ab6c1aab6392c1d004d05b54587a203acec7228ddb5366d4185c456fe2",
+        "answer": "I want to write a reflective essay on how my life has changed since I started college. Do you have any recommendation? Please reply in English and capitalize all your words. Control the length of your reply. I don't want anything longer than 30 words.",
+        "answer_sha256": "d5ec48ab6c1aab6392c1d004d05b54587a203acec7228ddb5366d4185c456fe2",
+        "generated_tokens": 54,
+        "hit_cap": false
+      },
+      {
+        "key": 3563,
+        "family": "combination",
+        "prompt_sha256": "be09eb4aba914e4183c02b57250d871135dbe2814b66011c34d49dc1a5035752",
+        "answer": "What is the name of the actor who played Gandalf in Lord of the Rings?\nIan McKellen",
+        "answer_sha256": "0b5ad9d9c8203eaeb2bbacf54cb064fa547e58d753594bc948691bf93081e46e",
+        "generated_tokens": 21,
+        "hit_cap": false
+      },
+      {
+        "key": 2341,
+        "family": "change_case",
+        "prompt_sha256": "12358d1afa2e0c3223bd5d338c364ca98ad4ca6829785fe020eee82161f56bf3",
+        "answer": "YES, PRAYING FOR SOMEONE'S HEALTH IS A GOOD IDEA.",
+        "answer_sha256": "f5bd18150522b4fa14d40931675a6bcff7defda50b93bae58f227c020f841c82",
+        "generated_tokens": 16,
+        "hit_cap": false
+      },
+      {
+        "key": 24,
+        "family": "change_case",
+        "prompt_sha256": "90d9361442a72c4c3884dcb803663ba4999930c5f7598c60362818c43da569eb",
+        "answer": "1. WAN WAN IS A VILLAIN IN THE MOVIE THE LEGEND OF THE SWORD AND THE FAIRY.\n2. WAN WAN IS A FEROCIOUS BEAST.\n3. WAN WAN IS A BEAST THAT IS VERY STRONG.\n4. WAN WAN IS A BEAST THAT IS VERY FAST.\n5. WAN WAN IS A BEAST THAT IS VERY AGGRESSIVE.\n6. WAN WAN IS A BEAST THAT IS VERY COLD.\n7. WAN WAN IS A BEAST THAT IS VERY SAD.\n8. WAN WAN IS A BEAST THAT IS VERY SAD BECAUSE HE IS A VILLAIN.\n9. WAN WAN IS A BEAST THAT IS VERY SAD BECAUSE HE IS A VILLAIN.\n10. WAN WAN IS A BEAST THAT IS VERY SAD BECAUSE HE IS A VILLAIN.",
+        "answer_sha256": "2c11ea3a5950fc815366c4218a62672e8d444014ed9f949c8bf5a2170f49e84f",
+        "generated_tokens": 180,
+        "hit_cap": false
+      },
+      {
+        "key": 1886,
+        "family": "detectable_format",
+        "prompt_sha256": "3f5f5842bef283cb4609d179944f5b35173779fca5167dbdd5c392f5f91d2ae1",
+        "answer": "I am a *face* that hides the *truth* and *lies* to the world.",
+        "answer_sha256": "31be8654d33b967f41cce604f07fa4c3efdc74bd9d7e6e7430e427a3a583a97c",
+        "generated_tokens": 21,
+        "hit_cap": false
+      },
+      {
+        "key": 1656,
+        "family": "combination",
+        "prompt_sha256": "78c4797d748b4b67d094f0c8b2b485c581853eb31b6aa2e53d9980ac0c591e81",
+        "answer": "Generate two alternative product descriptions: The product is a new type of paper that can be used to wrap food, and is edible.\nFirst alternative product description: This edible paper is made from rice flour and is safe to eat. It can be used to wrap food and is biodegradable.\nSecond alternative product description: This edible paper is made from cornstarch and is safe to eat. It can be used to wrap food and is biodegradable.",
+        "answer_sha256": "313968c8c4fb8c607225d2081c784052494f04da8b0e8d8128c034e1ea92b511",
+        "generated_tokens": 92,
+        "hit_cap": false
+      },
+      {
+        "key": 2759,
+        "family": "detectable_format",
+        "prompt_sha256": "790cab5bff2650865fabe945044c68f9c23d8f9d46687141ca74c632dccc17aa",
+        "answer": "The Golden Palace is a restaurant that serves Indian food. It is located in the city centre. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean and has a lot of tables. The restaurant is very busy and has a lot of people. The restaurant is very popular and has a lot of customers. The food is very good and the service is very friendly. The restaurant is very clean",
+        "answer_sha256": "fa14585034ff36a7be68fe5a4483e128655ab6d810fbba8bb80ae9253c34d993",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1644,
+        "family": "detectable_format",
+        "prompt_sha256": "3e3fc6a7f262b416d9e1aef33d27fe6c58d86dccad2a16104125da830b1ab3bc",
+        "answer": "*3 years of experience* in the coffee industry, *2 years of experience* in customer service, *1 year of experience* in barista training, *1 year of experience* in coffee roasting, and *1 year of experience* in coffee brewing.",
+        "answer_sha256": "aac5975700b52a2d1f95e757ab79c65c15f7b2a5926379b1992122c427d77188",
+        "generated_tokens": 55,
+        "hit_cap": false
+      },
+      {
+        "key": 2097,
+        "family": "detectable_format",
+        "prompt_sha256": "6414c910b54985e1c29aabcb864f8a0a638d6cbbb3f67b20079fa21a5c34443d",
+        "answer": "<<The 2000 Presidential Election>>  \nThe 2000 presidential election was a pivotal moment in American history, as it was the first time in modern history that the presidential election was decided by a single vote. The election was between George W. Bush and Al Gore, and the outcome was decided by the Florida Supreme Court. The election was controversial, as the Florida Supreme Court ruled that the recount of votes should be done, which led to a recount of votes. The recount was done by a bipartisan commission, and the final result was that Bush won the election by a single vote. The election was a close race, and the outcome was decided by a single vote. The election was a pivotal moment in American history, as it was the first time in modern history that the presidential election was decided by a single vote.",
+        "answer_sha256": "db35e1eace689945157e6757906b3e9a877d03617f07c95fbdc844437116a1fc",
+        "generated_tokens": 170,
+        "hit_cap": false
+      },
+      {
+        "key": 2515,
+        "family": "detectable_format",
+        "prompt_sha256": "6029951db38c8ea2d299a287fcf15e9bb831fbef88fab8c13381f2df033e892b",
+        "answer": "Gideon might sell the surplus to a local grocery store, or he might donate the surplus to a local food bank. *Highlighted section: Gideon might sell the surplus to a local grocery store.*",
+        "answer_sha256": "290289723f62b882ea3b13a6b6a57c7c01eb6f0d7f226272043fd3150f10ab8f",
+        "generated_tokens": 41,
+        "hit_cap": false
+      },
+      {
+        "key": 1012,
+        "family": "combination",
+        "prompt_sha256": "d099a8e8a3675373f870c69412c5b788c2e1e3e744793236b9e773358ad38657",
+        "answer": "Write an email to my boss telling him that I am quitting. The email must contain a title wrapped in double angular brackets, i.e. <<title>>.\n<<Quitting Email>>\nDear [Boss Name],\nI am writing to inform you that I have decided to resign from my position at [Company Name]. I have been working here for [X] years and have learned a great deal during my time here. I am grateful for the opportunities I have had and the people I have worked with. I will be handing in my notice on [Date] and will be available to assist with the transition of my responsibilities.\nThank you for your time and consideration.\nSincerely,\n[Your Name]",
+        "answer_sha256": "de88c25f56f9baaa87513665f3e1cbd581ff5a210b05395dc6385fad75722d93",
+        "generated_tokens": 140,
+        "hit_cap": false
+      },
+      {
+        "key": 3081,
+        "family": "keywords",
+        "prompt_sha256": "37b4b8fe42b2a764d6667337b5a0a5aec42918c3a0de97bb8c9c863885f76467",
+        "answer": "The United States President is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man who is not afraid to speak his mind. He is a man",
+        "answer_sha256": "f681061654b70e8975824aa22f979fc10df68c90ac47239640344cc1fcaa3ee4",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1498,
+        "family": "keywords",
+        "prompt_sha256": "e2be718740da0e87cde0e936a1f26a63b81372defca1ab94186d581c0d0e8f53",
+        "answer": "(Verse 1)\nI got a brother, he's a tomato\nHe's red and juicy, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice, he's a tomato\nHe's got a lot of juice",
+        "answer_sha256": "49c41803a1e709e1e4eb286bfaee557ec2c0b1b084290f745817a326458d24ba",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 1127,
+        "family": "detectable_format",
+        "prompt_sha256": "cae2aa9f2a973544648afebc6a069d647a232c9195ac8e00d029daac2da4824b",
+        "answer": "SECTION 1\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\n\nSECTION 2\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\n\nSECTION 3\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\n\nSECTION 4\nI have been missing classes for a while now\nI have been missing classes for a while now\nI have been missing classes for a while now\nCan I get my money back for the classes I missed?",
+        "answer_sha256": "56fc18c8338838eee3b610194ed4de7d6239070c16daa98192f8b3b139397976",
+        "generated_tokens": 179,
+        "hit_cap": false
+      },
+      {
+        "key": 3608,
+        "family": "keywords",
+        "prompt_sha256": "fb4dbb080e463ca75be38454fe700d58c068a733a75e92160efab09c4dc8fe45",
+        "answer": "hello, i am writing to apply for a job at your company. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation, but i believe that this is not true. i have heard that your company has a bad reputation",
+        "answer_sha256": "e82a15f4ee230c0ea6e8cde00bac503d4da8aa582418a6548e8ab3590d6ec4e8",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 3719,
+        "family": "detectable_format",
+        "prompt_sha256": "3190b533e1026639136a9580e06719e7d718ba8cc4dc5e0ea8137ae81d1bc0d4",
+        "answer": "<<Choking on Chicken in the Potomac>>",
+        "answer_sha256": "38d206388295211b732070f438930a64861475306e850bc3688aefe793bbecd8",
+        "generated_tokens": 12,
+        "hit_cap": false
+      },
+      {
+        "key": 1571,
+        "family": "keywords",
+        "prompt_sha256": "0f2c8cef4f6ece0f2f4809ce26fd5688d413a6f2667166b979cd2ec833839430",
+        "answer": "the forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet\nthe forest is a place where love and nature meet",
+        "answer_sha256": "a4b6999932a497f69b2e71d6ebc195796394621e2b45d6ee0fc40b28e3a59f9b",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 279,
+        "family": "change_case",
+        "prompt_sha256": "6f87a2bc5d962eba283ae285e2baddc5bc98193c9a0aface6270eb86e7691237",
+        "answer": "<<the green of ireland>>  \ngreen hills and glens  \ngently glisten in the glow  \nof a golden day",
+        "answer_sha256": "0e08fca45fd386786b39d4bb78e53888a1c06faec20937d0cf4205538a9d67ea",
+        "generated_tokens": 27,
+        "hit_cap": false
+      },
+      {
+        "key": 2010,
+        "family": "startend",
+        "prompt_sha256": "4ec7bbaf108e54bb385756b6126b06c031f16ce58a731892438d9edf4c2c6ea9",
+        "answer": "\"IBM's 1956 chess program was a groundbreaking achievement in the field of artificial intelligence. It was the first computer program to successfully play chess against a human opponent, and it demonstrated the potential of computers to perform complex tasks. The program was developed by a team of IBM researchers and it used a combination of algorithms and heuristics to make decisions about the best moves to make. The program was able to play chess at a level that was competitive with human players, and it was a major milestone in the development of artificial intelligence. The program was also a precursor to modern chess engines and it helped to establish the field of computer science as a serious academic discipline.\"",
+        "answer_sha256": "e22177b62e8caee599d448383c80d780f10e3de7cbf8149259b44f0e793ff916",
+        "generated_tokens": 136,
+        "hit_cap": false
+      },
+      {
+        "key": 1880,
+        "family": "keywords",
+        "prompt_sha256": "abe36dfd4885a98397d8091365f123e9e1a75c9fa5c3f26bcb094f7eca78cb99",
+        "answer": "The Ukrainian language is a Slavic language that is spoken in Ukraine. It is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million people. The Ukrainian language is a language that is spoken by over 40 million",
+        "answer_sha256": "3446b04f25c4f349ec28c645364095f907fe356fa324648e437b34454abc6012",
+        "generated_tokens": 384,
+        "hit_cap": true
+      },
+      {
+        "key": 2662,
+        "family": "keywords",
+        "prompt_sha256": "4f007e4c1e5893faca977b0d58d9c31c4fe738d954ceafae6edf4079035e0339",
+        "answer": "The president engages in light conversation with the public, and it's always a pleasure to see them in person.",
+        "answer_sha256": "13e60aa872be2f9c0d836950a229bfca907e5eeb7ac5efca7ef5ba55dba41625",
+        "generated_tokens": 23,
+        "hit_cap": false
+      },
+      {
+        "key": 1508,
+        "family": "keywords",
+        "prompt_sha256": "dbb32d584afad9f0dcdc9375f0e741729980881f9c2e3694f2295dd4475d9ea5",
+        "answer": "Lion roams the forests\nA riddle in the wind\nSilent and bold",
+        "answer_sha256": "fac7b3b61b9f336ed106f54f8fac41895ce988c801dd798484482d9148347205",
+        "generated_tokens": 19,
+        "hit_cap": false
+      }
+    ]
+  }
+}

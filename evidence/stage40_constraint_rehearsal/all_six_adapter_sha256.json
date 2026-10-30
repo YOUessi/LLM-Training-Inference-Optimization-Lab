@@ -1,0 +1,37 @@
+{
+  "all_six_have_local_verified_blobs": true,
+  "only_selected_adapter_published_if_nonbase": false,
+  "original_artifacts_retained_on_tang": "/home/you/projects/llmopt_stage40_v2_frozen/results/stage40_real_constraint_rehearsal",
+  "by_candidate": {
+    "mix00_seed4011": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "06d2fd00bc308d11d32aac8bc8ee45596858101bf2846b9282ff10f296edc649",
+      "adapter_model.safetensors": "d5aaae148e28111d2b9ea7162ac0262b41ecfbffca0623c5e61366f6c552658e"
+    },
+    "mix25_seed4011": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "06d2fd00bc308d11d32aac8bc8ee45596858101bf2846b9282ff10f296edc649",
+      "adapter_model.safetensors": "e24bfca21542bfd87cf402645309ffc8f905cf15555747811acfd8b3b3fd80bf"
+    },
+    "mix50_seed4011": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+      "adapter_model.safetensors": "9e29a5d5542a59a30b2588e4a89b8e1fa5612e690194a0e2478d84e5ddb6d855"
+    },
+    "mix00_seed4027": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "06d2fd00bc308d11d32aac8bc8ee45596858101bf2846b9282ff10f296edc649",
+      "adapter_model.safetensors": "469cff59b63803af6d9c3937c2c7fef72657445abca7735cf68f246d6358e651"
+    },
+    "mix25_seed4027": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+      "adapter_model.safetensors": "d5f646edca16747cbe2b8ea7737383f477c6ed7afd120853a95ef559fa82be11"
+    },
+    "mix50_seed4027": {
+      "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "adapter_config.json": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+      "adapter_model.safetensors": "cf22eadff1cd6e11b33bac3464f29dfb26936881b990fe49abad40157ba73676"
+    }
+  }
+}

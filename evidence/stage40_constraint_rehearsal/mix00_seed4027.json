@@ -1,0 +1,64 @@
+{
+  "status": "measured",
+  "kind": "stage40_deterministic_dolly_constraint_rehearsal_qwen3_nf4",
+  "config": {
+    "mix": 0.0,
+    "seed": 4027,
+    "rank": 16,
+    "training_epochs": 2,
+    "optimizer_updates": 512,
+    "source_exposures": 1024,
+    "batch_accumulation": 2,
+    "optimizer": "AdamW",
+    "lr": 0.00015,
+    "compute_precision": "BF16"
+  },
+  "format_source_sha256": "8a179a69f80dce3a137206d5bc1b4057041998145403f561ebb37fa1896a999b",
+  "human_source_dataset_sha256": "cc1357a27303dafdbdb57a2fedf3026ab2c4d25ff62a3ce55fe20b09d1fe670a",
+  "baseline_validation": {
+    "count": 96,
+    "target_tokens": 7087,
+    "assistant_ce_nats": 2.9525444132662364,
+    "assistant_perplexity": 19.154629069192996,
+    "mean_record_loss": 4.0177808199077845
+  },
+  "per_epoch": [
+    {
+      "epoch": 1,
+      "unique_source_records": 512,
+      "format_reference_demonstrations_used": 0,
+      "format_distribution": {
+        "raw": 512
+      },
+      "validation_ce": 1.777342351458108,
+      "validation_ppl": 5.914117867359088
+    },
+    {
+      "epoch": 2,
+      "unique_source_records": 512,
+      "format_reference_demonstrations_used": 0,
+      "format_distribution": {
+        "raw": 512
+      },
+      "validation_ce": 1.7937334620576344,
+      "validation_ppl": 6.011855654616302
+    }
+  ],
+  "best_epoch_by_dolly_validation_only": 1,
+  "best_validation_ce": 1.777342351458108,
+  "speed": {
+    "median_step_ms_excluding_first3_per_epoch": 434.02962703839876,
+    "samples_per_second_excluding_first3_per_epoch": 4.491355545502675,
+    "peak_allocated_gib": 12.938506126403809
+  },
+  "adapter_sha256": {
+    "README.md": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+    "adapter_config.json": "06d2fd00bc308d11d32aac8bc8ee45596858101bf2846b9282ff10f296edc649",
+    "adapter_model.safetensors": "469cff59b63803af6d9c3937c2c7fef72657445abca7735cf68f246d6358e651"
+  },
+  "caveats": [
+    "Derived format examples are algorithmically transformed from human-written Dolly responses, no human validation of new form",
+    "All mixes maintain same original source identity exposures but assistant targets/contexts differ",
+    "Single seed and public Dolly may overlap pretrained Qwen; final IFEval unseen source held out for independent evaluation"
+  ]
+}

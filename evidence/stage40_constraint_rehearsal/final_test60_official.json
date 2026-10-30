@@ -1,0 +1,1669 @@
+{
+  "status": "measured",
+  "kind": "stage40_format_replay_unseen60_ifeval_test",
+  "dev_selection_sha256": "fd5bbbc4c46503aa519abccae9c4ab7ce860b04635e5193d77a074d687638f9a",
+  "test60_sha256": "6a80afcf02a6405dad58ea8895f8cd5c57f8b6047833ea77667c9425a1a43281",
+  "dev25_disjoint": true,
+  "prior240_ifeval_keys_excluded": true,
+  "selected": "base",
+  "selected_adapted": false,
+  "tested_labels": [
+    "base",
+    "old_full"
+  ],
+  "full_official_scores": {
+    "base": {
+      "count": 60,
+      "strict_met_count": 47,
+      "strict_prompt_fraction": 0.7833333333333333,
+      "loose_prompt_fraction": 0.8,
+      "strict_instruction_fraction": 0.8478260869565217,
+      "per_tier": {
+        "change_case": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "combination": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        },
+        "detectable_format": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        },
+        "keywords": {
+          "count": 12,
+          "strict_accuracy": 0.6666666666666666
+        },
+        "startend": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        }
+      },
+      "per_case": [
+        {
+          "key": 2728,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2195,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1332,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1446,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1314,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2247,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 334,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1516,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 163,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3071,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1730,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 288,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2605,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2216,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "key": 332,
+          "tier": "combination",
+          "strict": false,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2268,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3263,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2465,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2063,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3409,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3629,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3709,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2583,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2889,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3407,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 3455,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2383,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2229,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3109,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2713,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3131,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 2602,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3367,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1845,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1593,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2596,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1531,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1466,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1813,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3563,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2341,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 24,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1886,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1656,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2759,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1644,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2097,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2515,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1012,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3081,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1498,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1127,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3608,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3719,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1571,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 279,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2010,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1880,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2662,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1508,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        }
+      ],
+      "hit_cap_count": 15,
+      "mean_answer_tokens": 223.16666666666666,
+      "hit_cap_fraction": 0.25
+    },
+    "old_full": {
+      "count": 60,
+      "strict_met_count": 38,
+      "strict_prompt_fraction": 0.6333333333333333,
+      "loose_prompt_fraction": 0.6333333333333333,
+      "strict_instruction_fraction": 0.717391304347826,
+      "per_tier": {
+        "change_case": {
+          "count": 12,
+          "strict_accuracy": 0.5
+        },
+        "combination": {
+          "count": 12,
+          "strict_accuracy": 0.8333333333333334
+        },
+        "detectable_format": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        },
+        "keywords": {
+          "count": 12,
+          "strict_accuracy": 0.3333333333333333
+        },
+        "startend": {
+          "count": 12,
+          "strict_accuracy": 0.75
+        }
+      },
+      "per_case": [
+        {
+          "key": 2728,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2195,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1332,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1446,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1314,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 2247,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 334,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1516,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 163,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3071,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1730,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 288,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2605,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2216,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "key": 332,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2268,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3263,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 2465,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2063,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3409,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3629,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3709,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2583,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 2889,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3407,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 3455,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2383,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2229,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3109,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2713,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3131,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            false
+          ]
+        },
+        {
+          "key": 2602,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 3367,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 1845,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1593,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2596,
+          "tier": "combination",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 1531,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1466,
+          "tier": "startend",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 1813,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 3563,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2341,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 24,
+          "tier": "change_case",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1886,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1656,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2759,
+          "tier": "detectable_format",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1644,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2097,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 2515,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1012,
+          "tier": "combination",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3081,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1498,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1127,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        },
+        {
+          "key": 3608,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            true
+          ],
+          "loose_instructions": [
+            false,
+            true
+          ]
+        },
+        {
+          "key": 3719,
+          "tier": "detectable_format",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1571,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            true,
+            false
+          ],
+          "loose_instructions": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "key": 279,
+          "tier": "change_case",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            true,
+            false,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "key": 2010,
+          "tier": "startend",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true
+          ],
+          "loose_instructions": [
+            true
+          ]
+        },
+        {
+          "key": 1880,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false,
+            false
+          ],
+          "loose_instructions": [
+            false,
+            false
+          ]
+        },
+        {
+          "key": 2662,
+          "tier": "keywords",
+          "strict": false,
+          "loose": false,
+          "strict_instructions": [
+            false
+          ],
+          "loose_instructions": [
+            false
+          ]
+        },
+        {
+          "key": 1508,
+          "tier": "keywords",
+          "strict": true,
+          "loose": true,
+          "strict_instructions": [
+            true,
+            true
+          ],
+          "loose_instructions": [
+            true,
+            true
+          ]
+        }
+      ],
+      "hit_cap_count": 22,
+      "mean_answer_tokens": 185.88333333333333,
+      "hit_cap_fraction": 0.36666666666666664
+    }
+  },
+  "paired_stratified_CIs_selected_minus": {
+    "base": [
+      0,
+      0
+    ],
+    "old_full": [
+      0.03333333333333333,
+      0.26666666666666666
+    ]
+  },
+  "limitations": [
+    "Only 60 untouched IFEval examples from five instruction categories, 240 observed previous keys excluded",
+    "SFT constraint targets are synthetically transformed Dolly answers, not human annotated",
+    "Official constraint adherence on source subset is not factual/safety quality",
+    "One Qwen3-8B base and two training seeds; conditional bootstraps not population-level significance",
+    "No candidate was selected based on the final60; original base fallback enforced if dev fails"
+  ]
+}
