@@ -1,0 +1,3029 @@
+{
+  "status": "measured",
+  "kind": "stage44_external_IFBench60_official_strict_loose_OOD",
+  "official_IFBench_commit": "1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d",
+  "source_original_sha256": "a2bf7b8e7ed11d39c65b4ec781da8b99663ed0121f97033d70fcecb61f8a9d85",
+  "selected_input_sha256": "7f08bf6be6f478ded1ebd4b075b21ea5412dd5590ab3c60b04154313201d48a5",
+  "original_generation_sha256": "0ccaff23f0299599e061523c7c6db01b7e981fd6697637a9a7c53d747076a0e2",
+  "count": 60,
+  "verifier_count": 60,
+  "model_counts": 3,
+  "aggregated": {
+    "base": {
+      "strict_correct": 19,
+      "strict_prompt_accuracy": 0.31666666666666665,
+      "loose_prompt_accuracy": 0.31666666666666665,
+      "strict_instruction_accuracy": 0.3333333333333333,
+      "hit_output_cap_fraction": 0.36666666666666664,
+      "mean_output_tokens": 253.96666666666667
+    },
+    "lora_sft": {
+      "strict_correct": 7,
+      "strict_prompt_accuracy": 0.11666666666666667,
+      "loose_prompt_accuracy": 0.15,
+      "strict_instruction_accuracy": 0.12,
+      "hit_output_cap_fraction": 0.25,
+      "mean_output_tokens": 167.03333333333333
+    },
+    "request_router": {
+      "strict_correct": 18,
+      "strict_prompt_accuracy": 0.3,
+      "loose_prompt_accuracy": 0.3,
+      "strict_instruction_accuracy": 0.32,
+      "hit_output_cap_fraction": 0.36666666666666664,
+      "mean_output_tokens": 254.18333333333334
+    }
+  },
+  "first_constraint_family_pass_counts": {
+    "count": {
+      "base": 6,
+      "lora_sft": 2,
+      "request_router": 6
+    },
+    "custom": {
+      "base": 0,
+      "lora_sft": 1,
+      "request_router": 0
+    },
+    "format": {
+      "base": 8,
+      "lora_sft": 3,
+      "request_router": 7
+    },
+    "ratio": {
+      "base": 2,
+      "lora_sft": 1,
+      "request_router": 2
+    },
+    "repeat": {
+      "base": 0,
+      "lora_sft": 0,
+      "request_router": 0
+    },
+    "sentence": {
+      "base": 2,
+      "lora_sft": 0,
+      "request_router": 2
+    },
+    "words": {
+      "base": 1,
+      "lora_sft": 0,
+      "request_router": 1
+    }
+  },
+  "matched_3000_stratified_bootstrap_router_minus": {
+    "base": [
+      -0.05,
+      0
+    ],
+    "lora_sft": [
+      0.08333333333333333,
+      0.2833333333333333
+    ]
+  },
+  "preregistered_generalization_acceptance_checks": {
+    "strict_at_least_base_minus_2_of60": true,
+    "router_strict_greater_than_unscaled_sft": true,
+    "cap_rate_no_more_than_base_plus_0_05": true
+  },
+  "cross_benchmark_go": true,
+  "route_counts": {
+    "base": 58,
+    "lora_sft": 2
+  },
+  "public_anonymized_per_prompt_checks": [
+    {
+      "key": "162",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "5152cb7ec29d0c77c9a0ce10832e768f1023d5b950c2d04fe4182570a1f529fa",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 377,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 95,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 377,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "202",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "b5208a70f9775d210045a18cff453a58aa047b6b408fa67326d29d3ba12974dd",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 362,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 20,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 362,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "19",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "5061d14c2a401a2c0c81df6b455c0af1c8b04c63ab1dc0395b6769685d1ab64a",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 275,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 141,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 275,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "148",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "ef0fc87ed6253cb7bf6455fb467e22e9af46db0b80f598d26dfd205909ea2ab8",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 235,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 4,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 235,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "90",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "7e6c00fddeb146bc92ce6bdc900d57353b07768edcea46347046f809d5461f3c",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 67,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 67,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "188",
+      "families": [
+        "sentence",
+        "format"
+      ],
+      "prompt_sha256": "8a41c3aae29ebc268a1f102f73fa9d799dccc067158f6dab733d0baa27527e3b",
+      "route": "base",
+      "risk_score": 9,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 37,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "69",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "6527d2a6f5a8d393e3199ed55ac80aa05f90fece45ba2e6dff53ce7bce9bbda6",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 381,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "130",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "7a96faa037315724deb541cc289007d53aba782e07d32054b5a8ccc33dea6cfc",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 198,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": true,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 145,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 198,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "190",
+      "families": [
+        "sentence",
+        "format"
+      ],
+      "prompt_sha256": "dfe34e1a4bb138dca635f793cb5185b665f4dd92f5415d81d85d992772dceaea",
+      "route": "base",
+      "risk_score": 9,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 64,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "25",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "aa3c17fdf33a08440cc588f7b1df9cce20e9c11e9ae6a2fc483499100c9de2b4",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 144,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "198",
+      "families": [
+        "sentence",
+        "count"
+      ],
+      "prompt_sha256": "942d897af31ce492c35e7a6dcca5e9bdab9b14c47023b8fd250896eed2aef509",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true,
+            true
+          ],
+          "loose_per_instruction": [
+            true,
+            true
+          ],
+          "output_tokens": 123,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 131,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true,
+            true
+          ],
+          "loose_per_instruction": [
+            true,
+            true
+          ],
+          "output_tokens": 123,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "113",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "65163a7c0c2c8f62b027d258d1abac03c2d6b85aad617dd6aadba61213d46dcb",
+      "route": "lora_sft",
+      "risk_score": 1,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "43",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "ba20afdf9785d345934b092d0f7c77c514a680bbacf45ea65bf2e611ab7def75",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 33,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 47,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 33,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "124",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "b76327fdd7b562ed1e96a8e89c63f5fdb991a4c7153bc7411286b75eaf3f3c5b",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 199,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "298",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "797c4a90237de8c6ab2f66787d95a0b23ced7a4e65d3583f19de765ed290914a",
+      "route": "lora_sft",
+      "risk_score": 1,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 7,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 20,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 20,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "169",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "5236f96d2e3079ec8cfb61cff583fa6c6b191d8265e42cae74e8423221b824d0",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 38,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 43,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 38,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "11",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "6979eb1e3345df632f19a6f8b9e7777d7709ffeb9298044a327bfcf41320acf9",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 325,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 31,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 325,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "228",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "017e45d3a16e334899d87150ca0d30d7e023455f664b75694088f4e5aa116dbe",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": true,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "299",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "30ad83827a3e050f527e1abafee1a69c9dc1faaba5e2cc71dda9c7a7adef6a5f",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 83,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 83,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "282",
+      "families": [
+        "custom"
+      ],
+      "prompt_sha256": "50e68d0c7a30583db6ba60f04210bf0350dca43407b7cae89b62d5df4ff671dd",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 176,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "96",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "9cc46c449fe4f873bc129ddd34c15a01da71582a497cb326c3cd0314e1b58761",
+      "route": "base",
+      "risk_score": 9,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 211,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 88,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 211,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "32",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "fe5d7633aaf7872a11b0f688d18d03a829c07f6aa4da1530aad5bdd293ebc47f",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 79,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "221",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "376df008edb8b9d8b39e770b06d7a2f2a4cf9a087cb74d400d6cedb7cff8e41a",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 80,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "57",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "3c19e3b95beca0af4b6c2827b8a3e8b9c538a2b17373a77459e65fd1f63b5cea",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 57,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "118",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "44e8cbbaa9a0ca3a3105b533eac80771cf4f30674cdf3fd038888d90d6a117c3",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 173,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 209,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 173,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "200",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "0300bcf6a75ec283de2a0126b3237ab941641bbc5f3d5a82187c150a8fc44c2f",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "184",
+      "families": [
+        "sentence"
+      ],
+      "prompt_sha256": "4bfc2d5ce1447da6e86be95d67aed74d6384d76af51dbff99603399d1e0979cb",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 116,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "154",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "1c7092b321860ed8c89e53f5156ad9c47606e5001887dea094d04c349407e04d",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 78,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 38,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 78,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "218",
+      "families": [
+        "words",
+        "words"
+      ],
+      "prompt_sha256": "18f35a50d95b8efe2bb9f8ec4484905ca935a3397df51ed7b39e5e041faf7bd5",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 353,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 61,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 353,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "30",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "33f09791481efa1bb8fbed4b7f789f1a095c85a5adccd2cfb9f8a2e0b88d8f98",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "48",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "4e9e8f65d32d4850865d59a091c8b0b0aa17dd6d715cd88092e9d21a5281422f",
+      "route": "base",
+      "risk_score": 3,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "255",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "7eabea3b3a1e33f284e328eec831a87cd107427ea6c5f3682e2c32721037cc50",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 72,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 55,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 72,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "271",
+      "families": [
+        "words",
+        "count"
+      ],
+      "prompt_sha256": "80d7ca18758a81e28f718637a2b1f17d3a0ebeb23bd105c83c04344d3a95c28b",
+      "route": "base",
+      "risk_score": 6,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 92,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 66,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 92,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "159",
+      "families": [
+        "ratio",
+        "words"
+      ],
+      "prompt_sha256": "6717f69250d76ef71d7517882e3a3dae27c284ea425c52dca9bdb29d962fb53d",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 286,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 90,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 286,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "216",
+      "families": [
+        "words",
+        "words"
+      ],
+      "prompt_sha256": "05518ae926bda8d14a225ab5e5eaf412f833d70c107e301c34be85cbd4b7efb2",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 145,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "149",
+      "families": [
+        "ratio",
+        "sentence"
+      ],
+      "prompt_sha256": "3f8394844ecf56d472d3501b321f099ff1266d9314dc1aad9e6e9111debcbcfb",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 146,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            true
+          ],
+          "loose_per_instruction": [
+            false,
+            true
+          ],
+          "output_tokens": 146,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "215",
+      "families": [
+        "words",
+        "words"
+      ],
+      "prompt_sha256": "3f561ebe9440fd6179f812f0d635c70e306c0012d875e89c6b93b72f4e3e0188",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 374,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 68,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 374,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "62",
+      "families": [
+        "repeat"
+      ],
+      "prompt_sha256": "b6c7308dc185bbd7483fc237364d8fe26069854e2fef1bf52c09570b857610b5",
+      "route": "base",
+      "risk_score": 10,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 89,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 133,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 89,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "104",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "2c95f96539c0bc442b618162de8183f15b2aa9d5618165ffdd56f998c8b70526",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 3,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 2,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 3,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "276",
+      "families": [
+        "custom"
+      ],
+      "prompt_sha256": "f0ab3aef79d86bc51b874dd6d7748dbb91882d0832638fec38503c1c4f60e720",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 334,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "53",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "cfa715d700d44e0f5e8fa7de7abcd32ba32a897efe1d83fc1b0b804c33aa71f2",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 150,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 91,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 150,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "199",
+      "families": [
+        "sentence",
+        "count"
+      ],
+      "prompt_sha256": "2151e5bdc584a86a3acbb88a5e77c50afb3c30a88e8b6c48b1f73851d5eaaa67",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            true,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 356,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            true,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 356,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "217",
+      "families": [
+        "words",
+        "words"
+      ],
+      "prompt_sha256": "5fd7004ea51d1110bddc1ceb2d89084ecbda185edb5cba50cd2acfc396ff6cd1",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 14,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "213",
+      "families": [
+        "words",
+        "ratio"
+      ],
+      "prompt_sha256": "85c07bba8fb68e6cc145f7592201acffde155aec14bf031f6203411f4a7c0fad",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 149,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 25,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 149,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "197",
+      "families": [
+        "sentence",
+        "count"
+      ],
+      "prompt_sha256": "f6f8e2fa11c7876475af36540fa0c3e6284c1067a4de1996ba7901b7069afbce",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true,
+            true
+          ],
+          "loose_per_instruction": [
+            true,
+            true
+          ],
+          "output_tokens": 107,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true,
+            true
+          ],
+          "loose_per_instruction": [
+            true,
+            true
+          ],
+          "output_tokens": 107,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "92",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "99f23e6136b357c5fff155de3c0eb0a55ad8c9ed1ca8d91ea966be9da7ee812f",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 285,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 164,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 285,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "278",
+      "families": [
+        "custom"
+      ],
+      "prompt_sha256": "703078a03d163fa5de6611204fafecf4ac002d437e66342b85df708ca4f1f844",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 254,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 254,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "209",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "14b1bdc32bb0c55d947782a77a1cf601c1b82b948799a1a838363234404cc174",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 74,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 27,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 74,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "54",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "b657c502aa00de34b0998c4a123def48e54e7096df08eae013a79dd8e4cf4065",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 164,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "284",
+      "families": [
+        "repeat"
+      ],
+      "prompt_sha256": "0e23b72c527922540c91ba48d717fc8d2e526f45a394fa177c3c65e66660242c",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 371,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 371,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "136",
+      "families": [
+        "format",
+        "ratio"
+      ],
+      "prompt_sha256": "0185c939213f68a512b3b6b0b08877e05cfa7f171dfa9048a92074c430e9cb39",
+      "route": "base",
+      "risk_score": 9,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "283",
+      "families": [
+        "custom"
+      ],
+      "prompt_sha256": "aa6ef8467d4e942c4a819da3cb27ebf17da465420fd3a4808c44c97574559634",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 11,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "191",
+      "families": [
+        "sentence"
+      ],
+      "prompt_sha256": "106dfe2e715295399311e3c83c054d34f0b2f1fd0de3b7a35151165c040a954a",
+      "route": "base",
+      "risk_score": 8,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "177",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "d2b80ae670b36f35c1072a9a94283fc55396dfb7439449916caa70d9fdad6cb1",
+      "route": "base",
+      "risk_score": 10,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 129,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 51,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 129,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "285",
+      "families": [
+        "repeat"
+      ],
+      "prompt_sha256": "6af370306b8300e8ddfd9b8b75fa4a3a3025becb70cf89e59a92cf0656482240",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        }
+      }
+    },
+    {
+      "key": "88",
+      "families": [
+        "format",
+        "words"
+      ],
+      "prompt_sha256": "02a017d7d94d5711fc68322150b6c78f66b326c8e40ddb1ac6474f687878b49c",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            true,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 146,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false,
+            false
+          ],
+          "loose_per_instruction": [
+            false,
+            false
+          ],
+          "output_tokens": 384,
+          "hit_cap": true
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            true,
+            false
+          ],
+          "loose_per_instruction": [
+            true,
+            false
+          ],
+          "output_tokens": 146,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "211",
+      "families": [
+        "words"
+      ],
+      "prompt_sha256": "a07feeab44b9a8b96246bfc0abe16d77b5a74358444c1489b58eee91f50f002c",
+      "route": "base",
+      "risk_score": 5,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 77,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 21,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 77,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "170",
+      "families": [
+        "ratio"
+      ],
+      "prompt_sha256": "9f03bb9dc7366b04a0b77da1ea45d452927811ac3ab6b4675808afe1ff164eac",
+      "route": "base",
+      "risk_score": 2,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 49,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 54,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 49,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "39",
+      "families": [
+        "count"
+      ],
+      "prompt_sha256": "5f3c6a64685a780e0994851d471b1afdb27adaca7c8ca8859ea5cb3f821e2a20",
+      "route": "base",
+      "risk_score": 4,
+      "checks": {
+        "base": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 268,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 51,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": false,
+          "loose": false,
+          "strict_per_instruction": [
+            false
+          ],
+          "loose_per_instruction": [
+            false
+          ],
+          "output_tokens": 268,
+          "hit_cap": false
+        }
+      }
+    },
+    {
+      "key": "129",
+      "families": [
+        "format"
+      ],
+      "prompt_sha256": "62e4370c6e69cc506bc7cccc021fbb48ee190bc828c37678bbdd359600a9c7d5",
+      "route": "base",
+      "risk_score": 7,
+      "checks": {
+        "base": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 354,
+          "hit_cap": false
+        },
+        "lora_sft": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 269,
+          "hit_cap": false
+        },
+        "request_router": {
+          "strict": true,
+          "loose": true,
+          "strict_per_instruction": [
+            true
+          ],
+          "loose_per_instruction": [
+            true
+          ],
+          "output_tokens": 354,
+          "hit_cap": false
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "External-source IFBench60 is only a fixed 60-case subset of 300, no official full leaderboard score",
+    "Official strict/loose verifier checks explicit format, word ratio, sentence etc, not human correctness/production safety",
+    "Counterfactual model responses (both generated for each question) are kept locally to avoid republishing potentially private crowd text",
+    "No model weights/threshold optimized on IFBench60; reject generalization gate if absent",
+    "IFBench public source may still overlap original model pretraining",
+    "384 token cap may make some constraints infeasible; cap-hit frequency explicitly measured"
+  ]
+}

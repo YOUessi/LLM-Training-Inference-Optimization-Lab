@@ -1,0 +1,10 @@
+{
+  "private_original_generated_results_path": "/home/you/projects/llmopt_stage44_v2_score_frozen/results/stage44_corrected_official_scoring/local_private_full_generations.json",
+  "original_private_generation_sha256": "0ccaff23f0299599e061523c7c6db01b7e981fd6697637a9a7c53d747076a0e2",
+  "original_generation_source_sha": "0f2326222c634c4e3bdb640406494b92285246eb",
+  "corrected_official_score_source_sha": "3150f2980895ca07f028456bc50d36fc940b0b18",
+  "selected_original_IFBench60_source_sha256": "7f08bf6be6f478ded1ebd4b075b21ea5412dd5590ab3c60b04154313201d48a5",
+  "private_original_human_source_file": "results/stage44_ifbench_source/stage44_ifbench_external60.jsonl",
+  "original_human_messages_not_committed_for_privacy": true,
+  "note": "Source recipe and data SHA allow legal reconstruction. Human prompt text and full responses remain local."
+}
