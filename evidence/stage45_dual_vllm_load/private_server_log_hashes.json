@@ -1,0 +1,54 @@
+{
+  "local_logs": "/home/you/projects/llmopt_stage45_frozen/results/stage45_real_dual_concurrent",
+  "server_logs_SHA256": {
+    "server_seed4511_rate4_base.log": {
+      "sha256": "701cd0cb97fd2b9006385d2c4502b0d398d178eedb93304d86d4930c48ba0a85",
+      "size": 34534
+    },
+    "server_seed4511_rate4_lora_sft.log": {
+      "sha256": "fd4e2cbe84a79a5c1303825e6e35af07e2e8af2ec7a83d997bd56d94dabadc91",
+      "size": 34697
+    },
+    "server_seed4511_rate4_request_router.log": {
+      "sha256": "140d5eef414555bef541328ca2287b10586e8cbe211e21b33dfae059049dab2d",
+      "size": 34697
+    },
+    "server_seed4511_rate8_base.log": {
+      "sha256": "d80c16e12230ae0bed2bedabe16b5e0591529119afeafead675fc44a98a03c9b",
+      "size": 30447
+    },
+    "server_seed4511_rate8_lora_sft.log": {
+      "sha256": "bf5ebfbe823a2182577b0b4c282e34737be4ba02b9181876b86dfbe3f251f045",
+      "size": 29782
+    },
+    "server_seed4511_rate8_request_router.log": {
+      "sha256": "eeffbe6aaf930e9c12e71b4488237e2696da5ed0d3886a444ca9b7dbd49c0362",
+      "size": 29754
+    },
+    "server_seed4527_rate4_base.log": {
+      "sha256": "7be9b33291b1c78a7176945e2d322887c5f441bc3a9648b5039261b5495db772",
+      "size": 34198
+    },
+    "server_seed4527_rate4_lora_sft.log": {
+      "sha256": "6d176fd7d1a38a3e3fd4d7643b57f7b3998fccdc2d36593cbd617b23609158b6",
+      "size": 34459
+    },
+    "server_seed4527_rate4_request_router.log": {
+      "sha256": "4bb591777e723b30c2210870d21ecf07b9d02a30c83a8e98f9ed527dd0128785",
+      "size": 34459
+    },
+    "server_seed4527_rate8_base.log": {
+      "sha256": "4ead309a163d4056db03c830376d8c2ec545e6ab05f1245607bcaf5d8f6f4afc",
+      "size": 30782
+    },
+    "server_seed4527_rate8_lora_sft.log": {
+      "sha256": "42b4cc05ddd38a6d1ed1f5b467617caf71ee023e3b41ba450da6253d5dddf64f",
+      "size": 29789
+    },
+    "server_seed4527_rate8_request_router.log": {
+      "sha256": "1bbeb4dac971521218dd3363c7bab88986ad6158d2ad5fe613a06c6b14e62a1c",
+      "size": 29954
+    }
+  },
+  "full_engine_logs_remain_on_tang_not_github": true
+}

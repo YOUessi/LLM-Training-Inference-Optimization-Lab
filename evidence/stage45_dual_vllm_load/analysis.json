@@ -1,0 +1,496 @@
+{
+  "status": "pass",
+  "kind": "stage45_actual_awq_lora_dual_vllm_multilingual_concurrent",
+  "source_commit": "3b32c2fa9e85a6e0e4a2ea213a51e99aefb43ce8",
+  "actual_cells": 12,
+  "actual_offered": 864,
+  "actual_completed": 864,
+  "paired_2seeds_2rates": [
+    {
+      "seed": 4511,
+      "rate": 4,
+      "metrics": {
+        "base": {
+          "useful_tps": 676.4942373750004,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 76.96077332366261,
+          "output_cap_hit_fraction": 0.9305555555555556,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "base": 72
+          }
+        },
+        "lora_sft": {
+          "useful_tps": 438.33700913622397,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 90.06547802127899,
+          "output_cap_hit_fraction": 0.375,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "lora_sft": 72
+          }
+        },
+        "request_router": {
+          "useful_tps": 444.7001215992761,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 88.83485801925418,
+          "output_cap_hit_fraction": 0.3888888888888889,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "lora_sft": 69,
+            "base": 3
+          }
+        }
+      },
+      "relative_router_tps_vs_base": -0.34264019258339085,
+      "relative_router_tps_vs_lora": 0.014516484646348138,
+      "router_slo500_minus_base": 0.0,
+      "router_slo500_minus_lora": 0.0,
+      "router_p95_ttft_minus_base_ms": 11.874084695591577
+    },
+    {
+      "seed": 4511,
+      "rate": 8,
+      "metrics": {
+        "base": {
+          "useful_tps": 1076.671167957756,
+          "slo500": 0.4722222222222222,
+          "slo1000": 0.7777777777777778,
+          "p95_ttft_ms": 1363.8893315423047,
+          "output_cap_hit_fraction": 0.9305555555555556,
+          "server_peak_waiting": 9.0,
+          "served_model_counts": {
+            "base": 72
+          }
+        },
+        "lora_sft": {
+          "useful_tps": 783.9267686365981,
+          "slo500": 0.9583333333333334,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 448.8952592888384,
+          "output_cap_hit_fraction": 0.375,
+          "server_peak_waiting": 4.0,
+          "served_model_counts": {
+            "lora_sft": 72
+          }
+        },
+        "request_router": {
+          "useful_tps": 785.6958067126687,
+          "slo500": 0.9722222222222222,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 451.27553619095147,
+          "output_cap_hit_fraction": 0.3888888888888889,
+          "server_peak_waiting": 4.0,
+          "served_model_counts": {
+            "lora_sft": 69,
+            "base": 3
+          }
+        }
+      },
+      "relative_router_tps_vs_base": -0.2702546236071439,
+      "relative_router_tps_vs_lora": 0.0022566369039129786,
+      "router_slo500_minus_base": 0.5,
+      "router_slo500_minus_lora": 0.01388888888888884,
+      "router_p95_ttft_minus_base_ms": -912.6137953513532
+    },
+    {
+      "seed": 4527,
+      "rate": 4,
+      "metrics": {
+        "base": {
+          "useful_tps": 696.6876050108245,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 67.98876282409766,
+          "output_cap_hit_fraction": 0.9305555555555556,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "base": 72
+          }
+        },
+        "lora_sft": {
+          "useful_tps": 459.05316394250826,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 74.23503108730074,
+          "output_cap_hit_fraction": 0.375,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "lora_sft": 72
+          }
+        },
+        "request_router": {
+          "useful_tps": 457.75806080468163,
+          "slo500": 1.0,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 76.41163349908312,
+          "output_cap_hit_fraction": 0.4027777777777778,
+          "server_peak_waiting": 0.0,
+          "served_model_counts": {
+            "lora_sft": 69,
+            "base": 3
+          }
+        }
+      },
+      "relative_router_tps_vs_base": -0.34295076083983245,
+      "relative_router_tps_vs_lora": -0.002821248690900724,
+      "router_slo500_minus_base": 0.0,
+      "router_slo500_minus_lora": 0.0,
+      "router_p95_ttft_minus_base_ms": 8.422870674985461
+    },
+    {
+      "seed": 4527,
+      "rate": 8,
+      "metrics": {
+        "base": {
+          "useful_tps": 1033.4294224075168,
+          "slo500": 0.2777777777777778,
+          "slo1000": 0.4583333333333333,
+          "p95_ttft_ms": 1978.9550816640262,
+          "output_cap_hit_fraction": 0.9305555555555556,
+          "server_peak_waiting": 14.0,
+          "served_model_counts": {
+            "base": 72
+          }
+        },
+        "lora_sft": {
+          "useful_tps": 795.5095733662582,
+          "slo500": 0.875,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 590.1491143886233,
+          "output_cap_hit_fraction": 0.375,
+          "server_peak_waiting": 6.0,
+          "served_model_counts": {
+            "lora_sft": 72
+          }
+        },
+        "request_router": {
+          "useful_tps": 785.3234507268486,
+          "slo500": 0.7083333333333334,
+          "slo1000": 1.0,
+          "p95_ttft_ms": 733.3968306425959,
+          "output_cap_hit_fraction": 0.4027777777777778,
+          "server_peak_waiting": 6.0,
+          "served_model_counts": {
+            "lora_sft": 69,
+            "base": 3
+          }
+        }
+      },
+      "relative_router_tps_vs_base": -0.24008022831658016,
+      "relative_router_tps_vs_lora": -0.012804525527337574,
+      "router_slo500_minus_base": 0.4305555555555556,
+      "router_slo500_minus_lora": -0.16666666666666663,
+      "router_p95_ttft_minus_base_ms": -1245.5582510214304
+    }
+  ],
+  "by_rate": {
+    "4": {
+      "base": {
+        "useful_tps": {
+          "mean": 686.5909211929124,
+          "per_seed": [
+            676.4942373750004,
+            696.6876050108245
+          ]
+        },
+        "slo500": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "slo1000": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 72.47476807388014,
+          "per_seed": [
+            76.96077332366261,
+            67.98876282409766
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.9305555555555556,
+          "per_seed": [
+            0.9305555555555556,
+            0.9305555555555556
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 0.0,
+          "per_seed": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "lora_sft": {
+        "useful_tps": {
+          "mean": 448.6950865393661,
+          "per_seed": [
+            438.33700913622397,
+            459.05316394250826
+          ]
+        },
+        "slo500": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "slo1000": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 82.15025455428986,
+          "per_seed": [
+            90.06547802127899,
+            74.23503108730074
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.375,
+          "per_seed": [
+            0.375,
+            0.375
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 0.0,
+          "per_seed": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "request_router": {
+        "useful_tps": {
+          "mean": 451.22909120197886,
+          "per_seed": [
+            444.7001215992761,
+            457.75806080468163
+          ]
+        },
+        "slo500": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "slo1000": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 82.62324575916865,
+          "per_seed": [
+            88.83485801925418,
+            76.41163349908312
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.39583333333333337,
+          "per_seed": [
+            0.3888888888888889,
+            0.4027777777777778
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 0.0,
+          "per_seed": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "router_vs_base_relative_TPS": {
+        "mean": -0.34279547671161165,
+        "per_seed": [
+          -0.34264019258339085,
+          -0.34295076083983245
+        ]
+      },
+      "router_vs_base_slo500_delta": {
+        "mean": 0.0,
+        "per_seed": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "8": {
+      "base": {
+        "useful_tps": {
+          "mean": 1055.0502951826365,
+          "per_seed": [
+            1076.671167957756,
+            1033.4294224075168
+          ]
+        },
+        "slo500": {
+          "mean": 0.375,
+          "per_seed": [
+            0.4722222222222222,
+            0.2777777777777778
+          ]
+        },
+        "slo1000": {
+          "mean": 0.6180555555555556,
+          "per_seed": [
+            0.7777777777777778,
+            0.4583333333333333
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 1671.4222066031655,
+          "per_seed": [
+            1363.8893315423047,
+            1978.9550816640262
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.9305555555555556,
+          "per_seed": [
+            0.9305555555555556,
+            0.9305555555555556
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 11.5,
+          "per_seed": [
+            9.0,
+            14.0
+          ]
+        }
+      },
+      "lora_sft": {
+        "useful_tps": {
+          "mean": 789.7181710014281,
+          "per_seed": [
+            783.9267686365981,
+            795.5095733662582
+          ]
+        },
+        "slo500": {
+          "mean": 0.9166666666666667,
+          "per_seed": [
+            0.9583333333333334,
+            0.875
+          ]
+        },
+        "slo1000": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 519.5221868387308,
+          "per_seed": [
+            448.8952592888384,
+            590.1491143886233
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.375,
+          "per_seed": [
+            0.375,
+            0.375
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 5.0,
+          "per_seed": [
+            4.0,
+            6.0
+          ]
+        }
+      },
+      "request_router": {
+        "useful_tps": {
+          "mean": 785.5096287197587,
+          "per_seed": [
+            785.6958067126687,
+            785.3234507268486
+          ]
+        },
+        "slo500": {
+          "mean": 0.8402777777777778,
+          "per_seed": [
+            0.9722222222222222,
+            0.7083333333333334
+          ]
+        },
+        "slo1000": {
+          "mean": 1.0,
+          "per_seed": [
+            1.0,
+            1.0
+          ]
+        },
+        "p95_ttft_ms": {
+          "mean": 592.3361834167737,
+          "per_seed": [
+            451.27553619095147,
+            733.3968306425959
+          ]
+        },
+        "output_cap_hit_fraction": {
+          "mean": 0.39583333333333337,
+          "per_seed": [
+            0.3888888888888889,
+            0.4027777777777778
+          ]
+        },
+        "server_peak_waiting": {
+          "mean": 5.0,
+          "per_seed": [
+            4.0,
+            6.0
+          ]
+        }
+      },
+      "router_vs_base_relative_TPS": {
+        "mean": -0.25516742596186204,
+        "per_seed": [
+          -0.2702546236071439,
+          -0.24008022831658016
+        ]
+      },
+      "router_vs_base_slo500_delta": {
+        "mean": 0.4652777777777778,
+        "per_seed": [
+          0.5,
+          0.4305555555555556
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Only two independent arrival seeds; DO NOT infer population confidence intervals",
+    "Fresh vLLM server per arm and runtime/thermal drift may influence differences",
+    "Both AWQ base and LoRA share one engine with prefix cache OFF; original offline NF4 IFEval is not a direct deployment quality score",
+    "Original user community prompts may contain personal data; raw text remains local, only hashes/safe numeric metrics committed",
+    "192-token cap and short bursts; this is not full natural human answer quality or hour-scale production deployment",
+    "One engine warmup on both models before measured offers; cold GPU boot effects excluded"
+  ]
+}
