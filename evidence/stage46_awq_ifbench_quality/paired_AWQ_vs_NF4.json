@@ -1,0 +1,2169 @@
+{
+  "status": "verified",
+  "kind": "stage46_AWQ_actual_vllm_vs_NF4_offline_IFBench60_same_source_paired",
+  "original_ifbench_selected_sha256": "7f08bf6be6f478ded1ebd4b075b21ea5412dd5590ab3c60b04154313201d48a5",
+  "awq_source_git_sha": "041bec7e839a834678e0abc310183448d799f686",
+  "nf4_official_score_sha256": "4ec55dd7377b126060d6e74812f4e9bca8d4ad137bf8bd5d0c7eb989fa4cbe51",
+  "awq_official_score_sha256": "ef4faa80cae8aa3711a5b0fdb108f961e7403fd3323a35b71e820d04718937a5",
+  "awq_private_real_api_generations_sha256": "e7e88b29e9eba3268ab575a3cb79a841c05be848e37d790c9c76128a6663441f",
+  "real_awq_api_calls": 120,
+  "original_ifbench_prompts": 60,
+  "observed_model_registry": [
+    "qwen3-8b-awq-local",
+    "qwen3-8b-dolly-r16"
+  ],
+  "paired_roles": {
+    "base": {
+      "nf4_strict_passes": 19,
+      "awq_strict_passes": 13,
+      "nf4_only_correct": 6,
+      "awq_only_correct": 0,
+      "both_correct": 13,
+      "both_wrong": 41,
+      "strict_accuracy_delta_awq_minus_nf4_pp": -10.0,
+      "nf4_output_cap_fraction": 0.36666666666666664,
+      "awq_output_cap_fraction": 0.4,
+      "mean_nf4_output_tokens": 253.96666666666667,
+      "mean_awq_output_tokens": 256.46666666666664
+    },
+    "lora_sft": {
+      "nf4_strict_passes": 7,
+      "awq_strict_passes": 9,
+      "nf4_only_correct": 2,
+      "awq_only_correct": 4,
+      "both_correct": 5,
+      "both_wrong": 49,
+      "strict_accuracy_delta_awq_minus_nf4_pp": 3.3333333333333335,
+      "nf4_output_cap_fraction": 0.25,
+      "awq_output_cap_fraction": 0.25,
+      "mean_nf4_output_tokens": 167.03333333333333,
+      "mean_awq_output_tokens": 174.73333333333332
+    },
+    "request_router": {
+      "nf4_strict_passes": 18,
+      "awq_strict_passes": 12,
+      "nf4_only_correct": 6,
+      "awq_only_correct": 0,
+      "both_correct": 12,
+      "both_wrong": 42,
+      "strict_accuracy_delta_awq_minus_nf4_pp": -10.0,
+      "nf4_output_cap_fraction": 0.36666666666666664,
+      "awq_output_cap_fraction": 0.4,
+      "mean_nf4_output_tokens": 254.18333333333334,
+      "mean_awq_output_tokens": 256.6666666666667
+    }
+  },
+  "nf4_original_cross_benchmark_gate": true,
+  "awq_actual_server_cross_benchmark_gate": true,
+  "conditioned_not_production_approval": true,
+  "per_prompt_comparison_no_text": [
+    {
+      "key": "162",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 377,
+        "awq_output_tokens": 325
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 95,
+        "awq_output_tokens": 142
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 377,
+        "awq_output_tokens": 325
+      }
+    },
+    {
+      "key": "202",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 362,
+        "awq_output_tokens": 218
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 20,
+        "awq_output_tokens": 23
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 362,
+        "awq_output_tokens": 218
+      }
+    },
+    {
+      "key": "19",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 275,
+        "awq_output_tokens": 251
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 141,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 275,
+        "awq_output_tokens": 251
+      }
+    },
+    {
+      "key": "148",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 235,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 4,
+        "awq_output_tokens": 4
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 235,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "90",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 67,
+        "awq_output_tokens": 275
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 67,
+        "awq_output_tokens": 275
+      }
+    },
+    {
+      "key": "188",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 210
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 37,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 210
+      }
+    },
+    {
+      "key": "69",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 364
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 381,
+        "awq_output_tokens": 372
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 364
+      }
+    },
+    {
+      "key": "130",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 198,
+        "awq_output_tokens": 176
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 145,
+        "awq_output_tokens": 141
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 198,
+        "awq_output_tokens": 176
+      }
+    },
+    {
+      "key": "190",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 64,
+        "awq_output_tokens": 64
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "25",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 313
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 144,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 313
+      }
+    },
+    {
+      "key": "198",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 123,
+        "awq_output_tokens": 124
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 131,
+        "awq_output_tokens": 104
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 123,
+        "awq_output_tokens": 124
+      }
+    },
+    {
+      "key": "113",
+      "tier": "format",
+      "routed_model": "lora_sft",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "43",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 33,
+        "awq_output_tokens": 36
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": true,
+        "nf4_loose": false,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 47,
+        "awq_output_tokens": 37
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 33,
+        "awq_output_tokens": 36
+      }
+    },
+    {
+      "key": "124",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 199,
+        "awq_output_tokens": 188
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "298",
+      "tier": "format",
+      "routed_model": "lora_sft",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 7,
+        "awq_output_tokens": 7
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 20,
+        "awq_output_tokens": 19
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 20,
+        "awq_output_tokens": 19
+      }
+    },
+    {
+      "key": "169",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 38,
+        "awq_output_tokens": 108
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 43,
+        "awq_output_tokens": 84
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 38,
+        "awq_output_tokens": 108
+      }
+    },
+    {
+      "key": "11",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 325,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 31,
+        "awq_output_tokens": 31
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 325,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "228",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 188
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "299",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 83,
+        "awq_output_tokens": 81
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 83,
+        "awq_output_tokens": 81
+      }
+    },
+    {
+      "key": "282",
+      "tier": "custom",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 176,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "96",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 211,
+        "awq_output_tokens": 150
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": true,
+        "nf4_loose": false,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 88,
+        "awq_output_tokens": 115
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 211,
+        "awq_output_tokens": 150
+      }
+    },
+    {
+      "key": "32",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 79,
+        "awq_output_tokens": 79
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "221",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 80,
+        "awq_output_tokens": 77
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "57",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 57,
+        "awq_output_tokens": 121
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "118",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 173,
+        "awq_output_tokens": 191
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 209,
+        "awq_output_tokens": 216
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 173,
+        "awq_output_tokens": 191
+      }
+    },
+    {
+      "key": "200",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "184",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 325
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 116,
+        "awq_output_tokens": 78
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 325
+      }
+    },
+    {
+      "key": "154",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 78,
+        "awq_output_tokens": 123
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 38,
+        "awq_output_tokens": 35
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 78,
+        "awq_output_tokens": 123
+      }
+    },
+    {
+      "key": "218",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 353,
+        "awq_output_tokens": 264
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 61,
+        "awq_output_tokens": 100
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 353,
+        "awq_output_tokens": 264
+      }
+    },
+    {
+      "key": "30",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": true,
+        "nf4_loose": false,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "48",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 209
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "255",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 72,
+        "awq_output_tokens": 69
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 55,
+        "awq_output_tokens": 78
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 72,
+        "awq_output_tokens": 69
+      }
+    },
+    {
+      "key": "271",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 92,
+        "awq_output_tokens": 80
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 66,
+        "awq_output_tokens": 61
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 92,
+        "awq_output_tokens": 80
+      }
+    },
+    {
+      "key": "159",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 286,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 90,
+        "awq_output_tokens": 91
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 286,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "216",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 145,
+        "awq_output_tokens": 320
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "149",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 146,
+        "awq_output_tokens": 138
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 146,
+        "awq_output_tokens": 138
+      }
+    },
+    {
+      "key": "215",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 374,
+        "awq_output_tokens": 85
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 68,
+        "awq_output_tokens": 21
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 374,
+        "awq_output_tokens": 85
+      }
+    },
+    {
+      "key": "62",
+      "tier": "repeat",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 89,
+        "awq_output_tokens": 89
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 133,
+        "awq_output_tokens": 133
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 89,
+        "awq_output_tokens": 89
+      }
+    },
+    {
+      "key": "104",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 3,
+        "awq_output_tokens": 3
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 2,
+        "awq_output_tokens": 2
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 3,
+        "awq_output_tokens": 3
+      }
+    },
+    {
+      "key": "276",
+      "tier": "custom",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 334,
+        "awq_output_tokens": 272
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "53",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 150,
+        "awq_output_tokens": 219
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 91,
+        "awq_output_tokens": 136
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 150,
+        "awq_output_tokens": 219
+      }
+    },
+    {
+      "key": "199",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 356,
+        "awq_output_tokens": 373
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 356,
+        "awq_output_tokens": 373
+      }
+    },
+    {
+      "key": "217",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 21,
+        "awq_output_tokens": 303
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 14,
+        "awq_output_tokens": 73
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 21,
+        "awq_output_tokens": 303
+      }
+    },
+    {
+      "key": "213",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 149,
+        "awq_output_tokens": 172
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 25,
+        "awq_output_tokens": 25
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 149,
+        "awq_output_tokens": 172
+      }
+    },
+    {
+      "key": "197",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 107,
+        "awq_output_tokens": 107
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 120
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 107,
+        "awq_output_tokens": 107
+      }
+    },
+    {
+      "key": "92",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 285,
+        "awq_output_tokens": 227
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 164,
+        "awq_output_tokens": 181
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 285,
+        "awq_output_tokens": 227
+      }
+    },
+    {
+      "key": "278",
+      "tier": "custom",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 254,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 254,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "209",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 74,
+        "awq_output_tokens": 89
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 27,
+        "awq_output_tokens": 24
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 74,
+        "awq_output_tokens": 89
+      }
+    },
+    {
+      "key": "54",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 164,
+        "awq_output_tokens": 162
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "284",
+      "tier": "repeat",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 371,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 114
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 371,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "136",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 325
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 325
+      }
+    },
+    {
+      "key": "283",
+      "tier": "custom",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 11,
+        "awq_output_tokens": 11
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "191",
+      "tier": "sentence",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "177",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 129,
+        "awq_output_tokens": 120
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 51,
+        "awq_output_tokens": 46
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 129,
+        "awq_output_tokens": 120
+      }
+    },
+    {
+      "key": "285",
+      "tier": "repeat",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 21,
+        "awq_output_tokens": 384
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": true,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "88",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 146,
+        "awq_output_tokens": 105
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": true,
+        "awq_cap": false,
+        "nf4_output_tokens": 384,
+        "awq_output_tokens": 136
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 146,
+        "awq_output_tokens": 105
+      }
+    },
+    {
+      "key": "211",
+      "tier": "words",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 77,
+        "awq_output_tokens": 92
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 21,
+        "awq_output_tokens": 82
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 77,
+        "awq_output_tokens": 92
+      }
+    },
+    {
+      "key": "170",
+      "tier": "ratio",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 49,
+        "awq_output_tokens": 35
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 54,
+        "awq_output_tokens": 48
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 49,
+        "awq_output_tokens": 35
+      }
+    },
+    {
+      "key": "39",
+      "tier": "count",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 268,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 51,
+        "awq_output_tokens": 51
+      },
+      "request_router": {
+        "nf4_strict": false,
+        "awq_strict": false,
+        "nf4_loose": false,
+        "awq_loose": false,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 268,
+        "awq_output_tokens": 384
+      }
+    },
+    {
+      "key": "129",
+      "tier": "format",
+      "routed_model": "base",
+      "base": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 354,
+        "awq_output_tokens": 384
+      },
+      "lora_sft": {
+        "nf4_strict": true,
+        "awq_strict": true,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": false,
+        "nf4_output_tokens": 269,
+        "awq_output_tokens": 110
+      },
+      "request_router": {
+        "nf4_strict": true,
+        "awq_strict": false,
+        "nf4_loose": true,
+        "awq_loose": true,
+        "nf4_cap": false,
+        "awq_cap": true,
+        "nf4_output_tokens": 354,
+        "awq_output_tokens": 384
+      }
+    }
+  ],
+  "limitations": [
+    "Same IFBench60 heldout cohort as Stage44 NF4: comparison measures deployment differences, not new independent validation",
+    "AWQ vs NF4 base and LoRA are different quantization/compute regimes, model responses may vary",
+    "Official IFBench checks constraint obedience, not semantic user satisfaction or safety",
+    "The public IFBench source may include third party WildChat crowd content: keep prompts and response strings locally private",
+    "Two model counters generated sequentially in actual vLLM; Stage45 measures concurrent routed server performance separately",
+    "384 output token cap potentially truncates natural responses, original source test has only 60 cases"
+  ]
+}

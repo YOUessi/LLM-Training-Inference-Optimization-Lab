@@ -1,5 +1,18 @@
 # Milestones and acceptance gates
 
+## Stage42–46 measured router, external IFBench and AWQ dual serving (2026-10-31)
+
+- [x] Stage42: 96 unseen prior-key-disjoint IFEval and 128 new Dolly record identities, deterministic prompt-only base/LoRA constraint route. Preregistered relative two-objective gate passed; strict official scores base75, LoRA63, route73 /96. Dolly reference CE base2.8652, LoRA1.6672, route1.8781.
+- [x] Stage43: actual vLLM0.19.1 AWQ base+rank16 LoRA model registry, 72/72 successful loopback API calls with original frozen PSF inputs. Functional compatibility, not task correctness.
+- [x] Stage44: external AllenAI IFBench original 60 SHA-frozen prompts, 120 actual NF4 model generations, original strict/loose verifiers. Strict base19, LoRA7, router18 /60. Initial incorrect scoring wrapper negative run preserved; official corrected scorer reuses exact original immutable generation output.
+- [x] Stage45: real concurrent dual-model vLLM service, 12 arms ×72=864 actual requests, 4/8/s and 2 arrival seeds. At8/s router SLO500 84.0% and base37.5%, but vastly different 192-token output truncation: base93.1% vs router39.6%. No hour-long or complete answer SLA claim.
+- [x] Stage46: real AWQ/FP16 vLLM IFBench on exactly the same fixed 60 source keys as NF4 Stage44, 120 actual model calls, official strict/loose rule scoring and per-item SHA verification. Strict base13, LoRA9, router12 /60; AWQ router only20.0% strict, and 40.0% at 384-token cap. Relative research gate pass, absolute quality **not acceptable for production**.
+- [ ] Identify actual NF4-vs-AWQ/backend divergence sources (matched tokenization/stop rules and scoring); evaluate full answer quality and new task/domain distributions with independent human annotation.
+- [ ] Multi-seed model generalization, reliable long-response tasks, genuine production trace and hour-scale serving SLO, and true multi-GPU FSDP on available multi-GPU hardware.
+
+**Five-stage delivery and explicit production BLOCKED verdict:** [Stage42–46 measured research](STAGE42_46_DELIVERY.md).
+
+
 ## Stage38–41 verified IFEval regressions and format SFT failure (2026-10-30)
 
 - [x] Stage38: preregister new IFEval43 development/101 independent test; choose Qwen3 LoRA residual alpha .75 on dev, independent strict obedience **67/101** vs original base **78/101**, though stronger than unscaled SFT **52/101**. **Research candidate blocked**; Dolly validation CE improves, instruction regression not resolved.

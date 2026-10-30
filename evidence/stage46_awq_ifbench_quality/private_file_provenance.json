@@ -1,0 +1,6 @@
+{
+  "private_original_answer_source": "/home/you/projects/llmopt_stage46_v2_frozen/results/stage46_awq_real_ifbench60/private_generation.json",
+  "real_API_gen_sha256": "e7e88b29e9eba3268ab575a3cb79a841c05be848e37d790c9c76128a6663441f",
+  "only_original_benchmark_input_hashes_and_official_scores_uploaded": true,
+  "private_generation_and_full_server_logs_remain_on_tang": true
+}
