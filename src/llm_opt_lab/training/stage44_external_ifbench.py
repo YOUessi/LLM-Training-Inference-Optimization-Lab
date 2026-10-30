@@ -99,23 +99,39 @@ def official_scoring(args):
   raise ValueError('generation did not run on selected original IFBench60')
  output={str(r['key']):r for r in gen['raw_outputs']}
  if len(output)!=60:raise ValueError('duplicate generation IDs')
- per=[]
- for i,rec in enumerate(rows):
+ # Match the official AllenAI `run_eval.py` call sequence EXACTLY per model:
+ # run STRICT over the entire original input list (which strips None kwargs
+ # in-place), then run LOOSE over the SAME list in its mutated state.
+ # Freshly constructing per-instruction kwargs for loose raises TypeError on
+ # original N=None IFBench records, and interleaving all strict/loose per row
+ # can change nondeterministic checker behavior relative to official run_eval.
+ for rec in rows:
   record=output[str(rec['key'])]
   if hashlib.sha256(rec['prompt'].encode()).hexdigest()!=record['prompt_sha256']:
    raise ValueError('verifier prompt tampering')
   if record['responses']['request_router']!=record['responses'][record['route']]:
    raise ValueError('router was changed post hoc using model answers')
+  for name in MODELS:
+   text=record['responses'][name]
+   if hashlib.sha256(text.encode()).hexdigest()!=record['response_sha256'][name]:
+    raise ValueError('generated answer SHA changed')
+ model_results={}
+ for name in MODELS:
+  instances=[InputExample(key=rec['key'],instruction_id_list=list(rec['instruction_id_list']),
+      prompt=rec['prompt'],kwargs=[dict(kw) for kw in rec['kwargs']]) for rec in rows]
+  # Pass 1: official STRICT mutates each object's kwargs by removing None.
+  strict_results=[test_instruction_following_strict(inst,{inst.prompt:output[str(inst.key)]['responses'][name]})
+                  for inst in instances]
+  # Pass 2: original input objects reused, as done in upstream run_eval.py.
+  loose_results=[test_instruction_following_loose(inst,{inst.prompt:output[str(inst.key)]['responses'][name]})
+                 for inst in instances]
+  model_results[name]=list(zip(strict_results,loose_results))
+ per=[]
+ for i,rec in enumerate(rows):
+  record=output[str(rec['key'])]
   results={}
   for name in MODELS:
-   resp=record['responses'][name]
-   if hashlib.sha256(resp.encode()).hexdigest()!=record['response_sha256'][name]:
-    raise ValueError('generated answer SHA changed')
-   # The official IFBench strict function modifies kwargs, so give each pass its own copy.
-   def build():return InputExample(key=rec['key'],instruction_id_list=list(rec['instruction_id_list']),
-      prompt=rec['prompt'],kwargs=[dict(kw) for kw in rec['kwargs']])
-   strict=test_instruction_following_strict(build(),{rec['prompt']:resp})
-   loose=test_instruction_following_loose(build(),{rec['prompt']:resp})
+   strict,loose=model_results[name][i]
    if len(strict.follow_instruction_list)!=len(rec['instruction_id_list']):
     raise ValueError('official verifier output shape wrong')
    results[name]={'strict':bool(strict.follow_all_instructions),

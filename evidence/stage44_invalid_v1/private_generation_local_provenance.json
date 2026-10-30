@@ -1,0 +1,7 @@
+{
+  "local_private_generated_file": "/home/you/projects/llmopt_stage44_frozen/results/stage44_ifbench_external60/local_private_full_generations.json",
+  "generated_examples": 60,
+  "private_full_generation_sha256": "0ccaff23f0299599e061523c7c6db01b7e981fd6697637a9a7c53d747076a0e2",
+  "private_data_not_copied_into_repository": true,
+  "why_invalid": "Strict then loose official checker wrapper rebuilt fresh InputExample; original official run_eval reuses kwargs mutably filtered by strict; loose called with N=None caused unexpected keyword argument. Correct wrapper will match official run_eval sequence and reuse original frozen response file."
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/you/projects/llmopt_stage44_frozen/src/llm_opt_lab/training/stage44_external_ifbench.py", line 188, in <module>
+    if __name__=='__main__':main()
+  File "/home/you/projects/llmopt_stage44_frozen/src/llm_opt_lab/training/stage44_external_ifbench.py", line 187, in main
+    official_scoring(args)
+  File "/home/you/projects/llmopt_stage44_frozen/src/llm_opt_lab/training/stage44_external_ifbench.py", line 118, in official_scoring
+    loose=test_instruction_following_loose(build(),{rec['prompt']:resp})
+  File "/home/you/projects/llmopt_stage44_frozen/third_party/ifbench/evaluation_lib.py", line 155, in test_instruction_following_loose
+    instruction.build_description(**inp.kwargs[index])
+TypeError: SentTypeRatioChecker.build_description() got an unexpected keyword argument 'N'
