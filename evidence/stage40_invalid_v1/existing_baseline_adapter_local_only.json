@@ -1,0 +1,19 @@
+{
+  "source": "/home/you/projects/llmopt_stage40_frozen/results/stage40_real_constraint_rehearsal/mix00_seed4011_adapter",
+  "artifacts": {
+    "README.md": {
+      "sha256": "497aa9280c7740297db16b174cb3f687d281a4d973e793c0d144bef416feb285",
+      "bytes": 5204
+    },
+    "adapter_config.json": {
+      "sha256": "cfc5161656c3ed284590d01333ca2ff69af9e7a1855d1f616b6403f228897fa8",
+      "bytes": 978
+    },
+    "adapter_model.safetensors": {
+      "sha256": "10dcb7b7ac39e4808e08e8ea58fb52ee489ca6ae9cc91669e8d8cb2b1b1af0e3",
+      "bytes": 30690184
+    }
+  },
+  "locally_retained": true,
+  "not_counted_in_new_version": true
+}

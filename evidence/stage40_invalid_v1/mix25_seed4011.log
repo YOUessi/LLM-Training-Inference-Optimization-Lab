@@ -1,0 +1,11 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.55s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.81s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.86s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.76s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/you/projects/llmopt_stage40_frozen/src/llm_opt_lab/training/stage40_constraint_rehearsal.py", line 133, in <module>
+    if __name__=='__main__':main()
+  File "/home/you/projects/llmopt_stage40_frozen/src/llm_opt_lab/training/stage40_constraint_rehearsal.py", line 90, in main
+    kind=REPLAY_KIN[(index+epoch)%len(REPLAY_KIN)]
+NameError: name 'REPLAY_KIN' is not defined. Did you mean: 'REPLAY_KINDS'?

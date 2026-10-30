@@ -1,0 +1,12 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.54s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.82s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.90s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.79s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.19s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.46s/it]
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 1 step 64 train_CE 1.1747
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 1 step 128 train_CE 1.1891
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 1 step 192 train_CE 1.4915
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 1 step 256 train_CE 1.6028
+STAGE40_EPOCH_VALID 0.0 4011 {'epoch': 1, 'unique_source_records': 512, 'format_reference_demonstrations_used': 0, 'format_distribution': {'raw': 512}, 'validation_ce': 1.7815499066285705, 'validation_ppl': 5.93905426842374}
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 2 step 64 train_CE 1.2023
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 2 step 128 train_CE 0.8527
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 2 step 192 train_CE 1.5597
+STAGE40_UPDATE mix 0.0 seed 4011 epoch 2 step 256 train_CE 0.6276
+STAGE40_EPOCH_VALID 0.0 4011 {'epoch': 2, 'unique_source_records': 512, 'format_reference_demonstrations_used': 0, 'format_distribution': {'raw': 512}, 'validation_ce': 1.8050153704658567, 'validation_ppl': 6.0800649012321015}
+STAGE40_REAL_TRAIN_COMPLETE 4011 0.0 DOLLY_VAL 1.78155 EPOCH 1

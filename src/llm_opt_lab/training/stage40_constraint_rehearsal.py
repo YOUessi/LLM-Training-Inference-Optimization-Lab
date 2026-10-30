@@ -14,6 +14,10 @@ MIXES=(0.,.25,.50)
 EPOCHS=2
 REPLAY_KINDS=('json_exact','xml_tag','begin_end')
 
+def choose_replay_kind(index:int,epoch:int)->str:
+ if not (0<=index<512 and epoch in (0,1)):raise ValueError("unregistered example index or epoch")
+ return REPLAY_KINDS[(index+epoch)%len(REPLAY_KINDS)]
+
 def encode(tokenizer,user,answer):
  prefix=tokenizer.apply_chat_template([{'role':'user','content':user}],tokenize=True,
   add_generation_prompt=True,enable_thinking=False)
@@ -87,7 +91,7 @@ def main(argv=None):
     all_epoch_ids.add(entry['identity_sha256']);seen_ids.append(entry['identity_sha256'])
     training=entry['raw'];chosen='raw'
     if index in fmt_indices:
-     kind=REPLAY_KIN[(index+epoch)%len(REPLAY_KIN)]
+     kind=choose_replay_kind(index,epoch)
      training=entry['variants'].get(kind,entry['raw'])
      chosen=kind if kind in entry['variants'] else 'raw_overflow_fallback'
     used[chosen]+=1
