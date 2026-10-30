@@ -1,0 +1,30 @@
+{
+  "schema": "stage41-disjoint-dolly-128-v1",
+  "license": "CC BY-SA 3.0 Databricks Dolly15k",
+  "source_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "prior832_excluded_count": 832,
+  "selection": "16 each of eight categories by fixed SHA256, 384 complete chat tokens, after excluding prior Stage26 704 and Stage34 128",
+  "frozen_input_sha256": "65407f51a34571e62176c58533a72971d047ce3c4945c0eef8f01e2d481b0b30",
+  "records": 128,
+  "category_counts": {
+    "summarization": 16,
+    "creative_writing": 16,
+    "general_qa": 16,
+    "closed_qa": 16,
+    "information_extraction": 16,
+    "brainstorming": 16,
+    "open_qa": 16,
+    "classification": 16
+  },
+  "exclusions": {
+    "length": 1609,
+    "prior832": 842,
+    "duplicate": 193
+  },
+  "no_model_outcomes_read": true,
+  "caveats": [
+    "Disjoint record identities but SAME public Dolly source, possible model pretraining overlap",
+    "Answer-only CE is not factual or verifiable instruction constraint compliance",
+    "Never select new model or its scale from this holdout"
+  ]
+}
