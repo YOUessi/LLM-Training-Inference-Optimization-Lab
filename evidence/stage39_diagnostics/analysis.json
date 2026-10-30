@@ -1,0 +1,175 @@
+{
+  "status": "verified_diagnostic_not_holdout",
+  "kind": "stage39_stage36_repeat_truncation_ifeval_failure_audit",
+  "n": 96,
+  "base_comparisons": {
+    "base_vs_stage26_short": {
+      "base_only_correct": 32,
+      "other_only_correct": 4,
+      "both_correct": 39,
+      "both_wrong": 21,
+      "exact_paired_McNemar_twosided": 1.941574737429619e-06
+    },
+    "base_vs_stage31_full": {
+      "base_only_correct": 24,
+      "other_only_correct": 5,
+      "both_correct": 47,
+      "both_wrong": 20,
+      "exact_paired_McNemar_twosided": 0.0005461126565933228
+    }
+  },
+  "model_stats": {
+    "base": {
+      "strict_count": 71,
+      "capped_count": 31,
+      "strict_accuracy_among_capped": 0.5161290322580645,
+      "strict_accuracy_among_uncapped": 0.8461538461538461,
+      "mean_output_tokens": 241.0625,
+      "mean_distinct_word_bigrams": 0.8531140457237697,
+      "severely_repetitive_under_0_25_distinct2_count": 1
+    },
+    "stage26_short": {
+      "strict_count": 43,
+      "capped_count": 36,
+      "strict_accuracy_among_capped": 0.25,
+      "strict_accuracy_among_uncapped": 0.5666666666666667,
+      "mean_output_tokens": 185.05208333333334,
+      "mean_distinct_word_bigrams": 0.4519856338198066,
+      "severely_repetitive_under_0_25_distinct2_count": 35
+    },
+    "stage31_full": {
+      "strict_count": 52,
+      "capped_count": 42,
+      "strict_accuracy_among_capped": 0.2857142857142857,
+      "strict_accuracy_among_uncapped": 0.7407407407407407,
+      "mean_output_tokens": 220.01041666666666,
+      "mean_distinct_word_bigrams": 0.4208708858437291,
+      "severely_repetitive_under_0_25_distinct2_count": 38
+    }
+  },
+  "by_tier": {
+    "change_case": {
+      "n": 11,
+      "strict_success": {
+        "base": 8,
+        "stage26_short": 4,
+        "stage31_full": 7
+      },
+      "hit384": {
+        "base": 5,
+        "stage26_short": 7,
+        "stage31_full": 6
+      }
+    },
+    "combination": {
+      "n": 11,
+      "strict_success": {
+        "base": 7,
+        "stage26_short": 4,
+        "stage31_full": 5
+      },
+      "hit384": {
+        "base": 1,
+        "stage26_short": 1,
+        "stage31_full": 1
+      }
+    },
+    "detectable_content": {
+      "n": 11,
+      "strict_success": {
+        "base": 9,
+        "stage26_short": 6,
+        "stage31_full": 6
+      },
+      "hit384": {
+        "base": 3,
+        "stage26_short": 4,
+        "stage31_full": 6
+      }
+    },
+    "detectable_format": {
+      "n": 11,
+      "strict_success": {
+        "base": 8,
+        "stage26_short": 8,
+        "stage31_full": 8
+      },
+      "hit384": {
+        "base": 4,
+        "stage26_short": 1,
+        "stage31_full": 4
+      }
+    },
+    "keywords": {
+      "n": 11,
+      "strict_success": {
+        "base": 6,
+        "stage26_short": 2,
+        "stage31_full": 1
+      },
+      "hit384": {
+        "base": 5,
+        "stage26_short": 5,
+        "stage31_full": 6
+      }
+    },
+    "language": {
+      "n": 11,
+      "strict_success": {
+        "base": 10,
+        "stage26_short": 7,
+        "stage31_full": 9
+      },
+      "hit384": {
+        "base": 7,
+        "stage26_short": 5,
+        "stage31_full": 5
+      }
+    },
+    "length_constraints": {
+      "n": 10,
+      "strict_success": {
+        "base": 6,
+        "stage26_short": 1,
+        "stage31_full": 2
+      },
+      "hit384": {
+        "base": 2,
+        "stage26_short": 5,
+        "stage31_full": 8
+      }
+    },
+    "punctuation": {
+      "n": 10,
+      "strict_success": {
+        "base": 10,
+        "stage26_short": 7,
+        "stage31_full": 9
+      },
+      "hit384": {
+        "base": 1,
+        "stage26_short": 2,
+        "stage31_full": 2
+      }
+    },
+    "startend": {
+      "n": 10,
+      "strict_success": {
+        "base": 7,
+        "stage26_short": 4,
+        "stage31_full": 5
+      },
+      "hit384": {
+        "base": 3,
+        "stage26_short": 6,
+        "stage31_full": 4
+      }
+    }
+  },
+  "limitations": [
+    "Post-hoc on already observed Stage36 prompts, must not tune on these and claim independent validation",
+    "Cap vs non-cap strata are model-selected; uncapped conditional accuracy is not causal",
+    "Word-level distinct-2 proxy is language-dependent and not a semantic factuality metric",
+    "Paired McNemar tests on frozen sub-sample measure association, not training mechanism"
+  ]
+}
