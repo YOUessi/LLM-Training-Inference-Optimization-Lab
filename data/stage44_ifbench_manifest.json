@@ -1,0 +1,478 @@
+{
+  "schema": "stage44-external-IFBench60-ood-v1",
+  "source_repo": "allenai/IFBench",
+  "source_commit": "1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d",
+  "source_original_sha256": "a2bf7b8e7ed11d39c65b4ec781da8b99663ed0121f97033d70fcecb61f8a9d85",
+  "source_url": "https://github.com/allenai/IFBench/blob/main/ifbench/data/IFBench_test.jsonl",
+  "dataset_license": "ODC-BY-1.0, with responsible-use guidelines and third-party generated data terms",
+  "code_license": "Apache-2.0, original official IFBench verifier",
+  "sample_count": 60,
+  "quota_by_family": {
+    "format": 14,
+    "words": 14,
+    "count": 10,
+    "ratio": 8,
+    "sentence": 7,
+    "custom": 4,
+    "repeat": 3
+  },
+  "selected_sha256": "7f08bf6be6f478ded1ebd4b075b21ea5412dd5590ab3c60b04154313201d48a5",
+  "source_keys_and_prompt_hashes": [
+    {
+      "key": "162",
+      "prompt_sha256": "5152cb7ec29d0c77c9a0ce10832e768f1023d5b950c2d04fe4182570a1f529fa",
+      "constraint_ids": [
+        "ratio:sentence_type"
+      ]
+    },
+    {
+      "key": "202",
+      "prompt_sha256": "b5208a70f9775d210045a18cff453a58aa047b6b408fa67326d29d3ba12974dd",
+      "constraint_ids": [
+        "words:alphabet"
+      ]
+    },
+    {
+      "key": "19",
+      "prompt_sha256": "5061d14c2a401a2c0c81df6b455c0af1c8b04c63ab1dc0395b6769685d1ab64a",
+      "constraint_ids": [
+        "count:numbers"
+      ]
+    },
+    {
+      "key": "148",
+      "prompt_sha256": "ef0fc87ed6253cb7bf6455fb467e22e9af46db0b80f598d26dfd205909ea2ab8",
+      "constraint_ids": [
+        "ratio:overlap"
+      ]
+    },
+    {
+      "key": "90",
+      "prompt_sha256": "7e6c00fddeb146bc92ce6bdc900d57353b07768edcea46347046f809d5461f3c",
+      "constraint_ids": [
+        "format:newline"
+      ]
+    },
+    {
+      "key": "188",
+      "prompt_sha256": "8a41c3aae29ebc268a1f102f73fa9d799dccc067158f6dab733d0baa27527e3b",
+      "constraint_ids": [
+        "sentence:increment",
+        "format:thesis"
+      ]
+    },
+    {
+      "key": "69",
+      "prompt_sha256": "6527d2a6f5a8d393e3199ed55ac80aa05f90fece45ba2e6dff53ce7bce9bbda6",
+      "constraint_ids": [
+        "format:emoji"
+      ]
+    },
+    {
+      "key": "130",
+      "prompt_sha256": "7a96faa037315724deb541cc289007d53aba782e07d32054b5a8ccc33dea6cfc",
+      "constraint_ids": [
+        "format:sub-bullets"
+      ]
+    },
+    {
+      "key": "190",
+      "prompt_sha256": "dfe34e1a4bb138dca635f793cb5185b665f4dd92f5415d81d85d992772dceaea",
+      "constraint_ids": [
+        "sentence:increment",
+        "format:thesis"
+      ]
+    },
+    {
+      "key": "25",
+      "prompt_sha256": "aa3c17fdf33a08440cc588f7b1df9cce20e9c11e9ae6a2fc483499100c9de2b4",
+      "constraint_ids": [
+        "count:person_names"
+      ]
+    },
+    {
+      "key": "198",
+      "prompt_sha256": "942d897af31ce492c35e7a6dcca5e9bdab9b14c47023b8fd250896eed2aef509",
+      "constraint_ids": [
+        "sentence:keyword",
+        "count:word_count_range"
+      ]
+    },
+    {
+      "key": "113",
+      "prompt_sha256": "65163a7c0c2c8f62b027d258d1abac03c2d6b85aad617dd6aadba61213d46dcb",
+      "constraint_ids": [
+        "format:quote_unquote"
+      ]
+    },
+    {
+      "key": "43",
+      "prompt_sha256": "ba20afdf9785d345934b092d0f7c77c514a680bbacf45ea65bf2e611ab7def75",
+      "constraint_ids": [
+        "count:word_count_range"
+      ]
+    },
+    {
+      "key": "124",
+      "prompt_sha256": "b76327fdd7b562ed1e96a8e89c63f5fdb991a4c7153bc7411286b75eaf3f3c5b",
+      "constraint_ids": [
+        "format:quotes"
+      ]
+    },
+    {
+      "key": "298",
+      "prompt_sha256": "797c4a90237de8c6ab2f66787d95a0b23ced7a4e65d3583f19de765ed290914a",
+      "constraint_ids": [
+        "format:no_whitespace"
+      ]
+    },
+    {
+      "key": "169",
+      "prompt_sha256": "5236f96d2e3079ec8cfb61cff583fa6c6b191d8265e42cae74e8423221b824d0",
+      "constraint_ids": [
+        "ratio:sentence_words"
+      ]
+    },
+    {
+      "key": "11",
+      "prompt_sha256": "6979eb1e3345df632f19a6f8b9e7777d7709ffeb9298044a327bfcf41320acf9",
+      "constraint_ids": [
+        "words:keywords_specific_position"
+      ]
+    },
+    {
+      "key": "228",
+      "prompt_sha256": "017e45d3a16e334899d87150ca0d30d7e023455f664b75694088f4e5aa116dbe",
+      "constraint_ids": [
+        "words:no_consecutive"
+      ]
+    },
+    {
+      "key": "299",
+      "prompt_sha256": "30ad83827a3e050f527e1abafee1a69c9dc1faaba5e2cc71dda9c7a7adef6a5f",
+      "constraint_ids": [
+        "format:no_whitespace"
+      ]
+    },
+    {
+      "key": "282",
+      "prompt_sha256": "50e68d0c7a30583db6ba60f04210bf0350dca43407b7cae89b62d5df4ff671dd",
+      "constraint_ids": [
+        "custom:sentence_alphabet"
+      ]
+    },
+    {
+      "key": "96",
+      "prompt_sha256": "9cc46c449fe4f873bc129ddd34c15a01da71582a497cb326c3cd0314e1b58761",
+      "constraint_ids": [
+        "format:no_bullets_bullets"
+      ]
+    },
+    {
+      "key": "32",
+      "prompt_sha256": "fe5d7633aaf7872a11b0f688d18d03a829c07f6aa4da1530aad5bdd293ebc47f",
+      "constraint_ids": [
+        "count:pronouns"
+      ]
+    },
+    {
+      "key": "221",
+      "prompt_sha256": "376df008edb8b9d8b39e770b06d7a2f2a4cf9a087cb74d400d6cedb7cff8e41a",
+      "constraint_ids": [
+        "words:last_first"
+      ]
+    },
+    {
+      "key": "57",
+      "prompt_sha256": "3c19e3b95beca0af4b6c2827b8a3e8b9c538a2b17373a77459e65fd1f63b5cea",
+      "constraint_ids": [
+        "count:unique_word_count"
+      ]
+    },
+    {
+      "key": "118",
+      "prompt_sha256": "44e8cbbaa9a0ca3a3105b533eac80771cf4f30674cdf3fd038888d90d6a117c3",
+      "constraint_ids": [
+        "format:quotes"
+      ]
+    },
+    {
+      "key": "200",
+      "prompt_sha256": "0300bcf6a75ec283de2a0126b3237ab941641bbc5f3d5a82187c150a8fc44c2f",
+      "constraint_ids": [
+        "words:alphabet"
+      ]
+    },
+    {
+      "key": "184",
+      "prompt_sha256": "4bfc2d5ce1447da6e86be95d67aed74d6384d76af51dbff99603399d1e0979cb",
+      "constraint_ids": [
+        "sentence:increment"
+      ]
+    },
+    {
+      "key": "154",
+      "prompt_sha256": "1c7092b321860ed8c89e53f5156ad9c47606e5001887dea094d04c349407e04d",
+      "constraint_ids": [
+        "ratio:sentence_balance"
+      ]
+    },
+    {
+      "key": "218",
+      "prompt_sha256": "18f35a50d95b8efe2bb9f8ec4484905ca935a3397df51ed7b39e5e041faf7bd5",
+      "constraint_ids": [
+        "words:consonants",
+        "words:odd_even_syllables"
+      ]
+    },
+    {
+      "key": "30",
+      "prompt_sha256": "33f09791481efa1bb8fbed4b7f789f1a095c85a5adccd2cfb9f8a2e0b88d8f98",
+      "constraint_ids": [
+        "count:pronouns"
+      ]
+    },
+    {
+      "key": "48",
+      "prompt_sha256": "4e9e8f65d32d4850865d59a091c8b0b0aa17dd6d715cd88092e9d21a5281422f",
+      "constraint_ids": [
+        "count:words_japanese"
+      ]
+    },
+    {
+      "key": "255",
+      "prompt_sha256": "7eabea3b3a1e33f284e328eec831a87cd107427ea6c5f3682e2c32721037cc50",
+      "constraint_ids": [
+        "words:repeats"
+      ]
+    },
+    {
+      "key": "271",
+      "prompt_sha256": "80d7ca18758a81e28f718637a2b1f17d3a0ebeb23bd105c83c04344d3a95c28b",
+      "constraint_ids": [
+        "words:vowel",
+        "count:pronouns"
+      ]
+    },
+    {
+      "key": "159",
+      "prompt_sha256": "6717f69250d76ef71d7517882e3a3dae27c284ea425c52dca9bdb29d962fb53d",
+      "constraint_ids": [
+        "ratio:sentence_balance",
+        "words:consonants"
+      ]
+    },
+    {
+      "key": "216",
+      "prompt_sha256": "05518ae926bda8d14a225ab5e5eaf412f833d70c107e301c34be85cbd4b7efb2",
+      "constraint_ids": [
+        "words:consonants",
+        "words:odd_even_syllables"
+      ]
+    },
+    {
+      "key": "149",
+      "prompt_sha256": "3f8394844ecf56d472d3501b321f099ff1266d9314dc1aad9e6e9111debcbcfb",
+      "constraint_ids": [
+        "ratio:overlap",
+        "sentence:keyword"
+      ]
+    },
+    {
+      "key": "215",
+      "prompt_sha256": "3f561ebe9440fd6179f812f0d635c70e306c0012d875e89c6b93b72f4e3e0188",
+      "constraint_ids": [
+        "words:consonants",
+        "words:odd_even_syllables"
+      ]
+    },
+    {
+      "key": "62",
+      "prompt_sha256": "b6c7308dc185bbd7483fc237364d8fe26069854e2fef1bf52c09570b857610b5",
+      "constraint_ids": [
+        "repeat:repeat_change"
+      ]
+    },
+    {
+      "key": "104",
+      "prompt_sha256": "2c95f96539c0bc442b618162de8183f15b2aa9d5618165ffdd56f998c8b70526",
+      "constraint_ids": [
+        "format:options"
+      ]
+    },
+    {
+      "key": "276",
+      "prompt_sha256": "f0ab3aef79d86bc51b874dd6d7748dbb91882d0832638fec38503c1c4f60e720",
+      "constraint_ids": [
+        "custom:csv_special_character"
+      ]
+    },
+    {
+      "key": "53",
+      "prompt_sha256": "cfa715d700d44e0f5e8fa7de7abcd32ba32a897efe1d83fc1b0b804c33aa71f2",
+      "constraint_ids": [
+        "count:unique_word_count"
+      ]
+    },
+    {
+      "key": "199",
+      "prompt_sha256": "2151e5bdc584a86a3acbb88a5e77c50afb3c30a88e8b6c48b1f73851d5eaaa67",
+      "constraint_ids": [
+        "sentence:keyword",
+        "count:word_count_range"
+      ]
+    },
+    {
+      "key": "217",
+      "prompt_sha256": "5fd7004ea51d1110bddc1ceb2d89084ecbda185edb5cba50cd2acfc396ff6cd1",
+      "constraint_ids": [
+        "words:consonants",
+        "words:odd_even_syllables"
+      ]
+    },
+    {
+      "key": "213",
+      "prompt_sha256": "85c07bba8fb68e6cc145f7592201acffde155aec14bf031f6203411f4a7c0fad",
+      "constraint_ids": [
+        "words:consonants",
+        "ratio:overlap"
+      ]
+    },
+    {
+      "key": "197",
+      "prompt_sha256": "f6f8e2fa11c7876475af36540fa0c3e6284c1067a4de1996ba7901b7069afbce",
+      "constraint_ids": [
+        "sentence:keyword",
+        "count:word_count_range"
+      ]
+    },
+    {
+      "key": "92",
+      "prompt_sha256": "99f23e6136b357c5fff155de3c0eb0a55ad8c9ed1ca8d91ea966be9da7ee812f",
+      "constraint_ids": [
+        "format:newline"
+      ]
+    },
+    {
+      "key": "278",
+      "prompt_sha256": "703078a03d163fa5de6611204fafecf4ac002d437e66342b85df708ca4f1f844",
+      "constraint_ids": [
+        "custom:european_capitals_sort"
+      ]
+    },
+    {
+      "key": "209",
+      "prompt_sha256": "14b1bdc32bb0c55d947782a77a1cf601c1b82b948799a1a838363234404cc174",
+      "constraint_ids": [
+        "words:consonants"
+      ]
+    },
+    {
+      "key": "54",
+      "prompt_sha256": "b657c502aa00de34b0998c4a123def48e54e7096df08eae013a79dd8e4cf4065",
+      "constraint_ids": [
+        "count:unique_word_count"
+      ]
+    },
+    {
+      "key": "284",
+      "prompt_sha256": "0e23b72c527922540c91ba48d717fc8d2e526f45a394fa177c3c65e66660242c",
+      "constraint_ids": [
+        "repeat:repeat_span"
+      ]
+    },
+    {
+      "key": "136",
+      "prompt_sha256": "0185c939213f68a512b3b6b0b08877e05cfa7f171dfa9048a92074c430e9cb39",
+      "constraint_ids": [
+        "format:sub-bullets",
+        "ratio:stop_words"
+      ]
+    },
+    {
+      "key": "283",
+      "prompt_sha256": "aa6ef8467d4e942c4a819da3cb27ebf17da465420fd3a4808c44c97574559634",
+      "constraint_ids": [
+        "custom:word_reverse"
+      ]
+    },
+    {
+      "key": "191",
+      "prompt_sha256": "106dfe2e715295399311e3c83c054d34f0b2f1fd0de3b7a35151165c040a954a",
+      "constraint_ids": [
+        "sentence:keyword"
+      ]
+    },
+    {
+      "key": "177",
+      "prompt_sha256": "d2b80ae670b36f35c1072a9a94283fc55396dfb7439449916caa70d9fdad6cb1",
+      "constraint_ids": [
+        "ratio:stop_words"
+      ]
+    },
+    {
+      "key": "285",
+      "prompt_sha256": "6af370306b8300e8ddfd9b8b75fa4a3a3025becb70cf89e59a92cf0656482240",
+      "constraint_ids": [
+        "repeat:repeat_span"
+      ]
+    },
+    {
+      "key": "88",
+      "prompt_sha256": "02a017d7d94d5711fc68322150b6c78f66b326c8e40ddb1ac6474f687878b49c",
+      "constraint_ids": [
+        "format:list",
+        "words:no_consecutive"
+      ]
+    },
+    {
+      "key": "211",
+      "prompt_sha256": "a07feeab44b9a8b96246bfc0abe16d77b5a74358444c1489b58eee91f50f002c",
+      "constraint_ids": [
+        "words:consonants"
+      ]
+    },
+    {
+      "key": "170",
+      "prompt_sha256": "9f03bb9dc7366b04a0b77da1ea45d452927811ac3ab6b4675808afe1ff164eac",
+      "constraint_ids": [
+        "ratio:sentence_words"
+      ]
+    },
+    {
+      "key": "39",
+      "prompt_sha256": "5f3c6a64685a780e0994851d471b1afdb27adaca7c8ca8859ea5cb3f821e2a20",
+      "constraint_ids": [
+        "count:punctuation"
+      ]
+    },
+    {
+      "key": "129",
+      "prompt_sha256": "62e4370c6e69cc506bc7cccc021fbb48ee190bc828c37678bbdd359600a9c7d5",
+      "constraint_ids": [
+        "format:sub-bullets"
+      ]
+    }
+  ],
+  "private_selected_file": "results/stage44_ifbench_source/stage44_ifbench_external60.jsonl",
+  "private_raw_text_not_committed": true,
+  "preregistered_model_comparison": [
+    "base",
+    "lora_sft",
+    "stage42_prompt_only_router"
+  ],
+  "generation": {
+    "max_new_tokens": 384,
+    "thinking_disabled": true,
+    "greedy": true
+  },
+  "no_model_outputs_used_for_selection": true,
+  "source_filter_exclusions": {},
+  "limitations": [
+    "New IFBench constraint families beyond classic IFEval, but 60-case stratified subset of 300, not official leaderboard",
+    "The original IFBench test prompts come partly from public WildChat and may contain personal data; raw text kept locally",
+    "Model may have been exposed to public IFBench source during pretraining",
+    "IFBench benchmark has some target constraints requiring longer than 384 tokens; report any cap-induced failure and do not retune post hoc",
+    "Official IFBench verifier is a constraint-checker, not semantic/human correctness or safety reviewer"
+  ]
+}
