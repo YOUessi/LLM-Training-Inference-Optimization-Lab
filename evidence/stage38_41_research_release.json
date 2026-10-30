@@ -1,0 +1,73 @@
+{
+  "status": "evidence_verified_research_candidates_not_production_approved",
+  "stage38": {
+    "selected_alpha": 0.75,
+    "dev_feasible": true,
+    "unseen_ifeval101": {
+      "base_strict": 0.7722772277227723,
+      "full_unscaled_strict": 0.5148514851485149,
+      "selected_strict": 0.6633663366336634,
+      "bootstrap95_selected_minus_base": [
+        -0.2079207920792079,
+        -0.019801980198019802
+      ]
+    },
+    "fresh128_dolly": {
+      "base_ce": 2.978404555883462,
+      "selected_ce": 1.7513890923749953
+    },
+    "candidate_gate": {
+      "source_and_selection_audited": true,
+      "adapted_dev_feasible": true,
+      "unseen101_strict_not_below_base": false,
+      "fresh128_Dolly_CE_improves_base": true,
+      "unseen101_CI_lower_not_below_minus_5pp": false
+    },
+    "research_candidate_pass": false
+  },
+  "stage40": {
+    "selected": "base",
+    "dev_feasible": false,
+    "unseen_ifeval60": {
+      "base_strict": 0.7833333333333333,
+      "old_full_strict": 0.6333333333333333,
+      "selected_strict": 0.7833333333333333,
+      "bootstrap95_selected_minus_base": [
+        0,
+        0
+      ]
+    },
+    "fresh128_dolly": {
+      "base_ce": 2.978404555883462,
+      "selected_ce": 2.978404555883462
+    },
+    "candidate_gate": {
+      "source_and_selection_audited": true,
+      "trained_dev_feasible": false,
+      "unseen60_strict_not_below_base": true,
+      "fresh128_Dolly_CE_improves_base": false,
+      "unseen60_CI_lower_not_below_minus_5pp": true
+    },
+    "research_candidate_pass": false
+  },
+  "stage41": {
+    "new_record_ids": 128,
+    "previous_selected_ids_excluded": 832,
+    "source": "Dolly15k CC BY-SA3.0",
+    "all_four_answer_CE": {
+      "base": 2.978404555883462,
+      "original_full": 1.7402747273461696,
+      "guarded_strength": 1.7513890923749953,
+      "format_replay": 2.978404555883462
+    }
+  },
+  "production_rollout": {
+    "allowed": false,
+    "blocked_because": [
+      "Only public IFEval subsets, not full benchmark, and limited heldout samples",
+      "No human review of factual/safety/instruction correctness on natural traffic",
+      "Only one GPU and a limited model/training seed range; no multiGPU FSDP",
+      "Prior system prefix cache wins conditional on engineered user prefix reuse and truncation"
+    ]
+  }
+}

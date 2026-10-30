@@ -1,5 +1,16 @@
 # Milestones and acceptance gates
 
+## Stage38–41 verified IFEval regressions and format SFT failure (2026-10-30)
+
+- [x] Stage38: preregister new IFEval43 development/101 independent test; choose Qwen3 LoRA residual alpha .75 on dev, independent strict obedience **67/101** vs original base **78/101**, though stronger than unscaled SFT **52/101**. **Research candidate blocked**; Dolly validation CE improves, instruction regression not resolved.
+- [x] Stage39 post-hoc diagnosis on already observed IFEval96: 24 original-base-only correct vs 5 full-SFT-only; repeated generated bigrams and capped outputs rise with SFT. **Hypothesis-generating only**, not independent model selection.
+- [x] Stage40: six fresh-source-pinned full 8B QLoRA runs with 0/25/50% JSON/XML/marker format rehearsal and two seeds, each 512 unique original Dolly examples exposed twice; none cleared *frozen development* rule adherence + output-cap guardrail, so choose base. Independent IFEval60: original base 47/60, old full-SFT 38/60. Original failed run with `REPLAY_KIN` NameError retained separately and all six GPU trials rerun with new source.
+- [x] Stage41: 128 new Dolly answer-CE identities disjoint from all earlier 832, compares base/original SFT/Stage38 alpha/Stage40 fallback with exact same targets. Four conditions measured, no data-based model selection.
+- [ ] Multiobjective training retaining instruction-obedience across independent tasks, avoiding high repetition, and mitigating response truncation. Need larger independent human assessment and multiple trained seeds.
+- [ ] Production deployment remains blocked, no multiGPU FSDP hardware available.
+
+[Stage38–41 audited evidence](STAGE38_41_DELIVERY.md).
+
 ## Stage30–34 completed — real Qwen3 8B mixed serving + full-data SFT follow-up (2026-10-30)
 
 - [x] Stage30: new PSF stdlib corpus, 3 arrival seeds × 3 cold/hot mixes × cache OFF/ON, 18 real GPU cells, 1,728 completed requests, three-seed paired analysis and exploratory intervals. Shared-prefix cache conditional gains, not generic cold-start gains.
